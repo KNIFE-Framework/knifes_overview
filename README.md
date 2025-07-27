@@ -6,6 +6,7 @@
 #Rýchla navigácia
 
 [01-Zoznam KNIFES - v calc](./7Ds/01.D1-Management/02.Strategy/20250420-KNIFES_with_SFIA.ods)
+
 [02-md file ](/7Ds/01.D1-Management/02.Strategy/KNIFEsOverview.md)
 
 ## 🧾 Popis

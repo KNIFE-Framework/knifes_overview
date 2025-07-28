@@ -7,7 +7,12 @@
 
 [01-Zoznam KNIFES - v calc](./7Ds/01.D1-Management/02.Strategy/20250420-KNIFES_with_SFIA.ods)
 
-[02-md file ](/7Ds/01.D1-Management/02.Strategy/KNIFEsOverview.md)
+[02-Zoznam hrubý ](/7Ds/01.D1-Management/02.Strategy/KNIFEsOverview.md)
+
+[03-Zoznam s detailami- tabuľka ](/7Ds/01.D1-Management/02.Strategy/KNIFE_Overview_List.md)
+
+[04-Zoznam s detailami -blog](/7Ds/01.D1-Management/02.Strategy/KNIFE_Overview_Details.md)
+
 
 ## 🧾 Popis
 Sem pridaj stručný opis účelu repozitára.

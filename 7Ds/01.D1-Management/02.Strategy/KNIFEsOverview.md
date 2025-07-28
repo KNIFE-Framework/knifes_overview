@@ -42,7 +42,8 @@
 | K040 | Publishing | Migracia Joomla -->GitHUB MkDocs | Init | Middle | Publishing | 2025-06-06 |
 | K041 | Education Framework | GitHUB Education Framework | init | Middle | Education Framework | 2025-06-10 |
 | K042 | SPA-Framework | SinglePageApplication – Webabased desktop app | init | Low | SPA framework | 2025-06-17 |
-| K043 | AI based training | Kontrola odpovedé študentov pomocou API na AI | init | Middle | AI in education | 2026-06-21 |
+| K043 | AI based training | Kontrola odpovedí študentov pomocou API na AI | init | Middle | AI in education | 2025-06-21 |
+| K044 | ESG-Stručný prehľad | krátky prehľad ako sa to začalo, kto to podporuje a prečo | init | Low | Society | 2025-07-28 |
 
 [⬆ Back to 01.D1-Management](../README.md)
 

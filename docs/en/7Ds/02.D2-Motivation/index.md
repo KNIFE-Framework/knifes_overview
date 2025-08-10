@@ -2,7 +2,7 @@
 
 ## 📁 Subsections:
 
-- [01.StakeholderAnalysis](01.StakeholderAnalysis/index.md)
+- [01.StakeholderAnalysis](01.StakeholderAnalysis/index)
 
 ---
-[⬆ Back to Dashboard](../index.md)
+[⬆ Back to Dashboard](../index)

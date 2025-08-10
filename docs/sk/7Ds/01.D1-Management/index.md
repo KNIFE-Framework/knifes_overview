@@ -8,14 +8,14 @@ title: 01.D1-Management
 
 ## 📁 Sections:
 
-- [01.Goals-Expectation](01.Goals-Expectation/index.md)
-- [02.Plans-Milestones](02.Plans-Milestones/index.md)
-- [02.Strategy](02.Strategy/index.md)
-- [03.Plans-Roadmaps](03.Plans-Roadmaps/index.md)
-- [04.Decisions](04.Decisions/index.md)
-- [05.WorkActivitiesEvidence](05.WorkActivitiesEvidence/index.md)
-- [06.Reportings](06.Reportings/index.md)
-- [07.Publishing](07.Publishing/index.md)
+- [01.Goals-Expectation](01.Goals-Expectation/index)
+- [02.Plans-Milestones](02.Plans-Milestones/index)
+- [02.Strategy](02.Strategy/index)
+- [03.Plans-Roadmaps](03.Plans-Roadmaps/index)
+- [04.Decisions](04.Decisions/index)
+- [05.WorkActivitiesEvidence](05.WorkActivitiesEvidence/index)
+- [06.Reportings](06.Reportings/index)
+- [07.Publishing](07.Publishing/index)
 
 ---
-[⬆ Back to 7Ds Dashboard](../index.md)
+[⬆ Back to 7Ds Dashboard](../index)

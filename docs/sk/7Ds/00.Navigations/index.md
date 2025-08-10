@@ -1,3 +1,3 @@
 # 00.Navigations
 
-> This is a placeholder for `7Ds/00.Navigations/index.md` content.
+> This is a placeholder for `7Ds/00.Navigations/index` content.

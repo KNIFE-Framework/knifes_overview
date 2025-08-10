@@ -4,4 +4,4 @@
 
 
 ---
-[⬆ Back to Dashboard](../index.md)
+[⬆ Back to Dashboard](../index)

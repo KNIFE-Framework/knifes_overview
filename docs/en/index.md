@@ -2,7 +2,7 @@
 
 ## 📂 Dimensions:
 
-- [01.D1-Management](7Ds/01.D1-Management/index.md)
+- [01.D1-Management](./7Ds/01.D1-Management/index.md)
 - [02.D2-Motivation](7Ds/02.D2-Motivation/index.md)
 - [03.D3-Analysis](7Ds/03.D3-Analysis/index.md)
 - [04.D4-Design](7Ds/04.D4-Design/index.md)

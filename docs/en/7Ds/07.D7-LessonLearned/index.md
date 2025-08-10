@@ -2,13 +2,13 @@
 
 ## 📁 Subsections:
 
-- [01.BestPractice](01.BestPractice/)
-- [02.BadPractice](02.BadPractice/)
-- [03.Questions](03.Questions/)
-- [04.Proposals](04.Proposals/)
-- [05.NextSteps](05.NextSteps/)
-- [06.HowTo](06.HowTo/)
-- [07.TroubleShooting](07.TroubleShooting/)
+- [01.BestPractice](01.BestPractice/index.md)
+- [02.BadPractice](02.BadPractice/index.md)
+- [03.Questions](03.Questions/index.md)
+- [04.Proposals](04.Proposals/index.md)
+- [05.NextSteps](05.NextSteps/index.md)
+- [06.HowTo](06.HowTo/index.md)
+- [07.TroubleShooting](07.TroubleShooting/index.md)
 
 ---
 [⬆ Back to Dashboard](../index.md)

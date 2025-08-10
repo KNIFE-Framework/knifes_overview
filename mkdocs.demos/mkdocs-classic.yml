@@ -1,5 +1,0 @@
-site_name: CAA Template Demo (mkdocs)
-theme:
-  name: mkdocs
-nav:
-  - Home: index.md

@@ -2,7 +2,7 @@
 
 ## 📁 Subsections:
 
-- [01.Resources](01.Resources/)
+- [01.Resources](01.Resources/index.md)
 
 ---
 [⬆ Back to Dashboard](../index.md)

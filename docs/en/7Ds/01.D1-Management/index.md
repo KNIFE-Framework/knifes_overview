@@ -2,13 +2,13 @@
 
 ## 📁 Subsections:
 
-- [01.Goals-Expectation](01.Goals-Expectation/)
-- [02.Plans-Milestones](02.Plans-Milestones/)
-- [02.Strategy](02.Strategy/)
-- [03.Plans-Roadmaps](03.Plans-Roadmaps/)
-- [04.Decisions](04.Decisions/)
-- [05.WorkActivitiesEvidence](05.WorkActivitiesEvidence/)
-- [06.Reportings](06.Reportings/)
+- [01.Goals-Expectation](01.Goals-Expectation/index.md)
+- [02.Plans-Milestones](02.Plans-Milestones/index.md)
+- [02.Strategy](02.Strategy/index.md)
+- [03.Plans-Roadmaps](03.Plans-Roadmaps/index.md)
+- [04.Decisions](04.Decisions/index.md)
+- [05.WorkActivitiesEvidence](05.WorkActivitiesEvidence/index.md)
+- [06.Reportings](06.Reportings/index.md)
 
 ---
 [⬆ Back to Dashboard](../index.md)

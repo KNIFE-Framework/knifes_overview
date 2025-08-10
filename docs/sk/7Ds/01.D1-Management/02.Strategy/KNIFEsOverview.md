@@ -45,6 +45,6 @@
 | K043 | AI based training | Kontrola odpovedí študentov pomocou API na AI | init | Middle | AI in education | 2025-06-21 |
 | K044 | ESG-Stručný prehľad | krátky prehľad ako sa to začalo, kto to podporuje a prečo | init | Low | Society | 2025-07-28 |
 
-[⬆ Back to 01.D1-Management](../README.md)
+[⬆ Back to 01.D1-Management](../)
 
-[⬆ Back to 7Ds Dashboard](../../README.md)
+[⬆ Back to 7Ds Dashboard](../../)

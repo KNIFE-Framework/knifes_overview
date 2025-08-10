@@ -9,6 +9,7 @@ __pycache__/
 *.py[cod]
 # 📦 Node.js / NPM závislosti
 node_modules/
+node_modules/.cache/
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
@@ -18,6 +19,10 @@ site/                     # MkDocs
 *.lock
 public/                   # Hugo (len ak nepoužívam worktree pre gh-pages!)
 build/                    # Docusaurus
+# Ak používaš automatický deploy cez GitHub Actions, môžeš odkomentovať
+.docusaurus/
+
+
 .vitepress/dist/          # VitePress (ak bez podsložky)
 docs/.vitepress/dist/     # VitePress (v podsložke)
 dist/                     # iné systémy (napr. VuePress)

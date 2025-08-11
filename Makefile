@@ -122,20 +122,24 @@ fix-links:
 	  -e 's#\]\(\.\.\/\.\.\/index\)#](../../)#g'
 
 # -------------------------
-# 🌿 Worktree Deploy
+# 🌿 Worktree Deploy – Self-healing variant
 # -------------------------
-init-worktree:
-	git worktree add $(WORKTREE_DIR) $(DEPLOY_BRANCH) || git branch $(DEPLOY_BRANCH) && git worktree add $(WORKTREE_DIR) $(DEPLOY_BRANCH)
 
-## check-worktree: Overí alebo vytvorí worktree pre $(DEPLOY_BRANCH)
+## check-worktree: Overí alebo vytvorí worktree pre $(DEPLOY_BRANCH), opraví ak je rozbitá
 check-worktree:
+	@if [ -d "$(WORKTREE_DIR)" ] && [ ! -d "$(WORKTREE_DIR)/.git" ]; then \
+		echo "⚠️ $(WORKTREE_DIR) existuje, ale nie je git repozitár. Mažem a resetujem…"; \
+		rm -rf "$(WORKTREE_DIR)"; \
+		git worktree prune; \
+		git branch -D $(DEPLOY_BRANCH) || true; \
+	fi
 	@if ! git worktree list | grep -q "$(WORKTREE_DIR)"; then \
-		echo "⚠️  Worktree pre $(DEPLOY_BRANCH) neexistuje. Vytváram..."; \
+		echo "⚠️ Worktree pre $(DEPLOY_BRANCH) neexistuje. Vytváram…"; \
 		git fetch origin || true; \
 		if git ls-remote --exit-code --heads origin $(DEPLOY_BRANCH) >/dev/null 2>&1; then \
 			git worktree add -B $(DEPLOY_BRANCH) $(WORKTREE_DIR) origin/$(DEPLOY_BRANCH); \
 		else \
-			echo "ℹ️  Vetva $(DEPLOY_BRANCH) na remote neexistuje, zakladám lokálne…"; \
+			echo "ℹ️ Vetva $(DEPLOY_BRANCH) na remote neexistuje, zakladám lokálne…"; \
 			git branch -f $(DEPLOY_BRANCH) || true; \
 			git worktree add $(WORKTREE_DIR) $(DEPLOY_BRANCH); \
 			cd $(WORKTREE_DIR) && git commit --allow-empty -m "init $(DEPLOY_BRANCH)" && git push -u origin $(DEPLOY_BRANCH); \
@@ -147,7 +151,7 @@ copy-build:
 	rsync -av --delete $(BUILD_DIR)/ $(WORKTREE_DIR)/
 
 commit-deploy:
-	cd $(WORKTREE_DIR) && git add . && git commit -m "Manual Docusaurus deploy" || echo "⚠️  Žiadne zmeny na commit."
+	cd $(WORKTREE_DIR) && git add . && git commit -m "Manual Docusaurus deploy" || echo "⚠️ Žiadne zmeny na commit."
 	cd $(WORKTREE_DIR) && git push origin $(DEPLOY_BRANCH)
 
 remove-worktree:
@@ -162,11 +166,7 @@ push-main:
 	git push origin main
 	@echo "✅ main pushnutý."
 
-## deploy: build → copy-build → commit-deploy
-deploy: build copy-build commit-deploy
-	@echo "✅ Deploy hotový na vetve $(DEPLOY_BRANCH)"
-
-## full-deploy: check-worktree → push-main → build → copy → commit
+## full-deploy: push-main → build → commit-deploy
 full-deploy: check-worktree push-main build copy-build commit-deploy
 	@echo "🎉 Full deploy úspešný → $(DEPLOY_BRANCH)"
 

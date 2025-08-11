@@ -10,6 +10,6 @@ title: 02.Strategy
 [KNIFE with SFIA.ods](./20250420-KNIFES_with_SFIA.ods)
 
 ---
-[⬆ Back to 01.D1-Management](../index)
+[⬆ Back to 01.D1-Management](../)
 
-[⬆ Back to 7Ds Dashboard](../../index)
+[⬆ Back to 7Ds Dashboard](../../)

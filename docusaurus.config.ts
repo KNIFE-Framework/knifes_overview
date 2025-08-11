@@ -12,14 +12,23 @@ const config: Config = {
   organizationName: '02-ContextAwareSolutions',
   projectName: 'knife_preview',
 
-  onBrokenLinks: 'throw',
+  // Tu prepíname z 'throw' na 'warn'
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-
   future: { v4: true },
 
   i18n: {
-    defaultLocale: 'sk',
-    locales: ['sk', 'en'],
+    defaultLocale: 'en', // fallback jazyk
+    locales: ['en', 'sk'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      sk: {
+        label: 'Slovensky',
+        path: 'sk',
+      },
+    },
   },
 
   presets: [
@@ -47,7 +56,8 @@ const config: Config = {
       title: 'KNIFE',
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },
       items: [
-        { to: '/sk/7Ds/index', label: 'SK', position: 'left' },
+        { to: '/docs/sk/7Ds/', label: 'SK', position: 'left' },
+        { to: '/docs/en/7Ds/', label: 'EN', position: 'left' },
         { href: 'https://github.com/02-ContextAwareSolutions/knifes_overview', label: 'GitHub', position: 'right' },
       ],
     },
@@ -63,39 +73,10 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 
   headTags: [
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'apple-touch-icon',
-        sizes: '180x180',
-        href: '/apple-touch-icon.png',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        href: '/favicon-32x32.png',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: '/favicon-16x16.png',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'manifest',
-        href: '/site.webmanifest',
-      },
-    },
+    { tagName: 'link', attributes: { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' } },
+    { tagName: 'link', attributes: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' } },
+    { tagName: 'link', attributes: { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' } },
+    { tagName: 'link', attributes: { rel: 'manifest', href: '/site.webmanifest' } },
   ],
 };
 

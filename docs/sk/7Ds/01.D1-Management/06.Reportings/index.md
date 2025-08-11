@@ -1,5 +1,5 @@
 --- 
-id: index
+
 title: 06.Reportings
 ---
 

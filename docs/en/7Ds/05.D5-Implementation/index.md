@@ -4,4 +4,4 @@
 
 
 ---
-[⬆ Back to Dashboard](../index)
+[⬆ Back to Dashboard](../)

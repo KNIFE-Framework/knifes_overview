@@ -2,5 +2,5 @@
 
 This is a sub-section of `03.D3-Analysis`.
 
-[⬆ Back to Dimension](../index)  
-[⬆ Back to Dashboard](../../index)
+[⬆ Back to Dimension](../)  
+[⬆ Back to Dashboard](../../)

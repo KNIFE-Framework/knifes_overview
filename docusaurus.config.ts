@@ -5,13 +5,13 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',
   tagline: 'Context Aware Approach',
-  url: 'https://02-contextawaresolutions.github.io',
+  url: 'https://knife-framework.github.io/',
   baseUrl: '/knifes_overview/',
   favicon: 'img/favicon.ico',
 
-  organizationName: '02-ContextAwareSolutions',
+  organizationName: 'KNIFE-Framework',
   projectName: 'knife_preview',
-
+  deploymentBranch: 'gh-pages', // voliteľné, ale fajn mať
   // Tu prepíname z 'throw' na 'warn'
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',

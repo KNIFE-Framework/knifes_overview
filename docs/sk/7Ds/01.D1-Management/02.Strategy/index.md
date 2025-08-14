@@ -7,9 +7,9 @@ title: 02.Strategy
 
 [KNIFE_GitHub_CheatSheet](./KNIFE_GitHub_CheatSheet.md)
 [KNIFEsOverview](./KNIFEsOverview.md)
-[KNIFE with SFIA.ods](./20250420-KNIFES_with_SFIA.ods)
+[KNIFE with SFIA.ods](/files/20250420-KNIFES_with_SFIA.ods)
 
 ---
-[⬆ Back to 01.D1-Management](../)
+[⬆ Back to 01.D1-Management](../index.md)
 
-[⬆ Back to 7Ds Dashboard](../../)
+[⬆ Back to 7Ds Dashboard](../../index.md)

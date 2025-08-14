@@ -11,4 +11,4 @@ title: 08.Resources
 - [03.Finance](./03.Finance/index.md)
 
 ---
-[⬆ Back to 7Ds Dashboard](../)
+[⬆ Back to 7Ds Dashboard](../.)

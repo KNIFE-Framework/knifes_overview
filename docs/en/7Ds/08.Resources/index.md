@@ -7,4 +7,4 @@
 - [03.Finance](03.Finance/index.md)
 
 ---
-[⬆ Back to Dashboard](../)
+[⬆ Back to Dashboard](../.)

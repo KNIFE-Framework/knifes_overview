@@ -5,4 +5,4 @@
 - [01.Resources](01.Resources/index.md)
 
 ---
-[⬆ Back to Dashboard](../)
+[⬆ Back to Dashboard](../.)

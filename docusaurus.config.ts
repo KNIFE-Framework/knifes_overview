@@ -13,12 +13,12 @@ const config: Config = {
   projectName: 'knife_preview',
   deploymentBranch: 'gh-pages', // voliteľné, ale fajn mať
   // Tu prepíname z 'throw' na 'warn'
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   future: { v4: true },
 
   i18n: {
-    defaultLocale: 'en', // fallback jazyk
+    defaultLocale: 'sk', // fallback jazyk
     locales: ['en', 'sk'],
     localeConfigs: {
       en: {
@@ -37,8 +37,10 @@ const config: Config = {
       {
         docs: {
           path: 'docs',
-          routeBasePath: '/docs',
-          sidebarPath: require.resolve('./sidebars.ts'),
+          routeBasePath: 'docs',
+          numberPrefixParser: true, // <<< zachová 01., 02. v URL a ID
+          //sidebarPath: require.resolve('./sidebars.ts'),
+          editCurrentVersion: false,
           editUrl: undefined,
           exclude: ['**/README.migrated.md', '**/README_.md'],
         },
@@ -51,7 +53,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.jpg',
     navbar: {
       title: 'KNIFE',
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },

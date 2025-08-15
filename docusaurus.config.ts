@@ -10,11 +10,12 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   organizationName: 'KNIFE-Framework',
-  projectName: 'knife_preview',
+  projectName: 'knifes_overview',
   deploymentBranch: 'gh-pages', // voliteľné, ale fajn mať
-  // Tu prepíname z 'throw' na 'warn'
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  // Viac priateľské defaulty počas migrácie
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+  onBrokenAnchors: 'warn',
   future: { v4: true },
 
   i18n: {
@@ -38,7 +39,7 @@ const config: Config = {
         docs: {
           path: 'docs',
           routeBasePath: 'docs',
-          numberPrefixParser: true, // <<< zachová 01., 02. v URL a ID
+          numberPrefixParser: false, // zachová 01., 02. v URL a ID
           //sidebarPath: require.resolve('./sidebars.ts'),
           editCurrentVersion: false,
           editUrl: undefined,
@@ -53,13 +54,14 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/logo.jpg',
+    image: 'img/logo.png',
     navbar: {
       title: 'KNIFE',
-      logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },
+      logo: { alt: 'KNIFE Logo', src: 'img/logo.png', href: '/', target: '_self' },
       items: [
-        { to: '/docs/sk/7Ds/', label: 'SK', position: 'left' },
-        { to: '/docs/en/7Ds/', label: 'EN', position: 'left' },
+        { to: '/', label: 'Home', position: 'left' },
+        { to: '/docs/sk', label: 'Docs (SK)', position: 'left' },
+        { to: '/docs/en', label: 'Docs (EN)', position: 'left' },
         { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
       ],
     },
@@ -75,10 +77,10 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 
   headTags: [
-    { tagName: 'link', attributes: { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' } },
-    { tagName: 'link', attributes: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' } },
-    { tagName: 'link', attributes: { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' } },
-    { tagName: 'link', attributes: { rel: 'manifest', href: '/site.webmanifest' } },
+    { tagName: 'link', attributes: { rel: 'apple-touch-icon', sizes: '180x180', href: 'img/apple-touch-icon.png' } },
+    { tagName: 'link', attributes: { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'img/favicon-32x32.png' } },
+    { tagName: 'link', attributes: { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'img/favicon-16x16.png' } },
+    { tagName: 'link', attributes: { rel: 'manifest', href: 'img/site.webmanifest' } },
   ],
 };
 

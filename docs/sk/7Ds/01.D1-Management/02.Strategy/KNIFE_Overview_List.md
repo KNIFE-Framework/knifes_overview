@@ -54,7 +54,6 @@
 | K051 | Marketing / Analytics | Google Analytics – Fundamentals | in progress | HowTo | Medium | Základy používania GA4, prechod z UA, základné metriky, pochopenie používateľov. | Vzniklo ako reakcia na potrebu naučiť kolegov základy GA4 a jeho rozdiely oproti Universal. | 2 | Web Analytics | Learning-based | GA4, Google Analytics, marketing, základné metriky |
 | K052 | Web / Analytics / GTM | Google Tag Manager – úvod a integrácia | planned | User Guide | Medium | Úvod do GTM, výhody oproti priamemu kódu, prepojenie na GA4, cookie súhlas. | Vzniklo počas nastavovania GA4 pre SystemThinking.xyz, GTM bol zvolený ako univerzálny nástroj. | 2 | Web Analytics / DevOps | Learning-based | GTM, Tag Manager, Google Analytics, GDPR, Static Sites |
 | K053 | Framewok for Project Management | Framework for Project Management in GitHUB | draft | SDLC framework | Medium | Mám strašne veľa tém, veľa úloh, ako to manažovať, aby som sa neutopil v nesplnených úlohách, prípadne nezabudol na dôležité témy a neobjavoval ich znova a znova? | Večná téma, ako si evidovať úlohy... |  |  |  |  |
-
 | K054 | Best Practice | Docusaurus Advanced Deployment Pipeline | new | Ako si nastaviť build a deploy tak, aby ťa chránil pred chybami |
 | K055 | Best Practice | Ako obnoviť stav z minulosti? | inprogress | Obnov mi dobré údaje |
 | K056 | Best Practice | Central Panel for GIT – SDLC Git Management | done md | Správa súborov s git podporou |

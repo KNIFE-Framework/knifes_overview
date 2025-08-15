@@ -100,3 +100,17 @@ git merge origin/dev
 
 # Pushnúť na server
 git push origin main
+
+# KNIFE Overview
+
+Krátky popis repozitára a odkaz na web.
+
+- 🌐 Web: https://knife-framework.github.io/knifes_overview/
+- 📚 Dokumentácia: `/docs/sk`
+- ⚙️ Build/Deploy: pozri **[Makefile-README.md](./Makefile-README.md)**
+
+## Rýchly štart
+```bash
+make dev          # lokálny náhľad
+make check-links  # rýchla kontrola odkazov
+make mode         # zistí, či ideš Worktree alebo Actions

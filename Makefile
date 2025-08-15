@@ -11,6 +11,8 @@
 # ❗ Worktree deploy vyžaduje lokálnu GIT autentikáciu k GitHubu.
 #    Bez platného HTTPS tokenu (osxkeychain) alebo SSH kľúča `git push` zlyhá.
 #    Pozri: make help-auth
+# Keď spustíš len `make`, ukáž help
+.DEFAULT_GOAL := help.  # zapríčiní zobrazenie help ak zadám len  make bez parametrov
 
 SHELL := /bin/bash
 NODE := node
@@ -37,7 +39,8 @@ FIND_MD := find $(DOCS_DIR) -type f \( -name "*.md" -o -name "*.mdx" \)
         stash-save stash-list stash-apply stash-drop \
         restore-folder restore-file restore-path restore-from-stash-file \
         delete-dotpages \
-        actions-status actions-disable actions-enable
+        actions-status actions-disable actions-enable \
+		quickstart mode doctor next-steps.   # UX zlepšenie
 
 # -------------------------
 # 📌 Help
@@ -51,6 +54,11 @@ help:
 	@echo "# CESTA 2 (Actions) doplníme neskôr – tento Makefile je zámerne jednotný. #"
 	@echo "# ❗ Pri deployi do worktree NIKDY nemaž .git; oprav: make check-worktree  #"
 	@echo "# #########################################################################"
+	@echo "===== 🧭 UX – pamäťový ťahák ====="
+	@echo "  quickstart          - 3 kroky na bežný deň (najčastejší flow)"
+	@echo "  mode                - Zistí, či ideš cez Worktree alebo Actions"
+	@echo "  doctor              - Základná diagnostika (node/git/remote/worktree)"
+	@echo "  next-steps          - Odporúčanie ďalšieho kroku podľa stavu"
 	@echo "===== ⚙️ Actions toggles ====="
 	@echo "  actions-status      - Zobrazí, či je workflow zapnutý/vypnutý"
 	@echo "  actions-disable     - Dočasne vypne Actions (premenuje deploy.yml)"
@@ -347,3 +355,77 @@ actions-enable:
 	else \
 	  echo "ℹ️ Actions už vyzerá byť zapnuté (nenašiel som $(WF_DISABLED))."; \
 	fi
+
+	# -------------------------
+# 🧭 UX helpers
+# -------------------------
+
+quickstart:
+	@echo "👋 Ahoj! Najčastejší denný flow:"
+	@echo "  1) Uprav docs:          (napr. docs/sk/...)"
+	@echo "  2) Lokálny test:        make dev   # alebo: make build && make serve"
+	@echo "  3) Deployment:"
+	@echo "     - Worktree:          make full-deploy"
+	@echo "     - Actions (CI/CD):   git add -A && git commit -m 'msg' && git push"
+	@echo ""
+	@echo "ℹ️  Tipy:"
+	@echo "  • Chceš PUSH bez spustenia CI? použi tag v správe: [noactions]"
+	@echo "  • Prepínať Actions:     make actions-enable | make actions-disable"
+	@echo "  • Zisti režim:          make mode"
+
+mode:
+	@echo "🔎 Režim nasadenia:"
+	@if [ -d "$(WORKTREE_DIR)/.git" ]; then \
+	  echo "  • Worktree:   ENABLED  → $(WORKTREE_DIR)"; \
+	else \
+	  echo "  • Worktree:   disabled (spusť: make check-worktree)"; \
+	fi
+	@if [ -f ".github/workflows/deploy.yml" ]; then \
+	  echo "  • Actions:    ENABLED  (CI/CD beží na push)"; \
+	elif [ -f ".github/workflows/deploy.yml.disabled" ]; then \
+	  echo "  • Actions:    disabled (zapni: make actions-enable)"; \
+	else \
+	  echo "  • Actions:    nenašiel som workflow súbor (.github/workflows/deploy.yml)"; \
+	fi
+	@echo ""
+	@echo "🧠 Odporúčanie:"
+	@if [ -d "$(WORKTREE_DIR)/.git" ]; then \
+	  echo "  • Pre okamžitý manual deploy použi: make full-deploy"; \
+	else \
+	  echo "  • Najprv vytvor worktree: make check-worktree (ak chceš Cestu 1)"; \
+	fi
+	@echo "  • Alebo použi CI/CD: commit + push (Cesta 2)."
+
+doctor:
+	@echo "🩺 Diagnostika…"
+	@echo "  • Node: $$(node -v 2>/dev/null || echo 'n/a')"
+	@echo "  • NPM:  $$(npm -v 2>/dev/null || echo 'n/a')"
+	@echo "  • Git:  $$(git --version 2>/dev/null || echo 'n/a')"
+	@echo "  • Remote origin: $$(git remote -v | awk 'NR==1{print $$2}')"
+	@echo "  • Aktuálna vetva: $$(git rev-parse --abbrev-ref HEAD)"
+	@if [ -d "$(WORKTREE_DIR)/.git" ]; then \
+	  echo "  • Worktree: OK  ($(WORKTREE_DIR))"; \
+	else \
+	  echo "  • Worktree: MISSING (spusť: make check-worktree)"; \
+	fi
+	@if [ -f ".github/workflows/deploy.yml" ]; then \
+	  echo "  • Actions:  ENABLED"; \
+	elif [ -f ".github/workflows/deploy.yml.disabled" ]; then \
+	  echo "  • Actions:  disabled (make actions-enable)"; \
+	else \
+	  echo "  • Actions:  workflow chýba (.github/workflows/deploy.yml)"; \
+	fi
+	@echo "✅ Done."
+
+next-steps:
+	@echo "🤖 Navrhovaný ďalší krok:"
+	@if [ -d "$(WORKTREE_DIR)/.git" ]; then \
+	  echo "  → make full-deploy   # skompiluje + skopíruje do worktree + pushne"; \
+	else \
+	  if [ -f ".github/workflows/deploy.yml" ]; then \
+	    echo "  → git add -A && git commit -m 'update' && git push   # spustí CI/CD"; \
+	  else \
+	    echo "  → Spusti najprv: make check-worktree  (alebo zapni Actions)"; \
+	  fi; \
+	fi
+	@echo "💡 Debug: make mode | make doctor"

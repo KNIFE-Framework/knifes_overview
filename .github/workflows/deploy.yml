@@ -1,5 +1,5 @@
 name: Deploy Docusaurus to GitHub Pages
- 
+
 on:
   push:
     branches: [ main ]
@@ -23,16 +23,20 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # Ak nepoužívaš repo Variables, môžeš si to tu prepísať na 'true'
-  USE_ACTIONS: ${{ vars.USE_ACTIONS }}
+  # Ak repo variable USE_ACTIONS nie je nastavený, spadne na 'false'
+  USE_ACTIONS: ${{ vars.USE_ACTIONS || 'false' }}
+
+  # Zlúč všetky commit správy do jedného reťazca (pri push evente).
+  # Pri workflow_dispatch nebude 'commits' existovať → použijeme prázdny string.
+  _ALL_COMMIT_MSGS: ${{ (github.event.commits && join(github.event.commits.*.message, ' ')) || '' }}
+
+  # Flag, či sa v commit správach našlo [noactions]
+  SKIP_BY_MSG: ${{ contains(env._ALL_COMMIT_MSGS, '[noactions]') }}
 
 jobs:
   build:
-    # Guard 1: vyžaduj USE_ACTIONS=true ALEBO manuálne spustenie,
-    # Guard 2: preskoč, ak commit správa obsahuje [noactions]
-    if: >
-      (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true')
-      && !contains(github.event.head_commit.message, '[noactions]')
+    # Spusti iba ak (workflow_dispatch alebo USE_ACTIONS=true) a NIE je [noactions]
+    if: ${{ (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true') && !env.SKIP_BY_MSG }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,7 +46,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
 
       - name: Install deps
         run: npm ci
@@ -57,9 +61,7 @@ jobs:
 
   deploy:
     needs: build
-    if: >
-      (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true')
-      && !contains(github.event.head_commit.message, '[noactions]')
+    if: ${{ (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true') && !env.SKIP_BY_MSG }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages

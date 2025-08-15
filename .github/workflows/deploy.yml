@@ -22,17 +22,11 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
-# Pozn.: tu NEROBÍME žiadne výpočty z env.*
-env:
-  # Repo variable USE_ACTIONS (Settings → Secrets and variables → Variables)
-  # Ak nie je nastavená, berieme default "true"
-  USE_ACTIONS: ${{ vars.USE_ACTIONS || 'true' }}
-
 jobs:
   build:
-    # Pustí sa, ak (A) manuálny dispatch alebo USE_ACTIONS == 'true'
-    # a súčasne commit správa NEobsahuje "[noactions]"
-    if: ${{ (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true')
+    # Spusť ak: manuálny dispatch ALEBO (USE_ACTIONS == true s defaultom na true),
+    # a commit správa neobsahuje [noactions]
+    if: ${{ (github.event_name == 'workflow_dispatch' || fromJSON(vars.USE_ACTIONS || 'true'))
             && !contains(github.event.head_commit.message || '', '[noactions]') }}
     runs-on: ubuntu-latest
     steps:
@@ -49,7 +43,7 @@ jobs:
 
   deploy:
     needs: build
-    if: ${{ (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true')
+    if: ${{ (github.event_name == 'workflow_dispatch' || fromJSON(vars.USE_ACTIONS || 'true'))
             && !contains(github.event.head_commit.message || '', '[noactions]') }}
     runs-on: ubuntu-latest
     environment:

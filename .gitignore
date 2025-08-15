@@ -53,3 +53,9 @@ Thumbs.db
 
 # 💡 GitHub Pages pomocné výstupy (ak robia ručne deploy)
 gh-pages/
+build/
+/build/
+.docusaurus/
+/.docusaurus/
+.docusaurus/
+/.docusaurus/

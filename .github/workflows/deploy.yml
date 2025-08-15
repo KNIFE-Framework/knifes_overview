@@ -22,51 +22,39 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+# Pozn.: tu NEROBÍME žiadne výpočty z env.*
 env:
-  # Ak repo variable USE_ACTIONS nie je nastavený, spadne na 'false'
-  USE_ACTIONS: ${{ vars.USE_ACTIONS || 'false' }}
-
-  # Zlúč všetky commit správy do jedného reťazca (pri push evente).
-  # Pri workflow_dispatch nebude 'commits' existovať → použijeme prázdny string.
-  _ALL_COMMIT_MSGS: ${{ (github.event.commits && join(github.event.commits.*.message, ' ')) || '' }}
-
-  # Flag, či sa v commit správach našlo [noactions]
-  SKIP_BY_MSG: ${{ contains(env._ALL_COMMIT_MSGS, '[noactions]') }}
+  # Repo variable USE_ACTIONS (Settings → Secrets and variables → Variables)
+  # Ak nie je nastavená, berieme default "true"
+  USE_ACTIONS: ${{ vars.USE_ACTIONS || 'true' }}
 
 jobs:
   build:
-    # Spusti iba ak (workflow_dispatch alebo USE_ACTIONS=true) a NIE je [noactions]
-    if: ${{ (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true') && !env.SKIP_BY_MSG }}
+    # Pustí sa, ak (A) manuálny dispatch alebo USE_ACTIONS == 'true'
+    # a súčasne commit správa NEobsahuje "[noactions]"
+    if: ${{ (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true')
+            && !contains(github.event.head_commit.message || '', '[noactions]') }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-
-      - name: Install deps
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: build
 
   deploy:
     needs: build
-    if: ${{ (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true') && !env.SKIP_BY_MSG }}
+    if: ${{ (github.event_name == 'workflow_dispatch' || env.USE_ACTIONS == 'true')
+            && !contains(github.event.head_commit.message || '', '[noactions]') }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4

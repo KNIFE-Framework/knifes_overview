@@ -60,7 +60,7 @@ const config: Config = {
       items: [
         { to: '/docs/sk/7Ds/', label: 'SK', position: 'left' },
         { to: '/docs/en/7Ds/', label: 'EN', position: 'left' },
-        { href: 'https://github.com/02-ContextAwareSolutions/knifes_overview', label: 'GitHub', position: 'right' },
+        { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {

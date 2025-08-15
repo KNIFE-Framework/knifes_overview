@@ -1,3 +1,5 @@
+
+
 # 📘 KNIFE Overview – Detailed View
 
 ### K001 – EA modelovanie a motivácia

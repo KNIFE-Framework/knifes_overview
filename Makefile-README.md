@@ -54,3 +54,35 @@ make actions-enable
 	•	SSH alternatíva:
 	•	ssh-keygen -t ed25519 -C "email"
 	•	ssh-add ~/.ssh/id_ed25519 a verejný kľúč nahrať do GitHubu
+
+# Troubleshooting
+	•	„../gh-pages-docusaurus nie je git worktree (chýba .git)”
+→ make check-worktree
+	•	„Actions sa nespustili po pushi”
+	•	skontroluj, či existuje .github/workflows/deploy.yml (nie .disabled)
+	•	commit správa nesmie obsahovať [noactions]
+	•	v repo Settings → Pages musí byť „Build and deployment = GitHub Actions“
+	•	build/ alebo .docusaurus/ v gite
+	•	oprav .gitignore a: git rm -r --cached build .docusaurus
+
+    ---
+  TODO:
+### Voliteľné: dostať ťahák aj do webovej dokumentácie
+Ak chceš mať aj stránku v Docusauruse (napr. K056), pridaj napr.:
+
+`docs/sk/7Ds/01.D1-Management/02.Strategy/Guides/K056-Central-Panel-Git.md`
+```md
+---
+title: K056 – Central Panel for Git (Makefile)
+description: Jeden Makefile na build, kontrolu a deploy (Worktree + Actions)
+---
+
+import Link from '@docusaurus/Link';
+
+> Tento dokument je zrkadlo súboru **Makefile-README.md** v koreňi repozitára.
+
+:::tip Rýchly štart
+`make quickstart` • `make mode` • `make doctor`
+:::
+
+*(sem môžeš skopírovať časti z Makefile-README.md)*

@@ -1,3 +1,6 @@
+
+
+
 | ID | Category | Short Title | Status | Type | Priority | Description | Context, Origin, Why it was initiated? | SFIA – Level | SFIA – Domain (?) | SFIA – Maturity | Tags |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | K001 |  | EA modelovanie a motivácia | hotové | Metodika / Nástroj | 🎯 | Systém motivácie pomocou lízaniek a spätnej väzby | Jedno z prvých TERNO, vzniklo pri návrhu systému motivácie v rámci tímu | 2 | Business Analysis / Modelling | Diagrammatic |  |

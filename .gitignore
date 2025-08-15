@@ -10,7 +10,7 @@ __pycache__/
 # 📦 Node.js / NPM závislosti
 node_modules/
 node_modules/.cache/
-package-lock.json
+
 pnpm-lock.yaml
 yarn.lock
 

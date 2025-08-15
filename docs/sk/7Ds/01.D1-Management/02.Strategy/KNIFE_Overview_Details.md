@@ -504,7 +504,7 @@
 **Link**: [🔗](#TODO/K038)
 
 ---
-### K039 – Sementicke a kontextove vyhladavanie nad GitHUB
+### K039 – Sémantické a kontextove vyhľadávanie nad GitHUB
 
 **Category**: „Advanced GitHub KM Layer“  
 **Status**: Init  

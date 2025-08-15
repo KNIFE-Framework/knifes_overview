@@ -15,12 +15,13 @@ pnpm-lock.yaml
 yarn.lock
 
 # 🏗️ Výstupy z buildov
-site/                     # MkDocs
+/site/                     # MkDocs
 *.lock
-public/                   # Hugo (len ak nepoužívam worktree pre gh-pages!)
-build/                    # Docusaurus
+/public/                   # Hugo (len ak nepoužívam worktree pre gh-pages!)
+/build/                    # Docusaurus
+/assets/
 # Ak používaš automatický deploy cez GitHub Actions, môžeš odkomentovať
-.docusaurus/
+/.docusaurus/
 
 
 .vitepress/dist/          # VitePress (ak bez podsložky)

@@ -586,10 +586,16 @@ Pocas pripravy STH2025-2026- som si uvedomil, ze GitHub, HitHUb Class, Sites, Mk
 **Priority**: TOP  
 **SFIA**: Level ,  – **
 
-**Description**: This KNIFE explains how to create a full backup of your OneDrive data in cases where the local disk does not have sufficient capacity to mirror the entire cloud content. When 'Files On-Demand' is enabled, standard tools are unable to copy files – they can at best read their metadata. However, using tools like `rclone`, it becomes possible to back up the cloud directly without needing local mirroring.  
-**Context**: Microsoft offers cloud storage up to several terabytes, but over time each storage fills up. At that point, you either have to buy more space or clean up existing data. I wanted neither. Since I had enough free capacity on an external disk connected to my QNAP NAS, I decided to create a complete copy of my OneDrive there. I had no idea it wouldn't be a trivial task.  
+**Description**:
+
+ This KNIFE explains how to create a full backup of your OneDrive data in cases where the local disk does not have sufficient capacity to mirror the entire cloud content. When 'Files On-Demand' is enabled, standard tools are unable to copy files – they can at best read their metadata. However, using tools like `rclone`, it becomes possible to back up the cloud directly without needing local mirroring.  
+
+**Context**:
+ Microsoft offers cloud storage up to several terabytes, but over time each storage fills up. At that point, you either have to buy more space or clean up existing data. I wanted neither. Since I had enough free capacity on an external disk connected to my QNAP NAS, I decided to create a complete copy of my OneDrive there. I had no idea it wouldn't be a trivial task.   
+ 
 **Tags**: backup, cloud, maintenance  
-**Link**: [🔗](#TODO/K044)
+**Link**: 
+[K044-Backup_One_Drive](https://github.com/KNIFE-Framework/KNIFE-06-Infrastructure/tree/main/docs/sk/K044-Backup_One_Drive)
 ---
 
 ### K052 – GitHub LMS Framework (Implementácia)

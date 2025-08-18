@@ -84,23 +84,26 @@ Existujú 2 hlavné možnosti:
 
 ### Vytvorenie novej vetvy `dev` zo `main`:
 
-```bash
+```
 git checkout main
 git checkout -b dev
 git push -u origin dev
-```bash
+```
 # Uisti sa, že máš aktuálne dáta
 git fetch origin
 
+```
+```
 # Prepnúť sa na hlavný branch
+```
 git checkout main
-
+```
 # Zlúčiť zmeny z dev do main
 git merge origin/dev
-
+```
 # Pushnúť na server
 git push origin main
-
+```
 # KNIFE Overview
 
 Krátky popis repozitára a odkaz na web.
@@ -110,7 +113,21 @@ Krátky popis repozitára a odkaz na web.
 - ⚙️ Build/Deploy: pozri **[Makefile-README.md](./Makefile-README.md)**
 
 ## Rýchly štart
-```bash
+
+```
+
 make dev          # lokálny náhľad
 make check-links  # rýchla kontrola odkazov
 make mode         # zistí, či ideš Worktree alebo Actions
+
+```
+
+## License
+
+This repository uses a **dual license**:
+
+- **Code and scripts**: [MIT License](./LICENSE)  
+- **Educational content and documentation (`.md` files, methodologies, notes)**: [CC-BY 4.0 License](./LICENSE-DOCS)  
+
+This means you are free to use and adapt the code with minimal restrictions, and you may freely
+share and remix the educational content as long as you provide proper attribution.

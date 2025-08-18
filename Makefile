@@ -31,7 +31,7 @@ SED_INPLACE := sed -E -i ''
 FIND_MD := find $(DOCS_DIR) -type f \( -name "*.md" -o -name "*.mdx" \)
 
 .PHONY: help help-auth help-actions \
-        dev clean build serve \
+        install dev clean build serve \
         check-links check-links-hard check-links-full fix-links \
         init-worktree check-worktree copy-build commit-deploy remove-worktree \
         push-main deploy full-deploy worktree-status \
@@ -65,6 +65,7 @@ help:
 	@echo "  actions-enable      - Znovu zapne Actions"
 	@echo "  help-actions        - Krátky návod ku GitHub Pages (Actions)"
 	@echo "===== 📚 Docusaurus ====="
+	@echo "	 install             - nainstaluje docusaurus balicky"
 	@echo "  dev                 - Spusti dev server"
 	@echo "  clean               - Vyčisti cache a build adresáre"
 	@echo "  build               - Striktný build (onBrokenLinks: throw)"
@@ -110,6 +111,10 @@ help-actions:
 # -------------------------
 # 🚀 Docusaurus Commands
 # -------------------------
+
+install: 
+	$(NPM) install
+
 dev:
 	$(NPM) start
 

@@ -715,3 +715,21 @@ Kontrola referencií v Docusaurus/MkDocs:
 **Date**: 2025-08-11
 
 ---
+---
+### K059 – STEM a Makerspace – metodika vzdelávania
+
+**Category**: STEM / Education  
+**Status**: init  
+**Type**: Education / Framework  
+**Priority**: Medium  
+**SFIA**: Level 3–4, Education / Frameworks – *Emerging*
+
+**Description**:  
+Prehľad histórie STEM hnutia (vznik v USA – NSF, rozšírenie cez UNESCO/OECD), globálni a lokálni hráči, rozšírenie na STEAM. Súčasný stav vo svete a na Slovensku – príklady Makerspace iniciatív, univerzít a NGO.  
+
+**Context**:  
+Vzniklo počas úvah o zapojení STEM metodiky do predmetov „Systémové myslenie v IT“ a „Digitálna fabrikácia“. Cieľom je vytvoriť most medzi globálnymi trendmi STEM/STEAM a rámcom CAA.  
+
+**Tags**: STEM, STEAM, Makerspace, Education, CAA  
+**Link**: [🔗](#TODO/K059)  
+**Date**: 2025-08-24

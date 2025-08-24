@@ -45,7 +45,21 @@
 | K042 | SPA-Framework | SinglePageApplication – Webabased desktop app | init | Low | SPA framework | 2025-06-17 |
 | K043 | AI based training | Kontrola odpovedí študentov pomocou API na AI | init | Middle | AI in education | 2025-06-21 |
 | K044 | ESG-Stručný prehľad | krátky prehľad ako sa to začalo, kto to podporuje a prečo | init | Low | Society | 2025-07-28 |
-
+| K045 | ESG- Krátky úvod | Základné informácie o ESG | Init | Low | Education Explanantion |  |
+| K046 | UserGuide | Thunderbird – Archive-export | done md | Low | HowTO |  |
+| K047 | Inšpirácie | KNIFE047_Reflexia_a_epistemologia.mdKNIFE047 – 7S Cycle of Meaningful KnowledgeKNIFE047 – Epistemológia 4Curiosis |  |  |  |  |
+| K048 | User Guide | AI – Agent in OpenGPT | in progress | Low | HowTo |  |
+| K049 | UserGuide | KNIFE049 – Vyhľadávač nad OpenGPT históriou |  |  |  |  |
+| K050 | User Guide | Open GPT, vytváranie prompt instructions | In progress |  |  |  |
+| K051 | Marketing | Google analytics – Fundamentals | new | Low | HowTo |  |
+| K052 | Framework / Edukačné | GitHub LMS Framework | new | duplicity K041 | Education Framework |  |
+| K053 | Framewok for Project Management | Framework for Project Management in GitHUB | new | low | SDLC framework |  |
+| K054 | Best Practice | Docusaurus Advanced Deployment Pipeline | new |  | „Ako si nastaviť build a deploy tak, aby ťa chránil pred sebou samým.“ |  |
+| K055 | Best Practice | Ako obnoviť stav z minulosti? | inprogress | now | Obnov mi dobré údaje |  |
+| K056 | Best Practice | Central Panel for GIT – SDLC Git Management Makefile | done md |  | Správa súborov s git odporou |  |
+| K057 | Management-Reporting | AI Agent na monitoroavanie nákladov OpenGPT | new | now | Reporting nad komunikáciou s OpenGPT formou AI Agenta |  |
+| K058 | Management-Reporting-from the Past | AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie | new | now | Reporting od začiatku komunikácie |  |
+| K059 | STEM / Education | STEM a Makerspace – metodika vzdelávania | init | 🧭 | Education / Framework | 2025-08-24 |
 [⬆ Back to 01.D1-Management](../.)
 
 [⬆ Back to 7Ds Dashboard](../../)

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',
   tagline: 'Context Aware Approach',
-  url: 'https://knife-framework.github.io/',
-  baseUrl: '/knifes_overview/',            // GH Pages repo base – ponechať
+  url: 'https://knifes.systemthinking.sk',
+  baseUrl: '/',            // GH Pages repo base – ponechať
   favicon: 'img/favicon.ico',
 
   organizationName: 'KNIFE-Framework',

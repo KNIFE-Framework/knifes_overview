@@ -29,6 +29,9 @@ PAGES_DIR     = $(WORKTREE_DIR)/docs   # <- GH Pages „/docs“ režim
 # macOS sed (BSD) potrebuje -i ''
 SED_INPLACE := sed -E -i ''
 FIND_MD := find $(DOCS_DIR) -type f \( -name "*.md" -o -name "*.mdx" \)
+# KNIFES generator (CSV → MD)
+SCRIPTS_DIR := scripts
+DATA_CSV    := data/KNIFE-OVERVIEW-ONLY.csv
 
 .PHONY: help help-auth help-actions \
         install dev clean build serve \
@@ -40,7 +43,7 @@ FIND_MD := find $(DOCS_DIR) -type f \( -name "*.md" -o -name "*.mdx" \)
         restore-folder restore-file restore-path restore-from-stash-file \
         delete-dotpages \
         actions-status actions-disable actions-enable \
-		quickstart mode doctor next-steps.   # UX zlepšenie
+		quickstart mode doctor next-steps. knifes-gen knife-new dev-gen build-gen   # UX zlepšenie
 
 # -------------------------
 # 📌 Help
@@ -70,6 +73,8 @@ help:
 	@echo "  clean               - Vyčisti cache a build adresáre"
 	@echo "  build               - Striktný build (onBrokenLinks: throw)"
 	@echo "  serve               - Lokálne naservíruj statický build"
+	@echo "  knifes-gen          - CSV → MD (prehľady + chýbajúce Kxxx súbory)"
+	@echo "  knife-new           - Rýchly skeleton: make knife-new id=K062 title=\"Name\""
 	@echo "===== 🔍 Link Checker ====="
 	@echo "  check-links         - DRY-RUN kontrola odkazov v docs/"
 	@echo "  check-links-hard    - Striktná kontrola: spustí build"
@@ -87,6 +92,9 @@ help:
 	@echo "  full-deploy         - check-worktree + push-main + build + copy + commit"
 	@echo "===== 🔐 Autentikácia ====="
 	@echo "  help-auth           - Ako nastaviť HTTPS/SSH prístup (PAT/Keychain/SSH)"
+	@echo "===== 🧩 Generátor – kombinované ====="
+	@echo "  dev-gen             - knifes-gen + dev"
+	@echo "  build-gen           - knifes-gen + build"
 
 help-auth:
 	@echo "===== 🔐 Autentikácia pre Worktree deploy ====="
@@ -434,3 +442,37 @@ next-steps:
 	  fi; \
 	fi
 	@echo "💡 Debug: make mode | make doctor"
+#
+# -------------------------
+# 🧩 KNIFES generator (CSV → MD)
+# -------------------------
+
+## knifes-gen: CSV -> MD (prehľady + chýbajúce Kxxx súbory)
+knifes-gen:
+	@if [ ! -f "$(SCRIPTS_DIR)/build_knifes.mjs" ]; then \
+		echo "❌ Chýba $(SCRIPTS_DIR)/build_knifes.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
+	fi
+	@if [ ! -f "$(DATA_CSV)" ]; then \
+		echo "❌ Chýba CSV '$(DATA_CSV)'. Ulož export z Calc/Excel alebo použi: make knifes-gen csv=<path>"; \
+		echo "   Príklad: make knifes-gen csv=data/KNIFE-OVERVIEW-ONLY.csv"; exit 1; \
+	fi
+	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(DATA_CSV)"; fi; \
+	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root .
+
+## knife-new: založí skeleton KNIFE
+## Použitie: make knife-new id=K062 title="My Topic"
+knife-new:
+	@if [ -z "$(id)" ]; then echo "Použi: make knife-new id=K062 title='Názov'"; exit 1; fi
+	@if [ ! -f "$(SCRIPTS_DIR)/new_knife.mjs" ]; then \
+		echo "❌ Chýba $(SCRIPTS_DIR)/new_knife.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
+	fi
+	@FOLDER="docs/sk/KNIFES/$$(echo $(id) | tr 'A-Z' 'a-z')-*"; \
+	if compgen -G "$$FOLDER" > /dev/null; then \
+		echo "❌ KNIFE priečinok pre $(id) už existuje ($$FOLDER). Ukončujem."; exit 1; \
+	fi
+	@TITLE="$(title)"; if [ -z "$$TITLE" ]; then TITLE="New Topic"; fi; \
+	node "$(SCRIPTS_DIR)/new_knife.mjs" "$(id)" "$$TITLE"
+
+## Kombinované príkazy
+dev-gen: knifes-gen dev
+build-gen: knifes-gen build

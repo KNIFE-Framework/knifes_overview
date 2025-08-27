@@ -1,10 +1,9 @@
 
-
 # 📘 KNIFE Overview – Detailed View
 
 ### K001 – EA modelovanie a motivácia
 
-**Category**:   
+**Category**:
 **Status**: hotové  
 **Type**: Metodika / Nástroj  
 **Priority**: 🎯  
@@ -12,10 +11,11 @@
 
 **Description**: Systém motivácie pomocou lízaniek a spätnej väzby  
 **Context**: Jedno z prvých TERNO, vzniklo pri návrhu systému motivácie v rámci tímu  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K001)
 
 ---
+
 ### K002 – Git workflow pre EA modely
 
 **Category**: Verzionanie-sdlc  
@@ -26,10 +26,11 @@
 
 **Description**: Multirelease stratégie, LemonTree, merge politiky  
 **Context**: Založené na reálnej potrebe riešiť multirelease workflow pre EA  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K002)
 
 ---
+
 ### K003 – LibreOffice + Python integrácia
 
 **Category**: Platformy  
@@ -40,10 +41,11 @@
 
 **Description**: Skriptovanie v LO cez Python a venv izolácie  
 **Context**: Reakcia na požiadavku na moderný vývoj v LibreOffice – Python/venv  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K003)
 
 ---
+
 ### K004 – Docker pre študentov (K12)
 
 **Category**: Technologie  
@@ -54,10 +56,11 @@
 
 **Description**: Zjednodušené návody a obrázky pre začiatočníkov  
 **Context**: Vzniklo ako návrh edukačného materiálu pri tvorbe kurzov pre Docker  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K004)
 
 ---
+
 ### K005 – BaZi pre racionálne duše
 
 **Category**: RiverOfMyLife  
@@ -68,13 +71,14 @@
 
 **Description**: Sebapoznanie cez dátum a čas narodenia (BaZi)  
 **Context**: Záznam vznikol počas diskusie o TCM a racionálnom prístupe k BaZi  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K005)
 
 ---
+
 ### K006 – Tímová správa práv v Gitea
 
-**Category**:   
+**Category**:
 **Status**: pripomenúť  
 **Type**: Správa / Práva  
 **Priority**: 📌  
@@ -82,13 +86,14 @@
 
 **Description**: Rozdelenie práv podľa tímov, chránené vetvy, PR politiky  
 **Context**: Zaznamenané počas diskusie o Gitea právach a workflow – T002  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K006)
 
 ---
+
 ### K007 – Helper skript na obrázky v Markdown
 
-**Category**:   
+**Category**:
 **Status**: aktívne  
 **Type**: Automatizácia  
 **Priority**: ⚙️  
@@ -96,13 +101,14 @@
 
 **Description**: Generovanie obrázkových blokov do .md vrátane URL  
 **Context**: Vzniklo pri návrhu Markdown workflow helpera – súvisiace s T007  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K007)
 
 ---
+
 ### K008 – DCMM a DAO – hodnota leadershipu
 
-**Category**:   
+**Category**:
 **Status**: plánované  
 **Type**: Hodnoty / Strategické  
 **Priority**: 🧭  
@@ -110,13 +116,14 @@
 
 **Description**: Sebariadenie, dôvera a samočistiace systémy  
 **Context**: Diskusia o leadership kvalite v rámci strategických tém – T008  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K008)
 
 ---
+
 ### K009 – LinkedIn post engine – AI automatizácia
 
-**Category**:   
+**Category**:
 **Status**: koncept  
 **Type**: Marketing / AI  
 **Priority**: 🧪  
@@ -124,13 +131,14 @@
 
 **Description**: Generovanie postov na LinkedIn z obsahu  
 **Context**: Myšlienka z praxe na LinkedIn, súvis s T009 a zdieľaním obsahu  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K009)
 
 ---
+
 ### K010 – OpenAI klient – vlastná AI komunikácia
 
-**Category**:   
+**Category**:
 **Status**: začiatok  
 **Type**: Vývoj / AI  
 **Priority**: ⚡  
@@ -138,10 +146,11 @@
 
 **Description**: Appka s prepojením na OpenAI API a archív komunikácie  
 **Context**: Začiatok vývoja AI nástroja, súvisí s plánom T018  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K010)
 
 ---
+
 ### K011 – Main.xba šablóna pre LO Basic
 
 **Category**: LO vývoj  
@@ -152,13 +161,14 @@
 
 **Description**: Základná štartovacia knižnica makier v LibreOffice  
 **Context**: Téma makier v LibreOffice – samostatný štartovací modul  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K011)
 
 ---
+
 ### K012 – EA Workflow Add-In – pokročilé šablóny
 
-**Category**:   
+**Category**:
 **Status**: v backlogu  
 **Type**: EA Add-In  
 **Priority**: 📂  
@@ -166,13 +176,14 @@
 
 **Description**: Workflow pre pokročilých analytikov v EA  
 **Context**: Rozšírenie pre EA Add-In v rámci T012  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K012)
 
 ---
+
 ### K013 – ReadOnlyControl v EA – Workflow Add-In
 
-**Category**:   
+**Category**:
 **Status**: koncept  
 **Type**: EA Add-In  
 **Priority**: 🔒  
@@ -180,13 +191,14 @@
 
 **Description**: Obmedzenie práv v EA na základe kontextu a roly  
 **Context**: Doplnok k EA Add-In – konkrétne obmedzenia práv (ReadOnly)  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K013)
 
 ---
+
 ### K014 – Manažér knižníc pre LO Basic
 
-**Category**:   
+**Category**:
 **Status**: návrh  
 **Type**: LibreOffice / Knižnice  
 **Priority**: 📚  
@@ -194,10 +206,11 @@
 
 **Description**: Načítanie a správa knižníc v LO Basic  
 **Context**: Nástroj pre správu LO knižníc – samostatne definovaný  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K014)
 
 ---
+
 ### K015 – LibreOffice Basic → Python migrácia
 
 **Category**: LO Vývoj  
@@ -208,13 +221,14 @@
 
 **Description**: Konverzia VB makier do Python skriptov  
 **Context**: Migrácia z VB do Python – vzniklo počas T003 a T014  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K015)
 
 ---
+
 ### K016 – Helper skript pre LO symbolic link
 
-**Category**:   
+**Category**:
 **Status**: v testovaní  
 **Type**: Skriptovanie / LO  
 **Priority**: 🧪  
@@ -222,13 +236,14 @@
 
 **Description**: Obnova symbolic linku pre user/scripts/  
 **Context**: Podpora pre vývojové prostredie LO – vzniklo počas T015  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K016)
 
 ---
+
 ### K017 – AI-powered TERNO Planner
 
-**Category**:   
+**Category**:
 **Status**: koncept  
 **Type**: Plánovanie / AI  
 **Priority**: 📅  
@@ -236,13 +251,14 @@
 
 **Description**: Nástroj na správu a sledovanie TERNA záznamov  
 **Context**: Zaznamenané počas návrhu plánovania TERNA – prehľadový modul  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K017)
 
 ---
+
 ### K019 – BaZi výpočty – algoritmus, hodiny, kalendár
 
-**Category**:   
+**Category**:
 **Status**: zaradené  
 **Type**: Algoritmika / Osobný rozvoj  
 **Priority**: 🧠  
@@ -250,10 +266,11 @@
 
 **Description**: Výpočtový rámec BaZi v Pythone alebo Exceli, denné a hodinové analýzy, poradca  
 **Context**: Rozšírenie T005 – potreba výpočtu BaZi a hodinovej analýzy  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K019)
 
 ---
+
 ### K020 – LibreOffice ako komunitná platforma
 
 **Category**: LO Platforma pre komunitu  
@@ -264,13 +281,14 @@
 
 **Description**: Podpora LO ako otvoreného, komunitného štandardu pre udržateľné riešenia  
 **Context**: Podpora LO ako komunitného nástroja v rámci T003  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K020)
 
 ---
+
 ### K021 – Princíp udržateľnosti v architektúre
 
-**Category**:   
+**Category**:
 **Status**: koncept  
 **Type**: Metodika / SDLC  
 **Priority**: 🌱  
@@ -278,13 +296,14 @@
 
 **Description**: Architektonické a dizajnové rozhodnutia s ohľadom na stabilitu a dlhodobosť  
 **Context**: Princíp objavený počas reflexie SDLC v T004 a T008  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K021)
 
 ---
+
 ### K022 – TERNO – terapeutické formy učenia
 
-**Category**:   
+**Category**:
 **Status**: plánované  
 **Type**: Edukačné / Kultúrne  
 **Priority**: 🎭  
@@ -292,13 +311,14 @@
 
 **Description**: Satira, emócie a storytelling ako forma výuky a reflektovania reality  
 **Context**: Diskusia o forme učenia počas plánovania T004  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K022)
 
 ---
+
 ### K023 – AI interakcie – časová os a emócie
 
-**Category**:   
+**Category**:
 **Status**: v návrhu  
 **Type**: AI / UX / Sebapoznanie  
 **Priority**: 🧭  
@@ -306,13 +326,14 @@
 
 **Description**: Zaznamenávanie malých interakcií, small-talkov a spätných väzieb pre orientáciu v čase  
 **Context**: Reflexia počas návrhu AI klienta – T018  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K023)
 
 ---
+
 ### K024 – OneNote ako zdroj metadát pre AI
 
-**Category**:   
+**Category**:
 **Status**: v návrhu  
 **Type**: Integrácia / Poznámky  
 **Priority**: 🗃️  
@@ -320,13 +341,14 @@
 
 **Description**: Prepájanie osobného poznámkového systému s AI klientom a projektmi  
 **Context**: Väzba medzi OneNote a projektovým manažmentom – T017  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K024)
 
 ---
+
 ### K025 – Kategorizácia TERNO podľa SDLC a 7D
 
-**Category**:   
+**Category**:
 **Status**: zaradené  
 **Type**: Metodika / Evidencia  
 **Priority**: 📊  
@@ -334,10 +356,11 @@
 
 **Description**: Zaradenie každého TERNO podľa fázy vývoja a vedomostnej disciplíny  
 **Context**: Systematizácia potreby klasifikovať TERNA – vzniklo pri tvorbe SSOT  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K025)
 
 ---
+
 ### K026 – KNIFE Framework pre vývoj a učenie sa (LibreOffice, Python)
 
 **Category**: Framework / Edukačné  
@@ -348,10 +371,11 @@
 
 **Description**: Jednotný rámec pre budovanie, testovanie a učenie sa v malých krokoch pomocou LibreOffice + Python. Každý krok reprezentuje samostatnú jednotku (TERNO), ktorú je možné testovať a spätne dohľadať. Vhodné na výuku aj profesionálny vývoj.  
 **Context**: Pri vývoji Personalised Calendards vznikla potreba vytvorič si „Dieľňu“ pre LO,Projekt 05-LibreOffice, priečinok 01-PersonalisedCalendars/01-Basic-Calendar/4/terno-framework  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K026)
 
 ---
+
 ### K027 – Git For Dummies – Central Concepts
 
 **Category**: Versioning / Git  
@@ -362,24 +386,26 @@
 
 **Description**: Jednoduché vysvetlenie Git základov pre začiatočníkov v GitEA (organizácia, repozitár, working directory, atď.)  
 **Context**: Vzniklo ako základný materiál pre školenie GitEA procesov a tímovú prácu  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K027)
 
 ---
+
 ### K028 – Context Aware System Ontology, Approach
 
 **Category**: CASO-CASA  
 **Status**: v príprave  
 **Type**: Metodika/Framework  
-**Priority**:   
+**Priority**:
 **SFIA**: Level 6.7, Enterprise and Business Architecture (STPL, ARCH) Information Strategy (ITSP) Innovation (INOV) Change Implementation (CIPM) Methods and Tools (METL) Organizational Capability Development (OCDV)  – *Expert*
 
-**Description**: Každé riešenie je o kontexte. Neexistuje jeden nástroj na vštky problémy. Toto zasahuje do filozofie. Všetko je riadené spoločnými princípmy, dá sa učiť od starších disciplín a ušetriť čas. TRIZ,   
+**Description**: Každé riešenie je o kontexte. Neexistuje jeden nástroj na vštky problémy. Toto zasahuje do filozofie. Všetko je riadené spoločnými princípmy, dá sa učiť od starších disciplín a ušetriť čas. TRIZ,
 **Context**: 9.5. som sa opýtal na Orchideu, koľko má vlastne lupienkov…. Vznikol z toho koncept CASO, CASA, a ďalšie dialógy. O TRIZ … Epistemiologii …SFIA,  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K028)
 
 ---
+
 ### K029 – Prostredie vývojové python pre LO
 
 **Category**: Platformy=OOODEV 4 LO  
@@ -390,10 +416,11 @@
 
 **Description**: Profi prostredie pre pyhton dev v LO, OOODEV  
 **Context**: Po nekonecnych konfiguraciach som poziadal GPT nech najde profi riesenie. Doporucil OOPDEV, tak to idem overit  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K029)
 
 ---
+
 ### K030 – Príbeh poznania SDLC
 
 **Category**: GitHUB pages – Edu  
@@ -404,10 +431,11 @@
 
 **Description**: Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisať a bolo by to v kontexte KM, SDLC  
 **Context**: Priprava FIIT, odchad z 365, potreba za zviditelnit a pripadne aj zarobit, dotiahnut projekty, produkty  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K030)
 
 ---
+
 ### K031 – „Document-as-Code“ framework
 
 **Category**: SDLC framework  
@@ -418,10 +446,11 @@
 
 **Description**: Tvorba dokumentov ako SDLC proces. Diplomovky, sprievodná dokumentácia pre zákazníklov, ….  
 **Context**: Pri vytvaraní frameworku pre publikovanie na LI, PT, YT sme dosli k tomuto riešeniu na GITHUB ako Pages….  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K031)
 
 ---
+
 ### K032 – „Enterprise Document-integrated SDLC“
 
 **Category**: SDLC framework / Release management  
@@ -432,10 +461,11 @@
 
 **Description**: Zavedenie Git-based dokumentačného frameworku pre prepojenie požiadaviek, rozhodnutí a architektúr naprieč SDLC vo firemnom prostredí s množstvom stakeholderov, JIRA taskov, externých dodávateľov a zložitým change manažmentom.  
 **Context**: Zistenie, že dokumenty, ktoré ovplyvňujú produkt a organizáciu, musia byť verzované a auditovateľné ako kód. Git a Pages umožňujú prepojenie decision trailu s produktovými releasmi.  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K032)
 
 ---
+
 ### K033 – Smalltalk ako nástroj flowu a kontextu
 
 **Category**: Smalltalk ako nástroj flow a kontextu  
@@ -444,12 +474,13 @@
 **Priority**: 🔥🔥  
 **SFIA**: Level ,  – **
 
-**Description**:   
-**Context**:   
-**Tags**:   
+**Description**:
+**Context**:
+**Tags**:
 **Link**: [🔗](#TODO/K033)
 
 ---
+
 ### K033 – Smalltalk ako nástroj flowu a kontextu
 
 **Category**: Psychológia práce / Kontext / Kultúra tímu  
@@ -464,6 +495,7 @@
 **Link**: [🔗](#TODO/K033)
 
 ---
+
 ### K036 – Pracovno, finančný ekosystém
 
 **Category**: Profesia Architekt urbanista na Slovensku  
@@ -474,24 +506,26 @@
 
 **Description**: Absolventi architektúry už počas štúdia sú selektovaní  z komerčných ateliérov. Ponúkajú im brikády, prípadne dohody o vykonaní práce, za cenu nekvalifikovaných robotníkov.Po skončení univerzity, sa študenti dostávajú do role živnostníkov, ale rozprávajú sa s nimi ako zo zamestnancami.Je potrebné mladým ľuďom jednoduchým jazykom vysvetliť kontext Slovenského práva, akými zákonmi sa riadi a ako si majú vybrať akou formou budú spolupracovať.  
 **Context**: S dcérou, ktorá končí arhitektúru sa rozprávame o budúcnosti. Z rozhovorou cítim, že mladí architekti nemajú správne informácie a znalosti o právnom, ekonomickom a finančnom kontexte svojho statusu voči partnerom v branži.  
-**Tags**: Pracovné právo   
+**Tags**: Pracovné právo
 **Link**: [🔗](#TODO/K036)
 
 ---
+
 ### K037 – Context Aware Solutions / paradigma, solution
 
 **Category**: CAS-ContextAwareSolutions  
 **Status**: inprogress  
-**Type**:   
+**Type**:
 **Priority**: Vysoka  
 **SFIA**: Level ,  – **
 
-**Description**:   
+**Description**:
 **Context**: postupne, ako som si robil kazno ako bude cely ekosystem vyzerat, som prisiel na staru myslienku Kontext je klucovy…  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K037)
 
 ---
+
 ### K038 – Ako si vyrobit automaticke nastavovanie SSL
 
 **Category**: SSL certificates DIY  
@@ -502,10 +536,11 @@
 
 **Description**: Pre FIIT PROLABORATE potrebujem SSL certifikaty, ako pre zakaznikov ako Dusan  
 **Context**: Pri obnovovani SSL certifkatov som zabijal kopec casu, teraz mam script  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K038)
 
 ---
+
 ### K039 – Sémantické a kontextove vyhľadávanie nad GitHUB
 
 **Category**: „Advanced GitHub KM Layer“  
@@ -516,33 +551,35 @@
 
 **Description**: Nestaci mat len data a informacie, je nevyhnutne ich spajat a dotazovat sa  
 **Context**: Pocas pripravy struktury CAS , KNIFE licencii, biznis modelu som dosiel na chybajucu vlastnost=kontextove vyhladavanie nad GITOM  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K039)
 
 ---
+
 ### K040 – Migracia Joomla -->GitHUB MkDocs
 
 **Category**: Publishing  
 **Status**: Init  
 **Type**: Publishing  
 **Priority**: Middle  
-**SFIA**: Level ,  – 
+**SFIA**: Level ,  –
 
 **Description**: Zachovať históriu kurzu (2017–2025), udržať všetko v jednom hlavnom repozitári  
 **Context**: Pocas pripravy STH-SDLC 2025-2026 a pocas skumania GitHUB Sites, MkDocs som dospel k nazoru, ze by bolo suber premigrovat Migrácia učebných materiálov zo starého CMS (Joomla) do modernej dokumentačnej platformy  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K040)
 
 ---
+
 ### K041 – GitHUB Education Framework
 
 **Category**: Education Framework  
 **Status**: init  
 **Type**: Education Framework  
 **Priority**: Middle  
-**SFIA**: (doplníme po validácii) – Learning-based / Methods &  Tools 
+**SFIA**: (doplníme po validácii) – Learning-based / Methods &  Tools
 
-**Description**: Zastrešujúci rámec pre vzdelávacie kurzy na GitHube (GitHub Classroom, Pages, Docs generátory). Definuje zásady, šablóny, publishing flow a metriky. 
+**Description**: Zastrešujúci rámec pre vzdelávacie kurzy na GitHube (GitHub Classroom, Pages, Docs generátory). Definuje zásady, šablóny, publishing flow a metriky.
 Skillmea, SEDUO maju vlastny framework , uvodny trailer, potom odskok do platenej verzie. To iste sa da aj na GitHUB.  
 **Context**: Pri príprave STH2025–2026 sa ukázalo, že GitHub + Pages + generátory poskytujú kompletný, otvorený a bezplatný edukačný stack.
 Pocas pripravy STH2025-2026- som si uvedomil, ze GitHub, HitHUb Class, Sites, MkDOks umoznuju vytvorit cely ekosystem. A za darmo.  
@@ -550,6 +587,7 @@ Pocas pripravy STH2025-2026- som si uvedomil, ze GitHub, HitHUb Class, Sites, Mk
 **Link**: [🔗](#TODO/K041)
 
 ---
+
 ### K042 – SinglePageApplication – Webabased desktop app
 
 **Category**: SPA-Framework  
@@ -564,6 +602,7 @@ Pocas pripravy STH2025-2026- som si uvedomil, ze GitHub, HitHUb Class, Sites, Mk
 **Link**: [🔗](#TODO/K042)
 
 ---
+
 ### K043 – Kontrola odpovedé študentov pomocou API na AI
 
 **Category**: AI based training  
@@ -574,10 +613,11 @@ Pocas pripravy STH2025-2026- som si uvedomil, ze GitHub, HitHUb Class, Sites, Mk
 
 **Description**: Pre veľký počet študento nie je možné kontrolovať odpovede na voľné otázky. AI by mohlo pomôcť.  
 **Context**: Počas prípravy repozitárov pre STH2025 riešim aj kontroly a komunikáciu so študentami. Je toho more, ale AI s API by bolo super.  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K043)
 
 ---
+
 ### K044 – OneDrive backup to external disk on QNAP
 
 **Category**: BACKUP  
@@ -591,10 +631,10 @@ Pocas pripravy STH2025-2026- som si uvedomil, ze GitHub, HitHUb Class, Sites, Mk
  This KNIFE explains how to create a full backup of your OneDrive data in cases where the local disk does not have sufficient capacity to mirror the entire cloud content. When 'Files On-Demand' is enabled, standard tools are unable to copy files – they can at best read their metadata. However, using tools like `rclone`, it becomes possible to back up the cloud directly without needing local mirroring.  
 
 **Context**:
- Microsoft offers cloud storage up to several terabytes, but over time each storage fills up. At that point, you either have to buy more space or clean up existing data. I wanted neither. Since I had enough free capacity on an external disk connected to my QNAP NAS, I decided to create a complete copy of my OneDrive there. I had no idea it wouldn't be a trivial task.   
- 
+ Microsoft offers cloud storage up to several terabytes, but over time each storage fills up. At that point, you either have to buy more space or clean up existing data. I wanted neither. Since I had enough free capacity on an external disk connected to my QNAP NAS, I decided to create a complete copy of my OneDrive there. I had no idea it wouldn't be a trivial task.
+
 **Tags**: backup, cloud, maintenance  
-**Link**: 
+**Link**:
 [K044-Backup_One_Drive](https://github.com/KNIFE-Framework/KNIFE-06-Infrastructure/tree/main/docs/sk/K044-Backup_One_Drive)
 ---
 
@@ -624,11 +664,12 @@ Pocas pripravy STH2025-2026- som si uvedomil, ze GitHub, HitHUb Class, Sites, Mk
 
 **Description**: Mám strašne veľa tém, veľa úloh, ako to manažovať, aby som sa neutopil v nesplnených úlohách, prípadne nezabudol na dôležité témy a neobjavoval ich znova a znova?
 **Context**: Večná téma, ako si evidovať úlohy...  
-**Tags**:   
+**Tags**:
 **Link**: [🔗](#TODO/K053)
 **Date**: 2025-08-10
 
 ---
+
 ### K054 – Docusaurus Advanced Deployment Pipeline
 
 **Category**: Best Practice  
@@ -640,15 +681,17 @@ Pocas pripravy STH2025-2026- som si uvedomil, ze GitHub, HitHUb Class, Sites, Mk
 **Description**: Ako si nastaviť build a deploy tak, aby ťa chránil pred chybami.
 
 Kontrola referencií v Docusaurus/MkDocs:
+
 - **DRY-run**, strict a full link-check, detekcia chýb na začiatku procesu
 - Prevencia „nášľapných mín“ pred buildom
 - Možnosť zaradiť ako QA krok do CI/CD
-**Context**:   
-**Tags**:   
-**Link**: 
+**Context**:
+**Tags**:
+**Link**:
 **Date**: 2025-08-10
 
 ---
+
 ### K055 – Ako obnoviť stav z minulosti?
 
 **Category**: Best Practice  
@@ -658,12 +701,13 @@ Kontrola referencií v Docusaurus/MkDocs:
 **SFIA**: TBD – *TBD*
 
 **Description**: Ako si obnoviť pokašľané súbory? Ak mám v minulosti zachytené dobré údaje, nie je problém sa k nim vrátiť:
+
 - `stash`, `branch`, sandbox, práca mimo main
 - Obnova priečinkov alebo súborov z konkrétneho commitu
 - Praktické situácie, kedy to použiť, a ako sa vyhnúť strate dát
-**Context**:   
-**Tags**:   
-**Link**: 
+**Context**:
+**Tags**:
+**Link**:
 **Date**: 2025-08-10
 
 ---
@@ -677,9 +721,9 @@ Kontrola referencií v Docusaurus/MkDocs:
 **SFIA**: TBD – *TBD*
 
 **Description**: Správa súborov s git podporou.
-**Context**:   
-**Tags**:   
-**Link**: 
+**Context**:
+**Tags**:
+**Link**:
 **Date**: 2025-08-10
 
 ---
@@ -693,9 +737,9 @@ Kontrola referencií v Docusaurus/MkDocs:
 **SFIA**: TBD – *TBD*
 
 **Description**: Automatizovaná kontrola odkazov a referencií pred buildom a deployom, s možnosťou integrácie do CI/CD pipeline.
-**Context**:   
-**Tags**:   
-**Link**: 
+**Context**:
+**Tags**:
+**Link**:
 **Date**: 2025-08-11
 
 ---
@@ -709,13 +753,13 @@ Kontrola referencií v Docusaurus/MkDocs:
 **SFIA**: TBD – *TBD*
 
 **Description**: Postup, ako bezpečne obnoviť starší obsah pomocou sandbox vetvy, git stash a selektívneho checkoutu.
-**Context**:   
-**Tags**:   
-**Link**: 
+**Context**:
+**Tags**:
+**Link**:
 **Date**: 2025-08-11
 
 ---
----
+
 ### K059 – STEM a Makerspace – metodika vzdelávania
 
 **Category**: STEM / Education  
@@ -733,3 +777,29 @@ Vzniklo počas úvah o zapojení STEM metodiky do predmetov „Systémové mysle
 **Tags**: STEM, STEAM, Makerspace, Education, CAA  
 **Link**: [🔗](#TODO/K059)  
 **Date**: 2025-08-24
+
+----
+
+### K060 – Export Draw.io diagramu do A4 PNG
+
+**Category**: User Guide  
+**Status**: done md  
+**Type**: HowTo  
+**Priority**: Medium  
+**Description**: Praktický návod exportu diagramov do A4 PNG/PDF s ostrým výsledkom.  
+**Context**: Príprava materiálov pre prezentácie a publikácie v KNIFE.  
+**Tags**: draw.io, diagrams.net, export, A4, PNG  
+**Link**: [K060-Export-Drawio-diagramu-do-A4-PNG](../docs/sk/KNIFES/K060-Export-Drawio-diagramu-do-A4-PNG)
+---
+
+### K061 – Passkey ako bezpečnostný koncept
+
+**Category**: Security / Identity Management  
+**Status**: draft  
+**Type**: Concept / HowTo  
+**Priority**: High  
+**Description**: FIDO2/WebAuthn náhrada za heslá – „heslo, ktoré neexistuje“.  
+**Context**: Prakticky overené s Google účtom cez Touch ID (passkeys).  
+**Tags**: passkey, FIDO2, authentication, identity  
+**Link**: [K061-Passkey-security-concept-SK](../docs/sk/KNIFES/K061-Passkey-security-concept-SK)
+---

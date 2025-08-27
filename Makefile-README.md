@@ -20,6 +20,25 @@ make quickstart     # pripomenie 3 kroky
 make dev            # lokálny server
 #kód a obsah…
 
+## KNIFES generator (CSV → MD)
+
+> Automatické generovanie KNIFE prehľadov a chýbajúcich Kxxx článkov z CSV exportu (Calc/Excel).
+
+### Rýchly štart
+1) Do repa pridaj priečinok `scripts/` so súbormi:
+   - `scripts/build_knifes.mjs`
+   - `scripts/new_knife.mjs`
+2) CSV export ulož do `data/KNIFE-OVERVIEW-ONLY.csv` (alebo použi vlastnú cestu).
+3) Spusti:
+   - `make knifes-gen` – vygeneruje/aktualizuje prehľady + chýbajúce Kxxx `.md`
+   - `make knife-new id=K062 title="Docusaurus slugs & routing"` – založí nový KNIFE skeleton
+   - `make dev-gen` – (knifes-gen + dev)
+   - `make build-gen` – (knifes-gen + build)
+
+### Poznámky
+- Stĺpce `FolderName`, `SidebarLabel`, `LinkSlug` môžeš nechať prázdne – skript ich dopočíta.
+- Ak `LinkSlug` obsahuje plnú URL (`https://...`), `.md` sa nevytvára a prehľady odkážu externý článok.
+
 ## Worktree: make full-deploy
 
 ## Actions:  git add -A && git commit -m "update" && git push

@@ -6,28 +6,29 @@ const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',
   tagline: 'Context Aware Approach',
   url: 'https://knife-framework.github.io/',
-  baseUrl: '/knifes_overview/',
+  baseUrl: '/knifes_overview/',            // GH Pages repo base – ponechať
   favicon: 'img/favicon.ico',
 
   organizationName: 'KNIFE-Framework',
   projectName: 'knifes_overview',
-  deploymentBranch: 'gh-pages', // voliteľné, ale fajn mať
-  // Viac priateľské defaulty počas migrácie
+  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   onBrokenAnchors: 'warn',
   future: { v4: true },
 
+  // i18n: SK ako default na root, EN pod /en/
   i18n: {
-    defaultLocale: 'sk', // fallback jazyk
-    locales: ['en', 'sk'],
+    defaultLocale: 'sk',
+    locales: ['sk', 'en'],
     localeConfigs: {
-      en: {
-        label: 'English',
-      },
       sk: {
         label: 'Slovensky',
-        path: 'sk',
+        // dôležité: pre defaultLocale NEnastavuj path -> ostane na root-e
+      },
+      en: {
+        label: 'English',
+        path: 'en' // EN bude pod /en/
       },
     },
   },
@@ -38,17 +39,15 @@ const config: Config = {
       {
         docs: {
           path: 'docs',
-          routeBasePath: 'docs',
-          numberPrefixParser: false, // zachová 01., 02. v URL a ID
-          //sidebarPath: require.resolve('./sidebars.ts'),
+          routeBasePath: '/',                // ⬅️ docs sú homepage (so sidebarom)
+          numberPrefixParser: false,
           editCurrentVersion: false,
           editUrl: undefined,
           exclude: ['**/README.migrated.md', '**/README_.md'],
+          // sidebarPath: require.resolve('./sidebars.ts'), // ak nepoužívaš, nechaj zakomentované
         },
         blog: false,
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
+        theme: { customCss: require.resolve('./src/css/custom.css') },
       } satisfies Preset.Options,
     ],
   ],
@@ -59,9 +58,10 @@ const config: Config = {
       title: 'KNIFE',
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png', href: '/', target: '_self' },
       items: [
-        { to: '/', label: 'Home', position: 'left' },
-        { to: '/docs/sk', label: 'Docs (SK)', position: 'left' },
-        { to: '/docs/en', label: 'Docs (EN)', position: 'left' },
+        { to: '/', label: 'Home', position: 'left' }, // SK root
+        { to: '/KNIFES/', label: 'KNIFES (SK)', position: 'left' },
+        { to: '/7Ds/', label: '7Ds (SK)', position: 'left' },
+        { to: '/en/', label: 'Docs (EN)', position: 'left' }, // EN rozcestník
         { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
       ],
     },
@@ -70,9 +70,14 @@ const config: Config = {
       links: [],
       copyright: `© ${new Date().getFullYear()} Context Aware Solutions. Built with Docusaurus.`,
     },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+    prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
+
+    // ⬇️ Sidebar správanie
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true, // 7Ds a iné sa nebudú všetky otvárať naraz
+      },
     },
   } satisfies Preset.ThemeConfig,
 

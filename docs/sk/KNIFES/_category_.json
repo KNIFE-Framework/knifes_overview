@@ -1,0 +1,12 @@
+{
+  "label": "KNIFES-Prehľad",
+  "position": 90,
+  "link": {
+    "type": "generated-index",
+    "title": "KNIFES – prehľad (SK)",
+    "description": "Prehľad všetkých KNIFE mini-príspevkov",
+    "slug": "/KNIFES/"        
+  },
+  "collapsed": true,
+  "collapsible": true
+}

@@ -60,6 +60,10 @@
 | K057 | Management-Reporting | AI Agent na monitoroavanie nákladov OpenGPT | new | now | Reporting nad komunikáciou s OpenGPT formou AI Agenta |  |
 | K058 | Management-Reporting-from the Past | AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie | new | now | Reporting od začiatku komunikácie |  |
 | K059 | STEM / Education | STEM a Makerspace – metodika vzdelávania | init | 🧭 | Education / Framework | 2025-08-24 |
+| ID   | Category              | Short Title                              | Status  | Priority | Type             | Date       | Link |
+|------|-----------------------|------------------------------------------|---------|---------:|------------------|------------|------|
+| K060 | User Guide            | Export Draw.io diagramu do A4 PNG        | done md |   Medium | HowTo            | 2025-08-24 | [K060-Export-Drawio-diagramu-do-A4-PNG](../docs/sk/KNIFES/K060-Export-Drawio-diagramu-do-A4-PNG) |
+| K061 | Security / Identity   | Passkey ako bezpečnostný koncept         | draft   |     High | Concept / HowTo  | 2025-08-27 | [K061-Passkey-security-concept-SK](../docs/sk/KNIFES/K061-Passkey-security-concept-SK) |
 [⬆ Back to 01.D1-Management](../.)
 
 [⬆ Back to 7Ds Dashboard](../../)

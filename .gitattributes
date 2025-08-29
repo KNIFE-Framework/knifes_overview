@@ -4,3 +4,4 @@
 *.yml text
 *.yaml text
 *.json text
+* text=auto eol=lf

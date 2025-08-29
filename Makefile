@@ -43,7 +43,8 @@ DATA_CSV    := data/KNIFE-OVERVIEW-ONLY.csv
         restore-folder restore-file restore-path restore-from-stash-file \
         delete-dotpages \
         actions-status actions-disable actions-enable \
-		quickstart mode doctor next-steps. knifes-gen knife-new dev-gen build-gen   # UX zlepšenie
+		quickstart mode doctor next-steps. knifes-gen knife-new dev-gen build-gen knife-verify \  # UX zlepšenie
+		gen-dry dry-verify
 
 # -------------------------
 # 📌 Help
@@ -75,6 +76,7 @@ help:
 	@echo "  serve               - Lokálne naservíruj statický build"
 	@echo "  knifes-gen          - CSV → MD (prehľady + chýbajúce Kxxx súbory)"
 	@echo "  knife-new           - Rýchly skeleton: make knife-new id=K062 title=\"Name\""
+	@echo "  knife-verify        - Kontrola CSV/docs (duplicitné ID, prázdne názvy, kolízie slugov)"
 	@echo "===== 🔍 Link Checker ====="
 	@echo "  check-links         - DRY-RUN kontrola odkazov v docs/"
 	@echo "  check-links-hard    - Striktná kontrola: spustí build"
@@ -476,3 +478,35 @@ knife-new:
 ## Kombinované príkazy
 dev-gen: knifes-gen dev
 build-gen: knifes-gen build
+
+# -------------------------
+# 🧪 KNIFES verify (consistency checks)
+# -------------------------
+
+## knife-verify: skontroluje CSV + docs (duplicitné ID, prázdne Short Title, kolízie slugov)
+knife-verify:
+	@echo "🔎 Kontrolujem KNIFES CSV a docs..."
+	@if [ ! -f "$(DATA_CSV)" ]; then \
+		echo "❌ Chýba CSV '$(DATA_CSV)'"; exit 1; \
+	fi
+	@# Duplicitné ID v CSV
+	@echo "→ Duplicitné ID v CSV:"
+	@cut -d',' -f1 "$(DATA_CSV)" | grep -E '^K[0-9]{3}' | sort | uniq -d || echo "  ✓ nič nenašiel"
+	@# Prázdne Short Title
+	@echo "→ Prázdne Short Title v CSV:"
+	@awk -F',' 'NR>1 && $$3=="" {print $$1}' "$(DATA_CSV)" || echo "  ✓ nič nenašiel"
+	@# Kolízie slugov v docs/sk/KNIFES
+	@echo "→ Kolízie slugov v docs/sk/KNIFES:"
+	@find docs/sk/KNIFES -type f -name "*.md" -exec grep -H "^slug:" {} \; | cut -d':' -f2- | sort | uniq -d || echo "  ✓ nič nenašiel"
+	@echo "✅ knife-verify hotovo."
+
+
+## Len suchý plán generovania (nič sa nezapisuje)
+gen-dry:
+	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(DATA_CSV)"; fi; \
+	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root . --dry-run
+
+## Dry-verify priamo cez generátor
+dry-verify:
+	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(DATA_CSV)"; fi; \
+	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root . --dry-verify

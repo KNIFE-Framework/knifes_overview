@@ -56,12 +56,13 @@ const config: Config = {
     image: 'img/logo.png',
     navbar: {
       title: 'KNIFE',
-      logo: { alt: 'KNIFE Logo', src: 'img/logo.png', href: '/', target: '_self' },
+      logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },
       items: [
         { to: '/', label: 'Home', position: 'left' }, // SK root
         { to: '/KNIFES/', label: 'KNIFES (SK)', position: 'left' },
         { to: '/7Ds/', label: '7Ds (SK)', position: 'left' },
-        { to: '/en/', label: 'Docs (EN)', position: 'left' }, // EN rozcestník
+        { to: '/', label: 'Docs (SK)', position: 'left' },
+        { to: '/en/', label: 'Docs (EN)', position: 'left' },
         { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
       ],
     },

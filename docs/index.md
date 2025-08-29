@@ -4,22 +4,23 @@ title: KNIFE – Prehľad
 sidebar_label: Home
 ---
 
-# Welcome to the CAA Documentation (Context Aware Approach -)
+# 👋 Vitajte v KNIFE Framework
 
-# KNIFE – Knowledge In Friendly Examples
-#Rýchla navigácia
+**KNIFE – Knowledge In Friendly Examples**  
+Praktické návody, koncepty a skúsenosti zbierané v rámci Context Aware Approach (CAA).
 
+---
 
+## 🔗 Rýchla navigácia na prehľady
 
-[01-Zoznam hrubý ](/docs/sk/7Ds/01.D1-Management/02.Strategy/KNIFEsOverview.md)
+- [📋 Hrubý zoznam](./KNIFES/KNIFEsOverview.md)
+- [📑 Tabuľka s detailmi](./KNIFES/KNIFE_Overview_List.md)
+- [📘 Blogový štýl s detailmi](./KNIFES/KNIFE_Overview_Details.md)
 
-[02-Zoznam s detailami- tabuľka ](/docs/sk/7Ds/01.D1-Management/02.Strategy/KNIFE_Overview_List.md)
+---
 
-[03-Zoznam s detailami -blog](/docs/sk/7Ds/01.D1-Management/02.Strategy/KNIFE_Overview_Details.md)
+## 🌳 Vyber oblasť
 
-
-Vyber oblasť:
-
-- **KNIFES (SK)** – malé návody a koncepty → [/KNIFES/](/KNIFES/)
-- **7Ds (SK)** – metodický strom → [/7Ds/](/7Ds/)
-- **English docs** → [/en/](/en/)
+- **KNIFES (SK)** – malé návody a koncepty → [KNIFES](./KNIFES/)
+- **7Ds (SK)** – metodický strom → [7Ds](./7Ds/)
+- **English docs** → [English version](/en/)

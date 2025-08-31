@@ -1,10 +1,37 @@
 ---
-id: k017-ai-powered-terno-planner
-title: "K017 – AI-powered TERNO Planner"
-slug: /KNIFES/K017-ai-powered-terno-planner/
+id: "K017"
+title: "AI-powered TERNO Planner"
+description: "Nástroj na správu a sledovanie TERNA záznamov"
+status: "koncept"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k017-ai-powered-terno-planner"
 sidebar_label: "K017 – AI-powered TERNO Planner"
-tags: []
+sidebar_position: "17"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K017 – AI-powered TERNO Planner
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Nástroj na správu a sledovanie TERNA záznamov
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

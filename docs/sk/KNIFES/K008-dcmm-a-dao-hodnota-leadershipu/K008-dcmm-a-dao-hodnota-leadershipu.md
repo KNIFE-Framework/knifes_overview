@@ -1,10 +1,37 @@
 ---
-id: k008-dcmm-a-dao-hodnota-leadershipu
-title: "K008 – DCMM a DAO – hodnota leadershipu"
-slug: /KNIFES/K008-dcmm-a-dao-hodnota-leadershipu/
+id: "K008"
+title: "DCMM a DAO – hodnota leadershipu"
+description: "Sebariadenie, dôvera a samočistiace systémy"
+status: "plánované"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k008-dcmm-a-dao-hodnota-leadershipu"
 sidebar_label: "K008 – DCMM a DAO – hodnota leadershipu"
-tags: []
+sidebar_position: "8"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K008 – DCMM a DAO – hodnota leadershipu
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Sebariadenie, dôvera a samočistiace systémy
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

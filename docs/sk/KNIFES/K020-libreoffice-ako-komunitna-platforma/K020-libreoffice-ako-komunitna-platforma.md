@@ -1,10 +1,37 @@
 ---
-id: k020-libreoffice-ako-komunitna-platforma
-title: "K020 – LibreOffice ako komunitná platforma"
-slug: /KNIFES/K020-libreoffice-ako-komunitna-platforma/
+id: "K020"
+title: "LibreOffice ako komunitná platforma"
+description: "Podpora LO ako otvoreného, komunitného štandardu pre udržateľné riešenia"
+status: "koncept"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k020-libreoffice-ako-komunitna-platforma"
 sidebar_label: "K020 – LibreOffice ako komunitná platforma"
-tags: []
+sidebar_position: "20"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K020 – LibreOffice ako komunitná platforma
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Podpora LO ako otvoreného, komunitného štandardu pre udržateľné riešenia
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

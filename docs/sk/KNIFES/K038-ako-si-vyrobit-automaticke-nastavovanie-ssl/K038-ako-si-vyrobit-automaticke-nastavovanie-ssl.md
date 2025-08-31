@@ -1,10 +1,37 @@
 ---
-id: k038-ako-si-vyrobit-automaticke-nastavovanie-ssl
-title: "K038 – Ako si vyrobit automaticke nastavovanie SSL"
-slug: /KNIFES/K038-ako-si-vyrobit-automaticke-nastavovanie-ssl/
+id: "K038"
+title: "Ako si vyrobit automaticke nastavovanie SSL"
+description: "Pre FIIT PROLABORATE potrebujem SSL certifikaty, ako pre zakaznikov ako Dusan"
+status: "finished"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k038-ako-si-vyrobit-automaticke-nastavovanie-ssl"
 sidebar_label: "K038 – Ako si vyrobit automaticke nastavovanie SSL"
-tags: []
+sidebar_position: "38"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K038 – Ako si vyrobit automaticke nastavovanie SSL
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Pre FIIT PROLABORATE potrebujem SSL certifikaty, ako pre zakaznikov ako Dusan
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

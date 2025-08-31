@@ -1,10 +1,37 @@
 ---
-id: k054-docusaurus-advanced-deployment-pipeline
-title: "K054 – Docusaurus Advanced Deployment Pipeline"
-slug: /KNIFES/K054-docusaurus-advanced-deployment-pipeline/
+id: "K054"
+title: "Docusaurus Advanced Deployment Pipeline"
+description: "Kontrola referencií v Docusaurus/MkDocs"
+status: "new"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k054-docusaurus-advanced-deployment-pipeline"
 sidebar_label: "K054 – Docusaurus Advanced Deployment Pipeline"
-tags: []
+sidebar_position: "54"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K054 – Docusaurus Advanced Deployment Pipeline
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Kontrola referencií v Docusaurus/MkDocs
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

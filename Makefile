@@ -74,9 +74,6 @@ help:
 	@echo "  clean               - Vyčisti cache a build adresáre"
 	@echo "  build               - Striktný build (onBrokenLinks: throw)"
 	@echo "  serve               - Lokálne naservíruj statický build"
-	@echo "  knifes-gen          - CSV → MD (prehľady + chýbajúce Kxxx súbory)"
-	@echo "  knife-new           - Rýchly skeleton: make knife-new id=K062 title=\"Name\""
-	@echo "  knife-verify        - Kontrola CSV/docs (duplicitné ID, prázdne názvy, kolízie slugov)"
 	@echo "===== 🔍 Link Checker ====="
 	@echo "  check-links         - DRY-RUN kontrola odkazov v docs/"
 	@echo "  check-links-hard    - Striktná kontrola: spustí build"
@@ -94,9 +91,16 @@ help:
 	@echo "  full-deploy         - check-worktree + push-main + build + copy + commit"
 	@echo "===== 🔐 Autentikácia ====="
 	@echo "  help-auth           - Ako nastaviť HTTPS/SSH prístup (PAT/Keychain/SSH)"
-	@echo "===== 🧩 Generátor – kombinované ====="
+	@echo "===== 🧩 KNIFE Generátor – kombinované ====="
 	@echo "  dev-gen             - knifes-gen + dev"
 	@echo "  build-gen           - knifes-gen + build"
+	@echo "  knifes-gen          - CSV → MD (prehľady + chýbajúce Kxxx súbory)"
+	@echo "  knife-new           - Rýchly skeleton: make knife-new id=K062 title=\"Name\""
+	@echo "  knife-verify        - Kontrola CSV/docs (duplicitné ID, prázdne názvy, kolízie slugov)"
+	@echo "  gen-dry           - Suchý plán generovania (nič sa nezapisuje)"
+	@echo "  dry-verify        -- Dry-verify priamo cez generátor"
+
+
 
 help-auth:
 	@echo "===== 🔐 Autentikácia pre Worktree deploy ====="
@@ -104,7 +108,7 @@ help-auth:
 	@echo "  git remote -v   # má byť https://"
 	@echo "  git config --global credential.helper osxkeychain"
 	@echo "  pri prvom 'git push' zadaj PAT -> uloží sa do Keychain"
-	@echo "SSH (alternatíva):"
+	@echo "  SSH (alternatíva):"
 	@echo "  ssh-keygen -t ed25519 -C 'tvoj@email'"
 	@echo "  eval \"$$(/usr/bin/ssh-agent -s)\" && ssh-add $$HOME/.ssh/id_ed25519"
 	@echo "  nahraj verejný kľúč do GitHub (Settings -> SSH and GPG keys)"

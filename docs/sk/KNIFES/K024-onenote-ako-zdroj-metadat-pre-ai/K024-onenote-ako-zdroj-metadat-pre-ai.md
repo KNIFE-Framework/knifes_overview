@@ -1,10 +1,37 @@
 ---
-id: k024-onenote-ako-zdroj-metadat-pre-ai
-title: "K024 – OneNote ako zdroj metadát pre AI"
-slug: /KNIFES/K024-onenote-ako-zdroj-metadat-pre-ai/
+id: "K024"
+title: "OneNote ako zdroj metadát pre AI"
+description: "Prepájanie osobného poznámkového systému s AI klientom a projektmi"
+status: "v návrhu"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k024-onenote-ako-zdroj-metadat-pre-ai"
 sidebar_label: "K024 – OneNote ako zdroj metadát pre AI"
-tags: []
+sidebar_position: "24"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K024 – OneNote ako zdroj metadát pre AI
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Prepájanie osobného poznámkového systému s AI klientom a projektmi
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

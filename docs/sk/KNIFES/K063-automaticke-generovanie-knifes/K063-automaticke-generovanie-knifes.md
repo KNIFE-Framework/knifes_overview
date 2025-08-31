@@ -1,10 +1,37 @@
 ---
-id: k063-automaticke-generovanie-knifes
-title: "K063 – Automatické generovanie KNIFES"
-slug: /KNIFES/K063-automaticke-generovanie-knifes/
+id: "K063"
+title: "Automatické generovanie KNIFES"
+description: "Ako používať automatizáciu pri generovaní KNIFES"
+status: "new"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k063-automaticke-generovanie-knifes"
 sidebar_label: "K063 – Automatické generovanie KNIFES"
-tags: []
+sidebar_position: "63"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K063 – Automatické generovanie KNIFES
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Ako používať automatizáciu pri generovaní KNIFES
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

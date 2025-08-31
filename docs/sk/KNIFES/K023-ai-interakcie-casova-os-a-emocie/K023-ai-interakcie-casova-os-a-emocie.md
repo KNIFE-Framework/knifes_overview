@@ -1,10 +1,37 @@
 ---
-id: k023-ai-interakcie-casova-os-a-emocie
-title: "K023 – AI interakcie – časová os a emócie"
-slug: /KNIFES/K023-ai-interakcie-casova-os-a-emocie/
+id: "K023"
+title: "AI interakcie – časová os a emócie"
+description: "Zaznamenávanie malých interakcií, small-talkov a spätných väzieb pre orientáciu v čase"
+status: "v návrhu"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k023-ai-interakcie-casova-os-a-emocie"
 sidebar_label: "K023 – AI interakcie – časová os a emócie"
-tags: []
+sidebar_position: "23"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K023 – AI interakcie – časová os a emócie
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Zaznamenávanie malých interakcií, small-talkov a spätných väzieb pre orientáciu v čase
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

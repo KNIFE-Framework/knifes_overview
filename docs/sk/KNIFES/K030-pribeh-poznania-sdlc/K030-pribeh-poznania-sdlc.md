@@ -1,10 +1,37 @@
 ---
-id: k030-pribeh-poznania-sdlc
-title: "K030 – Príbeh poznania SDLC"
-slug: /KNIFES/K030-pribeh-poznania-sdlc/
+id: "K030"
+title: "Príbeh poznania SDLC"
+description: "Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisať a bolo by to v kontexte KM, SDLC"
+status: "v riešení"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k030-pribeh-poznania-sdlc"
 sidebar_label: "K030 – Príbeh poznania SDLC"
-tags: []
+sidebar_position: "30"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K030 – Príbeh poznania SDLC
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisať a bolo by to v kontexte KM, SDLC
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

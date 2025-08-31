@@ -1,4 +1,5 @@
 00.01.Navigations,,List of Knowledge Contributions – KNIFES,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
 ID,Category,Short Title,Status,Type,Priority,Description,Date of Record,"Context, Origin, Why it was initiated?",Technology,SFIA – Level,SFIA – Domain (?),SFIA – Maturity,Related KNIFE,Tags,Potential Outputs,Owner,Comment
 K001,,EA modelovanie a motivácia,hotové,Metodika / Nástroj,🎯,Systém motivácie pomocou lízaniek a spätnej väzby,01.03.2024,"Jedno z prvých TERNO, vzniklo pri návrhu systému motivácie v rámci tímu",,2,Business Analysis / Modelling,Diagrammatic,,,,,
 K002,Verzionanie-sdlc,Git workflow pre EA modely,v procese,Integrácia,🔥,"Multirelease stratégie, LemonTree, merge politiky",04.03.2024,Založené na reálnej potrebe riešiť multirelease workflow pre EA,,3,Configuration Management,Tool-based,,,,,

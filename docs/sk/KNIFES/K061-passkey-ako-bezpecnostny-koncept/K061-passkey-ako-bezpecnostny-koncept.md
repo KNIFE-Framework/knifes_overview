@@ -1,10 +1,37 @@
 ---
-id: k061-passkey-ako-bezpecnostny-koncept
-title: "K061 – Passkey ako bezpečnostný koncept"
-slug: /KNIFES/K061-passkey-ako-bezpecnostny-koncept/
+id: "K061"
+title: "Passkey ako bezpečnostný koncept"
+description: "Ako funguje keypass?"
+status: "new"
+tags: ["KNIFE"]
+slug: "/sk/knifes/k061-passkey-ako-bezpecnostny-koncept"
 sidebar_label: "K061 – Passkey ako bezpečnostný koncept"
-tags: []
+sidebar_position: "61"
+locale: "sk"
+provenance:
+  platform: "github"
+  org: "SystemThinking"
+  project: "KNIFE_Overview"
+---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+# KNIFE K061 – Passkey ako bezpečnostný koncept
+
+## 🎯 Čo rieši (účel, cieľ)
+
+## 🧩 Ako to rieši (princíp)
+
+## 🧪 Ako to použiť (aplikácia)
+
 ---
 
-Ako funguje keypass?
+## ⚡ Rýchly návod (Top)
 
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

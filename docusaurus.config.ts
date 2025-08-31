@@ -59,7 +59,7 @@ const config: Config = {
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },
       items: [
         { to: '/', label: 'Home', position: 'left' }, // SK root
-        { to: '/docs/sk/knifes/', label: 'KNIFES (SK)', position: 'left' },
+        { to: '/sk/knifes/', label: 'KNIFES (SK)', position: 'left' },
         { to: '/7Ds/', label: '7Ds (SK)', position: 'left' },
         { to: '/', label: 'Docs (SK)', position: 'left' },
         { to: '/en/', label: 'Docs (EN)', position: 'left' },

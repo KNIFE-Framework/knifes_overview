@@ -8,10 +8,6 @@ slug: "/sk/knifes/k059-stem-a-makerspace-ako-metodika-vzdelavania"
 sidebar_label: "K059 – STEM a Makerspace ako metodika vzdelávania"
 sidebar_position: "59"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

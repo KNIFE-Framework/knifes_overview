@@ -8,10 +8,6 @@ slug: "/sk/knifes/k032-enterprise-document-integrated-sdlc"
 sidebar_label: "K032 – „Enterprise Document-integrated SDLC“"
 sidebar_position: "32"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

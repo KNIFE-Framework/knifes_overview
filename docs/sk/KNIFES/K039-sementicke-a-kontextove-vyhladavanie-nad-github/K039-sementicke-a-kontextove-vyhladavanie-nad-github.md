@@ -8,10 +8,6 @@ slug: "/sk/knifes/k039-sementicke-a-kontextove-vyhladavanie-nad-github"
 sidebar_label: "K039 – Sementicke a kontextove vyhladavanie nad GitHUB"
 sidebar_position: "39"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

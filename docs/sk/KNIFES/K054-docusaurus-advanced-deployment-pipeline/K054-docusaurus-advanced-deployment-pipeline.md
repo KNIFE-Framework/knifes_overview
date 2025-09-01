@@ -8,10 +8,6 @@ slug: "/sk/knifes/k054-docusaurus-advanced-deployment-pipeline"
 sidebar_label: "K054 – Docusaurus Advanced Deployment Pipeline"
 sidebar_position: "54"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

@@ -8,10 +8,6 @@ slug: "/sk/knifes/k025-kategorizacia-terno-podla-sdlc-a-7d"
 sidebar_label: "K025 – Kategorizácia TERNO podľa SDLC a 7D"
 sidebar_position: "25"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

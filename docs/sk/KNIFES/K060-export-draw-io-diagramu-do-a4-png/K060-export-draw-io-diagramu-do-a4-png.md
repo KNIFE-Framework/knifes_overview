@@ -8,10 +8,6 @@ slug: "/sk/knifes/k060-export-draw-io-diagramu-do-a4-png"
 sidebar_label: "K060 – Export Draw.io diagramu do A4 PNG"
 sidebar_position: "60"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

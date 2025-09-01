@@ -8,10 +8,6 @@ slug: "/sk/knifes/k019-bazi-vypocty-algoritmus-hodiny-kalendar"
 sidebar_label: "K019 – BaZi výpočty – algoritmus, hodiny, kalendár"
 sidebar_position: "19"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

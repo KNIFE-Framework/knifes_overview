@@ -92,13 +92,13 @@ help:
 	@echo "===== 🔐 Autentikácia ====="
 	@echo "  help-auth           - Ako nastaviť HTTPS/SSH prístup (PAT/Keychain/SSH)"
 	@echo "===== 🧩 KNIFE Generátor – kombinované ====="
-	@echo "  dev-gen             - knifes-gen + dev"
-	@echo "  build-gen           - knifes-gen + build"
-	@echo "  knifes-gen          - CSV → MD (prehľady + chýbajúce Kxxx súbory)"
-	@echo "  knife-new           - Rýchly skeleton: make knife-new id=K062 title=\"Name\""
-	@echo "  knife-verify        - Kontrola CSV/docs (duplicitné ID, prázdne názvy, kolízie slugov)"
-	@echo "  gen-dry           - Suchý plán generovania (nič sa nezapisuje)"
-	@echo "  dry-verify        -- Dry-verify priamo cez generátor"
+	@echo "  dev-gen             - Makrocieľ: knifes-gen + dev (vygeneruje MD z CSV a spraví lokálny dev build/serve)."
+	@echo "  build-gen           - Makrocieľ: knifes-gen + build (vygeneruje MD a spraví produkčný build)."
+	@echo "  knifes-gen          - Generuje/aktualizuje MD súbory zo CSV (prehľady + chýbajúce Kxxx skeletony)."
+	@echo "  knife-new           - id=K062 title=\"...\" – rýchlo vytvorí skeleton pre novú KNIFE (adresár, súbor, frontmatter)."
+	@echo "  knife-verify        - Validácie CSV/docs (duplicitné ID, prázdne názvy, kolízie slugov, chýbajúce súbory atď.)."
+	@echo "  gen-dry             - „suchý“ plán generovania (čo by sa vytvorilo/aktualizovalo), ale nič nezapisuje."
+	@echo "  dry-verify          - skrátená verzia validácií cez generátor (nezasahuje do súborov)."
 
 
 

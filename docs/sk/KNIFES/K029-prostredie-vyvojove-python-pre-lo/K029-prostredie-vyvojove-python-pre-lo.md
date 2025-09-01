@@ -8,10 +8,6 @@ slug: "/sk/knifes/k029-prostredie-vyvojove-python-pre-lo"
 sidebar_label: "K029 – Prostredie vývojové python pre LO"
 sidebar_position: "29"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

@@ -8,10 +8,6 @@ slug: "/sk/knifes/k013-readonlycontrol-v-ea-workflow-add-in"
 sidebar_label: "K013 – ReadOnlyControl v EA – Workflow Add-In"
 sidebar_position: "13"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

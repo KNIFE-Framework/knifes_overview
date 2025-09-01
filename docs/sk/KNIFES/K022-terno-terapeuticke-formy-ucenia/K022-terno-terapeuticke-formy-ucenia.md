@@ -8,10 +8,6 @@ slug: "/sk/knifes/k022-terno-terapeuticke-formy-ucenia"
 sidebar_label: "K022 – TERNO – terapeutické formy učenia"
 sidebar_position: "22"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

@@ -3,15 +3,11 @@ id: "K064"
 title: "GA4, GTN, UTM"
 description: "Ako funguje AG4, TGM a UTM?"
 status: "new"
-tags: ["KNIFE"]
+tags: ["KNIFE", "images"]
 slug: "/sk/knifes/k064-ga4-gtn-utm"
 sidebar_label: "K064 – GA4, GTN, UTM"
 sidebar_position: "64"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

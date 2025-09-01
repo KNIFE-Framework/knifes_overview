@@ -8,10 +8,6 @@ slug: "/sk/knifes/k043-kontrola-odpovede-studentov-pomocou-api-na-ai"
 sidebar_label: "K043 – Kontrola odpovedé študentov pomocou API na AI"
 sidebar_position: "43"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

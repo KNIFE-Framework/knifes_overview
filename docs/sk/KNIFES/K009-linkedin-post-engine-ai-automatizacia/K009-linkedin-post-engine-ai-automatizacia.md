@@ -8,10 +8,6 @@ slug: "/sk/knifes/k009-linkedin-post-engine-ai-automatizacia"
 sidebar_label: "K009 – LinkedIn post engine – AI automatizácia"
 sidebar_position: "9"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

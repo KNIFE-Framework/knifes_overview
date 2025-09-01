@@ -8,10 +8,6 @@ slug: "/sk/knifes/k004-docker-pre-studentov-k12"
 sidebar_label: "K004 – Docker pre študentov (K12)"
 sidebar_position: "4"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

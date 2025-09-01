@@ -8,10 +8,6 @@ slug: "/sk/knifes/k041-github-education-framework"
 sidebar_label: "K041 – GitHUB Education Framework"
 sidebar_position: "41"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

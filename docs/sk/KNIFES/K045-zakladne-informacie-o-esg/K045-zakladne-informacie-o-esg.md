@@ -8,10 +8,6 @@ slug: "/sk/knifes/k045-zakladne-informacie-o-esg"
 sidebar_label: "K045 – Základné informácie o ESG"
 sidebar_position: "45"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

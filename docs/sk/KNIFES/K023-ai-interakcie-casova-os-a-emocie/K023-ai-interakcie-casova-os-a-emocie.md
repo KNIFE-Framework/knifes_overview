@@ -8,10 +8,6 @@ slug: "/sk/knifes/k023-ai-interakcie-casova-os-a-emocie"
 sidebar_label: "K023 – AI interakcie – časová os a emócie"
 sidebar_position: "23"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

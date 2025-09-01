@@ -1,17 +1,13 @@
 ---
 id: "K056"
 title: "Central Panel for GIT – SDLC Git Management Makefile"
-description: "•\\tJeden Makefile ako „single point of control“"
+description: "•\\\\tJeden Makefile ako „single point of control“"
 status: "done md"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k056-central-panel-for-git-sdlc-git-management-makefile"
 sidebar_label: "K056 – Central Panel for GIT – SDLC Git Management Makefile"
 sidebar_position: "56"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

@@ -8,10 +8,6 @@ slug: "/sk/knifes/k015-libreoffice-basic-python-migracia"
 sidebar_label: "K015 – LibreOffice Basic → Python migrácia"
 sidebar_position: "15"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

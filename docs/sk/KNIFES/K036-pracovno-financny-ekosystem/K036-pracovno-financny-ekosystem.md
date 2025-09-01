@@ -8,10 +8,6 @@ slug: "/sk/knifes/k036-pracovno-financny-ekosystem"
 sidebar_label: "K036 – Pracovno, finančný ekosystém"
 sidebar_position: "36"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

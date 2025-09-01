@@ -8,10 +8,6 @@ slug: "/sk/knifes/k065-makefile-for-knife-ecosystem-for-mac-windows-linux"
 sidebar_label: "K065 – MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
 sidebar_position: "65"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

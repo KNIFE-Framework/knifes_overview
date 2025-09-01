@@ -8,10 +8,6 @@ slug: "/sk/knifes/k051-google-analytics-fundamentals"
 sidebar_label: "K051 – Google analytics – Fundamentals"
 sidebar_position: "51"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

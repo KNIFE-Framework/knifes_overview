@@ -8,10 +8,6 @@ slug: "/sk/knifes/k021-princip-udrzatelnosti-v-architekture"
 sidebar_label: "K021 – Princíp udržateľnosti v architektúre"
 sidebar_position: "21"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

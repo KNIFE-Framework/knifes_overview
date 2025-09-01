@@ -8,10 +8,6 @@ slug: "/sk/knifes/k040-migracia-joomla-github-mkdocs"
 sidebar_label: "K040 – Migracia Joomla -->GitHUB MkDocs"
 sidebar_position: "40"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

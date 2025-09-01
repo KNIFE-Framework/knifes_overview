@@ -8,10 +8,6 @@ slug: "/sk/knifes/k055-ako-obnovit-stav-z-minulosti"
 sidebar_label: "K055 – Ako obnoviť stav z minulosti?"
 sidebar_position: "55"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

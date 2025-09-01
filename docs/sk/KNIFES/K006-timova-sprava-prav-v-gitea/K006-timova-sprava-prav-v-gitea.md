@@ -8,10 +8,6 @@ slug: "/sk/knifes/k006-timova-sprava-prav-v-gitea"
 sidebar_label: "K006 – Tímová správa práv v Gitea"
 sidebar_position: "6"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

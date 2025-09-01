@@ -8,10 +8,6 @@ slug: "/sk/knifes/k010-openai-klient-vlastna-ai-komunikacia"
 sidebar_label: "K010 – OpenAI klient – vlastná AI komunikácia"
 sidebar_position: "10"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

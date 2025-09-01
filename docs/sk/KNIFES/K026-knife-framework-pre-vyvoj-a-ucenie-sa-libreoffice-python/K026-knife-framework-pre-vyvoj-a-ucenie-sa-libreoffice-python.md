@@ -8,10 +8,6 @@ slug: "/sk/knifes/k026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python"
 sidebar_label: "K026 – KNIFE Framework pre vývoj a učenie sa (LibreOffice, Python)"
 sidebar_position: "26"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

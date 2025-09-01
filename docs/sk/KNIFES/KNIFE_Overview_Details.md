@@ -20,8 +20,8 @@
 - **sidebar_label**: `K001 – EA modelovanie a motivácia`  
 - **sidebar_position**: `1`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -45,8 +45,8 @@
 - **sidebar_label**: `K002 – Git workflow pre EA modely`  
 - **sidebar_position**: `2`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -70,8 +70,8 @@
 - **sidebar_label**: `K003 – LibreOffice + Python integrácia`  
 - **sidebar_position**: `3`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -95,8 +95,8 @@
 - **sidebar_label**: `K004 – Docker pre študentov (K12)`  
 - **sidebar_position**: `4`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -120,8 +120,8 @@
 - **sidebar_label**: `K005 – BaZi pre racionálne duše`  
 - **sidebar_position**: `5`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -145,8 +145,8 @@
 - **sidebar_label**: `K006 – Tímová správa práv v Gitea`  
 - **sidebar_position**: `6`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -170,8 +170,8 @@
 - **sidebar_label**: `K007 – Helper skript na obrázky v Markdown`  
 - **sidebar_position**: `7`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -195,8 +195,8 @@
 - **sidebar_label**: `K008 – DCMM a DAO – hodnota leadershipu`  
 - **sidebar_position**: `8`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -220,8 +220,8 @@
 - **sidebar_label**: `K009 – LinkedIn post engine – AI automatizácia`  
 - **sidebar_position**: `9`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -245,8 +245,8 @@
 - **sidebar_label**: `K010 – OpenAI klient – vlastná AI komunikácia`  
 - **sidebar_position**: `10`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -270,8 +270,8 @@
 - **sidebar_label**: `K011 – Main.xba šablóna pre LO Basic`  
 - **sidebar_position**: `11`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -295,8 +295,8 @@
 - **sidebar_label**: `K012 – EA Workflow Add-In – pokročilé šablóny`  
 - **sidebar_position**: `12`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -320,8 +320,8 @@
 - **sidebar_label**: `K013 – ReadOnlyControl v EA – Workflow Add-In`  
 - **sidebar_position**: `13`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -345,8 +345,8 @@
 - **sidebar_label**: `K014 – Manažér knižníc pre LO Basic`  
 - **sidebar_position**: `14`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -370,8 +370,8 @@
 - **sidebar_label**: `K015 – LibreOffice Basic → Python migrácia`  
 - **sidebar_position**: `15`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -395,8 +395,8 @@
 - **sidebar_label**: `K016 – Helper skript pre LO symbolic link`  
 - **sidebar_position**: `16`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -420,8 +420,8 @@
 - **sidebar_label**: `K017 – AI-powered TERNO Planner`  
 - **sidebar_position**: `17`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -445,8 +445,8 @@
 - **sidebar_label**: `K019 – BaZi výpočty – algoritmus, hodiny, kalendár`  
 - **sidebar_position**: `19`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -470,8 +470,8 @@
 - **sidebar_label**: `K020 – LibreOffice ako komunitná platforma`  
 - **sidebar_position**: `20`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -495,8 +495,8 @@
 - **sidebar_label**: `K021 – Princíp udržateľnosti v architektúre`  
 - **sidebar_position**: `21`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -520,8 +520,8 @@
 - **sidebar_label**: `K022 – TERNO – terapeutické formy učenia`  
 - **sidebar_position**: `22`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -545,8 +545,8 @@
 - **sidebar_label**: `K023 – AI interakcie – časová os a emócie`  
 - **sidebar_position**: `23`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -570,8 +570,8 @@
 - **sidebar_label**: `K024 – OneNote ako zdroj metadát pre AI`  
 - **sidebar_position**: `24`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -595,8 +595,8 @@
 - **sidebar_label**: `K025 – Kategorizácia TERNO podľa SDLC a 7D`  
 - **sidebar_position**: `25`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -620,8 +620,8 @@
 - **sidebar_label**: `K026 – KNIFE Framework pre vývoj a učenie sa (LibreOffice, Python)`  
 - **sidebar_position**: `26`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -645,8 +645,8 @@
 - **sidebar_label**: `K027 – Git For Dummies – Central Concepts`  
 - **sidebar_position**: `27`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -670,8 +670,8 @@
 - **sidebar_label**: `K028 – Context Aware System Ontology, Approach`  
 - **sidebar_position**: `28`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -695,8 +695,8 @@
 - **sidebar_label**: `K029 – Prostredie vývojové python pre LO`  
 - **sidebar_position**: `29`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -720,8 +720,8 @@
 - **sidebar_label**: `K030 – Príbeh poznania SDLC`  
 - **sidebar_position**: `30`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -745,8 +745,8 @@
 - **sidebar_label**: `K031 – „Document-as-Code“ framework`  
 - **sidebar_position**: `31`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -770,8 +770,8 @@
 - **sidebar_label**: `K032 – „Enterprise Document-integrated SDLC“`  
 - **sidebar_position**: `32`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -795,8 +795,8 @@
 - **sidebar_label**: `K033 – Smalltalk ako nástroj flowu a kontextu`  
 - **sidebar_position**: `33`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -820,8 +820,8 @@
 - **sidebar_label**: `K033 – Smalltalk ako nástroj flowu a kontextu`  
 - **sidebar_position**: `33`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -845,8 +845,8 @@
 - **sidebar_label**: `K036 – Pracovno, finančný ekosystém`  
 - **sidebar_position**: `36`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -870,8 +870,8 @@
 - **sidebar_label**: `K037 – Context Aware Solutions / paradigma, solution`  
 - **sidebar_position**: `37`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -895,8 +895,8 @@
 - **sidebar_label**: `K038 – Ako si vyrobit automaticke nastavovanie SSL`  
 - **sidebar_position**: `38`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -920,8 +920,8 @@
 - **sidebar_label**: `K039 – Sementicke a kontextove vyhladavanie nad GitHUB`  
 - **sidebar_position**: `39`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -945,8 +945,8 @@
 - **sidebar_label**: `K040 – Migracia Joomla -->GitHUB MkDocs`  
 - **sidebar_position**: `40`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -970,8 +970,8 @@
 - **sidebar_label**: `K041 – GitHUB Education Framework`  
 - **sidebar_position**: `41`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -995,8 +995,8 @@
 - **sidebar_label**: `K042 – SinglePageApplication – Webabased desktop app`  
 - **sidebar_position**: `42`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1020,8 +1020,8 @@
 - **sidebar_label**: `K043 – Kontrola odpovedé študentov pomocou API na AI`  
 - **sidebar_position**: `43`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1045,8 +1045,8 @@
 - **sidebar_label**: `K044 – OneDrive backup to external disk on QNAP`  
 - **sidebar_position**: `44`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1070,8 +1070,8 @@
 - **sidebar_label**: `K045 – Základné informácie o ESG`  
 - **sidebar_position**: `45`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1095,8 +1095,8 @@
 - **sidebar_label**: `K046 – Thunderbird – Archive-export`  
 - **sidebar_position**: `46`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1120,8 +1120,8 @@
 - **sidebar_label**: `K047 – KNIFE047_Reflexia_a_epistemologia.md`  
 - **sidebar_position**: `47`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1145,8 +1145,8 @@
 - **sidebar_label**: `K048 – AI – Agent in OpenGPT`  
 - **sidebar_position**: `48`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1170,8 +1170,8 @@
 - **sidebar_label**: `K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou`  
 - **sidebar_position**: `49`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1195,8 +1195,8 @@
 - **sidebar_label**: `K050 – Open GPT, vytváranie prompt instructions`  
 - **sidebar_position**: `50`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1220,8 +1220,8 @@
 - **sidebar_label**: `K051 – Google analytics – Fundamentals`  
 - **sidebar_position**: `51`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1245,8 +1245,8 @@
 - **sidebar_label**: `K052 – GitHub LMS Framework`  
 - **sidebar_position**: `52`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1270,8 +1270,8 @@
 - **sidebar_label**: `K053 – Framework for Project Management in GitHUB`  
 - **sidebar_position**: `53`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1295,8 +1295,8 @@
 - **sidebar_label**: `K054 – Docusaurus Advanced Deployment Pipeline`  
 - **sidebar_position**: `54`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1320,8 +1320,8 @@
 - **sidebar_label**: `K055 – Ako obnoviť stav z minulosti?`  
 - **sidebar_position**: `55`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1345,8 +1345,8 @@
 - **sidebar_label**: `K056 – Central Panel for GIT – SDLC Git Management Makefile`  
 - **sidebar_position**: `56`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1370,8 +1370,8 @@
 - **sidebar_label**: `K057 – AI Agent na monitoroavanie nákladov OpenGPT`  
 - **sidebar_position**: `57`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1395,8 +1395,8 @@
 - **sidebar_label**: `K058 – AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie`  
 - **sidebar_position**: `58`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1420,8 +1420,8 @@
 - **sidebar_label**: `K059 – STEM a Makerspace ako metodika vzdelávania`  
 - **sidebar_position**: `59`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1445,8 +1445,8 @@
 - **sidebar_label**: `K060 – Export Draw.io diagramu do A4 PNG`  
 - **sidebar_position**: `60`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1470,8 +1470,8 @@
 - **sidebar_label**: `K061 – Passkey ako bezpečnostný koncept`  
 - **sidebar_position**: `61`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1495,8 +1495,8 @@
 - **sidebar_label**: `K062 – K062 – Docusaurus slugy a routing`  
 - **sidebar_position**: `62`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1520,8 +1520,8 @@
 - **sidebar_label**: `K063 – Automatické generovanie KNIFES`  
 - **sidebar_position**: `63`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1545,8 +1545,8 @@
 - **sidebar_label**: `K064 – GA4, GTN, UTM`  
 - **sidebar_position**: `64`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---
 
@@ -1570,7 +1570,57 @@
 - **sidebar_label**: `K065 – MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux`  
 - **sidebar_position**: `65`  
 - **locale**: `sk`  
-- **provenance.org**: `SystemThinking`  
-- **provenance.project**: `KNIFE_Overview`
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K066 – Porovnanie biznis plánov GitHub
+
+**Category**: SubscriptionPlans  
+**Status**: New  
+**Type**: Biznis plány GitHub-Prehľad  
+**Priority**: now  
+**Date**: 01.09.2025
+
+**Technology**:   
+**Description**: Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?  
+**Context**: Počas prípravy na semster a získaní Edu Benefit ma zaujímali ceny za komenčné použitoe  
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K066-porovnanie-biznis-planov-github](./K066-porovnanie-biznis-planov-github/K066-porovnanie-biznis-planov-github.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k066-porovnanie-biznis-planov-github`  
+- **sidebar_label**: `K066 – Porovnanie biznis plánov GitHub`  
+- **sidebar_position**: `66`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K067 – 
+
+**Category**:   
+**Status**:   
+**Type**:   
+**Priority**:   
+**Date**: 
+
+**Technology**:   
+**Description**:   
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K067-untitled](./K067-untitled/K067-untitled.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k067-untitled`  
+- **sidebar_label**: `K067 – `  
+- **sidebar_position**: `67`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
 
 ---

@@ -8,10 +8,6 @@ slug: "/sk/knifes/k017-ai-powered-terno-planner"
 sidebar_label: "K017 – AI-powered TERNO Planner"
 sidebar_position: "17"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

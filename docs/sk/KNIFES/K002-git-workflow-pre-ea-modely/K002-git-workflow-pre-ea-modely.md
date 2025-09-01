@@ -8,10 +8,6 @@ slug: "/sk/knifes/k002-git-workflow-pre-ea-modely"
 sidebar_label: "K002 – Git workflow pre EA modely"
 sidebar_position: "2"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

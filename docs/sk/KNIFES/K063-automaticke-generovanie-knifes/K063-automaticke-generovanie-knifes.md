@@ -8,10 +8,6 @@ slug: "/sk/knifes/k063-automaticke-generovanie-knifes"
 sidebar_label: "K063 – Automatické generovanie KNIFES"
 sidebar_position: "63"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

@@ -8,10 +8,6 @@ slug: "/sk/knifes/k016-helper-skript-pre-lo-symbolic-link"
 sidebar_label: "K016 – Helper skript pre LO symbolic link"
 sidebar_position: "16"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

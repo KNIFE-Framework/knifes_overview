@@ -8,10 +8,6 @@ slug: "/sk/knifes/k061-passkey-ako-bezpecnostny-koncept"
 sidebar_label: "K061 – Passkey ako bezpečnostný koncept"
 sidebar_position: "61"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

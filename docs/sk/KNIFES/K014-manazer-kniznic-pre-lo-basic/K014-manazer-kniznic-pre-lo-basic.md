@@ -8,10 +8,6 @@ slug: "/sk/knifes/k014-manazer-kniznic-pre-lo-basic"
 sidebar_label: "K014 – Manažér knižníc pre LO Basic"
 sidebar_position: "14"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

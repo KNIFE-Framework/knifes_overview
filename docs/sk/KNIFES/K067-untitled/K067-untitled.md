@@ -1,12 +1,12 @@
 ---
-id: "K008"
-title: "DCMM a DAO – hodnota leadershipu"
-description: "Sebariadenie, dôvera a samočistiace systémy"
-status: "plánované"
+id: "K067"
+title: "Untitled"
+description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K067 – Untitled"
+status: "draft"
 tags: ["KNIFE"]
-slug: "/sk/knifes/k008-dcmm-a-dao-hodnota-leadershipu"
-sidebar_label: "K008 – DCMM a DAO – hodnota leadershipu"
-sidebar_position: "8"
+slug: "/sk/knifes/k067-untitled"
+sidebar_label: "K067 – Untitled"
+sidebar_position: "67"
 locale: "sk"
 ---
 <!-- body:start -->
@@ -14,7 +14,7 @@ locale: "sk"
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
-# KNIFE K008 – DCMM a DAO – hodnota leadershipu
+# KNIFE K067 – Untitled
 
 ## 🎯 Čo rieši (účel, cieľ)
 

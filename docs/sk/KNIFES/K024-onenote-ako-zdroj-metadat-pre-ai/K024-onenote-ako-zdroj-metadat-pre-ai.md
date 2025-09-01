@@ -8,10 +8,6 @@ slug: "/sk/knifes/k024-onenote-ako-zdroj-metadat-pre-ai"
 sidebar_label: "K024 – OneNote ako zdroj metadát pre AI"
 sidebar_position: "24"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

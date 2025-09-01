@@ -8,10 +8,6 @@ slug: "/sk/knifes/k053-framework-for-project-management-in-github"
 sidebar_label: "K053 – Framework for Project Management in GitHUB"
 sidebar_position: "53"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

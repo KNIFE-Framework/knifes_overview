@@ -8,10 +8,6 @@ slug: "/sk/knifes/k001-ea-modelovanie-a-motivacia"
 sidebar_label: "K001 – EA modelovanie a motivácia"
 sidebar_position: "1"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

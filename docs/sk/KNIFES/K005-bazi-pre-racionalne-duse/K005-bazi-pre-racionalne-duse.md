@@ -8,10 +8,6 @@ slug: "/sk/knifes/k005-bazi-pre-racionalne-duse"
 sidebar_label: "K005 – BaZi pre racionálne duše"
 sidebar_position: "5"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

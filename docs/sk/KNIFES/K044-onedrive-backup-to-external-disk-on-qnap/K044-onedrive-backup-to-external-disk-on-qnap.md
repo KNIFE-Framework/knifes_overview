@@ -8,10 +8,6 @@ slug: "/sk/knifes/k044-onedrive-backup-to-external-disk-on-qnap"
 sidebar_label: "K044 – OneDrive backup to external disk on QNAP"
 sidebar_position: "44"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

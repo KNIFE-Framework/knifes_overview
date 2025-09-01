@@ -8,10 +8,6 @@ slug: "/sk/knifes/k007-helper-skript-na-obrazky-v-markdown"
 sidebar_label: "K007 – Helper skript na obrázky v Markdown"
 sidebar_position: "7"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

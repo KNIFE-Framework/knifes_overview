@@ -8,10 +8,6 @@ slug: "/sk/knifes/k038-ako-si-vyrobit-automaticke-nastavovanie-ssl"
 sidebar_label: "K038 – Ako si vyrobit automaticke nastavovanie SSL"
 sidebar_position: "38"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

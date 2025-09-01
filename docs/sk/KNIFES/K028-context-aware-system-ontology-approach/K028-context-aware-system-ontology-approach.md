@@ -8,10 +8,6 @@ slug: "/sk/knifes/k028-context-aware-system-ontology-approach"
 sidebar_label: "K028 – Context Aware System Ontology, Approach"
 sidebar_position: "28"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

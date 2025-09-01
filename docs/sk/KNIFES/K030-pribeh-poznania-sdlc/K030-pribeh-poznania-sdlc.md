@@ -8,10 +8,6 @@ slug: "/sk/knifes/k030-pribeh-poznania-sdlc"
 sidebar_label: "K030 – Príbeh poznania SDLC"
 sidebar_position: "30"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

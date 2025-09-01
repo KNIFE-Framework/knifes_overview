@@ -8,10 +8,6 @@ slug: "/sk/knifes/k046-thunderbird-archive-export"
 sidebar_label: "K046 – Thunderbird – Archive-export"
 sidebar_position: "46"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

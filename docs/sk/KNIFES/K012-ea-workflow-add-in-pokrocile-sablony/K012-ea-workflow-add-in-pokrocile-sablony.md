@@ -8,10 +8,6 @@ slug: "/sk/knifes/k012-ea-workflow-add-in-pokrocile-sablony"
 sidebar_label: "K012 – EA Workflow Add-In – pokročilé šablóny"
 sidebar_position: "12"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

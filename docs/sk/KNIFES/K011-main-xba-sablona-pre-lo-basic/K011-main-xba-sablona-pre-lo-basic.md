@@ -8,10 +8,6 @@ slug: "/sk/knifes/k011-main-xba-sablona-pre-lo-basic"
 sidebar_label: "K011 – Main.xba šablóna pre LO Basic"
 sidebar_position: "11"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

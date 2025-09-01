@@ -8,10 +8,6 @@ slug: "/sk/knifes/k003-libreoffice-python-integracia"
 sidebar_label: "K003 – LibreOffice + Python integrácia"
 sidebar_position: "3"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

@@ -8,10 +8,6 @@ slug: "/sk/knifes/k027-git-for-dummies-central-concepts"
 sidebar_label: "K027 – Git For Dummies – Central Concepts"
 sidebar_position: "27"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

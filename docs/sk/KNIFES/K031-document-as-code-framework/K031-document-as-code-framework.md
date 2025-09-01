@@ -8,10 +8,6 @@ slug: "/sk/knifes/k031-document-as-code-framework"
 sidebar_label: "K031 – „Document-as-Code“ framework"
 sidebar_position: "31"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

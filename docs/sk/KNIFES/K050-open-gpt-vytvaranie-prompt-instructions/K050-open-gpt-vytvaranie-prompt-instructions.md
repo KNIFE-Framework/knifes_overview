@@ -8,10 +8,6 @@ slug: "/sk/knifes/k050-open-gpt-vytvaranie-prompt-instructions"
 sidebar_label: "K050 – Open GPT, vytváranie prompt instructions"
 sidebar_position: "50"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

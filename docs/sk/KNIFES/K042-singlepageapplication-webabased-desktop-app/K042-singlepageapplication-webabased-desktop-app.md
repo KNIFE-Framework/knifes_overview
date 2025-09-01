@@ -8,10 +8,6 @@ slug: "/sk/knifes/k042-singlepageapplication-webabased-desktop-app"
 sidebar_label: "K042 – SinglePageApplication – Webabased desktop app"
 sidebar_position: "42"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

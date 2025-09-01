@@ -8,10 +8,6 @@ slug: "/sk/knifes/k058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-k
 sidebar_label: "K058 – AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie"
 sidebar_position: "58"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

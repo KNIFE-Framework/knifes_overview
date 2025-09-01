@@ -8,10 +8,6 @@ slug: "/sk/knifes/k020-libreoffice-ako-komunitna-platforma"
 sidebar_label: "K020 – LibreOffice ako komunitná platforma"
 sidebar_position: "20"
 locale: "sk"
-provenance:
-  platform: "github"
-  org: "SystemThinking"
-  project: "KNIFE_Overview"
 ---
 <!-- body:start -->
 

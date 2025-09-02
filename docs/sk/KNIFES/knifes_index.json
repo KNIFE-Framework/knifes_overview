@@ -653,7 +653,7 @@
   {
     "id": "K033",
     "title": "Smalltalk ako nástroj flowu a kontextu",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu",
     "status": "v riešeni",
     "type": "",
     "category": "",
@@ -695,7 +695,7 @@
   {
     "id": "K037",
     "title": "Context Aware Solutions / paradigma, solution",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K037 – Context Aware Solutions / paradigma, solution",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K037 – Context Aware Solutions / paradigma, solution",
     "status": "inprogress",
     "type": "",
     "category": "",
@@ -907,7 +907,7 @@
   {
     "id": "K047",
     "title": "KNIFE047_Reflexia_a_epistemologia.md",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md",
     "status": "draft",
     "type": "",
     "category": "",
@@ -928,7 +928,7 @@
   {
     "id": "K048",
     "title": "AI – Agent in OpenGPT",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K048 – AI – Agent in OpenGPT",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K048 – AI – Agent in OpenGPT",
     "status": "in progress",
     "type": "",
     "category": "",
@@ -949,7 +949,7 @@
   {
     "id": "K049",
     "title": "KNIFE049 – Vyhľadávač nad OpenGPT históriou",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou",
     "status": "draft",
     "type": "",
     "category": "",
@@ -1012,7 +1012,7 @@
   {
     "id": "K052",
     "title": "GitHub LMS Framework",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K052 – GitHub LMS Framework",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K052 – GitHub LMS Framework",
     "status": "new",
     "type": "",
     "category": "",
@@ -1096,7 +1096,7 @@
   {
     "id": "K056",
     "title": "Central Panel for GIT – SDLC Git Management Makefile",
-    "description": "•\\\\\\\\tJeden Makefile ako „single point of control“",
+    "description": "•\\\\\\\\\\\\\\\\tJeden Makefile ako „single point of control“",
     "status": "done md",
     "type": "",
     "category": "",
@@ -1327,8 +1327,29 @@
   },
   {
     "id": "K067",
+    "title": "GitHub Deployment stratégie",
+    "description": "Deployment obsahu v GitHube sa dá vykonať viacerými spôsobmi.",
+    "status": "new",
+    "type": "",
+    "category": "",
+    "slug": "/sk/knifes/k067-github-deployment-strategie",
+    "sidebar_label": "K067 – GitHub Deployment stratégie",
+    "sidebar_position": 67,
+    "locale": "sk",
+    "tags": [
+      "KNIFE"
+    ],
+    "provenance": {
+      "platform": "github",
+      "org": "",
+      "project": ""
+    },
+    "path": "docs/sk/KNIFES/K067-github-deployment-strategie/K067-github-deployment-strategie.md"
+  },
+  {
+    "id": "K067",
     "title": "Untitled",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K067 – Untitled",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K067 – Untitled",
     "status": "draft",
     "type": "",
     "category": "",

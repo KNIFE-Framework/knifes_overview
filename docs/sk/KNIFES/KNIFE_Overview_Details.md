@@ -1600,24 +1600,24 @@
 
 ---
 
-### K067 – 
+### K067 – GitHub Deployment stratégie
 
-**Category**:   
-**Status**:   
-**Type**:   
-**Priority**:   
+**Category**: User Guide  
+**Status**: new  
+**Type**: Koncepty  
+**Priority**: now  
 **Date**: 
 
 **Technology**:   
-**Description**:   
+**Description**: Deployment obsahu v GitHube sa dá vykonať viacerými spôsobmi.  
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K067-untitled](./K067-untitled/K067-untitled.md)
+**Link**: [K067-github-deployment-strategie](./K067-github-deployment-strategie/K067-github-deployment-strategie.md)
 
 **Metadáta (generated)**:  
-- **slug**: `/sk/knifes/k067-untitled`  
-- **sidebar_label**: `K067 – `  
+- **slug**: `/sk/knifes/k067-github-deployment-strategie`  
+- **sidebar_label**: `K067 – GitHub Deployment stratégie`  
 - **sidebar_position**: `67`  
 - **locale**: `sk`  
 - **provenance.org**: ``  

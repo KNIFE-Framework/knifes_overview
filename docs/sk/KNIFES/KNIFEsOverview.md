@@ -66,4 +66,4 @@
 | K064 | Marketing | GA4, GTN, UTM | new | done | User Guides, principles | 27.08.2025 |  |  | [GA4, GTN, UTM](./K064-ga4-gtn-utm/K064-ga4-gtn-utm.md) |
 | K065 | Administration | MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux | New | now | GitHub Administration | 31.08.2025 |  |  | [MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux](./K065-makefile-for-knife-ecosystem-for-mac-windows-linux/K065-makefile-for-knife-ecosystem-for-mac-windows-linux.md) |
 | K066 | SubscriptionPlans | Porovnanie biznis plánov GitHub | New | now | Biznis plány GitHub-Prehľad | 01.09.2025 |  |  | [Porovnanie biznis plánov GitHub](./K066-porovnanie-biznis-planov-github/K066-porovnanie-biznis-planov-github.md) |
-| K067 |  |  |  |  |  |  |  |  | [](./K067-untitled/K067-untitled.md) |
+| K067 | User Guide | GitHub Deployment stratégie | new | now | Koncepty |  |  |  | [GitHub Deployment stratégie](./K067-github-deployment-strategie/K067-github-deployment-strategie.md) |

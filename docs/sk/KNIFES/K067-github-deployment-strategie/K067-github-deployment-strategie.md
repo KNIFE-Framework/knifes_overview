@@ -10,7 +10,19 @@ sidebar_position: "67"
 locale: "sk"
 ---
 <!-- body:start -->
+---
 
+## 🔎 Porovnanie stratégií
+
+| Kritérium                  | Stratégia A – Branch deploy | Stratégia B – Actions deploy | Stratégia C – Custom domain |
+|-----------------------------|-----------------------------|------------------------------|-----------------------------|
+| **Jednoduchosť**            | ✅ Najjednoduchšie           | ❌ Viac setupu                | ➖ DNS krok navyše           |
+| **Stabilita**               | ✅ Overené a robustné        | ✅ Stabilné, auditované       | ➖ Závisí od DNS             |
+| **Škálovanie (viac repo)**  | ✅ Študenti zvládnu          | ❌ Každý repo potrebuje init  | ❌ Nevhodné pre triedy       |
+| **Profesionálne projekty**  | ➖ Menej elegantné           | ✅ CI/CD audit, pravidlá      | ✅ Profesionálne riešenie    |
+| **Vlastná doména**          | ➖ Nie                       | ➖ Nie                        | ✅ Áno                       |
+
+---
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
@@ -22,78 +34,77 @@ GitHub umožňuje jednoduché nasadenie statických webových stránok priamo z 
 
 ## 🧩 Ako to rieši (princíp)
 
-Existujú tri hlavné varianty nasadenia obsahu na GitHub Pages:
+Tento KNIFE rozoberá tri hlavné stratégie nasadenia obsahu na GitHub Pages, podrobne popísané nižšie a v prílohách:
 
-1. **Variant 1 – čistý MD (ready-to-commit)**  
-   Publikujete priamo Markdown súbory v repozitári, ktoré GitHub Pages automaticky spracuje cez Jekyll a zobrazí ako web.  
-   - Výhody: jednoduché, žiadna potreba build procesu.  
-   - Nevýhody: obmedzená kontrola nad generovaným HTML, pomalšie načítanie.
-
-2. **Variant 2 – generovanie statických stránok mimo GitHub**  
-   Váš obsah sa najprv spracuje lokálne alebo v CI/CD pipeline na statické HTML, ktoré sa následne nasadia do špeciálnej vetvy (napr. `gh-pages`).  
-   - Výhody: plná kontrola nad webom, rýchlejšie načítanie.  
-   - Nevýhody: potreba build procesu a nasadzovania.
-
-3. **Variant 3 – použitie vlastného nástroja alebo workflow**  
-   Môžete využiť rôzne nástroje alebo GitHub Actions na automatizované generovanie a nasadenie obsahu.  
-   - Výhody: automatizácia, flexibilita.  
-   - Nevýhody: zložitejšia konfigurácia.
+- **Stratégia A – Branch deploy**: Nasadenie obsahu do určenej vetvy (`gh-pages` alebo `docs`), kde GitHub Pages automaticky publikuje web. (Pozri [Appendix – Makefile](./K067_makefile_appendix.md))
+- **Stratégia B – Actions deploy**: Automatizované nasadenie pomocou GitHub Actions a CI/CD pipeline, ktorá buildne a nasadí web do správnej vetvy. (Pozri [Appendix – docusaurus.config.ts](./K067_docusaurus_config_ts_appendix.md))
+- **Stratégia C – Custom domain**: Nastavenie vlastnej domény pre GitHub Pages, vrátane konfigurácie DNS a súboru `CNAME`. (Pozri [README pre zvedavých](./K067_ReadmePreZvedavych.md))
 
 ## 🧪 Ako to použiť (aplikácia)
 
-- Pre jednoduché projekty použite Variant 1 a píšte priamo Markdown súbory do repozitára.  
-- Ak potrebujete vlastný dizajn alebo rýchle načítanie, použite Variant 2 a generujte statické stránky lokálne alebo cez CI.  
-- Pre plne automatizované nasadzovanie použite Variant 3 s GitHub Actions alebo inými nástrojmi.
+- **Stratégia A (Branch deploy):** Pre jednoduché projekty publikujte obsah priamo do vetvy určenej pre GitHub Pages (`gh-pages` alebo `docs`).
+- **Stratégia B (Actions deploy):** Ak potrebujete automatizované buildy a nasadzovanie (napr. pri používaní Docusaurus, Hugo, atď.), nastavte GitHub Actions na build a deploy do správnej vetvy.
+- **Stratégia C (Custom domain):** Ak chcete používať vlastnú doménu, nakonfigurujte DNS a súbor `CNAME` podľa návodu.
 
 ---
 
 ## ⚡ Rýchly návod (Top)
 
-1. Vytvorte repozitár na GitHub.  
-2. Pre Variant 1: pridajte Markdown súbory do hlavnej vetvy alebo do vetvy `gh-pages`.  
-3. Pre Variant 2: vygenerujte statický web (napr. pomocou Hugo, Jekyll, MkDocs) a nasadte ho do vetvy `gh-pages`.  
-4. Aktivujte GitHub Pages v nastaveniach repozitára a vyberte zdroj (hlavná vetva alebo `gh-pages`).  
-5. Počkajte na publikovanie a navštívte URL stránky.
+1. **Vytvorte repozitár na GitHub.**
+2. **Stratégia A (Branch deploy):**  
+   - Pridajte obsah (napr. Markdown alebo HTML) do vetvy `gh-pages` alebo `docs`.
+   - V nastaveniach GitHub Pages vyberte túto vetvu ako zdroj.
+3. **Stratégia B (Actions deploy):**  
+   - Pripravte build skript (napr. Makefile, npm script).
+   - Nastavte GitHub Actions workflow na build a deploy do `gh-pages`.
+4. **Stratégia C (Custom domain):**  
+   - Pridajte súbor `CNAME` do rootu stránky s názvom domény.
+   - Nastavte DNS záznamy podľa GitHub odporúčaní.
+5. Počkajte na publikovanie a navštívte výslednú URL.
 
 ## 📜 Detailný článok
 
-GitHub Pages je služba, ktorá umožňuje hostovať statické webové stránky priamo z GitHub repozitárov. Najčastejšie sa využíva na dokumentáciu projektov alebo osobné weby.
+GitHub Pages umožňuje hostovať statické weby priamo z GitHub repozitára. Vybrať si môžete z týchto stratégií:
 
-### Variant 1 – čistý MD (ready-to-commit)
+### Stratégia A – Branch deploy
 
-V tomto prístupe sa do repozitára pridávajú priamo Markdown súbory, ktoré GitHub Pages spracuje pomocou Jekyll. Výsledkom je jednoduchý web bez potreby build nástrojov.
-
+Obsah (Markdown, HTML, buildnutý web) sa nasadzuje priamo do určenej vetvy (`gh-pages` alebo `docs`). GitHub Pages automaticky publikuje obsah podľa nastavenia v repozitári.
 - **Konfigurácia:**  
-  - Vytvorte súbor `_config.yml` pre prispôsobenie Jekyll.  
-  - Pridajte `.md` súbory do koreňového adresára alebo do adresára `docs`.  
-- **Nasadenie:**  
-  - Povolenie GitHub Pages v nastaveniach repozitára.  
-  - Vyberte vetvu a adresár, z ktorého sa bude stránka generovať.  
+  - Pridajte obsah do správnej vetvy (`gh-pages` alebo `docs`).
+  - Nastavte v repozitári, ktorá vetva slúži ako zdroj pre Pages.
+- **Viac v:** [Appendix – Makefile](./K067_makefile_appendix.md)
 
-### Variant 2 – generovanie statických stránok mimo GitHub
+### Stratégia B – Actions deploy
 
-Tento prístup vyžaduje generovanie statických HTML súborov mimo GitHub, napríklad pomocou statického generátora stránok (Hugo, MkDocs, Jekyll lokálne). Výsledné HTML sa potom nasadí do vetvy `gh-pages`.
+Build a nasadenie webu prebieha automatizovane cez GitHub Actions workflow. Po commite sa automaticky spustí build (napr. Docusaurus, Hugo, MkDocs) a výsledok sa nasadí do `gh-pages`.
+- **Konfigurácia:**  
+  - Pripravte build skript (Makefile, npm run build, atď.).
+  - Nastavte GitHub Actions workflow na build a deploy.
+- **Viac v:** [Appendix – docusaurus.config.ts](./K067_docusaurus_config_ts_appendix.md)
 
-- **Výhody:**  
-  - Plná kontrola nad štruktúrou a dizajnom.  
-  - Rýchlejšie načítanie stránok.  
-- **Nevýhody:**  
-  - Potreba build procesu a nasadzovacej pipeline.  
+### Stratégia C – Custom domain
 
-### Variant 3 – použitie vlastného nástroja alebo workflow
-
-Pomocou GitHub Actions alebo iných CI/CD nástrojov je možné automatizovať build a nasadenie stránky. Môžete tak napríklad automaticky generovať dokumentáciu pri každom pushi.
-
-- **Príklad:**  
-  - GitHub Action, ktorá spustí build Hugo a nasadí výsledok do `gh-pages`.  
+Ak chcete používať vlastnú doménu, je potrebné:
+- Pridať súbor `CNAME` s doménou do rootu stránky.
+- Správne nastaviť DNS záznamy podľa návodu GitHubu.
+- **Viac v:** [README pre zvedavých](./K067_ReadmePreZvedavych.md)
 
 ## 💡 Tipy a poznámky
 
-- Pre rýchle testovanie použite Variant 1.  
-- Ak potrebujete vlastný dizajn alebo rýchlosť, investujte čas do Variant 2.  
-- Automatizácia pomocou GitHub Actions zvyšuje efektivitu a spoľahlivosť deploymentu.  
-- Nezabudnite na správne nastavenie DNS, ak používate vlastnú doménu.
+- Pre rýchle testovanie použite **Branch deploy**.
+- Ak potrebujete vlastný build proces a automatizáciu, použite **Actions deploy**.
+- Pre vlastnú doménu nezabudnite na správne nastavenie DNS a súboru `CNAME`.
+- Pozrite si prílohy pre konkrétne ukážky konfigurácie a workflow.
+
 
 ## ✅ Hodnota / Zhrnutie
 
-GitHub Pages ponúka flexibilné možnosti nasadenia statických webov, od jednoduchého publikovania Markdown súborov až po plne automatizované build a deployment procesy. Výber správnej stratégie závisí od vašich potrieb, technických zručností a požadovanej kontroly nad výsledným webom. Tento KNIFE vám pomôže zvoliť vhodný prístup a efektívne využiť GitHub Pages pre vaše projekty.
+GitHub Pages ponúka flexibilné možnosti nasadenia statických webov – od jednoduchého deployu do vetvy, cez plne automatizované workflow, až po nasadenie na vlastnú doménu. Výber správnej stratégie závisí od vašich potrieb, skúseností a požiadaviek na správu webu. Prílohy obsahujú konkrétne príklady konfigurácie a postupov.
+
+---
+
+## 📎 Súvisiace podstránky
+
+- [Appendix – Makefile](./K067_makefile_appendix.md)
+- [Appendix – docusaurus.config.ts](./K067_docusaurus_config_ts_appendix.md)
+- [README pre zvedavých](./K067_ReadmePreZvedavych.md)

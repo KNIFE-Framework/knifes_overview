@@ -6,7 +6,7 @@ const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',
   tagline: 'Context Aware Approach',
   url: 'https://knifes.systemthinking.sk',
-  baseUrl: '/',            // GH Pages repo base – ponechať
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
 
   organizationName: 'KNIFE-Framework',
@@ -17,19 +17,12 @@ const config: Config = {
   onBrokenAnchors: 'warn',
   future: { v4: true },
 
-  // i18n: SK ako default na root, EN pod /en/
   i18n: {
     defaultLocale: 'sk',
     locales: ['sk', 'en'],
     localeConfigs: {
-      sk: {
-        label: 'Slovensky',
-        // dôležité: pre defaultLocale NEnastavuj path -> ostane na root-e
-      },
-      en: {
-        label: 'English',
-        path: 'en' // EN bude pod /en/
-      },
+      sk: { label: 'Slovensky' },
+      en: { label: 'English', path: 'en' },
     },
   },
 
@@ -39,16 +32,29 @@ const config: Config = {
       {
         docs: {
           path: 'docs',
-          routeBasePath: '/',                // ⬅️ docs sú homepage (so sidebarom)
+          routeBasePath: '/',     // docs sú homepage
           numberPrefixParser: false,
           editCurrentVersion: false,
           editUrl: undefined,
           exclude: ['**/README.migrated.md', '**/README_.md'],
-          // sidebarPath: require.resolve('./sidebars.ts'), // ak nepoužívaš, nechaj zakomentované
+          // sidebarPath: require.resolve('./sidebars.ts'),
         },
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  // ⬇⬇⬇ PRIDANÉ: GA4 plugin
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-LV31TWZZK6',
+        anonymizeIP: true,
+        // optional: odoslať page_view aj pri route zmenách (SPA)
+        // respektíve default správanie už page views posiela
+      },
     ],
   ],
 
@@ -58,7 +64,7 @@ const config: Config = {
       title: 'KNIFE',
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },
       items: [
-        { to: '/', label: 'Home', position: 'left' }, // SK root
+        { to: '/', label: 'Home', position: 'left' },
         { to: '/sk/knifes/', label: 'KNIFES (SK)', position: 'left' },
         { to: '/7Ds/', label: '7Ds (SK)', position: 'left' },
         { to: '/', label: 'Docs (SK)', position: 'left' },
@@ -72,12 +78,10 @@ const config: Config = {
       copyright: `© ${new Date().getFullYear()} Context Aware Solutions. Built with Docusaurus.`,
     },
     prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
-
-    // ⬇️ Sidebar správanie
     docs: {
       sidebar: {
         hideable: true,
-        autoCollapseCategories: true, // 7Ds a iné sa nebudú všetky otvárať naraz
+        autoCollapseCategories: true,
       },
     },
   } satisfies Preset.ThemeConfig,

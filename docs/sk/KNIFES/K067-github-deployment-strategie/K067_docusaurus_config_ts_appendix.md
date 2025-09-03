@@ -132,6 +132,8 @@ CUSTOM_DOMAIN=mysite.example.com npm run build
 
 > `package.json` by mal mať skript `build: "CUSTOM_DOMAIN=${CUSTOM_DOMAIN:-} docusaurus build"`.
 
+> ⚠️ Poznámka: názov subdomény nesmie obsahovať `_` (podtržník). Dodrž naming konvenciu, pozri [Appendix – Naming Convention](./K067_NamingConventionPreDomeny.md).
+
 ---
 
 ## Navbar/Linky – odporúčania

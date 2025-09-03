@@ -12,6 +12,14 @@ locale: "sk"
 <!-- body:start -->
 ---
 
+## 🚀 Quickstart
+
+Pre študentov a rýchly štart je k dispozícii skrátený návod, ktorý pomáha rýchlo pochopiť základné kroky nasadenia. Viac informácií nájdete v [README pre zvedavých](./K067_ReadmePreZvedavych.md).
+
+1. Vytvor repozitár na GitHube.
+2. Pridaj obsah a použi **Branch deploy** (`npm install && npm run deploy`).
+3. Skontroluj publikovanú stránku v Settings → Pages.
+
 ## 🔎 Porovnanie stratégií
 
 | Kritérium                  | Stratégia A – Branch deploy | Stratégia B – Actions deploy | Stratégia C – Custom domain |
@@ -89,6 +97,8 @@ Ak chcete používať vlastnú doménu, je potrebné:
 - Správne nastaviť DNS záznamy podľa návodu GitHubu.
 - **Viac v:** [README pre zvedavých](./K067_ReadmePreZvedavych.md)
 
+Pre pravidlá tvorby názvov subdomén pozri [Appendix – Naming Convention](./K067_NamingConventionPreDomeny.md).
+
 ## 💡 Tipy a poznámky
 
 - Pre rýchle testovanie použite **Branch deploy**.
@@ -108,3 +118,4 @@ GitHub Pages ponúka flexibilné možnosti nasadenia statických webov – od je
 - [Appendix – Makefile](./K067_makefile_appendix.md)
 - [Appendix – docusaurus.config.ts](./K067_docusaurus_config_ts_appendix.md)
 - [README pre zvedavých](./K067_ReadmePreZvedavych.md)
+- [Appendix – Naming Convention pre domény](./K067_NamingConventionPreDomeny.md)

@@ -1624,3 +1624,28 @@
 - **provenance.project**: ``
 
 ---
+
+### K068 – Kruhový portrét v GIMP
+
+**Category**: User Guide  
+**Status**: new  
+**Type**: Návod  
+**Priority**: now  
+**Date**: 05.09.2025
+
+**Technology**:   
+**Description**: Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút  
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K068-kruhovy-portret-v-gimp](./K068-kruhovy-portret-v-gimp/K068-kruhovy-portret-v-gimp.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k068-kruhovy-portret-v-gimp`  
+- **sidebar_label**: `K068 – Kruhový portrét v GIMP`  
+- **sidebar_position**: `68`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---

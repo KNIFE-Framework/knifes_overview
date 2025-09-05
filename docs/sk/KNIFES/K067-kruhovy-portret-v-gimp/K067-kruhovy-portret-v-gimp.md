@@ -1,12 +1,12 @@
 ---
-id: "K052"
-title: "GitHub LMS Framework"
-description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\\\\\\\\\n---\\\\\\\\\\\\\\\\n KNIFE K052 – GitHub LMS Framework"
+id: "K067"
+title: "Kruhový portrét v GIMP"
+description: "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút"
 status: "new"
 tags: ["KNIFE"]
-slug: "/sk/knifes/k052-github-lms-framework"
-sidebar_label: "K052 – GitHub LMS Framework"
-sidebar_position: "52"
+slug: "/sk/knifes/k067-kruhovy-portret-v-gimp"
+sidebar_label: "K067 – Kruhový portrét v GIMP"
+sidebar_position: "67"
 locale: "sk"
 ---
 <!-- body:start -->
@@ -14,7 +14,7 @@ locale: "sk"
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
-# KNIFE K052 – GitHub LMS Framework
+# KNIFE K067 – Kruhový portrét v GIMP
 
 ## 🎯 Čo rieši (účel, cieľ)
 

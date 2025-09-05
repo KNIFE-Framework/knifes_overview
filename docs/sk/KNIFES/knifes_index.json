@@ -653,7 +653,7 @@
   {
     "id": "K033",
     "title": "Smalltalk ako nástroj flowu a kontextu",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu",
     "status": "v riešeni",
     "type": "",
     "category": "",
@@ -695,7 +695,7 @@
   {
     "id": "K037",
     "title": "Context Aware Solutions / paradigma, solution",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K037 – Context Aware Solutions / paradigma, solution",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n KNIFE K037 – Context Aware Solutions / paradigma, solution",
     "status": "inprogress",
     "type": "",
     "category": "",
@@ -907,7 +907,7 @@
   {
     "id": "K047",
     "title": "KNIFE047_Reflexia_a_epistemologia.md",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md",
     "status": "draft",
     "type": "",
     "category": "",
@@ -928,7 +928,7 @@
   {
     "id": "K048",
     "title": "AI – Agent in OpenGPT",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K048 – AI – Agent in OpenGPT",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n KNIFE K048 – AI – Agent in OpenGPT",
     "status": "in progress",
     "type": "",
     "category": "",
@@ -949,7 +949,7 @@
   {
     "id": "K049",
     "title": "KNIFE049 – Vyhľadávač nad OpenGPT históriou",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou",
     "status": "draft",
     "type": "",
     "category": "",
@@ -1012,7 +1012,7 @@
   {
     "id": "K052",
     "title": "GitHub LMS Framework",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\n---\\\\\\\\n KNIFE K052 – GitHub LMS Framework",
+    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n---\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n KNIFE K052 – GitHub LMS Framework",
     "status": "new",
     "type": "",
     "category": "",
@@ -1096,7 +1096,7 @@
   {
     "id": "K056",
     "title": "Central Panel for GIT – SDLC Git Management Makefile",
-    "description": "•\\\\\\\\\\\\\\\\tJeden Makefile ako „single point of control“",
+    "description": "•\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\tJeden Makefile ako „single point of control“",
     "status": "done md",
     "type": "",
     "category": "",
@@ -1348,13 +1348,13 @@
   },
   {
     "id": "K067",
-    "title": "Untitled",
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K067 – Untitled",
-    "status": "draft",
+    "title": "Kruhový portrét v GIMP",
+    "description": "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút",
+    "status": "new",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k067-untitled",
-    "sidebar_label": "K067 – Untitled",
+    "slug": "/sk/knifes/k067-kruhovy-portret-v-gimp",
+    "sidebar_label": "K067 – Kruhový portrét v GIMP",
     "sidebar_position": 67,
     "locale": "sk",
     "tags": [
@@ -1365,6 +1365,27 @@
       "org": "",
       "project": ""
     },
-    "path": "docs/sk/KNIFES/K067-untitled/K067-untitled.md"
+    "path": "docs/sk/KNIFES/K067-kruhovy-portret-v-gimp/K067-kruhovy-portret-v-gimp.md"
+  },
+  {
+    "id": "K068",
+    "title": "Kruhový portrét v GIMP",
+    "description": "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút",
+    "status": "new",
+    "type": "",
+    "category": "",
+    "slug": "/sk/knifes/k068-kruhovy-portret-v-gimp",
+    "sidebar_label": "K068 – Kruhový portrét v GIMP",
+    "sidebar_position": 68,
+    "locale": "sk",
+    "tags": [
+      "KNIFE"
+    ],
+    "provenance": {
+      "platform": "github",
+      "org": "",
+      "project": ""
+    },
+    "path": "docs/sk/KNIFES/K068-kruhovy-portret-v-gimp/K068-kruhovy-portret-v-gimp.md"
   }
 ]

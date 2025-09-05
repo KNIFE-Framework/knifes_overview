@@ -1649,3 +1649,328 @@
 - **provenance.project**: ``
 
 ---
+
+### K068 – Kto ma pochváli, ak sa nepochválim sám?
+
+**Category**: Mentoring  
+**Status**: new  
+**Type**: Inšpirácie na hodnotový marketing seba samého  
+**Priority**: now  
+**Date**: 
+
+**Technology**:   
+**Description**: Pre mnohých je ťažko písať o sebe. Ľahko sa skĺzne buď ku preceňovaniu, alebo naopak ku podceňovaniu.  
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K068-kto-ma-pochvali-ak-sa-nepochvalim-sam](./K068-kto-ma-pochvali-ak-sa-nepochvalim-sam/K068-kto-ma-pochvali-ak-sa-nepochvalim-sam.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k068-kto-ma-pochvali-ak-sa-nepochvalim-sam`  
+- **sidebar_label**: `K068 – Kto ma pochváli, ak sa nepochválim sám?`  
+- **sidebar_position**: `68`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K069 – EA Fundamentals
+
+**Category**: Knowledge sharing  
+**Status**: new  
+**Type**: Training on the praxis-praktický webinár ako začať pracovať s technológiou Enterprise Architect.  
+**Priority**:   
+**Date**: 
+
+**Technology**:   
+**Description**:   
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K069-ea-fundamentals](./K069-ea-fundamentals/K069-ea-fundamentals.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k069-ea-fundamentals`  
+- **sidebar_label**: `K069 – EA Fundamentals`  
+- **sidebar_position**: `69`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K070 – 7Ds-Seven Disciplines for successful solutions
+
+**Category**: Methodology  
+**Status**: ongoing  
+**Type**: Metodika  
+**Priority**: medium  
+**Date**: 
+
+**Technology**:   
+**Description**: Metodika je zameraná na podporu aktivít v rámci SDLC. Každá potencálna iformácia má svoje miesto. A je úplne jedno v akej technológií sa implementuje.  
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K070-7ds-seven-disciplines-for-successful-solutions](./K070-7ds-seven-disciplines-for-successful-solutions/K070-7ds-seven-disciplines-for-successful-solutions.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k070-7ds-seven-disciplines-for-successful-solutions`  
+- **sidebar_label**: `K070 – 7Ds-Seven Disciplines for successful solutions`  
+- **sidebar_position**: `70`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K071 – APV-Assets-Perspectives-Views, Keep Your Aseests in Order
+
+**Category**: Methodology  
+**Status**: ongoing  
+**Type**: Metodika  
+**Priority**: medium  
+**Date**: 
+
+**Technology**:   
+**Description**: Metodika na podporu manažmentu aktív v rámci SDLC.  
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K071-apv-assets-perspectives-views-keep-your-aseests-in-order](./K071-apv-assets-perspectives-views-keep-your-aseests-in-order/K071-apv-assets-perspectives-views-keep-your-aseests-in-order.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k071-apv-assets-perspectives-views-keep-your-aseests-in-order`  
+- **sidebar_label**: `K071 – APV-Assets-Perspectives-Views, Keep Your Aseests in Order`  
+- **sidebar_position**: `71`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K072 – Q12- Twelve quadrants for starting business
+
+**Category**: Methodology  
+**Status**: ongoing  
+**Type**: Metodika  
+**Priority**: medium  
+**Date**: 05.09.2025
+
+**Technology**:   
+**Description**: Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie.  
+**Context**: Túto metodiku som vypracoval pred 10 rokmi. Sám sa ňou nechávam inšpirovať, ale nie som dosť dôsledný. Plánujem to zmeniť. A aj keď nevyplňam jednotlivé kapitoly do nejakého systému, niekde v podvedmí sa riadim základnými princípmi.  
+**SFIA**: level=Level 5 – Ensure / Advise, domain=Biznis development, maturity=Beginner  
+**Tags**:   
+**Link**: [K072-q12-twelve-quadrants-for-starting-business](./K072-q12-twelve-quadrants-for-starting-business/K072-q12-twelve-quadrants-for-starting-business.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k072-q12-twelve-quadrants-for-starting-business`  
+- **sidebar_label**: `K072 – Q12- Twelve quadrants for starting business`  
+- **sidebar_position**: `72`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K073 – SDLC-Solution Development Life Cycle
+
+**Category**: Methodology  
+**Status**: ongoing  
+**Type**: Metodika  
+**Priority**: medium  
+**Date**: 05.09.2025
+
+**Technology**:   
+**Description**: Táto metodika vychádza z univerzálneho V – modelu. Podporuje princíly vuizuálneho manažmentu v rámci celého ťivotného cyklu riešení. To záhŕňa desiatky rolí a stovky rolí v rátane zákazníka, dodávateľa, subdodávateľov, a podnikateľského prostredia, regulátorov, zákonov, politickej situácie  
+**Context**: Od začiatku svojej profesionálnej kariéry vychádzam z V modelu a jeho princípov. Nie vždy dodržujem princípy, z rôznych dôvodov, ale pomáha mi to pochopiť kontext celého riešenia  
+**SFIA**: level=Level 3 – Apply → samostatná práca, domain=Solution Development, maturity=Beginner  
+**Tags**:   
+**Link**: [K073-sdlc-solution-development-life-cycle](./K073-sdlc-solution-development-life-cycle/K073-sdlc-solution-development-life-cycle.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k073-sdlc-solution-development-life-cycle`  
+- **sidebar_label**: `K073 – SDLC-Solution Development Life Cycle`  
+- **sidebar_position**: `73`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K074 – Lean canvas
+
+**Category**: Methodology  
+**Status**: done md  
+**Type**: Metodika  
+**Priority**: medium  
+**Date**: 05.08.2025
+
+**Technology**:   
+**Description**: Implemetácia Lean canvas do celkového frameworku pre podporu vytvárania riešení. Patrí ku metodike Q12  
+**Context**: Každé riešenie si zaslúži analýzu z pohľadu jednoduchého biznis plánu. Pokiaľ nemám aspoň koncept bisnis plánu, aké je šanca na úsešnú realizáciu projektu?  
+**SFIA**: level=Level 3 – Apply → samostatná práca, domain=Bisnis development, maturity=Beginner  
+**Tags**:   
+**Link**: [K074-lean-canvas](./K074-lean-canvas/K074-lean-canvas.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k074-lean-canvas`  
+- **sidebar_label**: `K074 – Lean canvas`  
+- **sidebar_position**: `74`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K075 – CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution
+
+**Category**: Methodology  
+**Status**: ongoing  
+**Type**: Metodika na Solution development  
+**Priority**: medium  
+**Date**: 
+
+**Technology**:   
+**Description**: Neexistuje situácia, kedy môžeme ignorovať kontext. Neznalosť tohto princípu vedie k obrovským nepochopeniam, chybám, manipuláciam, sporom. Úplne zbytočne. Ak sa na začiatku ujasní kontext, tak okamžite sa dostavuje porozumenie a nastáva konštruktívny prístup.  
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K075-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution](./K075-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution/K075-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k075-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution`  
+- **sidebar_label**: `K075 – CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution`  
+- **sidebar_position**: `75`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K076 – 7S -KNIFE047_Reflexia_a_epistemologia.md
+
+**Category**: Methodology  
+**Status**:   
+**Type**:   
+**Priority**:   
+**Date**: 
+
+**Technology**:   
+**Description**:   
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K076-7s-knife047-reflexia-a-epistemologia-md](./K076-7s-knife047-reflexia-a-epistemologia-md/K076-7s-knife047-reflexia-a-epistemologia-md.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k076-7s-knife047-reflexia-a-epistemologia-md`  
+- **sidebar_label**: `K076 – 7S -KNIFE047_Reflexia_a_epistemologia.md`  
+- **sidebar_position**: `76`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K077 – Language as a Bridge (AI ako most medzi jazykmi)
+
+**Category**: Implementácia  
+**Status**: ongoing  
+**Type**: Implementácia, nástroje, Procesy  
+**Priority**: medium  
+**Date**: 05.09.2025
+
+**Technology**:   
+**Description**: Language as a Bridge → implementácia, nástroje, procesy (ako).  
+**Context**: Typ: Praktický návod / Metodika  
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K077-language-as-a-bridge-ai-ako-most-medzi-jazykmi](./K077-language-as-a-bridge-ai-ako-most-medzi-jazykmi/K077-language-as-a-bridge-ai-ako-most-medzi-jazykmi.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k077-language-as-a-bridge-ai-ako-most-medzi-jazykmi`  
+- **sidebar_label**: `K077 – Language as a Bridge (AI ako most medzi jazykmi)`  
+- **sidebar_position**: `77`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K078 – 
+
+**Category**:   
+**Status**:   
+**Type**:   
+**Priority**:   
+**Date**: 
+
+**Technology**:   
+**Description**:   
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K078-untitled](./K078-untitled/K078-untitled.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k078-untitled`  
+- **sidebar_label**: `K078 – `  
+- **sidebar_position**: `78`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K079 – 
+
+**Category**:   
+**Status**:   
+**Type**:   
+**Priority**:   
+**Date**: 
+
+**Technology**:   
+**Description**:   
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K079-untitled](./K079-untitled/K079-untitled.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k079-untitled`  
+- **sidebar_label**: `K079 – `  
+- **sidebar_position**: `79`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K080 – 
+
+**Category**:   
+**Status**:   
+**Type**:   
+**Priority**:   
+**Date**: 
+
+**Technology**:   
+**Description**:   
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K080-untitled](./K080-untitled/K080-untitled.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k080-untitled`  
+- **sidebar_label**: `K080 – `  
+- **sidebar_position**: `80`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---

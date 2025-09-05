@@ -61,11 +61,11 @@ const config: Config = {
   themeConfig: {
     image: 'img/logo.png',
     navbar: {
-      title: 'KNIFE',
+      title: 'KNIFE-Home',
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },
       items: [
         { to: '/', label: 'Home', position: 'left' },
-        { to: '/sk/knifes/', label: 'KNIFES (SK)', position: 'left' },
+        { to: '/sk/knifes/KNIFEsOverview/', label: 'KNIFES (SK)', position: 'left' },
         { to: '/7Ds/', label: '7Ds (SK)', position: 'left' },
         { to: '/', label: 'Docs (SK)', position: 'left' },
         { to: '/en/', label: 'Docs (EN)', position: 'left' },

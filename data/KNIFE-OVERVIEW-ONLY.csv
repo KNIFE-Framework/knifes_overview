@@ -123,3 +123,48 @@ K066,SubscriptionPlans,Porovnanie biznis plánov GitHub,New,Biznis plány GitHub
 K067,User Guide,GitHub Deployment stratégie,new,Koncepty,now,"Deployment obsahu v GitHube sa dá vykonať viacerými spôsobmi.
 Obsah v MD súboroch sa dá konzumovať cez GitHub, cez Web Pages a Web Pages namapovať na vlastnú doménu. Tu je to popísané ako sa to robí",02.09.2025,,,,,,,,,,,,,
 K068,User Guide,Kruhový portrét v GIMP,new,Návod,now,Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút,05.09.2025,,,,,,,,,,,,,
+K068,Mentoring,"Kto ma pochváli, ak sa nepochválim sám?",new,Inšpirácie na hodnotový marketing seba samého,now,"Pre mnohých je ťažko písať o sebe. Ľahko sa skĺzne buď ku preceňovaniu, alebo naopak ku podceňovaniu.
+Je to ako s marketingom. Len predmetom propagácie sme my sami.
+Ak osa prezenetovať, pravdivo, transparentne?",05.09.2025,"Pri každej aktualizácii CV, pri každej aktualizácií profilov mám otázky, čo a ko o sebe prezentovať. Viem, že nie som sám, a hľadanie odpovedí na moje otázky, môže pomôcť aj ďalším.",,,,, 7S Cycle of Meaningful Knowledge,,,,,,,
+K069,Knowledge sharing,EA Fundamentals,new,"Training on the praxis-praktický webinár ako začať pracovať s technológiou Enterprise Architect.
+Cca 6 hodinový webinár o základných nastaveniach EA 16+",Sparxsystems,"Enterprise architect (Sparxsystems technologies) je univerzálny modelovací nástroj.
+Od roku 2000 ho používam prakticky na dennej báze a pomáhal mi v každej roly, do ktorej som bol angažovaný. Technické roly, ale aj v Top managemente, ITSM, TOGAF, od konceptov, top level architektúry, solutiopn architektúry, analýzy, dizajnu, testovanie, v prevádzke.
+EA je veľmi komplexný, má bohatú dokumentáciu, napriek tomu je učiaca krivka náročná.
+Webinár ponúka prehľadnou formou úkážky v podobe praktických príkladov vlastnosti ause casy v ktorý je možné EA používať.",05.09.2025,"Dokumentácia v IT – strategická hodnota, alebop strata času https://leanpub.com/7D",,,,,,,,,,,,
+K070,Methodology,7Ds-Seven Disciplines for successful solutions,ongoing,Metodika,medium,"Metodika je zameraná na podporu aktivít v rámci SDLC. Každá potencálna iformácia má svoje miesto. A je úplne jedno v akej technológií sa implementuje.
+Ja som ju implementoval ako MDG do EA Sparxsystems,
+Do GitHUB,
+Rozpravcované je vo One Note",05.09.2025,Túto metodiku používam asi 15 rokov. Pred 10 rokmi som o nej vydal aj knihu,,,,,,,,,,,,
+K071,Methodology,"APV-Assets-Perspectives-Views, Keep Your Aseests in Order",ongoing,Metodika,medium,"Metodika na podporu manažmentu aktív v rámci SDLC. 
+TAXONÓMIA, ONTOLÓGIA aktív a ich vzťahiv z pohľadu rôznych rolí, aby platilo 3RS- Right – Information-For Right Role- In Right Time",05.09.2025,"Na tejto metodike pracujem minimálne od roku 2008. 8 Rokov som ju verifikoval v VW Bratislava na cca 50000 evidovaných aktívach IT. Je to nová veľá téma, bez ktorej IT nemôže napredovať,",,LEVEL 6- expert,Enterprise architecture,Expert,,,,,,,,
+K072,Methodology,Q12- Twelve quadrants for starting business,ongoing,Metodika,medium,"Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie. ",05.09.2025,"Túto metodiku som vypracoval pred 10 rokmi. Sám sa ňou nechávam inšpirovať, ale nie som dosť dôsledný. Plánujem to zmeniť. A aj keď nevyplňam jednotlivé kapitoly do nejakého systému, niekde v podvedmí sa riadim základnými princípmi.",,Level 5 – Ensure / Advise,Biznis development,Beginner,,,,,,,,
+K073,Methodology,SDLC-Solution Development Life Cycle,ongoing,Metodika,medium,"Táto metodika vychádza z univerzálneho V – modelu. Podporuje princíly vuizuálneho manažmentu v rámci celého ťivotného cyklu riešení. To záhŕňa desiatky rolí a stovky rolí v rátane zákazníka, dodávateľa, subdodávateľov, a podnikateľského prostredia, regulátorov, zákonov, politickej situácie",05.09.2025,"Od začiatku svojej profesionálnej kariéry vychádzam z V modelu a jeho princípov. Nie vždy dodržujem princípy, z rôznych dôvodov, ale pomáha mi to pochopiť kontext celého riešenia",,Level 3 – Apply → samostatná práca,Solution Development,Beginner,,,,,,,,
+K074,Methodology,Lean canvas,done md,Metodika,medium,Implemetácia Lean canvas do celkového frameworku pre podporu vytvárania riešení. Patrí ku metodike Q12,05.08.2025,"Každé riešenie si zaslúži analýzu z pohľadu jednoduchého biznis plánu. Pokiaľ nemám aspoň koncept bisnis plánu, aké je šanca na úsešnú realizáciu projektu?",,Level 3 – Apply → samostatná práca ,Bisnis development,Beginner,,,,,,,,
+K075,Methodology,"CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution",ongoing,Metodika na Solution development,medium,"Neexistuje situácia, kedy môžeme ignorovať kontext. Neznalosť tohto princípu vedie k obrovským nepochopeniam, chybám, manipuláciam, sporom. Úplne zbytočne. Ak sa na začiatku ujasní kontext, tak okamžite sa dostavuje porozumenie a nastáva konštruktívny prístup.
+Tam kde sa precuje s manipáciami, je takmer isté, že ss vedome , ale aj neveome menia kontexty. Hovorí sa „Ja o koze a ty o voze“ , ale každý si myslí, že má pravdu, že ten druhý je blbec. A to nehovorím o politickej manipulácii zámerného podsúvania iných kontextov bez objasnenia kontextov. ",05.09.2025,"Na každom kroku  sa stretávam s nepochopením tohto  základného princípu. Ujasnime si naše kontexty a potom sa rozprávajme.
+Ak to takto pomenujeme, okamžite odhalíme vedomé manipulácie, prípadne znížime nevedomé nedorozumenia.
+ Napríklad diskusia „Čo je lepšie Apple alebo windows“,
+BMW alebo DACIA?
+Bentley alebo MAIBACH?
+Ak si ujasníme kontext, aké kritéria, v akej situáci je ktoré riešenie lepšie, prestáva byť priestor na spor, a vytvára sa konštrukívna atmosf=éra na riešenia kéhokoľvek problému, v malom, aj vo veľkom.
+",,LEVEL 6- expert,"Relationship development
+Trust development",High awareness,,,,,,,,
+K076,Methodology,"7S -KNIFE047_Reflexia_a_epistemologia.md
+KNIFE047 – 7S Cycle of Meaningful Knowledge
+KNIFE047 – Epistemológia 4Curiosis",ongoing,Metodika na hodnotvý markerting – PULL marketing,medium,"Moderné technológie umožňujú využívať a zneužívať rôzne techniky marketingu. Čo si zvolíme PUSH, alebo PULL prístup. Táto metodika je zameraná na PULL marketing. 
+Rešpekt slobodn=ho rozhodovania bez akéhokoľvek nátlaku (napr. časovo limitované zľavy)
+Marketing budovaný na základe dôvery a spoločných hodnôt",05.09.2025,"Nemám rád nátlakový marketing. Snažím sa budovať osobnú značku, dobrú reputáciu, dôveru bez nátlaku, na základu kvaluty a rešpektu.",,LEVEL 2,"Relationship development
+Trust development",High awareness,,,,,,,,
+K077,Implementácia,Language as a Bridge (AI ako most medzi jazykmi),ongoing,"Implementácia, nástroje, Procesy",medium,"Language as a Bridge → implementácia, nástroje, procesy (ako).",05.09.2025,"Typ: Praktický návod / Metodika
+	•	Status: Draft
+	•	Obsah:
+	1.	Stručný recap LaaS (odkaz na K055).
+	2.	Ako AI umožňuje mosty medzi jazykmi.
+	3.	GitHub CI/CD príklady (preklady Markdown súborov).
+	4.	LinkedIn posty – autenticita v materinskom jazyku vs. preklad pre globálne publikum.
+	5.	Dopady pre študentov (písať autenticky, AI sa postará o zvyšok).
+	•	Motto:
+„Jazyk nemusí byť bariérou. AI stavia mosty, aby sme mohli každý rásť na vlastnej pôde.“",,LEVEL 6- expert,Solution Development,Expert,"055 – KNIFE_LaaS → fundament, hodnoty, filozofia (prečo a čo).",,,,,,,
+K078,,,,,,,,,,,,,,,,,,,,
+K079,,,,,,,,,,,,,,,,,,,,
+K080,,,,,,,,,,,,,,,,,,,,

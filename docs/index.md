@@ -33,14 +33,14 @@ Praktické návody, koncepty a skúsenosti zbierané v rámci Context Aware Appr
 
 ## 🔗 Rýchla navigácia na prehľady
 
-- [📋 Hrubý zoznam](./sk/KNIFES/KNIFEsOverview.md)
-- [📑 Tabuľka s detailmi](./sk/KNIFES/KNIFE_Overview_List.md)
-- [📘 Blogový štýl s detailmi](./sk/KNIFES/KNIFE_Overview_Details.md)
+- [📋 Hrubý zoznam](./sk/knifes/KNIFEsOverview.md)
+- [📑 Tabuľka s detailmi](./sk/knifes/KNIFE_Overview_List.md)
+- [📘 Blogový štýl s detailmi](./sk/knifes/KNIFE_Overview_Details.md)
 
 ---
 
 ## 🌳 Vyber oblasť
 
-- **KNIFES (SK)** – malé návody a koncepty → [KNIFES](./KNIFES/)
+- **KNIFES (SK)** – malé návody a koncepty → [KNIFES](./knifes/)
 - **7Ds (SK)** – metodický strom → [7Ds](./7Ds/)
 - **English docs** → [English version](/en/)

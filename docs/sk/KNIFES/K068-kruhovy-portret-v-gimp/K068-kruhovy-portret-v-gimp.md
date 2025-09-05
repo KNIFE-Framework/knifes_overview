@@ -3,12 +3,18 @@ id: "K068"
 title: "Kruhový portrét v GIMP"
 description: "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút"
 status: "new"
-tags: ["KNIFE"]
+tags: ["KNIFE", "images"]
 slug: "/sk/knifes/k068-kruhovy-portret-v-gimp"
 sidebar_label: "K068 – Kruhový portrét v GIMP"
 sidebar_position: "68"
 locale: "sk"
 ---
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+---
+
 # K0XX – Ako urobiť kruhový portrét s transparentným pozadím a efektom
 
 **Category**: Vizualizácia / Tooling  

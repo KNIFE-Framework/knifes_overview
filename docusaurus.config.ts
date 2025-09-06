@@ -37,7 +37,7 @@ const config: Config = {
           editCurrentVersion: false,
           editUrl: undefined,
           exclude: ['**/README.migrated.md', '**/README_.md'],
-          // sidebarPath: require.resolve('./sidebars.ts'),
+          sidebarPath: require.resolve('./sidebars.ts'),
         },
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },

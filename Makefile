@@ -12,7 +12,7 @@
 #    Bez platného HTTPS tokenu (osxkeychain) alebo SSH kľúča `git push` zlyhá.
 #    Pozri: make help-auth
 # Keď spustíš len `make`, ukáž help
-.DEFAULT_GOAL := help.  # zapríčiní zobrazenie help ak zadám len  make bez parametrov
+.DEFAULT_GOAL := help  # zapríčiní zobrazenie help ak zadám len  make bez parametrov
 
 SHELL := /bin/bash
 NODE := node
@@ -33,18 +33,20 @@ FIND_MD := find $(DOCS_DIR) -type f \( -name "*.md" -o -name "*.mdx" \)
 SCRIPTS_DIR := scripts
 DATA_CSV    := data/KNIFE-OVERVIEW-ONLY.csv
 
-.PHONY: help help-auth help-actions \
-        install dev clean build serve \
-        check-links check-links-hard check-links-full fix-links \
-        init-worktree check-worktree copy-build commit-deploy remove-worktree \
-        push-main deploy full-deploy worktree-status \
-        sandbox-from-main sandbox-from-worktree \
-        stash-save stash-list stash-apply stash-drop \
-        restore-folder restore-file restore-path restore-from-stash-file \
-        delete-dotpages \
-        actions-status actions-disable actions-enable \
-		quickstart mode doctor next-steps. knifes-gen knife-new dev-gen build-gen knife-verify \  # UX zlepšenie
-		gen-dry dry-verify
+.PHONY: \
+  help help-auth help-actions \
+  install dev clean build serve \
+  check-links check-links-hard check-links-full fix-links \
+  init-worktree check-worktree copy-build commit-deploy remove-worktree \
+  push-main deploy full-deploy worktree-status \
+  sandbox-from-main sandbox-from-worktree \
+  stash-save stash-list stash-apply stash-drop \
+  restore-folder restore-file restore-path restore-from-stash-file \
+  delete-dotpages \
+  actions-status actions-disable actions-enable \
+  quickstart mode doctor next-steps \
+  knifes-gen knife-new dev-gen build-gen knife-verify \
+  gen-dry dry-verify
 
 # -------------------------
 # 📌 Help
@@ -140,6 +142,10 @@ build: clean
 	$(NPM) run build
 
 serve:
+	@if [ ! -d "$(BUILD_DIR)" ]; then \
+		echo "ℹ️ build/ neexistuje → spúšťam rýchly build (--no-minify)"; \
+		$(NPM) run build -- --no-minify || exit 1; \
+	fi
 	$(NPM) run serve
 
 # -------------------------

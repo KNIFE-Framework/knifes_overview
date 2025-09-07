@@ -3,14 +3,6 @@ name: Deploy Docusaurus to GitHub Pages
 on:
   push:
     branches: [ main ]
-    paths:
-      - "docs/**"
-      - "src/**"
-      - "docusaurus.config.*"
-      - "package.json"
-      - "package-lock.json"
-      - "tsconfig.json"
-      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 permissions:

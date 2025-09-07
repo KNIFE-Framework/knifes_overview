@@ -128,7 +128,7 @@ help-actions:
 # 🚀 Docusaurus Commands
 # -------------------------
 
-install: 
+install:  
 	$(NPM) install
 
 dev:

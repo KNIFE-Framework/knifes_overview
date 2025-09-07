@@ -3,6 +3,16 @@ name: Deploy Docusaurus to GitHub Pages
 on:
   push:
     branches: [ main ]
+    paths:
+      - "docs/**"
+      - "src/**"
+      - "docusaurus.config.*"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig.json"
+      - ".github/workflows/deploy.yml"
+      - "scripts/**"
+      - "sidebars*.ts"
   workflow_dispatch:
 
 permissions:
@@ -28,7 +38,10 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: npm run build
+      - run: npm run build -- --no-minify
+        env:
+          NODE_OPTIONS: --max-old-space-size=16384
+      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: build

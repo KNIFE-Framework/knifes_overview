@@ -1,12 +1,12 @@
 ---
-id: "K067"
-title: "Kruhový portrét v GIMP"
-description: "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút"
+id: "K069"
+title: "Kto ma pochváli, ak sa nepochválim sám?"
+description: "Pre mnohých je ťažko písať o sebe. Ľahko sa skĺzne buď ku preceňovaniu, alebo naopak ku podceňovaniu."
 status: "new"
 tags: ["KNIFE"]
-slug: "/sk/knifes/k067-kruhovy-portret-v-gimp"
-sidebar_label: "K067 – Kruhový portrét v GIMP"
-sidebar_position: "67"
+slug: "/sk/knifes/k069-kto-ma-pochvali-ak-sa-nepochvalim-sam"
+sidebar_label: "K069 – Kto ma pochváli, ak sa nepochválim sám?"
+sidebar_position: "69"
 locale: "sk"
 ---
 <!-- body:start -->
@@ -14,7 +14,7 @@ locale: "sk"
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
-# KNIFE K067 – Kruhový portrét v GIMP
+# KNIFE K069 – Kto ma pochváli, ak sa nepochválim sám?
 
 ## 🎯 Čo rieši (účel, cieľ)
 

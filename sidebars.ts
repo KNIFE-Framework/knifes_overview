@@ -14,6 +14,7 @@ const sidebars: SidebarsConfig = {
       label: '🇸🇰 Slovenčina – KNIFE',
       collapsed: false,
       items: [
+        'home',
         // 7Ds (SK) necháme generovať samostatne
         {
           type: 'category',
@@ -24,7 +25,7 @@ const sidebars: SidebarsConfig = {
         // KNIFES (SK) – pinned súbory + zvyšok autogen
         {
           type: 'category',
-          label: 'KNIFES (SK)1',
+          label: 'KNIFES (SK)',
           collapsed: false,
           items: [
             'sk/knifes/KNIFEsOverview',     // Základný prehľad

@@ -1,12 +1,14 @@
-// scripts/build_knifes.mjs (v7)
+// scripts/build_knifes.mjs (v8)
 // CSV -> KNIFE prehľady + chýbajúce Kxxx skeletony (.md) bez prepisovania existujúcich
 // + NORMALIZE: YAML metadá, img/ + multimedia/, TEDex skelet, provenance.org/project
 // + LOCALE: --locale sk|en (default sk) – promietne sa do slug/locale
-// + OVERVIEWS: stĺpce Org/Project a relatívne odkazy na .md (VS Code/GitHub aj web)
-// + JSON index: docs/<locale>/KNIFES/knifes_index.json (machine-readable)
+// + OVERVIEWS: stĺpce Org/Project a relatívne odkazy na .md (VS Code/GitHub aj web) + Author(s)
+// + JSON index: docs/<locale>/KNIFES/knifes_index.json (machine-readable) vrátane author/authors
 // + NAV: do každého článku sa vloží navigácia na 3 prehľady (relatívne .md)
+// + SANITIZE: CSV hodnoty (dlhé reťazce, behy spätných lomítok a whitespace)
+//
 // Usage:
-//   node scripts/build_knifes.mjs --csv data/KNIFE-OVERVIEW-ONLY.csv --root . [--dry-run] [--dry-verify] [--org ORG] [--project PROJ] [--locale sk]
+//   node scripts/build_knifes.mjs --csv data/KNIFE-OVERVIEW-ONLY.csv --root . [--dry-run] [--dry-verify] [--org ORG] [--project PROJ] [--locale sk] [--debug]
 //   node scripts/build_knifes.mjs --root . --org ORG --project PROJ --locale sk
 
 import fs from 'node:fs/promises';
@@ -38,6 +40,30 @@ function parseArgs() {
     if (k === '--locale')      { out.locale = v; i++; continue; }
     if (k === '--debug')       { out.debug = true; continue; }
   }
+  return out;
+}
+
+// Parse authors from CSV row (supports "Author" or "Authors" with , ; | separators)
+function parseAuthors(row) {
+  const raw = row.Authors ?? row.Author ?? row.author ?? '';
+  return String(raw)
+    .split(/[,;|]/)
+    .map(s => s.trim())
+    .filter(Boolean)
+    .slice(0, 10);
+}
+
+// --- sanitizer (chráni pred OOM / "Invalid string length") ---
+function sanitizeScalar(v, max = 4000) {
+  let s = String(v ?? '');
+  // zlúč priveľké behy spätných lomítok a whitespace
+  s = s.replace(/\\{5,}/g, '\\').replace(/\s{3,}/g, ' ');
+  if (s.length > max) s = s.slice(0, max) + '…';
+  return s;
+}
+function sanitizeRow(row) {
+  const out = {};
+  for (const [k, v] of Object.entries(row)) out[k] = sanitizeScalar(v);
   return out;
 }
 
@@ -144,23 +170,28 @@ function parseSimpleYAML(yaml) {
 }
 function writeFrontMatter(obj) {
   const order = [
-    'id','title','description','author','date','updated',
+    'id','title','description','author','authors','date','updated',
     'status','type','category','tags','slug','sidebar_label',
-    'sidebar_position','locale','provenance'
+    'sidebar_position','locale','provenance','provenance_org','provenance_project'
   ];
+  const clamp = (v, max = 2000) =>
+    typeof v === 'string' ? (v.length > max ? v.slice(0, max) + '…' : v) : v;
+
   const b = [];
   b.push('---');
   for (const k of order) {
     if (obj[k] === undefined) continue;
-    if (k === 'tags' && Array.isArray(obj[k])) {
-      b.push(`${k}: [${obj[k].map(v => JSON.stringify(v)).join(', ')}]`);
-    } else if (k === 'provenance' && obj[k] && typeof obj[k] === 'object') {
+    const val = obj[k];
+
+    if ((k === 'tags' || k === 'authors') && Array.isArray(val)) {
+      b.push(`${k}: [${val.slice(0, 50).map(v => JSON.stringify(clamp(v))).join(', ')}]`);
+    } else if (k === 'provenance' && val && typeof val === 'object') {
       b.push(`${k}:`);
-      for (const [kk, vv] of Object.entries(obj[k])) {
-        b.push(`  ${kk}: ${JSON.stringify(vv)}`);
+      for (const [kk, vv] of Object.entries(val)) {
+        b.push(`  ${kk}: ${JSON.stringify(clamp(vv))}`);
       }
     } else {
-      b.push(`${k}: ${JSON.stringify(obj[k])}`);
+      b.push(`${k}: ${JSON.stringify(clamp(val))}`);
     }
   }
   b.push('---');
@@ -182,7 +213,6 @@ function ensureBodyDelimiter(body) {
 }
 function injectNav(body) {
   if (body.includes(NAV_MARKER)) return body;
-  // vlož NAV hneď za body:start (ak existuje), inak na začiatok
   const idx = body.indexOf('<!-- body:start -->');
   if (idx >= 0) {
     const before = body.slice(0, idx + '<!-- body:start -->'.length);
@@ -221,12 +251,12 @@ function firstParagraph(mdBody) {
 }
 
 // --- derivácie z CSV ---
-function computeDerived(row) {
+function computeDerived(row, locale = 'sk') {
   const shortTitle = row.ShortTitle || row['Short Title'] || 'Untitled';
   const id = (row.ID || row.Id || row.id || row['\uFEFFID'] || '').trim();
   const folderName = row.FolderName?.trim() || `${id}-${kebab(shortTitle)}`;
   const sidebarLabel = row.SidebarLabel?.trim() || `${id} – ${shortTitle}`;
-  const linkSlug = `/${'sk'}/knifes/${kebab(`${id} ${shortTitle}`)}`; // informatívne; web slug generujeme aj z locale
+  const linkSlug = `/${locale}/knifes/${kebab(`${id} ${shortTitle}`)}`;
   return { shortTitle, folderName, sidebarLabel, linkSlug };
 }
 
@@ -252,6 +282,13 @@ function buildFrontMatter(row, d, opts) {
     locale: loc
   };
 
+  // authors from CSV
+  const authors = parseAuthors(row);
+  if (authors.length) {
+    fm.authors = authors.slice(0, 10);
+    fm.author = authors[0];
+  }
+
   const prov = {};
   if (opts?.org) prov.org = opts.org;
   if (opts?.project) prov.project = opts.project;
@@ -275,8 +312,11 @@ function detailsBlock(row, org, project) {
   const ctx = row['Context, Origin, Why it was initiated?'] || row.Context || '';
   const slug = row._linkSlug || '';
   const position = parseInt(String(row.ID||'').replace(/^K/i,''),10) || '';
+  const author = (row._authors && row._authors[0]) || row.Author || row.Authors || '';
+
   return `### ${row.ID} – ${row.ShortTitle||row['Short Title']||''}
 
+**Author**: ${author}  
 **Category**: ${row.Category||''}  
 **Status**: ${row.Status||''}  
 **Type**: ${row.Type||''}  
@@ -355,9 +395,22 @@ async function normalizeKnifes(repoRoot, opts) {
       : [];
     const tags = Array.from(new Set(inferFsTags(dirAbs, fmTags)));
 
+    // prevzatie description z tela ak vo FM chýba
     const description = fm.description && fm.description !== '""'
       ? fm.description
       : firstParagraph(bodyRaw);
+
+    // prevzatie autorov z FM (string | JSON | single)
+    let authorsFM = [];
+    if (Array.isArray(fm.authors)) authorsFM = fm.authors;
+    else if (typeof fm.authors === 'string') {
+      try {
+        authorsFM = fm.authors.startsWith('[')
+          ? JSON.parse(fm.authors)
+          : fm.authors.split(',').map(s=>s.trim()).filter(Boolean);
+      } catch { authorsFM = []; }
+    }
+    const authorFM = fm.author || (authorsFM[0] || '');
 
     let provenance;
     if (!fm.provenance && (opts.org || opts.project)) {
@@ -370,6 +423,8 @@ async function normalizeKnifes(repoRoot, opts) {
       slug, sidebar_label, sidebar_position,
       tags,
       locale: fm.locale || loc,
+      ...(authorsFM.length ? { authors: authorsFM } : {}),
+      ...(authorFM ? { author: authorFM } : {}),
       ...(provenance ? { provenance } : {})
     };
 
@@ -402,12 +457,21 @@ async function writeJsonIndex(repoRoot, locale, org, project, dryRun) {
     const fm = parseSimpleYAML(fmText||'');
 
     const tags = Array.isArray(fm.tags) ? fm.tags :
-      (typeof fm.tags === 'string' && fm.tags.startsWith('[') ? JSON.parse(fm.tags) :
+      (typeof fm.tags === 'string' && fm.tags.startsWith('[') ? (() => { try { return JSON.parse(fm.tags); } catch { return []; } })() :
        typeof fm.tags === 'string' ? fm.tags.split(',').map(s=>s.trim()).filter(Boolean) : []);
+
+    // robustné načítanie autorov do indexu
+    const authors = Array.isArray(fm.authors) ? fm.authors :
+      (typeof fm.authors === 'string' && fm.authors.startsWith('[') ? (() => { try { return JSON.parse(fm.authors); } catch { return []; } })() :
+       typeof fm.authors === 'string' ? fm.authors.split(',').map(s=>s.trim()).filter(Boolean) :
+       fm.author ? [String(fm.author)] : []);
+    const author = authors[0] || (fm.author || '');
 
     index.push({
       id: fm.id || '',
       title: fm.title || '',
+      author,
+      authors,
       description: fm.description || '',
       status: fm.status || 'draft',
       type: fm.type || '',
@@ -453,11 +517,19 @@ async function main() {
   // CSV → rows
   const text = await fs.readFile(csvPath, 'utf8');
   const rowsRaw = parseCSV(text);
-  const rows = rowsRaw.filter(r => {
+
+  // sanitizácia riadkov kvôli stabilite
+  const rowsSanitized = rowsRaw.map(sanitizeRow);
+
+  const rows = rowsSanitized.filter(r => {
     const id = (r.ID || r.Id || r.id || r['\uFEFFID'] || '').trim();
     if (id && !r.ID) r.ID = id;
+    // predpočítaj autorov pre prehľady
+    r._authors = parseAuthors(r);
+    r._author = r._authors[0] || '';
     return /^K\d{3}$/i.test(id);
   });
+
   if (rows.length === 0 && rowsRaw.length > 0) {
     const first = rowsRaw[0];
     console.log('ℹ️  Detected CSV header keys:', Object.keys(first));
@@ -488,7 +560,7 @@ async function main() {
 
   // 1) Vytváraj skeletony
   for (const row of rows) {
-    const d = computeDerived(row);
+    const d = computeDerived(row, locale);
     row._folderName = d.folderName;
     row._sidebarLabel = d.sidebarLabel;
     row._linkSlug = d.linkSlug;                               // web info
@@ -521,42 +593,80 @@ async function main() {
   // 2) JSON index
   await writeJsonIndex(repoRoot, locale, org, project, dryRun);
 
-  // 3) Prehľady
+  // 3) Prehľady (s stránkovaním pre ťažké výstupy)
+  const PAGE_SIZE = 30;
+  const clamp = (s, n = 200) => String(s || '').replace(/\s+/g, ' ').trim().slice(0, n);
+
   const overviewShort =
 `# 📋 KNIFEs Overview
 
-| ID   | Category | Short Title | Status | Priority | Type | Date | Org | Project | Link |
-|------|----------|-------------|--------|---------:|------|------|-----|---------|------|
+| ID   | Category | Short Title | Status | Priority | Type | Date | Author | Org | Project | Link |
+|------|----------|-------------|--------|---------:|------|------|--------|-----|---------|------|
 ` + rows.map(r => {
     const link = `[${r.ShortTitle || r['Short Title'] || ''}](${r._docRelLink || '#'})`;
-    return `| ${r.ID} | ${r.Category||''} | ${r.ShortTitle||r['Short Title']||''} | ${r.Status||''} | ${r.Priority||''} | ${r.Type||''} | ${r['Date of Record']||r.Date||''} | ${org||''} | ${project||''} | ${link} |`;
+    const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
+    return `| ${r.ID} | ${r.Category||''} | ${r.ShortTitle||r['Short Title']||''} | ${r.Status||''} | ${r.Priority||''} | ${r.Type||''} | ${r['Date of Record']||r.Date||''} | ${author} | ${org||''} | ${project||''} | ${link} |`;
   }).join('\n') + '\n';
 
-  const overviewList =
-`| ID | Category | Short Title | Status | Type | Priority | Org | Project | Description | Context | SFIA – Level | SFIA – Domain (?) | SFIA – Maturity | Tags |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---|:---:|:---:|:---:|:---:|
-` + rows.map(r => {
-    const title = r.ShortTitle || r['Short Title'] || '';
-    const link = `[${title}](${r._docRelLink || '#'})`;
-    const ctx = (r['Context, Origin, Why it was initiated?']||r.Context||'').replace(/\n/g,' ');
-    return `| ${r.ID} | ${r.Category||''} | ${link} | ${r.Status||''} | ${r.Type||''} | ${r.Priority||''} | ${org||''} | ${project||''} | ${r.Description||''} | ${ctx} | ${r['SFIA – Level']||r.SFIA_Level||''} | ${r['SFIA – Domain (?)']||r.SFIA_Domain||''} | ${r['SFIA – Maturity']||r.SFIA_Maturity||''} | ${r.Tags||''} |`;
-  }).join('\n') + '\n';
+  const mkPager = (base, page, pages) => {
+    const links = Array.from({length: pages}, (_, i) => {
+      const p = i + 1;
+      const name = p === 1 ? `${base}.md` : `${base}_p${p}.md`;
+      return p === page ? `**${p}**` : `[${p}](${name})`;
+    }).join(' ');
+    const prev = page > 1 ? `[← Prev](${page === 2 ? `${base}.md` : `${base}_p${page-1}.md`})` : '';
+    const next = page < pages ? `[Next →](${`${base}_p${page+1}.md`})` : '';
+    return `${prev}  ${links}  ${next}`.trim();
+  };
 
-  const overviewDetails =
-`# 📘 KNIFE Overview – Detailed View
+  const chunks = (arr, size) => {
+    const out = [];
+    for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+    return out;
+  };
 
-` + rows.map(r => detailsBlock(r, org, project)).join('\n');
+  const listPages = chunks(rows, PAGE_SIZE);
+  const detailsPages = chunks(rows, PAGE_SIZE);
 
   const overviewDir = path.join(repoRoot, 'docs', locale, 'KNIFES');
   await ensureDir(overviewDir);
 
   if (dryRun) {
-    console.log(`Would write overview files under ${path.relative(repoRoot, overviewDir)}/`);
+    console.log(`Would write overview files under ${path.relative(repoRoot, overviewDir)}/ (with pagination)`);
   } else {
+    // always (small) summary page
     await fs.writeFile(path.join(overviewDir, 'KNIFEsOverview.md'), overviewShort, 'utf8');
-    await fs.writeFile(path.join(overviewDir, 'KNIFE_Overview_List.md'), overviewList, 'utf8');
-    await fs.writeFile(path.join(overviewDir, 'KNIFE_Overview_Details.md'), overviewDetails, 'utf8');
-    console.log(`Overview files written under ${path.relative(repoRoot, overviewDir)}/`);
+
+    // List pages
+    for (let i = 0; i < listPages.length; i++) {
+      const page = i + 1, pages = listPages.length;
+      const header = `# 📑 KNIFE Overview – List (page ${page}/${pages})\n\n${mkPager('KNIFE_Overview_List', page, pages)}\n\n`;
+      const body =
+`| ID | Category | Short Title | Status | Type | Priority | Author | Org | Project | Description | Context | SFIA – Level | SFIA – Domain (?) | SFIA – Maturity | Tags |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---|:---:|:---:|:---:|:---:|
+` + listPages[i].map(r => {
+        const title = r.ShortTitle || r['Short Title'] || '';
+        const link = `[${title}](${r._docRelLink || '#'})`;
+        const ctx = clamp(r['Context, Origin, Why it was initiated?']||r.Context||'', 180);
+        const desc = clamp(r.Description||'', 220);
+        const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
+        return `| ${r.ID} | ${r.Category||''} | ${link} | ${r.Status||''} | ${r.Type||''} | ${r.Priority||''} | ${author} | ${org||''} | ${project||''} | ${desc} | ${ctx} | ${r['SFIA – Level']||r.SFIA_Level||''} | ${r['SFIA – Domain (?)']||r.SFIA_Domain||''} | ${r['SFIA – Maturity']||r.SFIA_Maturity||''} | ${r.Tags||''} |`;
+      }).join('\n') + '\n\n' + mkPager('KNIFE_Overview_List', page, pages) + '\n';
+
+      const name = page === 1 ? 'KNIFE_Overview_List.md' : `KNIFE_Overview_List_p${page}.md`;
+      await fs.writeFile(path.join(overviewDir, name), header + body, 'utf8');
+    }
+
+    // Details pages
+    for (let i = 0; i < detailsPages.length; i++) {
+      const page = i + 1, pages = detailsPages.length;
+      const header = `# 📘 KNIFE Overview – Detailed View (page ${page}/${pages})\n\n${mkPager('KNIFE_Overview_Details', page, pages)}\n\n`;
+      const body = detailsPages[i].map(r => detailsBlock(r, org, project)).join('\n') + '\n' + mkPager('KNIFE_Overview_Details', page, pages) + '\n';
+      const name = page === 1 ? 'KNIFE_Overview_Details.md' : `KNIFE_Overview_Details_p${page}.md`;
+      await fs.writeFile(path.join(overviewDir, name), header + body, 'utf8');
+    }
+
+    console.log(`Overview files written under ${path.relative(repoRoot, overviewDir)}/ (paginated)`);
   }
 }
 

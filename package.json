@@ -18,7 +18,7 @@
     "start": "cross-env NODE_OPTIONS=--max-old-space-size=16384 docusaurus start",
     "start:sk": "cross-env NODE_OPTIONS=--max-old-space-size=16384 docusaurus start --locale sk --no-open",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=16384 docusaurus build",
-    "serve": "docusaurus serve build",
+    "serve": "docusaurus serve",
     "prod": "npm run build && npm run serve"
 
   },

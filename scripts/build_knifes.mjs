@@ -198,11 +198,11 @@ function writeFrontMatter(obj) {
   return b.join('\n') + '\n';
 }
 
-// --- NAV blok (relatívne odkazy na 3 prehľady) ---
+// --- NAV blok (relatívne odkazy na ľahký prehľad) ---
 const NAV_MARKER = '<!-- nav:knifes -->';
 function navBlock() {
   return `${NAV_MARKER}
-> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md)
 ---
 `;
 }
@@ -593,10 +593,7 @@ async function main() {
   // 2) JSON index
   await writeJsonIndex(repoRoot, locale, org, project, dryRun);
 
-  // 3) Prehľady (s stránkovaním pre ťažké výstupy)
-  const PAGE_SIZE = 30;
-  const clamp = (s, n = 200) => String(s || '').replace(/\s+/g, ' ').trim().slice(0, n);
-
+  // 3) Prehľady – len ľahký súhrn (bez veľkých tabuliek)
   const overviewShort =
 `# 📋 KNIFEs Overview
 
@@ -608,65 +605,14 @@ async function main() {
     return `| ${r.ID} | ${r.Category||''} | ${r.ShortTitle||r['Short Title']||''} | ${r.Status||''} | ${r.Priority||''} | ${r.Type||''} | ${r['Date of Record']||r.Date||''} | ${author} | ${org||''} | ${project||''} | ${link} |`;
   }).join('\n') + '\n';
 
-  const mkPager = (base, page, pages) => {
-    const links = Array.from({length: pages}, (_, i) => {
-      const p = i + 1;
-      const name = p === 1 ? `${base}.md` : `${base}_p${p}.md`;
-      return p === page ? `**${p}**` : `[${p}](${name})`;
-    }).join(' ');
-    const prev = page > 1 ? `[← Prev](${page === 2 ? `${base}.md` : `${base}_p${page-1}.md`})` : '';
-    const next = page < pages ? `[Next →](${`${base}_p${page+1}.md`})` : '';
-    return `${prev}  ${links}  ${next}`.trim();
-  };
-
-  const chunks = (arr, size) => {
-    const out = [];
-    for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
-    return out;
-  };
-
-  const listPages = chunks(rows, PAGE_SIZE);
-  const detailsPages = chunks(rows, PAGE_SIZE);
-
   const overviewDir = path.join(repoRoot, 'docs', locale, 'KNIFES');
   await ensureDir(overviewDir);
 
   if (dryRun) {
-    console.log(`Would write overview files under ${path.relative(repoRoot, overviewDir)}/ (with pagination)`);
+    console.log(`Would write lightweight overview at ${path.relative(repoRoot, path.join(overviewDir, 'KNIFEsOverview.md'))}`);
   } else {
-    // always (small) summary page
     await fs.writeFile(path.join(overviewDir, 'KNIFEsOverview.md'), overviewShort, 'utf8');
-
-    // List pages
-    for (let i = 0; i < listPages.length; i++) {
-      const page = i + 1, pages = listPages.length;
-      const header = `# 📑 KNIFE Overview – List (page ${page}/${pages})\n\n${mkPager('KNIFE_Overview_List', page, pages)}\n\n`;
-      const body =
-`| ID | Category | Short Title | Status | Type | Priority | Author | Org | Project | Description | Context | SFIA – Level | SFIA – Domain (?) | SFIA – Maturity | Tags |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---|:---:|:---:|:---:|:---:|
-` + listPages[i].map(r => {
-        const title = r.ShortTitle || r['Short Title'] || '';
-        const link = `[${title}](${r._docRelLink || '#'})`;
-        const ctx = clamp(r['Context, Origin, Why it was initiated?']||r.Context||'', 180);
-        const desc = clamp(r.Description||'', 220);
-        const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
-        return `| ${r.ID} | ${r.Category||''} | ${link} | ${r.Status||''} | ${r.Type||''} | ${r.Priority||''} | ${author} | ${org||''} | ${project||''} | ${desc} | ${ctx} | ${r['SFIA – Level']||r.SFIA_Level||''} | ${r['SFIA – Domain (?)']||r.SFIA_Domain||''} | ${r['SFIA – Maturity']||r.SFIA_Maturity||''} | ${r.Tags||''} |`;
-      }).join('\n') + '\n\n' + mkPager('KNIFE_Overview_List', page, pages) + '\n';
-
-      const name = page === 1 ? 'KNIFE_Overview_List.md' : `KNIFE_Overview_List_p${page}.md`;
-      await fs.writeFile(path.join(overviewDir, name), header + body, 'utf8');
-    }
-
-    // Details pages
-    for (let i = 0; i < detailsPages.length; i++) {
-      const page = i + 1, pages = detailsPages.length;
-      const header = `# 📘 KNIFE Overview – Detailed View (page ${page}/${pages})\n\n${mkPager('KNIFE_Overview_Details', page, pages)}\n\n`;
-      const body = detailsPages[i].map(r => detailsBlock(r, org, project)).join('\n') + '\n' + mkPager('KNIFE_Overview_Details', page, pages) + '\n';
-      const name = page === 1 ? 'KNIFE_Overview_Details.md' : `KNIFE_Overview_Details_p${page}.md`;
-      await fs.writeFile(path.join(overviewDir, name), header + body, 'utf8');
-    }
-
-    console.log(`Overview files written under ${path.relative(repoRoot, overviewDir)}/ (paginated)`);
+    console.log(`Overview file written: ${path.relative(repoRoot, path.join(overviewDir, 'KNIFEsOverview.md'))}`);
   }
 }
 

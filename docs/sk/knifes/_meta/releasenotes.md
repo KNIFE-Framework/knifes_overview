@@ -1,5 +1,7 @@
-# KNIFE Overview — Release v1.0.1 (2025-08-15)
+# KNIFE Overview — Release v1.1.1 (2025-09-07)
 
+> Veľa úprav ale veľký problém nastal pri generovaní Detailného overview a s premenovaním "docs/sk/KNIFES"  na knife... 
+> V budúcnosti musím nahradiť prehľady detailné dynamickým generovaním.
 > Stabilizačný release s jednotným Makefile-om, vylepšeným deployom (Worktree + Actions) a úvodnou stránkou **KNIFE Preview**.
 
 ## ✨ Highlights

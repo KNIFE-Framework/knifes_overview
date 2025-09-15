@@ -3,7 +3,7 @@
 // + NORMALIZE: YAML metadá, img/ + multimedia/, TEDex skelet, provenance.org/project
 // + LOCALE: --locale sk|en (default sk) – promietne sa do slug/locale
 // + OVERVIEWS: stĺpce Org/Project a relatívne odkazy na .md (VS Code/GitHub aj web) + Author(s)
-// + JSON index: docs/<locale>/KNIFES/knifes_index.json (machine-readable) vrátane author/authors
+// + JSON index: docs/<locale>/knifes/knifes_index.json (machine-readable) vrátane author/authors
 // + NAV: do každého článku sa vloží navigácia na 3 prehľady (relatívne .md)
 // + SANITIZE: CSV hodnoty (dlhé reťazce, behy spätných lomítok a whitespace)
 //
@@ -169,11 +169,13 @@ function parseSimpleYAML(yaml) {
   return obj;
 }
 function writeFrontMatter(obj) {
-  const order = [
-    'id','title','description','author','authors','date','updated',
-    'status','type','category','tags','slug','sidebar_label',
-    'sidebar_position','locale','provenance','provenance_org','provenance_project'
-  ];
+  // v writeFrontMatter:
+const order = [
+  'id','title','description','author','authors',
+  'created','modified','date','updated',
+  'status','type','category','tags','slug','sidebar_label',
+  'sidebar_position','locale','provenance','provenance_org','provenance_project'
+];
   const clamp = (v, max = 2000) =>
     typeof v === 'string' ? (v.length > max ? v.slice(0, max) + '…' : v) : v;
 
@@ -202,7 +204,7 @@ function writeFrontMatter(obj) {
 const NAV_MARKER = '<!-- nav:knifes -->';
 function navBlock() {
   return `${NAV_MARKER}
-> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md)
+> [⬅ KNIFES – Prehľad](../knifesOverview.md)
 ---
 `;
 }
@@ -293,14 +295,20 @@ function buildFrontMatter(row, d, opts) {
   if (opts?.org) prov.org = opts.org;
   if (opts?.project) prov.project = opts.project;
   if (Object.keys(prov).length) fm.provenance = { platform: 'github', ...prov };
-
+  // dates from CSV
+  const createdRaw = row['Date of Record'] || row.Date || '';
+  const today = new Date().toISOString().slice(0,10);
+  fm.created = createdRaw ? new Date(createdRaw).toISOString().slice(0,10) : today;
+  fm.modified = fm.created;
   return writeFrontMatter(fm);
 }
 
 // --- Prehľady (relatívne linky na .md)
 function tableLine(row) {
-  const link = `[${row.ShortTitle || row['Short Title'] || ''}](${row._docRelLink || '#'})`;
-  return `| ${row.ID} | ${row.Category||''} | ${row.ShortTitle||row['Short Title']||''} | ${row.Status||''} | ${row.Priority||''} | ${row.Type||''} | ${row['Date of Record']||row.Date||''} | ${link} |`;
+  const title = row.ShortTitle || row['Short Title'] || '';
+  const href = row._linkSlug || row._docRelLink || '#';
+  const titleLink = href ? `[${title}](${href})` : title;
+  return `| ${row.ID} | ${row.Category||''} | ${titleLink} | ${row.Status||''} | ${row.Priority||''} | ${row.Type||''} | ${row['Date of Record']||row.Date||''} |`;
 }
 function detailsBlock(row, org, project) {
   const link = `[${row._folderName||row.ShortTitle||row['Short Title']||''}](${row._docRelLink||'#'})`;
@@ -356,10 +364,11 @@ function inferFsTags(dirAbs, initial = []) {
   return Array.from(tags);
 }
 
-// --- NORMALIZE: doplní FM + body:start + NAV do docs/<locale>/KNIFES
+// --- NORMALIZE: doplní FM + body:start + NAV do docs/<locale>/knifes
 async function normalizeKnifes(repoRoot, opts) {
+  // Normalize all articles in docs/<locale>/knifes by updating frontmatter, navigation, and media folders.
   const loc = opts.locale || 'sk';
-  const base = path.join(repoRoot, 'docs', loc, 'KNIFES');
+  const base = path.join(repoRoot, 'docs', loc, 'knifes');
   if (!await fileExists(base)) return;
 
   for (const folder of (await fs.readdir(base))) {
@@ -368,7 +377,8 @@ async function normalizeKnifes(repoRoot, opts) {
 
     await ensureMediaFolders(dirAbs);
 
-    const mainMd = (await fs.readdir(dirAbs)).find(f => /^K\d{3}.*\.md$/i.test(f));
+    const files = await fs.readdir(dirAbs);
+    const mainMd = files.includes('index.md') ? 'index.md' : files.find(f => /^K\d{3}.*\.md$/i.test(f));
     if (!mainMd) continue;
 
     const mainAbs = path.join(dirAbs, mainMd);
@@ -442,14 +452,16 @@ async function normalizeKnifes(repoRoot, opts) {
 
 // --- JSON index writer ---
 async function writeJsonIndex(repoRoot, locale, org, project, dryRun) {
-  const base = path.join(repoRoot, 'docs', locale, 'KNIFES');
+  // Write a machine-readable JSON index for docs/<locale>/knifes
+  const base = path.join(repoRoot, 'docs', locale, 'knifes');
   if (!fssync.existsSync(base)) return;
   const index = [];
 
   for (const folder of fssync.readdirSync(base)) {
     const dirAbs = path.join(base, folder);
     if (!fssync.statSync(dirAbs).isDirectory()) continue;
-    const mainMd = fssync.readdirSync(dirAbs).find(f => /^K\d{3}.*\.md$/i.test(f));
+    const entries = fssync.readdirSync(dirAbs);
+    const mainMd = entries.includes('index.md') ? 'index.md' : entries.find(f => /^K\d{3}.*\.md$/i.test(f));
     if (!mainMd) continue;
 
     const raw = fssync.readFileSync(path.join(dirAbs, mainMd), 'utf8');
@@ -486,7 +498,7 @@ async function writeJsonIndex(repoRoot, locale, org, project, dryRun) {
         org: org || '',
         project: project || ''
       },
-      path: `docs/${locale}/KNIFES/${folder}/${mainMd}`
+      path: `docs/${locale}/knifes/${folder}/${mainMd}`
     });
   }
 
@@ -542,8 +554,8 @@ async function main() {
     const missing = [];
     for (const r of rows) {
       const { folderName, linkSlug } = computeDerived(r);
-      const dir = path.join(repoRoot, 'docs', locale, 'KNIFES', folderName);
-      const file = path.join(dir, `${folderName}.md`);
+      const dir = path.join(repoRoot, 'docs', locale, 'knifes', folderName);
+      const file = path.join(dir, `index.md`);
       const exists = await fileExists(file);
       if (!exists) {
         createCount++;
@@ -564,11 +576,11 @@ async function main() {
     row._folderName = d.folderName;
     row._sidebarLabel = d.sidebarLabel;
     row._linkSlug = d.linkSlug;                               // web info
-    row._docRelLink = `./${d.folderName}/${d.folderName}.md`; // file link
+    row._docRelLink = `./${d.folderName}/index.md`; // file link
     row._locale = locale;
 
-    const dir = path.join(repoRoot, 'docs', locale, 'KNIFES', d.folderName);
-    const file = path.join(dir, `${d.folderName}.md`);
+    const dir = path.join(repoRoot, 'docs', locale, 'knifes', d.folderName);
+    const file = path.join(dir, `index.md`);
     await ensureDir(dir);
     await ensureDir(path.join(dir, 'img'));
     await ensureDir(path.join(dir, 'multimedia'));
@@ -597,22 +609,24 @@ async function main() {
   const overviewShort =
 `# 📋 KNIFEs Overview
 
-| ID   | Category | Short Title | Status | Priority | Type | Date | Author | Org | Project | Link |
-|------|----------|-------------|--------|---------:|------|------|--------|-----|---------|------|
+| ID   | Category | Title | Status | Priority | Type | Date | Author | Org | Project |
+|------|----------|-------|--------|---------:|------|------|--------|-----|---------|
 ` + rows.map(r => {
-    const link = `[${r.ShortTitle || r['Short Title'] || ''}](${r._docRelLink || '#'})`;
+    const title = r.ShortTitle || r[' Short Title'] || '';
+    const href = r._linkSlug || r._docRelLink || '#';
+    const titleLink = href ? `[${title}](${href})` : title;
     const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
-    return `| ${r.ID} | ${r.Category||''} | ${r.ShortTitle||r['Short Title']||''} | ${r.Status||''} | ${r.Priority||''} | ${r.Type||''} | ${r['Date of Record']||r.Date||''} | ${author} | ${org||''} | ${project||''} | ${link} |`;
+    return `| ${r.ID} | ${r.Category||''} | ${titleLink} | ${r.Status||''} | ${r.Priority||''} | ${r.Type||''} | ${r['Date of Record']||r.Date||''} | ${author} | ${org||''} | ${project||''} |`;
   }).join('\n') + '\n';
 
-  const overviewDir = path.join(repoRoot, 'docs', locale, 'KNIFES');
+  const overviewDir = path.join(repoRoot, 'docs', locale, 'knifes');
   await ensureDir(overviewDir);
 
   if (dryRun) {
-    console.log(`Would write lightweight overview at ${path.relative(repoRoot, path.join(overviewDir, 'KNIFEsOverview.md'))}`);
+    console.log(`Would write lightweight overview at ${path.relative(repoRoot, path.join(overviewDir, 'knifesOverview.md'))}`);
   } else {
-    await fs.writeFile(path.join(overviewDir, 'KNIFEsOverview.md'), overviewShort, 'utf8');
-    console.log(`Overview file written: ${path.relative(repoRoot, path.join(overviewDir, 'KNIFEsOverview.md'))}`);
+    await fs.writeFile(path.join(overviewDir, 'knifesOverview.md'), overviewShort, 'utf8');
+    console.log(`Overview file written: ${path.relative(repoRoot, path.join(overviewDir, 'knifesOverview.md'))}`);
   }
 }
 

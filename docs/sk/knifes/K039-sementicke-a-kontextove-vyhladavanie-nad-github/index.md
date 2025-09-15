@@ -2,10 +2,8 @@
 id: "K039"
 title: "Sementicke a kontextove vyhladavanie nad GitHUB"
 description: "Nestaci mat len data a informacie, je nevyhnutne ich spajat a dotazovat sa"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "init"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k039-sementicke-a-kontextove-vyhladavanie-nad-github"

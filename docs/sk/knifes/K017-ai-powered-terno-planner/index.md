@@ -2,10 +2,8 @@
 id: "K017"
 title: "AI-powered TERNO Planner"
 description: "Nástroj na správu a sledovanie TERNA záznamov"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "koncept"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k017-ai-powered-terno-planner"

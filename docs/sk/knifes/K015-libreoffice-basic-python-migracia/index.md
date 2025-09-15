@@ -2,10 +2,8 @@
 id: "K015"
 title: "LibreOffice Basic → Python migrácia"
 description: "Konverzia VB makier do Python skriptov"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "aktívne"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k015-libreoffice-basic-python-migracia"

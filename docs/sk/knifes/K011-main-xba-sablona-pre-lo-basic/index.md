@@ -2,10 +2,8 @@
 id: "K011"
 title: "Main.xba šablóna pre LO Basic"
 description: "Základná štartovacia knižnica makier v LibreOffice"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v backlogu"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k011-main-xba-sablona-pre-lo-basic"

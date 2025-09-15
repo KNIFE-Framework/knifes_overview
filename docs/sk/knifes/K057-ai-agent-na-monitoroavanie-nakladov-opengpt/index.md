@@ -2,10 +2,8 @@
 id: "K057"
 title: "AI Agent na monitoroavanie nákladov OpenGPT"
 description: "Automatické reportovanie vstupných a výstupných tokenov.Presne tak – toto má perfektný predpoklad stať sa AI Agentom, ktorý:"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k057-ai-agent-na-monitoroavanie-nakladov-opengpt"

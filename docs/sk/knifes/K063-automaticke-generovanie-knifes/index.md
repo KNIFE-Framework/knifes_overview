@@ -2,10 +2,8 @@
 id: "K063"
 title: "Automatické generovanie KNIFES"
 description: "Ako používať automatizáciu pri generovaní KNIFES"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k063-automaticke-generovanie-knifes"

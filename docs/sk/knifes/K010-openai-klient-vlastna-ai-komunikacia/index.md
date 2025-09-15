@@ -2,10 +2,8 @@
 id: "K010"
 title: "OpenAI klient – vlastná AI komunikácia"
 description: "Appka s prepojením na OpenAI API a archív komunikácie"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "začiatok"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k010-openai-klient-vlastna-ai-komunikacia"

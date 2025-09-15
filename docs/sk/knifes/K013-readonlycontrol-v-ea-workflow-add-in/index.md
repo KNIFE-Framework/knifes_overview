@@ -2,10 +2,8 @@
 id: "K013"
 title: "ReadOnlyControl v EA – Workflow Add-In"
 description: "Obmedzenie práv v EA na základe kontextu a roly"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "koncept"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k013-readonlycontrol-v-ea-workflow-add-in"

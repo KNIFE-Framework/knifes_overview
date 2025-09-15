@@ -2,10 +2,8 @@
 id: "K046"
 title: "Thunderbird – Archive-export"
 description: "Omylom som poslal e-mail do archivu. Mam v  poste asi 60GB udajov. Ako to riesit?"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "done md"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k046-thunderbird-archive-export"

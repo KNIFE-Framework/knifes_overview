@@ -2,10 +2,8 @@
 id: "K031"
 title: "„Document-as-Code“ framework"
 description: "Tvorba dokumentov ako SDLC proces. Diplomovky, sprievodná dokumentácia pre zákazníklov, …."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v riešení"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k031-document-as-code-framework"

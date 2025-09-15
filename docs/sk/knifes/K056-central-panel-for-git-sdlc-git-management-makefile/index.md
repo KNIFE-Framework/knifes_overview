@@ -2,10 +2,8 @@
 id: "K056"
 title: "Central Panel for GIT – SDLC Git Management Makefile"
 description: "•…"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "done md"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k056-central-panel-for-git-sdlc-git-management-makefile"

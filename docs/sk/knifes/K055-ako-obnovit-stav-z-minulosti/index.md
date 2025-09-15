@@ -2,10 +2,8 @@
 id: "K055"
 title: "Ako obnoviť stav z minulosti?"
 description: "Ako si obnoviť pokazné súbory? Ak mám v minulosti zachytené dobré údaje, nie je problém sa k nim vrátiť."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "inprogress"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k055-ako-obnovit-stav-z-minulosti"

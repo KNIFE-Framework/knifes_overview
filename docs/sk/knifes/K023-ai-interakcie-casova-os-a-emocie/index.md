@@ -2,10 +2,8 @@
 id: "K023"
 title: "AI interakcie – časová os a emócie"
 description: "Zaznamenávanie malých interakcií, small-talkov a spätných väzieb pre orientáciu v čase"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v návrhu"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k023-ai-interakcie-casova-os-a-emocie"

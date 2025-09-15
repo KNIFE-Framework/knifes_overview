@@ -2,10 +2,8 @@
 id: "K001"
 title: "EA modelovanie a motivácia"
 description: "Systém motivácie pomocou lízaniek a spätnej väzby"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "hotové"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k001-ea-modelovanie-a-motivacia"

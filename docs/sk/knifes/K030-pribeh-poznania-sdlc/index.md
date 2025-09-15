@@ -2,10 +2,8 @@
 id: "K030"
 title: "Príbeh poznania SDLC"
 description: "Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisať a bolo by to v kontexte KM, SDLC"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v riešení"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k030-pribeh-poznania-sdlc"

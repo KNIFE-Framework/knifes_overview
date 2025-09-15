@@ -2,10 +2,8 @@
 id: "K020"
 title: "LibreOffice ako komunitná platforma"
 description: "Podpora LO ako otvoreného, komunitného štandardu pre udržateľné riešenia"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "koncept"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k020-libreoffice-ako-komunitna-platforma"

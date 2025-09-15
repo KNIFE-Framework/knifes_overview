@@ -2,8 +2,10 @@
   {
     "id": "K001",
     "title": "EA modelovanie a motivácia",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Systém motivácie pomocou lízaniek a spätnej väzby",
     "status": "hotové",
     "type": "",
@@ -25,8 +27,10 @@
   {
     "id": "K002",
     "title": "Git workflow pre EA modely",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Multirelease stratégie, LemonTree, merge politiky",
     "status": "v procese",
     "type": "",
@@ -48,8 +52,10 @@
   {
     "id": "K003",
     "title": "LibreOffice + Python integrácia",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Skriptovanie v LO cez Python a venv izolácie",
     "status": "v procese",
     "type": "",
@@ -71,8 +77,10 @@
   {
     "id": "K004",
     "title": "Docker pre študentov (K12)",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Zjednodušené návody a obrázky pre začiatočníkov",
     "status": "plánované",
     "type": "",
@@ -94,8 +102,10 @@
   {
     "id": "K005",
     "title": "BaZi pre racionálne duše",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Sebapoznanie cez dátum a čas narodenia (BaZi)",
     "status": "zaradené",
     "type": "",
@@ -117,8 +127,10 @@
   {
     "id": "K006",
     "title": "Tímová správa práv v Gitea",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Rozdelenie práv podľa tímov, chránené vetvy, PR politiky",
     "status": "pripomenúť",
     "type": "",
@@ -140,8 +152,10 @@
   {
     "id": "K007",
     "title": "Helper skript na obrázky v Markdown",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Generovanie obrázkových blokov do .md vrátane URL",
     "status": "aktívne",
     "type": "",
@@ -163,8 +177,10 @@
   {
     "id": "K008",
     "title": "DCMM a DAO – hodnota leadershipu",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Sebariadenie, dôvera a samočistiace systémy",
     "status": "plánované",
     "type": "",
@@ -186,8 +202,10 @@
   {
     "id": "K009",
     "title": "LinkedIn post engine – AI automatizácia",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Generovanie postov na LinkedIn z obsahu",
     "status": "koncept",
     "type": "",
@@ -209,8 +227,10 @@
   {
     "id": "K010",
     "title": "OpenAI klient – vlastná AI komunikácia",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Appka s prepojením na OpenAI API a archív komunikácie",
     "status": "začiatok",
     "type": "",
@@ -232,8 +252,10 @@
   {
     "id": "K011",
     "title": "Main.xba šablóna pre LO Basic",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Základná štartovacia knižnica makier v LibreOffice",
     "status": "v backlogu",
     "type": "",
@@ -255,8 +277,10 @@
   {
     "id": "K012",
     "title": "EA Workflow Add-In – pokročilé šablóny",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Workflow pre pokročilých analytikov v EA",
     "status": "v backlogu",
     "type": "",
@@ -278,8 +302,10 @@
   {
     "id": "K013",
     "title": "ReadOnlyControl v EA – Workflow Add-In",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Obmedzenie práv v EA na základe kontextu a roly",
     "status": "koncept",
     "type": "",
@@ -301,8 +327,10 @@
   {
     "id": "K014",
     "title": "Manažér knižníc pre LO Basic",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Načítanie a správa knižníc v LO Basic",
     "status": "návrh",
     "type": "",
@@ -324,8 +352,10 @@
   {
     "id": "K015",
     "title": "LibreOffice Basic → Python migrácia",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Konverzia VB makier do Python skriptov",
     "status": "aktívne",
     "type": "",
@@ -347,8 +377,10 @@
   {
     "id": "K016",
     "title": "Helper skript pre LO symbolic link",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Obnova symbolic linku pre user/scripts/",
     "status": "v testovaní",
     "type": "",
@@ -370,8 +402,10 @@
   {
     "id": "K017",
     "title": "AI-powered TERNO Planner",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Nástroj na správu a sledovanie TERNA záznamov",
     "status": "koncept",
     "type": "",
@@ -393,8 +427,10 @@
   {
     "id": "K019",
     "title": "BaZi výpočty – algoritmus, hodiny, kalendár",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Výpočtový rámec BaZi v Pythone alebo Exceli, denné a hodinové analýzy, poradca",
     "status": "zaradené",
     "type": "",
@@ -416,8 +452,10 @@
   {
     "id": "K020",
     "title": "LibreOffice ako komunitná platforma",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Podpora LO ako otvoreného, komunitného štandardu pre udržateľné riešenia",
     "status": "koncept",
     "type": "",
@@ -439,8 +477,10 @@
   {
     "id": "K021",
     "title": "Princíp udržateľnosti v architektúre",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Architektonické a dizajnové rozhodnutia s ohľadom na stabilitu a dlhodobosť",
     "status": "koncept",
     "type": "",
@@ -462,8 +502,10 @@
   {
     "id": "K022",
     "title": "TERNO – terapeutické formy učenia",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Satira, emócie a storytelling ako forma výuky a reflektovania reality",
     "status": "plánované",
     "type": "",
@@ -485,8 +527,10 @@
   {
     "id": "K023",
     "title": "AI interakcie – časová os a emócie",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Zaznamenávanie malých interakcií, small-talkov a spätných väzieb pre orientáciu v čase",
     "status": "v návrhu",
     "type": "",
@@ -508,8 +552,10 @@
   {
     "id": "K024",
     "title": "OneNote ako zdroj metadát pre AI",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Prepájanie osobného poznámkového systému s AI klientom a projektmi",
     "status": "v návrhu",
     "type": "",
@@ -531,8 +577,10 @@
   {
     "id": "K025",
     "title": "Kategorizácia TERNO podľa SDLC a 7D",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Zaradenie každého TERNO podľa fázy vývoja a vedomostnej disciplíny",
     "status": "zaradené",
     "type": "",
@@ -554,8 +602,10 @@
   {
     "id": "K026",
     "title": "KNIFE Framework pre vývoj a učenie sa (LibreOffice, Python)",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Jednotný rámec pre budovanie, testovanie a učenie sa v malých krokoch pomocou LibreOffice + Python. Každý krok reprezentuje samostatnú jednotku (TERNO), ktorú je možné testovať a spätne dohľadať. Vhodné na výuku aj profesionálny vývoj.",
     "status": "v procese",
     "type": "",
@@ -577,8 +627,10 @@
   {
     "id": "K027",
     "title": "Git For Dummies – Central Concepts",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Jednoduché vysvetlenie Git základov pre začiatočníkov v GitEA (organizácia, repozitár, working directory, atď.)",
     "status": "v príprave",
     "type": "",
@@ -600,8 +652,10 @@
   {
     "id": "K028",
     "title": "Context Aware System Ontology, Approach",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Každé riešenie je o kontexte. Neexistuje jeden nástroj na vštky problémy. Toto zasahuje do filozofie.",
     "status": "v príprave",
     "type": "",
@@ -623,8 +677,10 @@
   {
     "id": "K029",
     "title": "Prostredie vývojové python pre LO",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Profi prostredie pre pyhton dev v LO, OOODEV",
     "status": "riešené",
     "type": "",
@@ -646,8 +702,10 @@
   {
     "id": "K030",
     "title": "Príbeh poznania SDLC",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisať a bolo by to v kontexte KM, SDLC",
     "status": "v riešení",
     "type": "",
@@ -669,8 +727,10 @@
   {
     "id": "K031",
     "title": "„Document-as-Code“ framework",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Tvorba dokumentov ako SDLC proces. Diplomovky, sprievodná dokumentácia pre zákazníklov, ….",
     "status": "v riešení",
     "type": "",
@@ -692,8 +752,10 @@
   {
     "id": "K032",
     "title": "„Enterprise Document-integrated SDLC“",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Zavedenie Git-based dokumentačného frameworku pre prepojenie požiadaviek, rozhodnutí a architektúr naprieč SDLC vo firemnom prostredí s množstvom stakeholderov, JIRA taskov, externých dodávateľov a zložitým change manažmentom.",
     "status": "v návrhu (alebo v riešení – podľa teba)",
     "type": "",
@@ -715,8 +777,10 @@
   {
     "id": "K033",
     "title": "Smalltalk ako nástroj flowu a kontextu",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)…",
     "status": "v riešeni",
     "type": "",
@@ -738,8 +802,10 @@
   {
     "id": "K036",
     "title": "Pracovno, finančný ekosystém",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Absolventi architektúry už počas štúdia sú selektovaní  z komerčných ateliérov. Ponúkajú im brikády, prípadne dohody o vykonaní práce, za cenu nekvalifikovaných robotníkov.",
     "status": "návrh",
     "type": "",
@@ -761,8 +827,10 @@
   {
     "id": "K037",
     "title": "Context Aware Solutions / paradigma, solution",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)…",
     "status": "inprogress",
     "type": "",
@@ -784,8 +852,10 @@
   {
     "id": "K038",
     "title": "Ako si vyrobit automaticke nastavovanie SSL",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Pre FIIT PROLABORATE potrebujem SSL certifikaty, ako pre zakaznikov ako Dusan",
     "status": "finished",
     "type": "",
@@ -807,8 +877,10 @@
   {
     "id": "K039",
     "title": "Sementicke a kontextove vyhladavanie nad GitHUB",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Nestaci mat len data a informacie, je nevyhnutne ich spajat a dotazovat sa",
     "status": "init",
     "type": "",
@@ -830,8 +902,10 @@
   {
     "id": "K040",
     "title": "Migracia Joomla -->GitHUB MkDocs",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Zachovať históriu kurzu (2017–2025), udržať všetko v jednom hlavnom repozitári",
     "status": "init",
     "type": "",
@@ -853,8 +927,10 @@
   {
     "id": "K041",
     "title": "GitHUB Education Framework",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Zastrešujúci rámec pre vzdelávacie kurzy na GitHube (GitHub Classroom, Pages, Docs generátory). Definuje zásady, šablóny, publishing flow a metriky.Skillmea, SEDUO maju vlastny framework , uvodny trailer, potom odskok do platenej verzie. To iste sa da aj na GitHUB.",
     "status": "init",
     "type": "",
@@ -878,8 +954,10 @@
   {
     "id": "K042",
     "title": "SinglePageApplication – Webabased desktop app",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "GitHUb je zaklad aj pre vyvoj aplikacii nezavislych na koncovom zariadenie SPA",
     "status": "init",
     "type": "",
@@ -901,8 +979,10 @@
   {
     "id": "K043",
     "title": "Kontrola odpovedé študentov pomocou API na AI",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Pre veľký počet študentov nie je možné kontrolovať odpovede na voľné otázky. AI by mohlo pomôcť.",
     "status": "in progress",
     "type": "",
@@ -924,8 +1004,10 @@
   {
     "id": "K044",
     "title": "OneDrive backup to external disk on QNAP",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "This KNIFE explains how to create a full backup of your OneDrive data in cases where the local disk does not have sufficient capacity to mirror the entire cloud content. When 'Files On-Demand' is enabled, standard tools are unable to copy files – they can at best read their metadata. However, using tools like `rclone`, it becomes possible to back up the cloud directly without needing local mirroring.",
     "status": "inprogress",
     "type": "",
@@ -947,8 +1029,10 @@
   {
     "id": "K045",
     "title": "Základné informácie o ESG",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Environment, Social, Government is crutial topic for human being survival. It is important to understand  the background",
     "status": "init",
     "type": "",
@@ -970,8 +1054,10 @@
   {
     "id": "K046",
     "title": "Thunderbird – Archive-export",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Omylom som poslal e-mail do archivu. Mam v  poste asi 60GB udajov. Ako to riesit?",
     "status": "done md",
     "type": "",
@@ -1016,8 +1102,10 @@
   {
     "id": "K048",
     "title": "AI – Agent in OpenGPT",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\…",
     "status": "in progress",
     "type": "",
@@ -1062,8 +1150,10 @@
   {
     "id": "K050",
     "title": "Open GPT, vytváranie prompt instructions",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Vznizkli instrukcie pre zvedavych…",
     "status": "in progress",
     "type": "",
@@ -1085,8 +1175,10 @@
   {
     "id": "K051",
     "title": "Google analytics – Fundamentals",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Bez spätnej väzby je všetko náročnejšie. GA4 poskytuje marketingové spätné väzby",
     "status": "new",
     "type": "",
@@ -1108,8 +1200,10 @@
   {
     "id": "K052",
     "title": "GitHub LMS Framework",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\…",
     "status": "new",
     "type": "",
@@ -1131,8 +1225,10 @@
   {
     "id": "K053",
     "title": "Framework for Project Management in GitHUB",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Mám strašne veľa tém, veľa úloh, ako to manažovať, aby som sa neutopil v nesplnených úlohách, prípadne nezabudol na dôležité témy a neobjavoval ich znova a znova?",
     "status": "new",
     "type": "",
@@ -1154,8 +1250,10 @@
   {
     "id": "K054",
     "title": "Docusaurus Advanced Deployment Pipeline",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Kontrola referencií v Docusaurus/MkDocs",
     "status": "new",
     "type": "",
@@ -1177,8 +1275,10 @@
   {
     "id": "K055",
     "title": "Ako obnoviť stav z minulosti?",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Ako si obnoviť pokazné súbory? Ak mám v minulosti zachytené dobré údaje, nie je problém sa k nim vrátiť.",
     "status": "inprogress",
     "type": "",
@@ -1200,8 +1300,10 @@
   {
     "id": "K056",
     "title": "Central Panel for GIT – SDLC Git Management Makefile",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "•…",
     "status": "done md",
     "type": "",
@@ -1223,8 +1325,10 @@
   {
     "id": "K057",
     "title": "AI Agent na monitoroavanie nákladov OpenGPT",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Automatické reportovanie vstupných a výstupných tokenov.Presne tak – toto má perfektný predpoklad stať sa AI Agentom, ktorý:",
     "status": "new",
     "type": "",
@@ -1246,8 +1350,10 @@
   {
     "id": "K058",
     "title": "AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Aká bola intenzita komunikácie od začiatku, koľko by to stálo cez API, Ktoré témy skonzumovali najviac energie?",
     "status": "new",
     "type": "",
@@ -1269,8 +1375,10 @@
   {
     "id": "K059",
     "title": "STEM a Makerspace ako metodika vzdelávania",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Spolupracujem s Makerspace od roku 2016. POJEM STEM  som priprodzene zahrnul do  svojich metodík. Je vhodné to zviditeľniť v mojich aktivitách",
     "status": "new",
     "type": "",
@@ -1292,8 +1400,10 @@
   {
     "id": "K060",
     "title": "Export Draw.io diagramu do A4 PNG",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Ako pripraviť Drawio obázok aby sa vždy vmestil na A4 formát?",
     "status": "done md",
     "type": "",
@@ -1315,8 +1425,10 @@
   {
     "id": "K061",
     "title": "Passkey ako bezpečnostný koncept",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Ako funguje keypass?",
     "status": "new",
     "type": "",
@@ -1338,8 +1450,10 @@
   {
     "id": "K062",
     "title": "K062 – Docusaurus slugy a routing",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Ako fungujú SLUGS v Docusaurus",
     "status": "new",
     "type": "",
@@ -1361,8 +1475,10 @@
   {
     "id": "K063",
     "title": "Automatické generovanie KNIFES",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Ako používať automatizáciu pri generovaní KNIFES",
     "status": "new",
     "type": "",
@@ -1384,8 +1500,10 @@
   {
     "id": "K064",
     "title": "GA4, GTN, UTM",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Ako funguje AG4, TGM a UTM?",
     "status": "new",
     "type": "",
@@ -1408,8 +1526,10 @@
   {
     "id": "K065",
     "title": "MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Administrácia ecosystému KNIFE je pomerne komplexná úloha. Framework podporuje MacOS, Windows a Linux. MAKEFIEL umožňuje administráciu z jedného miesta.",
     "status": "new",
     "type": "",
@@ -1431,8 +1551,10 @@
   {
     "id": "K066",
     "title": "Porovnanie biznis plánov GitHub",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?",
     "status": "new",
     "type": "",
@@ -1454,8 +1576,10 @@
   {
     "id": "K067",
     "title": "GitHub Deployment stratégie",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Deployment obsahu v GitHube sa dá vykonať viacerými spôsobmi.",
     "status": "new",
     "type": "",
@@ -1477,8 +1601,10 @@
   {
     "id": "K068",
     "title": "Kruhový portrét v GIMP",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút",
     "status": "new",
     "type": "",
@@ -1501,8 +1627,10 @@
   {
     "id": "K069",
     "title": "Kto ma pochváli, ak sa nepochválim sám?",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Pre mnohých je ťažko písať o sebe. Ľahko sa skĺzne buď ku preceňovaniu, alebo naopak ku podceňovaniu.",
     "status": "new",
     "type": "",
@@ -1547,8 +1675,10 @@
   {
     "id": "K071",
     "title": "7Ds-Seven Disciplines for successful solutions",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Metodika je zameraná na podporu aktivít v rámci SDLC. Každá potencálna iformácia má svoje miesto. A je úplne jedno v akej technológií sa implementuje.",
     "status": "ongoing",
     "type": "",
@@ -1570,8 +1700,10 @@
   {
     "id": "K072",
     "title": "APV-Assets-Perspectives-Views, Keep Your Aseests in Order",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Metodika na podporu manažmentu aktív v rámci SDLC.",
     "status": "ongoing",
     "type": "",
@@ -1593,8 +1725,10 @@
   {
     "id": "K073",
     "title": "Q12- Twelve quadrants for starting business",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie.",
     "status": "ongoing",
     "type": "",
@@ -1616,8 +1750,10 @@
   {
     "id": "K074",
     "title": "SDLC-Solution Development Life Cycle",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Táto metodika vychádza z univerzálneho V – modelu. Podporuje princíly vuizuálneho manažmentu v rámci celého ťivotného cyklu riešení. To záhŕňa desiatky rolí a stovky rolí v rátane zákazníka, dodávateľa, subdodávateľov, a podnikateľského prostredia, regulátorov, zákonov, politickej situácie",
     "status": "ongoing",
     "type": "",
@@ -1639,8 +1775,10 @@
   {
     "id": "K075",
     "title": "Lean canvas",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Implemetácia Lean canvas do celkového frameworku pre podporu vytvárania riešení. Patrí ku metodike Q12",
     "status": "done md",
     "type": "",
@@ -1662,8 +1800,10 @@
   {
     "id": "K076",
     "title": "CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Neexistuje situácia, kedy môžeme ignorovať kontext. Neznalosť tohto princípu vedie k obrovským nepochopeniam, chybám, manipuláciam, sporom. Úplne zbytočne. Ak sa na začiatku ujasní kontext, tak okamžite sa dostavuje porozumenie a nastáva konštruktívny prístup.",
     "status": "ongoing",
     "type": "",
@@ -1685,8 +1825,10 @@
   {
     "id": "K077",
     "title": "KNIFE047 – 7S Cycle of Meaningful Knowledge",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Moderné technológie umožňujú využívať a zneužívať rôzne techniky marketingu. Čo si zvolíme PUSH, alebo PULL prístup. Táto metodika je zameraná na PULL marketing.",
     "status": "ongoing",
     "type": "",
@@ -1708,8 +1850,10 @@
   {
     "id": "K078",
     "title": "Language as a Bridge (AI ako most medzi jazykmi)",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
     "description": "Language as a Bridge → implementácia, nástroje, procesy (ako).",
     "status": "ongoing",
     "type": "",

@@ -2,12 +2,10 @@
 id: "K064"
 title: "GA4, GTN, UTM"
 description: "Ako funguje AG4, TGM a UTM?"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
-tags: "[\\\"KNIFE\\\", \\\"images\\\"]"
+tags: ["KNIFE", "images"]
 slug: "/sk/knifes/k064-ga4-gtn-utm"
 sidebar_label: "K064 – GA4, GTN, UTM"
 sidebar_position: "64"

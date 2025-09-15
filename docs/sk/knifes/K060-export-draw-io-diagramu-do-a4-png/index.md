@@ -2,10 +2,8 @@
 id: "K060"
 title: "Export Draw.io diagramu do A4 PNG"
 description: "Ako pripraviť Drawio obázok aby sa vždy vmestil na A4 formát?"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "done md"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k060-export-draw-io-diagramu-do-a4-png"

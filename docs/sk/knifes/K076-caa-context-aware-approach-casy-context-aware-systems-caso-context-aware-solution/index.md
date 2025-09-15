@@ -2,10 +2,8 @@
 id: "K076"
 title: "CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution"
 description: "Neexistuje situácia, kedy môžeme ignorovať kontext. Neznalosť tohto princípu vedie k obrovským nepochopeniam, chybám, manipuláciam, sporom. Úplne zbytočne. Ak sa na začiatku ujasní kontext, tak okamžite sa dostavuje porozumenie a nastáva konštruktívny prístup."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "ongoing"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution"

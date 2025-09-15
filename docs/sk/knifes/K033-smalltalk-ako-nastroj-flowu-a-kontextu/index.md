@@ -2,10 +2,8 @@
 id: "K033"
 title: "Smalltalk ako nástroj flowu a kontextu"
 description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)…"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v riešeni"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k033-smalltalk-ako-nastroj-flowu-a-kontextu"

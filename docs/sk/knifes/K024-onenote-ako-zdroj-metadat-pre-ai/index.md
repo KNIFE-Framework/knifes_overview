@@ -2,10 +2,8 @@
 id: "K024"
 title: "OneNote ako zdroj metadát pre AI"
 description: "Prepájanie osobného poznámkového systému s AI klientom a projektmi"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v návrhu"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k024-onenote-ako-zdroj-metadat-pre-ai"

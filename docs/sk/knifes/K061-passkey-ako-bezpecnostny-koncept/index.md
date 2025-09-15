@@ -2,10 +2,8 @@
 id: "K061"
 title: "Passkey ako bezpečnostný koncept"
 description: "Ako funguje keypass?"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k061-passkey-ako-bezpecnostny-koncept"

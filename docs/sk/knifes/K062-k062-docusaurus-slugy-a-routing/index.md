@@ -2,10 +2,8 @@
 id: "K062"
 title: "K062 – Docusaurus slugy a routing"
 description: "Ako fungujú SLUGS v Docusaurus"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k062-k062-docusaurus-slugy-a-routing"

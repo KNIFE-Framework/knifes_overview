@@ -2,10 +2,8 @@
 id: "K065"
 title: "MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
 description: "Administrácia ecosystému KNIFE je pomerne komplexná úloha. Framework podporuje MacOS, Windows a Linux. MAKEFIEL umožňuje administráciu z jedného miesta."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k065-makefile-for-knife-ecosystem-for-mac-windows-linux"

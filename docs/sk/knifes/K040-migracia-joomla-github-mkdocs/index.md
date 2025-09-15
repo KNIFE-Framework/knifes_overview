@@ -2,10 +2,8 @@
 id: "K040"
 title: "Migracia Joomla -->GitHUB MkDocs"
 description: "Zachovať históriu kurzu (2017–2025), udržať všetko v jednom hlavnom repozitári"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "init"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k040-migracia-joomla-github-mkdocs"

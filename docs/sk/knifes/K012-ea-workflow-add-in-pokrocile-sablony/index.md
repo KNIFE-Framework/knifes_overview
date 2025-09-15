@@ -2,10 +2,8 @@
 id: "K012"
 title: "EA Workflow Add-In – pokročilé šablóny"
 description: "Workflow pre pokročilých analytikov v EA"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v backlogu"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k012-ea-workflow-add-in-pokrocile-sablony"

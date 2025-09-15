@@ -2,10 +2,8 @@
 id: "K045"
 title: "Základné informácie o ESG"
 description: "Environment, Social, Government is crutial topic for human being survival. It is important to understand  the background"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "init"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k045-zakladne-informacie-o-esg"

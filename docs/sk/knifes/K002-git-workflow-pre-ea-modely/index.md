@@ -2,10 +2,8 @@
 id: "K002"
 title: "Git workflow pre EA modely"
 description: "Multirelease stratégie, LemonTree, merge politiky"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v procese"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k002-git-workflow-pre-ea-modely"

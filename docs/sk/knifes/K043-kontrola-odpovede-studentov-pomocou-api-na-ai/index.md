@@ -2,10 +2,8 @@
 id: "K043"
 title: "Kontrola odpovedé študentov pomocou API na AI"
 description: "Pre veľký počet študentov nie je možné kontrolovať odpovede na voľné otázky. AI by mohlo pomôcť."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "in progress"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k043-kontrola-odpovede-studentov-pomocou-api-na-ai"

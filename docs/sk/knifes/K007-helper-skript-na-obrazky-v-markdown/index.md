@@ -2,10 +2,8 @@
 id: "K007"
 title: "Helper skript na obrázky v Markdown"
 description: "Generovanie obrázkových blokov do .md vrátane URL"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "aktívne"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k007-helper-skript-na-obrazky-v-markdown"

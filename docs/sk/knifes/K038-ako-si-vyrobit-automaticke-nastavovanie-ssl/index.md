@@ -2,10 +2,8 @@
 id: "K038"
 title: "Ako si vyrobit automaticke nastavovanie SSL"
 description: "Pre FIIT PROLABORATE potrebujem SSL certifikaty, ako pre zakaznikov ako Dusan"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "finished"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k038-ako-si-vyrobit-automaticke-nastavovanie-ssl"

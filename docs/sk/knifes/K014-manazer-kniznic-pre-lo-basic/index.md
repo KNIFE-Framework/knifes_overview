@@ -2,10 +2,8 @@
 id: "K014"
 title: "Manažér knižníc pre LO Basic"
 description: "Načítanie a správa knižníc v LO Basic"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "návrh"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k014-manazer-kniznic-pre-lo-basic"

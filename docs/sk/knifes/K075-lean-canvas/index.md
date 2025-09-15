@@ -2,10 +2,8 @@
 id: "K075"
 title: "Lean canvas"
 description: "Implemetácia Lean canvas do celkového frameworku pre podporu vytvárania riešení. Patrí ku metodike Q12"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "done md"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k075-lean-canvas"

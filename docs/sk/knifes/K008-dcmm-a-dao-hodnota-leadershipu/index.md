@@ -2,10 +2,8 @@
 id: "K008"
 title: "DCMM a DAO – hodnota leadershipu"
 description: "Sebariadenie, dôvera a samočistiace systémy"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "plánované"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k008-dcmm-a-dao-hodnota-leadershipu"

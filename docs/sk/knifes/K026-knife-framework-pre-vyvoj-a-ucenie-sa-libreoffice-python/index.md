@@ -2,10 +2,8 @@
 id: "K026"
 title: "KNIFE Framework pre vývoj a učenie sa (LibreOffice, Python)"
 description: "Jednotný rámec pre budovanie, testovanie a učenie sa v malých krokoch pomocou LibreOffice + Python. Každý krok reprezentuje samostatnú jednotku (TERNO), ktorú je možné testovať a spätne dohľadať. Vhodné na výuku aj profesionálny vývoj."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v procese"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python"

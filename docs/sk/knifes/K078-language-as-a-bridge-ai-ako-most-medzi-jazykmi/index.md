@@ -2,10 +2,8 @@
 id: "K078"
 title: "Language as a Bridge (AI ako most medzi jazykmi)"
 description: "Language as a Bridge → implementácia, nástroje, procesy (ako)."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "ongoing"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k078-language-as-a-bridge-ai-ako-most-medzi-jazykmi"

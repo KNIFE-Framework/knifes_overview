@@ -2,10 +2,8 @@
 id: "K027"
 title: "Git For Dummies – Central Concepts"
 description: "Jednoduché vysvetlenie Git základov pre začiatočníkov v GitEA (organizácia, repozitár, working directory, atď.)"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v príprave"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k027-git-for-dummies-central-concepts"

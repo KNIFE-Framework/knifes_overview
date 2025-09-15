@@ -152,6 +152,35 @@ async function ensureDir(p) { await fs.mkdir(p, { recursive: true }); }
 async function fileExists(p) { try { await fs.access(p); return true; } catch { return false; } }
 function mdEscape(str){ return String(str||'').replace(/"/g,'\\"'); }
 
+// --- Normalize helpers ---
+function normToArray(v) {
+  if (Array.isArray(v)) return v.filter(Boolean).map(s => String(s).trim());
+  if (typeof v === 'string') {
+    let str = v.trim();
+    if (!str) return [];
+    // If it looks like a bracketed array, try to clean common escape artifacts and parse
+    if (/^\[.*\]$/.test(str)) {
+      try {
+        // Clean typical artifacts: \" -> ", \\ -> \
+        const cleaned = str.replace(/\\+\"/g, '"').replace(/\\\\/g, '\\');
+        const arr = JSON.parse(cleaned);
+        if (Array.isArray(arr)) return arr.map(x => String(x).trim());
+      } catch {}
+      // Fallback: manual split of bracketed content
+      const inner = str.replace(/^\[/, '').replace(/\]$/, '');
+      return inner
+        .split(/\s*,\s*/)
+        .map(s => s.replace(/^\s*["']|["']\s*$/g, ''))
+        .map(s => s.replace(/\\+/g, ''))
+        .map(s => s.trim())
+        .filter(Boolean);
+    }
+    // Non-bracketed string -> split by common delimiters
+    return str.split(/[,;|]/).map(s => s.trim()).filter(Boolean);
+  }
+  return [];
+}
+
 // --- FM I/O ---
 function splitFrontMatter(text) {
   const m = text.match(/^---\s*\n([\s\S]*?)\n---\s*\n?/);
@@ -400,9 +429,7 @@ async function normalizeKnifes(repoRoot, opts) {
     const sidebar_label = fm.sidebar_label || `${id} – ${title.length>40? (title.slice(0,37)+'…') : title}`;
     const sidebar_position = fm.sidebar_position || parseInt(id.slice(1), 10) || 999;
 
-    const fmTags = fm.tags
-      ? (fm.tags.startsWith?.('[') ? JSON.parse(fm.tags) : String(fm.tags).split(',').map(s=>s.trim()).filter(Boolean))
-      : [];
+    const fmTags = (fm.tags !== undefined) ? normToArray(fm.tags) : [];
     const tags = Array.from(new Set(inferFsTags(dirAbs, fmTags)));
 
     // prevzatie description z tela ak vo FM chýba
@@ -410,17 +437,18 @@ async function normalizeKnifes(repoRoot, opts) {
       ? fm.description
       : firstParagraph(bodyRaw);
 
-    // prevzatie autorov z FM (string | JSON | single)
-    let authorsFM = [];
-    if (Array.isArray(fm.authors)) authorsFM = fm.authors;
-    else if (typeof fm.authors === 'string') {
-      try {
-        authorsFM = fm.authors.startsWith('[')
-          ? JSON.parse(fm.authors)
-          : fm.authors.split(',').map(s=>s.trim()).filter(Boolean);
-      } catch { authorsFM = []; }
+    // Authors: normalize from FM and backfill from CSV index if missing
+    let authorsFM = normToArray(fm.authors);
+    let authorFM  = fm.author || (authorsFM[0] || '');
+
+    const csvMap = (opts.csvById instanceof Map) ? opts.csvById : null;
+    if (csvMap) {
+      const rec = csvMap.get(id);
+      if (rec && Array.isArray(rec.authors) && rec.authors.length) {
+        if (!authorFM)         authorFM  = rec.authors[0];
+        if (!authorsFM.length) authorsFM = rec.authors.slice(0, 10);
+      }
     }
-    const authorFM = fm.author || (authorsFM[0] || '');
 
     let provenance;
     if (!fm.provenance && (opts.org || opts.project)) {
@@ -570,6 +598,9 @@ async function main() {
     process.exit(0);
   }
 
+  // CSV -> Map pre normalize (ID -> authors[])
+  const csvById = new Map(rows.map(r => [ String(r.ID).toUpperCase(), { authors: r._authors || [] } ]));
+
   // 1) Vytváraj skeletony
   for (const row of rows) {
     const d = computeDerived(row, locale);
@@ -600,7 +631,7 @@ async function main() {
   }
 
   // 1.5) NORMALIZE + NAV inject
-  await normalizeKnifes(repoRoot, { org, project, dryRun, locale });
+  await normalizeKnifes(repoRoot, { org, project, dryRun, locale, csvById });
 
   // 2) JSON index
   await writeJsonIndex(repoRoot, locale, org, project, dryRun);
@@ -612,7 +643,7 @@ async function main() {
 | ID   | Category | Title | Status | Priority | Type | Date | Author | Org | Project |
 |------|----------|-------|--------|---------:|------|------|--------|-----|---------|
 ` + rows.map(r => {
-    const title = r.ShortTitle || r[' Short Title'] || '';
+    const title = r.ShortTitle || r['Short Title'] || '';
     const href = r._linkSlug || r._docRelLink || '#';
     const titleLink = href ? `[${title}](${href})` : title;
     const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';

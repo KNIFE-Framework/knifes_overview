@@ -2,10 +2,6 @@
 id: "K000"
 title: "Q12- Twelve quadrants for starting business"
 description: "Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
 status: "ongoing"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k072-q12-twelve-quadrants-for-starting-business"

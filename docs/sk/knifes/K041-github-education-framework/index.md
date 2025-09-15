@@ -2,12 +2,10 @@
 id: "K041"
 title: "GitHUB Education Framework"
 description: "Zastrešujúci rámec pre vzdelávacie kurzy na GitHube (GitHub Classroom, Pages, Docs generátory). Definuje zásady, šablóny, publishing flow a metriky.Skillmea, SEDUO maju vlastny framework , uvodny trailer, potom odskok do platenej verzie. To iste sa da aj na GitHUB."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "init"
-tags: "[\\\"KNIFE\\\", \\\"Educations\\\", \\\"Frameworks\\\"]"
+tags: ["KNIFE", "Educations", "Frameworks"]
 slug: "/sk/knifes/k041-github-education-framework"
 sidebar_label: "K041 – GitHUB Education Framework"
 sidebar_position: "41"

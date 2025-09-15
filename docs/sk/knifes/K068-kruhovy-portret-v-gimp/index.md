@@ -2,12 +2,10 @@
 id: "K068"
 title: "Kruhový portrét v GIMP"
 description: "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
-tags: "[\\\"KNIFE\\\", \\\"images\\\"]"
+tags: ["KNIFE", "images"]
 slug: "/sk/knifes/k068-kruhovy-portret-v-gimp"
 sidebar_label: "K068 – Kruhový portrét v GIMP"
 sidebar_position: "68"

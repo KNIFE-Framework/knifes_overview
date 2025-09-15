@@ -2,10 +2,8 @@
 id: "K044"
 title: "OneDrive backup to external disk on QNAP"
 description: "This KNIFE explains how to create a full backup of your OneDrive data in cases where the local disk does not have sufficient capacity to mirror the entire cloud content. When 'Files On-Demand' is enabled, standard tools are unable to copy files – they can at best read their metadata. However, using tools like `rclone`, it becomes possible to back up the cloud directly without needing local mirroring."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "inprogress"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k044-onedrive-backup-to-external-disk-on-qnap"

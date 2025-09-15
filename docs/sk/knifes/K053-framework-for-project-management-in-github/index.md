@@ -2,10 +2,8 @@
 id: "K053"
 title: "Framework for Project Management in GitHUB"
 description: "Mám strašne veľa tém, veľa úloh, ako to manažovať, aby som sa neutopil v nesplnených úlohách, prípadne nezabudol na dôležité témy a neobjavoval ich znova a znova?"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k053-framework-for-project-management-in-github"

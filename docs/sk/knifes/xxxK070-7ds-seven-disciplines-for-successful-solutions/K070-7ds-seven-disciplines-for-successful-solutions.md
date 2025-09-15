@@ -2,10 +2,6 @@
 id: "K000"
 title: "7Ds-Seven Disciplines for successful solutions"
 description: "Metodika je zameraná na podporu aktivít v rámci SDLC. Každá potencálna iformácia má svoje miesto. A je úplne jedno v akej technológií sa implementuje."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
 status: "ongoing"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k070-7ds-seven-disciplines-for-successful-solutions"

@@ -2,10 +2,8 @@
 id: "K051"
 title: "Google analytics – Fundamentals"
 description: "Bez spätnej väzby je všetko náročnejšie. GA4 poskytuje marketingové spätné väzby"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k051-google-analytics-fundamentals"

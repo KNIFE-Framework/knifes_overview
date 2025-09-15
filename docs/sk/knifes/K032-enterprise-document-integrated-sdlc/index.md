@@ -2,10 +2,8 @@
 id: "K032"
 title: "„Enterprise Document-integrated SDLC“"
 description: "Zavedenie Git-based dokumentačného frameworku pre prepojenie požiadaviek, rozhodnutí a architektúr naprieč SDLC vo firemnom prostredí s množstvom stakeholderov, JIRA taskov, externých dodávateľov a zložitým change manažmentom."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v návrhu (alebo v riešení – podľa teba)"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k032-enterprise-document-integrated-sdlc"

@@ -2,10 +2,6 @@
 id: "K070"
 title: "EA Fundamentals"
 description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k070-ea-fundamentals"

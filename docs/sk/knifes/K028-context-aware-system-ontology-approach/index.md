@@ -2,10 +2,8 @@
 id: "K028"
 title: "Context Aware System Ontology, Approach"
 description: "Každé riešenie je o kontexte. Neexistuje jeden nástroj na vštky problémy. Toto zasahuje do filozofie."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v príprave"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k028-context-aware-system-ontology-approach"

@@ -2,10 +2,8 @@
 id: "K029"
 title: "Prostredie vývojové python pre LO"
 description: "Profi prostredie pre pyhton dev v LO, OOODEV"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "riešené"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k029-prostredie-vyvojove-python-pre-lo"

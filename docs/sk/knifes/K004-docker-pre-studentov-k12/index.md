@@ -2,10 +2,8 @@
 id: "K004"
 title: "Docker pre študentov (K12)"
 description: "Zjednodušené návody a obrázky pre začiatočníkov"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "plánované"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k004-docker-pre-studentov-k12"

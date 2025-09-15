@@ -2,10 +2,8 @@
 id: "K058"
 title: "AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie"
 description: "Aká bola intenzita komunikácie od začiatku, koľko by to stálo cez API, Ktoré témy skonzumovali najviac energie?"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie"

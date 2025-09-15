@@ -2,10 +2,8 @@
 id: "K036"
 title: "Pracovno, finančný ekosystém"
 description: "Absolventi architektúry už počas štúdia sú selektovaní  z komerčných ateliérov. Ponúkajú im brikády, prípadne dohody o vykonaní práce, za cenu nekvalifikovaných robotníkov."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "návrh"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k036-pracovno-financny-ekosystem"

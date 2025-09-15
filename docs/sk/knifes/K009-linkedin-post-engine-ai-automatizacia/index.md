@@ -2,10 +2,8 @@
 id: "K009"
 title: "LinkedIn post engine – AI automatizácia"
 description: "Generovanie postov na LinkedIn z obsahu"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "koncept"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k009-linkedin-post-engine-ai-automatizacia"

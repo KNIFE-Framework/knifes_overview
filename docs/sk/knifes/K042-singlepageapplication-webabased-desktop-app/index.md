@@ -2,10 +2,8 @@
 id: "K042"
 title: "SinglePageApplication – Webabased desktop app"
 description: "GitHUb je zaklad aj pre vyvoj aplikacii nezavislych na koncovom zariadenie SPA"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "init"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k042-singlepageapplication-webabased-desktop-app"

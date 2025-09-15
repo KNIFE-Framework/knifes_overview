@@ -2,10 +2,8 @@
 id: "K059"
 title: "STEM a Makerspace ako metodika vzdelávania"
 description: "Spolupracujem s Makerspace od roku 2016. POJEM STEM  som priprodzene zahrnul do  svojich metodík. Je vhodné to zviditeľniť v mojich aktivitách"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k059-stem-a-makerspace-ako-metodika-vzdelavania"

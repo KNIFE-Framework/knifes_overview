@@ -2,10 +2,8 @@
 id: "K006"
 title: "Tímová správa práv v Gitea"
 description: "Rozdelenie práv podľa tímov, chránené vetvy, PR politiky"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "pripomenúť"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k006-timova-sprava-prav-v-gitea"

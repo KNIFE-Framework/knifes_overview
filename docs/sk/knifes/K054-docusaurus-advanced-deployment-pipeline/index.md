@@ -2,10 +2,8 @@
 id: "K054"
 title: "Docusaurus Advanced Deployment Pipeline"
 description: "Kontrola referencií v Docusaurus/MkDocs"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k054-docusaurus-advanced-deployment-pipeline"

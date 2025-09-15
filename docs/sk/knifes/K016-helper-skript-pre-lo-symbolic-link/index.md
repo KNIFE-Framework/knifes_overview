@@ -2,10 +2,8 @@
 id: "K016"
 title: "Helper skript pre LO symbolic link"
 description: "Obnova symbolic linku pre user/scripts/"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "v testovaní"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k016-helper-skript-pre-lo-symbolic-link"

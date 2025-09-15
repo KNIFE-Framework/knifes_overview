@@ -2,10 +2,8 @@
 id: "K066"
 title: "Porovnanie biznis plánov GitHub"
 description: "Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k066-porovnanie-biznis-planov-github"

@@ -2,10 +2,6 @@
 id: "K000"
 title: "Kto ma pochváli, ak sa nepochválim sám?"
 description: "Pre mnohých je ťažko písať o sebe. Ľahko sa skĺzne buď ku preceňovaniu, alebo naopak ku podceňovaniu."
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
 status: "new"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k068-kto-ma-pochvali-ak-sa-nepochvalim-sam"

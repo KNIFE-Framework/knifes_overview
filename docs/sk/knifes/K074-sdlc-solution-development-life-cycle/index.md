@@ -2,10 +2,8 @@
 id: "K074"
 title: "SDLC-Solution Development Life Cycle"
 description: "Táto metodika vychádza z univerzálneho V – modelu. Podporuje princíly vuizuálneho manažmentu v rámci celého ťivotného cyklu riešení. To záhŕňa desiatky rolí a stovky rolí v rátane zákazníka, dodávateľa, subdodávateľov, a podnikateľského prostredia, regulátorov, zákonov, politickej situácie"
-author: ""
-authors: []
-created: "2025-09-15"
-modified: "2025-09-15"
+author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
 status: "ongoing"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k074-sdlc-solution-development-life-cycle"

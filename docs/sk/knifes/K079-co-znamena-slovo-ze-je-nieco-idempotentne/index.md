@@ -5,7 +5,7 @@ dao: "knife"
 title: "Čo znamená slovo že je niečo idempotentné?"
 description: "Dosť často sa začalo používať slovo idempotentná operácia. Ako to ale vzniklo? Prečo to vzniklo?"
 author: "Roman Kazička"
-authors: "["Roman Kazička"]"
+authors: ["Roman Kazička"]
 status: "now"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k079-co-znamena-slovo-ze-je-nieco-idempotentne"

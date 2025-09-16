@@ -7,7 +7,7 @@ description: "Zastrešujúci rámec pre vzdelávacie kurzy na GitHube (GitHub Cl
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
 status: "init"
-tags: "["KNIFE", "Educations", "Frameworks"]"
+tags: ["KNIFE", "Educations", "Frameworks"]
 slug: "/sk/knifes/k041-github-education-framework"
 sidebar_label: "K041 – GitHUB Education Framework"
 sidebar_position: "41"

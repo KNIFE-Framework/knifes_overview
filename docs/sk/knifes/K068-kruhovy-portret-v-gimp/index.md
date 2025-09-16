@@ -7,7 +7,7 @@ description: "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Naj
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
 status: "new"
-tags: "["KNIFE", "images"]"
+tags: ["KNIFE", "images"]
 slug: "/sk/knifes/k068-kruhovy-portret-v-gimp"
 sidebar_label: "K068 – Kruhový portrét v GIMP"
 sidebar_position: "68"

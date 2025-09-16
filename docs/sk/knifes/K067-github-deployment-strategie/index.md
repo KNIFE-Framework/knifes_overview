@@ -1,5 +1,7 @@
 ---
 id: "K067"
+guid: "knife-K067-f7dd3a8a-ddb3-4939-b248-2d7ded9e4b21"
+dao: "knife"
 title: "GitHub Deployment stratégie"
 description: "Deployment obsahu v GitHube sa dá vykonať viacerými spôsobmi."
 author: "Roman Kazicka"
@@ -10,6 +12,11 @@ slug: "/sk/knifes/k067-github-deployment-strategie"
 sidebar_label: "K067 – GitHub Deployment stratégie"
 sidebar_position: "67"
 locale: "sk"
+created: "2025-09-02"
+modified: "2025-09-02"
+category: "User Guide"
+type: "Koncepty"
+priority: "now"
 ---
 <!-- body:start -->
 ---

@@ -1,5 +1,7 @@
 ---
 id: "K073"
+guid: "knife-K073-1593eafc-7cd1-4f1a-baea-835ee233a8c8"
+dao: "knife"
 title: "Q12- Twelve quadrants for starting business"
 description: "Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie."
 author: "Roman Kazicka"
@@ -10,6 +12,11 @@ slug: "/sk/knifes/k073-q12-twelve-quadrants-for-starting-business"
 sidebar_label: "K073 – Q12- Twelve quadrants for starting business"
 sidebar_position: "73"
 locale: "sk"
+created: "2025-09-05"
+modified: "2025-09-05"
+category: "Methodology"
+type: "Metodika"
+priority: "medium"
 ---
 <!-- body:start -->
 

@@ -1,5 +1,7 @@
 ---
 id: "K016"
+guid: "knife-K016-ebe2936e-18fb-4e3d-9d99-297b416de516"
+dao: "knife"
 title: "Helper skript pre LO symbolic link"
 description: "Obnova symbolic linku pre user/scripts/"
 author: "Roman Kazicka"
@@ -10,6 +12,11 @@ slug: "/sk/knifes/k016-helper-skript-pre-lo-symbolic-link"
 sidebar_label: "K016 – Helper skript pre LO symbolic link"
 sidebar_position: "16"
 locale: "sk"
+created: "2024-04-13"
+modified: "2024-04-13"
+category: "LO Development"
+type: "Skriptovanie / LO"
+priority: "🧪"
 ---
 <!-- body:start -->
 

@@ -1,5 +1,7 @@
 ---
 id: "K066"
+guid: "knife-K066-dc6c0b55-9027-4a50-96e1-954620f52c42"
+dao: "knife"
 title: "Porovnanie biznis plánov GitHub"
 description: "Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?"
 author: "Roman Kazicka"
@@ -10,6 +12,11 @@ slug: "/sk/knifes/k066-porovnanie-biznis-planov-github"
 sidebar_label: "K066 – Porovnanie biznis plánov GitHub"
 sidebar_position: "66"
 locale: "sk"
+created: "2025-09-01"
+modified: "2025-09-01"
+category: "SubscriptionPlans"
+type: "Biznis plány GitHub-Prehľad"
+priority: "now"
 ---
 <!-- body:start -->
 

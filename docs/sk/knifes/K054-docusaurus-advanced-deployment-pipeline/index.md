@@ -1,5 +1,7 @@
 ---
 id: "K054"
+guid: "knife-K054-2cdd89b8-78cd-49ec-bd94-4da048d01ae1"
+dao: "knife"
 title: "Docusaurus Advanced Deployment Pipeline"
 description: "Kontrola referencií v Docusaurus/MkDocs"
 author: "Roman Kazicka"
@@ -10,6 +12,10 @@ slug: "/sk/knifes/k054-docusaurus-advanced-deployment-pipeline"
 sidebar_label: "K054 – Docusaurus Advanced Deployment Pipeline"
 sidebar_position: "54"
 locale: "sk"
+created: "2025-08-10"
+modified: "2025-08-10"
+category: "Best Practice"
+type: "„Ako si nastaviť build a deploy tak, aby ťa chránil pred sebou samým.“"
 ---
 <!-- body:start -->
 

@@ -1,5 +1,7 @@
 ---
 id: "K021"
+guid: "knife-K021-654d1cb1-482b-4016-84a7-b452579663b6"
+dao: "knife"
 title: "Princíp udržateľnosti v architektúre"
 description: "Architektonické a dizajnové rozhodnutia s ohľadom na stabilitu a dlhodobosť"
 author: "Roman Kazicka"
@@ -10,6 +12,11 @@ slug: "/sk/knifes/k021-princip-udrzatelnosti-v-architekture"
 sidebar_label: "K021 – Princíp udržateľnosti v architektúre"
 sidebar_position: "21"
 locale: "sk"
+created: "2025-03-20"
+modified: "2025-03-20"
+category: "Methodology"
+type: "Metodika / SDLC"
+priority: "🌱"
 ---
 <!-- body:start -->
 

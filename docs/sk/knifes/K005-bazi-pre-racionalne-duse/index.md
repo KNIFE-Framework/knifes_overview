@@ -1,5 +1,7 @@
 ---
 id: "K005"
+guid: "knife-K005-751f6db0-4411-40f4-a3e8-a14a193184a3"
+dao: "knife"
 title: "BaZi pre racionálne duše"
 description: "Sebapoznanie cez dátum a čas narodenia (BaZi)"
 author: "Roman Kazicka"
@@ -10,6 +12,11 @@ slug: "/sk/knifes/k005-bazi-pre-racionalne-duse"
 sidebar_label: "K005 – BaZi pre racionálne duše"
 sidebar_position: "5"
 locale: "sk"
+created: "2025-04-18"
+modified: "2025-04-18"
+category: "RiverOfMyLife"
+type: "Osobný rozvoj / Algoritmika"
+priority: "💡"
 ---
 <!-- body:start -->
 

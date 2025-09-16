@@ -1,5 +1,7 @@
 ---
 id: "K012"
+guid: "knife-K012-c55ae12c-db79-4e9d-a009-13c2da890935"
+dao: "knife"
 title: "EA Workflow Add-In – pokročilé šablóny"
 description: "Workflow pre pokročilých analytikov v EA"
 author: "Roman Kazicka"
@@ -10,6 +12,11 @@ slug: "/sk/knifes/k012-ea-workflow-add-in-pokrocile-sablony"
 sidebar_label: "K012 – EA Workflow Add-In – pokročilé šablóny"
 sidebar_position: "12"
 locale: "sk"
+created: "2024-04-10"
+modified: "2024-04-10"
+category: "ModelValidation"
+type: "QualityOFModel/EA Add-In"
+priority: "📂"
 ---
 <!-- body:start -->
 

@@ -1,5 +1,7 @@
 ---
 id: "K019"
+guid: "knife-K019-2bb12bea-96f2-4f9a-98ed-8e03e9835b3d"
+dao: "knife"
 title: "BaZi výpočty – algoritmus, hodiny, kalendár"
 description: "Výpočtový rámec BaZi v Pythone alebo Exceli, denné a hodinové analýzy, poradca"
 author: "Roman Kazicka"
@@ -10,6 +12,11 @@ slug: "/sk/knifes/k019-bazi-vypocty-algoritmus-hodiny-kalendar"
 sidebar_label: "K019 – BaZi výpočty – algoritmus, hodiny, kalendár"
 sidebar_position: "19"
 locale: "sk"
+created: "2025-04-18"
+modified: "2025-04-18"
+category: "Development"
+type: "Algoritmika / Osobný rozvoj"
+priority: "🧠"
 ---
 <!-- body:start -->
 

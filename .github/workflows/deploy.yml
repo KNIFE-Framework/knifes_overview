@@ -38,7 +38,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: npm run build -- --no-minify
+      - run: npm run build # production build with minification
         env:
           NODE_OPTIONS: --max-old-space-size=16384
       - uses: actions/configure-pages@v5

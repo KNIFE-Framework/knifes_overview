@@ -14,6 +14,24 @@
 import fs from 'node:fs/promises';
 import fssync from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
+
+// --- header aliases (from dev/csv/schema/header.aliases.json) ---
+const HEADER_ALIASES = {
+  id: ['ID', 'Id', 'id', '\uFEFFID'],
+  short_title: ['ShortTitle', 'Short Title', 'title'],
+  folder_name: ['FolderName', 'Folder Name'],
+  sidebar_label: ['SidebarLabel', 'Sidebar Label'],
+  date: ['Date', 'Date of Record', 'created'],
+};
+
+function getField(row, key) {
+  const aliases = HEADER_ALIASES[key] || [key];
+  for (const k of aliases) {
+    if (row[k] !== undefined && row[k] !== null && row[k] !== '') return row[k];
+  }
+  return '';
+}
 
 // --- args ---
 function parseArgs() {
@@ -56,8 +74,8 @@ function parseAuthors(row) {
 // --- sanitizer (chráni pred OOM / "Invalid string length") ---
 function sanitizeScalar(v, max = 4000) {
   let s = String(v ?? '');
-  // zlúč priveľké behy spätných lomítok a whitespace
-  s = s.replace(/\\{5,}/g, '\\').replace(/\s{3,}/g, ' ');
+  // zlúč priveľké behy spätných lomítok a whitespace (spaces/tabs)
+  s = s.replace(/\\{5,}/g, '\\').replace(/[ \t]{3,}/g, ' ');
   if (s.length > max) s = s.slice(0, max) + '…';
   return s;
 }
@@ -69,78 +87,62 @@ function sanitizeRow(row) {
 
 // --- CSV utils ---
 function parseCSV(text) {
-  text = text.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n');
-  const rawLines = text.split('\n');
+  // robust CSV: supports preface, autodetect header, quoted newlines, and common delimiters
+  text = text.replace(/^\uFEFF/, '').replace(/\r\n?/g, '\n');
 
-  const parseLine = (line, delim) => {
-    const cols = [];
-    let curr = '', inQ = false;
-    for (let i = 0; i < line.length; i++) {
-      const ch = line[i];
-      if (ch === '"') {
-        if (inQ && line[i + 1] === '"') { curr += '"'; i++; }
-        else inQ = !inQ;
-      } else if (ch === delim && !inQ) {
-        cols.push(curr); curr = '';
-      } else {
-        curr += ch;
-      }
-    }
-    cols.push(curr);
-    return cols.map(c => c.trim());
+  const headerRe = /^[\s"]*id[\s"]*[,;\t|].*?["\s]*title["\s]*([,;\t|]|$)/i;
+  const guessDelim = (sample) => {
+    for (const d of [',',';','\t','|']) if (sample.includes(d)) return d;
+    return ',';
   };
 
-  const DELIMS = [',', ';', '\t', '|'];
-  const reqHints = ['id', 'short title', 'category', 'status', 'type', 'priority'];
-
-  const looksLikeHeader = (cells) => {
-    const L = cells.map(c => c.replace(/^\uFEFF/, '').toLowerCase());
-    const hasID = L.includes('id');
-    const hits = reqHints.reduce((n, h) => n + (L.includes(h) ? 1 : 0), 0);
-    return hasID && (hits >= 2);
-  };
-
+  const lines = text.split('\n');
   let headerIdx = -1, delim = ',';
-  outer:
-  for (let i = 0; i < rawLines.length; i++) {
-    const line = rawLines[i].trim();
-    if (!line) continue;
-    for (const d of DELIMS) {
-      const cells = parseLine(line, d);
-      if (looksLikeHeader(cells)) { headerIdx = i; delim = d; break outer; }
-      for (let j = i + 1; j < Math.min(i + 8, rawLines.length); j++) {
-        const nxt = rawLines[j].trim(); if (!nxt) continue;
-        const nextCells = parseLine(nxt, d);
-        if (/^K\d{3}$/i.test((nextCells[0] || '').trim())) { headerIdx = i; delim = d; break outer; }
-        break;
+  for (let i = 0; i < lines.length; i++) {
+    const L = lines[i];
+    if (!L.trim()) continue;
+    if (headerRe.test(L)) { headerIdx = i; delim = guessDelim(L); break; }
+  }
+  if (headerIdx === -1) {
+    const first = lines.findIndex(l => l.trim());
+    if (first === -1) return [];
+    headerIdx = first; delim = guessDelim(lines[first]);
+  }
+
+  // character-by-character CSV parser that respects quotes and newlines
+  const parseBlock = (block, d) => {
+    const rows = [];
+    let field = '', row = [], inQ = false;
+    for (let i = 0; i < block.length; i++) {
+      const c = block[i];
+      if (inQ) {
+        if (c === '"') {
+          if (i + 1 < block.length && block[i + 1] === '"') { field += '"'; i++; }
+          else { inQ = false; }
+        } else { field += c; }
+      } else {
+        if (c === '"') inQ = true;
+        else if (c === d) { row.push(field); field = ''; }
+        else if (c === '\n') { row.push(field); rows.push(row); field = ''; row = []; }
+        else { field += c; }
       }
     }
-  }
+    row.push(field); rows.push(row);
+    return rows.filter(r => r.some(x => String(x).trim() !== ''));
+  };
 
-  if (headerIdx === -1) {
-    const first = rawLines.findIndex(l => l.trim().length > 0);
-    if (first === -1) return [];
-    delim = rawLines[first].includes(';') ? ';'
-         : rawLines[first].includes('\t') ? '\t'
-         : rawLines[first].includes('|') ? '|'
-         : ',';
-    const headers = parseLine(rawLines[first], delim);
-    return rawLines.slice(first + 1)
-      .filter(l => l.trim().length > 0)
-      .map(line => {
-        const cols = parseLine(line, delim);
-        const obj = {}; headers.forEach((h, idx) => obj[h] = (cols[idx] ?? '').trim());
-        return obj;
-      });
-  }
+  const rest = lines.slice(headerIdx).join('\n');
+  const all = parseBlock(rest, delim);
+  if (!all.length) return [];
 
-  const headers = parseLine(rawLines[headerIdx], delim).map(h => h.replace(/^\uFEFF/, '').trim());
-  const dataLines = rawLines.slice(headerIdx + 1).filter(l => l.trim().length > 0);
-  return dataLines.map(line => {
-    const cols = parseLine(line, delim);
-    const obj = {}; headers.forEach((h, idx) => { obj[h] = (cols[idx] ?? '').trim(); });
-    return obj;
-  });
+  const header = all[0].map(h => String(h).trim());
+  const out = [];
+  for (let i = 1; i < all.length; i++) {
+    const cols = all[i];
+    const obj = {}; header.forEach((h, idx) => obj[h] = (cols[idx] ?? '').trim());
+    out.push(obj);
+  }
+  return out;
 }
 
 function kebab(s) {
@@ -151,6 +153,40 @@ function kebab(s) {
 async function ensureDir(p) { await fs.mkdir(p, { recursive: true }); }
 async function fileExists(p) { try { await fs.access(p); return true; } catch { return false; } }
 function mdEscape(str){ return String(str||'').replace(/"/g,'\\"'); }
+
+// --- date parser (safe across multiple common formats) ---
+function parseDateSafe(s) {
+  const raw = String(s || '').trim();
+  if (!raw) return null;
+
+  // ISO-like: YYYY-MM-DD / YYYY/MM/DD / YYYY.MM.DD
+  let m = raw.match(/^(\d{4})[-\/.](\d{1,2})[-\/.](\d{1,2})$/);
+  if (m) {
+    const [_, y, mo, d] = m; // eslint-disable-line no-unused-vars
+    const dt = new Date(Number(y), Number(mo) - 1, Number(d));
+    return isNaN(dt) ? null : dt;
+  }
+
+  // Slovak style: DD.MM.YYYY
+  m = raw.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+  if (m) {
+    const [_, d, mo, y] = m; // eslint-disable-line no-unused-vars
+    const dt = new Date(Number(y), Number(mo) - 1, Number(d));
+    return isNaN(dt) ? null : dt;
+  }
+
+  // US style: MM/DD/YYYY
+  m = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (m) {
+    const [_, mo, d, y] = m; // eslint-disable-line no-unused-vars
+    const dt = new Date(Number(y), Number(mo) - 1, Number(d));
+    return isNaN(dt) ? null : dt;
+  }
+
+  // Fallback to native Date (e.g., ISO datetime)
+  const dt = new Date(raw);
+  return isNaN(dt) ? null : dt;
+}
 
 // --- Normalize helpers ---
 function normToArray(v) {
@@ -198,9 +234,9 @@ function parseSimpleYAML(yaml) {
   return obj;
 }
 function writeFrontMatter(obj) {
-  // v writeFrontMatter:
-const order = [
-  'id','title','description','author','authors',
+  // Frontmatter key order for stable YAML output
+  const order = [
+  'id','guid','dao','title','description','author','authors',
   'created','modified','date','updated',
   'status','type','category','tags','slug','sidebar_label',
   'sidebar_position','locale','provenance','provenance_org','provenance_project'
@@ -276,24 +312,61 @@ ${navBlock()}# KNIFE ${id} – ${title}
 `;
 }
 function firstParagraph(mdBody) {
-  const cleaned = mdBody.replace(/<!--[\s\S]*?-->/g, '').trim();
-  const para = cleaned.split(/\n\s*\n/)[0] || '';
-  return para.replace(/[#>*`]/g, '').trim().slice(0, 220);
+  // Remove HTML comments
+  let cleaned = mdBody.replace(/<!--[\s\S]*?-->/g, '').trim();
+
+  // Drop the injected NAV block (from <!-- nav:knifes --> up to the next HR or blank line)
+  cleaned = cleaned.replace(/<!--\s*nav:knifes\s*-->[\s\S]*?(?:\n---\n|\n\s*\n)/i, '\n');
+
+  // Split into paragraphs by blank lines
+  const paras = cleaned.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+
+  // Pick the first paragraph that isn't just links or quotes
+  let para = paras.find(p => {
+    const noQuote = p.replace(/^>\s*/gm, '').trim();
+    const onlyLinks = /^(?:\[[^\]]+\]\([^)]*\)\s*(?:[•|\-]\s*)?)+$/.test(noQuote);
+    return noQuote && !onlyLinks;
+  }) || '';
+
+  // Strip simple markdown tokens and collapse excessive backslashes
+  return para
+    .replace(/^>\s*/gm, '')
+    .replace(/[#*`]/g, '')
+    .replace(/\\{2,}/g, '\\')
+    .trim()
+    .slice(0, 220);
+}
+
+// --- Description helpers ---
+function needsDescFix(s) {
+  const str = String(s || '');
+  if (!str) return true; // empty -> needs fix
+  if (/KNIFES\s*–\s*Prehľad/i.test(str)) return true; // nav text
+  if (/^\s*\[/.test(str) && /\]\([^)]*\)/.test(str)) return true; // looks like pure links line
+  if (/\\{8,}/.test(str)) return true; // long runs of backslashes
+  const backslashes = (str.match(/\\/g) || []).length;
+  if (str.length > 400 && backslashes / str.length > 0.05) return true; // noisy
+  return false;
+}
+
+function computeDescriptionFromBody(fmDescription, bodyRaw) {
+  const desc = (fmDescription && fmDescription !== '""') ? fmDescription : '';
+  return needsDescFix(desc) ? firstParagraph(bodyRaw) : desc;
 }
 
 // --- derivácie z CSV ---
 function computeDerived(row, locale = 'sk') {
-  const shortTitle = row.ShortTitle || row['Short Title'] || 'Untitled';
-  const id = (row.ID || row.Id || row.id || row['\uFEFFID'] || '').trim();
-  const folderName = row.FolderName?.trim() || `${id}-${kebab(shortTitle)}`;
-  const sidebarLabel = row.SidebarLabel?.trim() || `${id} – ${shortTitle}`;
+  const shortTitle = getField(row, 'short_title') || 'Untitled';
+  const id = String(getField(row, 'id') || '').trim();
+  const folderName = (getField(row, 'folder_name') || `${id}-${kebab(shortTitle)}`).trim();
+  const sidebarLabel = (getField(row, 'sidebar_label') || `${id} – ${shortTitle}`).trim();
   const linkSlug = `/${locale}/knifes/${kebab(`${id} ${shortTitle}`)}`;
   return { shortTitle, folderName, sidebarLabel, linkSlug };
 }
 
 // --- FM pre nový .md
 function buildFrontMatter(row, d, opts) {
-  const id = (row.ID || row.Id || row.id || row['\uFEFFID'] || 'K000').trim().toUpperCase();
+  const id = String(getField(row, 'id') || 'K000').trim().toUpperCase();
   const shortTitle = d.shortTitle;
   const loc = opts?.locale || 'sk';
   const slug = `/${loc}/knifes/${kebab(`${id} ${shortTitle}`)}`;
@@ -304,7 +377,7 @@ function buildFrontMatter(row, d, opts) {
   const fm = {
     id: id,
     title: shortTitle || id,
-    description: row.Description ? String(row.Description) : '',
+    description: row.Description ? String(row.Description).replace(/\\{2,}/g,'\\') : '',
     status: row.Status ? String(row.Status).toLowerCase() : 'draft',
     slug,
     sidebar_label: `${id} – ${shortTitle}`,
@@ -324,23 +397,34 @@ function buildFrontMatter(row, d, opts) {
   if (opts?.org) prov.org = opts.org;
   if (opts?.project) prov.project = opts.project;
   if (Object.keys(prov).length) fm.provenance = { platform: 'github', ...prov };
-  // dates from CSV
-  const createdRaw = row['Date of Record'] || row.Date || '';
-  const today = new Date().toISOString().slice(0,10);
-  fm.created = createdRaw ? new Date(createdRaw).toISOString().slice(0,10) : today;
+
+  // Ensure GUID and DAO
+  if (!fm.guid) {
+    fm.guid = `knife-${id}-${crypto.randomUUID()}`;
+  }
+  fm.dao = fm.dao || 'knife';
+
+  // dates from CSV (robust)
+  const createdRaw = getField(row, 'date') || '';
+  const todayDt = new Date();
+  const createdDt = parseDateSafe(createdRaw) || todayDt;
+  fm.created = createdDt.toISOString().slice(0,10);
+  fm.date = fm.created; // mirror for themes/components expecting `date`
   fm.modified = fm.created;
   return writeFrontMatter(fm);
 }
 
 // --- Prehľady (relatívne linky na .md)
 function tableLine(row) {
-  const title = row.ShortTitle || row['Short Title'] || '';
+  const title = getField(row, 'short_title') || '';
   const href = row._linkSlug || row._docRelLink || '#';
   const titleLink = href ? `[${title}](${href})` : title;
-  return `| ${row.ID} | ${row.Category||''} | ${titleLink} | ${row.Status||''} | ${row.Priority||''} | ${row.Type||''} | ${row['Date of Record']||row.Date||''} |`;
+  const dateVal = getField(row, 'date') || '';
+  return `| ${row.ID} | ${row.Category||''} | ${titleLink} | ${row.Status||''} | ${row.Priority||''} | ${row.Type||''} | ${dateVal} |`;
 }
 function detailsBlock(row, org, project) {
-  const link = `[${row._folderName||row.ShortTitle||row['Short Title']||''}](${row._docRelLink||'#'})`;
+  const shortTitle = getField(row, 'short_title') || '';
+  const link = `[${row._folderName||shortTitle}](${row._docRelLink||'#'})`;
   const tags = (row.Tags||'').split(',').map(t=>t.trim()).filter(Boolean).join(', ');
   const tech = row.Technology || '';
   const sfiaL = row['SFIA – Level'] || row.SFIA_Level || '';
@@ -351,17 +435,17 @@ function detailsBlock(row, org, project) {
   const position = parseInt(String(row.ID||'').replace(/^K/i,''),10) || '';
   const author = (row._authors && row._authors[0]) || row.Author || row.Authors || '';
 
-  return `### ${row.ID} – ${row.ShortTitle||row['Short Title']||''}
+  return `### ${row.ID} – ${shortTitle}
 
 **Author**: ${author}  
 **Category**: ${row.Category||''}  
 **Status**: ${row.Status||''}  
 **Type**: ${row.Type||''}  
 **Priority**: ${row.Priority||''}  
-**Date**: ${row['Date of Record']||row.Date||''}
+**Date**: ${getField(row, 'date') || ''}
 
 **Technology**: ${tech}  
-**Description**: ${row.Description||''}  
+**Description**: ${(row.Description||'').replace(/\\{2,}/g,'\\')}  
 **Context**: ${ctx}  
 **SFIA**: level=${sfiaL}, domain=${sfiaD}, maturity=${sfiaM}  
 **Tags**: ${tags}  
@@ -369,7 +453,7 @@ function detailsBlock(row, org, project) {
 
 **Metadáta (generated)**:  
 - **slug**: \`${slug}\`  
-- **sidebar_label**: \`${row.ID} – ${row.ShortTitle||row['Short Title']||''}\`  
+- **sidebar_label**: \`${row.ID} – ${shortTitle}\`  
 - **sidebar_position**: \`${position}\`  
 - **locale**: \`${row._locale || 'sk'}\`  
 - **provenance.org**: \`${org||''}\`  
@@ -432,10 +516,8 @@ async function normalizeKnifes(repoRoot, opts) {
     const fmTags = (fm.tags !== undefined) ? normToArray(fm.tags) : [];
     const tags = Array.from(new Set(inferFsTags(dirAbs, fmTags)));
 
-    // prevzatie description z tela ak vo FM chýba
-    const description = fm.description && fm.description !== '""'
-      ? fm.description
-      : firstParagraph(bodyRaw);
+    // prevzatie description z tela ak vo FM chýba alebo je zlá
+    const description = computeDescriptionFromBody(fm.description, bodyRaw);
 
     // Authors: normalize from FM and backfill from CSV index if missing
     let authorsFM = normToArray(fm.authors);
@@ -450,17 +532,35 @@ async function normalizeKnifes(repoRoot, opts) {
       }
     }
 
+    // Ensure essential FM fields for existing files (auto-heal)
+    const stat = fssync.statSync(mainAbs);
+    const iso = (d) => new Date(d).toISOString().slice(0,10);
+    const ensuredDao = fm.dao || 'knife';
+    const ensuredGuid = fm.guid || `knife-${id}-${crypto.randomUUID()}`;
+
+    const createdVal = (fm.created || fm.date || iso(stat.mtime));
+    const modifiedVal = (fm.modified || iso(stat.mtime));
+
     let provenance;
     if (!fm.provenance && (opts.org || opts.project)) {
       provenance = { platform: 'github', ...(opts.org?{org: opts.org}:{ }), ...(opts.project?{project: opts.project}:{ }) };
     }
 
     const outObj = {
-      id, title, description,
+      id,
+      guid: ensuredGuid,
+      dao: ensuredDao,
+      title,
+      description,
       status: fm.status || 'draft',
-      slug, sidebar_label, sidebar_position,
+      slug,
+      sidebar_label,
+      sidebar_position,
       tags,
       locale: fm.locale || loc,
+      created: createdVal,
+      date: createdVal,
+      modified: modifiedVal,
       ...(authorsFM.length ? { authors: authorsFM } : {}),
       ...(authorFM ? { author: authorFM } : {}),
       ...(provenance ? { provenance } : {})
@@ -562,12 +662,17 @@ async function main() {
   const rowsSanitized = rowsRaw.map(sanitizeRow);
 
   const rows = rowsSanitized.filter(r => {
-    const id = (r.ID || r.Id || r.id || r['\uFEFFID'] || '').trim();
+    const id = String(getField(r, 'id') || '').trim();
+    const idRaw = r.ID || id;
     if (id && !r.ID) r.ID = id;
     // predpočítaj autorov pre prehľady
     r._authors = parseAuthors(r);
     r._author = r._authors[0] || '';
-    return /^K\d{3}$/i.test(id);
+    const hasID = /^K\d{3}$/i.test(id);
+    const hasTitle = !!getField(r, 'short_title');
+    if (!hasID) console.warn(`↷ skip row: missing/invalid ID (${id||'∅'})`);
+    if (!hasTitle) console.warn(`↷ skip ${idRaw||'K???'}: missing Short Title/title`);
+    return hasID && hasTitle;
   });
 
   if (rows.length === 0 && rowsRaw.length > 0) {
@@ -603,6 +708,7 @@ async function main() {
 
   // 1) Vytváraj skeletony
   for (const row of rows) {
+    row.ID = String(getField(row, 'id') || row.ID || '').trim().toUpperCase();
     const d = computeDerived(row, locale);
     row._folderName = d.folderName;
     row._sidebarLabel = d.sidebarLabel;
@@ -643,11 +749,12 @@ async function main() {
 | ID   | Category | Title | Status | Priority | Type | Date | Author | Org | Project |
 |------|----------|-------|--------|---------:|------|------|--------|-----|---------|
 ` + rows.map(r => {
-    const title = r.ShortTitle || r['Short Title'] || '';
+    const title = getField(r, 'short_title') || '';
     const href = r._linkSlug || r._docRelLink || '#';
     const titleLink = href ? `[${title}](${href})` : title;
     const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
-    return `| ${r.ID} | ${r.Category||''} | ${titleLink} | ${r.Status||''} | ${r.Priority||''} | ${r.Type||''} | ${r['Date of Record']||r.Date||''} | ${author} | ${org||''} | ${project||''} |`;
+    const dateVal = getField(r, 'date') || '';
+    return `| ${r.ID} | ${r.Category||''} | ${titleLink} | ${r.Status||''} | ${r.Priority||''} | ${r.Type||''} | ${dateVal} | ${author} | ${org||''} | ${project||''} |`;
   }).join('\n') + '\n';
 
   const overviewDir = path.join(repoRoot, 'docs', locale, 'knifes');

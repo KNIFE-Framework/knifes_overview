@@ -62,7 +62,7 @@ endif
   gen-dry dry-verify \
   knife-guid-backfill knife-meta-backfill \
   knife-verify knife-verify-csv-docs knife-verify-frontmatter \
-  print-vars
+  print-vars knife-audit-frontmatter
 
 # -------------------------
 # 📌 Help
@@ -122,6 +122,7 @@ help:
 	@echo "  knife-verify           - Kombinovaný check: CSV/docs + lint frontmatteru (povinné polia)"
 	@echo "  knife-verify-csv-docs  - CSV/docs konzistencia (duplicitné ID, prázdne názvy, kolízie slugov, chýbajúce súbory)"
 	@echo "  knife-verify-frontmatter - Lint povinných polí (guid, dao, id, title, created, modified)"
+	@echo "  knife-audit-frontmatter - Audit existujúcich KNIFE index.md (guid/dao/dates/slug/locale)"
 
 help-auth:
 	@echo "===== 🔐 Autentikácia pre Worktree deploy ====="
@@ -510,7 +511,9 @@ knife-new:
 	node "$(SCRIPTS_DIR)/new_knife.mjs" "$(id)" "$$TITLE"
 
 ## Kombinované príkazy
-dev-gen: knifes-gen dev
+dev-gen:
+	node scripts/build_knifes.mjs --csv data/KNIFE-OVERVIEW-ONLY.csv --root . --locale sk
+
 build-gen: knifes-gen build
 
 ## Len suchý plán generovania (nič sa nezapisuje)
@@ -580,3 +583,14 @@ print-vars:
 	@echo "[CSV_BACKFILL] = '$(strip $(CSV_BACKFILL))'"
 	@echo "[DOCS_DIR]     = '$(strip $(DOCS_DIR))'"
 	@echo "[SCRIPTS_DIR]  = '$(strip $(SCRIPTS_DIR))'"
+
+knife-validate-csv:
+	node dev/csv/knife-csv-verify.mjs data/KNIFE-OVERVIEW-ONLY.csv --schema dev/csv/schema/header.aliases.json || \
+	( echo "❌ CSV validation failed – fix ODS or update dev/csv/schema/header.aliases.json"; exit 1 )
+
+knifes-build-safe:
+	@$(MAKE) knife-validate-csv
+	node scripts/build_knifes.mjs --csv data/KNIFE-OVERVIEW-ONLY.csv --root . --locale sk
+
+knife-audit-frontmatter:
+	node scripts/knife-frontmatter-audit.mjs docs/sk/knifes	

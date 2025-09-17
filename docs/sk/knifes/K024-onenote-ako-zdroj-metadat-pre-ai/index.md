@@ -1,22 +1,20 @@
 ---
 id: "K024"
-guid: "knife-K024-5c4afb2c-abb0-4539-b45d-68270bfd8f83"
+guid: "knife-K024-18f0681d-54db-4a41-a7fd-b77386a7299e"
 dao: "knife"
 title: "OneNote ako zdroj metadát pre AI"
 description: "Prepájanie osobného poznámkového systému s AI klientom a projektmi"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "v návrhu"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k024-onenote-ako-zdroj-metadat-pre-ai"
 sidebar_label: "K024 – OneNote ako zdroj metadát pre AI"
 sidebar_position: "24"
 locale: "sk"
-created: "2025-04-13"
-modified: "2025-04-13"
-category: "PersonalKMsystem"
-type: "Integrácia / Poznámky"
-priority: "🗃️"
 ---
 <!-- body:start -->
 

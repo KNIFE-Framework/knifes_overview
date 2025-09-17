@@ -1,7 +1,12 @@
 ---
 id: "K000"
+guid: "knife-K000-c7dfbaf1-fd81-44ac-b302-4620beb29af8"
+dao: "knife"
 title: "APV-Assets-Perspectives-Views, Keep Your Aseests in Order"
 description: "Metodika na podporu manažmentu aktív v rámci SDLC."
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "ongoing"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k071-apv-assets-perspectives-views-keep-your-aseests-in-order"

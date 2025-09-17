@@ -1,21 +1,20 @@
 ---
 id: "K070"
-guid: "knife-K070-322ee257-e02a-4952-b88c-05e868639325"
+guid: "knife-K070-c5d8b05b-4afb-4618-8ca4-657a78acd5d8"
 dao: "knife"
 title: "EA Fundamentals"
-description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)"
+description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K070 – EA Fundamentals"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "new"
-tags: "["KNIFE"]"
+tags: ["KNIFE"]
 slug: "/sk/knifes/k070-ea-fundamentals"
 sidebar_label: "K070 – EA Fundamentals"
 sidebar_position: "70"
 locale: "sk"
-created: "2025-09-05"
-modified: "2025-09-05"
-category: "Knowledge sharing"
-type: ""Training on the praxis-praktický webinár ako začať pracovať s technológiou Enterprise Architect."
-priority: "Sparxsystems"
 ---
 <!-- body:start -->
 

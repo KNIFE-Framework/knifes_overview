@@ -1,7 +1,12 @@
 ---
 id: "K000"
+guid: "knife-K000-15cb9f38-18bc-4866-a35e-8bd2922ad100"
+dao: "knife"
 title: "Q12- Twelve quadrants for starting business"
 description: "Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie."
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "ongoing"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k072-q12-twelve-quadrants-for-starting-business"

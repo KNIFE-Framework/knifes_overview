@@ -1,22 +1,20 @@
 ---
 id: "K025"
-guid: "knife-K025-9c263e1a-2755-46d4-8e28-40c72137bfea"
+guid: "knife-K025-0e591458-c661-4f18-8e85-9c1c14efaedc"
 dao: "knife"
 title: "Kategorizácia TERNO podľa SDLC a 7D"
 description: "Zaradenie každého TERNO podľa fázy vývoja a vedomostnej disciplíny"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "zaradené"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k025-kategorizacia-terno-podla-sdlc-a-7d"
 sidebar_label: "K025 – Kategorizácia TERNO podľa SDLC a 7D"
 sidebar_position: "25"
 locale: "sk"
-created: "2025-03-01"
-modified: "2025-03-01"
-category: "Methodology"
-type: "Metodika / Evidencia"
-priority: "📊"
 ---
 <!-- body:start -->
 

@@ -1,22 +1,20 @@
 ---
 id: "K033"
-guid: "knife-K033-4777f68a-d2fb-479f-855c-dfd665084fb0"
+guid: "knife-K033-4bf0fa16-972c-4cbc-a923-2d28af33f41d"
 dao: "knife"
 title: "Smalltalk ako nástroj flowu a kontextu"
-description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)…"
+description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "v riešeni"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k033-smalltalk-ako-nastroj-flowu-a-kontextu"
 sidebar_label: "K033 – Smalltalk ako nástroj flowu a kontextu"
 sidebar_position: "33"
 locale: "sk"
-created: "2025-05-20"
-modified: "2025-05-20"
-category: "Psychológia práce / Kontext / Kultúra tímu"
-type: "Metodika"
-priority: "Stredná až vysoká"
 ---
 <!-- body:start -->
 

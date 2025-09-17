@@ -1,22 +1,20 @@
 ---
 id: "K030"
-guid: "knife-K030-f17292b6-0f1b-4a9a-976f-03bab192810f"
+guid: "knife-K030-553c7b60-ab06-4412-96dc-84d0ea2fa323"
 dao: "knife"
 title: "Príbeh poznania SDLC"
 description: "Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisať a bolo by to v kontexte KM, SDLC"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "v riešení"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k030-pribeh-poznania-sdlc"
 sidebar_label: "K030 – Príbeh poznania SDLC"
 sidebar_position: "30"
 locale: "sk"
-created: "2025-05-17"
-modified: "2025-05-17"
-category: "GitHUB pages – Edu"
-type: "Vzdelávanie-Marketing"
-priority: "🔥"
 ---
 <!-- body:start -->
 

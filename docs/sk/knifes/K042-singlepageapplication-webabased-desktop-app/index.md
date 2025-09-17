@@ -1,22 +1,20 @@
 ---
 id: "K042"
-guid: "knife-K042-f702ca90-babb-4174-80c6-94643ebf97d7"
+guid: "knife-K042-ed25f447-b17f-4a3a-941e-bb441e170fc3"
 dao: "knife"
 title: "SinglePageApplication – Webabased desktop app"
 description: "GitHUb je zaklad aj pre vyvoj aplikacii nezavislych na koncovom zariadenie SPA"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "init"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k042-singlepageapplication-webabased-desktop-app"
 sidebar_label: "K042 – SinglePageApplication – Webabased desktop app"
 sidebar_position: "42"
 locale: "sk"
-created: "2025-06-17"
-modified: "2025-06-17"
-category: "SPA-Framework"
-type: "SPA framework"
-priority: "Low"
 ---
 <!-- body:start -->
 

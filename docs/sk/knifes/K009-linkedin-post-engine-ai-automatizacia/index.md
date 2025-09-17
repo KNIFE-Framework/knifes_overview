@@ -1,22 +1,20 @@
 ---
 id: "K009"
-guid: "knife-K009-c982707a-1737-493c-a858-7f340d98e14f"
+guid: "knife-K009-2a2564bd-e234-42ed-acd9-e80ddb128b17"
 dao: "knife"
 title: "LinkedIn post engine – AI automatizácia"
 description: "Generovanie postov na LinkedIn z obsahu"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "koncept"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k009-linkedin-post-engine-ai-automatizacia"
 sidebar_label: "K009 – LinkedIn post engine – AI automatizácia"
 sidebar_position: "9"
 locale: "sk"
-created: "2024-04-10"
-modified: "2024-04-10"
-category: "Marketing"
-type: "Marketing / AI"
-priority: "🧪"
 ---
 <!-- body:start -->
 

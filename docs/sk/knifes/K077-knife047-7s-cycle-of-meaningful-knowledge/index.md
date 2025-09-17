@@ -1,22 +1,20 @@
 ---
 id: "K077"
-guid: "knife-K077-225049ba-0421-4662-b900-419c0d3e4d7f"
+guid: "knife-K077-67fa4142-7407-4ca8-a24a-a0777669bc26"
 dao: "knife"
 title: "KNIFE047 – 7S Cycle of Meaningful Knowledge"
 description: "Moderné technológie umožňujú využívať a zneužívať rôzne techniky marketingu. Čo si zvolíme PUSH, alebo PULL prístup. Táto metodika je zameraná na PULL marketing."
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "ongoing"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k077-knife047-7s-cycle-of-meaningful-knowledge"
 sidebar_label: "K077 – KNIFE047 – 7S Cycle of Meaningful Knowledge"
 sidebar_position: "77"
 locale: "sk"
-created: "2025-09-05"
-modified: "2025-09-05"
-category: "Methodology"
-type: "Metodika na hodnotvý markerting – PULL marketing"
-priority: "medium"
 ---
 <!-- body:start -->
 

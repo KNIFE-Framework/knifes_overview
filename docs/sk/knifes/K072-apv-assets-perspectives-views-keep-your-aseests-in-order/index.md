@@ -1,22 +1,20 @@
 ---
 id: "K072"
-guid: "knife-K072-0e1f21ac-7da9-476b-8494-e6de6c77706d"
+guid: "knife-K072-e2e77f43-e904-4438-8a74-07ac68541237"
 dao: "knife"
 title: "APV-Assets-Perspectives-Views, Keep Your Aseests in Order"
 description: "Metodika na podporu manažmentu aktív v rámci SDLC."
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "ongoing"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k072-apv-assets-perspectives-views-keep-your-aseests-in-order"
 sidebar_label: "K072 – APV-Assets-Perspectives-Views, Keep Your Aseests in Order"
 sidebar_position: "72"
 locale: "sk"
-created: "2025-09-05"
-modified: "2025-09-05"
-category: "Methodology"
-type: "Metodika"
-priority: "medium"
 ---
 <!-- body:start -->
 

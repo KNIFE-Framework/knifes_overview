@@ -1,20 +1,20 @@
 ---
 id: "K050"
-guid: "knife-K050-80db0902-2e81-4b18-a16b-d80599f3418e"
+guid: "knife-K050-abaf199d-563c-487a-88d2-2c8d784afb84"
 dao: "knife"
 title: "Open GPT, vytváranie prompt instructions"
 description: "Vznizkli instrukcie pre zvedavych…"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "in progress"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k050-open-gpt-vytvaranie-prompt-instructions"
 sidebar_label: "K050 – Open GPT, vytváranie prompt instructions"
 sidebar_position: "50"
 locale: "sk"
-created: "2025-08-04"
-modified: "2025-08-04"
-category: "User Guide"
 ---
 <!-- body:start -->
 

@@ -1,22 +1,20 @@
 ---
 id: "K004"
-guid: "knife-K004-a419a3cd-6ba7-48d7-a3b8-4950391a63fe"
+guid: "knife-K004-76ab8f65-0259-48ab-adbf-86cfa6a80d57"
 dao: "knife"
 title: "Docker pre študentov (K12)"
 description: "Zjednodušené návody a obrázky pre začiatočníkov"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "plánované"
 tags: ["KNIFE"]
 slug: "/sk/knifes/k004-docker-pre-studentov-k12"
 sidebar_label: "K004 – Docker pre študentov (K12)"
 sidebar_position: "4"
 locale: "sk"
-created: "2024-03-20"
-modified: "2024-03-20"
-category: "Technologie"
-type: "Edukačné"
-priority: "🧠"
 ---
 <!-- body:start -->
 

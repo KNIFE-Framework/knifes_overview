@@ -38,3 +38,4 @@ locale: "sk"
 ## 💡 Tipy a poznámky
 
 ## ✅ Hodnota / Zhrnutie
+ 

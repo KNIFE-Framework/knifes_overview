@@ -6,7 +6,7 @@ title: "KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)…"
 author: "Roman Kazicka"
 status: "draft"
-tags: ["KNIFE"]
+tags: "["KNIFE"]"
 slug: "/sk/knifes/k049-knife049-vyhladavac-nad-opengpt-historiou"
 sidebar_label: "K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 sidebar_position: "49"

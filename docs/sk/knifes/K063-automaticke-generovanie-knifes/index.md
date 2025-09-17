@@ -5,9 +5,9 @@ dao: "knife"
 title: "Automatické generovanie KNIFES"
 description: "Ako používať automatizáciu pri generovaní KNIFES"
 author: "Roman Kazicka"
-authors: ["Roman Kazicka"]
+authors: "["Roman Kazicka"]"
 status: "new"
-tags: ["KNIFE"]
+tags: "["KNIFE"]"
 slug: "/sk/knifes/k063-automaticke-generovanie-knifes"
 sidebar_label: "K063 – Automatické generovanie KNIFES"
 sidebar_position: "63"

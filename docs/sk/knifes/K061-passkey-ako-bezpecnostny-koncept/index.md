@@ -5,9 +5,9 @@ dao: "knife"
 title: "Passkey ako bezpečnostný koncept"
 description: "Ako funguje keypass?"
 author: "Roman Kazicka"
-authors: ["Roman Kazicka"]
+authors: "["Roman Kazicka"]"
 status: "new"
-tags: ["KNIFE"]
+tags: "["KNIFE"]"
 slug: "/sk/knifes/k061-passkey-ako-bezpecnostny-koncept"
 sidebar_label: "K061 – Passkey ako bezpečnostný koncept"
 sidebar_position: "61"

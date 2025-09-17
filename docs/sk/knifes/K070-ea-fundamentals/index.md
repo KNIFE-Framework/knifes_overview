@@ -5,9 +5,8 @@ dao: "knife"
 title: "EA Fundamentals"
 description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
 status: "new"
-tags: ["KNIFE"]
+tags: "["KNIFE"]"
 slug: "/sk/knifes/k070-ea-fundamentals"
 sidebar_label: "K070 – EA Fundamentals"
 sidebar_position: "70"
@@ -15,7 +14,7 @@ locale: "sk"
 created: "2025-09-05"
 modified: "2025-09-05"
 category: "Knowledge sharing"
-type: "Training on the praxis-praktický webinár ako začať pracovať s technológiou Enterprise Architect."
+type: ""Training on the praxis-praktický webinár ako začať pracovať s technológiou Enterprise Architect."
 priority: "Sparxsystems"
 ---
 <!-- body:start -->

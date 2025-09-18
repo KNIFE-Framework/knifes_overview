@@ -3,7 +3,7 @@ id: "K047"
 guid: "knife-K047-25d2b069-f907-4933-95f5-99cccf57cd4c"
 dao: "knife"
 title: "KNIFE047_Reflexia_a_epistemologia.md"
-description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md"
+description: "[⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
 created: "2025-09-17"
@@ -19,7 +19,7 @@ locale: "sk"
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md
 

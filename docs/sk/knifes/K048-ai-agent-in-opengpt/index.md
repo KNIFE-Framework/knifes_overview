@@ -3,7 +3,7 @@ id: "K048"
 guid: "knife-K048-dfd04696-0904-4798-83bd-5e77bb371baf"
 dao: "knife"
 title: "AI – Agent in OpenGPT"
-description: "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K048 – AI – Agent in OpenGPT"
+description: "[⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K048 – AI – Agent in OpenGPT"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
 created: "2025-09-17"
@@ -19,7 +19,7 @@ locale: "sk"
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K048 – AI – Agent in OpenGPT
 

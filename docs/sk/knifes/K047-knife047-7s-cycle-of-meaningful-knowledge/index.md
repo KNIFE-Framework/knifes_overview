@@ -19,7 +19,7 @@ locale: "sk"
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../knifesOverview.md)
+> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview)
 ---
 # KNIFE K047 – KNIFE047 – 7S Cycle of Meaningful Knowledge
 

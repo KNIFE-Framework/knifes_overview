@@ -39,7 +39,7 @@ Pre študentov a rýchly štart je k dispozícii skrátený návod, ktorý pomá
 
 ---
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K067 – GitHub Deployment stratégie
 

@@ -19,7 +19,7 @@ locale: "sk"
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../knifesOverview.md)
+> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview)
 ---
 # KNIFE K080 – Docusaurus-vs-github-pages-package-json
 

@@ -7,4 +7,4 @@ title: 01.Goals-Expectation
 ---
 [⬆ Back to 01.D1-Management](../index.md)
 
-[⬆ Back to 7Ds Dashboard](../../index.md)
+[⬆ Back to 7Ds Dashboard](../../)

@@ -8,6 +8,7 @@ const config: Config = {
   tagline: 'Context Aware Approach',
   url: 'https://knifes.systemthinking.sk',                   // ✅ povinné (root URL nasadenia)
   baseUrl: '/',                                              // ✅ povinné (prefix cesty)
+  trailingSlash: false,
   favicon: 'img/favicon.ico',
 
   organizationName: 'KNIFE-Framework',
@@ -38,7 +39,7 @@ const config: Config = {
           numberPrefixParser: false,
           editCurrentVersion: false,
           editUrl: undefined,
-          exclude: ['**/README.migrated.md', '**/README_.md'],
+          exclude: ['**/README.migrated.md', '**/README_.md', '**/_legacy/**'],
           sidebarPath: require.resolve('./sidebars.ts'),
         },
         blog: false,
@@ -51,6 +52,19 @@ const config: Config = {
     [
       '@docusaurus/plugin-google-gtag',
       { trackingID: 'G-LV31TWZZK6', anonymizeIP: true },
+    ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          // legacy overview pages (split variants) → canonical
+          { from: ['/sk/knifes/KNIFE_Overview_Details_p3','/sk/knifes/KNIFE_Overview_Details_p2'], to: '/sk/knifes/KNIFE_Overview_Details' },
+          { from: ['/sk/knifes/KNIFE_Overview_List_p3','/sk/knifes/KNIFE_Overview_List_p2'], to: '/sk/knifes/KNIFE_Overview_List' },
+          // language-agnostic fallbacks (if EN used later)
+          { from: ['/en/knifes/KNIFE_Overview_Details_p3','/en/knifes/KNIFE_Overview_Details_p2'], to: '/en/knifes/KNIFE_Overview_Details' },
+          { from: ['/en/knifes/KNIFE_Overview_List_p3','/en/knifes/KNIFE_Overview_List_p2'], to: '/en/knifes/KNIFE_Overview_List' },
+        ],
+      },
     ],
   ],
 

@@ -204,7 +204,7 @@ fix-links:
 	@echo ">>> Opravujem odkazy …/index -> …/"
 	@$(FIND_MD) -print0 | xargs -0 $(SED_INPLACE) \
 	  -e 's#\]\(\.\.\/index\)#](../)#g' \
-	  -e 's#\]\(\.\.\/\.\.\/index\)#](../../)#g'
+	  -e 's#\]\(\.\.\/\.\.\/index\)#](./)#g'
 
 # -------------------------
 # 🌿 Worktree Deploy – Self-healing + ochrany

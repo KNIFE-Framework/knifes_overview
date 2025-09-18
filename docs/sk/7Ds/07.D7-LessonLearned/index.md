@@ -15,4 +15,4 @@ title: 07.D7-LessonLearned
 - [07.TroubleShooting](07.TroubleShooting/index.md)
 
 ---
-[⬆ Back to 7Ds Dashboard](../.)
+[⬆ Back to 7Ds Dashboard](../index.md)

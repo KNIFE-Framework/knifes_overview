@@ -86,6 +86,6 @@ Start with Issues + Milestones. Use Projects when the number of tasks grows.
 | Template     | Predefined form for Issues/PRs  |
 
 
-[⬆ Back to 01.D1-Management](../)
+[⬆ Back to 01.D1-Management](../index.md)
 
-[⬆ Back to 7Ds Dashboard](../../)
+[⬆ Back to 7Ds Dashboard](../../index.md)

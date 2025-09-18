@@ -3,6 +3,6 @@
 This is a sub-section under dimension `07.D7-LessonLearned`.
 
 ---
-[⬆ Back to 07.D7-LessonLearned](../)
+[⬆ Back to 07.D7-LessonLearned](../index.md)
 
-[⬆ Back to 7Ds Dashboard](../../)
+[⬆ Back to 7Ds Dashboard](../../index.md)

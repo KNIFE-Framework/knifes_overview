@@ -16,7 +16,7 @@
 **Context**: Jedno z prvých TERNO, vzniklo pri návrhu systému motivácie v rámci tímu  
 **SFIA**: level=2, domain=Business Analysis / Modelling, maturity=Diagrammatic  
 **Tags**:   
-**Link**: [K001-ea-modelovanie-a-motivacia](./K001-ea-modelovanie-a-motivacia/)
+**Link**: [K001-ea-modelovanie-a-motivacia](./K001-ea-modelovanie-a-motivacia/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k001-ea-modelovanie-a-motivacia`  
@@ -42,7 +42,7 @@
 **Context**: Založené na reálnej potrebe riešiť multirelease workflow pre EA  
 **SFIA**: level=3, domain=Configuration Management, maturity=Tool-based  
 **Tags**:   
-**Link**: [K002-git-workflow-pre-ea-modely](./K002-git-workflow-pre-ea-modely/)
+**Link**: [K002-git-workflow-pre-ea-modely](./K002-git-workflow-pre-ea-modely/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k002-git-workflow-pre-ea-modely`  
@@ -68,7 +68,7 @@
 **Context**: Reakcia na požiadavku na moderný vývoj v LibreOffice – Python/venv  
 **SFIA**: level=3, domain=Software Development, maturity=Scriptable  
 **Tags**:   
-**Link**: [K003-libreoffice-python-integracia](./K003-libreoffice-python-integracia/)
+**Link**: [K003-libreoffice-python-integracia](./K003-libreoffice-python-integracia/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k003-libreoffice-python-integracia`  
@@ -94,7 +94,7 @@
 **Context**: Vzniklo ako návrh edukačného materiálu pri tvorbe kurzov pre Docker  
 **SFIA**: level=2, domain=DevOps / Infrastructure, maturity=Learning-based  
 **Tags**:   
-**Link**: [K004-docker-pre-studentov-k12](./K004-docker-pre-studentov-k12/)
+**Link**: [K004-docker-pre-studentov-k12](./K004-docker-pre-studentov-k12/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k004-docker-pre-studentov-k12`  
@@ -120,7 +120,7 @@
 **Context**: Záznam vznikol počas diskusie o TCM a racionálnom prístupe k BaZi  
 **SFIA**: level=2, domain=Knowledge Engineering, maturity=Exploratory  
 **Tags**:   
-**Link**: [K005-bazi-pre-racionalne-duse](./K005-bazi-pre-racionalne-duse/)
+**Link**: [K005-bazi-pre-racionalne-duse](./K005-bazi-pre-racionalne-duse/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k005-bazi-pre-racionalne-duse`  
@@ -146,7 +146,7 @@
 **Context**: Zaznamenané počas diskusie o Gitea právach a workflow – T002  
 **SFIA**: level=3, domain=Configuration Management, maturity=Tool-based  
 **Tags**:   
-**Link**: [K006-timova-sprava-prav-v-gitea](./K006-timova-sprava-prav-v-gitea/)
+**Link**: [K006-timova-sprava-prav-v-gitea](./K006-timova-sprava-prav-v-gitea/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k006-timova-sprava-prav-v-gitea`  
@@ -172,7 +172,7 @@
 **Context**: Vzniklo pri návrhu Markdown workflow helpera – súvisiace s T007  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K007-helper-skript-na-obrazky-v-markdown](./K007-helper-skript-na-obrazky-v-markdown/)
+**Link**: [K007-helper-skript-na-obrazky-v-markdown](./K007-helper-skript-na-obrazky-v-markdown/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k007-helper-skript-na-obrazky-v-markdown`  
@@ -198,7 +198,7 @@
 **Context**: Diskusia o leadership kvalite v rámci strategických tém – T008  
 **SFIA**: level=2, domain=Business Analysis / Modelling, maturity=Diagrammatic  
 **Tags**:   
-**Link**: [K008-dcmm-a-dao-hodnota-leadershipu](./K008-dcmm-a-dao-hodnota-leadershipu/)
+**Link**: [K008-dcmm-a-dao-hodnota-leadershipu](./K008-dcmm-a-dao-hodnota-leadershipu/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k008-dcmm-a-dao-hodnota-leadershipu`  
@@ -224,7 +224,7 @@
 **Context**: Myšlienka z praxe na LinkedIn, súvis s T009 a zdieľaním obsahu  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K009-linkedin-post-engine-ai-automatizacia](./K009-linkedin-post-engine-ai-automatizacia/)
+**Link**: [K009-linkedin-post-engine-ai-automatizacia](./K009-linkedin-post-engine-ai-automatizacia/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k009-linkedin-post-engine-ai-automatizacia`  
@@ -250,7 +250,7 @@
 **Context**: Začiatok vývoja AI nástroja, súvisí s plánom T018  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K010-openai-klient-vlastna-ai-komunikacia](./K010-openai-klient-vlastna-ai-komunikacia/)
+**Link**: [K010-openai-klient-vlastna-ai-komunikacia](./K010-openai-klient-vlastna-ai-komunikacia/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k010-openai-klient-vlastna-ai-komunikacia`  
@@ -276,7 +276,7 @@
 **Context**: Téma makier v LibreOffice – samostatný štartovací modul  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K011-main-xba-sablona-pre-lo-basic](./K011-main-xba-sablona-pre-lo-basic/)
+**Link**: [K011-main-xba-sablona-pre-lo-basic](./K011-main-xba-sablona-pre-lo-basic/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k011-main-xba-sablona-pre-lo-basic`  
@@ -302,7 +302,7 @@
 **Context**: Rozšírenie pre EA Add-In v rámci T012  
 **SFIA**: level=3, domain=Configuration Management, maturity=Tool-based  
 **Tags**:   
-**Link**: [K012-ea-workflow-add-in-pokrocile-sablony](./K012-ea-workflow-add-in-pokrocile-sablony/)
+**Link**: [K012-ea-workflow-add-in-pokrocile-sablony](./K012-ea-workflow-add-in-pokrocile-sablony/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k012-ea-workflow-add-in-pokrocile-sablony`  
@@ -328,7 +328,7 @@
 **Context**: Doplnok k EA Add-In – konkrétne obmedzenia práv (ReadOnly)  
 **SFIA**: level=3, domain=Configuration Management, maturity=Tool-based  
 **Tags**:   
-**Link**: [K013-readonlycontrol-v-ea-workflow-add-in](./K013-readonlycontrol-v-ea-workflow-add-in/)
+**Link**: [K013-readonlycontrol-v-ea-workflow-add-in](./K013-readonlycontrol-v-ea-workflow-add-in/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k013-readonlycontrol-v-ea-workflow-add-in`  
@@ -354,7 +354,7 @@
 **Context**: Nástroj pre správu LO knižníc – samostatne definovaný  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K014-manazer-kniznic-pre-lo-basic](./K014-manazer-kniznic-pre-lo-basic/)
+**Link**: [K014-manazer-kniznic-pre-lo-basic](./K014-manazer-kniznic-pre-lo-basic/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k014-manazer-kniznic-pre-lo-basic`  
@@ -380,7 +380,7 @@
 **Context**: Migrácia z VB do Python – vzniklo počas T003 a T014  
 **SFIA**: level=3, domain=Software Development, maturity=Scriptable  
 **Tags**:   
-**Link**: [K015-libreoffice-basic-python-migracia](./K015-libreoffice-basic-python-migracia/)
+**Link**: [K015-libreoffice-basic-python-migracia](./K015-libreoffice-basic-python-migracia/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k015-libreoffice-basic-python-migracia`  
@@ -406,7 +406,7 @@
 **Context**: Podpora pre vývojové prostredie LO – vzniklo počas T015  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K016-helper-skript-pre-lo-symbolic-link](./K016-helper-skript-pre-lo-symbolic-link/)
+**Link**: [K016-helper-skript-pre-lo-symbolic-link](./K016-helper-skript-pre-lo-symbolic-link/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k016-helper-skript-pre-lo-symbolic-link`  
@@ -432,7 +432,7 @@
 **Context**: Zaznamenané počas návrhu plánovania TERNA – prehľadový modul  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K017-ai-powered-terno-planner](./K017-ai-powered-terno-planner/)
+**Link**: [K017-ai-powered-terno-planner](./K017-ai-powered-terno-planner/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k017-ai-powered-terno-planner`  
@@ -458,7 +458,7 @@
 **Context**: Rozšírenie T005 – potreba výpočtu BaZi a hodinovej analýzy  
 **SFIA**: level=2, domain=Knowledge Engineering, maturity=Exploratory  
 **Tags**:   
-**Link**: [K019-bazi-vypocty-algoritmus-hodiny-kalendar](./K019-bazi-vypocty-algoritmus-hodiny-kalendar/)
+**Link**: [K019-bazi-vypocty-algoritmus-hodiny-kalendar](./K019-bazi-vypocty-algoritmus-hodiny-kalendar/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k019-bazi-vypocty-algoritmus-hodiny-kalendar`  
@@ -484,7 +484,7 @@
 **Context**: Podpora LO ako komunitného nástroja v rámci T003  
 **SFIA**: level=3, domain=Software Development, maturity=Scriptable  
 **Tags**:   
-**Link**: [K020-libreoffice-ako-komunitna-platforma](./K020-libreoffice-ako-komunitna-platforma/)
+**Link**: [K020-libreoffice-ako-komunitna-platforma](./K020-libreoffice-ako-komunitna-platforma/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k020-libreoffice-ako-komunitna-platforma`  
@@ -510,7 +510,7 @@
 **Context**: Princíp objavený počas reflexie SDLC v T004 a T008  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K021-princip-udrzatelnosti-v-architekture](./K021-princip-udrzatelnosti-v-architekture/)
+**Link**: [K021-princip-udrzatelnosti-v-architekture](./K021-princip-udrzatelnosti-v-architekture/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k021-princip-udrzatelnosti-v-architekture`  
@@ -536,7 +536,7 @@
 **Context**: Diskusia o forme učenia počas plánovania T004  
 **SFIA**: level=2, domain=Learning Design, maturity=Teaching-oriented  
 **Tags**:   
-**Link**: [K022-terno-terapeuticke-formy-ucenia](./K022-terno-terapeuticke-formy-ucenia/)
+**Link**: [K022-terno-terapeuticke-formy-ucenia](./K022-terno-terapeuticke-formy-ucenia/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k022-terno-terapeuticke-formy-ucenia`  
@@ -562,7 +562,7 @@
 **Context**: Reflexia počas návrhu AI klienta – T018  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K023-ai-interakcie-casova-os-a-emocie](./K023-ai-interakcie-casova-os-a-emocie/)
+**Link**: [K023-ai-interakcie-casova-os-a-emocie](./K023-ai-interakcie-casova-os-a-emocie/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k023-ai-interakcie-casova-os-a-emocie`  
@@ -588,7 +588,7 @@
 **Context**: Väzba medzi OneNote a projektovým manažmentom – T017  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K024-onenote-ako-zdroj-metadat-pre-ai](./K024-onenote-ako-zdroj-metadat-pre-ai/)
+**Link**: [K024-onenote-ako-zdroj-metadat-pre-ai](./K024-onenote-ako-zdroj-metadat-pre-ai/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k024-onenote-ako-zdroj-metadat-pre-ai`  
@@ -614,7 +614,7 @@
 **Context**: Systematizácia potreby klasifikovať TERNA – vzniklo pri tvorbe SSOT  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K025-kategorizacia-terno-podla-sdlc-a-7d](./K025-kategorizacia-terno-podla-sdlc-a-7d/)
+**Link**: [K025-kategorizacia-terno-podla-sdlc-a-7d](./K025-kategorizacia-terno-podla-sdlc-a-7d/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k025-kategorizacia-terno-podla-sdlc-a-7d`  
@@ -640,7 +640,7 @@
 **Context**: Pri vývoji Personalised Calendards vznikla potreba vytvorič si „Dieľňu“ pre LO,Projekt 05-LibreOffice, priečinok 01-PersonalisedCalendars/01-Basic-Calendar/4/terno-framework  
 **SFIA**: level=3, domain=Software Development, maturity=Scriptable  
 **Tags**:   
-**Link**: [K026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python](./K026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/)
+**Link**: [K026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python](./K026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python`  
@@ -666,7 +666,7 @@
 **Context**: Vzniklo ako základný materiál pre školenie GitEA procesov a tímovú prácu  
 **SFIA**: level=2, domain=Software Configuration, maturity=Learning-based  
 **Tags**:   
-**Link**: [K027-git-for-dummies-central-concepts](./K027-git-for-dummies-central-concepts/)
+**Link**: [K027-git-for-dummies-central-concepts](./K027-git-for-dummies-central-concepts/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k027-git-for-dummies-central-concepts`  
@@ -692,7 +692,7 @@
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K028-context-aware-system-ontology-approach](./K028-context-aware-system-ontology-approach/)
+**Link**: [K028-context-aware-system-ontology-approach](./K028-context-aware-system-ontology-approach/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k028-context-aware-system-ontology-approach`  
@@ -718,7 +718,7 @@
 **Context**: Po nekonecnych konfiguraciach som poziadal GPT nech najde profi riesenie. Doporucil OOPDEV, tak to idem overit  
 **SFIA**: level=6,7, domain=Software Development, maturity=Solution Architect  
 **Tags**:   
-**Link**: [K029-prostredie-vyvojove-python-pre-lo](./K029-prostredie-vyvojove-python-pre-lo/)
+**Link**: [K029-prostredie-vyvojove-python-pre-lo](./K029-prostredie-vyvojove-python-pre-lo/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k029-prostredie-vyvojove-python-pre-lo`  
@@ -744,7 +744,7 @@
 **Context**: Priprava FIIT, odchad z 365, potreba za zviditelnit a pripadne aj zarobit, dotiahnut projekty, produkty  
 **SFIA**: level=Level 3 – Apply → samostatná práca, domain=, maturity=  
 **Tags**:   
-**Link**: [K030-pribeh-poznania-sdlc](./K030-pribeh-poznania-sdlc/)
+**Link**: [K030-pribeh-poznania-sdlc](./K030-pribeh-poznania-sdlc/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k030-pribeh-poznania-sdlc`  
@@ -770,7 +770,7 @@
 **Context**: Pri vytvaraní frameworku pre publikovanie na LI, PT, YT sme dosli k tomuto riešeniu na GITHUB ako Pages….  
 **SFIA**: level=Level 4 – Enable (alebo L5 – Ensure, ak sa zavádza vo firme), domain=NOV, METL, DTAN, DESN, DOCU, maturity=3 – Defined (možno dorásť na 4 – Managed)  
 **Tags**:   
-**Link**: [K031-document-as-code-framework](./K031-document-as-code-framework/)
+**Link**: [K031-document-as-code-framework](./K031-document-as-code-framework/index.md)
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k031-document-as-code-framework`  

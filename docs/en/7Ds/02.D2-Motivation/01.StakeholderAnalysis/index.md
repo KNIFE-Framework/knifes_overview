@@ -2,5 +2,5 @@
 
 This is a sub-section of `02.D2-Motivation`.
 
-[⬆ Back to 01.D1-Management](../.)  
-[⬆ Back to Dashboard](../../.)
+[⬆ Back to 01.D1-Management](../index.md)  
+[⬆ Back to Dashboard](../../index.md)

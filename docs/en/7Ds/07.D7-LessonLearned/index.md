@@ -11,4 +11,4 @@
 - [07.TroubleShooting](07.TroubleShooting/index.md)
 
 ---
-[⬆ Back to Dashboard](../.)
+[⬆ Back to Dashboard](../index.md)

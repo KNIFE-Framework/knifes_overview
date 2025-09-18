@@ -8,4 +8,4 @@ title: 01.Resources
 ---
 [⬆ Back to 03.D3-Analysis](../index.md)
 
-[⬆ Back to 7Ds Dashboard](../../)
+[⬆ Back to 7Ds Dashboard](./index.md)

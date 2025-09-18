@@ -7,4 +7,4 @@ title: 01.StakeholderAnalysis
 ---
 [⬆ Back to 02.D2-Motivation](../index.md)
 
-[⬆ Back to 7Ds Dashboard](../../)
+[⬆ Back to 7Ds Dashboard](./)

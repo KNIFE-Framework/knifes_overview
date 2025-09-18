@@ -61,8 +61,8 @@ const config: Config = {
           { from: ['/sk/knifes/KNIFE_Overview_Details_p3','/sk/knifes/KNIFE_Overview_Details_p2'], to: '/sk/knifes/KNIFE_Overview_Details' },
           { from: ['/sk/knifes/KNIFE_Overview_List_p3','/sk/knifes/KNIFE_Overview_List_p2'], to: '/sk/knifes/KNIFE_Overview_List' },
           // language-agnostic fallbacks (if EN used later)
-          { from: ['/en/knifes/KNIFE_Overview_Details_p3','/en/knifes/KNIFE_Overview_Details_p2'], to: '/en/knifes/KNIFE_Overview_Details' },
-          { from: ['/en/knifes/KNIFE_Overview_List_p3','/en/knifes/KNIFE_Overview_List_p2'], to: '/en/knifes/KNIFE_Overview_List' },
+          //{ from: ['/en/knifes/KNIFE_Overview_Details_p3','/en/knifes/KNIFE_Overview_Details_p2'], to: '/en/knifes/KNIFE_Overview_Details' },
+          //{ from: ['/en/knifes/KNIFE_Overview_List_p3','/en/knifes/KNIFE_Overview_List_p2'], to: '/en/knifes/KNIFE_Overview_List' },
         ],
       },
     ],

@@ -6,7 +6,7 @@ description: Navigácia pre KNIFE prehľady v oblasti Strategy
 # 📂 Strategy
 
 Rýchla navigácia:
-- 📄 **[Zoznam hrubý](KNIFEsOverview)**
+- 📄 **[Zoznam hrubý](knifesOverview.md)**
 - 📋 **[Zoznam s detailami – tabuľka](KNIFE_Overview_List)**
 - 📰 **[Zoznam s detailami – blog](KNIFE_Overview_Details)**
 - 📑 **[KNIFE with SFIA (ODS)](/files/20250420-KNIFES_with_SFIA.ods)**

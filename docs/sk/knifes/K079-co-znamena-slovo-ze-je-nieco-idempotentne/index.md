@@ -19,7 +19,7 @@ locale: "sk"
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview)
+> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md)
 ---
 # KNIFE K079 – Čo znamená slovo že je niečo idempotentné?
 

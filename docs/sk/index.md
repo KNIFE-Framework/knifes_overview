@@ -19,7 +19,7 @@ Každý KNIFE má vlastný folder, kde je uložený hlavný článok a podprieč
 
 ## 📊 Prehľady KNIFES
 
-- [📋 Základný prehľad](/sk/knifes/knifesOverview)  
+- [📋 Základný prehľad](/sk/knifes/knifesOverview.md)  
 - [📑 Rozšírený zoznam](/sk/knifes/KNIFE_Overview_List)  
 - [📖 Detailný pohľad](/sk/knifes/KNIFE_Overview_Details)  
 

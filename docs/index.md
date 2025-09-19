@@ -33,7 +33,7 @@ Praktické návody, koncepty a skúsenosti zbierané v rámci Context Aware Appr
 
 ## 🔗 Rýchla navigácia na prehľady
 
-- [📋 Hrubý zoznam](/sk/knifes/knifesOverview)
+- [📋 Hrubý zoznam](/sk/knifes/knifesOverview.md)
 - [📑 Tabuľka s detailmi](/sk/knifes/KNIFE_Overview_List)
 - [📘 Blogový štýl s detailmi](/sk/knifes/KNIFE_Overview_Details)
 

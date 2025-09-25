@@ -2,6 +2,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 
 // Build metadata from environment (provided by Makefile / CI)
 const buildDate = process.env.BUILD_DATE || '20250925-2150';
@@ -63,7 +64,27 @@ const config: Config = {
       '@docusaurus/plugin-google-gtag',
       { trackingID: 'G-LV31TWZZK6', anonymizeIP: true },
     ],
-    
+    function cssMinimizerWorkaround() {
+      return {
+        name: 'css-minimizer-parallel-false',
+        configureWebpack() {
+          return {
+            optimization: {
+              minimizer: [
+                new CssMinimizerPlugin({
+                  parallel: false,
+                  // Use CSO instead of cssnano to avoid "Unexpected '/'" parse errors
+                  minify: CssMinimizerPlugin.cssoMinify,
+                  minimizerOptions: {
+                    restructure: false,
+                  },
+                }),
+              ],
+            },
+          };
+        },
+      };
+    },
   ],
 
   themeConfig: {

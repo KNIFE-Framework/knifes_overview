@@ -71,7 +71,7 @@ Základná architektúra je popísaná v KNIFE_027 [KNIFE_027-K027-git-for-dummi
 
 ---
 
-# Porovnanie rôznych statických generátorov, nielen pre GitHub {#porovnanie-roznych-statickych-generatorov-nielen-pre-github}
+## Porovnanie rôznych statických generátorov, nielen pre GitHub {#porovnanie-roznych-statickych-generatorov-nielen-pre-github}
 
 | # | Method           | Repozitár                                                                           | Pages URL                                                                                                                       | Popis                                        |
 | - | ---------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |

@@ -1,22 +1,21 @@
 ---
 id: "00.navigations"
 guid: "class-00.navigations-737d2e4a-fb61-418a-90f5-2ed3054f9920"
-dao: "class"
+dao: class
 title: "00.Navigations"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-# slug: "/index"
-created: "2025-09-23"
+created: 2025-09-23
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "00.Navigations"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

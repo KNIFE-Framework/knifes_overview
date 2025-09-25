@@ -1,22 +1,22 @@
 ---
-id: "index"
-guid: "class-index-c94a33f6-9ca1-4e70-a544-b3eafc046fc3"
-dao: "class"
+id: index
+guid: class-index-c94a33f6-9ca1-4e70-a544-b3eafc046fc3
+dao: class
 title: "06.HowTo"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-slug: "/index"
-created: "2025-09-23"
+# slug: "/index"
+created: 2025-09-23
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "06.HowTo"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

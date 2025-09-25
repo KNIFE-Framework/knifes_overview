@@ -1,21 +1,21 @@
 ---
-id: "K067_docusaurus_config_ts_appendix"
-guid: "knife-K067_docusaurus_config_ts_appendix-7c3ff713-c422-450c-a765-fe0ab6edc560"
-dao: "knife"
+id: K067_docusaurus_config_ts_appendix
+guid: knife-K067_docusaurus_config_ts_appendix-7c3ff713-c422-450c-a765-fe0ab6edc560
+dao: knife
 title: "K067 Appendix – docusaurus.config.ts (ENV‑driven)"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-created: "2025-09-24"
+created: 2025-09-24
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "K067 Appendix – docusaurus.config.ts (ENV‑driven)"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

@@ -1,21 +1,21 @@
 ---
-id: "KNIFE_Overview_List"
-guid: "knife-KNIFE_Overview_List-e541dfa1-fa40-4563-90b7-d0587f3c77ae"
-dao: "knife"
+id: KNIFE_Overview_List
+guid: knife-KNIFE_Overview_List-e541dfa1-fa40-4563-90b7-d0587f3c77ae
+dao: knife
 title: "📑 KNIFE Overview – List (page 1/3)"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-created: "2025-09-24"
+created: 2025-09-24
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "📑 KNIFE Overview – List (page 1/3)"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

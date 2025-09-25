@@ -66,8 +66,17 @@ def parse_frontmatter(text: str):
       data[k] = v
   return data, body, m
 
+import re
+
+SAFE_SCALAR_RE = re.compile(r'^[\w\-\s]+$')
+
 def serialize_scalar(v: str) -> str:
-  # Always quote scalars to be safe (colons, unicode, etc.)
+  if not v:
+    return '""'
+  if (v[0] == v[-1]) and v.startswith(("'", '"')):
+    return v  # already quoted
+  if SAFE_SCALAR_RE.match(v):
+    return v
   return f'"{v}"'
 
 def build_fm_serialized(data: dict, set_slug: bool = False, slug_val: str = "") -> str:

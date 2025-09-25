@@ -1,22 +1,22 @@
 ---
-id: "index"
-guid: "class-index-65918954-5c24-4458-a3ea-7bd93bf46014"
-dao: "class"
+id: index
+guid: class-index-65918954-5c24-4458-a3ea-7bd93bf46014
+dao: class
 title: "03.Questions"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-slug: "/index"
-created: "2025-09-23"
+# slug: "/index"
+created: 2025-09-23
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "03.Questions"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

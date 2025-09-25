@@ -1,22 +1,21 @@
 ---
-id: "index"
-guid: "class-index-b6f6a0db-d37c-4bf7-bc60-98d430d112e9"
-dao: "class"
+id: index
+guid: class-index-b6f6a0db-d37c-4bf7-bc60-98d430d112e9
+dao: class
 title: "02.Plans-Milestones"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-#slug: "/index"
-created: "2025-09-23"
+created: 2025-09-23
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "02.Plans-Milestones"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

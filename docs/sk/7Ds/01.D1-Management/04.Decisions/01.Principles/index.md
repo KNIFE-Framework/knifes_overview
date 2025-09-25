@@ -1,22 +1,21 @@
 ---
 id: "01.principles"
 guid: "class-01.principles-9b614a56-1f92-4b3f-9fdd-d3ea5bbb938d"
-dao: "class"
+dao: class
 title: "01.Principles"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-#slug: "/index"
-created: "2025-09-23"
+created: 2025-09-23
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "01.Principles"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

@@ -56,19 +56,6 @@ const config: Config = {
       '@docusaurus/plugin-google-gtag',
       { trackingID: 'G-LV31TWZZK6', anonymizeIP: true },
     ],
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          // legacy overview pages (split variants) → canonical
-          { from: ['/knifes/KNIFE_Overview_Details_p3','/knifes/KNIFE_Overview_Details_p2'], to: '/knifes/KNIFE_Overview_Details' },
-          { from: ['/knifes/KNIFE_Overview_List_p3','/knifes/KNIFE_Overview_List_p2'], to: '/knifes/KNIFE_Overview_List' },
-          // language-agnostic fallbacks (if EN used later)
-          //{ from: ['/en/knifes/KNIFE_Overview_Details_p3','/en/knifes/KNIFE_Overview_Details_p2'], to: '/en/knifes/KNIFE_Overview_Details' },
-          //{ from: ['/en/knifes/KNIFE_Overview_List_p3','/en/knifes/KNIFE_Overview_List_p2'], to: '/en/knifes/KNIFE_Overview_List' },
-        ],
-      },
-    ],
   ],
 
   themeConfig: {
@@ -78,8 +65,8 @@ const config: Config = {
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },
       items: [
         { to: '/', label: 'Home', position: 'left' },
-        { to: '/knifes/overview/', label: 'KNIFES (SK)', position: 'left' },
-        { to: '/7Ds/', label: '7Ds (SK)', position: 'left' },
+        { to: '/sk/knifes/overview/', label: 'KNIFES (SK)', position: 'left' },
+        { to: '/sk/7Ds/', label: '7Ds (SK)', position: 'left' },
         { to: '/', label: 'Docs (SK)', position: 'left' },
         { to: '/en/', label: 'Docs (EN)', position: 'left' },
         { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },

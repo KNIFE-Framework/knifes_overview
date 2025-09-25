@@ -162,7 +162,7 @@ install:
 	$(NPM) install
 
 dev:
-	BUILD_DATE="dev" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start
+	BUILD_DATE="September 2025" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start
 
 clean:
 	$(NPM) run clear || true

@@ -1,23 +1,23 @@
 ---
-id: "K011"
-guid: "knife-K011-f5282c5a-cda6-4028-8f5a-ce9d3637c5c8"
-dao: "knife"
+id: K011
+guid: knife-K011-f5282c5a-cda6-4028-8f5a-ce9d3637c5c8
+dao: knife
 title: "Main.xba šablóna pre LO Basic"
-description: "Základná štartovacia knižnica makier v LibreOffice"
-author: "Roman Kazicka"
+description: Základná štartovacia knižnica makier v LibreOffice
+author: Roman Kazicka
 authors: ["Roman Kazicka"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-slug: "/sk/knifes/k011-main-xba-sablona-pre-lo-basic"
-created: "2025-09-17"
-modified: "2025-09-17"
-status: "v backlogu"
-locale: "sk"
+# slug: "/sk/knifes/k011-main-xba-sablona-pre-lo-basic"
+created: 2025-09-17
+modified: 2025-09-17
+status: v backlogu
+locale: sk
 sidebar_label: "K011 – Main.xba šablóna pre LO Basic"
 sidebar_position: 11
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

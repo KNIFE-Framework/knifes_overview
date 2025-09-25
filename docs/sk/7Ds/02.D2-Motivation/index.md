@@ -1,22 +1,21 @@
 ---
-id: "index"
-guid: "class-index-3f030bd6-3b41-43d5-8b4b-8314f4b56476"
-dao: "class"
+id: index
+guid: class-index-3f030bd6-3b41-43d5-8b4b-8314f4b56476
+dao: class
 title: "02.D2-Motivation"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-#slug: "/index"
-created: "2025-09-23"
+created: 2025-09-23
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "02.D2-Motivation"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

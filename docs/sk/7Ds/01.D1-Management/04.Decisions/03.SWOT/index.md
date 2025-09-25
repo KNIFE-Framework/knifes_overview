@@ -1,22 +1,21 @@
 ---
 id: "03.swot"
 guid: "class-03.swot-ce39660f-121d-4c81-adec-197146f1adce"
-dao: "class"
+dao: class
 title: "03.SWOT"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-#slug: "/index"
-created: "2025-09-23"
+created: 2025-09-23
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "03.SWOT"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

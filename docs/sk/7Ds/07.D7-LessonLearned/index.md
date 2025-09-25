@@ -1,22 +1,22 @@
 ---
-id: "index"
-guid: "class-index-9bd7b969-d1df-4669-ba66-9eaf903e44e7"
-dao: "class"
+id: index
+guid: class-index-9bd7b969-d1df-4669-ba66-9eaf903e44e7
+dao: class
 title: "07.D7-LessonLearned"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-slug: "/index"
-created: "2025-09-23"
+# slug: "/index"
+created: 2025-09-23
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "07.D7-LessonLearned"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

@@ -1,23 +1,23 @@
 ---
-id: "K025"
-guid: "knife-K025-0e591458-c661-4f18-8e85-9c1c14efaedc"
-dao: "knife"
-title: "Kategorizácia TERNO podľa SDLC a 7D"
-description: "Zaradenie každého TERNO podľa fázy vývoja a vedomostnej disciplíny"
-author: "Roman Kazicka"
+id: K025
+guid: knife-K025-0e591458-c661-4f18-8e85-9c1c14efaedc
+dao: knife
+title: Kategorizácia TERNO podľa SDLC a 7D
+description: Zaradenie každého TERNO podľa fázy vývoja a vedomostnej disciplíny
+author: Roman Kazicka
 authors: ["Roman Kazicka"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-slug: "/sk/knifes/k025-kategorizacia-terno-podla-sdlc-a-7d"
-created: "2025-09-17"
-modified: "2025-09-17"
-status: "zaradené"
-locale: "sk"
+# slug: "/sk/knifes/k025-kategorizacia-terno-podla-sdlc-a-7d"
+created: 2025-09-17
+modified: 2025-09-17
+status: zaradené
+locale: sk
 sidebar_label: "K025 – Kategorizácia TERNO podľa SDLC a 7D"
 sidebar_position: 25
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

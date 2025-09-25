@@ -1,23 +1,23 @@
 ---
-id: "K007"
-guid: "knife-K007-745a9616-e53d-4a82-b14d-7e7fbf8bfef8"
-dao: "knife"
-title: "Helper skript na obrázky v Markdown"
+id: K007
+guid: knife-K007-745a9616-e53d-4a82-b14d-7e7fbf8bfef8
+dao: knife
+title: Helper skript na obrázky v Markdown
 description: "Generovanie obrázkových blokov do .md vrátane URL"
-author: "Roman Kazicka"
+author: Roman Kazicka
 authors: ["Roman Kazicka"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-slug: "/sk/knifes/k007-helper-skript-na-obrazky-v-markdown"
-created: "2025-09-17"
-modified: "2025-09-17"
-status: "aktívne"
-locale: "sk"
+# slug: "/sk/knifes/k007-helper-skript-na-obrazky-v-markdown"
+created: 2025-09-17
+modified: 2025-09-17
+status: aktívne
+locale: sk
 sidebar_label: "K007 – Helper skript na obrázky v Markdown"
 sidebar_position: 7
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

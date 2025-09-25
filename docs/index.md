@@ -1,21 +1,21 @@
 ---
-id: "home"
-guid: "class-home-f30733dc-4f8d-4375-9799-4e137d34a92f"
-dao: "class"
+id: home
+guid: class-home-f30733dc-4f8d-4375-9799-4e137d34a92f
+dao: class
 title: "KNIFE – Prehľad"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-created: "2025-09-24"
+created: 2025-09-24
 modified: ""
-status: "draft"
-locale: "en"
-sidebar_label: "Home"
-rights_holder_content: "Roman Kazička"
+status: draft
+locale: en
+sidebar_label: Home
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

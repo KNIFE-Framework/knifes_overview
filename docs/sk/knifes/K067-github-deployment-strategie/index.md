@@ -1,23 +1,23 @@
 ---
-id: "K067"
-guid: "knife-K067-83572f2b-c6d2-4f75-9a41-22457168d71e"
-dao: "knife"
-title: "GitHub Deployment stratégie"
+id: K067
+guid: knife-K067-83572f2b-c6d2-4f75-9a41-22457168d71e
+dao: knife
+title: GitHub Deployment stratégie
 description: "Deployment obsahu v GitHube sa dá vykonať viacerými spôsobmi."
-author: "Roman Kazicka"
+author: Roman Kazicka
 authors: ["Roman Kazicka"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-slug: "/sk/knifes/k067-github-deployment-strategie"
-created: "2025-09-17"
-modified: "2025-09-17"
-status: "new"
-locale: "sk"
+# slug: "/sk/knifes/k067-github-deployment-strategie"
+created: 2025-09-17
+modified: 2025-09-17
+status: new
+locale: sk
 sidebar_label: "K067 – GitHub Deployment stratégie"
 sidebar_position: 67
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

@@ -1,23 +1,23 @@
 ---
-id: "K071"
-guid: "knife-K071-d0c8a434-fc6d-4444-8c4e-7577fd78dc0a"
-dao: "knife"
-title: "7Ds-Seven Disciplines for successful solutions"
+id: K071
+guid: knife-K071-d0c8a434-fc6d-4444-8c4e-7577fd78dc0a
+dao: knife
+title: 7Ds-Seven Disciplines for successful solutions
 description: "Metodika je zameraná na podporu aktivít v rámci SDLC. Každá potencálna iformácia má svoje miesto. A je úplne jedno v akej technológií sa implementuje."
-author: "Roman Kazicka"
+author: Roman Kazicka
 authors: ["Roman Kazicka"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-slug: "/sk/knifes/k071-7ds-seven-disciplines-for-successful-solutions"
-created: "2025-09-17"
-modified: "2025-09-17"
-status: "ongoing"
-locale: "sk"
+# slug: "/sk/knifes/k071-7ds-seven-disciplines-for-successful-solutions"
+created: 2025-09-17
+modified: 2025-09-17
+status: ongoing
+locale: sk
 sidebar_label: "K071 – 7Ds-Seven Disciplines for successful solutions"
 sidebar_position: 71
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

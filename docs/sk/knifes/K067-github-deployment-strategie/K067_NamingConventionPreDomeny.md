@@ -1,21 +1,21 @@
 ---
-id: "K067-02"
-guid: "knife-K067-cc334b31-6f4f-4dbd-b5f2-c3c2e8c9bc83"
-dao: "knife"
-title: "Naming Convention pre Subdomény"
+id: K067-02
+guid: knife-K067-cc334b31-6f4f-4dbd-b5f2-c3c2e8c9bc83
+dao: knife
+title: Naming Convention pre Subdomény
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-created: "2025-09-24"
+created: 2025-09-24
 modified: ""
-status: "draft"
-locale: "sk"
-sidebar_label: "Naming Convention pre Subdomény"
-rights_holder_content: "Roman Kazička"
+status: draft
+locale: sk
+sidebar_label: Naming Convention pre Subdomény
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

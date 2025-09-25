@@ -1,22 +1,21 @@
 ---
-id: "index"
-guid: "class-index-10d2fb92-f5d3-4a25-855d-070c53ffc7ce"
-dao: "class"
+id: index
+guid: class-index-10d2fb92-f5d3-4a25-855d-070c53ffc7ce
+dao: class
 title: "05.D5-Implementation"
 description: ""
-author: "Roman Kazička"
+author: Roman Kazička
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: []
-#slug: "/index"
-created: "2025-09-23"
+created: 2025-09-23
 modified: ""
-status: "draft"
-locale: "sk"
+status: draft
+locale: sk
 sidebar_label: "05.D5-Implementation"
-rights_holder_content: "Roman Kazička"
+rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

@@ -1,6 +1,9 @@
 // docusaurus.config.ts
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
+
+const buildDate = process.env.BUILD_DATE || '';
+
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
@@ -58,8 +61,8 @@ const config: Config = {
       {
         redirects: [
           // legacy overview pages (split variants) → canonical
-          { from: ['/sk/knifes/KNIFE_Overview_Details_p3','/sk/knifes/KNIFE_Overview_Details_p2'], to: '/sk/knifes/KNIFE_Overview_Details' },
-          { from: ['/sk/knifes/KNIFE_Overview_List_p3','/sk/knifes/KNIFE_Overview_List_p2'], to: '/sk/knifes/KNIFE_Overview_List' },
+          { from: ['/knifes/KNIFE_Overview_Details_p3','/knifes/KNIFE_Overview_Details_p2'], to: '/knifes/KNIFE_Overview_Details' },
+          { from: ['/knifes/KNIFE_Overview_List_p3','/knifes/KNIFE_Overview_List_p2'], to: '/knifes/KNIFE_Overview_List' },
           // language-agnostic fallbacks (if EN used later)
           //{ from: ['/en/knifes/KNIFE_Overview_Details_p3','/en/knifes/KNIFE_Overview_Details_p2'], to: '/en/knifes/KNIFE_Overview_Details' },
           //{ from: ['/en/knifes/KNIFE_Overview_List_p3','/en/knifes/KNIFE_Overview_List_p2'], to: '/en/knifes/KNIFE_Overview_List' },
@@ -75,8 +78,8 @@ const config: Config = {
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },
       items: [
         { to: '/', label: 'Home', position: 'left' },
-        { to: '/sk/knifes/KNIFEsOverview/', label: 'KNIFES (SK)', position: 'left' },
-        { to: '/sk/7Ds/', label: '7Ds (SK)', position: 'left' },
+        { to: '/knifes/overview/', label: 'KNIFES (SK)', position: 'left' },
+        { to: '/7Ds/', label: '7Ds (SK)', position: 'left' },
         { to: '/', label: 'Docs (SK)', position: 'left' },
         { to: '/en/', label: 'Docs (EN)', position: 'left' },
         { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
@@ -85,13 +88,13 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [],
-      copyright: `© ${new Date().getFullYear()} Context Aware Solutions. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Context Aware Solutions. Last build: ${buildDate} • Built with Docusaurus.`,
     },
     prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
     docs: { sidebar: { hideable: true, autoCollapseCategories: true } },
   } satisfies Preset.ThemeConfig,
 
-  // Ak si kdekoľvek mal vlastné polia (napr. writeJsonIndex), daj ich sem:
+  // Ak si kdekoľvek mal vlastné polia (napr. writeJsonindex.md), daj ich sem:
   // customFields: { writeJsonIndex: true },
 };
 

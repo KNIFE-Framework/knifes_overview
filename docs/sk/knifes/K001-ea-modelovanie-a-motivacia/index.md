@@ -6,20 +6,26 @@ title: "EA modelovanie a motivácia"
 description: "Systém motivácie pomocou lízaniek a spätnej väzby"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "hotové"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
 slug: "/sk/knifes/k001-ea-modelovanie-a-motivacia"
-sidebar_label: "K001 – EA modelovanie a motivácia"
-sidebar_position: "1"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "hotové"
 locale: "sk"
+sidebar_label: "K001 – EA modelovanie a motivácia"
+sidebar_position: 1
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K001 – EA modelovanie a motivácia
 

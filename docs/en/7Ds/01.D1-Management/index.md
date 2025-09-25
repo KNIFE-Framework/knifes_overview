@@ -1,3 +1,25 @@
+---
+id: "01-D1-Management"
+guid: "class-01-D1-Management-fb378282-5134-4bc2-88f3-17c53a2a1e7b"
+dao: "class"
+title: "01.D1-Management – EN"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: []
+created: "2025-09-24"
+modified: ""
+status: "draft"
+locale: "en"
+sidebar_label: "01.D1-Management – EN"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+---
 # 01.D1-Management – EN
 
 ## 📁 Subsections:

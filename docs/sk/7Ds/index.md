@@ -1,3 +1,28 @@
+---
+id: "7ds"
+guid: "754B9ECA-35DC-42EC-9219-5F658EF0C424"
+dao: "class"
+title: "7Ds"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: []
+slug: "/index"
+created: "2025-09-23"
+modified: ""
+status: "draft"
+locale: "sk"
+sidebar_label: "7Ds"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+---
+# 7Ds
+
 SK
 
 - [01.D1-Management](./01.D1-Management/index.md)

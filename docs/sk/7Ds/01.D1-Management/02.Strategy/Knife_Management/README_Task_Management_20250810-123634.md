@@ -1,3 +1,26 @@
+---
+id: "readme_task_management_20250810-123634"
+guid: "class-readme_task_management_20250810-123634-94f360ff-201a-4c7c-bfc7-c2255ee6c7fb"
+dao: "class"
+title: "Knife_Management"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: []
+slug: "/README_Task_Management_20250810-123634"
+created: "2025-09-23"
+modified: ""
+status: "draft"
+locale: "sk"
+sidebar_label: "Knife_Management"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+---
 # Project Task Management – Minimal, GitHub-first
 
 _Last updated: 20250810-123634_
@@ -28,7 +51,7 @@ _Last updated: 20250810-123634_
 
 ## Templates
 V `.github/ISSUE_TEMPLATE/` použi:
-- `task.md` – jednorazová úloha.
+- `task` – jednorazová úloha.
 - `epic.md` – väčší celok (voliteľné, ak nepoužívaš ZenHub Epics).
 
 ## Moving 7Ds into language folders

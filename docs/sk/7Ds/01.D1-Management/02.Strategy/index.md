@@ -1,3 +1,28 @@
+---
+id: "02.strategy"
+guid: "class-02.strategy-3341260c-ab5d-423a-b7f9-deaf588f2021"
+dao: "class"
+title: "02.Strategy"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: []
+slug: "/index"
+created: "2025-09-23"
+modified: ""
+status: "draft"
+locale: "sk"
+sidebar_label: "02.Strategy"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+---
+# 02.Strategy
+
 id: index
 title: 02.Strategy
 description: Navigácia pre KNIFE prehľady v oblasti Strategy
@@ -6,10 +31,9 @@ description: Navigácia pre KNIFE prehľady v oblasti Strategy
 # 📂 Strategy
 
 Rýchla navigácia:
-- 📄 **[Zoznam hrubý](knifesOverview.md)**
-- 📋 **[Zoznam s detailami – tabuľka](KNIFE_Overview_List)**
-- 📰 **[Zoznam s detailami – blog](KNIFE_Overview_Details)**
-- 📑 **[KNIFE with SFIA (ODS)](/files/20250420-KNIFES_with_SFIA.ods)**
+- 📋 **[Zoznam s detailami – tabuľka](../../../knifes/KNIFE_Overview_List.md)**
+- 📰 **[Zoznam s detailami – blog](../../../knifes/KNIFE_Overview_Details.md)**
+
 
 ---
 

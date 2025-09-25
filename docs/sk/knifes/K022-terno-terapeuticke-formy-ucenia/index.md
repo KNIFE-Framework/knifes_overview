@@ -6,20 +6,26 @@ title: "TERNO – terapeutické formy učenia"
 description: "Satira, emócie a storytelling ako forma výuky a reflektovania reality"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "plánované"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
 slug: "/sk/knifes/k022-terno-terapeuticke-formy-ucenia"
-sidebar_label: "K022 – TERNO – terapeutické formy učenia"
-sidebar_position: "22"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "plánované"
 locale: "sk"
+sidebar_label: "K022 – TERNO – terapeutické formy učenia"
+sidebar_position: 22
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K022 – TERNO – terapeutické formy učenia
 

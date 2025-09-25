@@ -7,7 +7,7 @@
 
 
 
-[01-Zoznam hrubý ](/docs/sk/knifes/KNIFEsOverview.md)
+[01-Zoznam hrubý ](/docs/sk/knifes/overview.md)
 
 [02-Zoznam s detailami- tabuľka ](/docs/sk/knifes/KNIFE_Overview_List.md)
 

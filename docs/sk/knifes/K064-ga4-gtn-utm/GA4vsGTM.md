@@ -1,3 +1,25 @@
+---
+id: "K064-ga4-gtn-utm-02"
+guid: "knife-K064-ga4-gtn-utm-555e883c-7833-44e2-b77b-6dcb4da50a2a"
+dao: "knife"
+title: "GA4 a GTM – logický model a nastavenie"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
+created: "2025-09-24"
+modified: ""
+status: "draft"
+locale: "sk"
+sidebar_label: "GA4 a GTM – logický model a nastavenie"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+---
 # GA4 a GTM – logický model a nastavenie
 
 ## Hierarchia GA4

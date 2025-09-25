@@ -6,20 +6,26 @@ title: "GitHUB Education Framework"
 description: "Zastrešujúci rámec pre vzdelávacie kurzy na GitHube (GitHub Classroom, Pages, Docs generátory). Definuje zásady, šablóny, publishing flow a metriky.Skillmea, SEDUO maju vlastny framework , uvodny trailer, potom odskok do platenej verzie. To iste sa da aj na GitHUB."
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "init"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE", "Educations", "Frameworks"]
 slug: "/sk/knifes/k041-github-education-framework"
-sidebar_label: "K041 – GitHUB Education Framework"
-sidebar_position: "41"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "init"
 locale: "sk"
+sidebar_label: "K041 – GitHUB Education Framework"
+sidebar_position: 41
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K041 – GitHUB Education Framework
 

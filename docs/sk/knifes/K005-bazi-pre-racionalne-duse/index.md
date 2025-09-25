@@ -6,20 +6,26 @@ title: "BaZi pre racionálne duše"
 description: "Sebapoznanie cez dátum a čas narodenia (BaZi)"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "zaradené"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
 slug: "/sk/knifes/k005-bazi-pre-racionalne-duse"
-sidebar_label: "K005 – BaZi pre racionálne duše"
-sidebar_position: "5"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "zaradené"
 locale: "sk"
+sidebar_label: "K005 – BaZi pre racionálne duše"
+sidebar_position: 5
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K005 – BaZi pre racionálne duše
 

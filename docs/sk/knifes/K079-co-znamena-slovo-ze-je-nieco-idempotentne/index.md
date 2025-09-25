@@ -6,20 +6,26 @@ title: "Čo znamená slovo že je niečo idempotentné?"
 description: "Dosť často sa začalo používať slovo idempotentná operácia. Ako to ale vzniklo? Prečo to vzniklo?"
 author: "Roman Kazička"
 authors: ["Roman Kazička"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "now"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
 slug: "/sk/knifes/k079-co-znamena-slovo-ze-je-nieco-idempotentne"
-sidebar_label: "K079 – Čo znamená slovo že je niečo idempotentné?"
-sidebar_position: "79"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "now"
 locale: "sk"
+sidebar_label: "K079 – Čo znamená slovo že je niečo idempotentné?"
+sidebar_position: 79
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md)
+> [⬅ KNIFES – Prehľad](../overview.md)
 ---
 # KNIFE K079 – Čo znamená slovo že je niečo idempotentné?
 

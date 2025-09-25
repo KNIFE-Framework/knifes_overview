@@ -1,3 +1,25 @@
+---
+id: "K064-ga4-gtn-utm-08"
+guid: "knife-K064-ga4-gtn-utm-764e0ca3-9ca6-42a6-a2c9-fb80c7ee9f24"
+dao: "knife"
+title: "Getting Started with GA4 & UTM"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
+created: "2025-09-24"
+modified: ""
+status: "draft"
+locale: "sk"
+sidebar_label: "Getting Started with GA4 & UTM"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+---
 # Getting Started with GA4 & UTM
 
 ## 🔎 Čo je UTM?

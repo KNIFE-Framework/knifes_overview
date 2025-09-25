@@ -21,6 +21,9 @@ NPM  := npm
 DOCS_DIR  := docs
 BUILD_DIR := build
 
+# Build timestamp in UTC (used for footer "Last build")
+BUILD_DATE := $(shell date -u '+%Y-%m-%d %H:%M:%S UTC')
+
 # 🌿 Worktree deploy
 DEPLOY_BRANCH = gh-pages-docusaurus
 WORKTREE_DIR  = ../$(DEPLOY_BRANCH)
@@ -62,7 +65,8 @@ endif
   gen-dry dry-verify \
   knife-guid-backfill knife-meta-backfill \
   knife-verify knife-verify-csv-docs knife-verify-frontmatter \
-  print-vars knife-audit-frontmatter
+  print-vars knife-audit-frontmatter \
+  fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file
 
 # -------------------------
 # 📌 Help
@@ -123,6 +127,12 @@ help:
 	@echo "  knife-verify-csv-docs  - CSV/docs konzistencia (duplicitné ID, prázdne názvy, kolízie slugov, chýbajúce súbory)"
 	@echo "  knife-verify-frontmatter - Lint povinných polí (guid, dao, id, title, created, modified)"
 	@echo "  knife-audit-frontmatter - Audit existujúcich KNIFE index.md (guid/dao/dates/slug/locale)"
+	@echo "===== 📝 Frontmatter Tools ====="
+	@echo "  fm-fix                 - Prepíše frontmatter v docs/ tak, že 'slug' bude zakomentovaný (# slug: \"...\")"
+	@echo "  fm-fix-dry             - Náhľad (DRY-RUN) zmien frontmatteru pre celý docs/ (vytlačí unified diff)"
+	@echo "  fm-fix-file            - Prepíše frontmatter iba jedného súboru; použitie: make fm-fix-file file=PATH"
+	@echo "  fm-fix-file-dry        - DRY-RUN pre jeden súbor; použitie: make fm-fix-file-dry file=PATH"
+	@echo "  fm-set-slug-file       - Aktívny slug pre jediný súbor; použitie: make fm-set-slug-file file=PATH slug=/cesta/bez-locale"
 
 help-auth:
 	@echo "===== 🔐 Autentikácia pre Worktree deploy ====="
@@ -152,14 +162,14 @@ install:
 	$(NPM) install
 
 dev:
-	$(NPM) start
+	BUILD_DATE="dev" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start
 
 clean:
 	$(NPM) run clear || true
 	rm -rf $(BUILD_DIR) .docusaurus
 
 build: clean
-	$(NPM) run build -- $(BUILD_EXTRA)
+	BUILD_DATE="$(BUILD_DATE)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA)
 
 build-fast: clean
 	$(MAKE) build MINIFY=0
@@ -594,3 +604,30 @@ knifes-build-safe:
 
 knife-audit-frontmatter:
 	node scripts/knife-frontmatter-audit.mjs docs/sk/knifes	
+
+# -------------------------
+# 📝 Frontmatter Tools
+# -------------------------
+
+## fm-fix: Prejde celý docs/ a zakomentuje 'slug' (bez zápisu konkrétnej hodnoty)
+fm-fix:
+	@python3 tools/fix_frontmatter.py --root $(DOCS_DIR)
+
+## fm-fix-dry: DRY-RUN náhľad zmien (vypíše unified diff), nič nezapisuje
+fm-fix-dry:
+	@python3 tools/fix_frontmatter.py --root $(DOCS_DIR) --dry-run
+
+## fm-fix-file: Prepíše frontmatter iba jedného súboru (vyžaduje file=PATH)
+fm-fix-file:
+	@if [ -z "$$file" ]; then echo "Použi: make fm-fix-file file=PATH"; exit 1; fi
+	@python3 tools/fix_frontmatter.py --file "$$file"
+
+## fm-fix-file-dry: DRY-RUN iba pre jeden súbor (vyžaduje file=PATH)
+fm-fix-file-dry:
+	@if [ -z "$$file" ]; then echo "Použi: make fm-fix-file-dry file=PATH"; exit 1; fi
+	@python3 tools/fix_frontmatter.py --file "$$file" --dry-run
+
+## fm-set-slug-file: Zapíše aktívny slug pre jediný súbor (vyžaduje file=PATH a slug=/cesta)
+fm-set-slug-file:
+	@if [ -z "$$file" ] || [ -z "$$slug" ]; then echo "Použi: make fm-set-slug-file file=PATH slug=/cesta/bez-locale"; exit 1; fi
+	@python3 tools/fix_frontmatter.py --file "$$file" --set-slug --slug-val "$$slug"

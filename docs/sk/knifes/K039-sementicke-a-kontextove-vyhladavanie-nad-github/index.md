@@ -6,20 +6,26 @@ title: "Sementicke a kontextove vyhladavanie nad GitHUB"
 description: "Nestaci mat len data a informacie, je nevyhnutne ich spajat a dotazovat sa"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "init"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
 slug: "/sk/knifes/k039-sementicke-a-kontextove-vyhladavanie-nad-github"
-sidebar_label: "K039 – Sementicke a kontextove vyhladavanie nad GitHUB"
-sidebar_position: "39"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "init"
 locale: "sk"
+sidebar_label: "K039 – Sementicke a kontextove vyhladavanie nad GitHUB"
+sidebar_position: 39
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K039 – Sementicke a kontextove vyhladavanie nad GitHUB
 

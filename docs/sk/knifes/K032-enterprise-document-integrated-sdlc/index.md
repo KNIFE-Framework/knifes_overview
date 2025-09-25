@@ -6,20 +6,26 @@ title: "„Enterprise Document-integrated SDLC“"
 description: "Zavedenie Git-based dokumentačného frameworku pre prepojenie požiadaviek, rozhodnutí a architektúr naprieč SDLC vo firemnom prostredí s množstvom stakeholderov, JIRA taskov, externých dodávateľov a zložitým change manažmentom."
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "v návrhu (alebo v riešení – podľa teba)"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
 slug: "/sk/knifes/k032-enterprise-document-integrated-sdlc"
-sidebar_label: "K032 – „Enterprise Document-integrated SDLC“"
-sidebar_position: "32"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "v návrhu (alebo v riešení – podľa teba)"
 locale: "sk"
+sidebar_label: "K032 – „Enterprise Document-integrated SDLC“"
+sidebar_position: 32
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K032 – „Enterprise Document-integrated SDLC“
 

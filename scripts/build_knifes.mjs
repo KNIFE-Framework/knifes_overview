@@ -269,7 +269,7 @@ function writeFrontMatter(obj) {
 const NAV_MARKER = '<!-- nav:knifes -->';
 function navBlock() {
   return `${NAV_MARKER}
-> [⬅ KNIFES – Prehľad](../knifesOverview.md)
+> [⬅ KNIFES – Prehľad](../overview.md)
 ---
 `;
 }
@@ -761,10 +761,10 @@ async function main() {
   await ensureDir(overviewDir);
 
   if (dryRun) {
-    console.log(`Would write lightweight overview at ${path.relative(repoRoot, path.join(overviewDir, 'knifesOverview.md'))}`);
+    console.log(`Would write lightweight overview at ${path.relative(repoRoot, path.join(overviewDir, 'overview.md'))}`);
   } else {
-    await fs.writeFile(path.join(overviewDir, 'knifesOverview.md'), overviewShort, 'utf8');
-    console.log(`Overview file written: ${path.relative(repoRoot, path.join(overviewDir, 'knifesOverview.md'))}`);
+    await fs.writeFile(path.join(overviewDir, 'overview.md'), overviewShort, 'utf8');
+    console.log(`Overview file written: ${path.relative(repoRoot, path.join(overviewDir, 'knifesOverview'))}`);
   }
 }
 

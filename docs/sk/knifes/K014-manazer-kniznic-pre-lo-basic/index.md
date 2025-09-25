@@ -6,20 +6,26 @@ title: "Manažér knižníc pre LO Basic"
 description: "Načítanie a správa knižníc v LO Basic"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "návrh"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
 slug: "/sk/knifes/k014-manazer-kniznic-pre-lo-basic"
-sidebar_label: "K014 – Manažér knižníc pre LO Basic"
-sidebar_position: "14"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "návrh"
 locale: "sk"
+sidebar_label: "K014 – Manažér knižníc pre LO Basic"
+sidebar_position: 14
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K014 – Manažér knižníc pre LO Basic
 

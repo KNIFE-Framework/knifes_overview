@@ -12,15 +12,19 @@ Behavior:
   - Reads CSV (utf-8-sig) and builds mapping: K### -> created (ISO date) + optional fields.
   - If a KNIFE frontmatter is missing 'created', inserts created from CSV (normalized to YYYY-MM-DD).
   - If 'modified' is missing, sets modified = created (existing 'modified' is NOT changed).
-  - Optionally fills category/type/priority/title if missing in frontmatter and present in CSV.
+  - Optionally fills category/type/priority/title/author if missing in frontmatter and present in CSV.
+  - **Sanitization**: if a KNIFE page contains `slug: "/"` or `slug: "/index"`, remove that slug
+    (KNIFE pages must not hijack the site homepage; only real root index pages may use "/").
+
 Notes:
   - CSV columns (case-insensitive) – accepted aliases:
-      id:        ['id','knife_id','knife','knifeid']
-      created:   ['created','date_created','created_date','date','datum','created_at']
-      title:     ['title','short_title','name']
-      category:  ['category','kategoria','group']
-      type:      ['type','typ','kind']
-      priority:  ['priority','prio']
+      id:        ['id','knife_id','knife','knifeid','ID']
+      created:   ['created','date_created','created_date','date','datum','created_at','date of record','date_of_record']
+      title:     ['title','short_title','short title','Short Title','name']
+      category:  ['category','kategoria','group','Category']
+      type:      ['type','typ','kind','Type']
+      priority:  ['priority','prio','Priority']
+      author:    ['author','Author','authors','Authors']
 """
 
 import sys
@@ -65,7 +69,7 @@ def dump_frontmatter(data: dict, body: str) -> str:
     out = ["---"]
     for k in keys:
         v = data[k]
-        if v is None:
+        if v is None or (isinstance(v, str) and v == ""):
             continue
         # quote everything for safety (colons etc.)
         out.append(f'{k}: "{v}"')
@@ -207,37 +211,45 @@ def apply_backfill(mdpath: pathlib.Path, csv_index: dict) -> bool:
     if not data:
         return False
 
+    # SLUG SANITIZATION for KNIFE pages: never let them set "/" or "/index"
+    # Only allow those for real root index pages, which are outside of KNIFE paths.
+    cleaned = False
+    bad_slug = (data.get("slug") or "").strip()
+    if bad_slug in ("/", "/index"):
+        # KNIFE pages live under knifes/**, they must not claim the homepage.
+        del data["slug"]
+        cleaned = True
+
     kid = (data.get("id") or "").strip().upper()
     # Accept "K### ..." but keep only K###
     mm = re.match(r"^(K\d{3})", kid)
     kid = mm.group(1) if mm else kid
-    if not kid or kid not in csv_index:
-        return False
 
-    src = csv_index[kid]
     changed = False
 
-    # created
-    if not data.get("created"):
-        iso = src.get("created") or ""
-        if iso:
-            data["created"] = iso
-            changed = True
+    if kid and kid in csv_index:
+        src = csv_index[kid]
+        # created
+        if not data.get("created"):
+            iso = src.get("created") or ""
+            if iso:
+                data["created"] = iso
+                changed = True
 
-    # modified == created if missing
-    if not data.get("modified"):
-        base = data.get("created") or src.get("created") or ""
-        if base:
-            data["modified"] = base
-            changed = True
+        # modified == created if missing
+        if not data.get("modified"):
+            base = data.get("created") or src.get("created") or ""
+            if base:
+                data["modified"] = base
+                changed = True
 
-    # optional fields (only if missing)
-    for opt in ("category","type","priority","title","author"):
-        if src.get(opt) and not data.get(opt):
-            data[opt] = src[opt]
-            changed = True
+        # optional fields (only if missing)
+        for opt in ("category","type","priority","title","author"):
+            if src.get(opt) and not data.get(opt):
+                data[opt] = src[opt]
+                changed = True
 
-    if not changed:
+    if not (changed or cleaned):
         return False
 
     new_text = dump_frontmatter(data, body)

@@ -6,20 +6,26 @@ title: "Pracovno, finančný ekosystém"
 description: "Absolventi architektúry už počas štúdia sú selektovaní  z komerčných ateliérov. Ponúkajú im brikády, prípadne dohody o vykonaní práce, za cenu nekvalifikovaných robotníkov."
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "návrh"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
 slug: "/sk/knifes/k036-pracovno-financny-ekosystem"
-sidebar_label: "K036 – Pracovno, finančný ekosystém"
-sidebar_position: "36"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "návrh"
 locale: "sk"
+sidebar_label: "K036 – Pracovno, finančný ekosystém"
+sidebar_position: 36
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K036 – Pracovno, finančný ekosystém
 

@@ -1,3 +1,25 @@
+---
+id: "7Ds"
+guid: "class-7Ds-318192aa-8679-402c-996c-b5d65b775472"
+dao: "class"
+title: "7Ds Dashboard (EN)"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: []
+created: "2025-09-24"
+modified: ""
+status: "draft"
+locale: "en"
+sidebar_label: "7Ds Dashboard (EN)"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+---
 # 7Ds Dashboard (EN)
 
 ## 📂 Dimensions:

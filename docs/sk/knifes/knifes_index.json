@@ -781,7 +781,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu",
     "status": "v riešeni",
     "type": "",
     "category": "",
@@ -831,7 +831,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K037 – Context Aware Solutions / paradigma, solution",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K037 – Context Aware Solutions / paradigma, solution",
     "status": "inprogress",
     "type": "",
     "category": "",
@@ -1108,7 +1108,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md",
     "status": "draft",
     "type": "",
     "category": "",
@@ -1133,7 +1133,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K048 – AI – Agent in OpenGPT",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K048 – AI – Agent in OpenGPT",
     "status": "in progress",
     "type": "",
     "category": "",
@@ -1158,7 +1158,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou",
     "status": "draft",
     "type": "",
     "category": "",
@@ -1233,7 +1233,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K052 – GitHub LMS Framework",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K052 – GitHub LMS Framework",
     "status": "new",
     "type": "",
     "category": "",
@@ -1685,7 +1685,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K070 – EA Fundamentals",
+    "description": "[⬅ KNIFES – Prehľad](../knifes/overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K070 – EA Fundamentals",
     "status": "new",
     "type": "",
     "category": "",
@@ -1981,7 +1981,7 @@
     "title": "EA Fundamentals",
     "author": "",
     "authors": [],
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K069 – EA Fundamentals",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K069 – EA Fundamentals",
     "status": "new",
     "type": "",
     "category": "",
@@ -2073,7 +2073,7 @@
     "title": "SDLC-Solution Development Life Cycle",
     "author": "",
     "authors": [],
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K073 – SDLC-Solution Development Life Cycle",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K073 – SDLC-Solution Development Life Cycle",
     "status": "ongoing",
     "type": "",
     "category": "",
@@ -2096,7 +2096,7 @@
     "title": "7S -KNIFE047_Reflexia_a_epistemologia.md",
     "author": "",
     "authors": [],
-    "description": "[⬅ KNIFES – Prehľad](../KNIFEsOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K076 – 7S -KNIFE047_Reflexia_a_epistemologia.md",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K076 – 7S -KNIFE047_Reflexia_a_epistemologia.md",
     "status": "draft",
     "type": "",
     "category": "",

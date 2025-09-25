@@ -1,10 +1,25 @@
 ---
-id: K067
-title: Naming Convention pre Subdomény
-status: draft
-date: 2024-06-10
+id: "K067-02"
+guid: "knife-K067-cc334b31-6f4f-4dbd-b5f2-c3c2e8c9bc83"
+dao: "knife"
+title: "Naming Convention pre Subdomény"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
+created: "2025-09-24"
+modified: ""
+status: "draft"
+locale: "sk"
+sidebar_label: "Naming Convention pre Subdomény"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
-
 # Naming Convention pre Subdomény
 
 Táto dokumentácia popisuje konvenciu pomenovania subdomén používaných v rámci našich projektov a nasadení. Dodržiavanie jednotnej štruktúry a pravidiel zabezpečuje konzistenciu, lepšiu orientáciu a správu domén.

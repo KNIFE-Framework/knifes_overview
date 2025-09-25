@@ -6,20 +6,26 @@ title: "Ako obnoviť stav z minulosti?"
 description: "Ako si obnoviť pokazné súbory? Ak mám v minulosti zachytené dobré údaje, nie je problém sa k nim vrátiť."
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "inprogress"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
 slug: "/sk/knifes/k055-ako-obnovit-stav-z-minulosti"
-sidebar_label: "K055 – Ako obnoviť stav z minulosti?"
-sidebar_position: "55"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "inprogress"
 locale: "sk"
+sidebar_label: "K055 – Ako obnoviť stav z minulosti?"
+sidebar_position: 55
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K055 – Ako obnoviť stav z minulosti?
 

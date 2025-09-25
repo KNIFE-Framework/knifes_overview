@@ -6,20 +6,26 @@ title: "GA4, GTN, UTM"
 description: "Ako funguje AG4, TGM a UTM?"
 author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-created: "2025-09-17"
-modified: "2025-09-17"
-date: "2025-09-17"
-status: "new"
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE", "images"]
 slug: "/sk/knifes/k064-ga4-gtn-utm"
-sidebar_label: "K064 – GA4, GTN, UTM"
-sidebar_position: "64"
+created: "2025-09-17"
+modified: "2025-09-17"
+status: "new"
 locale: "sk"
+sidebar_label: "K064 – GA4, GTN, UTM"
+sidebar_position: 64
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](/sk/knifes/knifesOverview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K064 – GA4, GTN, UTM
 

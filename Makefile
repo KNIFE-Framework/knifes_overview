@@ -104,6 +104,8 @@ help:
 	@echo "  release-ci-datetime    - Vytvorí tag vYYYYMMDD-HHMM (UTC) bez zmeny package.json a pushne ho"
 	@echo "                         Príklad: v20250925-2315"
 	@echo "                         Použitie: make release-ci | make release-ci-datetime"
+	@echo "  (CI) vyžaduje: .github/workflows/release.yml"
+	@echo "  APP_VERSION v pätičke sa nastaví v CI z tagu: $${GITHUB_REF_NAME}"
 	@echo "===== 🔍 Link Checker ====="
 	@echo "  check-links            - DRY-RUN kontrola odkazov v docs/"
 	@echo "  check-links-hard       - Striktná kontrola: spustí build"

@@ -1,0 +1,35 @@
+name: release
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+        env:
+          APP_VERSION: ${{ github.ref_name }}
+
+      - name: Zip build output
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          (cd build && zip -r ../knife-site-$RELEASE_TAG.zip .)
+          echo "ZIP=knife-site-$RELEASE_TAG.zip" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.ZIP }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

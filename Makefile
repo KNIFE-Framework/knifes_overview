@@ -66,7 +66,8 @@ endif
   knife-guid-backfill knife-meta-backfill \
   knife-verify knife-verify-csv-docs knife-verify-frontmatter \
   print-vars knife-audit-frontmatter \
-  fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file
+  fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file \
+  release-ci release-ci-datetime
 
 # -------------------------
 # 📌 Help
@@ -98,6 +99,11 @@ help:
 	@echo "  build-fast             - Alias na 'make build MINIFY=0' (bez minify)"
 	@echo "  ci-build               - CI-friendly build bez minifikácie (alias na 'make build MINIFY=0')"
 	@echo "  serve                  - Lokálne naservíruj statický build"
+	@echo "===== 🚀 Release (CI) ====="
+	@echo "  release-ci             - SemVer patch bump (npm version patch) + push tag → spustí CI release"
+	@echo "  release-ci-datetime    - Vytvorí tag vYYYYMMDD-HHMM (UTC) bez zmeny package.json a pushne ho"
+	@echo "                         Príklad: v20250925-2315"
+	@echo "                         Použitie: make release-ci | make release-ci-datetime"
 	@echo "===== 🔍 Link Checker ====="
 	@echo "  check-links            - DRY-RUN kontrola odkazov v docs/"
 	@echo "  check-links-hard       - Striktná kontrola: spustí build"
@@ -635,3 +641,27 @@ fm-fix-file-dry:
 fm-set-slug-file:
 	@if [ -z "$$file" ] || [ -z "$$slug" ]; then echo "Použi: make fm-set-slug-file file=PATH slug=/cesta/bez-locale"; exit 1; fi
 	@python3 tools/fix_frontmatter.py --file "$$file" --set-slug --slug-val "$$slug"
+#
+# -------------------------
+# 🚀 Release – CI-based (GitHub Actions)
+# -------------------------
+.PHONY: release-ci
+release-ci:
+	@echo "🔖 Pripravujem CI release (patch bump + push tag)…"
+	@current=$$(node -p "require('./package.json').version"); \
+	echo "   Aktuálna verzia: $$current"; \
+	npm version patch -m "chore(release): %s"; \
+	git push && git push --tags; \
+	newv=$$(node -p "require('./package.json').version"); \
+	echo "✅ Pushnutý tag v$$newv – CI workflow sa spustí na serveri";
+
+# Alternatíva: dátumový tag (bez zásahu do package.json)
+.PHONY: release-ci-datetime
+release-ci-datetime:
+	@echo "🔖 Pripravujem CI release (datetime tag)…"
+	@ts=$$(date -u '+%Y%m%d-%H%M'); \
+	TAG="v$$ts"; \
+	echo "   Tag: $$TAG (UTC)"; \
+	git tag -a "$$TAG" -m "release $$ts"; \
+	git push origin "$$TAG"; \
+	echo "✅ Pushnutý tag $$TAG – CI workflow sa spustí na serveri";

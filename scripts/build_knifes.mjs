@@ -463,6 +463,54 @@ function detailsBlock(row, org, project) {
 `;
 }
 
+// --- Overview generators (full, no pagination limits) ---
+function buildOverviewListFM(locale) {
+  return `---\n`+
+    `id: KNIFE_Overview_List\n`+
+    `dao: knife\n`+
+    `title: "📑 KNIFE Overview – List"\n`+
+    `description: ""\n`+
+    `status: draft\n`+
+    `locale: ${locale}\n`+
+    `tags: ["KNIFE"]\n`+
+    `sidebar_label: "📑 KNIFE Overview – List"\n`+
+    `---\n`;
+}
+function buildOverviewDetailsFM(locale) {
+  return `---\n`+
+    `id: KNIFE_Overview_Details\n`+
+    `dao: knife\n`+
+    `title: "📰 KNIFE Overview – Details"\n`+
+    `description: ""\n`+
+    `status: draft\n`+
+    `locale: ${locale}\n`+
+    `tags: ["KNIFE"]\n`+
+    `sidebar_label: "📰 KNIFE Overview – Details"\n`+
+    `---\n`;
+}
+
+function buildOverviewListMarkdown(rows, locale, org, project) {
+  const header = `# 📑 KNIFE Overview – List\n\n`+
+`| ID | Category | Title | Status | Priority | Type | Date | Author | Org | Project |\n`+
+`|:--:|:--------:|:------|:------:|--------:|:----:|:----:|:------:|:---:|:-------:|\n`;
+  const lines = rows.map(r => {
+    const title = getField(r, 'short_title') || '';
+    const href = r._linkSlug || r._docRelLink || '#';
+    const titleLink = href ? `[${title}](${href})` : title;
+    const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
+    const dateVal = getField(r, 'date') || '';
+    return `| ${r.ID} | ${r.Category||''} | ${titleLink} | ${r.Status||''} | ${r.Priority||''} | ${r.Type||''} | ${dateVal} | ${author} | ${org||''} | ${project||''} |`;
+  }).join('\n');
+  return buildOverviewListFM(locale) + header + lines + '\n';
+}
+
+function buildOverviewDetailsMarkdown(rows, locale, org, project) {
+  const header = `# 📰 KNIFE Overview – Details\n\n`;
+  const blocks = rows.map(r => detailsBlock(r, org, project)).join('\n');
+  return buildOverviewDetailsFM(locale) + header + blocks;
+}
+}
+
 // --- media helpers & tags infer ---
 async function ensureMediaFolders(dirAbs) {
   await ensureDir(path.join(dirAbs, 'img'));
@@ -742,13 +790,11 @@ async function main() {
   // 2) JSON index
   await writeJsonIndex(repoRoot, locale, org, project, dryRun);
 
-  // 3) Prehľady – len ľahký súhrn (bez veľkých tabuliek)
+  // 3) Prehľady – FULL (List + Details) + Lightweight overview
   const overviewShort =
-`# 📋 KNIFEs Overview
-
-| ID   | Category | Title | Status | Priority | Type | Date | Author | Org | Project |
-|------|----------|-------|--------|---------:|------|------|--------|-----|---------|
-` + rows.map(r => {
+`# 📋 KNIFEs Overview\n\n`+
+`| ID   | Category | Title | Status | Priority | Type | Date | Author | Org | Project |\n`+
+`|------|----------|-------|--------|---------:|------|------|--------|-----|---------|\n` + rows.map(r => {
     const title = getField(r, 'short_title') || '';
     const href = r._linkSlug || r._docRelLink || '#';
     const titleLink = href ? `[${title}](${href})` : title;
@@ -760,11 +806,30 @@ async function main() {
   const overviewDir = path.join(repoRoot, 'docs', locale, 'knifes');
   await ensureDir(overviewDir);
 
+  // Lightweight overview
   if (dryRun) {
     console.log(`Would write lightweight overview at ${path.relative(repoRoot, path.join(overviewDir, 'overview.md'))}`);
   } else {
     await fs.writeFile(path.join(overviewDir, 'overview.md'), overviewShort, 'utf8');
-    console.log(`Overview file written: ${path.relative(repoRoot, path.join(overviewDir, 'knifesOverview'))}`);
+    console.log(`Overview file written: ${path.relative(repoRoot, path.join(overviewDir, 'overview.md'))}`);
+  }
+
+  // Full LIST (no pagination limit)
+  const mdList = buildOverviewListMarkdown(rows, locale, org, project);
+  if (dryRun) {
+    console.log(`Would write LIST overview at ${path.relative(repoRoot, path.join(overviewDir, 'KNIFE_Overview_List.md'))}`);
+  } else {
+    await fs.writeFile(path.join(overviewDir, 'KNIFE_Overview_List.md'), mdList, 'utf8');
+    console.log(`LIST overview written: ${path.relative(repoRoot, path.join(overviewDir, 'KNIFE_Overview_List.md'))}`);
+  }
+
+  // Full DETAILS (no pagination limit)
+  const mdDetails = buildOverviewDetailsMarkdown(rows, locale, org, project);
+  if (dryRun) {
+    console.log(`Would write DETAILS overview at ${path.relative(repoRoot, path.join(overviewDir, 'KNIFE_Overview_Details.md'))}`);
+  } else {
+    await fs.writeFile(path.join(overviewDir, 'KNIFE_Overview_Details.md'), mdDetails, 'utf8');
+    console.log(`DETAILS overview written: ${path.relative(repoRoot, path.join(overviewDir, 'KNIFE_Overview_Details.md'))}`);
   }
 }
 

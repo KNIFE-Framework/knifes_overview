@@ -1,26 +1,20 @@
 ---
-id: K032
-guid: knife-K032-d7f03d39-ef27-4747-96b3-1ed94589eb90
-dao: knife
+id: "K032"
+guid: "knife-K032-d7f03d39-ef27-4747-96b3-1ed94589eb90"
+dao: "knife"
 title: "„Enterprise Document-integrated SDLC“"
 description: "Zavedenie Git-based dokumentačného frameworku pre prepojenie požiadaviek, rozhodnutí a architektúr naprieč SDLC vo firemnom prostredí s množstvom stakeholderov, JIRA taskov, externých dodávateľov a zložitým change manažmentom."
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k032-enterprise-document-integrated-sdlc"
-created: 2025-09-17
-modified: 2025-09-17
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
 status: "v návrhu (alebo v riešení – podľa teba)"
-locale: sk
+tags: ["KNIFE"]
+slug: "/sk/knifes/k032-enterprise-document-integrated-sdlc"
 sidebar_label: "K032 – „Enterprise Document-integrated SDLC“"
-sidebar_position: 32
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "32"
+locale: "sk"
 ---
 <!-- body:start -->
 

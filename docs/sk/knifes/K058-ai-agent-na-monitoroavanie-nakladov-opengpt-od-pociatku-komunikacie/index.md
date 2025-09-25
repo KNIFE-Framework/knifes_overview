@@ -1,26 +1,20 @@
 ---
-id: K058
-guid: knife-K058-51d82867-eba4-49e4-a6fb-977cf669c250
-dao: knife
-title: AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie
+id: "K058"
+guid: "knife-K058-51d82867-eba4-49e4-a6fb-977cf669c250"
+dao: "knife"
+title: "AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie"
 description: "Aká bola intenzita komunikácie od začiatku, koľko by to stálo cez API, Ktoré témy skonzumovali najviac energie?"
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
+status: "new"
 tags: ["KNIFE"]
-# slug: "/sk/knifes/k058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie"
-created: 2025-09-17
-modified: 2025-09-17
-status: new
-locale: sk
+slug: "/sk/knifes/k058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie"
 sidebar_label: "K058 – AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie"
-sidebar_position: 58
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "58"
+locale: "sk"
 ---
 <!-- body:start -->
 

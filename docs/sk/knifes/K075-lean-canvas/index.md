@@ -1,26 +1,20 @@
 ---
-id: K075
-guid: knife-K075-8566c5a6-e260-4cb7-bf8e-d7eedc89bf7f
-dao: knife
-title: Lean canvas
+id: "K075"
+guid: "knife-K075-8566c5a6-e260-4cb7-bf8e-d7eedc89bf7f"
+dao: "knife"
+title: "Lean canvas"
 description: "Implemetácia Lean canvas do celkového frameworku pre podporu vytvárania riešení. Patrí ku metodike Q12"
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
+status: "done md"
 tags: ["KNIFE"]
-# slug: "/sk/knifes/k075-lean-canvas"
-created: 2025-09-17
-modified: 2025-09-17
-status: done md
-locale: sk
+slug: "/sk/knifes/k075-lean-canvas"
 sidebar_label: "K075 – Lean canvas"
-sidebar_position: 75
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "75"
+locale: "sk"
 ---
 <!-- body:start -->
 

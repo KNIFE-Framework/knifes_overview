@@ -1,26 +1,20 @@
 ---
-id: K029
-guid: knife-K029-31b04e60-ff57-4a5b-95b3-e24be0a1e338
-dao: knife
-title: Prostredie vývojové python pre LO
+id: "K029"
+guid: "knife-K029-31b04e60-ff57-4a5b-95b3-e24be0a1e338"
+dao: "knife"
+title: "Prostredie vývojové python pre LO"
 description: "Profi prostredie pre pyhton dev v LO, OOODEV"
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
+status: "riešené"
 tags: ["KNIFE"]
-# slug: "/sk/knifes/k029-prostredie-vyvojove-python-pre-lo"
-created: 2025-09-17
-modified: 2025-09-17
-status: riešené
-locale: sk
+slug: "/sk/knifes/k029-prostredie-vyvojove-python-pre-lo"
 sidebar_label: "K029 – Prostredie vývojové python pre LO"
-sidebar_position: 29
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "29"
+locale: "sk"
 ---
 <!-- body:start -->
 

@@ -1,10 +1,12 @@
 // docusaurus.config.ts
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
-
-const buildDate = process.env.BUILD_DATE || '';
-
 import type * as Preset from '@docusaurus/preset-classic';
+
+// Build metadata from environment (provided by Makefile / CI)
+const buildDate = process.env.BUILD_DATE || '20250925-1400';
+const appVersion = process.env.APP_VERSION || '20250925-1400';
+const isCI = process.env.CI === 'true' || process.env.CI === '1';
 
 const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',   // ✅ povinné
@@ -18,9 +20,9 @@ const config: Config = {
   projectName: 'knifes_overview',
   deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-  onBrokenAnchors: 'warn',
+  onBrokenLinks: isCI ? 'throw' : 'warn',
+  onBrokenMarkdownLinks: isCI ? 'throw' : 'warn',
+  onBrokenAnchors: isCI ? 'throw' : 'warn',
   future: { v4: true },
 
   i18n: {
@@ -47,6 +49,7 @@ const config: Config = {
         },
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },
+       sitemap: { changefreq: 'weekly', priority: 0.5, ignorePatterns: ['/tags/**'], filename: 'sitemap.xml' },
       } satisfies Preset.Options,
     ],
   ],
@@ -56,6 +59,7 @@ const config: Config = {
       '@docusaurus/plugin-google-gtag',
       { trackingID: 'G-LV31TWZZK6', anonymizeIP: true },
     ],
+    
   ],
 
   themeConfig: {
@@ -67,7 +71,6 @@ const config: Config = {
         { to: '/', label: 'Home', position: 'left' },
         { to: '/sk/knifes/overview/', label: 'KNIFES (SK)', position: 'left' },
         { to: '/sk/7Ds/', label: '7Ds (SK)', position: 'left' },
-        { to: '/', label: 'Docs (SK)', position: 'left' },
         { to: '/en/', label: 'Docs (EN)', position: 'left' },
         { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
       ],
@@ -75,7 +78,7 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [],
-      copyright: `© ${new Date().getFullYear()} Context Aware Solutions. Last build: ${buildDate} • Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Context Aware Solutions. Version: ${appVersion} • Last build: ${buildDate} • Built with Docusaurus.`,
     },
     prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
     docs: { sidebar: { hideable: true, autoCollapseCategories: true } },

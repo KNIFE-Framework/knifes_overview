@@ -2,7 +2,7 @@
 id: KNIFE_Overview_List
 guid: knife-KNIFE_Overview_List-e541dfa1-fa40-4563-90b7-d0587f3c77ae
 dao: knife
-title: "📑 KNIFE Overview – List (page 1/3)"
+title: "📑 KNIFE Overview – List"
 description: ""
 author: Roman Kazička
 authors: ["Roman Kazička"]
@@ -14,16 +14,16 @@ created: 2025-09-24
 modified: ""
 status: draft
 locale: sk
-sidebar_label: "📑 KNIFE Overview – List (page 1/3)"
+sidebar_label: "📑 KNIFE Overview – List"
 rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 ---
-# 📑 KNIFE Overview – List (page 1/3)
+# 📑 KNIFE Overview – List
 
 
-**1** [2](KNIFE_Overview_Details.md)   [
+[
 | ID | Category | Short Title | Status | Type | Priority | Author | Org | Project | Description | Context | SFIA – Level | SFIA – Domain (?) | SFIA – Maturity | Tags |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|:---|:---:|:---:|:---:|:---:|
 | K001 | Methodology | [EA modelovanie a motivácia](./K001-ea-modelovanie-a-motivacia/index.md) | hotové | Metodika / Nástroj | 🎯 | Roman Kazicka |  |  | Systém motivácie pomocou lízaniek a spätnej väzby | Jedno z prvých TERNO, vzniklo pri návrhu systému motivácie v rámci tímu | 2 | Business Analysis / Modelling | Diagrammatic |  |
@@ -57,4 +57,4 @@ disclaimer: "Use at your own risk. Methods provided as-is; participation is volu
 | K030 | GitHUB pages – Edu | [Príbeh poznania SDLC](./K030-pribeh-poznania-sdlc/index.md) | V riešení | Vzdelávanie-Marketing | 🔥 | Roman Kazicka |  |  | Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisať a bolo by to v kontexte KM, SDLC | Priprava FIIT, odchad z 365, potreba za zviditelnit a pripadne aj zarobit, dotiahnut projekty, produkty | Level 3 – Apply → samostatná práca |  |  |  |
 | K031 | SDLC framework | [„Document-as-Code“ framework](./K031-document-as-code-framework/index.md) | V riešení | Praktické používanie na výuku SDLC | 🔥 | Roman Kazicka |  |  | Tvorba dokumentov ako SDLC proces. Diplomovky, sprievodná dokumentácia pre zákazníklov, …. | Pri vytvaraní frameworku pre publikovanie na LI, PT, YT sme dosli k tomuto riešeniu na GITHUB ako Pages…. | Level 4 – Enable (alebo L5 – Ensure, ak sa zavádza vo firme) | NOV, METL, DTAN, DESN, DOCU | 3 – Defined (možno dorásť na 4 – Managed) |  |
 
-**1** [2](KNIFE_Overview_Details.md)   [Next →](overview.md)
+

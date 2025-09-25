@@ -1,26 +1,20 @@
 ---
-id: K023
-guid: knife-K023-a9ea072a-2fc0-425a-ac4d-9140d92ab221
-dao: knife
+id: "K023"
+guid: "knife-K023-a9ea072a-2fc0-425a-ac4d-9140d92ab221"
+dao: "knife"
 title: "AI interakcie – časová os a emócie"
 description: "Zaznamenávanie malých interakcií, small-talkov a spätných väzieb pre orientáciu v čase"
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
+status: "v návrhu"
 tags: ["KNIFE"]
-# slug: "/sk/knifes/k023-ai-interakcie-casova-os-a-emocie"
-created: 2025-09-17
-modified: 2025-09-17
-status: v návrhu
-locale: sk
+slug: "/sk/knifes/k023-ai-interakcie-casova-os-a-emocie"
 sidebar_label: "K023 – AI interakcie – časová os a emócie"
-sidebar_position: 23
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "23"
+locale: "sk"
 ---
 <!-- body:start -->
 

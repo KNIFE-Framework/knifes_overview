@@ -1,26 +1,20 @@
 ---
-id: K056
-guid: knife-K056-b27765d2-8514-437e-91f2-5ed1d4f76c43
-dao: knife
+id: "K056"
+guid: "knife-K056-b27765d2-8514-437e-91f2-5ed1d4f76c43"
+dao: "knife"
 title: "Central Panel for GIT – SDLC Git Management Makefile"
 description: "•…"
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
+status: "done md"
 tags: ["KNIFE"]
-# slug: "/sk/knifes/k056-central-panel-for-git-sdlc-git-management-makefile"
-created: 2025-09-17
-modified: 2025-09-17
-status: done md
-locale: sk
+slug: "/sk/knifes/k056-central-panel-for-git-sdlc-git-management-makefile"
 sidebar_label: "K056 – Central Panel for GIT – SDLC Git Management Makefile"
-sidebar_position: 56
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "56"
+locale: "sk"
 ---
 <!-- body:start -->
 

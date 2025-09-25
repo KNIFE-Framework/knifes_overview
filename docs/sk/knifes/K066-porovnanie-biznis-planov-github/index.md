@@ -1,26 +1,20 @@
 ---
-id: K066
-guid: knife-K066-a2c536d5-d18f-4d80-a2bd-9ef502904b9a
-dao: knife
-title: Porovnanie biznis plánov GitHub
+id: "K066"
+guid: "knife-K066-a2c536d5-d18f-4d80-a2bd-9ef502904b9a"
+dao: "knife"
+title: "Porovnanie biznis plánov GitHub"
 description: "Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?"
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
+status: "new"
 tags: ["KNIFE"]
-# slug: "/sk/knifes/k066-porovnanie-biznis-planov-github"
-created: 2025-09-17
-modified: 2025-09-17
-status: new
-locale: sk
+slug: "/sk/knifes/k066-porovnanie-biznis-planov-github"
 sidebar_label: "K066 – Porovnanie biznis plánov GitHub"
-sidebar_position: 66
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "66"
+locale: "sk"
 ---
 <!-- body:start -->
 

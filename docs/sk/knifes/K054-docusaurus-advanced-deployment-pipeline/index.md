@@ -1,26 +1,20 @@
 ---
-id: K054
-guid: knife-K054-e6a19133-a51b-4041-a811-6ccd8611fde0
-dao: knife
-title: Docusaurus Advanced Deployment Pipeline
+id: "K054"
+guid: "knife-K054-e6a19133-a51b-4041-a811-6ccd8611fde0"
+dao: "knife"
+title: "Docusaurus Advanced Deployment Pipeline"
 description: "Kontrola referencií v Docusaurus/MkDocs"
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
+status: "new"
 tags: ["KNIFE"]
-# slug: "/sk/knifes/k054-docusaurus-advanced-deployment-pipeline"
-created: 2025-09-17
-modified: 2025-09-17
-status: new
-locale: sk
+slug: "/sk/knifes/k054-docusaurus-advanced-deployment-pipeline"
 sidebar_label: "K054 – Docusaurus Advanced Deployment Pipeline"
-sidebar_position: 54
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "54"
+locale: "sk"
 ---
 <!-- body:start -->
 

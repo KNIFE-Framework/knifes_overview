@@ -781,7 +781,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu",
     "status": "v riešeni",
     "type": "",
     "category": "",
@@ -831,7 +831,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K037 – Context Aware Solutions / paradigma, solution",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K037 – Context Aware Solutions / paradigma, solution",
     "status": "inprogress",
     "type": "",
     "category": "",
@@ -1108,7 +1108,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K047 – KNIFE047_Reflexia_a_epistemologia.md",
     "status": "draft",
     "type": "",
     "category": "",
@@ -1488,6 +1488,31 @@
     "type": "",
     "category": "",
     "slug": "/sk/knifes/k062-k062-docusaurus-slugy-a-routing",
+    "sidebar_label": "K062  – Docusaurus slugy a routing",
+    "sidebar_position": 62,
+    "locale": "sk",
+    "tags": [
+      "KNIFE"
+    ],
+    "provenance": {
+      "platform": "github",
+      "org": "",
+      "project": ""
+    },
+    "path": "docs/sk/knifes/K062-docusaurus-slugy-a-routing/index.md"
+  },
+  {
+    "id": "K062",
+    "title": "K062 – Docusaurus slugy a routing",
+    "author": "Roman Kazicka",
+    "authors": [
+      "Roman Kazicka"
+    ],
+    "description": "Ako fungujú SLUGS v Docusaurus",
+    "status": "new",
+    "type": "",
+    "category": "",
+    "slug": "/sk/knifes/k062-k062-docusaurus-slugy-a-routing",
     "sidebar_label": "K062 – K062 – Docusaurus slugy a routing",
     "sidebar_position": 62,
     "locale": "sk",
@@ -1685,7 +1710,7 @@
     "authors": [
       "Roman Kazicka"
     ],
-    "description": "[⬅ KNIFES – Prehľad](../knifes/overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K070 – EA Fundamentals",
+    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K070 – EA Fundamentals",
     "status": "new",
     "type": "",
     "category": "",
@@ -1956,13 +1981,15 @@
   {
     "id": "K000",
     "title": "Kto ma pochváli, ak sa nepochválim sám?",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazička",
+    "authors": [
+      "Roman Kazička"
+    ],
     "description": "Pre mnohých je ťažko písať o sebe. Ľahko sa skĺzne buď ku preceňovaniu, alebo naopak ku podceňovaniu.",
     "status": "new",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k068-kto-ma-pochvali-ak-sa-nepochvalim-sam",
+    "slug": "/sk/knifes/k000-kto-ma-pochvali-ak-sa-nepochvalim-sam",
     "sidebar_label": "K068 – Kto ma pochváli, ak sa nepochválim sám?",
     "sidebar_position": 68,
     "locale": "sk",
@@ -1979,13 +2006,15 @@
   {
     "id": "K000",
     "title": "EA Fundamentals",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazička",
+    "authors": [
+      "Roman Kazička"
+    ],
     "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K069 – EA Fundamentals",
     "status": "new",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k069-ea-fundamentals",
+    "slug": "/sk/knifes/k000-ea-fundamentals",
     "sidebar_label": "K069 – EA Fundamentals",
     "sidebar_position": 69,
     "locale": "sk",
@@ -2002,13 +2031,15 @@
   {
     "id": "K000",
     "title": "7Ds-Seven Disciplines for successful solutions",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazička",
+    "authors": [
+      "Roman Kazička"
+    ],
     "description": "Metodika je zameraná na podporu aktivít v rámci SDLC. Každá potencálna iformácia má svoje miesto. A je úplne jedno v akej technológií sa implementuje.",
     "status": "ongoing",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k070-7ds-seven-disciplines-for-successful-solutions",
+    "slug": "/sk/knifes/k000-7ds-seven-disciplines-for-successful-solutions",
     "sidebar_label": "K070 – 7Ds-Seven Disciplines for successful solutions",
     "sidebar_position": 70,
     "locale": "sk",
@@ -2025,13 +2056,15 @@
   {
     "id": "K000",
     "title": "APV-Assets-Perspectives-Views, Keep Your Aseests in Order",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazička",
+    "authors": [
+      "Roman Kazička"
+    ],
     "description": "Metodika na podporu manažmentu aktív v rámci SDLC.",
     "status": "ongoing",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k071-apv-assets-perspectives-views-keep-your-aseests-in-order",
+    "slug": "/sk/knifes/k000-apv-assets-perspectives-views-keep-your-aseests-in-order",
     "sidebar_label": "K071 – APV-Assets-Perspectives-Views, Keep Your Aseests in Order",
     "sidebar_position": 71,
     "locale": "sk",
@@ -2048,13 +2081,15 @@
   {
     "id": "K000",
     "title": "Q12- Twelve quadrants for starting business",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazička",
+    "authors": [
+      "Roman Kazička"
+    ],
     "description": "Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie.",
     "status": "ongoing",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k072-q12-twelve-quadrants-for-starting-business",
+    "slug": "/sk/knifes/k000-q12-twelve-quadrants-for-starting-business",
     "sidebar_label": "K072 – Q12- Twelve quadrants for starting business",
     "sidebar_position": 72,
     "locale": "sk",
@@ -2071,13 +2106,15 @@
   {
     "id": "K000",
     "title": "SDLC-Solution Development Life Cycle",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazička",
+    "authors": [
+      "Roman Kazička"
+    ],
     "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K073 – SDLC-Solution Development Life Cycle",
     "status": "ongoing",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k073-sdlc-solution-development-life-cycle",
+    "slug": "/sk/knifes/k000-sdlc-solution-development-life-cycle",
     "sidebar_label": "K073 – SDLC-Solution Development Life Cycle",
     "sidebar_position": 73,
     "locale": "sk",
@@ -2094,13 +2131,15 @@
   {
     "id": "K000",
     "title": "7S -KNIFE047_Reflexia_a_epistemologia.md",
-    "author": "",
-    "authors": [],
+    "author": "Roman Kazička",
+    "authors": [
+      "Roman Kazička"
+    ],
     "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K076 – 7S -KNIFE047_Reflexia_a_epistemologia.md",
     "status": "draft",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k076-7s-knife047-reflexia-a-epistemologia-md",
+    "slug": "/sk/knifes/k000-7s-knife047-reflexia-a-epistemologia-md",
     "sidebar_label": "K076 – 7S -KNIFE047_Reflexia_a_epistemologia.md",
     "sidebar_position": 76,
     "locale": "sk",

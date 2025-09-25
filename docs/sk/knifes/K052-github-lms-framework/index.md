@@ -1,26 +1,20 @@
 ---
-id: K052
-guid: knife-K052-37c1ee83-aa1c-4a67-a8f5-ed3fdae3e7aa
-dao: knife
-title: GitHub LMS Framework
+id: "K052"
+guid: "knife-K052-37c1ee83-aa1c-4a67-a8f5-ed3fdae3e7aa"
+dao: "knife"
+title: "GitHub LMS Framework"
 description: "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K052 – GitHub LMS Framework"
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
+status: "new"
 tags: ["KNIFE"]
-# slug: "/sk/knifes/k052-github-lms-framework"
-created: 2025-09-17
-modified: 2025-09-17
-status: new
-locale: sk
+slug: "/sk/knifes/k052-github-lms-framework"
 sidebar_label: "K052 – GitHub LMS Framework"
-sidebar_position: 52
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "52"
+locale: "sk"
 ---
 <!-- body:start -->
 

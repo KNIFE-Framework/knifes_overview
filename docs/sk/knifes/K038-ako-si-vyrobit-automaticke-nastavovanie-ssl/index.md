@@ -1,26 +1,20 @@
 ---
-id: K038
-guid: knife-K038-14675413-a6ee-4b45-9be4-1e2012d03c95
-dao: knife
-title: Ako si vyrobit automaticke nastavovanie SSL
+id: "K038"
+guid: "knife-K038-14675413-a6ee-4b45-9be4-1e2012d03c95"
+dao: "knife"
+title: "Ako si vyrobit automaticke nastavovanie SSL"
 description: "Pre FIIT PROLABORATE potrebujem SSL certifikaty, ako pre zakaznikov ako Dusan"
-author: Roman Kazicka
+author: "Roman Kazicka"
 authors: ["Roman Kazicka"]
-category: ""
-type: ""
-priority: ""
+created: "2025-09-17"
+modified: "2025-09-17"
+date: "2025-09-17"
+status: "finished"
 tags: ["KNIFE"]
-# slug: "/sk/knifes/k038-ako-si-vyrobit-automaticke-nastavovanie-ssl"
-created: 2025-09-17
-modified: 2025-09-17
-status: finished
-locale: sk
+slug: "/sk/knifes/k038-ako-si-vyrobit-automaticke-nastavovanie-ssl"
 sidebar_label: "K038 – Ako si vyrobit automaticke nastavovanie SSL"
-sidebar_position: 38
-rights_holder_content: Roman Kazička
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+sidebar_position: "38"
+locale: "sk"
 ---
 <!-- body:start -->
 

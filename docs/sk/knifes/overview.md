@@ -60,7 +60,7 @@
 | K059 | Methodology | [STEM a Makerspace ako metodika vzdelávania](/sk/knifes/k059-stem-a-makerspace-ako-metodika-vzdelavania) | New | now | Systém pre vzdelávanie | 24.08.2025 | Roman Kazicka |  |  |
 | K060 | User Guide | [Export Draw.io diagramu do A4 PNG](/sk/knifes/k060-export-draw-io-diagramu-do-a4-png) | done md | done | Ako na to? | 24.08.2025 | Roman Kazicka |  |  |
 | K061 | Security concept | [Passkey ako bezpečnostný koncept](/sk/knifes/k061-passkey-ako-bezpecnostny-koncept) | new |  | Explanation | 24.08.2025 | Roman Kazicka |  |  |
-| K062 | Docusaurus Concept | [K062 – Docusaurus slugy a routing](/sk/knifes/k062-k062-docusaurus-slugy-a-routing) | new |  | Explanation | 24.08.2025 | Roman Kazicka |  |  |
+| K062 | Docusaurus Concept | [Docusaurus slugy a routing](/sk/knifes/k062-docusaurus-slugy-a-routing) | new |  | Explanation | 24.08.2025 | Roman Kazicka |  |  |
 | K063 | User Guide | [Automatické generovanie KNIFES](/sk/knifes/k063-automaticke-generovanie-knifes) | new |  | User guide | 24.08.2025 | Roman Kazicka |  |  |
 | K064 | Marketing | [GA4, GTN, UTM](/sk/knifes/k064-ga4-gtn-utm) | new | done | User Guides, principles | 27.08.2025 | Roman Kazicka |  |  |
 | K065 | Administration | [MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux](/sk/knifes/k065-makefile-for-knife-ecosystem-for-mac-windows-linux) | New | now | GitHub Administration | 31.08.2025 | Roman Kazicka |  |  |
@@ -80,3 +80,6 @@ Cca 6 hodinový webinár o základných nastaveniach EA 16+ | 05.09.2025 | Roman
 | K078 | Implementácia | [Language as a Bridge (AI ako most medzi jazykmi)](/sk/knifes/k078-language-as-a-bridge-ai-ako-most-medzi-jazykmi) | ongoing | medium | Implementácia, nástroje, Procesy | 05.09.2025 | Roman Kazicka |  |  |
 | K079 | Glossary | [Čo znamená slovo že je niečo idempotentné?](/sk/knifes/k079-co-znamena-slovo-ze-je-nieco-idempotentne) | now | medium | Vysvetlenie pojmu | 15.09.2029 | Roman Kazička |  |  |
 | K080 | Explanation | [Docusaurus-vs-github-pages-package-json](/sk/knifes/k080-docusaurus-vs-github-pages-package-json) | now | medium | Docusaurus vs. GitHub Pages. Architektúra | 17.09.2025 | Roman Kazička |  |  |
+| K081 | Infrastructure | [Transparentná -Stabilná infraštruktúra pre Sites](/sk/knifes/k081-transparentna-stabilna-infrastruktura-pre-sites) | idea | hi | Návod na riešenie | 25.09.2025 | Roman Kazička |  |  |
+| K082 | UserGuide pre Markdown | [Ako urobiť text v MD atraktívnejší (emoji)](/sk/knifes/k082-ako-urobit-text-v-md-atraktivnejsi-emoji) | done md | low | Návod na riešenia | 25.09.2025 | Roman Kazička |  |  |
+| K083 | UserGuide | [Aktualizácia komponentov pre Docusaurus](/sk/knifes/k083-aktualizacia-komponentov-pre-docusaurus) | done md | lov | Návod na riešenie | 25.09.2025 | Roman Kazička |  |  |

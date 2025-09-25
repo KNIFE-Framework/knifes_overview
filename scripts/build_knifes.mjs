@@ -509,7 +509,6 @@ function buildOverviewDetailsMarkdown(rows, locale, org, project) {
   const blocks = rows.map(r => detailsBlock(r, org, project)).join('\n');
   return buildOverviewDetailsFM(locale) + header + blocks;
 }
-}
 
 // --- media helpers & tags infer ---
 async function ensureMediaFolders(dirAbs) {

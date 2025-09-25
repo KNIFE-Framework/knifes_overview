@@ -51,7 +51,7 @@ endif
 
 .PHONY: \
   help help-auth help-actions \
-  install dev clean build build-fast serve \
+  install dev clean build build-fast ci-build serve \
   check-links check-links-hard check-links-fast check-links-full fix-links \
   init-worktree check-worktree copy-build commit-deploy remove-worktree \
   push-main deploy full-deploy worktree-status \
@@ -96,6 +96,7 @@ help:
 	@echo "  clean                  - Vyčistí cache a build adresáre"
 	@echo "  build                  - Build (MINIFY=$(MINIFY)); prepínateľné: make build MINIFY=0"
 	@echo "  build-fast             - Alias na 'make build MINIFY=0' (bez minify)"
+	@echo "  ci-build               - CI-friendly build bez minifikácie (alias na 'make build MINIFY=0')"
 	@echo "  serve                  - Lokálne naservíruj statický build"
 	@echo "===== 🔍 Link Checker ====="
 	@echo "  check-links            - DRY-RUN kontrola odkazov v docs/"
@@ -171,7 +172,10 @@ clean:
 build: clean
 	BUILD_DATE="$(BUILD_DATE)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA)
 
-build-fast: clean
+build-fast:
+	$(MAKE) build MINIFY=0
+
+ci-build:
 	$(MAKE) build MINIFY=0
 
 serve:

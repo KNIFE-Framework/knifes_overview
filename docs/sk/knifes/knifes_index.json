@@ -640,7 +640,8 @@
     "sidebar_position": 27,
     "locale": "sk",
     "tags": [
-      "KNIFE"
+      "KNIFE",
+      "images"
     ],
     "provenance": {
       "platform": "github",
@@ -1502,31 +1503,6 @@
     "path": "docs/sk/knifes/K062-docusaurus-slugy-a-routing/index.md"
   },
   {
-    "id": "K062",
-    "title": "K062 – Docusaurus slugy a routing",
-    "author": "Roman Kazicka",
-    "authors": [
-      "Roman Kazicka"
-    ],
-    "description": "Ako fungujú SLUGS v Docusaurus",
-    "status": "new",
-    "type": "",
-    "category": "",
-    "slug": "/sk/knifes/k062-k062-docusaurus-slugy-a-routing",
-    "sidebar_label": "K062 – K062 – Docusaurus slugy a routing",
-    "sidebar_position": 62,
-    "locale": "sk",
-    "tags": [
-      "KNIFE"
-    ],
-    "provenance": {
-      "platform": "github",
-      "org": "",
-      "project": ""
-    },
-    "path": "docs/sk/knifes/K062-k062-docusaurus-slugy-a-routing/index.md"
-  },
-  {
     "id": "K063",
     "title": "Automatické generovanie KNIFES",
     "author": "Roman Kazicka",
@@ -1979,44 +1955,45 @@
     "path": "docs/sk/knifes/K080-docusaurus-vs-github-pages-package-json/index.md"
   },
   {
-    "id": "K000",
-    "title": "Kto ma pochváli, ak sa nepochválim sám?",
+    "id": "K081",
+    "title": "Transparentná -Stabilná infraštruktúra pre Sites",
     "author": "Roman Kazička",
     "authors": [
       "Roman Kazička"
     ],
-    "description": "Pre mnohých je ťažko písať o sebe. Ľahko sa skĺzne buď ku preceňovaniu, alebo naopak ku podceňovaniu.",
-    "status": "new",
+    "description": "Počas práce s GitHub a Pages je potrebné mať zladené prostredie na klientovi a na serveri. Lokál je závislý od OS, od verzií vývojových nástrojov. Ideálne by bolo, keby existovalo stabilné, opakovateľné prostredie pre vytvorenie lokálneho prostredia, bez ohľadu na operačný systém na klientovi – Windows, Mac, Linux.",
+    "status": "idea",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k000-kto-ma-pochvali-ak-sa-nepochvalim-sam",
-    "sidebar_label": "K068 – Kto ma pochváli, ak sa nepochválim sám?",
-    "sidebar_position": 68,
+    "slug": "/sk/knifes/k081-transparentna-stabilna-infrastruktura-pre-sites",
+    "sidebar_label": "K081 – Transparentná -Stabilná infraštruktúra pre Sites",
+    "sidebar_position": 81,
     "locale": "sk",
     "tags": [
-      "KNIFE"
+      "KNIFE",
+      "images"
     ],
     "provenance": {
       "platform": "github",
       "org": "",
       "project": ""
     },
-    "path": "docs/sk/knifes/xxxK068-kto-ma-pochvali-ak-sa-nepochvalim-sam/K068-kto-ma-pochvali-ak-sa-nepochvalim-sam.md"
+    "path": "docs/sk/knifes/K081-transparentna-stabilna-infrastruktura-pre-sites/index.md"
   },
   {
-    "id": "K000",
-    "title": "EA Fundamentals",
+    "id": "K082",
+    "title": "Ako urobiť text v MD atraktívnejší (emoji)",
     "author": "Roman Kazička",
     "authors": [
       "Roman Kazička"
     ],
-    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K069 – EA Fundamentals",
-    "status": "new",
+    "description": "Čítanie s porozumením je veľmi náročná disciplína. Preto je dôležité priblížiť text ku príbehu pomocou malých obrázkov. Dobrý kandif’dát je EMOJI",
+    "status": "done md",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k000-ea-fundamentals",
-    "sidebar_label": "K069 – EA Fundamentals",
-    "sidebar_position": 69,
+    "slug": "/sk/knifes/k082-ako-urobit-text-v-md-atraktivnejsi-emoji",
+    "sidebar_label": "K082 – Ako urobiť text v MD atraktívnejší (emoji)",
+    "sidebar_position": 82,
     "locale": "sk",
     "tags": [
       "KNIFE"
@@ -2026,22 +2003,22 @@
       "org": "",
       "project": ""
     },
-    "path": "docs/sk/knifes/xxxK069-ea-fundamentals/K069-ea-fundamentals.md"
+    "path": "docs/sk/knifes/K082-ako-urobit-text-v-md-atraktivnejsi-emoji/index.md"
   },
   {
-    "id": "K000",
-    "title": "7Ds-Seven Disciplines for successful solutions",
+    "id": "K083",
+    "title": "Aktualizácia komponentov pre Docusaurus",
     "author": "Roman Kazička",
     "authors": [
       "Roman Kazička"
     ],
-    "description": "Metodika je zameraná na podporu aktivít v rámci SDLC. Každá potencálna iformácia má svoje miesto. A je úplne jedno v akej technológií sa implementuje.",
-    "status": "ongoing",
+    "description": "Všetko má životný cyklus. Naše dokumenty, ale aj systémy a nástroje, ktoré používame. Preto nikdy nemáme stabilné, nemenné prostredie. Tak Aj docusaurus sa stále mní a vznikajú závislosti a človek sa môže zblázniť a rieši infraštruktúru a nie to čo potrebuje riešiť.",
+    "status": "done md",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k000-7ds-seven-disciplines-for-successful-solutions",
-    "sidebar_label": "K070 – 7Ds-Seven Disciplines for successful solutions",
-    "sidebar_position": 70,
+    "slug": "/sk/knifes/k083-aktualizacia-komponentov-pre-docusaurus",
+    "sidebar_label": "K083 – Aktualizácia komponentov pre Docusaurus",
+    "sidebar_position": 83,
     "locale": "sk",
     "tags": [
       "KNIFE"
@@ -2051,106 +2028,6 @@
       "org": "",
       "project": ""
     },
-    "path": "docs/sk/knifes/xxxK070-7ds-seven-disciplines-for-successful-solutions/K070-7ds-seven-disciplines-for-successful-solutions.md"
-  },
-  {
-    "id": "K000",
-    "title": "APV-Assets-Perspectives-Views, Keep Your Aseests in Order",
-    "author": "Roman Kazička",
-    "authors": [
-      "Roman Kazička"
-    ],
-    "description": "Metodika na podporu manažmentu aktív v rámci SDLC.",
-    "status": "ongoing",
-    "type": "",
-    "category": "",
-    "slug": "/sk/knifes/k000-apv-assets-perspectives-views-keep-your-aseests-in-order",
-    "sidebar_label": "K071 – APV-Assets-Perspectives-Views, Keep Your Aseests in Order",
-    "sidebar_position": 71,
-    "locale": "sk",
-    "tags": [
-      "KNIFE"
-    ],
-    "provenance": {
-      "platform": "github",
-      "org": "",
-      "project": ""
-    },
-    "path": "docs/sk/knifes/xxxK071-apv-assets-perspectives-views-keep-your-aseests-in-order/K071-apv-assets-perspectives-views-keep-your-aseests-in-order.md"
-  },
-  {
-    "id": "K000",
-    "title": "Q12- Twelve quadrants for starting business",
-    "author": "Roman Kazička",
-    "authors": [
-      "Roman Kazička"
-    ],
-    "description": "Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie.",
-    "status": "ongoing",
-    "type": "",
-    "category": "",
-    "slug": "/sk/knifes/k000-q12-twelve-quadrants-for-starting-business",
-    "sidebar_label": "K072 – Q12- Twelve quadrants for starting business",
-    "sidebar_position": 72,
-    "locale": "sk",
-    "tags": [
-      "KNIFE"
-    ],
-    "provenance": {
-      "platform": "github",
-      "org": "",
-      "project": ""
-    },
-    "path": "docs/sk/knifes/xxxK072-q12-twelve-quadrants-for-starting-business/K072-q12-twelve-quadrants-for-starting-business.md"
-  },
-  {
-    "id": "K000",
-    "title": "SDLC-Solution Development Life Cycle",
-    "author": "Roman Kazička",
-    "authors": [
-      "Roman Kazička"
-    ],
-    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K073 – SDLC-Solution Development Life Cycle",
-    "status": "ongoing",
-    "type": "",
-    "category": "",
-    "slug": "/sk/knifes/k000-sdlc-solution-development-life-cycle",
-    "sidebar_label": "K073 – SDLC-Solution Development Life Cycle",
-    "sidebar_position": 73,
-    "locale": "sk",
-    "tags": [
-      "KNIFE"
-    ],
-    "provenance": {
-      "platform": "github",
-      "org": "",
-      "project": ""
-    },
-    "path": "docs/sk/knifes/xxxK073-sdlc-solution-development-life-cycle/K073-sdlc-solution-development-life-cycle.md"
-  },
-  {
-    "id": "K000",
-    "title": "7S -KNIFE047_Reflexia_a_epistemologia.md",
-    "author": "Roman Kazička",
-    "authors": [
-      "Roman Kazička"
-    ],
-    "description": "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\n---\\n KNIFE K076 – 7S -KNIFE047_Reflexia_a_epistemologia.md",
-    "status": "draft",
-    "type": "",
-    "category": "",
-    "slug": "/sk/knifes/k000-7s-knife047-reflexia-a-epistemologia-md",
-    "sidebar_label": "K076 – 7S -KNIFE047_Reflexia_a_epistemologia.md",
-    "sidebar_position": 76,
-    "locale": "sk",
-    "tags": [
-      "KNIFE"
-    ],
-    "provenance": {
-      "platform": "github",
-      "org": "",
-      "project": ""
-    },
-    "path": "docs/sk/knifes/xxxK076-7s-knife047-reflexia-a-epistemologia-md/K076-7s-knife047-reflexia-a-epistemologia-md.md"
+    "path": "docs/sk/knifes/K083-aktualizacia-komponentov-pre-docusaurus/index.md"
   }
 ]

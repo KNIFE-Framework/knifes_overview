@@ -4,8 +4,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // Build metadata from environment (provided by Makefile / CI)
-const buildDate = process.env.BUILD_DATE || '20250925-1400';
-const appVersion = process.env.APP_VERSION || '20250925-1400';
+const buildDate = process.env.BUILD_DATE || '20250925-2150';
+const appVersion = process.env.APP_VERSION || '20250925-2150';
 const isCI = process.env.CI === 'true' || process.env.CI === '1';
 
 const config: Config = {
@@ -21,8 +21,12 @@ const config: Config = {
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: isCI ? 'throw' : 'warn',
-  onBrokenMarkdownLinks: isCI ? 'throw' : 'warn',
   onBrokenAnchors: isCI ? 'throw' : 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: isCI ? 'throw' : 'warn',
+    },
+  },
   future: { v4: true },
 
   i18n: {

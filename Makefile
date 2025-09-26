@@ -711,6 +711,7 @@ release: check-version ## Tag -> push tag (spustí GH Action Release)
 	$(MAKE) tag VERSION=$(VERSION) MSG="$(MSG)"
 	@echo "🚀 Pushing tag $(VERSION) ..."
 	$(MAKE) push-tag VERSION=$(VERSION)
+	@echo "✅ 🚀 Release $(VERSION) hotový."
 
 release-auto: ## Auto verzia vYYYYMMDD-HHMMSSZ
 	$(MAKE) release VERSION=$(VERSION) MSG="$(MSG)"
@@ -723,3 +724,5 @@ release-commit: check-version ## Commit -> push -> tag -> push tag
 	@echo "🏷️  Tagging & push tag ..."
 	$(MAKE) tag VERSION=$(VERSION) MSG="$(MSG)"
 	$(MAKE) push-tag VERSION=$(VERSION)
+	@echo "✅ 🚀 Release $(VERSION) hotový."
+	

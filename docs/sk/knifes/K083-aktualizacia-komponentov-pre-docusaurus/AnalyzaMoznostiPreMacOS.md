@@ -1,3 +1,19 @@
+---
+id: K083_01
+parent: K083
+guid: knife-k083_01-48faadc5-190a-424f-8d25-6e99df7010b3
+dao: knife
+title: ""
+author: ""
+created: 2025-09-26
+modified: 2025-09-26
+status: draft
+type: knife
+category: deliverable
+tags: []
+sidebar_label: "K083_01 –"
+locale: sk
+---
 # Analýza možností pre MacOS – inštalácia Node.js v22
 
 V prostredí MacOS existujú tri hlavné prístupy, ako spravovať verziu Node.js.  

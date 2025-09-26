@@ -1,3 +1,19 @@
+---
+id: K083_02
+parent: K083
+guid: knife-k083_02-74cc1121-c916-4a8d-b1cd-78b93bda064f
+dao: knife
+title: ""
+author: ""
+created: 2025-09-26
+modified: 2025-09-26
+status: draft
+type: knife
+category: deliverable
+tags: []
+sidebar_label: "K083_02 –"
+locale: sk
+---
 # Rýchla cesta k Node 22 (vyber si 1 možnosť)
 
 ## A) Homebrew (najjednoduchšie na Macu)

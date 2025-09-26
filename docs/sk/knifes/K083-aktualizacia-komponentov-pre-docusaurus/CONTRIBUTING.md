@@ -1,3 +1,19 @@
+---
+id: K083_04
+parent: K083
+guid: knife-k083_04-ea4135ce-9848-4fef-918a-a9fbccba35d3
+dao: knife
+title: ""
+author: ""
+created: 2025-09-26
+modified: 2025-09-26
+status: draft
+type: knife
+category: deliverable
+tags: []
+sidebar_label: "K083_04 –"
+locale: sk
+---
 # Contributing Guide
 
 Tento projekt používa **Node.js v22 (LTS)** a Docusaurus 3.

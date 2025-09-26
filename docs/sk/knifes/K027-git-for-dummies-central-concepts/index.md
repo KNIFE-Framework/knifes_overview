@@ -5,13 +5,12 @@ dao: "knife"
 title: "Git For Dummies – Central Concepts"
 description: "Jednoduché vysvetlenie Git základov pre začiatočníkov v GitEA (organizácia, repozitár, working directory, atď.)"
 author: "Roman Kazicka"
-authors: ["Roman Kazicka"]
 created: "2025-09-17"
 modified: "2025-09-17"
 date: "2025-09-17"
 status: "v príprave"
 tags: ["KNIFE", "images"]
-slug: "/sk/knifes/k027-git-for-dummies-central-concepts"
+# slug: "/sk/knifes/k027-git-for-dummies-central-concepts"
 sidebar_label: "K027 – Git For Dummies – Central Concepts"
 sidebar_position: "27"
 locale: "sk"
@@ -31,7 +30,7 @@ V tomto knife sa zameriame na GitHub a jeho implementáciu.
 
 ## 🧩 Ako to rieši (princíp)
 
-Decentralizovaný systém pedpokladá, že obsah servera sa nachádza u každého klienta. To vytvára predpoklady, že práca a obsah na klientovi ej absolútne nezávislý od servera.
+Decentralizovaný systém predpokladá, že obsah servera sa nachádza u každého klienta. To vytvára predpoklady, že práca a obsah na klientovi ej absolútne nezávislý od servera.
 V ľobovľnom okamihu je možné synchronizovať obsah na konkrétnom klientovi so serverom.
 Predstavme si situáciu, že neznámi počet používateľov pracuje na obsahu, kotrý je na serveri.
 Pri synchronizácií obsahov, vzniká niekoľko typických scenárov, ale výsledok je:

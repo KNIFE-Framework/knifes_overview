@@ -5,13 +5,12 @@ dao: "knife"
 title: "Transparentná -Stabilná infraštruktúra pre Sites"
 description: "Počas práce s GitHub a Pages je potrebné mať zladené prostredie na klientovi a na serveri. Lokál je závislý od OS, od verzií vývojových nástrojov. Ideálne by bolo, keby existovalo stabilné, opakovateľné prostredie pre vytvorenie lokálneho prostredia, bez ohľadu na operačný systém na klientovi – Windows, Mac, Linux."
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
 created: "2025-09-24"
 modified: "2025-09-24"
 date: "2025-09-24"
 status: "idea"
 tags: ["KNIFE", "images"]
-slug: "/sk/knifes/k081-transparentna-stabilna-infrastruktura-pre-sites"
+# slug: "/sk/knifes/k081-transparentna-stabilna-infrastruktura-pre-sites"
 sidebar_label: "K081 – Transparentná -Stabilná infraštruktúra pre Sites"
 sidebar_position: "81"
 locale: "sk"
@@ -55,8 +54,8 @@ Základná architektúra je popísaná v KNIFE_027 [KNIFE_027-K027-git-for-dummi
 ## 🧪 Ako to použiť (aplikácia)
 - Existuje jednoduché transparentné riešenie?
 - Vyskúšam preveriť rôzne riešenia
-- napríklad od firmy https://portunix.ai/ (https://github.com/cassandragargoyle/Portunix)
-- 
+  
+- Od komunity cassandragargoyle produkt https://portunix.ai/ ((https://github.com/cassandragargoyle/Portunix)
 ---
 
 ## ⚡ Rýchly návod (Top)

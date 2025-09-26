@@ -1,3 +1,19 @@
+---
+id: K084_02
+parent: K084
+guid: knife-k084_02-280b3b24-c7e8-4aa9-a870-838c461f8b10
+dao: knife
+title: ""
+author: ""
+created: 2025-09-26
+modified: 2025-09-26
+status: draft
+type: knife
+category: deliverable
+tags: []
+sidebar_label: "K084_02 –"
+locale: sk
+---
 # GitHub Education Faculty Benefits – Usage Scenario
 
 Tento návod popisuje, čo robiť po schválení GitHub Education Faculty Benefits.
@@ -20,7 +36,7 @@ Tento návod popisuje, čo robiť po schválení GitHub Education Faculty Benefi
 
 <p align="center">
 <a href="./img/activation/GH-UpgradeToGHTEAM.png" title="Upgrade to GitHub Team">
-  <img src="./img/activation/GH-UpgradeToGHTEAM.png" alt="Upgrade to GitHub Team" width="400">
+  <img src="./img/activation/GH-UpgradeToGHTEAM.png" alt="Upgrade to GitHub Team" width="400" />
 </a>
 </p>
 
@@ -47,56 +63,56 @@ Vidno, že poplatky za používanie nejaké sa priebežne počítajú, ale mne s
 
 <p align="center">
 <a href="./img/activation/GH-UpgradeToGHTEAM.png" title="Upgrade to GitHub Team">
-  <img src="./img/activation/GH-UpgradeToGHTEAM.png" alt="Upgrade to GitHub Team" width="400">
+  <img src="./img/activation/GH-UpgradeToGHTEAM.png" alt="Upgrade to GitHub Team" width="400" />
 </a>
 </p>
 
 1. Copilot - step 01
 <p align="center">
     <a href="./img/activation/Copilot-01.png" title="Copilot-01">
-    <img src="./img/activation/Copilot-01.png" alt="Copilot-01" width="400">
+    <img src="./img/activation/Copilot-01.png" alt="Copilot-01" width="400" />
 </a>
 </p>
 
 1. Copilor - step 02
    <p align="center">
        <a href="./img/activation/Copilot-02.png" title="Copilot-02">
-       <img src="./img/activation/Copilot-02.png" alt="Copilot-02" width="400">
+       <img src="./img/activation/Copilot-02.png" alt="Copilot-02" width="400" />
        </a>
     </p>
 
 2. Copilot - Step 03
     <p align="center">
        <a href="./img/activation/Copilot-03.png" title="Copilot-03">
-       <img src="./img/activation/Copilot-03.png" alt="Copilot-03" width="400">
+       <img src="./img/activation/Copilot-03.png" alt="Copilot-03" width="400" />
        </a>
     </p>
 
 4. Copilot - Step 04
    <p align="center">
        <a href="./img/activation/Copilot-04.png" title="Copilot-04">
-       <img src="./img/activation/Copilot-04.png" alt="Copilot-04" width="400">
+       <img src="./img/activation/Copilot-04.png" alt="Copilot-04" width="400" />
        </a>
     </p>
 
 6. Copilot - Step 05
     <p align="center">
        <a href="./img/activation/Copilot-05.png" title="Copilot-05">
-       <img src="./img/activation/Copilot-05.png" alt="Copilot-05" width="400">
+       <img src="./img/activation/Copilot-05.png" alt="Copilot-05" width="400" />
        </a>
     </p>
 
 8. Copilot - Step 06
     <p align="center">
        <a href="./img/activation/Copilot-05-IDE.png" title="Copilot-06">
-       <img src="./img/activation/Copilot-05-IDE.png" alt="Copilot-06" width="400">
+       <img src="./img/activation/Copilot-05-IDE.png" alt="Copilot-06" width="400" />
        </a>
     </p>
 
 10. Copilot - Step 07
     <p align="center">
        <a href="./img/activation/Copilot-07-VSC.png" title="Copilot-07">
-       <img src="./img/activation/Copilot-07-VSC.png" alt="Copilot-07" width="400">
+       <img src="./img/activation/Copilot-07-VSC.png" alt="Copilot-07" width="400" />
        </a>
     </p>
 
@@ -112,7 +128,7 @@ https://github.com/settings/copilot/features
 - Prejdi na [https://github.com/settings/education/benefits](https://github.com/settings/education/benefits).
 - Mal by svietiť zelený status **Approved**.
 
-![Step 3 – Approved status](img/approved_status.png)
+
 
 ---
 
@@ -129,7 +145,7 @@ https://docs.github.com/en/copilot
 
 <p align="center">
     <a href="./img/activation/Copilot-08-Documentation.png" title="Copilot-08-Documentation">
-    <img src="./img/activation/Copilot-08-Documentation.png" alt="Copilot-08-Documentation" width="400">
+    <img src="./img/activation/Copilot-08-Documentation.png" alt="Copilot-08-Documentation" width="400" />
 </a>
 </p>
 

@@ -75,7 +75,7 @@ endif
   print-vars knife-audit-frontmatter \
   fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file knife-fm-add-missing knife-fm-add-missing-dry \
   release-ci release-ci-datetime \
-  commit push tag push-tag release release-auto release-commit check-version
+  commit push tag push-tag release release-auto release-commit check-version knife-finish knife-finish-dry upgrade-docusaurus
 
 # -------------------------
 # 📌 Help
@@ -107,6 +107,7 @@ help:
 	@echo "  build-fast             - Alias na 'make build MINIFY=0' (bez minify)"
 	@echo "  ci-build               - CI-friendly build bez minifikácie (alias na 'make build MINIFY=0')"
 	@echo "  serve                  - Lokálne naservíruj statický build"
+	@echo "  upgrade-docusaurus    - Upgrade Docusaurus balíčkov na poslednú verziu (@latest)"
 	@echo "===== 🚀 Release (CI) =====" 
 	@echo "  release-ci             - SemVer patch bump (npm version patch) + push tag → spustí CI release"
 	@echo "  release-ci-datetime    - Vytvorí tag vYYYYMMDD-HHMM (UTC) bez zmeny package.json a pushne ho"
@@ -143,6 +144,8 @@ help:
 	@echo "  knife-new              - id=K062 title=\"...\" – rýchlo založí skeleton novej KNIFE"
 	@echo "  gen-dry                - „suchý“ plán generovania (nič nezapisuje)"
 	@echo "  dry-verify             - skrátená validácia cez generátor (bez zásahu)"
+	@echo "  knife-finish           - Uzavri KNIFE: FM podsúborov -> backfill -> canonical fix -> verify -> gen"
+	@echo "  knife-finish-dry       - DRY-RUN plán uzavretia KNIFE (nič nezapisuje)"
 	@echo "===== ✅ Verifications & Backfill ====="
 	@echo "  knife-guid-backfill    - Doplní chýbajúce 'guid' a 'dao' do KNIFE MD (len tam, kde chýbajú)"
 	@echo "  knife-meta-backfill    - Z CSV doplní 'created'; ak chýba 'modified', nastaví ho na 'created'; voliteľne doplní category/type/priority"
@@ -204,6 +207,15 @@ ci-build:
 
 serve:
 	$(NPM) run serve
+
+upgrade-docusaurus: ## Upgrade Docusaurus packages to latest version
+	npm i @docusaurus/core@latest \
+	      @docusaurus/plugin-google-gtag@latest \
+	      @docusaurus/preset-classic@latest \
+	      @docusaurus/module-type-aliases@latest \
+	      @docusaurus/plugin-client-redirects@latest \
+	      @docusaurus/tsconfig@latest \
+	      @docusaurus/types@latest
 
 # -------------------------
 # 🔍 Link Checker
@@ -559,10 +571,41 @@ gen-dry:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
 	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root . --dry-run
 
+
 ## Dry-verify priamo cez generátor
 dry-verify:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
 	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root . --dry-verify
+
+# -------------------------
+# 🧵 KNIFE Finish (one-button flow)
+# -------------------------
+.PHONY: knife-finish knife-finish-dry
+
+## knife-finish-dry: suchý náhľad krokov (bez zápisu)
+knife-finish-dry:
+	@echo "① FM podsúbory – DRY"
+	@$(MAKE) knife-fm-add-missing-dry
+	@echo "② Verify (CSV/docs + FM)"
+	@$(MAKE) knife-verify
+	@echo "③ Gen-dry (CSV → plán)"
+	@$(MAKE) gen-dry
+
+## knife-finish: FM podsúbory -> backfill -> canonical fix -> verify -> gen
+knife-finish:
+	@echo "① FM podsúbory – dopĺňam…"
+	@$(MAKE) knife-fm-add-missing
+	@echo "② Backfill GUID/DAO…"
+	@$(MAKE) knife-guid-backfill
+	@echo "③ Backfill meta (created/modified/category/type/priority)…"
+	@$(MAKE) knife-meta-backfill
+	@echo "④ Canonical frontmatter (fm-fix)…"
+	@$(MAKE) fm-fix
+	@echo "⑤ Verify (CSV/docs + FM)…"
+	@$(MAKE) knife-verify
+	@echo "⑥ Generate overviews (CSV → MD)…"
+	@$(MAKE) knifes-gen
+	@echo "✅ KNIFE finish hotový. Pokračuj: 'make dev' alebo 'make build'"
 
 # -------------------------
 # ✅ Backfill & Verify
@@ -665,72 +708,11 @@ fm-set-slug-file:
 .PHONY: knife-fm-add-missing knife-fm-add-missing-dry
 
 knife-fm-add-missing:
-	@python3 - <<'PY'
-from pathlib import Path
-import re, uuid
-from datetime import date
-
-DOCS_DIR = Path('docs')
-TODAY = date.today().isoformat()
-
-# detekcia KNIFE ID z cesty (napr. docs/sk/knifes/K044-.../index.md)
-def detect_id(p: Path) -> str:
-    s = '/' + '/'.join(p.parts) + '/'
-    m = re.search(r'/K(\d{3})[-_/]', s)
-    return f"K{m.group(1)}" if m else ''
-
-changed = 0
-for path in DOCS_DIR.rglob('*.md'):
-    try:
-        text = path.read_text(encoding='utf-8')
-    except Exception:
-        continue
-    if text.startswith('---\n'):
-        continue  # už má frontmatter
-    kid = detect_id(path)
-    base = kid.lower() if kid else 'unknown'
-    guid = f"knife-{base}-{uuid.uuid4()}"
-    # Minimal FM – pokrýva povinné polia pre tvoj linter
-    fm_lines = [
-        '---\n',
-        f'id: {kid if kid else ""}\n',
-        f'guid: {guid}\n',
-        'dao: knife\n',
-        'title: ""\n',
-        f'created: {TODAY}\n',
-        f'modified: {TODAY}\n',
-        'status: draft\n',
-        '# slug: ""\n',
-        '---\n\n'
-    ]
-    new_text = ''.join(fm_lines) + text
-    path.write_text(new_text, encoding='utf-8')
-    print(f"[ADD] frontmatter → {path}")
-    changed += 1
-print(f"Done. Added FM to {changed} file(s).")
-PY
+	@python3 tools/knife_frontmatter_add_missing.py
 	@echo "→ Next: make knife-guid-backfill knife-meta-backfill fm-fix knife-verify"
 
 knife-fm-add-missing-dry:
-	@python3 - <<'PY'
-from pathlib import Path
-import re
-
-DOCS_DIR = Path('docs')
-
-def needs_fm(p: Path) -> bool:
-    try:
-        return not Path(p).read_text(encoding='utf-8').startswith('---\n')
-    except Exception:
-        return False
-
-count = 0
-for path in DOCS_DIR.rglob('*.md'):
-    if needs_fm(path):
-        print(f"[DRY] would add frontmatter → {path}")
-        count += 1
-print(f"DRY-RUN: {count} file(s) without frontmatter.")
-PY
+	@python3 tools/knife_frontmatter_add_missing.py --dry
 #
 # -------------------------
 # 🚀 Release – CI-based (GitHub Actions)
@@ -754,9 +736,9 @@ release-ci-datetime:
 	echo "   Tag: $$TAG (UTC)"; \
 	git tag -a "$$TAG" -m "release $$ts"; \
 	git push origin "$$TAG"; \
-	echo "✅ Pushnutý tag $$TAG – CI workflow sa spustí na serveri";
+#	echo "✅ Pushnutý tag $$TAG – CI workflow sa spustí na serveri";
 
-	# -------------------------
+# -------------------------
 # 🏷️ Release helpers – local tag & push
 # -------------------------
 

@@ -5,13 +5,12 @@ dao: "knife"
 title: "Ako aktivovať na GitHube EDU benefity"
 description: "Pokiaľ  spĺňa používateľ kritériá GitHub, môže dostať pre seba pre svoj profil status člena EDU organizácie. Má to viaceroo výhod ako Sites pre privátne repositáre, čo by stálo 3€/mesiac. Detailnejšie v inom Knife. V tomto príspevku je samotná aktivácia týchto benefitov"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
 created: "2025-09-25"
 modified: "2025-09-25"
 date: "2025-09-25"
 status: "in progress"
 tags: ["KNIFE", "images"]
-slug: "/sk/knifes/k084-ako-aktivovat-na-githube-edu-benefity"
+# slug: "/sk/knifes/k084-ako-aktivovat-na-githube-edu-benefity"
 sidebar_label: "K084 – Ako aktivovať na GitHube EDU benefity"
 sidebar_position: "84"
 locale: "sk"
@@ -27,10 +26,10 @@ locale: "sk"
 - GitHub ponúka špeciálne benefity aj pre vzdelávacie inštitúcie prostredníctvom učiteľov.
 - Učiteľ musí najprv požiadať o udelenie prístupu k benefiom
 - https://github.com/education 
-<img src="./img/RKA-Dashboard.png" width="600" alt="Step 1">
+<img src="./img/RKA-Dashboard.png" width="600" alt="Step 1" />
 
 - https://education.github.com/benefits.
-<img src="./img/RKA-EDU-Benefits.png" width="600" alt="Step 1">
+<img src="./img/RKA-EDU-Benefits.png" width="600" alt="Step 1" />
 
 ## 🧩 Ako to rieši (princíp)
 

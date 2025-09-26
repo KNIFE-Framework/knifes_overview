@@ -10,7 +10,6 @@ category: ""
 type: ""
 priority: ""
 tags: []
-# slug: "/Guide_Formatting"
 created: 2025-09-23
 modified: ""
 status: draft

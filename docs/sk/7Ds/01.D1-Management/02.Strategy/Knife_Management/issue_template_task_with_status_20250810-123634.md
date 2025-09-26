@@ -10,7 +10,6 @@ category: ""
 type: ""
 priority: ""
 tags: []
-# slug: "/issue_template_task_with_status_20250810-123634"
 created: 2025-09-23
 modified: ""
 status: draft

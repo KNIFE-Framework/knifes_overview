@@ -234,33 +234,22 @@ function parseSimpleYAML(yaml) {
   return obj;
 }
 function writeFrontMatter(obj) {
-  // Canonical key order for stable YAML output (matches fm-fix style)
+  // Canonical key order for stable YAML
   const order = [
     'id','guid','dao','title','description','author',
-    // NOTE: intentionally skip 'authors' in canonical output
+    // no `authors` in canonical output
     'created','modified','date',
     'status','type','category','tags','slug','sidebar_label',
     'sidebar_position','locale','provenance','provenance_org','provenance_project'
   ];
 
-  const isPlainScalar = (v) => {
-    if (v === null || v === undefined) return true;
-    if (typeof v === 'number' || typeof v === 'boolean') return true;
-    if (typeof v !== 'string') return false;
-    // Allow diacritics, spaces, dashes, slashes; disallow newlines and leading/trailing spaces
-    if (/\n|\r/.test(v)) return false;
-    if (/^\s|\s$/.test(v)) return false;
-    // YAML plain scalars are fine for most titles; keep simple
-    return true;
-  };
+  const quote = (s) => JSON.stringify(String(s == null ? '' : s));
 
-  const printScalar = (v) => {
-    if (v === null || v === undefined) return '';
+  const print = (v) => {
+    if (v === null || v === undefined) return '""';
     if (typeof v === 'number' || typeof v === 'boolean') return String(v);
-    if (typeof v === 'string') {
-      return isPlainScalar(v) ? v : JSON.stringify(v);
-    }
-    return JSON.stringify(v);
+    // everything else → quote for YAML safety
+    return quote(v);
   };
 
   const b = [];
@@ -271,29 +260,26 @@ function writeFrontMatter(obj) {
     if (val === undefined) continue;
 
     if (k === 'tags' && Array.isArray(val)) {
-      // inline array with JSON-quoted items for safety
-      const arr = val.slice(0, 50).map(x => JSON.stringify(x));
+      const arr = val.slice(0, 200).map((x) => quote(x));
       b.push(`${k}: [${arr.join(', ')}]`);
       continue;
     }
 
-    if (k === 'provenance' && val && typeof val === 'object') {
+    if (k === 'provenance' && val && typeof val === 'object' && !Array.isArray(val)) {
       b.push(`${k}:`);
       for (const [kk, vv] of Object.entries(val)) {
-        b.push(`  ${kk}: ${printScalar(vv)}`);
+        b.push(`  ${kk}: ${print(vv)}`);
       }
       continue;
     }
 
     if (k === 'slug') {
-      // write as commented line to match canonical fm-fix style
-      const printed = typeof val === 'string' ? (val || '') : '';
-      b.push(`# slug: ${printed ? JSON.stringify(printed) : '""'}`);
+      const printed = (typeof val === 'string' && val) ? quote(val) : '""';
+      b.push(`# slug: ${printed}`);
       continue;
     }
 
-    // default scalar
-    b.push(`${k}: ${printScalar(val)}`);
+    b.push(`${k}: ${print(val)}`);
   }
   b.push('---');
   return b.join('\n') + '\n';
@@ -451,7 +437,7 @@ function buildFrontMatter(row, d, opts) {
 // --- Prehľady (relatívne linky na .md)
 function tableLine(row) {
   const title = getField(row, 'short_title') || '';
-  const href = row._linkSlug || row._docRelLink || '#';
+  const href = row._docRelLink || row._linkSlug || '#';
   const titleLink = href ? `[${title}](${href})` : title;
   const dateVal = getField(row, 'date') || '';
   return `| ${row.ID} | ${row.Category||''} | ${titleLink} | ${row.Status||''} | ${row.Priority||''} | ${row.Type||''} | ${dateVal} |`;
@@ -529,7 +515,7 @@ function buildOverviewListMarkdown(rows, locale, org, project) {
 `|:--:|:--------:|:------|:------:|--------:|:----:|:----:|:------:|:---:|:-------:|\n`;
   const lines = rows.map(r => {
     const title = getField(r, 'short_title') || '';
-    const href = r._linkSlug || r._docRelLink || '#';
+    const href = r._docRelLink || r._linkSlug || '#';
     const titleLink = href ? `[${title}](${href})` : title;
     const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
     const dateVal = getField(r, 'date') || '';
@@ -556,6 +542,57 @@ function inferFsTags(dirAbs, initial = []) {
   if (fssync.existsSync(path.join(dirAbs, 'multimedia', 'AP', 'HTML5'))) { tags.add('active-presenter'); tags.add('html5'); }
   if (fssync.existsSync(path.join(dirAbs, 'multimedia', 'AP', 'video'))) tags.add('video');
   return Array.from(tags);
+}
+
+// --- helper templates (non-doc artifacts, safe for Docusaurus) ---
+async function scaffoldHelpers(dirAbs, kid) {
+  // Place helpers into a folder that Docusaurus won't treat as docs
+  const helpersDir = path.join(dirAbs, '_helpers');
+  await ensureDir(helpersDir);
+
+  // README to explain purpose
+  const readmeTxt = `This folder contains auxiliary notes and templates for ${kid}.
+These files use *.md.txt extension so Docusaurus does not treat them as docs.
+Rename to .md only if you intentionally want to publish a helper file.
+`;
+  const readmePath = path.join(helpersDir, 'README.txt');
+  if (!fssync.existsSync(readmePath)) await fs.writeFile(readmePath, readmeTxt, 'utf8');
+
+  // Notes / Sources / TODO templates, all include the K-ID in filename
+  const files = [
+    [`${kid}.notes.md.txt`, `# ${kid} — Notes (private)
+- Context:
+- Decisions:
+- Open questions:
+`],
+    [`${kid}.sources.md.txt`, `# ${kid} — Sources (private)
+- Links:
+- Citations:
+`],
+    [`${kid}.todo.md.txt`, `# ${kid} — TODO (private)
+- [ ] Task A
+- [ ] Task B
+`],
+  ];
+  for (const [fname, content] of files) {
+    const p = path.join(helpersDir, fname);
+    if (!fssync.existsSync(p)) await fs.writeFile(p, content, 'utf8');
+  }
+
+  // Image folder guide (keeps K-ID prefix convention clear)
+  const imgGuide = `# Images for ${kid}
+
+Place images used by this KNIFE here. Recommended naming:
+- ${kid}-diagram-01.png
+- ${kid}-screenshot-setup.png
+
+If you use thumbnails, prefer a small preview file (e.g., 200–400 px wide)
+paired with a full-size image, and link like:
+
+[![Preview](img/${kid.toLowerCase()}-preview.png)](img/${kid.toLowerCase()}-full.png)
+`;
+  const imgGuidePath = path.join(dirAbs, 'img', 'README.txt');
+  if (!fssync.existsSync(imgGuidePath)) await fs.writeFile(imgGuidePath, imgGuide, 'utf8');
 }
 
 // --- NORMALIZE: doplní FM + body:start + NAV do docs/<locale>/knifes
@@ -590,8 +627,9 @@ async function normalizeKnifes(repoRoot, opts) {
     const id = (idFromFolder || (titleFromH1.match(/^(K\d{3})/i)||[,''])[1] || 'K000').toUpperCase();
     const title = fm.title || titleFromFolder || titleFromH1 || 'Untitled KNIFE';
 
-    const slug = fm.slug || `/${loc}/knifes/${kebab(`${id} ${title}`)}`;
-    const sidebar_label = fm.sidebar_label || `${id} – ${title.length>40? (title.slice(0,37)+'…') : title}`;
+    // Preserve slug and sidebar_label if present, otherwise compute them
+    const slug = fm.slug ? fm.slug : `/${loc}/knifes/${kebab(`${id} ${title}`)}`;
+    const sidebar_label = fm.sidebar_label ? fm.sidebar_label : `${id} – ${title.length>40? (title.slice(0,37)+'…') : title}`;
     const sidebar_position = fm.sidebar_position || parseInt(id.slice(1), 10) || 999;
 
     const fmTags = (fm.tags !== undefined) ? normToArray(fm.tags) : [];
@@ -634,8 +672,8 @@ async function normalizeKnifes(repoRoot, opts) {
       title,
       description,
       status: fm.status || 'draft',
-      slug,
-      sidebar_label,
+      slug, // use variable, not recomputed
+      sidebar_label, // use variable, not recomputed
       sidebar_position,
       tags,
       locale: fm.locale || loc,
@@ -809,6 +847,8 @@ async function main() {
         const fm = buildFrontMatter(row, d, { org, project, locale });
         const body = tedexSkeleton(row.ID || 'K000', d.shortTitle);
         await fs.writeFile(file, fm + body, 'utf8');
+        // Scaffold auxiliary templates carrying the K-ID
+        await scaffoldHelpers(dir, row.ID || 'K000');
         console.log('Created:', path.relative(repoRoot, file));
       }
     } else if (debug) {
@@ -828,7 +868,7 @@ async function main() {
 `| ID   | Category | Title | Status | Priority | Type | Date | Author | Org | Project |\n`+
 `|------|----------|-------|--------|---------:|------|------|--------|-----|---------|\n` + rows.map(r => {
     const title = getField(r, 'short_title') || '';
-    const href = r._linkSlug || r._docRelLink || '#';
+    const href = r._docRelLink || r._linkSlug || '#';
     const titleLink = href ? `[${title}](${href})` : title;
     const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
     const dateVal = getField(r, 'date') || '';

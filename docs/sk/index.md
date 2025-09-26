@@ -10,7 +10,6 @@ category: ""
 type: ""
 priority: ""
 tags: []
-# slug: "/sk"
 created: 2025-09-24
 modified: ""
 status: draft

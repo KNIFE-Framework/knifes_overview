@@ -1,3 +1,19 @@
+---
+id: K083_03
+parent: K083
+guid: knife-k083_03-666c06de-ec54-45cd-be1a-38b0333809e2
+dao: knife
+title: ""
+author: ""
+created: 2025-09-26
+modified: 2025-09-26
+status: draft
+type: knife
+category: deliverable
+tags: []
+sidebar_label: "K083_03 –"
+locale: sk
+---
 # Študentský checklist
 
 ## Čo nikdy nerobiť

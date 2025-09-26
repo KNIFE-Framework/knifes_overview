@@ -3,6 +3,8 @@ name: Deploy Docusaurus to GitHub Pages
 on:
   push:
     branches: [ main ]
+    tags-ignore:
+      - v*
     paths:
       - "docs/**"
       - "src/**"
@@ -13,6 +15,8 @@ on:
       - ".github/workflows/deploy.yml"
       - "scripts/**"
       - "sidebars*.ts"
+      - "static/**"
+      - "data/**"
   workflow_dispatch:
 
 permissions:

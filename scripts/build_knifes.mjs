@@ -437,7 +437,7 @@ function buildFrontMatter(row, d, opts) {
 // --- Prehľady (relatívne linky na .md)
 function tableLine(row) {
   const title = getField(row, 'short_title') || '';
-  const href = row._docRelLink || row._linkSlug || '#';
+  const href = row._linkSlug || row._docRelLink || '#';
   const titleLink = href ? `[${title}](${href})` : title;
   const dateVal = getField(row, 'date') || '';
   return `| ${row.ID} | ${row.Category||''} | ${titleLink} | ${row.Status||''} | ${row.Priority||''} | ${row.Type||''} | ${dateVal} |`;
@@ -515,7 +515,7 @@ function buildOverviewListMarkdown(rows, locale, org, project) {
 `|:--:|:--------:|:------|:------:|--------:|:----:|:----:|:------:|:---:|:-------:|\n`;
   const lines = rows.map(r => {
     const title = getField(r, 'short_title') || '';
-    const href = r._docRelLink || r._linkSlug || '#';
+    const href = r._linkSlug || r._docRelLink || '#';
     const titleLink = href ? `[${title}](${href})` : title;
     const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
     const dateVal = getField(r, 'date') || '';
@@ -868,7 +868,7 @@ async function main() {
 `| ID   | Category | Title | Status | Priority | Type | Date | Author | Org | Project |\n`+
 `|------|----------|-------|--------|---------:|------|------|--------|-----|---------|\n` + rows.map(r => {
     const title = getField(r, 'short_title') || '';
-    const href = r._docRelLink || r._linkSlug || '#';
+    const href = r._linkSlug || r._docRelLink || '#';
     const titleLink = href ? `[${title}](${href})` : title;
     const author = (r._authors && r._authors[0]) || r.Author || r.Authors || '';
     const dateVal = getField(r, 'date') || '';

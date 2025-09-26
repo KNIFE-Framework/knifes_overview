@@ -23,6 +23,11 @@ BUILD_DIR := build
 
 # Build timestamp in UTC (used for footer "Last build")
 BUILD_DATE := $(shell date -u '+%Y-%m-%d %H:%M:%S UTC')
+# Release helpers (local tag push)
+BRANCH ?= main
+DATE   := $(shell date -u +%Y%m%d-%H%M%SZ)
+VERSION ?= v$(DATE)
+MSG     ?= Release $(VERSION)
 
 # 🌿 Worktree deploy
 DEPLOY_BRANCH = gh-pages-docusaurus
@@ -49,6 +54,8 @@ ifeq ($(MINIFY),0)
   BUILD_EXTRA := --no-minify
 endif
 
+
+
 .PHONY: \
   help help-auth help-actions \
   install dev clean build build-fast ci-build serve \
@@ -67,7 +74,8 @@ endif
   knife-verify knife-verify-csv-docs knife-verify-frontmatter \
   print-vars knife-audit-frontmatter \
   fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file \
-  release-ci release-ci-datetime
+  release-ci release-ci-datetime \
+  commit push tag push-tag release release-auto release-commit check-version
 
 # -------------------------
 # 📌 Help
@@ -99,13 +107,19 @@ help:
 	@echo "  build-fast             - Alias na 'make build MINIFY=0' (bez minify)"
 	@echo "  ci-build               - CI-friendly build bez minifikácie (alias na 'make build MINIFY=0')"
 	@echo "  serve                  - Lokálne naservíruj statický build"
-	@echo "===== 🚀 Release (CI) ====="
+	@echo "===== 🚀 Release (CI) =====" 
 	@echo "  release-ci             - SemVer patch bump (npm version patch) + push tag → spustí CI release"
 	@echo "  release-ci-datetime    - Vytvorí tag vYYYYMMDD-HHMM (UTC) bez zmeny package.json a pushne ho"
 	@echo "                         Príklad: v20250925-2315"
 	@echo "                         Použitie: make release-ci | make release-ci-datetime"
 	@echo "  (CI) vyžaduje: .github/workflows/release.yml"
 	@echo "  APP_VERSION v pätičke sa nastaví v CI z tagu: $${GITHUB_REF_NAME}"
+	@echo "===== 🏷️ Release (lokálne tagy) ====="
+	@echo "  release            - vytvorí annotated tag $(VERSION) a pushne ho (spustí CI Release)"
+	@echo "  release-auto       - automatický tag vYYYYMMDD-HHMMSSZ a pushne ho"
+	@echo "  release-commit     - commit -> push vetvy -> tag -> push tag"
+	@echo "  tag                - len vytvorí lokálny tag (bez pushu)"
+	@echo "  push-tag           - pushne zadaný tag na origin"
 	@echo "===== 🔍 Link Checker ====="
 	@echo "  check-links            - DRY-RUN kontrola odkazov v docs/"
 	@echo "  check-links-hard       - Striktná kontrola: spustí build"
@@ -667,3 +681,45 @@ release-ci-datetime:
 	git tag -a "$$TAG" -m "release $$ts"; \
 	git push origin "$$TAG"; \
 	echo "✅ Pushnutý tag $$TAG – CI workflow sa spustí na serveri";
+
+	# -------------------------
+# 🏷️ Release helpers – local tag & push
+# -------------------------
+
+.PHONY: check-version commit push tag push-tag release release-auto release-commit
+
+check-version: ## Overí formát verzie (musí začínať na 'v')
+	@printf '%s' "$(VERSION)" | grep -Eq '^v[0-9A-Za-z._-]+$$' \
+	|| (echo "❌ VERSION musí začínať na 'v' (napr. v1.0.0 alebo v20250926-0745)" && exit 1)
+
+commit: ## Commit všetkých zmien s COMMIT_MSG
+	@test -n "$(COMMIT_MSG)" || (echo "Použi: make commit COMMIT_MSG='Popis'" && exit 1)
+	git add -A
+	git commit -m "$(COMMIT_MSG)"
+
+push: ## Push aktuálnej vetvy
+	git push origin $(BRANCH)
+
+tag: check-version ## Vytvorí annotated tag lokálne
+	git tag -a $(VERSION) -m "$(MSG)"
+
+push-tag: check-version ## Pushne tag na origin
+	git push origin $(VERSION)
+
+release: check-version ## Tag -> push tag (spustí GH Action Release)
+	@echo "🏷️  Tagging $(VERSION) ..."
+	$(MAKE) tag VERSION=$(VERSION) MSG="$(MSG)"
+	@echo "🚀 Pushing tag $(VERSION) ..."
+	$(MAKE) push-tag VERSION=$(VERSION)
+
+release-auto: ## Auto verzia vYYYYMMDD-HHMMSSZ
+	$(MAKE) release VERSION=$(VERSION) MSG="$(MSG)"
+
+release-commit: check-version ## Commit -> push -> tag -> push tag
+	@test -n "$(MSG)" || (echo "MSG je prázdny. Pridaj MSG='...'" && exit 1)
+	@echo "📝 Commit & push na $(BRANCH) ..."
+	$(MAKE) commit COMMIT_MSG="$(MSG)" || true
+	$(MAKE) push
+	@echo "🏷️  Tagging & push tag ..."
+	$(MAKE) tag VERSION=$(VERSION) MSG="$(MSG)"
+	$(MAKE) push-tag VERSION=$(VERSION)

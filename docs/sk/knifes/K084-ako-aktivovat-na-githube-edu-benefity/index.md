@@ -26,10 +26,13 @@ locale: "sk"
 - GitHub ponúka špeciálne benefity aj pre vzdelávacie inštitúcie prostredníctvom učiteľov.
 - Učiteľ musí najprv požiadať o udelenie prístupu k benefiom
 - https://github.com/education 
-<img src="./img/RKA-Dashboard.png" width="600" alt="Step 1" />
+- 
+![Miesto pre žiadosť o akceptovanie](./img/RKA-EDU-Benefits.png)
 
 - https://education.github.com/benefits.
-<img src="./img/RKA-EDU-Benefits.png" width="600" alt="Step 1" />
+- 
+![Miesto pre aktiváciu bebefitov ](./img/RKA-Dashboard.png)
+
 
 ## 🧩 Ako to rieši (princíp)
 
@@ -46,3 +49,4 @@ locale: "sk"
 ## 💡 Tipy a poznámky
 
 ## ✅ Hodnota / Zhrnutie
+

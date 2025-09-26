@@ -11,7 +11,7 @@ status: draft
 type: knife
 category: deliverable
 tags: []
-sidebar_label: "K084_01 –"
+sidebar_label: "K084_01 – Aktivácia GitHub Education Faculty Benefits"
 locale: sk
 ---
 # Aktivácia GitHub Education Faculty Benefits
@@ -19,15 +19,8 @@ locale: sk
 ## 1. Otvor portál GitHub Education
 👉 [https://education.github.com/benefits](https://education.github.com/benefits)
 
+![Step 1 - GitHub Education homepage](./img/GHEDU-HomePage.png)
 
-<img src="./img/GHEDU-HomePage.png" width="300" alt="Step 1 – GitHub Education homepage" />
-
-```html
-<!-- TODO: thumbnail link placeholder (keep for later fill-in) -->
-<a href="./img/GHEDU-HomePage.png" title="Step 1 – GitHub Education homepage">
-  <img src="./img/thumb.png" alt="Step 1 – GitHub Education homepage" width="100" />
-</a>
-```
 
 ### Linka na GItBenefit Dashboard
 Klikni **Get benefits**.
@@ -59,19 +52,23 @@ Klikni **Get benefits**.
 ---
 
 ## 5. Aktivácia v organizácii
-- V organizácii choď do **Settings → Billing**.
-- Klikni na **Upgrade to Team for free (via GitHub Education)**.
+-  Klikni na **Upgrade to Team for free (via GitHub Education)**.
 
-![Step 5 – Upgrade org plan](pathname://img/step5.png)
+![Step 5 – Upgrade org plan](./img/Link-GHE-Dashboard.png)
 
 ---
 
 ## 6. Kontrola
 - V **Settings → Billing & plans → GitHub Education** vidíš svoj status.
 - V GitHub Classroom máš „Faculty verified“ badge.
+- https://education.github.com/globalcampus/teacher
+  
 
-![Step 6 – Verified](pathname://img/step6.png)
+![Step 6 – Welcome paged](./img/WelcomePage-GHB.png)
 
+Na tejto stránke sa dajú pridávť jednotlivé organizácie a im podriadené repozitáre do GitHubTeam.
+
+![alt text](./img/UPdateOrganisationToGHTeam.png)
 ---
 
 # 🎉 Hotovo!

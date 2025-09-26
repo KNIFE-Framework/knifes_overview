@@ -10,7 +10,7 @@ created: "2025-09-24"
 modified: "2025-09-24"
 date: "2025-09-24"
 status: "idea"
-tags: ["KNIFE"]
+tags: ["KNIFE", "images"]
 slug: "/sk/knifes/k081-transparentna-stabilna-infrastruktura-pre-sites"
 sidebar_label: "K081 – Transparentná -Stabilná infraštruktúra pre Sites"
 sidebar_position: "81"

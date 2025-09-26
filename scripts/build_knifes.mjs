@@ -234,32 +234,66 @@ function parseSimpleYAML(yaml) {
   return obj;
 }
 function writeFrontMatter(obj) {
-  // Frontmatter key order for stable YAML output
+  // Canonical key order for stable YAML output (matches fm-fix style)
   const order = [
-  'id','guid','dao','title','description','author','authors',
-  'created','modified','date','updated',
-  'status','type','category','tags','slug','sidebar_label',
-  'sidebar_position','locale','provenance','provenance_org','provenance_project'
-];
-  const clamp = (v, max = 2000) =>
-    typeof v === 'string' ? (v.length > max ? v.slice(0, max) + '…' : v) : v;
+    'id','guid','dao','title','description','author',
+    // NOTE: intentionally skip 'authors' in canonical output
+    'created','modified','date',
+    'status','type','category','tags','slug','sidebar_label',
+    'sidebar_position','locale','provenance','provenance_org','provenance_project'
+  ];
+
+  const isPlainScalar = (v) => {
+    if (v === null || v === undefined) return true;
+    if (typeof v === 'number' || typeof v === 'boolean') return true;
+    if (typeof v !== 'string') return false;
+    // Allow diacritics, spaces, dashes, slashes; disallow newlines and leading/trailing spaces
+    if (/\n|\r/.test(v)) return false;
+    if (/^\s|\s$/.test(v)) return false;
+    // YAML plain scalars are fine for most titles; keep simple
+    return true;
+  };
+
+  const printScalar = (v) => {
+    if (v === null || v === undefined) return '';
+    if (typeof v === 'number' || typeof v === 'boolean') return String(v);
+    if (typeof v === 'string') {
+      return isPlainScalar(v) ? v : JSON.stringify(v);
+    }
+    return JSON.stringify(v);
+  };
 
   const b = [];
   b.push('---');
   for (const k of order) {
-    if (obj[k] === undefined) continue;
+    if (!(k in obj)) continue;
     const val = obj[k];
+    if (val === undefined) continue;
 
-    if ((k === 'tags' || k === 'authors') && Array.isArray(val)) {
-      b.push(`${k}: [${val.slice(0, 50).map(v => JSON.stringify(clamp(v))).join(', ')}]`);
-    } else if (k === 'provenance' && val && typeof val === 'object') {
+    if (k === 'tags' && Array.isArray(val)) {
+      // inline array with JSON-quoted items for safety
+      const arr = val.slice(0, 50).map(x => JSON.stringify(x));
+      b.push(`${k}: [${arr.join(', ')}]`);
+      continue;
+    }
+
+    if (k === 'provenance' && val && typeof val === 'object') {
       b.push(`${k}:`);
       for (const [kk, vv] of Object.entries(val)) {
-        b.push(`  ${kk}: ${JSON.stringify(clamp(vv))}`);
+        b.push(`  ${kk}: ${printScalar(vv)}`);
       }
-    } else {
-      b.push(`${k}: ${JSON.stringify(clamp(val))}`);
+      continue;
     }
+
+    if (k === 'slug') {
+      // write as commented line to match canonical fm-fix style
+      const printed = typeof val === 'string' ? (val || '') : '';
+      b.push(`# slug: ${printed ? JSON.stringify(printed) : '""'}`);
+      continue;
+    }
+
+    // default scalar
+    b.push(`${k}: ${printScalar(val)}`);
   }
   b.push('---');
   return b.join('\n') + '\n';
@@ -386,11 +420,11 @@ function buildFrontMatter(row, d, opts) {
     locale: loc
   };
 
-  // authors from CSV
+  // authors from CSV → keep single canonical `author`
   const authors = parseAuthors(row);
   if (authors.length) {
-    fm.authors = authors.slice(0, 10);
     fm.author = authors[0];
+    // do not set fm.authors to avoid non-canonical duplication
   }
 
   const prov = {};
@@ -608,7 +642,6 @@ async function normalizeKnifes(repoRoot, opts) {
       created: createdVal,
       date: createdVal,
       modified: modifiedVal,
-      ...(authorsFM.length ? { authors: authorsFM } : {}),
       ...(authorFM ? { author: authorFM } : {}),
       ...(provenance ? { provenance } : {})
     };

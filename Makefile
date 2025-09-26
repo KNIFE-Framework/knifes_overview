@@ -73,7 +73,7 @@ endif
   knife-guid-backfill knife-meta-backfill \
   knife-verify knife-verify-csv-docs knife-verify-frontmatter \
   print-vars knife-audit-frontmatter \
-  fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file \
+  fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file knife-fm-add-missing knife-fm-add-missing-dry \
   release-ci release-ci-datetime \
   commit push tag push-tag release release-auto release-commit check-version
 
@@ -156,6 +156,8 @@ help:
 	@echo "  fm-fix-file            - Prepíše frontmatter iba jedného súboru; použitie: make fm-fix-file file=PATH"
 	@echo "  fm-fix-file-dry        - DRY-RUN pre jeden súbor; použitie: make fm-fix-file-dry file=PATH"
 	@echo "  fm-set-slug-file       - Aktívny slug pre jediný súbor; použitie: make fm-set-slug-file file=PATH slug=/cesta/bez-locale"
+	@echo "  knife-fm-add-missing   - Pridá default frontmatter do MD bez FM (idempotentne)"
+	@echo "  knife-fm-add-missing-dry- DRY-RUN: ukáže, ktoré súbory by dostali frontmatter"
 
 help-auth:
 	@echo "===== 🔐 Autentikácia pre Worktree deploy ====="
@@ -653,10 +655,82 @@ fm-fix-file-dry:
 	@if [ -z "$$file" ]; then echo "Použi: make fm-fix-file-dry file=PATH"; exit 1; fi
 	@python3 tools/fix_frontmatter.py --file "$$file" --dry-run
 
+
 ## fm-set-slug-file: Zapíše aktívny slug pre jediný súbor (vyžaduje file=PATH a slug=/cesta)
 fm-set-slug-file:
 	@if [ -z "$$file" ] || [ -z "$$slug" ]; then echo "Použi: make fm-set-slug-file file=PATH slug=/cesta/bez-locale"; exit 1; fi
 	@python3 tools/fix_frontmatter.py --file "$$file" --set-slug --slug-val "$$slug"
+
+# ## knife-fm-add-missing: doplní YAML frontmatter do .md súborov bez FM (idempotentné)
+.PHONY: knife-fm-add-missing knife-fm-add-missing-dry
+
+knife-fm-add-missing:
+	@python3 - <<'PY'
+from pathlib import Path
+import re, uuid
+from datetime import date
+
+DOCS_DIR = Path('docs')
+TODAY = date.today().isoformat()
+
+# detekcia KNIFE ID z cesty (napr. docs/sk/knifes/K044-.../index.md)
+def detect_id(p: Path) -> str:
+    s = '/' + '/'.join(p.parts) + '/'
+    m = re.search(r'/K(\d{3})[-_/]', s)
+    return f"K{m.group(1)}" if m else ''
+
+changed = 0
+for path in DOCS_DIR.rglob('*.md'):
+    try:
+        text = path.read_text(encoding='utf-8')
+    except Exception:
+        continue
+    if text.startswith('---\n'):
+        continue  # už má frontmatter
+    kid = detect_id(path)
+    base = kid.lower() if kid else 'unknown'
+    guid = f"knife-{base}-{uuid.uuid4()}"
+    # Minimal FM – pokrýva povinné polia pre tvoj linter
+    fm_lines = [
+        '---\n',
+        f'id: {kid if kid else ""}\n',
+        f'guid: {guid}\n',
+        'dao: knife\n',
+        'title: ""\n',
+        f'created: {TODAY}\n',
+        f'modified: {TODAY}\n',
+        'status: draft\n',
+        '# slug: ""\n',
+        '---\n\n'
+    ]
+    new_text = ''.join(fm_lines) + text
+    path.write_text(new_text, encoding='utf-8')
+    print(f"[ADD] frontmatter → {path}")
+    changed += 1
+print(f"Done. Added FM to {changed} file(s).")
+PY
+	@echo "→ Next: make knife-guid-backfill knife-meta-backfill fm-fix knife-verify"
+
+knife-fm-add-missing-dry:
+	@python3 - <<'PY'
+from pathlib import Path
+import re
+
+DOCS_DIR = Path('docs')
+
+def needs_fm(p: Path) -> bool:
+    try:
+        return not Path(p).read_text(encoding='utf-8').startswith('---\n')
+    except Exception:
+        return False
+
+count = 0
+for path in DOCS_DIR.rglob('*.md'):
+    if needs_fm(path):
+        print(f"[DRY] would add frontmatter → {path}")
+        count += 1
+print(f"DRY-RUN: {count} file(s) without frontmatter.")
+PY
 #
 # -------------------------
 # 🚀 Release – CI-based (GitHub Actions)

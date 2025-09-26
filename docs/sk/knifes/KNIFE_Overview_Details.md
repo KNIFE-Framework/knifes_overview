@@ -2135,7 +2135,7 @@ Trust development, maturity=High awareness
 **Category**: UserGuide  
 **Status**: done md  
 **Type**: Návod na riešenie  
-**Priority**: lov  
+**Priority**: low  
 **Date**: 25.09.2025
 
 **Technology**: Development, Maintenance  
@@ -2149,6 +2149,32 @@ Trust development, maturity=High awareness
 - **slug**: `/sk/knifes/k083-aktualizacia-komponentov-pre-docusaurus`  
 - **sidebar_label**: `K083 – Aktualizácia komponentov pre Docusaurus`  
 - **sidebar_position**: `83`  
+- **locale**: `sk`  
+- **provenance.org**: ``  
+- **provenance.project**: ``
+
+---
+
+### K084 – Ako aktivovať na GitHube EDU benefity
+
+**Author**: Roman Kazička  
+**Category**: UserGuide  
+**Status**: in progress  
+**Type**: Návod na riešenie  
+**Priority**: low  
+**Date**: 26.09.2025
+
+**Technology**:   
+**Description**: Pokiaľ  spĺňa používateľ kritériá GitHub, môže dostať pre seba pre svoj profil status člena EDU organizácie. Má to viaceroo výhod ako Sites pre privátne repositáre, čo by stálo 3€/mesiac. Detailnejšie v inom Knife. V tomto príspevku je samotná aktivácia týchto benefitov  
+**Context**:   
+**SFIA**: level=, domain=, maturity=  
+**Tags**:   
+**Link**: [K084-ako-aktivovat-na-githube-edu-benefity](./K084-ako-aktivovat-na-githube-edu-benefity/index.md)
+
+**Metadáta (generated)**:  
+- **slug**: `/sk/knifes/k084-ako-aktivovat-na-githube-edu-benefity`  
+- **sidebar_label**: `K084 – Ako aktivovať na GitHube EDU benefity`  
+- **sidebar_position**: `84`  
 - **locale**: `sk`  
 - **provenance.org**: ``  
 - **provenance.project**: ``

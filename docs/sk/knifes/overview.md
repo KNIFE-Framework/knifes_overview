@@ -82,4 +82,5 @@ Cca 6 hodinový webinár o základných nastaveniach EA 16+ | 05.09.2025 | Roman
 | K080 | Explanation | [Docusaurus-vs-github-pages-package-json](/sk/knifes/k080-docusaurus-vs-github-pages-package-json) | now | medium | Docusaurus vs. GitHub Pages. Architektúra | 17.09.2025 | Roman Kazička |  |  |
 | K081 | Infrastructure | [Transparentná -Stabilná infraštruktúra pre Sites](/sk/knifes/k081-transparentna-stabilna-infrastruktura-pre-sites) | idea | hi | Návod na riešenie | 25.09.2025 | Roman Kazička |  |  |
 | K082 | UserGuide pre Markdown | [Ako urobiť text v MD atraktívnejší (emoji)](/sk/knifes/k082-ako-urobit-text-v-md-atraktivnejsi-emoji) | done md | low | Návod na riešenia | 25.09.2025 | Roman Kazička |  |  |
-| K083 | UserGuide | [Aktualizácia komponentov pre Docusaurus](/sk/knifes/k083-aktualizacia-komponentov-pre-docusaurus) | done md | lov | Návod na riešenie | 25.09.2025 | Roman Kazička |  |  |
+| K083 | UserGuide | [Aktualizácia komponentov pre Docusaurus](/sk/knifes/k083-aktualizacia-komponentov-pre-docusaurus) | done md | low | Návod na riešenie | 25.09.2025 | Roman Kazička |  |  |
+| K084 | UserGuide | [Ako aktivovať na GitHube EDU benefity](/sk/knifes/k084-ako-aktivovat-na-githube-edu-benefity) | in progress | low | Návod na riešenie | 26.09.2025 | Roman Kazička |  |  |

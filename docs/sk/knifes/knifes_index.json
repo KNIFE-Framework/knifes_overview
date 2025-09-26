@@ -1488,7 +1488,7 @@
     "status": "new",
     "type": "",
     "category": "",
-    "slug": "/sk/knifes/k062-k062-docusaurus-slugy-a-routing",
+    "slug": "/sk/knifes/k062-docusaurus-slugy-a-routing",
     "sidebar_label": "K062  – Docusaurus slugy a routing",
     "sidebar_position": 62,
     "locale": "sk",
@@ -2029,5 +2029,31 @@
       "project": ""
     },
     "path": "docs/sk/knifes/K083-aktualizacia-komponentov-pre-docusaurus/index.md"
+  },
+  {
+    "id": "K084",
+    "title": "Ako aktivovať na GitHube EDU benefity",
+    "author": "Roman Kazička",
+    "authors": [
+      "Roman Kazička"
+    ],
+    "description": "Pokiaľ  spĺňa používateľ kritériá GitHub, môže dostať pre seba pre svoj profil status člena EDU organizácie. Má to viaceroo výhod ako Sites pre privátne repositáre, čo by stálo 3€/mesiac. Detailnejšie v inom Knife. V tomto príspevku je samotná aktivácia týchto benefitov",
+    "status": "in progress",
+    "type": "",
+    "category": "",
+    "slug": "/sk/knifes/k084-ako-aktivovat-na-githube-edu-benefity",
+    "sidebar_label": "K084 – Ako aktivovať na GitHube EDU benefity",
+    "sidebar_position": 84,
+    "locale": "sk",
+    "tags": [
+      "KNIFE",
+      "images"
+    ],
+    "provenance": {
+      "platform": "github",
+      "org": "",
+      "project": ""
+    },
+    "path": "docs/sk/knifes/K084-ako-aktivovat-na-githube-edu-benefity/index.md"
   }
 ]

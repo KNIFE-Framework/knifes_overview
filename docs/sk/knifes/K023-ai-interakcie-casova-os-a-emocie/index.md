@@ -1,6 +1,6 @@
 ---
 id: "K023"
-guid: "knife-K023-a9ea072a-2fc0-425a-ac4d-9140d92ab221"
+guid: "a9ea072a-2fc0-425a-ac4d-9140d92ab221"
 dao: "knife"
 title: "AI interakcie – časová os a emócie"
 description: "Zaznamenávanie malých interakcií, small-talkov a spätných väzieb pre orientáciu v čase"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K023 – AI interakcie – časová os a emócie"
 sidebar_position: "23"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K023 – AI interakcie – časová os a emócie
+<!-- fm-visible: start -->
+
+> **GUID:** `"a9ea072a-2fc0-425a-ac4d-9140d92ab221"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"v návrhu"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

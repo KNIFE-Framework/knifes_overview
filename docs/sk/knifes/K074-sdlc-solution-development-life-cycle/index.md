@@ -1,6 +1,6 @@
 ---
 id: "K074"
-guid: "knife-K074-55dc93cb-b910-48ef-8ce7-8a72009286f5"
+guid: "55dc93cb-b910-48ef-8ce7-8a72009286f5"
 dao: "knife"
 title: "SDLC-Solution Development Life Cycle"
 description: "Táto metodika vychádza z univerzálneho V – modelu. Podporuje princíly vuizuálneho manažmentu v rámci celého ťivotného cyklu riešení. To záhŕňa desiatky rolí a stovky rolí v rátane zákazníka, dodávateľa, subdodávateľov, a podnikateľského prostredia, regulátorov, zákonov, politickej situácie"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K074 – SDLC-Solution Development Life Cycle"
 sidebar_position: "74"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K074 – SDLC-Solution Development Life Cycle
+<!-- fm-visible: start -->
+
+> **GUID:** `"55dc93cb-b910-48ef-8ce7-8a72009286f5"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"ongoing"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

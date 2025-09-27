@@ -1,6 +1,6 @@
 ---
 id: 06-HowTo
-guid: class-06-HowTo-d740751e-268d-4bdd-b8c6-fff7ff4f9860
+guid: "d740751e-268d-4bdd-b8c6-fff7ff4f9860"
 dao: class
 title: "06.HowTo – EN"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 06.HowTo – EN
+<!-- fm-visible: start -->
+
+> **GUID:** `"d740751e-268d-4bdd-b8c6-fff7ff4f9860"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 This is a sub-section of `07.D7-LessonLearned`.
 

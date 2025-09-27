@@ -1,6 +1,6 @@
 ---
 id: "K066"
-guid: "knife-K066-a2c536d5-d18f-4d80-a2bd-9ef502904b9a"
+guid: "a2c536d5-d18f-4d80-a2bd-9ef502904b9a"
 dao: "knife"
 title: "Porovnanie biznis plánov GitHub"
 description: "Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K066 – Porovnanie biznis plánov GitHub"
 sidebar_position: "66"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K066 – Porovnanie biznis plánov GitHub
+<!-- fm-visible: start -->
+
+> **GUID:** `"a2c536d5-d18f-4d80-a2bd-9ef502904b9a"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
     S akými nákladmi by som mal počítať, ak by som si chcel vybudovať ekosystém na GitHube?

@@ -1,6 +1,6 @@
 ---
 id: K067-github-deployment-strategie
-guid: knife-K067-github-deployment-strategie-c0804116-d26d-40ed-991c-e1aaeb6734d4
+guid: "c0804116-d26d-40ed-991c-e1aaeb6734d4"
 dao: knife
 title: GitHub Deployment Strategie - Pre Zvedavých
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # GitHub Deployment Strategie - Pre Zvedavých
+<!-- fm-visible: start -->
+
+> **GUID:** `"c0804116-d26d-40ed-991c-e1aaeb6734d4"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 Tento návod je určený pre študentov, ktorí chcú rýchlo a jednoducho nasadiť svoj projekt pomocou GitHubu.
 

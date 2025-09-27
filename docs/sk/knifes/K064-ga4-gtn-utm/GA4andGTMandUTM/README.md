@@ -1,6 +1,6 @@
 ---
 id: K064-ga4-gtn-utm-14
-guid: knife-K064-ga4-gtn-utm-c0288078-db1f-4b63-b6d7-50271948f880
+guid: "c0288078-db1f-4b63-b6d7-50271948f880"
 dao: knife
 title: GA4 Guides
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # GA4 Guides
+<!-- fm-visible: start -->
+
+> **GUID:** `"c0288078-db1f-4b63-b6d7-50271948f880"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 **Author:** Roman Kazička  
 **Date:** 2025-08-24  

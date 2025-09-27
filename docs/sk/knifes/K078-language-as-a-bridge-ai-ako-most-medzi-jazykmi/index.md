@@ -1,6 +1,6 @@
 ---
 id: "K078"
-guid: "knife-K078-9fa013f5-0130-4af4-8e6e-db4ca6d38397"
+guid: "9fa013f5-0130-4af4-8e6e-db4ca6d38397"
 dao: "knife"
 title: "Language as a Bridge (AI ako most medzi jazykmi)"
 description: "Language as a Bridge → implementácia, nástroje, procesy (ako)."
@@ -14,6 +14,16 @@ tags: ["KNIFE"]
 sidebar_label: "K078 – Language as a Bridge (AI ako most medzi jazykmi)"
 sidebar_position: "78"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+
 ---
 <!-- body:start -->
 
@@ -22,6 +32,13 @@ locale: "sk"
 ---
 
 # K078 – Language as a Bridge  
+<!-- fm-visible: start -->
+
+> **GUID:** `"9fa013f5-0130-4af4-8e6e-db4ca6d38397"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"ongoing"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 **Téma:** AI ako most medzi jazykmi  
 **Typ:** Praktický návod / Metodika  
 **Status:** Draft  

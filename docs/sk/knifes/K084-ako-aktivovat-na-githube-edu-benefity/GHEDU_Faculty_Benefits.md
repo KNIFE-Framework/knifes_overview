@@ -1,7 +1,7 @@
 ---
 id: K084_01
 parent: K084
-guid: knife-k084_01-86b73fab-96ed-432b-aeb6-e262b378aa27
+guid: "86b73fab-96ed-432b-aeb6-e262b378aa27"
 dao: knife
 title: ""
 author: ""
@@ -13,8 +13,22 @@ category: deliverable
 tags: []
 sidebar_label: "K084_01 – Aktivácia GitHub Education Faculty Benefits"
 locale: sk
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 # Aktivácia GitHub Education Faculty Benefits
+<!-- fm-visible: start -->
+
+> **GUID:** `"86b73fab-96ed-432b-aeb6-e262b378aa27"`
+>   
+> **Category:** `deliverable` · **Type:** `knife` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 1. Otvor portál GitHub Education
 👉 [https://education.github.com/benefits](https://education.github.com/benefits)

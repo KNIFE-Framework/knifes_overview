@@ -1,7 +1,7 @@
 ---
 id: K083_04
 parent: K083
-guid: knife-k083_04-ea4135ce-9848-4fef-918a-a9fbccba35d3
+guid: "ea4135ce-9848-4fef-918a-a9fbccba35d3"
 dao: knife
 title: ""
 author: ""
@@ -13,8 +13,23 @@ category: deliverable
 tags: []
 sidebar_label: "K083_04 –"
 locale: sk
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+
 ---
 # Contributing Guide
+<!-- fm-visible: start -->
+
+> **GUID:** `"ea4135ce-9848-4fef-918a-a9fbccba35d3"`
+>   
+> **Category:** `deliverable` · **Type:** `knife` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 Tento projekt používa **Node.js v22 (LTS)** a Docusaurus 3.
 Aktualizácie balíkov vykonáva len maintainer.

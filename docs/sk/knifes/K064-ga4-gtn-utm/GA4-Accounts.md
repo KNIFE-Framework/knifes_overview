@@ -1,6 +1,6 @@
 ---
 id: K064-ga4-gtn-utm-01
-guid: knife-K064-ga4-gtn-utm-c1d2b5f6-69c3-4e7d-957a-865abace0561
+guid: "c1d2b5f6-69c3-4e7d-957a-865abace0561"
 dao: knife
 title: GA4 Account Setup Checklist
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # GA4 Account Setup Checklist
+<!-- fm-visible: start -->
+
+> **GUID:** `"c1d2b5f6-69c3-4e7d-957a-865abace0561"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 **Author:** Roman Kazička  
 **Date:** 2025-08-21  

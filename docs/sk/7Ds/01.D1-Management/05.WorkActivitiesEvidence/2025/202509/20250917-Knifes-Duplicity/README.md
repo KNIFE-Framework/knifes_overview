@@ -1,6 +1,6 @@
 ---
 id: readme
-guid: class-readme-b8514b71-e9d7-4e0e-b3ca-dbd2536f423c
+guid: "b8514b71-e9d7-4e0e-b3ca-dbd2536f423c"
 dao: class
 title: 20250917-Knifes-Duplicity
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # KNIFE De-dupe Report
+<!-- fm-visible: start -->
+
+> **GUID:** `"b8514b71-e9d7-4e0e-b3ca-dbd2536f423c"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## Použitie
 1) Skopíruj `scripts/knife-dedupe-report.mjs` do rootu svojho repozitára.

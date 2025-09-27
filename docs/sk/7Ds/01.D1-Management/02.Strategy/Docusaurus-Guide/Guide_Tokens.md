@@ -1,6 +1,6 @@
 ---
 id: guide_tokens
-guid: class-guide_tokens-4148f6d5-5dd4-4280-a694-f85e85410fd1
+guid: "4148f6d5-5dd4-4280-a694-f85e85410fd1"
 dao: class
 title: Docusaurus-Guide
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # Token Management
+<!-- fm-visible: start -->
+
+> **GUID:** `"4148f6d5-5dd4-4280-a694-f85e85410fd1"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 Details about how to manage tokens, security practices, and usage examples.
 
 # Git Worktree Deploy Guide

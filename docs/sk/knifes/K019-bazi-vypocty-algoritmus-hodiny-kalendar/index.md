@@ -1,6 +1,6 @@
 ---
 id: "K019"
-guid: "knife-K019-986a2d27-e983-4c02-b17b-f54b5625c188"
+guid: "986a2d27-e983-4c02-b17b-f54b5625c188"
 dao: "knife"
 title: "BaZi výpočty – algoritmus, hodiny, kalendár"
 description: "Výpočtový rámec BaZi v Pythone alebo Exceli, denné a hodinové analýzy, poradca"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K019 – BaZi výpočty – algoritmus, hodiny, kalendár"
 sidebar_position: "19"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K019 – BaZi výpočty – algoritmus, hodiny, kalendár
+<!-- fm-visible: start -->
+
+> **GUID:** `"986a2d27-e983-4c02-b17b-f54b5625c188"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"zaradené"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

@@ -1,6 +1,6 @@
 ---
 id: K064-ga4-gtn-utm-06
-guid: knife-K064-ga4-gtn-utm-9c977a4c-1cdb-4106-8b0d-6c3ebb7e4331
+guid: "9c977a4c-1cdb-4106-8b0d-6c3ebb7e4331"
 dao: knife
 title: "Google Analytics: Account vs Property vs Stream"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # Google Analytics: Account vs Property vs Stream
+<!-- fm-visible: start -->
+
+> **GUID:** `"9c977a4c-1cdb-4106-8b0d-6c3ebb7e4331"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 **Author:** Roman Kazička  
 **Date:** 2025-08-22  

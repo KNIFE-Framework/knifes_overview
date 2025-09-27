@@ -1,6 +1,6 @@
 ---
 id: "K027"
-guid: "knife-K027-3264251d-6fb5-41f2-b8eb-9b726c2542f2"
+guid: "3264251d-6fb5-41f2-b8eb-9b726c2542f2"
 dao: "knife"
 title: "Git For Dummies – Central Concepts"
 description: "Jednoduché vysvetlenie Git základov pre začiatočníkov v GitEA (organizácia, repozitár, working directory, atď.)"
@@ -14,6 +14,15 @@ tags: ["KNIFE", "images"]
 sidebar_label: "K027 – Git For Dummies – Central Concepts"
 sidebar_position: "27"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K027 – Git For Dummies – Central Concepts
+<!-- fm-visible: start -->
+
+> **GUID:** `"3264251d-6fb5-41f2-b8eb-9b726c2542f2"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"v príprave"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

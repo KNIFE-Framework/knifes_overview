@@ -1,7 +1,7 @@
 ---
 id: K083_03
 parent: K083
-guid: knife-k083_03-666c06de-ec54-45cd-be1a-38b0333809e2
+guid: "666c06de-ec54-45cd-be1a-38b0333809e2"
 dao: knife
 title: ""
 author: ""
@@ -13,8 +13,22 @@ category: deliverable
 tags: []
 sidebar_label: "K083_03 –"
 locale: sk
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 # Študentský checklist
+<!-- fm-visible: start -->
+
+> **GUID:** `"666c06de-ec54-45cd-be1a-38b0333809e2"`
+>   
+> **Category:** `deliverable` · **Type:** `knife` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## Čo nikdy nerobiť
 - ❌ Neupgradovať balíky (`npm update`, `ncu`, …).

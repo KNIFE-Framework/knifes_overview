@@ -1,6 +1,6 @@
 ---
 id: "K031"
-guid: "knife-K031-0b3729dc-ca0b-4025-879a-c6fc72a83d84"
+guid: "0b3729dc-ca0b-4025-879a-c6fc72a83d84"
 dao: "knife"
 title: "„Document-as-Code“ framework"
 description: "Tvorba dokumentov ako SDLC proces. Diplomovky, sprievodná dokumentácia pre zákazníklov, …."
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K031 – „Document-as-Code“ framework"
 sidebar_position: "31"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K031 – „Document-as-Code“ framework
+<!-- fm-visible: start -->
+
+> **GUID:** `"0b3729dc-ca0b-4025-879a-c6fc72a83d84"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"v riešení"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

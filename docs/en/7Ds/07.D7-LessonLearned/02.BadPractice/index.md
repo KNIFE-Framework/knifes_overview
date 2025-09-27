@@ -1,6 +1,6 @@
 ---
 id: 02-BadPractice
-guid: class-02-BadPractice-f3895296-c370-41bd-8df4-2c3d574dfe29
+guid: "f3895296-c370-41bd-8df4-2c3d574dfe29"
 dao: class
 title: "02.BadPractice – EN"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 02.BadPractice – EN
+<!-- fm-visible: start -->
+
+> **GUID:** `"f3895296-c370-41bd-8df4-2c3d574dfe29"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 This is a sub-section of `07.D7-LessonLearned`.
 

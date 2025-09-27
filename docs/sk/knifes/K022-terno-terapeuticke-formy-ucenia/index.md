@@ -1,6 +1,6 @@
 ---
 id: "K022"
-guid: "knife-K022-27ffa9b9-04b5-4a79-921c-38123de82f2d"
+guid: "27ffa9b9-04b5-4a79-921c-38123de82f2d"
 dao: "knife"
 title: "TERNO – terapeutické formy učenia"
 description: "Satira, emócie a storytelling ako forma výuky a reflektovania reality"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K022 – TERNO – terapeutické formy učenia"
 sidebar_position: "22"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K022 – TERNO – terapeutické formy učenia
+<!-- fm-visible: start -->
+
+> **GUID:** `"27ffa9b9-04b5-4a79-921c-38123de82f2d"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"plánované"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

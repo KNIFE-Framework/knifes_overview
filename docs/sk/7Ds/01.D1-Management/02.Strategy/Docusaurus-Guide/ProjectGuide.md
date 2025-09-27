@@ -1,6 +1,6 @@
 ---
 id: projectguide
-guid: class-projectguide-baf0a510-01c9-40d8-b8fe-e78d4dbddbbe
+guid: "baf0a510-01c9-40d8-b8fe-e78d4dbddbbe"
 dao: class
 title: Docusaurus-Guide
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # Project Guide - Docusaurus static HTML
+<!-- fm-visible: start -->
+
+> **GUID:** `"baf0a510-01c9-40d8-b8fe-e78d4dbddbbe"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ---
 

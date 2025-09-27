@@ -1,6 +1,6 @@
 ---
 id: "K039"
-guid: "knife-K039-d65f381f-c6dd-43af-a6e3-1742a5adb17d"
+guid: "d65f381f-c6dd-43af-a6e3-1742a5adb17d"
 dao: "knife"
 title: "Sementicke a kontextove vyhladavanie nad GitHUB"
 description: "Nestaci mat len data a informacie, je nevyhnutne ich spajat a dotazovat sa"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K039 – Sementicke a kontextove vyhladavanie nad GitHUB"
 sidebar_position: "39"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K039 – Sementicke a kontextove vyhladavanie nad GitHUB
+<!-- fm-visible: start -->
+
+> **GUID:** `"d65f381f-c6dd-43af-a6e3-1742a5adb17d"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"init"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

@@ -1,6 +1,6 @@
 ---
 id: "K062"
-guid: "knife-K062-7b469b9d-1eb5-48f6-a853-b17f4c775066"
+guid: "7b469b9d-1eb5-48f6-a853-b17f4c775066"
 dao: "knife"
 title: "K062 – Docusaurus slugy a routing"
 description: "Ako fungujú SLUGS v Docusaurus"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K062  – Docusaurus slugy a routing"
 sidebar_position: "62"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K062  – Docusaurus slugy a routing
+<!-- fm-visible: start -->
+
+> **GUID:** `"7b469b9d-1eb5-48f6-a853-b17f4c775066"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

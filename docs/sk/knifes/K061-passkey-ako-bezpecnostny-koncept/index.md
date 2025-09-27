@@ -1,6 +1,6 @@
 ---
 id: "K061"
-guid: "knife-K061-35066cd7-1202-4c04-9cfe-02512ca5fa7f"
+guid: "35066cd7-1202-4c04-9cfe-02512ca5fa7f"
 dao: "knife"
 title: "Passkey ako bezpečnostný koncept"
 description: "Ako funguje keypass?"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K061 – Passkey ako bezpečnostný koncept"
 sidebar_position: "61"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K061 – Passkey ako bezpečnostný koncept
+<!-- fm-visible: start -->
+
+> **GUID:** `"35066cd7-1202-4c04-9cfe-02512ca5fa7f"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

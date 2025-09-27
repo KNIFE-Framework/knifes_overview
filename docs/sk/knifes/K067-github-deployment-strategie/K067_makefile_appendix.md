@@ -1,6 +1,6 @@
 ---
 id: K067_makefile_appendix
-guid: knife-K067_makefile_appendix-da331cd7-ea63-41fc-ab47-216b48f9eed9
+guid: "da331cd7-ea63-41fc-ab47-216b48f9eed9"
 dao: knife
 title: "K067 Appendix – Makefile pre GitHub Pages (A/B režimy)"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # K067 Appendix – Makefile pre GitHub Pages (A/B režimy)
+<!-- fm-visible: start -->
+
+> **GUID:** `"da331cd7-ea63-41fc-ab47-216b48f9eed9"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 Tento appendix obsahuje **kompletný Makefile** pre šablónu `git_class_template_v1` s dvomi nasadzovacími režimami:
 

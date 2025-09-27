@@ -1,6 +1,6 @@
 ---
 id: 07-D7-LessonLearned
-guid: class-07-D7-LessonLearned-f4376113-9d1f-4cbf-9680-9b6d66c74403
+guid: "f4376113-9d1f-4cbf-9680-9b6d66c74403"
 dao: class
 title: "07.D7-LessonLearned – EN"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 07.D7-LessonLearned – EN
+<!-- fm-visible: start -->
+
+> **GUID:** `"f4376113-9d1f-4cbf-9680-9b6d66c74403"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 📁 Subsections:
 

@@ -7,8 +7,25 @@ status: draft
 locale: sk
 tags: ["KNIFE"]
 sidebar_label: "📑 KNIFE Overview – List"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+guid: "1def8733-d9b5-4cab-8ed3-a3a8c1790edc"
 ---
 # 📑 KNIFE Overview – List
+<!-- fm-visible: start -->
+
+> **GUID:** `"1def8733-d9b5-4cab-8ed3-a3a8c1790edc"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 | ID | Category | Title | Status | Priority | Type | Date | Author | Org | Project |
 |:--:|:--------:|:------|:------:|--------:|:----:|:----:|:------:|:---:|:-------:|

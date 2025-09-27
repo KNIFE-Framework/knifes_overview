@@ -1,6 +1,6 @@
 ---
 id: "K079"
-guid: "knife-K079-d668f12d-7a40-4940-998f-13dba8edeb2b"
+guid: "d668f12d-7a40-4940-998f-13dba8edeb2b"
 dao: "knife"
 title: "Čo znamená slovo že je niečo idempotentné?"
 description: "Dosť často sa začalo používať slovo idempotentná operácia. Ako to ale vzniklo? Prečo to vzniklo?"
@@ -14,6 +14,16 @@ tags: ["KNIFE"]
 sidebar_label: "K079 – Čo znamená slovo že je niečo idempotentné?"
 sidebar_position: "79"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+
 ---
 <!-- body:start -->
 
@@ -21,6 +31,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md)
 ---
 # KNIFE K079 – Čo znamená slovo že je niečo idempotentné?
+<!-- fm-visible: start -->
+
+> **GUID:** `"d668f12d-7a40-4940-998f-13dba8edeb2b"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"now"` · **Author:** "Roman Kazička" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 
 Idempotentnosť rieši istotu, že keď niečo urobím viackrát, výsledok zostane rovnaký. V praxi je to garancia stability – opakovanie operácie neprinesie novú zmenu.

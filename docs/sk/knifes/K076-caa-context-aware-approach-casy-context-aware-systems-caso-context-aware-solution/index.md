@@ -1,6 +1,6 @@
 ---
 id: "K076"
-guid: "knife-K076-0486c717-dc17-41c2-ab44-f2f365c4a7be"
+guid: "0486c717-dc17-41c2-ab44-f2f365c4a7be"
 dao: "knife"
 title: "CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution"
 description: "Neexistuje situácia, kedy môžeme ignorovať kontext. Neznalosť tohto princípu vedie k obrovským nepochopeniam, chybám, manipuláciam, sporom. Úplne zbytočne. Ak sa na začiatku ujasní kontext, tak okamžite sa dostavuje porozumenie a nastáva konštruktívny prístup."
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K076 – CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution"
 sidebar_position: "76"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K076 – CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution
+<!-- fm-visible: start -->
+
+> **GUID:** `"0486c717-dc17-41c2-ab44-f2f365c4a7be"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"ongoing"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

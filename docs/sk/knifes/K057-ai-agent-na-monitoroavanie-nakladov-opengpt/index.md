@@ -1,6 +1,6 @@
 ---
 id: "K057"
-guid: "knife-K057-1ee7fec7-5397-4920-b47d-48035c5c9125"
+guid: "1ee7fec7-5397-4920-b47d-48035c5c9125"
 dao: "knife"
 title: "AI Agent na monitoroavanie nákladov OpenGPT"
 description: "Automatické reportovanie vstupných a výstupných tokenov.Presne tak – toto má perfektný predpoklad stať sa AI Agentom"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K057 – AI Agent na monitoroavanie nákladov OpenGPT"
 sidebar_position: "57"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K057 – AI Agent na monitoroavanie nákladov OpenGPT
+<!-- fm-visible: start -->
+
+> **GUID:** `"1ee7fec7-5397-4920-b47d-48035c5c9125"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

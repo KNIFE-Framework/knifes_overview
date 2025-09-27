@@ -1,6 +1,6 @@
 ---
 id: sk-index
-guid: class-sk-index-521ba7af-ca2b-4165-97a7-98f7dc9a2dcc
+guid: "521ba7af-ca2b-4165-97a7-98f7dc9a2dcc"
 dao: class
 title: "KNIFE Framework – Slovenská sekcia"
 description: "Slovenské materiály a rozcestník KNIFES."
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 📘 KNIFES – Slovenské príspevky
+<!-- fm-visible: start -->
+
+> **GUID:** `"521ba7af-ca2b-4165-97a7-98f7dc9a2dcc"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 V tejto sekcii nájdeš všetky **KNIFE príspevky**.  
 Každý KNIFE má vlastný folder, kde je uložený hlavný článok a podpriečinky (`img/`, `multimedia/`).

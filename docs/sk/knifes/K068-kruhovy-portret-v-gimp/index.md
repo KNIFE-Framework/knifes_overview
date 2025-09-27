@@ -1,6 +1,6 @@
 ---
 id: "K068"
-guid: "knife-K068-bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e"
+guid: "bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e"
 dao: "knife"
 title: "Kruhový portrét v GIMP"
 description: "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút"
@@ -14,6 +14,15 @@ tags: ["KNIFE", "images"]
 sidebar_label: "K068 – Kruhový portrét v GIMP"
 sidebar_position: "68"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -22,6 +31,13 @@ locale: "sk"
 ---
 
 # K068 – Ako urobiť kruhový portrét s transparentným pozadím a efektom
+<!-- fm-visible: start -->
+
+> **GUID:** `"bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 **Category**: Vizualizácia / Tooling  
 **Status**: hotové  

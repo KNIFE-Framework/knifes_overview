@@ -1,6 +1,6 @@
 ---
 id: "K010"
-guid: "knife-K010-833ed8e5-8144-4de4-b63a-1d6000dee2a1"
+guid: "833ed8e5-8144-4de4-b63a-1d6000dee2a1"
 dao: "knife"
 title: "OpenAI klient – vlastná AI komunikácia"
 description: "Appka s prepojením na OpenAI API a archív komunikácie"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K010 – OpenAI klient – vlastná AI komunikácia"
 sidebar_position: "10"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K010 – OpenAI klient – vlastná AI komunikácia
+<!-- fm-visible: start -->
+
+> **GUID:** `"833ed8e5-8144-4de4-b63a-1d6000dee2a1"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"začiatok"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

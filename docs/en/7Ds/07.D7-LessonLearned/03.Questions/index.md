@@ -1,6 +1,6 @@
 ---
 id: 03-Questions
-guid: class-03-Questions-0fa1e038-e82b-496d-bb8a-50d3a1ef7ea4
+guid: "0fa1e038-e82b-496d-bb8a-50d3a1ef7ea4"
 dao: class
 title: "03.Questions – EN"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 03.Questions – EN
+<!-- fm-visible: start -->
+
+> **GUID:** `"0fa1e038-e82b-496d-bb8a-50d3a1ef7ea4"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 This is a sub-section of `07.D7-LessonLearned`.
 

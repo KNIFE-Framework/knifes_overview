@@ -1,6 +1,6 @@
 ---
 id: "K051"
-guid: "knife-K051-9b195cd2-e816-41b8-98be-a2a0a76538ef"
+guid: "9b195cd2-e816-41b8-98be-a2a0a76538ef"
 dao: "knife"
 title: "Google analytics – Fundamentals"
 description: "Bez spätnej väzby je všetko náročnejšie. GA4 poskytuje marketingové spätné väzby"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K051 – Google analytics – Fundamentals"
 sidebar_position: "51"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K051 – Google analytics – Fundamentals
+<!-- fm-visible: start -->
+
+> **GUID:** `"9b195cd2-e816-41b8-98be-a2a0a76538ef"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

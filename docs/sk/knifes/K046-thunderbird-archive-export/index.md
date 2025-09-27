@@ -1,6 +1,6 @@
 ---
 id: "K046"
-guid: "knife-K046-b045421e-412b-4e20-b0ad-ebe5e1fbed9f"
+guid: "b045421e-412b-4e20-b0ad-ebe5e1fbed9f"
 dao: "knife"
 title: "Thunderbird – Archive-export"
 description: "Omylom som poslal e-mail do archivu. Mam v  poste asi 60GB udajov. Ako to riesit?"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K046 – Thunderbird – Archive-export"
 sidebar_position: "46"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K046 – Thunderbird – Archive-export
+<!-- fm-visible: start -->
+
+> **GUID:** `"b045421e-412b-4e20-b0ad-ebe5e1fbed9f"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"done md"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

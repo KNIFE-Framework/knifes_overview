@@ -1,7 +1,7 @@
 ---
 id: K083_02
 parent: K083
-guid: knife-k083_02-74cc1121-c916-4a8d-b1cd-78b93bda064f
+guid: "74cc1121-c916-4a8d-b1cd-78b93bda064f"
 dao: knife
 title: ""
 author: ""
@@ -13,8 +13,23 @@ category: deliverable
 tags: []
 sidebar_label: "K083_02 –"
 locale: sk
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+
 ---
 # Rýchla cesta k Node 22 (vyber si 1 možnosť)
+<!-- fm-visible: start -->
+
+> **GUID:** `"74cc1121-c916-4a8d-b1cd-78b93bda064f"`
+>   
+> **Category:** `deliverable` · **Type:** `knife` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## A) Homebrew (najjednoduchšie na Macu)
 ```bash

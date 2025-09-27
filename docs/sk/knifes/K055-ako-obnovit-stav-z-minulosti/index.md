@@ -1,6 +1,6 @@
 ---
 id: "K055"
-guid: "knife-K055-547ee1b8-84a2-4c6c-97c3-205967de0847"
+guid: "547ee1b8-84a2-4c6c-97c3-205967de0847"
 dao: "knife"
 title: "Ako obnoviť stav z minulosti?"
 description: "Ako si obnoviť pokazné súbory? Ak mám v minulosti zachytené dobré údaje, nie je problém sa k nim vrátiť."
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K055 – Ako obnoviť stav z minulosti?"
 sidebar_position: "55"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K055 – Ako obnoviť stav z minulosti?
+<!-- fm-visible: start -->
+
+> **GUID:** `"547ee1b8-84a2-4c6c-97c3-205967de0847"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"inprogress"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

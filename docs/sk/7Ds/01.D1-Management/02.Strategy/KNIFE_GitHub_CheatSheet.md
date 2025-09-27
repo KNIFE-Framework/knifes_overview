@@ -1,6 +1,6 @@
 ---
 id: knife_github_cheatsheet
-guid: class-knife_github_cheatsheet-a2c01b52-d968-456d-9b69-4b80c3390eee
+guid: "a2c01b52-d968-456d-9b69-4b80c3390eee"
 dao: class
 title: "02.Strategy"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 🛡️ KNIFE Cheat Sheet: GitHub Issues, Milestones, Projects
+<!-- fm-visible: start -->
+
+> **GUID:** `"a2c01b52-d968-456d-9b69-4b80c3390eee"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 This cheat sheet summarizes how to manage KNIFE tasks and progress using GitHub tools.
 

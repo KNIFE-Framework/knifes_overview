@@ -1,6 +1,6 @@
 ---
 id: "K083"
-guid: "knife-K083-7e41fe41-1fcc-4dc9-912d-8b422c9ca272"
+guid: "7e41fe41-1fcc-4dc9-912d-8b422c9ca272"
 dao: "knife"
 title: "Aktualizácia komponentov pre Docusaurus"
 description: "Všetko má životný cyklus. Naše dokumenty, ale aj systémy a nástroje, ktoré používame. Preto nikdy nemáme stabilné, nemenné prostredie. Tak Aj docusaurus sa stále mní a vznikajú závislosti a človek sa môže zblázniť a rieši infraštruktúru a nie to čo potrebuje riešiť."
@@ -14,6 +14,16 @@ tags: ["KNIFE"]
 sidebar_label: "K083 – Aktualizácia komponentov pre Docusaurus"
 sidebar_position: "83"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+
 ---
 <!-- body:start -->
 
@@ -21,6 +31,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md)
 ---
 # KNIFE K083 – Aktualizácia komponentov pre Docusaurus
+<!-- fm-visible: start -->
+
+> **GUID:** `"7e41fe41-1fcc-4dc9-912d-8b422c9ca272"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"done md"` · **Author:** "Roman Kazička" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 - Aktualizácia OS, 

@@ -1,6 +1,6 @@
 ---
 id: "02.strategy"
-guid: "class-02.strategy-3341260c-ab5d-423a-b7f9-deaf588f2021"
+guid: "3341260c-ab5d-423a-b7f9-deaf588f2021"
 dao: class
 title: "02.Strategy"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 02.Strategy
+<!-- fm-visible: start -->
+
+> **GUID:** `"3341260c-ab5d-423a-b7f9-deaf588f2021"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 id: index
 title: 02.Strategy

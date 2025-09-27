@@ -1,6 +1,6 @@
 ---
 id: 04-Proposals
-guid: class-04-Proposals-77c64a8e-55d4-407b-ae45-6be1b12b75f0
+guid: "77c64a8e-55d4-407b-ae45-6be1b12b75f0"
 dao: class
 title: "04.Proposals – EN"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 04.Proposals – EN
+<!-- fm-visible: start -->
+
+> **GUID:** `"77c64a8e-55d4-407b-ae45-6be1b12b75f0"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 This is a sub-section of `07.D7-LessonLearned`.
 

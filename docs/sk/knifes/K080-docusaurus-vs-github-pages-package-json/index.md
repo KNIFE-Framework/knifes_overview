@@ -1,6 +1,6 @@
 ---
 id: "K080"
-guid: "knife-K080-5174fcab-7594-4e7e-8582-7396133dec8c"
+guid: "5174fcab-7594-4e7e-8582-7396133dec8c"
 dao: "knife"
 title: "Docusaurus-vs-github-pages-package-json"
 description: "Ako vytvoriť OS agnostcké prostredie pre KNIFE? Poznanie architektúry odpovie na otázku jednotného systému pre vývoj KNIFES"
@@ -14,6 +14,16 @@ tags: ["KNIFE"]
 sidebar_label: "K080 – Docusaurus-vs-github-pages-package-json"
 sidebar_position: "80"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+
 ---
 <!-- body:start -->
 
@@ -21,6 +31,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md)
 ---
 # KNIFE K080 – Docusaurus-vs-github-pages-package-json
+<!-- fm-visible: start -->
+
+> **GUID:** `"5174fcab-7594-4e7e-8582-7396133dec8c"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"now"` · **Author:** "Roman Kazička" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

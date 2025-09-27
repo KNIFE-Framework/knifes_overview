@@ -1,6 +1,6 @@
 ---
 id: "K054"
-guid: "knife-K054-e6a19133-a51b-4041-a811-6ccd8611fde0"
+guid: "e6a19133-a51b-4041-a811-6ccd8611fde0"
 dao: "knife"
 title: "Docusaurus Advanced Deployment Pipeline"
 description: "Kontrola referencií v Docusaurus/MkDocs"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K054 – Docusaurus Advanced Deployment Pipeline"
 sidebar_position: "54"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K054 – Docusaurus Advanced Deployment Pipeline
+<!-- fm-visible: start -->
+
+> **GUID:** `"e6a19133-a51b-4041-a811-6ccd8611fde0"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

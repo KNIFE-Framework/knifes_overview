@@ -1,6 +1,6 @@
 ---
 id: readme_task_management_20250810-123634
-guid: class-readme_task_management_20250810-123634-94f360ff-201a-4c7c-bfc7-c2255ee6c7fb
+guid: "94f360ff-201a-4c7c-bfc7-c2255ee6c7fb"
 dao: class
 title: Knife_Management
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # Project Task Management – Minimal, GitHub-first
+<!-- fm-visible: start -->
+
+> **GUID:** `"94f360ff-201a-4c7c-bfc7-c2255ee6c7fb"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 _Last updated: 20250810-123634_
 

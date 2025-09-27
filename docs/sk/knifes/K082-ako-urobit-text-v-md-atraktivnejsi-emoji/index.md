@@ -1,6 +1,6 @@
 ---
 id: "K082"
-guid: "knife-K082-060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3"
+guid: "060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3"
 dao: "knife"
 title: "Ako urobiť text v MD atraktívnejší (emoji)"
 description: "Čítanie s porozumením je veľmi náročná disciplína. Preto je dôležité priblížiť text ku príbehu pomocou malých obrázkov. Dobrý kandif’dát je EMOJI"
@@ -14,6 +14,16 @@ tags: ["KNIFE"]
 sidebar_label: "K082 – Ako urobiť text v MD atraktívnejší (emoji)"
 sidebar_position: "82"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+
 ---
 <!-- body:start -->
 
@@ -21,6 +31,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md)
 ---
 # KNIFE K082 – Ako urobiť text v MD atraktívnejší (emoji)
+<!-- fm-visible: start -->
+
+> **GUID:** `"060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"done md"` · **Author:** "Roman Kazička" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 - Obyčajný plain  text je fádny a oko sa nemá na čom zastaviť. Emoji malý grafický symbol, vyjadrujúci príbeh. Malá kotvička pre oko aj pre mozog.  

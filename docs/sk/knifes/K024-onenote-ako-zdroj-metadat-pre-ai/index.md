@@ -1,6 +1,6 @@
 ---
 id: "K024"
-guid: "knife-K024-18f0681d-54db-4a41-a7fd-b77386a7299e"
+guid: "18f0681d-54db-4a41-a7fd-b77386a7299e"
 dao: "knife"
 title: "OneNote ako zdroj metadát pre AI"
 description: "Prepájanie osobného poznámkového systému s AI klientom a projektmi"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K024 – OneNote ako zdroj metadát pre AI"
 sidebar_position: "24"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K024 – OneNote ako zdroj metadát pre AI
+<!-- fm-visible: start -->
+
+> **GUID:** `"18f0681d-54db-4a41-a7fd-b77386a7299e"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"v návrhu"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

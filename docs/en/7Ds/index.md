@@ -1,6 +1,6 @@
 ---
 id: 7Ds
-guid: class-7Ds-318192aa-8679-402c-996c-b5d65b775472
+guid: "318192aa-8679-402c-996c-b5d65b775472"
 dao: class
 title: "7Ds Dashboard (EN)"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 7Ds Dashboard (EN)
+<!-- fm-visible: start -->
+
+> **GUID:** `"318192aa-8679-402c-996c-b5d65b775472"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 📂 Dimensions:
 

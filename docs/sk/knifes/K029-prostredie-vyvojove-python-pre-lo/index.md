@@ -1,6 +1,6 @@
 ---
 id: "K029"
-guid: "knife-K029-31b04e60-ff57-4a5b-95b3-e24be0a1e338"
+guid: "31b04e60-ff57-4a5b-95b3-e24be0a1e338"
 dao: "knife"
 title: "Prostredie vývojové python pre LO"
 description: "Profi prostredie pre pyhton dev v LO, OOODEV"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K029 – Prostredie vývojové python pre LO"
 sidebar_position: "29"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](/sk/knifes/overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K029 – Prostredie vývojové python pre LO
+<!-- fm-visible: start -->
+
+> **GUID:** `"31b04e60-ff57-4a5b-95b3-e24be0a1e338"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"riešené"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

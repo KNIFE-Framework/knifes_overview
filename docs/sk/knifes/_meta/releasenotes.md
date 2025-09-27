@@ -1,6 +1,6 @@
 ---
 id: releasenotes
-guid: knife-releasenotes-4b66c05e-f376-4782-822c-bc023083493f
+guid: "4b66c05e-f376-4782-822c-bc023083493f"
 dao: knife
 title: "KNIFE Overview — Release v1.1.1 (2025-09-07)"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # KNIFE Overview — Release v1.1.1 (2025-09-07)
+<!-- fm-visible: start -->
+
+> **GUID:** `"4b66c05e-f376-4782-822c-bc023083493f"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 > Veľa úprav ale veľký problém nastal pri generovaní Detailného overview a s premenovaním "docs/sk/KNIFES"  na knife... 
 > V budúcnosti musím nahradiť prehľady detailné dynamickým generovaním.

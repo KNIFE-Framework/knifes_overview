@@ -1,6 +1,6 @@
 ---
 id: K067_docusaurus_config_ts_appendix
-guid: knife-K067_docusaurus_config_ts_appendix-7c3ff713-c422-450c-a765-fe0ab6edc560
+guid: "7c3ff713-c422-450c-a765-fe0ab6edc560"
 dao: knife
 title: "K067 Appendix – docusaurus.config.ts (ENV‑driven)"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # K067 Appendix – docusaurus.config.ts (ENV‑driven)
+<!-- fm-visible: start -->
+
+> **GUID:** `"7c3ff713-c422-450c-a765-fe0ab6edc560"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 Tento appendix prináša **univerzálny** `docusaurus.config.ts`, ktorý sa prispôsobí:
 

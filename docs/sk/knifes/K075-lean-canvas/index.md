@@ -1,6 +1,6 @@
 ---
 id: "K075"
-guid: "knife-K075-8566c5a6-e260-4cb7-bf8e-d7eedc89bf7f"
+guid: "8566c5a6-e260-4cb7-bf8e-d7eedc89bf7f"
 dao: "knife"
 title: "Lean canvas"
 description: "Implemetácia Lean canvas do celkového frameworku pre podporu vytvárania riešení. Patrí ku metodike Q12"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K075 – Lean canvas"
 sidebar_position: "75"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K075 – Lean canvas
+<!-- fm-visible: start -->
+
+> **GUID:** `"8566c5a6-e260-4cb7-bf8e-d7eedc89bf7f"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"done md"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

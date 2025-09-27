@@ -1,6 +1,6 @@
 ---
 id: "K056"
-guid: "knife-K056-b27765d2-8514-437e-91f2-5ed1d4f76c43"
+guid: "b27765d2-8514-437e-91f2-5ed1d4f76c43"
 dao: "knife"
 title: "Central Panel for GIT – SDLC Git Management Makefile"
 description: "•…"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K056 – Central Panel for GIT – SDLC Git Management Makefile"
 sidebar_position: "56"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K056 – Central Panel for GIT – SDLC Git Management Makefile
+<!-- fm-visible: start -->
+
+> **GUID:** `"b27765d2-8514-437e-91f2-5ed1d4f76c43"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"done md"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

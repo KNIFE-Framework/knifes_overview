@@ -1,6 +1,6 @@
 ---
 id: K064-ga4-gtn-utm-07
-guid: knife-K064-ga4-gtn-utm-936bcae4-7627-4d7a-a583-02ca86d69835
+guid: "936bcae4-7627-4d7a-a583-02ca86d69835"
 dao: knife
 title: "Getting Started with GA4 + GTM"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # Getting Started with GA4 + GTM
+<!-- fm-visible: start -->
+
+> **GUID:** `"936bcae4-7627-4d7a-a583-02ca86d69835"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 **Author:** Roman Kazička  
 **Date:** 2025-08-24  

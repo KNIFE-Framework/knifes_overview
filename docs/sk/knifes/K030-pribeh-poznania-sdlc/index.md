@@ -1,6 +1,6 @@
 ---
 id: "K030"
-guid: "knife-K030-553c7b60-ab06-4412-96dc-84d0ea2fa323"
+guid: "553c7b60-ab06-4412-96dc-84d0ea2fa323"
 dao: "knife"
 title: "Príbeh poznania SDLC"
 description: "Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisať a bolo by to v kontexte KM, SDLC"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K030 – Príbeh poznania SDLC"
 sidebar_position: "30"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K030 – Príbeh poznania SDLC
+<!-- fm-visible: start -->
+
+> **GUID:** `"553c7b60-ab06-4412-96dc-84d0ea2fa323"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"v riešení"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

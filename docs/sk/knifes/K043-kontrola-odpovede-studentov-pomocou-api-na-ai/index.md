@@ -1,6 +1,6 @@
 ---
 id: "K043"
-guid: "knife-K043-50afe040-3e25-46cc-bb56-8b594dadf3cf"
+guid: "50afe040-3e25-46cc-bb56-8b594dadf3cf"
 dao: "knife"
 title: "Kontrola odpovedé študentov pomocou API na AI"
 description: "Pre veľký počet študentov nie je možné kontrolovať odpovede na voľné otázky. AI by mohlo pomôcť."
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K043 – Kontrola odpovedé študentov pomocou API na AI"
 sidebar_position: "43"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K043 – Kontrola odpovedé študentov pomocou API na AI
+<!-- fm-visible: start -->
+
+> **GUID:** `"50afe040-3e25-46cc-bb56-8b594dadf3cf"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"in progress"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

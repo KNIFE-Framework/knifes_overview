@@ -1,6 +1,6 @@
 ---
 id: "K049"
-guid: "knife-K049-6fa9ddd3-5de1-4c99-ab0f-db87d301f005"
+guid: "6fa9ddd3-5de1-4c99-ab0f-db87d301f005"
 dao: "knife"
 title: "KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 description: "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 sidebar_position: "49"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou
+<!-- fm-visible: start -->
+
+> **GUID:** `"6fa9ddd3-5de1-4c99-ab0f-db87d301f005"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"draft"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

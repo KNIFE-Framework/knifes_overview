@@ -1,6 +1,6 @@
 ---
 id: "K006"
-guid: "knife-K006-278b53c7-c34d-42b5-8969-3d22e63badd7"
+guid: "278b53c7-c34d-42b5-8969-3d22e63badd7"
 dao: "knife"
 title: "Tímová správa práv v Gitea"
 description: "Rozdelenie práv podľa tímov, chránené vetvy, PR politiky"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K006 – Tímová správa práv v Gitea"
 sidebar_position: "6"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K006 – Tímová správa práv v Gitea
+<!-- fm-visible: start -->
+
+> **GUID:** `"278b53c7-c34d-42b5-8969-3d22e63badd7"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"pripomenúť"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

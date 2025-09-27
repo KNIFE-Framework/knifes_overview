@@ -1,6 +1,6 @@
 ---
 id: 05-NextSteps
-guid: class-05-NextSteps-da9d7d55-1e18-4ddf-bf1c-5864840c0338
+guid: "da9d7d55-1e18-4ddf-bf1c-5864840c0338"
 dao: class
 title: "05.NextSteps – EN"
 description: ""
@@ -19,8 +19,18 @@ rights_holder_content: Roman Kazička
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 05.NextSteps – EN
+<!-- fm-visible: start -->
+
+> **GUID:** `"da9d7d55-1e18-4ddf-bf1c-5864840c0338"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 This is a sub-section of `07.D7-LessonLearned`.
 

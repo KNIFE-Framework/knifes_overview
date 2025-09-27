@@ -1,6 +1,6 @@
 ---
 id: "K060"
-guid: "knife-K060-df47b738-87e7-4385-af12-555ac3e1666b"
+guid: "df47b738-87e7-4385-af12-555ac3e1666b"
 dao: "knife"
 title: "Export Draw.io diagramu do A4 PNG"
 description: "Ako pripraviť Drawio obázok aby sa vždy vmestil na A4 formát?"
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K060 – Export Draw.io diagramu do A4 PNG"
 sidebar_position: "60"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K060 – Export Draw.io diagramu do A4 PNG
+<!-- fm-visible: start -->
+
+> **GUID:** `"df47b738-87e7-4385-af12-555ac3e1666b"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"done md"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

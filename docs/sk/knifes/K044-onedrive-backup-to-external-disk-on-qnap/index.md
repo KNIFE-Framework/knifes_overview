@@ -1,6 +1,6 @@
 ---
 id: "K044"
-guid: "knife-K044-dee65721-5f92-4cf5-8a45-0dd0ace2a7e9"
+guid: "dee65721-5f92-4cf5-8a45-0dd0ace2a7e9"
 dao: "knife"
 title: "OneDrive backup to external disk on QNAP"
 description: "This KNIFE explains how to create a full backup of your OneDrive data in cases where the local disk does not have sufficient capacity to mirror the entire cloud content. When 'Files On-Demand' is enabled, standard tools are unable to copy files – they can at best read their metadata. However, using tools like `rclone`, it becomes possible to back up the cloud directly without needing local mirroring."
@@ -14,6 +14,15 @@ tags: ["KNIFE"]
 sidebar_label: "K044 – OneDrive backup to external disk on QNAP"
 sidebar_position: "44"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 <!-- body:start -->
 
@@ -21,6 +30,13 @@ locale: "sk"
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K044 – OneDrive backup to external disk on QNAP
+<!-- fm-visible: start -->
+
+> **GUID:** `"dee65721-5f92-4cf5-8a45-0dd0ace2a7e9"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"inprogress"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

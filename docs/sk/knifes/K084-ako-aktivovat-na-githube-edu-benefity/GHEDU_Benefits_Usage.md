@@ -1,7 +1,7 @@
 ---
 id: K084_02
 parent: K084
-guid: knife-k084_02-280b3b24-c7e8-4aa9-a870-838c461f8b10
+guid: "280b3b24-c7e8-4aa9-a870-838c461f8b10"
 dao: knife
 title: ""
 author: ""
@@ -13,8 +13,22 @@ category: deliverable
 tags: []
 sidebar_label: "K084_02 –GitHub Education Faculty Benefits – Usage Scenario"
 locale: sk
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
 ---
 # GitHub Education Faculty Benefits – Usage Scenario
+<!-- fm-visible: start -->
+
+> **GUID:** `"280b3b24-c7e8-4aa9-a870-838c461f8b10"`
+>   
+> **Category:** `deliverable` · **Type:** `knife` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 Tento návod popisuje, čo robiť po schválení GitHub Education Faculty Benefits.
 

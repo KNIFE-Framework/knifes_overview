@@ -1,6 +1,6 @@
 ---
 id: "K081"
-guid: "knife-K081-02921a34-5a83-4713-bafa-1be560a98d18"
+guid: "02921a34-5a83-4713-bafa-1be560a98d18"
 dao: "knife"
 title: "Transparentná -Stabilná infraštruktúra pre Sites"
 description: "Počas práce s GitHub a Pages je potrebné mať zladené prostredie na klientovi a na serveri. Lokál je závislý od OS, od verzií vývojových nástrojov. Ideálne by bolo, keby existovalo stabilné, opakovateľné prostredie pre vytvorenie lokálneho prostredia, bez ohľadu na operačný systém na klientovi – Windows, Mac, Linux."
@@ -14,6 +14,16 @@ tags: ["KNIFE", "images"]
 sidebar_label: "K081 – Transparentná -Stabilná infraštruktúra pre Sites"
 sidebar_position: "81"
 locale: "sk"
+category: ""
+type: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+
 ---
 <!-- body:start -->
 
@@ -22,6 +32,13 @@ locale: "sk"
 ---
 
 # KNIFE K081 – Transparentná -Stabilná infraštruktúra pre Sites
+<!-- fm-visible: start -->
+
+> **GUID:** `"02921a34-5a83-4713-bafa-1be560a98d18"`
+>   
+> **Category:** `""` · **Type:** `""` · **Status:** `"idea"` · **Author:** "Roman Kazička" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 ## 🎯 Čo rieši (účel, cieľ)
 

@@ -1,7 +1,7 @@
 ---
 id: K083_01
 parent: K083
-guid: knife-k083_01-48faadc5-190a-424f-8d25-6e99df7010b3
+guid: "48faadc5-190a-424f-8d25-6e99df7010b3"
 dao: knife
 title: ""
 author: ""
@@ -13,8 +13,23 @@ category: deliverable
 tags: []
 sidebar_label: "K083_01 –"
 locale: sk
+copyright: "© 2025 Roman Kazička / SystemThinking"
+rights_holder_content: ""
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Educational content. Use at your own risk."
+author_id: ""
+author_did: ""
+
 ---
 # Analýza možností pre MacOS – inštalácia Node.js v22
+<!-- fm-visible: start -->
+
+> **GUID:** `"48faadc5-190a-424f-8d25-6e99df7010b3"`
+>   
+> **Category:** `deliverable` · **Type:** `knife` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: end -->
+
 
 V prostredí MacOS existujú tri hlavné prístupy, ako spravovať verziu Node.js.  
 Každý má svoje **výhody, nevýhody a odporúčané použitie**.

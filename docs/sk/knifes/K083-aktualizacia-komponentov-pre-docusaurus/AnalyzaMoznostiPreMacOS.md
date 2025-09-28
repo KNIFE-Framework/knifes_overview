@@ -20,7 +20,6 @@ license: "CC-BY-NC-SA-4.0"
 disclaimer: "Educational content. Use at your own risk."
 author_id: ""
 author_did: ""
-
 ---
 # Analýza možností pre MacOS – inštalácia Node.js v22
 <!-- fm-visible: start -->

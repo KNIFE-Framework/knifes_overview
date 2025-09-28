@@ -7,25 +7,8 @@ status: draft
 locale: sk
 tags: ["KNIFE"]
 sidebar_label: "📰 KNIFE Overview – Details"
-category: ""
-type: ""
-copyright: "© 2025 Roman Kazička / SystemThinking"
-rights_holder_content: ""
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Educational content. Use at your own risk."
-author_id: ""
-author_did: ""
-guid: "b88b43de-ac00-4c67-b081-5a67a1a34ffb"
 ---
 # 📰 KNIFE Overview – Details
-<!-- fm-visible: start -->
-
-> **GUID:** `"b88b43de-ac00-4c67-b081-5a67a1a34ffb"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
-<!-- fm-visible: end -->
-
 
 ### K001 – EA modelovanie a motivácia
 

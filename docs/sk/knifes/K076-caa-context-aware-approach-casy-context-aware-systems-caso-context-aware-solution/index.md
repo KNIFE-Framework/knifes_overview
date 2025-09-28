@@ -14,15 +14,6 @@ tags: ["KNIFE"]
 sidebar_label: "K076 – CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution"
 sidebar_position: "76"
 locale: "sk"
-category: ""
-type: ""
-copyright: "© 2025 Roman Kazička / SystemThinking"
-rights_holder_content: ""
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Educational content. Use at your own risk."
-author_id: ""
-author_did: ""
 ---
 <!-- body:start -->
 

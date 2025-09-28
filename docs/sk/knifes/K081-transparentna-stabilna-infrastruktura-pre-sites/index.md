@@ -15,6 +15,16 @@ sidebar_label: "K081 – Transparentná -Stabilná infraštruktúra pre Sites"
 sidebar_position: "81"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `02921a34-5a83-4713-bafa-1be560a98d18`
+> **Status:** `idea` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `02921a34-5a83-4713-bafa-1be560a98d18`
+> **Status:** `idea` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

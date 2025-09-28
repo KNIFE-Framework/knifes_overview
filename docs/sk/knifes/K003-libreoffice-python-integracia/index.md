@@ -15,6 +15,16 @@ sidebar_label: "K003 – LibreOffice + Python integrácia"
 sidebar_position: "3"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `dd435f3c-8a1d-4fc0-b873-12645f6aa10f`
+> **Status:** `v procese` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `dd435f3c-8a1d-4fc0-b873-12645f6aa10f`
+> **Status:** `v procese` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

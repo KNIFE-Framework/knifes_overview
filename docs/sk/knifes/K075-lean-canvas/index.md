@@ -15,6 +15,16 @@ sidebar_label: "K075 – Lean canvas"
 sidebar_position: "75"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `8566c5a6-e260-4cb7-bf8e-d7eedc89bf7f`
+> **Status:** `done md` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `8566c5a6-e260-4cb7-bf8e-d7eedc89bf7f`
+> **Status:** `done md` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

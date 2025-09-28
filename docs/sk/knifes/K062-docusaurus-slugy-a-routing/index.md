@@ -15,6 +15,16 @@ sidebar_label: "K062  – Docusaurus slugy a routing"
 sidebar_position: "62"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `7b469b9d-1eb5-48f6-a853-b17f4c775066`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `7b469b9d-1eb5-48f6-a853-b17f4c775066`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

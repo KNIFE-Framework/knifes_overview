@@ -15,6 +15,16 @@ sidebar_label: "K031 – „Document-as-Code“ framework"
 sidebar_position: "31"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `0b3729dc-ca0b-4025-879a-c6fc72a83d84`
+> **Status:** `v riešení` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `0b3729dc-ca0b-4025-879a-c6fc72a83d84`
+> **Status:** `v riešení` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

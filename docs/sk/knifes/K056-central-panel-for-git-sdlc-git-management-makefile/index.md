@@ -15,6 +15,16 @@ sidebar_label: "K056 – Central Panel for GIT – SDLC Git Management Makefile"
 sidebar_position: "56"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `b27765d2-8514-437e-91f2-5ed1d4f76c43`
+> **Status:** `done md` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `b27765d2-8514-437e-91f2-5ed1d4f76c43`
+> **Status:** `done md` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

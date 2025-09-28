@@ -3,7 +3,7 @@ id: "K037"
 guid: "ae7ca16f-5400-4912-b3e1-60c755c6b16b"
 dao: "knife"
 title: "Context Aware Solutions / paradigma, solution"
-description: "[⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K037 – Context Aware Solutions / paradigma, solution"
+description: "[⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K037 – Context Aware Solutions / paradigma, solution"
 author: "Roman Kazicka"
 created: "2025-09-17"
 modified: "2025-09-17"
@@ -15,6 +15,16 @@ sidebar_label: "K037 – Context Aware Solutions / paradigma, solution"
 sidebar_position: "37"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `ae7ca16f-5400-4912-b3e1-60c755c6b16b`
+> **Status:** `inprogress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `ae7ca16f-5400-4912-b3e1-60c755c6b16b`
+> **Status:** `inprogress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

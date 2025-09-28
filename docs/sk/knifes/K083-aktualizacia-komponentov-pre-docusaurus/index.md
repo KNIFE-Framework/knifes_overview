@@ -15,6 +15,16 @@ sidebar_label: "K083 – Aktualizácia komponentov pre Docusaurus"
 sidebar_position: "83"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `7e41fe41-1fcc-4dc9-912d-8b422c9ca272`
+> **Status:** `done md` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `7e41fe41-1fcc-4dc9-912d-8b422c9ca272`
+> **Status:** `done md` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

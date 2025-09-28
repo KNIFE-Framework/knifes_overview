@@ -15,6 +15,16 @@ sidebar_label: "K029 – Prostredie vývojové python pre LO"
 sidebar_position: "29"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `31b04e60-ff57-4a5b-95b3-e24be0a1e338`
+> **Status:** `riešené` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `31b04e60-ff57-4a5b-95b3-e24be0a1e338`
+> **Status:** `riešené` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

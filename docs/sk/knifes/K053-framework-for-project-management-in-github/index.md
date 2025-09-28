@@ -15,6 +15,16 @@ sidebar_label: "K053 – Framework for Project Management in GitHUB"
 sidebar_position: "53"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `ecadab7c-5f34-4296-864e-7c75f3ed0997`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `ecadab7c-5f34-4296-864e-7c75f3ed0997`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

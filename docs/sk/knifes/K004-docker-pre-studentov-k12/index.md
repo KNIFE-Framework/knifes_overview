@@ -15,6 +15,16 @@ sidebar_label: "K004 – Docker pre študentov (K12)"
 sidebar_position: "4"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `76ab8f65-0259-48ab-adbf-86cfa6a80d57`
+> **Status:** `plánované` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `76ab8f65-0259-48ab-adbf-86cfa6a80d57`
+> **Status:** `plánované` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

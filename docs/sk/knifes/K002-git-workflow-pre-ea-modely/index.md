@@ -15,6 +15,16 @@ sidebar_label: "K002 – Git workflow pre EA modely"
 sidebar_position: "2"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `6cf87ac0-1644-4134-8c67-8e61da2dca78`
+> **Status:** `v procese` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `6cf87ac0-1644-4134-8c67-8e61da2dca78`
+> **Status:** `v procese` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

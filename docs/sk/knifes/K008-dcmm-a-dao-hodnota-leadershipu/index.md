@@ -15,6 +15,16 @@ sidebar_label: "K008 – DCMM a DAO – hodnota leadershipu"
 sidebar_position: "8"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `fbb56d3a-aa9f-4594-bdfd-b30c12c09174`
+> **Status:** `plánované` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `fbb56d3a-aa9f-4594-bdfd-b30c12c09174`
+> **Status:** `plánované` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

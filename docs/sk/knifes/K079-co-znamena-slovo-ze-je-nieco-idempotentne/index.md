@@ -15,6 +15,16 @@ sidebar_label: "K079 – Čo znamená slovo že je niečo idempotentné?"
 sidebar_position: "79"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `d668f12d-7a40-4940-998f-13dba8edeb2b`
+> **Status:** `now` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `d668f12d-7a40-4940-998f-13dba8edeb2b`
+> **Status:** `now` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

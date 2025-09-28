@@ -15,6 +15,16 @@ sidebar_label: "K024 – OneNote ako zdroj metadát pre AI"
 sidebar_position: "24"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `18f0681d-54db-4a41-a7fd-b77386a7299e`
+> **Status:** `v návrhu` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `18f0681d-54db-4a41-a7fd-b77386a7299e`
+> **Status:** `v návrhu` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

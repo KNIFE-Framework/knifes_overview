@@ -15,6 +15,16 @@ sidebar_label: "K036 – Pracovno, finančný ekosystém"
 sidebar_position: "36"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `5d8e7ee1-a0d2-474b-832e-c91a030ea3d0`
+> **Status:** `návrh` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `5d8e7ee1-a0d2-474b-832e-c91a030ea3d0`
+> **Status:** `návrh` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

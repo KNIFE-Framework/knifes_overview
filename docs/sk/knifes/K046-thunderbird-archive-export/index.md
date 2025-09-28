@@ -15,6 +15,16 @@ sidebar_label: "K046 – Thunderbird – Archive-export"
 sidebar_position: "46"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `b045421e-412b-4e20-b0ad-ebe5e1fbed9f`
+> **Status:** `done md` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `b045421e-412b-4e20-b0ad-ebe5e1fbed9f`
+> **Status:** `done md` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

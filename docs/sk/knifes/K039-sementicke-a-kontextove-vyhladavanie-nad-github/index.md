@@ -15,6 +15,16 @@ sidebar_label: "K039 – Sementicke a kontextove vyhladavanie nad GitHUB"
 sidebar_position: "39"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `d65f381f-c6dd-43af-a6e3-1742a5adb17d`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `d65f381f-c6dd-43af-a6e3-1742a5adb17d`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

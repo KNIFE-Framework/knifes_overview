@@ -15,6 +15,16 @@ sidebar_label: "K065 – MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
 sidebar_position: "65"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `72cf0d0c-72d5-41b7-8b70-06b46e43e8ab`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `72cf0d0c-72d5-41b7-8b70-06b46e43e8ab`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -15,6 +15,16 @@ sidebar_label: "K045 – Základné informácie o ESG"
 sidebar_position: "45"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `550e3260-c6ee-402a-9c41-5250e9cd1af3`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `550e3260-c6ee-402a-9c41-5250e9cd1af3`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

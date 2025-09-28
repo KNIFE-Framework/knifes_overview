@@ -15,6 +15,16 @@ sidebar_label: "K078 – Language as a Bridge (AI ako most medzi jazykmi)"
 sidebar_position: "78"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `9fa013f5-0130-4af4-8e6e-db4ca6d38397`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `9fa013f5-0130-4af4-8e6e-db4ca6d38397`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

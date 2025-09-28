@@ -15,6 +15,16 @@ sidebar_label: "K068 – Kruhový portrét v GIMP"
 sidebar_position: "68"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

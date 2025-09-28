@@ -15,6 +15,16 @@ sidebar_label: "K014 – Manažér knižníc pre LO Basic"
 sidebar_position: "14"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `56e95dd8-a633-4850-8615-063ce541fc44`
+> **Status:** `návrh` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `56e95dd8-a633-4850-8615-063ce541fc44`
+> **Status:** `návrh` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

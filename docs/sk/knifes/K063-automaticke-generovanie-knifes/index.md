@@ -15,6 +15,16 @@ sidebar_label: "K063 – Automatické generovanie KNIFES"
 sidebar_position: "63"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `32ff770d-25ab-45d7-b8f0-b7857fd53ecb`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `32ff770d-25ab-45d7-b8f0-b7857fd53ecb`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

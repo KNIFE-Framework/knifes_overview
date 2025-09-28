@@ -15,6 +15,16 @@ sidebar_label: "K022 – TERNO – terapeutické formy učenia"
 sidebar_position: "22"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `27ffa9b9-04b5-4a79-921c-38123de82f2d`
+> **Status:** `plánované` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `27ffa9b9-04b5-4a79-921c-38123de82f2d`
+> **Status:** `plánované` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

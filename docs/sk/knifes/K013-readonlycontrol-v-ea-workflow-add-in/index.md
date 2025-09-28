@@ -15,6 +15,16 @@ sidebar_label: "K013 – ReadOnlyControl v EA – Workflow Add-In"
 sidebar_position: "13"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `fea26033-7add-4816-bfc1-a7e65df4d2b4`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `fea26033-7add-4816-bfc1-a7e65df4d2b4`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

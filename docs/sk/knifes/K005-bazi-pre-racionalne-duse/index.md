@@ -15,6 +15,16 @@ sidebar_label: "K005 – BaZi pre racionálne duše"
 sidebar_position: "5"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `610c8ab7-dffb-4172-bf31-0fd95e5102dd`
+> **Status:** `zaradené` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `610c8ab7-dffb-4172-bf31-0fd95e5102dd`
+> **Status:** `zaradené` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

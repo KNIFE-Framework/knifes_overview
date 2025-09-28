@@ -15,6 +15,16 @@ sidebar_label: "K021 – Princíp udržateľnosti v architektúre"
 sidebar_position: "21"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `48dbd9ae-966a-4a5b-8eda-bd4257793384`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `48dbd9ae-966a-4a5b-8eda-bd4257793384`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -3,7 +3,7 @@ id: "K052"
 guid: "37c1ee83-aa1c-4a67-a8f5-ed3fdae3e7aa"
 dao: "knife"
 title: "GitHub LMS Framework"
-description: "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K052 – GitHub LMS Framework"
+description: "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K052 – GitHub LMS Framework"
 author: "Roman Kazicka"
 created: "2025-09-17"
 modified: "2025-09-17"
@@ -15,6 +15,16 @@ sidebar_label: "K052 – GitHub LMS Framework"
 sidebar_position: "52"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `37c1ee83-aa1c-4a67-a8f5-ed3fdae3e7aa`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `37c1ee83-aa1c-4a67-a8f5-ed3fdae3e7aa`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

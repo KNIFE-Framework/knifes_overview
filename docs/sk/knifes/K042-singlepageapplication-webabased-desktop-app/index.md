@@ -15,6 +15,16 @@ sidebar_label: "K042 – SinglePageApplication – Webabased desktop app"
 sidebar_position: "42"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `ed25f447-b17f-4a3a-941e-bb441e170fc3`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `ed25f447-b17f-4a3a-941e-bb441e170fc3`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

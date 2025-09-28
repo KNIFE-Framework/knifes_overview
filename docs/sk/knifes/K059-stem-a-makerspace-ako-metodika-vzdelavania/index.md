@@ -15,6 +15,16 @@ sidebar_label: "K059 – STEM a Makerspace ako metodika vzdelávania"
 sidebar_position: "59"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `d7e5dc5c-968e-4af4-a7b2-d76bcff5f12e`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `d7e5dc5c-968e-4af4-a7b2-d76bcff5f12e`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -15,6 +15,16 @@ sidebar_label: "K072 – APV-Assets-Perspectives-Views, Keep Your Aseests in Ord
 sidebar_position: "72"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `e2e77f43-e904-4438-8a74-07ac68541237`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `e2e77f43-e904-4438-8a74-07ac68541237`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

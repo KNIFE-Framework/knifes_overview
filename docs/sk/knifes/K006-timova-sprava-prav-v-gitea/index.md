@@ -15,6 +15,16 @@ sidebar_label: "K006 – Tímová správa práv v Gitea"
 sidebar_position: "6"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `278b53c7-c34d-42b5-8969-3d22e63badd7`
+> **Status:** `pripomenúť` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `278b53c7-c34d-42b5-8969-3d22e63badd7`
+> **Status:** `pripomenúť` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

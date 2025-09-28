@@ -15,6 +15,16 @@ sidebar_label: "K076 – CAA- Context Aware Approach, CASY-Context Aware Systems
 sidebar_position: "76"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `0486c717-dc17-41c2-ab44-f2f365c4a7be`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `0486c717-dc17-41c2-ab44-f2f365c4a7be`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

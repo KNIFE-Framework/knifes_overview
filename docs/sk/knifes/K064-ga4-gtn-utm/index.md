@@ -15,6 +15,16 @@ sidebar_label: "K064 – GA4, GTN, UTM"
 sidebar_position: "64"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `fd7b354d-8ead-42aa-a615-e545c5c13cd1`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `fd7b354d-8ead-42aa-a615-e545c5c13cd1`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -15,6 +15,16 @@ sidebar_label: "K026 – KNIFE Framework pre vývoj a učenie sa (LibreOffice, P
 sidebar_position: "26"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `eb38351b-5165-46ea-9dee-a9515a69195d`
+> **Status:** `v procese` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `eb38351b-5165-46ea-9dee-a9515a69195d`
+> **Status:** `v procese` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

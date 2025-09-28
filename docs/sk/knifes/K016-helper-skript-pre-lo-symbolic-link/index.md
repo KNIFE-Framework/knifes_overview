@@ -15,6 +15,16 @@ sidebar_label: "K016 – Helper skript pre LO symbolic link"
 sidebar_position: "16"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `daf7cda8-38d2-4206-84f7-1cdc8a169276`
+> **Status:** `v testovaní` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `daf7cda8-38d2-4206-84f7-1cdc8a169276`
+> **Status:** `v testovaní` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

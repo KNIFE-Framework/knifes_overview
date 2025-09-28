@@ -15,6 +15,16 @@ sidebar_label: "K012 – EA Workflow Add-In – pokročilé šablóny"
 sidebar_position: "12"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `5c2a2821-7814-4e7f-b479-33fd736bf633`
+> **Status:** `v backlogu` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `5c2a2821-7814-4e7f-b479-33fd736bf633`
+> **Status:** `v backlogu` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

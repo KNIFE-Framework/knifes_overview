@@ -3,7 +3,7 @@ id: "K049"
 guid: "6fa9ddd3-5de1-4c99-ab0f-db87d301f005"
 dao: "knife"
 title: "KNIFE049 – Vyhľadávač nad OpenGPT históriou"
-description: "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
+description: "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 author: "Roman Kazicka"
 created: "2025-09-17"
 modified: "2025-09-17"
@@ -15,6 +15,16 @@ sidebar_label: "K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 sidebar_position: "49"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `6fa9ddd3-5de1-4c99-ab0f-db87d301f005`
+> **Status:** `draft` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `6fa9ddd3-5de1-4c99-ab0f-db87d301f005`
+> **Status:** `draft` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -15,6 +15,16 @@ sidebar_label: "K041 – GitHUB Education Framework"
 sidebar_position: "41"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `e1f2e352-e045-4680-a750-4bba1f8f7479`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `e1f2e352-e045-4680-a750-4bba1f8f7479`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

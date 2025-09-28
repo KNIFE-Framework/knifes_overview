@@ -15,6 +15,16 @@ sidebar_label: "K067 – GitHub Deployment stratégie"
 sidebar_position: "67"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `83572f2b-c6d2-4f75-9a41-22457168d71e`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `83572f2b-c6d2-4f75-9a41-22457168d71e`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 ---
 

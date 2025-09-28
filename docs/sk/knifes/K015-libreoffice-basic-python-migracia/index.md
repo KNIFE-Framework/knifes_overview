@@ -15,6 +15,16 @@ sidebar_label: "K015 – LibreOffice Basic → Python migrácia"
 sidebar_position: "15"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `67a1b9c8-6fc2-4c20-94dd-95a08111ec73`
+> **Status:** `aktívne` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `67a1b9c8-6fc2-4c20-94dd-95a08111ec73`
+> **Status:** `aktívne` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

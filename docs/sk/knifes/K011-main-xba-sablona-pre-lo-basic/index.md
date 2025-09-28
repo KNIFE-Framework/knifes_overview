@@ -15,6 +15,16 @@ sidebar_label: "K011 – Main.xba šablóna pre LO Basic"
 sidebar_position: "11"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `f5282c5a-cda6-4028-8f5a-ce9d3637c5c8`
+> **Status:** `v backlogu` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `f5282c5a-cda6-4028-8f5a-ce9d3637c5c8`
+> **Status:** `v backlogu` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

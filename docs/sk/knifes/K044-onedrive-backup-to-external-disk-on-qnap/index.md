@@ -15,6 +15,16 @@ sidebar_label: "K044 – OneDrive backup to external disk on QNAP"
 sidebar_position: "44"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `dee65721-5f92-4cf5-8a45-0dd0ace2a7e9`
+> **Status:** `inprogress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `dee65721-5f92-4cf5-8a45-0dd0ace2a7e9`
+> **Status:** `inprogress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

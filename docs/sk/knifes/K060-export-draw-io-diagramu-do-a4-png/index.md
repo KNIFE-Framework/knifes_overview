@@ -15,6 +15,16 @@ sidebar_label: "K060 – Export Draw.io diagramu do A4 PNG"
 sidebar_position: "60"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `df47b738-87e7-4385-af12-555ac3e1666b`
+> **Status:** `done md` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `df47b738-87e7-4385-af12-555ac3e1666b`
+> **Status:** `done md` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -15,6 +15,16 @@ sidebar_label: "K025 – Kategorizácia TERNO podľa SDLC a 7D"
 sidebar_position: "25"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `0e591458-c661-4f18-8e85-9c1c14efaedc`
+> **Status:** `zaradené` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `0e591458-c661-4f18-8e85-9c1c14efaedc`
+> **Status:** `zaradené` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

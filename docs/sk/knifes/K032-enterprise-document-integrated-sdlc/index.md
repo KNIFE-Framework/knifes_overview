@@ -15,6 +15,16 @@ sidebar_label: "K032 – „Enterprise Document-integrated SDLC“"
 sidebar_position: "32"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `d7f03d39-ef27-4747-96b3-1ed94589eb90`
+> **Status:** `v návrhu (alebo v riešení – podľa teba)` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `d7f03d39-ef27-4747-96b3-1ed94589eb90`
+> **Status:** `v návrhu (alebo v riešení – podľa teba)` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

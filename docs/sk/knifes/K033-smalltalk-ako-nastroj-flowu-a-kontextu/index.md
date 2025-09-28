@@ -3,7 +3,7 @@ id: "K033"
 guid: "4bf0fa16-972c-4cbc-a923-2d28af33f41d"
 dao: "knife"
 title: "Smalltalk ako nástroj flowu a kontextu"
-description: "[⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\n---\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu"
+description: "[⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K033 – Smalltalk ako nástroj flowu a kontextu"
 author: "Roman Kazicka"
 created: "2025-09-17"
 modified: "2025-09-17"
@@ -15,6 +15,16 @@ sidebar_label: "K033 – Smalltalk ako nástroj flowu a kontextu"
 sidebar_position: "33"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `4bf0fa16-972c-4cbc-a923-2d28af33f41d`
+> **Status:** `v riešeni` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `4bf0fa16-972c-4cbc-a923-2d28af33f41d`
+> **Status:** `v riešeni` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

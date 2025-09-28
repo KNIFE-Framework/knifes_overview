@@ -15,6 +15,16 @@ sidebar_label: "K073 – Q12- Twelve quadrants for starting business"
 sidebar_position: "73"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `3908aa84-1d7b-4ba7-8d41-ca17e1087d86`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `3908aa84-1d7b-4ba7-8d41-ca17e1087d86`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

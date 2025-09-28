@@ -15,6 +15,16 @@ sidebar_label: "K010 – OpenAI klient – vlastná AI komunikácia"
 sidebar_position: "10"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `833ed8e5-8144-4de4-b63a-1d6000dee2a1`
+> **Status:** `začiatok` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `833ed8e5-8144-4de4-b63a-1d6000dee2a1`
+> **Status:** `začiatok` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -15,6 +15,16 @@ sidebar_label: "K019 – BaZi výpočty – algoritmus, hodiny, kalendár"
 sidebar_position: "19"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `986a2d27-e983-4c02-b17b-f54b5625c188`
+> **Status:** `zaradené` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `986a2d27-e983-4c02-b17b-f54b5625c188`
+> **Status:** `zaradené` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

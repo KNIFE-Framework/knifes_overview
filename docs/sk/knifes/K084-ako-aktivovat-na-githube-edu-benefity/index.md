@@ -15,6 +15,16 @@ sidebar_label: "K084 – Ako aktivovať na GitHube EDU benefity"
 sidebar_position: "84"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `c000d02a-b7ed-4e78-a5be-9e8e975445e0`
+> **Status:** `in progress` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `c000d02a-b7ed-4e78-a5be-9e8e975445e0`
+> **Status:** `in progress` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

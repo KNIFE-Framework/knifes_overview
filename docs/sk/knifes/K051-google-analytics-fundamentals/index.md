@@ -15,6 +15,16 @@ sidebar_label: "K051 – Google analytics – Fundamentals"
 sidebar_position: "51"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `9b195cd2-e816-41b8-98be-a2a0a76538ef`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `9b195cd2-e816-41b8-98be-a2a0a76538ef`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

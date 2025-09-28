@@ -15,6 +15,16 @@ sidebar_label: "K074 – SDLC-Solution Development Life Cycle"
 sidebar_position: "74"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `55dc93cb-b910-48ef-8ce7-8a72009286f5`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `55dc93cb-b910-48ef-8ce7-8a72009286f5`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

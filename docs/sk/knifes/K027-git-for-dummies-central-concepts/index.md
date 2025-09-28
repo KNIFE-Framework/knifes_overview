@@ -15,6 +15,16 @@ sidebar_label: "K027 – Git For Dummies – Central Concepts"
 sidebar_position: "27"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `3264251d-6fb5-41f2-b8eb-9b726c2542f2`
+> **Status:** `v príprave` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `3264251d-6fb5-41f2-b8eb-9b726c2542f2`
+> **Status:** `v príprave` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

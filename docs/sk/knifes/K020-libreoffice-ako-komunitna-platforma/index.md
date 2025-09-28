@@ -15,6 +15,16 @@ sidebar_label: "K020 – LibreOffice ako komunitná platforma"
 sidebar_position: "20"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `9c178019-c50a-4a28-b344-afd80f289523`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `9c178019-c50a-4a28-b344-afd80f289523`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

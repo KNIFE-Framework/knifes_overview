@@ -15,6 +15,16 @@ sidebar_label: "K040 – Migracia Joomla -->GitHUB MkDocs"
 sidebar_position: "40"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `c96e9214-93fc-4799-ae2d-43fa543430fd`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `c96e9214-93fc-4799-ae2d-43fa543430fd`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

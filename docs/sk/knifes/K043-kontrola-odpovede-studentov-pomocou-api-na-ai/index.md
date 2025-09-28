@@ -15,6 +15,16 @@ sidebar_label: "K043 – Kontrola odpovedé študentov pomocou API na AI"
 sidebar_position: "43"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `50afe040-3e25-46cc-bb56-8b594dadf3cf`
+> **Status:** `in progress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `50afe040-3e25-46cc-bb56-8b594dadf3cf`
+> **Status:** `in progress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

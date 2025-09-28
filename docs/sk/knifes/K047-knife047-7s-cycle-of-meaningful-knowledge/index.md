@@ -15,6 +15,16 @@ sidebar_label: "K047 – KNIFE047 – 7S Cycle of Meaningful Knowledge"
 sidebar_position: "47"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `82c38956-39d1-4afa-8b78-845c78c22083`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `82c38956-39d1-4afa-8b78-845c78c22083`
+> **Status:** `init` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

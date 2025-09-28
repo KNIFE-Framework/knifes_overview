@@ -15,6 +15,16 @@ sidebar_label: "K071 – 7Ds-Seven Disciplines for successful solutions"
 sidebar_position: "71"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `d0c8a434-fc6d-4444-8c4e-7577fd78dc0a`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `d0c8a434-fc6d-4444-8c4e-7577fd78dc0a`
+> **Status:** `ongoing` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

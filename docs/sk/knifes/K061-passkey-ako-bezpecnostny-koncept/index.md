@@ -15,6 +15,16 @@ sidebar_label: "K061 – Passkey ako bezpečnostný koncept"
 sidebar_position: "61"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `35066cd7-1202-4c04-9cfe-02512ca5fa7f`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `35066cd7-1202-4c04-9cfe-02512ca5fa7f`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

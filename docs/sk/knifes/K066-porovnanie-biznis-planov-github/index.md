@@ -15,6 +15,16 @@ sidebar_label: "K066 – Porovnanie biznis plánov GitHub"
 sidebar_position: "66"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `a2c536d5-d18f-4d80-a2bd-9ef502904b9a`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `a2c536d5-d18f-4d80-a2bd-9ef502904b9a`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

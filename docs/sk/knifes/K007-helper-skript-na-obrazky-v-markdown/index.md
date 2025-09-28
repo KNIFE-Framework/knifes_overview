@@ -15,6 +15,16 @@ sidebar_label: "K007 – Helper skript na obrázky v Markdown"
 sidebar_position: "7"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `745a9616-e53d-4a82-b14d-7e7fbf8bfef8`
+> **Status:** `aktívne` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `745a9616-e53d-4a82-b14d-7e7fbf8bfef8`
+> **Status:** `aktívne` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

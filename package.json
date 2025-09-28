@@ -23,7 +23,10 @@
     "serve": "docusaurus serve",
     "prod": "npm run build && npm run serve",
     "lint:css": "stylelint \"src/**/*.css\" \"docs/**/*.css\"",
-    "lint": "npm run lint:css"
+    "lint": "npm run lint:css",
+    "knife:gen": "node scripts/knifes-generate.mjs --root . --locale sk",
+    "knife:norm": "node scripts/knifes-normalize.mjs --root . --locale sk",
+    "knife:update": "node scripts/knifes-update-by-guid.mjs --root . --locale sk --policy add-only"
   },
   "dependencies": {
     "@docusaurus/core": "^3.9.1",

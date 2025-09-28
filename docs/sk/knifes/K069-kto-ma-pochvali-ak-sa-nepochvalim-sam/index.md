@@ -15,6 +15,16 @@ sidebar_label: "K069 – Kto ma pochváli, ak sa nepochválim sám?"
 sidebar_position: "69"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `ea7ecfe2-fc8d-4c67-9966-187ef88afd3b`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `ea7ecfe2-fc8d-4c67-9966-187ef88afd3b`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

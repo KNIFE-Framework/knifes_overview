@@ -15,6 +15,16 @@ sidebar_label: "K023 – AI interakcie – časová os a emócie"
 sidebar_position: "23"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `a9ea072a-2fc0-425a-ac4d-9140d92ab221`
+> **Status:** `v návrhu` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `a9ea072a-2fc0-425a-ac4d-9140d92ab221`
+> **Status:** `v návrhu` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

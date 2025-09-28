@@ -15,6 +15,16 @@ sidebar_label: "K057 – AI Agent na monitoroavanie nákladov OpenGPT"
 sidebar_position: "57"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `1ee7fec7-5397-4920-b47d-48035c5c9125`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `1ee7fec7-5397-4920-b47d-48035c5c9125`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

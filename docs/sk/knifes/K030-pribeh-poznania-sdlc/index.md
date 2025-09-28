@@ -15,6 +15,16 @@ sidebar_label: "K030 – Príbeh poznania SDLC"
 sidebar_position: "30"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `553c7b60-ab06-4412-96dc-84d0ea2fa323`
+> **Status:** `v riešení` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `553c7b60-ab06-4412-96dc-84d0ea2fa323`
+> **Status:** `v riešení` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

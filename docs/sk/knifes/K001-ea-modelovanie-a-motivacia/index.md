@@ -15,6 +15,16 @@ sidebar_label: "K001 – EA modelovanie a motivácia"
 sidebar_position: "1"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `728afefa-b72f-4aa6-b31e-4a388cdd7a46`
+> **Status:** `hotové` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `728afefa-b72f-4aa6-b31e-4a388cdd7a46`
+> **Status:** `hotové` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

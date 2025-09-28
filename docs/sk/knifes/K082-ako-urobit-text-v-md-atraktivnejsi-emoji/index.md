@@ -15,6 +15,16 @@ sidebar_label: "K082 – Ako urobiť text v MD atraktívnejší (emoji)"
 sidebar_position: "82"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3`
+> **Status:** `done md` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3`
+> **Status:** `done md` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

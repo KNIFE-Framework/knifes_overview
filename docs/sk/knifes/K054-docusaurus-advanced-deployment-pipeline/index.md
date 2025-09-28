@@ -15,6 +15,16 @@ sidebar_label: "K054 – Docusaurus Advanced Deployment Pipeline"
 sidebar_position: "54"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `e6a19133-a51b-4041-a811-6ccd8611fde0`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `e6a19133-a51b-4041-a811-6ccd8611fde0`
+> **Status:** `new` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

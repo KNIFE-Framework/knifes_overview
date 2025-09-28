@@ -15,6 +15,16 @@ sidebar_label: "K055 – Ako obnoviť stav z minulosti?"
 sidebar_position: "55"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `547ee1b8-84a2-4c6c-97c3-205967de0847`
+> **Status:** `inprogress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `547ee1b8-84a2-4c6c-97c3-205967de0847`
+> **Status:** `inprogress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

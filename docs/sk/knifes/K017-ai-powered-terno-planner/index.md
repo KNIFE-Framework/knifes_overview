@@ -15,6 +15,16 @@ sidebar_label: "K017 – AI-powered TERNO Planner"
 sidebar_position: "17"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `41a44dfe-5b85-480a-8168-710530b572d6`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `41a44dfe-5b85-480a-8168-710530b572d6`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

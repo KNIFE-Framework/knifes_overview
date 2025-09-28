@@ -24,7 +24,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Jedno z prvých TERNO, vzniklo pri návrhu systému motivácie v rámci tímu  
 **SFIA**: level=2, domain=Business Analysis / Modelling, maturity=Diagrammatic  
 **Tags**:   
-**Link**: [K001-ea-modelovanie-a-motivacia](./K001-ea-modelovanie-a-motivacia/index.md)
+**Link**: [K001-ea-modelovanie-a-motivacia](./K001-ea-modelovanie-a-motivacia/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 1  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k001-ea-modelovanie-a-motivacia`  
@@ -50,7 +62,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Založené na reálnej potrebe riešiť multirelease workflow pre EA  
 **SFIA**: level=3, domain=Configuration Management, maturity=Tool-based  
 **Tags**:   
-**Link**: [K002-git-workflow-pre-ea-modely](./K002-git-workflow-pre-ea-modely/index.md)
+**Link**: [K002-git-workflow-pre-ea-modely](./K002-git-workflow-pre-ea-modely/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 2  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k002-git-workflow-pre-ea-modely`  
@@ -76,7 +100,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Reakcia na požiadavku na moderný vývoj v LibreOffice – Python/venv  
 **SFIA**: level=3, domain=Software Development, maturity=Scriptable  
 **Tags**:   
-**Link**: [K003-libreoffice-python-integracia](./K003-libreoffice-python-integracia/index.md)
+**Link**: [K003-libreoffice-python-integracia](./K003-libreoffice-python-integracia/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 3  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k003-libreoffice-python-integracia`  
@@ -102,7 +138,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Vzniklo ako návrh edukačného materiálu pri tvorbe kurzov pre Docker  
 **SFIA**: level=2, domain=DevOps / Infrastructure, maturity=Learning-based  
 **Tags**:   
-**Link**: [K004-docker-pre-studentov-k12](./K004-docker-pre-studentov-k12/index.md)
+**Link**: [K004-docker-pre-studentov-k12](./K004-docker-pre-studentov-k12/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 4  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k004-docker-pre-studentov-k12`  
@@ -128,7 +176,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Záznam vznikol počas diskusie o TCM a racionálnom prístupe k BaZi  
 **SFIA**: level=2, domain=Knowledge Engineering, maturity=Exploratory  
 **Tags**:   
-**Link**: [K005-bazi-pre-racionalne-duse](./K005-bazi-pre-racionalne-duse/index.md)
+**Link**: [K005-bazi-pre-racionalne-duse](./K005-bazi-pre-racionalne-duse/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 5  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k005-bazi-pre-racionalne-duse`  
@@ -154,7 +214,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Zaznamenané počas diskusie o Gitea právach a workflow – T002  
 **SFIA**: level=3, domain=Configuration Management, maturity=Tool-based  
 **Tags**:   
-**Link**: [K006-timova-sprava-prav-v-gitea](./K006-timova-sprava-prav-v-gitea/index.md)
+**Link**: [K006-timova-sprava-prav-v-gitea](./K006-timova-sprava-prav-v-gitea/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 6  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k006-timova-sprava-prav-v-gitea`  
@@ -180,7 +252,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Vzniklo pri návrhu Markdown workflow helpera – súvisiace s T007  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K007-helper-skript-na-obrazky-v-markdown](./K007-helper-skript-na-obrazky-v-markdown/index.md)
+**Link**: [K007-helper-skript-na-obrazky-v-markdown](./K007-helper-skript-na-obrazky-v-markdown/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 7  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k007-helper-skript-na-obrazky-v-markdown`  
@@ -206,7 +290,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Diskusia o leadership kvalite v rámci strategických tém – T008  
 **SFIA**: level=2, domain=Business Analysis / Modelling, maturity=Diagrammatic  
 **Tags**:   
-**Link**: [K008-dcmm-a-dao-hodnota-leadershipu](./K008-dcmm-a-dao-hodnota-leadershipu/index.md)
+**Link**: [K008-dcmm-a-dao-hodnota-leadershipu](./K008-dcmm-a-dao-hodnota-leadershipu/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 8  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k008-dcmm-a-dao-hodnota-leadershipu`  
@@ -232,7 +328,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Myšlienka z praxe na LinkedIn, súvis s T009 a zdieľaním obsahu  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K009-linkedin-post-engine-ai-automatizacia](./K009-linkedin-post-engine-ai-automatizacia/index.md)
+**Link**: [K009-linkedin-post-engine-ai-automatizacia](./K009-linkedin-post-engine-ai-automatizacia/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 9  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k009-linkedin-post-engine-ai-automatizacia`  
@@ -258,7 +366,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Začiatok vývoja AI nástroja, súvisí s plánom T018  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K010-openai-klient-vlastna-ai-komunikacia](./K010-openai-klient-vlastna-ai-komunikacia/index.md)
+**Link**: [K010-openai-klient-vlastna-ai-komunikacia](./K010-openai-klient-vlastna-ai-komunikacia/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 10  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k010-openai-klient-vlastna-ai-komunikacia`  
@@ -284,7 +404,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Téma makier v LibreOffice – samostatný štartovací modul  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K011-main-xba-sablona-pre-lo-basic](./K011-main-xba-sablona-pre-lo-basic/index.md)
+**Link**: [K011-main-xba-sablona-pre-lo-basic](./K011-main-xba-sablona-pre-lo-basic/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 11  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k011-main-xba-sablona-pre-lo-basic`  
@@ -310,7 +442,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Rozšírenie pre EA Add-In v rámci T012  
 **SFIA**: level=3, domain=Configuration Management, maturity=Tool-based  
 **Tags**:   
-**Link**: [K012-ea-workflow-add-in-pokrocile-sablony](./K012-ea-workflow-add-in-pokrocile-sablony/index.md)
+**Link**: [K012-ea-workflow-add-in-pokrocile-sablony](./K012-ea-workflow-add-in-pokrocile-sablony/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 12  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k012-ea-workflow-add-in-pokrocile-sablony`  
@@ -336,7 +480,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Doplnok k EA Add-In – konkrétne obmedzenia práv (ReadOnly)  
 **SFIA**: level=3, domain=Configuration Management, maturity=Tool-based  
 **Tags**:   
-**Link**: [K013-readonlycontrol-v-ea-workflow-add-in](./K013-readonlycontrol-v-ea-workflow-add-in/index.md)
+**Link**: [K013-readonlycontrol-v-ea-workflow-add-in](./K013-readonlycontrol-v-ea-workflow-add-in/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 13  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k013-readonlycontrol-v-ea-workflow-add-in`  
@@ -362,7 +518,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Nástroj pre správu LO knižníc – samostatne definovaný  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K014-manazer-kniznic-pre-lo-basic](./K014-manazer-kniznic-pre-lo-basic/index.md)
+**Link**: [K014-manazer-kniznic-pre-lo-basic](./K014-manazer-kniznic-pre-lo-basic/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 14  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k014-manazer-kniznic-pre-lo-basic`  
@@ -388,7 +556,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Migrácia z VB do Python – vzniklo počas T003 a T014  
 **SFIA**: level=3, domain=Software Development, maturity=Scriptable  
 **Tags**:   
-**Link**: [K015-libreoffice-basic-python-migracia](./K015-libreoffice-basic-python-migracia/index.md)
+**Link**: [K015-libreoffice-basic-python-migracia](./K015-libreoffice-basic-python-migracia/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 15  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k015-libreoffice-basic-python-migracia`  
@@ -414,7 +594,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Podpora pre vývojové prostredie LO – vzniklo počas T015  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K016-helper-skript-pre-lo-symbolic-link](./K016-helper-skript-pre-lo-symbolic-link/index.md)
+**Link**: [K016-helper-skript-pre-lo-symbolic-link](./K016-helper-skript-pre-lo-symbolic-link/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 16  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k016-helper-skript-pre-lo-symbolic-link`  
@@ -440,7 +632,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Zaznamenané počas návrhu plánovania TERNA – prehľadový modul  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K017-ai-powered-terno-planner](./K017-ai-powered-terno-planner/index.md)
+**Link**: [K017-ai-powered-terno-planner](./K017-ai-powered-terno-planner/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 17  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k017-ai-powered-terno-planner`  
@@ -466,7 +670,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Rozšírenie T005 – potreba výpočtu BaZi a hodinovej analýzy  
 **SFIA**: level=2, domain=Knowledge Engineering, maturity=Exploratory  
 **Tags**:   
-**Link**: [K019-bazi-vypocty-algoritmus-hodiny-kalendar](./K019-bazi-vypocty-algoritmus-hodiny-kalendar/index.md)
+**Link**: [K019-bazi-vypocty-algoritmus-hodiny-kalendar](./K019-bazi-vypocty-algoritmus-hodiny-kalendar/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 19  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k019-bazi-vypocty-algoritmus-hodiny-kalendar`  
@@ -492,7 +708,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Podpora LO ako komunitného nástroja v rámci T003  
 **SFIA**: level=3, domain=Software Development, maturity=Scriptable  
 **Tags**:   
-**Link**: [K020-libreoffice-ako-komunitna-platforma](./K020-libreoffice-ako-komunitna-platforma/index.md)
+**Link**: [K020-libreoffice-ako-komunitna-platforma](./K020-libreoffice-ako-komunitna-platforma/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 20  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k020-libreoffice-ako-komunitna-platforma`  
@@ -518,7 +746,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Princíp objavený počas reflexie SDLC v T004 a T008  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K021-princip-udrzatelnosti-v-architekture](./K021-princip-udrzatelnosti-v-architekture/index.md)
+**Link**: [K021-princip-udrzatelnosti-v-architekture](./K021-princip-udrzatelnosti-v-architekture/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 21  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k021-princip-udrzatelnosti-v-architekture`  
@@ -544,7 +784,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Diskusia o forme učenia počas plánovania T004  
 **SFIA**: level=2, domain=Learning Design, maturity=Teaching-oriented  
 **Tags**:   
-**Link**: [K022-terno-terapeuticke-formy-ucenia](./K022-terno-terapeuticke-formy-ucenia/index.md)
+**Link**: [K022-terno-terapeuticke-formy-ucenia](./K022-terno-terapeuticke-formy-ucenia/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 22  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k022-terno-terapeuticke-formy-ucenia`  
@@ -570,7 +822,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Reflexia počas návrhu AI klienta – T018  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K023-ai-interakcie-casova-os-a-emocie](./K023-ai-interakcie-casova-os-a-emocie/index.md)
+**Link**: [K023-ai-interakcie-casova-os-a-emocie](./K023-ai-interakcie-casova-os-a-emocie/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 23  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k023-ai-interakcie-casova-os-a-emocie`  
@@ -596,7 +860,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Väzba medzi OneNote a projektovým manažmentom – T017  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K024-onenote-ako-zdroj-metadat-pre-ai](./K024-onenote-ako-zdroj-metadat-pre-ai/index.md)
+**Link**: [K024-onenote-ako-zdroj-metadat-pre-ai](./K024-onenote-ako-zdroj-metadat-pre-ai/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 24  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k024-onenote-ako-zdroj-metadat-pre-ai`  
@@ -622,7 +898,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Systematizácia potreby klasifikovať TERNA – vzniklo pri tvorbe SSOT  
 **SFIA**: level=2, domain=General Knowledge Work, maturity=Adaptive  
 **Tags**:   
-**Link**: [K025-kategorizacia-terno-podla-sdlc-a-7d](./K025-kategorizacia-terno-podla-sdlc-a-7d/index.md)
+**Link**: [K025-kategorizacia-terno-podla-sdlc-a-7d](./K025-kategorizacia-terno-podla-sdlc-a-7d/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 25  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k025-kategorizacia-terno-podla-sdlc-a-7d`  
@@ -648,7 +936,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Pri vývoji Personalised Calendards vznikla potreba vytvorič si „Dieľňu“ pre LO,Projekt 05-LibreOffice, priečinok 01-PersonalisedCalendars/01-Basic-Calendar/4/terno-framework  
 **SFIA**: level=3, domain=Software Development, maturity=Scriptable  
 **Tags**:   
-**Link**: [K026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python](./K026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md)
+**Link**: [K026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python](./K026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 26  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python`  
@@ -674,7 +974,19 @@ sidebar_label: "📰 KNIFE Overview – Details"
 **Context**: Vzniklo ako základný materiál pre školenie GitEA procesov a tímovú prácu  
 **SFIA**: level=2, domain=Software Configuration, maturity=Learning-based  
 **Tags**:   
-**Link**: [K027-git-for-dummies-central-concepts](./K027-git-for-dummies-central-concepts/index.md)
+**Link**: [K027-git-for-dummies-central-concepts](./K027-git-for-dummies-central-concepts/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 27  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k027-git-for-dummies-central-concepts`  
@@ -702,7 +1014,19 @@ Všetko je riadené spoločnými princípmy, dá sa učiť od starších discipl
 Vznikol z toho koncept CASO, CASA, a ďalšie dialógy. O TRIZ … Epistemiologii …SFIA,  
 **SFIA**: level=6,7, domain=Enterprise and Business Architecture (STPL, ARCH) Information Strategy (ITSP) Innovation (INOV) Change Implementation (CIPM) Methods and Tools (METL) Organizational Capability Development (OCDV), maturity=Expert  
 **Tags**:   
-**Link**: [K028-context-aware-system-ontology-approach](./K028-context-aware-system-ontology-approach/index.md)
+**Link**: [K028-context-aware-system-ontology-approach](./K028-context-aware-system-ontology-approach/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 28  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k028-context-aware-system-ontology-approach`  
@@ -728,7 +1052,19 @@ Vznikol z toho koncept CASO, CASA, a ďalšie dialógy. O TRIZ … Epistemiologi
 **Context**: Po nekonecnych konfiguraciach som poziadal GPT nech najde profi riesenie. Doporucil OOPDEV, tak to idem overit  
 **SFIA**: level=6,7, domain=Software Development, maturity=Solution Architect  
 **Tags**:   
-**Link**: [K029-prostredie-vyvojove-python-pre-lo](./K029-prostredie-vyvojove-python-pre-lo/index.md)
+**Link**: [K029-prostredie-vyvojove-python-pre-lo](./K029-prostredie-vyvojove-python-pre-lo/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 29  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k029-prostredie-vyvojove-python-pre-lo`  
@@ -756,7 +1092,19 @@ Vznikol z toho koncept CASO, CASA, a ďalšie dialógy. O TRIZ … Epistemiologi
 Level 5 – Ensure, Advise → zodpovednosť za kvalitu, konzultant
 Llevel 6 – Initiate, Influence → strategická iniciatíva, domain=KM (Knowledge Management), EDS (Education), ITMG (Information Technology Management), maturity=Self learning  
 **Tags**:   
-**Link**: [K030-pribeh-poznania-sdlc](./K030-pribeh-poznania-sdlc/index.md)
+**Link**: [K030-pribeh-poznania-sdlc](./K030-pribeh-poznania-sdlc/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 30  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k030-pribeh-poznania-sdlc`  
@@ -782,7 +1130,19 @@ Llevel 6 – Initiate, Influence → strategická iniciatíva, domain=KM (Knowle
 **Context**: Pri vytvaraní frameworku pre publikovanie na LI, PT, YT sme dosli k tomuto riešeniu na GITHUB ako Pages….  
 **SFIA**: level=Level 4 – Enable (alebo L5 – Ensure, ak sa zavádza vo firme), domain=NOV, METL, DTAN, DESN, DOCU, maturity=3 – Defined (možno dorásť na 4 – Managed)  
 **Tags**:   
-**Link**: [K031-document-as-code-framework](./K031-document-as-code-framework/index.md)
+**Link**: [K031-document-as-code-framework](./K031-document-as-code-framework/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 31  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k031-document-as-code-framework`  
@@ -808,7 +1168,19 @@ Llevel 6 – Initiate, Influence → strategická iniciatíva, domain=KM (Knowle
 **Context**: Zistenie, že dokumenty, ktoré ovplyvňujú produkt a organizáciu, musia byť verzované a auditovateľné ako kód. Git a Pages umožňujú prepojenie decision trailu s produktovými releasmi.  
 **SFIA**: level=Level 5 – Ensure / Advise, domain=GOVN, METL, RELM, DESN, DOCU, SUBD, INOV, maturity=2–3 (Repeatable → Defined)  
 **Tags**:   
-**Link**: [K032-enterprise-document-integrated-sdlc](./K032-enterprise-document-integrated-sdlc/index.md)
+**Link**: [K032-enterprise-document-integrated-sdlc](./K032-enterprise-document-integrated-sdlc/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 32  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k032-enterprise-document-integrated-sdlc`  
@@ -836,7 +1208,19 @@ Zber a štruktúrovaná reflexia neformálnych výrokov („smalltalkov“) v r�
 Vzniklo v rámci konverzácií s AI (Roman K.), ako reakcia na potrebu udržať „ľudskosť“ a kontinuitu medzi technickými a osobnými témami.  
 **SFIA**: level=3–5, domain=People management, Knowledge sharing, Collaboration, maturity=Emerging  
 **Tags**: smalltalk, flow, psychológia práce, humor, kultúra tímu  
-**Link**: [K033-smalltalk-ako-nastroj-flowu-a-kontextu](./K033-smalltalk-ako-nastroj-flowu-a-kontextu/index.md)
+**Link**: [K033-smalltalk-ako-nastroj-flowu-a-kontextu](./K033-smalltalk-ako-nastroj-flowu-a-kontextu/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 33  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k033-smalltalk-ako-nastroj-flowu-a-kontextu`  
@@ -864,7 +1248,19 @@ Je potrebné mladým ľuďom jednoduchým jazykom vysvetliť kontext Slovenskéh
 **Context**: S dcérou, ktorá končí arhitektúru sa rozprávame o budúcnosti. Z rozhovorou cítim, že mladí architekti nemajú správne informácie a znalosti o právnom, ekonomickom a finančnom kontexte svojho statusu voči partnerom v branži.  
 **SFIA**: level=?, domain=?, maturity=?  
 **Tags**: Pracovné právo  
-**Link**: [K036-pracovno-financny-ekosystem](./K036-pracovno-financny-ekosystem/index.md)
+**Link**: [K036-pracovno-financny-ekosystem](./K036-pracovno-financny-ekosystem/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 36  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k036-pracovno-financny-ekosystem`  
@@ -890,7 +1286,19 @@ Je potrebné mladým ľuďom jednoduchým jazykom vysvetliť kontext Slovenskéh
 **Context**: postupne, ako som si robil kazno ako bude cely ekosystem vyzerat, som prisiel na staru myslienku Kontext je klucovy…  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K037-context-aware-solutions-paradigma-solution](./K037-context-aware-solutions-paradigma-solution/index.md)
+**Link**: [K037-context-aware-solutions-paradigma-solution](./K037-context-aware-solutions-paradigma-solution/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 37  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k037-context-aware-solutions-paradigma-solution`  
@@ -916,7 +1324,19 @@ Je potrebné mladým ľuďom jednoduchým jazykom vysvetliť kontext Slovenskéh
 **Context**: Pri obnovovani SSL certifkatov som zabijal kopec casu, teraz mam script  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K038-ako-si-vyrobit-automaticke-nastavovanie-ssl](./K038-ako-si-vyrobit-automaticke-nastavovanie-ssl/index.md)
+**Link**: [K038-ako-si-vyrobit-automaticke-nastavovanie-ssl](./K038-ako-si-vyrobit-automaticke-nastavovanie-ssl/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 38  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k038-ako-si-vyrobit-automaticke-nastavovanie-ssl`  
@@ -942,7 +1362,19 @@ Je potrebné mladým ľuďom jednoduchým jazykom vysvetliť kontext Slovenskéh
 **Context**: Pocas pripravy struktury CAS , KNIFE licencii, biznis modelu som dosiel na chybajucu vlastnost=kontextove vyhladavanie nad GITOM  
 **SFIA**: level=a, domain=, maturity=  
 **Tags**:   
-**Link**: [K039-sementicke-a-kontextove-vyhladavanie-nad-github](./K039-sementicke-a-kontextove-vyhladavanie-nad-github/index.md)
+**Link**: [K039-sementicke-a-kontextove-vyhladavanie-nad-github](./K039-sementicke-a-kontextove-vyhladavanie-nad-github/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 39  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k039-sementicke-a-kontextove-vyhladavanie-nad-github`  
@@ -969,7 +1401,19 @@ Je potrebné mladým ľuďom jednoduchým jazykom vysvetliť kontext Slovenskéh
 Migrácia učebných materiálov zo starého CMS (Joomla) do modernej dokumentačnej platformy  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K040-migracia-joomla-github-mkdocs](./K040-migracia-joomla-github-mkdocs/index.md)
+**Link**: [K040-migracia-joomla-github-mkdocs](./K040-migracia-joomla-github-mkdocs/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 40  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k040-migracia-joomla-github-mkdocs`  
@@ -995,7 +1439,19 @@ Migrácia učebných materiálov zo starého CMS (Joomla) do modernej dokumenta�
 **Context**: Pri príprave STH2025–2026 sa ukázalo, že GitHub + Pages + generátory poskytujú kompletný, otvorený a bezplatný edukačný stack.Pocas pripravy STH2025-2026- som si uvedomil, ze GitHub, HitHUb Class, Sites, MkDOks umoznuju vytvorit cely ekosystem. A zadarmo.  
 **SFIA**: level=, domain=Learning-based / Methods & Tools, maturity=  
 **Tags**: Educations, Frameworks  
-**Link**: [K041-github-education-framework](./K041-github-education-framework/index.md)
+**Link**: [K041-github-education-framework](./K041-github-education-framework/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 41  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k041-github-education-framework`  
@@ -1022,7 +1478,19 @@ Je to obrovsky priestor pre tvor bu vlastnych aplikacii ako KnowMyself
 **Context**: Pocas pripravy webinara GitDos-Demo som si uvedomil, ze samotne nastroje pre dokumentovanie vyuzivaju VSC ako Web. Komplexne GUI ale na webe.  
 **SFIA**: level=, domain=, maturity=  
 **Tags**: Solution Development, Framework  
-**Link**: [K042-singlepageapplication-webabased-desktop-app](./K042-singlepageapplication-webabased-desktop-app/index.md)
+**Link**: [K042-singlepageapplication-webabased-desktop-app](./K042-singlepageapplication-webabased-desktop-app/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 42  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k042-singlepageapplication-webabased-desktop-app`  
@@ -1048,7 +1516,19 @@ Je to obrovsky priestor pre tvor bu vlastnych aplikacii ako KnowMyself
 **Context**: Počas prípravy repozitárov pre STH2025 riešim aj kontroly a komunikáciu so študentami. Je toho more, ale AI s API by bolo super.  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K043-kontrola-odpovede-studentov-pomocou-api-na-ai](./K043-kontrola-odpovede-studentov-pomocou-api-na-ai/index.md)
+**Link**: [K043-kontrola-odpovede-studentov-pomocou-api-na-ai](./K043-kontrola-odpovede-studentov-pomocou-api-na-ai/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 43  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k043-kontrola-odpovede-studentov-pomocou-api-na-ai`  
@@ -1072,13 +1552,25 @@ Je to obrovsky priestor pre tvor bu vlastnych aplikacii ako KnowMyself
 **Technology**: rclone, Mac OS, QNAP  
 **Description**: This KNIFE explains how to create a full backup of your OneDrive data in cases where the local disk does not have sufficient capacity to mirror the entire cloud content. When 'Files On-Demand' is enabled, standard tools are unable to copy files – they can at best read their metadata. However, using tools like `rclone`, it becomes possible to back up the cloud directly without needing local mirroring.  
 **Context**: Microsoft offers cloud storage up to several terabytes, but over time each storage fills up. At that point, you either have to buy more space or clean up existing data.
- 
+ 
 I wanted neither. Since I had enough free capacity on an external disk connected to my QNAP NAS, I decided to create a complete copy of my OneDrive there.
- 
+ 
 I had no idea it wouldn't be a trivial task.  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K044-onedrive-backup-to-external-disk-on-qnap](./K044-onedrive-backup-to-external-disk-on-qnap/index.md)
+**Link**: [K044-onedrive-backup-to-external-disk-on-qnap](./K044-onedrive-backup-to-external-disk-on-qnap/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 44  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k044-onedrive-backup-to-external-disk-on-qnap`  
@@ -1104,7 +1596,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**: I have attended mandatory training in 365 bank. Excellent lector, important topic.  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K045-zakladne-informacie-o-esg](./K045-zakladne-informacie-o-esg/index.md)
+**Link**: [K045-zakladne-informacie-o-esg](./K045-zakladne-informacie-o-esg/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 45  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k045-zakladne-informacie-o-esg`  
@@ -1130,7 +1634,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**: Pri rutinnej práci som omylom poslal e-mail do archívu. Napadlo ma, že sa niečo nové naučím. Možno ušetrím diskovú kapacitu a nestratím možnosť vyhľadávať v histórii  
 **SFIA**: level=Intermediate, domain=IT Communication, maturity=Basic  
 **Tags**:   
-**Link**: [K046-thunderbird-archive-export](./K046-thunderbird-archive-export/index.md)
+**Link**: [K046-thunderbird-archive-export](./K046-thunderbird-archive-export/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 46  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k046-thunderbird-archive-export`  
@@ -1156,7 +1672,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**: KNIFE047_Reflexia_a_epistemologia.md, KNIFE047 – Epistemológia 4Curiosis  
 **SFIA**: level=, domain=Social Communities, maturity=  
 **Tags**:   
-**Link**: [K047-knife047-7s-cycle-of-meaningful-knowledge](./K047-knife047-7s-cycle-of-meaningful-knowledge/index.md)
+**Link**: [K047-knife047-7s-cycle-of-meaningful-knowledge](./K047-knife047-7s-cycle-of-meaningful-knowledge/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 47  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k047-knife047-7s-cycle-of-meaningful-knowledge`  
@@ -1182,7 +1710,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K048-ai-agent-in-opengpt](./K048-ai-agent-in-opengpt/index.md)
+**Link**: [K048-ai-agent-in-opengpt](./K048-ai-agent-in-opengpt/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 48  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k048-ai-agent-in-opengpt`  
@@ -1208,7 +1748,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K049-knife049-vyhladavac-nad-opengpt-historiou](./K049-knife049-vyhladavac-nad-opengpt-historiou/index.md)
+**Link**: [K049-knife049-vyhladavac-nad-opengpt-historiou](./K049-knife049-vyhladavac-nad-opengpt-historiou/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 49  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k049-knife049-vyhladavac-nad-opengpt-historiou`  
@@ -1234,7 +1786,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K050-open-gpt-vytvaranie-prompt-instructions](./K050-open-gpt-vytvaranie-prompt-instructions/index.md)
+**Link**: [K050-open-gpt-vytvaranie-prompt-instructions](./K050-open-gpt-vytvaranie-prompt-instructions/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 50  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k050-open-gpt-vytvaranie-prompt-instructions`  
@@ -1260,7 +1824,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K051-google-analytics-fundamentals](./K051-google-analytics-fundamentals/index.md)
+**Link**: [K051-google-analytics-fundamentals](./K051-google-analytics-fundamentals/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 51  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k051-google-analytics-fundamentals`  
@@ -1286,7 +1862,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K052-github-lms-framework](./K052-github-lms-framework/index.md)
+**Link**: [K052-github-lms-framework](./K052-github-lms-framework/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 52  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k052-github-lms-framework`  
@@ -1312,7 +1900,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K053-framework-for-project-management-in-github](./K053-framework-for-project-management-in-github/index.md)
+**Link**: [K053-framework-for-project-management-in-github](./K053-framework-for-project-management-in-github/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 53  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k053-framework-for-project-management-in-github`  
@@ -1341,7 +1941,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K054-docusaurus-advanced-deployment-pipeline](./K054-docusaurus-advanced-deployment-pipeline/index.md)
+**Link**: [K054-docusaurus-advanced-deployment-pipeline](./K054-docusaurus-advanced-deployment-pipeline/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 54  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k054-docusaurus-advanced-deployment-pipeline`  
@@ -1370,7 +1982,19 @@ I had no idea it wouldn't be a trivial task.
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K055-ako-obnovit-stav-z-minulosti](./K055-ako-obnovit-stav-z-minulosti/index.md)
+**Link**: [K055-ako-obnovit-stav-z-minulosti](./K055-ako-obnovit-stav-z-minulosti/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 55  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k055-ako-obnovit-stav-z-minulosti`  
@@ -1402,7 +2026,19 @@ Tak sa to dá pekne použiť aj v kurze ako jedna lekcia s troma kapitolami – 
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K056-central-panel-for-git-sdlc-git-management-makefile](./K056-central-panel-for-git-sdlc-git-management-makefile/index.md)
+**Link**: [K056-central-panel-for-git-sdlc-git-management-makefile](./K056-central-panel-for-git-sdlc-git-management-makefile/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 56  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k056-central-panel-for-git-sdlc-git-management-makefile`  
@@ -1437,7 +2073,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**: V jednom okamihu sa komunikácia zastavila na strane GPT  stým, že má náročnú ulohu, ale že dnes to bude. Tak ma napadlo, koľko také „kecanie“ konzumuje tokenov. Super príprava pre vlastné API riešenia  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K057-ai-agent-na-monitoroavanie-nakladov-opengpt](./K057-ai-agent-na-monitoroavanie-nakladov-opengpt/index.md)
+**Link**: [K057-ai-agent-na-monitoroavanie-nakladov-opengpt](./K057-ai-agent-na-monitoroavanie-nakladov-opengpt/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 57  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k057-ai-agent-na-monitoroavanie-nakladov-opengpt`  
@@ -1463,7 +2111,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie](./K058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie/index.md)
+**Link**: [K058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie](./K058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 58  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie`  
@@ -1489,7 +2149,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**: Počas prípravy STHDF 2025-2025 so prišiel na to, že to mám zaradiť do osnov  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K059-stem-a-makerspace-ako-metodika-vzdelavania](./K059-stem-a-makerspace-ako-metodika-vzdelavania/index.md)
+**Link**: [K059-stem-a-makerspace-ako-metodika-vzdelavania](./K059-stem-a-makerspace-ako-metodika-vzdelavania/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 59  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k059-stem-a-makerspace-ako-metodika-vzdelavania`  
@@ -1515,7 +2187,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K060-export-draw-io-diagramu-do-a4-png](./K060-export-draw-io-diagramu-do-a4-png/index.md)
+**Link**: [K060-export-draw-io-diagramu-do-a4-png](./K060-export-draw-io-diagramu-do-a4-png/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 60  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k060-export-draw-io-diagramu-do-a4-png`  
@@ -1541,7 +2225,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K061-passkey-ako-bezpecnostny-koncept](./K061-passkey-ako-bezpecnostny-koncept/index.md)
+**Link**: [K061-passkey-ako-bezpecnostny-koncept](./K061-passkey-ako-bezpecnostny-koncept/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 61  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k061-passkey-ako-bezpecnostny-koncept`  
@@ -1567,7 +2263,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K062-docusaurus-slugy-a-routing](./K062-docusaurus-slugy-a-routing/index.md)
+**Link**: [K062-docusaurus-slugy-a-routing](./K062-docusaurus-slugy-a-routing/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 62  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k062-docusaurus-slugy-a-routing`  
@@ -1593,7 +2301,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K063-automaticke-generovanie-knifes](./K063-automaticke-generovanie-knifes/index.md)
+**Link**: [K063-automaticke-generovanie-knifes](./K063-automaticke-generovanie-knifes/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 63  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k063-automaticke-generovanie-knifes`  
@@ -1619,7 +2339,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**: Marketig patrí medzi základné aktivity každého autora. Technici túto disciplínu podceňujú. Podľa metodikyu Q12 je to potrebné zabezpečeť, aby sme mali spätnú väzbu na naše aktivty z trhu.  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K064-ga4-gtn-utm](./K064-ga4-gtn-utm/index.md)
+**Link**: [K064-ga4-gtn-utm](./K064-ga4-gtn-utm/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 64  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k064-ga4-gtn-utm`  
@@ -1645,7 +2377,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**: Pri príprave treidy sa nabaľujú nové a nové podúlohy, ktoré musi byť splnené pred vyugenerovaním samotnej triedy zo šablény pre triedu. Táto šabl=ona by mala obsahovať všetky tieto vylepšenia  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K065-makefile-for-knife-ecosystem-for-mac-windows-linux](./K065-makefile-for-knife-ecosystem-for-mac-windows-linux/index.md)
+**Link**: [K065-makefile-for-knife-ecosystem-for-mac-windows-linux](./K065-makefile-for-knife-ecosystem-for-mac-windows-linux/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 65  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k065-makefile-for-knife-ecosystem-for-mac-windows-linux`  
@@ -1671,7 +2415,19 @@ Pripraviť šablónu AIAgenta na token tracking, ktorú by si potom vedel spusti
 **Context**: Počas prípravy na semster a získaní Edu Benefit ma zaujímali ceny za komenčné použitoe  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K066-porovnanie-biznis-planov-github](./K066-porovnanie-biznis-planov-github/index.md)
+**Link**: [K066-porovnanie-biznis-planov-github](./K066-porovnanie-biznis-planov-github/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 66  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k066-porovnanie-biznis-planov-github`  
@@ -1698,7 +2454,19 @@ Obsah v MD súboroch sa dá konzumovať cez GitHub, cez Web Pages a Web Pages na
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K067-github-deployment-strategie](./K067-github-deployment-strategie/index.md)
+**Link**: [K067-github-deployment-strategie](./K067-github-deployment-strategie/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 67  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k067-github-deployment-strategie`  
@@ -1724,7 +2492,19 @@ Obsah v MD súboroch sa dá konzumovať cez GitHub, cez Web Pages a Web Pages na
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K068-kruhovy-portret-v-gimp](./K068-kruhovy-portret-v-gimp/index.md)
+**Link**: [K068-kruhovy-portret-v-gimp](./K068-kruhovy-portret-v-gimp/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 68  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k068-kruhovy-portret-v-gimp`  
@@ -1752,7 +2532,19 @@ Ak osa prezenetovať, pravdivo, transparentne?
 **Context**: Pri každej aktualizácii CV, pri každej aktualizácií profilov mám otázky, čo a ko o sebe prezentovať. Viem, že nie som sám, a hľadanie odpovedí na moje otázky, môže pomôcť aj ďalším.  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K069-kto-ma-pochvali-ak-sa-nepochvalim-sam](./K069-kto-ma-pochvali-ak-sa-nepochvalim-sam/index.md)
+**Link**: [K069-kto-ma-pochvali-ak-sa-nepochvalim-sam](./K069-kto-ma-pochvali-ak-sa-nepochvalim-sam/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 69  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k069-kto-ma-pochvali-ak-sa-nepochvalim-sam`  
@@ -1782,7 +2574,19 @@ Webinár ponúka prehľadnou formou úkážky v podobe praktických príkladov v
 **Context**: Dokumentácia v IT – strategická hodnota, alebop strata času https://leanpub.com/7D  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K070-ea-fundamentals](./K070-ea-fundamentals/index.md)
+**Link**: [K070-ea-fundamentals](./K070-ea-fundamentals/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 70  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k070-ea-fundamentals`  
@@ -1811,7 +2615,19 @@ Rozpravcované je vo One Note
 **Context**: Túto metodiku používam asi 15 rokov. Pred 10 rokmi som o nej vydal aj knihu  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K071-7ds-seven-disciplines-for-successful-solutions](./K071-7ds-seven-disciplines-for-successful-solutions/index.md)
+**Link**: [K071-7ds-seven-disciplines-for-successful-solutions](./K071-7ds-seven-disciplines-for-successful-solutions/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 71  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k071-7ds-seven-disciplines-for-successful-solutions`  
@@ -1838,7 +2654,19 @@ TAXONÓMIA, ONTOLÓGIA aktív a ich vzťahiv z pohľadu rôznych rolí, aby plat
 **Context**: Na tejto metodike pracujem minimálne od roku 2008. 8 Rokov som ju verifikoval v VW Bratislava na cca 50000 evidovaných aktívach IT. Je to nová veľá téma, bez ktorej IT nemôže napredovať,  
 **SFIA**: level=LEVEL 6- expert, domain=Enterprise architecture, maturity=Expert  
 **Tags**:   
-**Link**: [K072-apv-assets-perspectives-views-keep-your-aseests-in-order](./K072-apv-assets-perspectives-views-keep-your-aseests-in-order/index.md)
+**Link**: [K072-apv-assets-perspectives-views-keep-your-aseests-in-order](./K072-apv-assets-perspectives-views-keep-your-aseests-in-order/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 72  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k072-apv-assets-perspectives-views-keep-your-aseests-in-order`  
@@ -1864,7 +2692,19 @@ TAXONÓMIA, ONTOLÓGIA aktív a ich vzťahiv z pohľadu rôznych rolí, aby plat
 **Context**: Túto metodiku som vypracoval pred 10 rokmi. Sám sa ňou nechávam inšpirovať, ale nie som dosť dôsledný. Plánujem to zmeniť. A aj keď nevyplňam jednotlivé kapitoly do nejakého systému, niekde v podvedmí sa riadim základnými princípmi.  
 **SFIA**: level=Level 5 – Ensure / Advise, domain=Biznis development, maturity=Beginner  
 **Tags**:   
-**Link**: [K073-q12-twelve-quadrants-for-starting-business](./K073-q12-twelve-quadrants-for-starting-business/index.md)
+**Link**: [K073-q12-twelve-quadrants-for-starting-business](./K073-q12-twelve-quadrants-for-starting-business/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 73  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k073-q12-twelve-quadrants-for-starting-business`  
@@ -1890,7 +2730,19 @@ TAXONÓMIA, ONTOLÓGIA aktív a ich vzťahiv z pohľadu rôznych rolí, aby plat
 **Context**: Od začiatku svojej profesionálnej kariéry vychádzam z V modelu a jeho princípov. Nie vždy dodržujem princípy, z rôznych dôvodov, ale pomáha mi to pochopiť kontext celého riešenia  
 **SFIA**: level=Level 3 – Apply → samostatná práca, domain=Solution Development, maturity=Beginner  
 **Tags**:   
-**Link**: [K074-sdlc-solution-development-life-cycle](./K074-sdlc-solution-development-life-cycle/index.md)
+**Link**: [K074-sdlc-solution-development-life-cycle](./K074-sdlc-solution-development-life-cycle/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 74  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k074-sdlc-solution-development-life-cycle`  
@@ -1916,7 +2768,19 @@ TAXONÓMIA, ONTOLÓGIA aktív a ich vzťahiv z pohľadu rôznych rolí, aby plat
 **Context**: Každé riešenie si zaslúži analýzu z pohľadu jednoduchého biznis plánu. Pokiaľ nemám aspoň koncept bisnis plánu, aké je šanca na úsešnú realizáciu projektu?  
 **SFIA**: level=Level 3 – Apply → samostatná práca, domain=Bisnis development, maturity=Beginner  
 **Tags**:   
-**Link**: [K075-lean-canvas](./K075-lean-canvas/index.md)
+**Link**: [K075-lean-canvas](./K075-lean-canvas/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 75  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k075-lean-canvas`  
@@ -1949,7 +2813,19 @@ Ak si ujasníme kontext, aké kritéria, v akej situáci je ktoré riešenie lep
 **SFIA**: level=LEVEL 6- expert, domain=Relationship development
 Trust development, maturity=High awareness  
 **Tags**:   
-**Link**: [K076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution](./K076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution/index.md)
+**Link**: [K076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution](./K076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 76  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution`  
@@ -1978,7 +2854,19 @@ Marketing budovaný na základe dôvery a spoločných hodnôt
 **SFIA**: level=LEVEL 2, domain=Relationship development
 Trust development, maturity=High awareness  
 **Tags**:   
-**Link**: [K077-knife047-7s-cycle-of-meaningful-knowledge](./K077-knife047-7s-cycle-of-meaningful-knowledge/index.md)
+**Link**: [K077-knife047-7s-cycle-of-meaningful-knowledge](./K077-knife047-7s-cycle-of-meaningful-knowledge/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 77  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k077-knife047-7s-cycle-of-meaningful-knowledge`  
@@ -2013,7 +2901,19 @@ Trust development, maturity=High awareness
 „Jazyk nemusí byť bariérou. AI stavia mosty, aby sme mohli každý rásť na vlastnej pôde.“  
 **SFIA**: level=LEVEL 6- expert, domain=Solution Development, maturity=Expert  
 **Tags**:   
-**Link**: [K078-language-as-a-bridge-ai-ako-most-medzi-jazykmi](./K078-language-as-a-bridge-ai-ako-most-medzi-jazykmi/index.md)
+**Link**: [K078-language-as-a-bridge-ai-ako-most-medzi-jazykmi](./K078-language-as-a-bridge-ai-ako-most-medzi-jazykmi/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 78  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k078-language-as-a-bridge-ai-ako-most-medzi-jazykmi`  
@@ -2039,7 +2939,19 @@ Trust development, maturity=High awareness
 **Context**: Pri príprave štruktúry adresárov pre repozitár ročníka publik sme prišli ku skriptu, ktorý nazval AI idempotentný skript. Požiadal som o vysvetlenie aj s históriou slova  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K079-co-znamena-slovo-ze-je-nieco-idempotentne](./K079-co-znamena-slovo-ze-je-nieco-idempotentne/index.md)
+**Link**: [K079-co-znamena-slovo-ze-je-nieco-idempotentne](./K079-co-znamena-slovo-ze-je-nieco-idempotentne/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 79  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k079-co-znamena-slovo-ze-je-nieco-idempotentne`  
@@ -2065,7 +2977,19 @@ Trust development, maturity=High awareness
 **Context**: Počas prípravyi ekosystému pre windows, vznikla potreba aká je architektúra GitHub a Docusaurus a ako to urobiť univerzálne  
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K080-docusaurus-vs-github-pages-package-json](./K080-docusaurus-vs-github-pages-package-json/index.md)
+**Link**: [K080-docusaurus-vs-github-pages-package-json](./K080-docusaurus-vs-github-pages-package-json/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 80  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k080-docusaurus-vs-github-pages-package-json`  
@@ -2091,7 +3015,19 @@ Trust development, maturity=High awareness
 **Context**: Keby som mal vlasy, boli by ako sned na horách. Keby som sa nerozhodol pre Sites, tedz Web prístup ku svojmu obsahu, ušetril by som množstvo času. Ale stratil by som základnú hodnotu- Jednoduchý Web prístup k tomuto obsahu.  
 **SFIA**: level=LEVEL -6-Expert, domain=Architecture, maturity=Expert  
 **Tags**:   
-**Link**: [K081-transparentna-stabilna-infrastruktura-pre-sites](./K081-transparentna-stabilna-infrastruktura-pre-sites/index.md)
+**Link**: [K081-transparentna-stabilna-infrastruktura-pre-sites](./K081-transparentna-stabilna-infrastruktura-pre-sites/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 81  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k081-transparentna-stabilna-infrastruktura-pre-sites`  
@@ -2117,7 +3053,19 @@ Trust development, maturity=High awareness
 **Context**: Pri písaní KNIFE človek potrebuje písať rýchlo, lebo KNIFE nie je jeho primárny cieľ. Každá pomôcka  je cenná, šetrí čas.  
 **SFIA**: level=beginer, domain=Documentation, maturity=  
 **Tags**:   
-**Link**: [K082-ako-urobit-text-v-md-atraktivnejsi-emoji](./K082-ako-urobit-text-v-md-atraktivnejsi-emoji/index.md)
+**Link**: [K082-ako-urobit-text-v-md-atraktivnejsi-emoji](./K082-ako-urobit-text-v-md-atraktivnejsi-emoji/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 82  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k082-ako-urobit-text-v-md-atraktivnejsi-emoji`  
@@ -2143,7 +3091,19 @@ Trust development, maturity=High awareness
 **Context**: Keď si už myslíš, že si dokončil svoju pácu a chceš ísť spať, commitneš poslednú zmenu, otestovanú na lokáli a pusnesh to na server, už sa tešíš do postele, ale preds apo očku pozrieť na server či ti to builduje…. Červená ikona ťa vyvedie z omylu…. A začínaš nočnú. Nie v posteli ale za klávesnicou…  
 **SFIA**: level=L1-L8 everybody, domain=Maintenence, maturity=  
 **Tags**:   
-**Link**: [K083-aktualizacia-komponentov-pre-docusaurus](./K083-aktualizacia-komponentov-pre-docusaurus/index.md)
+**Link**: [K083-aktualizacia-komponentov-pre-docusaurus](./K083-aktualizacia-komponentov-pre-docusaurus/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 83  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k083-aktualizacia-komponentov-pre-docusaurus`  
@@ -2169,7 +3129,19 @@ Trust development, maturity=High awareness
 **Context**:   
 **SFIA**: level=, domain=, maturity=  
 **Tags**:   
-**Link**: [K084-ako-aktivovat-na-githube-edu-benefity](./K084-ako-aktivovat-na-githube-edu-benefity/index.md)
+**Link**: [K084-ako-aktivovat-na-githube-edu-benefity](./K084-ako-aktivovat-na-githube-edu-benefity/index.md)  
+**Display ID**:   
+**GUID**: 
+
+**DAO**:   
+**Sidebar Label**:   
+**Sidebar Position**: 84  
+**Locale**: sk  
+**License**:   
+**Rights Holder (Content)**:   
+**Rights Holder (System)**:   
+**Disclaimer**:   
+**Copyright**: 
 
 **Metadáta (generated)**:  
 - **slug**: `/sk/knifes/k084-ako-aktivovat-na-githube-edu-benefity`  

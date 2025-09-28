@@ -15,6 +15,16 @@ sidebar_label: "K038 – Ako si vyrobit automaticke nastavovanie SSL"
 sidebar_position: "38"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `14675413-a6ee-4b45-9be4-1e2012d03c95`
+> **Status:** `finished` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `14675413-a6ee-4b45-9be4-1e2012d03c95`
+> **Status:** `finished` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

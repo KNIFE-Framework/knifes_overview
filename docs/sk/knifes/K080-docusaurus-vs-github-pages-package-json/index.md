@@ -15,6 +15,16 @@ sidebar_label: "K080 – Docusaurus-vs-github-pages-package-json"
 sidebar_position: "80"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `5174fcab-7594-4e7e-8582-7396133dec8c`
+> **Status:** `now` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `5174fcab-7594-4e7e-8582-7396133dec8c`
+> **Status:** `now` · **Author:** Roman Kazička
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

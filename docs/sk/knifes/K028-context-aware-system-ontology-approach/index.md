@@ -15,6 +15,16 @@ sidebar_label: "K028 – Context Aware System Ontology, Approach"
 sidebar_position: "28"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `735d6a47-d44c-40c7-861c-8fca193b68ef`
+> **Status:** `v príprave` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `735d6a47-d44c-40c7-861c-8fca193b68ef`
+> **Status:** `v príprave` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -15,6 +15,16 @@ sidebar_label: "K009 – LinkedIn post engine – AI automatizácia"
 sidebar_position: "9"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `2a2564bd-e234-42ed-acd9-e80ddb128b17`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `2a2564bd-e234-42ed-acd9-e80ddb128b17`
+> **Status:** `koncept` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

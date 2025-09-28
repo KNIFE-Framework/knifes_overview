@@ -15,6 +15,16 @@ sidebar_label: "K050 – Open GPT, vytváranie prompt instructions"
 sidebar_position: "50"
 locale: "sk"
 ---
+<!-- fm-visible: start -->
+> **GUID:** `abaf199d-563c-487a-88d2-2c8d784afb84`
+> **Status:** `in progress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
+<!-- body:start -->
+
+<!-- fm-visible: start -->
+> **GUID:** `abaf199d-563c-487a-88d2-2c8d784afb84`
+> **Status:** `in progress` · **Author:** Roman Kazicka
+<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->

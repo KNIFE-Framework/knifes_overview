@@ -23,7 +23,6 @@ license: "CC-BY-NC-SA-4.0"
 disclaimer: "Educational content. Use at your own risk."
 author_id: ""
 author_did: ""
-
 ---
 <!-- body:start -->
 

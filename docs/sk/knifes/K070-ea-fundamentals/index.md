@@ -5,15 +5,24 @@ dao: "knife"
 title: "EA Fundamentals"
 description: "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K070 – EA Fundamentals"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "new"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k070-ea-fundamentals"
+locale: "sk"
 sidebar_label: "K070 – EA Fundamentals"
 sidebar_position: "70"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `c5d8b05b-4afb-4618-8ca4-657a78acd5d8`

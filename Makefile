@@ -41,7 +41,13 @@ FIND_MD := find $(DOCS_DIR) -type f \( -name "*.md" -o -name "*.mdx" \)
 # KNIFES generator (CSV → MD)
 # default CSV (SSOT export)
 SCRIPTS_DIR := scripts
-CSV_DEFAULT := data/KNIFE-OVERVIEW-ONLY.csv
+# Single point of input (config-driven)
+CONFIG_JSON := config/knifes_config.json
+# CSV default path – read from docs/config/knifes_config.json if present; fallback to new location
+CSV_DEFAULT := $(shell node -p "try{require('./$(CONFIG_JSON)').csv || ''}catch(e){''}")
+ifeq ($(strip $(CSV_DEFAULT)),)
+CSV_DEFAULT := config/data/KNIFES-OVERVIEW-INPUTs.csv
+endif
 # hlavný CSV (možno prebíjať v prostredí)
 CSV_OVERVIEW ?= $(CSV_DEFAULT)
 # fallback na overview, ak nie je zadané
@@ -68,14 +74,15 @@ endif
   delete-dotpages \
   actions-status actions-disable actions-enable \
   quickstart mode doctor next-steps \
-  knifes-gen knife-new dev-gen build-gen \
+  knifes-gen knifes-new dev-gen build-gen \
   gen-dry dry-verify \
-  knife-guid-backfill knife-meta-backfill \
-  knife-verify knife-verify-csv-docs knife-verify-frontmatter \
-  print-vars knife-audit-frontmatter \
-  fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file knife-fm-add-missing knife-fm-add-missing-dry \
+  knifes-guid-backfill knifes-meta-backfill \
+  knifes-verify knifes-verify-csv-docs knifes-verify-frontmatter knifes-verify-smart \
+  print-vars knifes-audit-frontmatter \
+  fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file knifes-fm-add-missing knifes-fm-add-missing-dry \
   release-ci release-ci-datetime \
-  commit push tag push-tag release release-auto release-commit check-version knife-finish knife-finish-dry upgrade-docusaurus
+  commit push tag push-tag release release-auto release-commit check-version knifes-finish knifes-finish-dry upgrade-docusaurus \
+  knife-fm-dry knife-fm-fix knife-header-check knife-csv-fix knife-fm-report-id knife-fm-report-tree
 
 # -------------------------
 # 📌 Help
@@ -113,8 +120,8 @@ help:
 	@echo "  release-ci-datetime    - Vytvorí tag vYYYYMMDD-HHMM (UTC) bez zmeny package.json a pushne ho"
 	@echo "                         Príklad: v20250925-2315"
 	@echo "                         Použitie: make release-ci | make release-ci-datetime"
-	@echo "  (CI) vyžaduje: .github/workflows/release.yml"
-	@echo "  APP_VERSION v pätičke sa nastaví v CI z tagu: $${GITHUB_REF_NAME}"
+	@echo "                         (CI) vyžaduje: .github/workflows/release.yml"
+	@echo "                          APP_VERSION v pätičke sa nastaví v CI z tagu: $${GITHUB_REF_NAME}"
 	@echo "===== 🏷️ Release (lokálne tagy) ====="
 	@echo "  release            - vytvorí annotated tag $(VERSION) a pushne ho (spustí CI Release)"
 	@echo "  release-auto       - automatický tag vYYYYMMDD-HHMMSSZ a pushne ho"
@@ -138,29 +145,41 @@ help:
 	@echo "  deploy                 - check-worktree + build + copy-build + commit-deploy"
 	@echo "  full-deploy            - check-worktree + push-main + build + copy + commit"
 	@echo "===== 🧩 KNIFE Generátor ====="
+	@echo "  knifes-validate         - Validuje CSV podľa config/knifes_config.json"
+	@echo "  knifes-prepare          - Validate + Generate (E2E, config-driven)"
+	@echo "  knifes-prepare-strict   - Prísna validácia + Generate (na CI)"
+	@echo "  knifes-generate         - Generuje prehľady + nové KNIFE (config-driven)"
 	@echo "  dev-gen                - knifes-gen + dev (vygeneruje MD a spustí lokálny dev)"
 	@echo "  build-gen              - knifes-gen + build (vygeneruje MD a spraví prod build)"
 	@echo "  knifes-gen             - Generuje/aktualizuje MD zo CSV (prehľady + chýbajúce Kxxx skeletony)"
-	@echo "  knife-new              - id=K062 title=\"...\" – rýchlo založí skeleton novej KNIFE"
+	@echo "  knifes-new              - id=K062 title=\"...\" – rýchlo založí skeleton novej KNIFE"
 	@echo "  gen-dry                - „suchý“ plán generovania (nič nezapisuje)"
 	@echo "  dry-verify             - skrátená validácia cez generátor (bez zásahu)"
-	@echo "  knife-finish           - Uzavri KNIFE: FM podsúborov -> backfill -> canonical fix -> verify -> gen"
-	@echo "  knife-finish-dry       - DRY-RUN plán uzavretia KNIFE (nič nezapisuje)"
+	@echo "  knifes-finish           - Uzavri KNIFE: FM podsúborov -> backfill -> canonical fix -> verify -> gen"
+	@echo "  knifes_config-finish-dry       - DRY-RUN plán uzavretia KNIFE (nič nezapisuje)"
 	@echo "===== ✅ Verifications & Backfill ====="
-	@echo "  knife-guid-backfill    - Doplní chýbajúce 'guid' a 'dao' do KNIFE MD (len tam, kde chýbajú)"
-	@echo "  knife-meta-backfill    - Z CSV doplní 'created'; ak chýba 'modified', nastaví ho na 'created'; voliteľne doplní category/type/priority"
-	@echo "  knife-verify           - Kombinovaný check: CSV/docs + lint frontmatteru (povinné polia)"
-	@echo "  knife-verify-csv-docs  - CSV/docs konzistencia (duplicitné ID, prázdne názvy, kolízie slugov, chýbajúce súbory)"
-	@echo "  knife-verify-frontmatter - Lint povinných polí (guid, dao, id, title, created, modified)"
-	@echo "  knife-audit-frontmatter - Audit existujúcich KNIFE index.md (guid/dao/dates/slug/locale)"
+	@echo "  knifes-guid-backfill    - Doplní chýbajúce 'guid' a 'dao' do KNIFE MD (len tam, kde chýbajú)"
+	@echo "  knifes-meta-backfill    - Z CSV doplní 'created'; ak chýba 'modified', nastaví ho na 'created'; voliteľne doplní category/type/priority"
+	@echo "  knifes-verify           - Kombinovaný check: CSV/docs + lint frontmatteru (povinné polia)"
+	@echo "  knifes-verify-csv-docs  - CSV/docs konzistencia (duplicitné ID, prázdne názvy, kolízie slugov, chýbajúce súbory)"
+	@echo "  knifes-verify-frontmatter - Lint povinných polí (guid, dao, id, title, created, modified)"
+	@echo "  knifes-audit-frontmatter - Audit existujúcich KNIFE index.md (guid/dao/dates/slug/locale)"
+	@echo "  knifes-verify-smart     - Konfiguráciou riadená verifikácia (scripts/knifes_verify.mjs)"
 	@echo "===== 📝 Frontmatter Tools ====="
 	@echo "  fm-fix                 - Prepíše frontmatter v docs/ tak, že 'slug' bude zakomentovaný (# slug: \"...\")"
 	@echo "  fm-fix-dry             - Náhľad (DRY-RUN) zmien frontmatteru pre celý docs/ (vytlačí unified diff)"
 	@echo "  fm-fix-file            - Prepíše frontmatter iba jedného súboru; použitie: make fm-fix-file file=PATH"
 	@echo "  fm-fix-file-dry        - DRY-RUN pre jeden súbor; použitie: make fm-fix-file-dry file=PATH"
 	@echo "  fm-set-slug-file       - Aktívny slug pre jediný súbor; použitie: make fm-set-slug-file file=PATH slug=/cesta/bez-locale"
-	@echo "  knife-fm-add-missing   - Pridá default frontmatter do MD bez FM (idempotentne)"
-	@echo "  knife-fm-add-missing-dry- DRY-RUN: ukáže, ktoré súbory by dostali frontmatter"
+	@echo "  knifes-fm-add-missing   - Pridá default frontmatter do MD bez FM (idempotentne)"
+	@echo "  knifes-fm-add-missing-dry- DRY-RUN: ukáže, ktoré súbory by dostali frontmatter"
+	@echo "===== 🧼 KNIFE Fix/Checks (FM & Header) ====="
+	@echo "  knife-fm-dry          - DRY-RUN: normalizuje iba Front Matter v docs/ (bez zápisu)"
+	@echo "  knife-fm-fix          - APPLY:   normalizuje Front Matter v docs/ (zapíše zmeny)"
+	@echo "  knife-header-check    - Report:  kontrola H1 nadpisu po FM (technická hlavička)"
+	@echo "  knife-csv-fix         - Pôvodný CSV/folder fix (fallback, bez zásahu do obsahu MD)"
+	@echo "  knife-fm-report-id    - REPORT: detailný výpis plánovaných FM zmien pre jedno ID (make knife-fm-report-id id=K059)"
+	@echo "  knife-fm-report-tree  - REPORT: detailný výpis FM zmien pre celú zložku KNIFE (make knife-fm-report-tree id=K083)"
 
 help-auth:
 	@echo "===== 🔐 Autentikácia pre Worktree deploy ====="
@@ -541,15 +560,15 @@ knifes-gen:
 	fi
 	@if [ ! -f "$(strip $(CSV_OVERVIEW))" ]; then \
 		echo "❌ Chýba CSV '$(strip $(CSV_OVERVIEW))'. Ulož export z Calc/Excel alebo použi: make knifes-gen csv=<path>"; \
-		echo "   Príklad: make knifes-gen csv=data/KNIFE-OVERVIEW-ONLY.csv"; exit 1; \
+		echo "   Príklad: make knifes-gen csv=$(CSV_DEFAULT)"; exit 1; \
 	fi
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
 	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root .
 
-## knife-new: založí skeleton KNIFE
-## Použitie: make knife-new id=K062 title="My Topic"
-knife-new:
-	@if [ -z "$(id)" ]; then echo "Použi: make knife-new id=K062 title='Názov'"; exit 1; fi
+## knifes-new: založí skeleton KNIFE
+## Použitie: make knifes-new id=K062 title="My Topic"
+knifes-new:
+	@if [ -z "$(id)" ]; then echo "Použi: make knifes-new id=K062 title='Názov'"; exit 1; fi
 	@if [ ! -f "$(SCRIPTS_DIR)/new_knife.mjs" ]; then \
 		echo "❌ Chýba $(SCRIPTS_DIR)/new_knife.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
 	fi
@@ -562,7 +581,7 @@ knife-new:
 
 ## Kombinované príkazy
 dev-gen:
-	node scripts/build_knifes.mjs --csv data/KNIFE-OVERVIEW-ONLY.csv --root . --locale sk
+	node scripts/build_knifes.mjs --csv $(CSV_DEFAULT) --root . --locale sk
 
 build-gen: knifes-gen build
 
@@ -580,29 +599,29 @@ dry-verify:
 # -------------------------
 # 🧵 KNIFE Finish (one-button flow)
 # -------------------------
-.PHONY: knife-finish knife-finish-dry
+.PHONY: knifes-finish knifes-finish-dry
 
-## knife-finish-dry: suchý náhľad krokov (bez zápisu)
-knife-finish-dry:
+## knifes-finish-dry: suchý náhľad krokov (bez zápisu)
+knifes-finish-dry:
 	@echo "① FM podsúbory – DRY"
-	@$(MAKE) knife-fm-add-missing-dry
+	@$(MAKE) knifes-fm-add-missing-dry
 	@echo "② Verify (CSV/docs + FM)"
-	@$(MAKE) knife-verify
+	@$(MAKE) knifes-verify
 	@echo "③ Gen-dry (CSV → plán)"
 	@$(MAKE) gen-dry
 
-## knife-finish: FM podsúbory -> backfill -> canonical fix -> verify -> gen
-knife-finish:
+## knifes-finish: FM podsúbory -> backfill -> canonical fix -> verify -> gen
+knifes-finish:
 	@echo "① FM podsúbory – dopĺňam…"
-	@$(MAKE) knife-fm-add-missing
+	@$(MAKE) knifes-fm-add-missing
 	@echo "② Backfill GUID/DAO…"
-	@$(MAKE) knife-guid-backfill
+	@$(MAKE) knifes-guid-backfill
 	@echo "③ Backfill meta (created/modified/category/type/priority)…"
-	@$(MAKE) knife-meta-backfill
+	@$(MAKE) knifes-meta-backfill
 	@echo "④ Canonical frontmatter (fm-fix)…"
 	@$(MAKE) fm-fix
 	@echo "⑤ Verify (CSV/docs + FM)…"
-	@$(MAKE) knife-verify
+	@$(MAKE) knifes-verify
 	@echo "⑥ Generate overviews (CSV → MD)…"
 	@$(MAKE) knifes-gen
 	@echo "✅ KNIFE finish hotový. Pokračuj: 'make dev' alebo 'make build'"
@@ -612,19 +631,19 @@ knife-finish:
 # -------------------------
 
 # 1) Doplní guid + dao, nechýbajúce iba
-knife-guid-backfill:
+knifes-guid-backfill:
 	python3 tools/guid_backfill.py docs
 
 # 2) Backfill z CSV (created, category, type, priority, atď.)
 #    - nastaví modified==created, ak modified chýba
-knife-meta-backfill:
+knifes-meta-backfill:
 	@echo "ℹ️  Používam CSV: $(strip $(CSV_BACKFILL))"
-	@test -f "$(strip $(CSV_BACKFILL))" || (echo "❌ Chýba CSV '$(strip $(CSV_BACKFILL))'. Zadaj: make knife-meta-backfill CSV_BACKFILL=path/to.csv"; exit 1)
+	@test -f "$(strip $(CSV_BACKFILL))" || (echo "❌ Chýba CSV '$(strip $(CSV_BACKFILL))'. Zadaj: make knifes-meta-backfill CSV_BACKFILL=path/to.csv"; exit 1)
 	@python3 tools/knife_backfill_from_csv.py "$(strip $(CSV_BACKFILL))" docs
 
 # 3a) CSV/docs konzistencia (duplicitné ID, prázdne názvy, kolízie slugov)
-## knife-verify-csv-docs: skontroluje CSV + docs (duplicitné ID, prázdne Short Title, kolízie slugov)
-knife-verify-csv-docs:
+## knifes-verify-csv-docs: skontroluje CSV + docs (duplicitné ID, prázdne Short Title, kolízie slugov)
+knifes-verify-csv-docs:
 	@echo "🔎 Kontrolujem KNIFES CSV a docs..."
 	@if [ ! -f "$(strip $(CSV_OVERVIEW))" ] && [ -z "$(strip $(CSV_BACKFILL))" ]; then \
 		echo "❌ Chýba CSV '$(strip $(CSV_OVERVIEW))' (alebo zadaj CSV_BACKFILL=...)"; exit 1; \
@@ -636,12 +655,12 @@ knife-verify-csv-docs:
 	awk -F',' 'NR>1 && $$3=="" {print $$1}' "$$CSV" || echo "  ✓ nič nenašiel"; \
 	echo "→ Kolízie slugov v docs/sk/knifes:"; \
 	find docs/sk/knifes -type f -name "*.md" -exec grep -H "^slug:" {} \; | cut -d':' -f2- | sort | uniq -d || echo "  ✓ nič nenašiel"; \
-	echo "✅ knife-verify-csv-docs hotovo."
+	echo "✅ knifes-verify-csv-docs hotovo."
 
 # 3b) Lint povinných polí vo frontmatteri
 
-## knife-verify-frontmatter: lint povinných polí len pre KNIFE index.md (podľa folderov)
-knife-verify-frontmatter:
+## knifes-verify-frontmatter: lint povinných polí len pre KNIFE index.md (podľa folderov)
+knifes-verify-frontmatter:
 	@echo "🔎 Kontrolujem KNIFE frontmatter (iba index.md)…"
 	@find docs/sk/knifes -name index.md -print0 \
 	| xargs -0 -n1 -I {} python3 tools/frontmatter_lint.py --file "{}" \
@@ -652,8 +671,27 @@ knife-verify-frontmatter:
 	    --required guid dao id title created modified; \
 	fi
 # 3) Kombinovaný alias
-## knife-verify: spustí oba checky (CSV/docs + frontmatter)
-knife-verify: knife-verify-csv-docs knife-verify-frontmatter
+## knifes-verify-smart: konfiguračne riadená verifikácia CSV/docs
+knifes-verify-smart:
+	@CSV_ARG="$(strip $(CSV_OVERVIEW))"; \
+	LOCALE_ARG="sk"; \
+	SECTION_ARG="knifes"; \
+	DOCS_DIR_ARG="$(strip $(DOCS_DIR))"; \
+	if [ -f "$(CONFIG_JSON)" ]; then \
+	  CSV_FROM_CFG=$$(node -p "try{require('./$(CONFIG_JSON)').csv || ''}catch(e){''}"); \
+	  if [ -n "$$CSV_FROM_CFG" ]; then CSV_ARG="$$CSV_FROM_CFG"; fi; \
+	  LOCALE_FROM_CFG=$$(node -p "try{require('./$(CONFIG_JSON)').locale || ''}catch(e){''}"); \
+	  if [ -n "$$LOCALE_FROM_CFG" ]; then LOCALE_ARG="$$LOCALE_FROM_CFG"; fi; \
+	  SECTION_FROM_CFG=$$(node -p "try{require('./$(CONFIG_JSON)').section || ''}catch(e){''}"); \
+	  if [ -n "$$SECTION_FROM_CFG" ]; then SECTION_ARG="$$SECTION_FROM_CFG"; fi; \
+	  DOCS_FROM_CFG=$$(node -p "try{require('./$(CONFIG_JSON)').docsDir || ''}catch(e){''}"); \
+	  if [ -n "$$DOCS_FROM_CFG" ]; then DOCS_DIR_ARG="$$DOCS_FROM_CFG"; fi; \
+	fi; \
+	echo "CSV=$$CSV_ARG | locale=$$LOCALE_ARG | section=$$SECTION_ARG | docsDir=$$DOCS_DIR_ARG"; \
+	node scripts/knifes_verify.mjs --csv "$$CSV_ARG" --root . --locale "$$LOCALE_ARG" --section "$$SECTION_ARG" --docs-dir "$$DOCS_DIR_ARG"
+
+## knifes-verify: spustí oba checky (CSV/docs + frontmatter + smart)
+knifes-verify: knifes-verify-csv-docs knifes-verify-frontmatter knifes-verify-smart
 	@echo "✅ All KNIFE verifications passed."
 
 # Debug: vypíš kľúčové premenné (na odhalenie whitespace/chybných ciest)
@@ -664,17 +702,90 @@ print-vars:
 	@echo "[CSV_BACKFILL] = '$(strip $(CSV_BACKFILL))'"
 	@echo "[DOCS_DIR]     = '$(strip $(DOCS_DIR))'"
 	@echo "[SCRIPTS_DIR]  = '$(strip $(SCRIPTS_DIR))'"
+	@echo "[CONFIG_JSON] = '$(strip $(CONFIG_JSON))'"
+	@node -e "try{const c=require('./$(CONFIG_JSON)');console.log('[CONFIG.csv]  = \\''+(c.csv||'')+'\\'')}catch(e){console.log('[CONFIG.csv]  = <not found>')}"
 
-knife-validate-csv:
-	node dev/csv/knife-csv-verify.mjs data/KNIFE-OVERVIEW-ONLY.csv --schema dev/csv/schema/header.aliases.json || \
+knifes-validate-csv:
+	node dev/csv/knifes-csv-verify.mjs $(CSV_DEFAULT) --schema dev/csv/schema/header.aliases.json || \
 	( echo "❌ CSV validation failed – fix ODS or update dev/csv/schema/header.aliases.json"; exit 1 )
 
 knifes-build-safe:
-	@$(MAKE) knife-validate-csv
-	node scripts/build_knifes.mjs --csv data/KNIFE-OVERVIEW-ONLY.csv --root . --locale sk
+	@$(MAKE) knifes-validate-csv
+	node scripts/build_knifes.mjs --csv $(CSV_DEFAULT) --root . --locale sk
 
-knife-audit-frontmatter:
-	node scripts/knife-frontmatter-audit.mjs docs/sk/knifes	
+knifes-audit-frontmatter:
+	node scripts/knifesfrontmatter-audit.mjs docs/sk/knifes	
+
+# -------------------------
+# 🧼 KNIFE Fix/Checks (FM normalization & header checks)
+# -------------------------
+
+.PHONY: knife-fm-dry knife-fm-fix knife-header-check knife-csv-fix knife-fm-report-id knife-fm-report-tree
+
+## knife-fm-dry: DRY-RUN normalizácie Front Matter (nič nezapisuje)
+knife-fm-dry:
+	@echo "🧪 DRY-RUN: normalizujem Front Matter v $(DOCS_DIR)/ (len report, bez zápisu)…"
+	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --fm-only --dry
+
+## knife-fm-fix: Aplikuj normalizáciu Front Matter (zapíše zmeny)
+knife-fm-fix:
+	@echo "🛠  APPLY: normalizujem Front Matter v $(DOCS_DIR)/ (zapíšem zmeny)…"
+	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --fm-only
+
+## knife-header-check: Skontroluj technickú hlavičku obsahu (H1 po FM)
+knife-header-check:
+	@echo "🔎 Kontrolujem H1 nadpis po Front Matter (prvých 20 riadkov obsahu)…"
+	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --check-header
+
+## knife-csv-fix: Spusti pôvodný CSV/folder fix (bez úprav obsahu .md)
+knife-csv-fix:
+	@echo "🧩 CSV/folder fix podľa knifes_fix.mjs (legacy flow)…"
+	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON)
+
+## knife-fm-report-id: Report pre konkrétne ID (detailné FM zmeny), použitie: make knife-fm-report-id id=K059
+knife-fm-report-id:
+	@if [ -z "$(id)" ]; then \
+		echo "❌ Chýba parameter: id=KXXX"; \
+		echo "   Použitie: make knife-fm-report-id id=K059"; \
+		exit 2; \
+	fi
+	@echo "────────────────────────────────────────────────────────"
+	@echo "📋 KNIFE FM REPORT – detailné plánované zmeny"
+	@echo "   ID: $(id)"
+	@echo "   Config: $(CONFIG_JSON)"
+	@echo "────────────────────────────────────────────────────────"
+	@echo "ℹ️  Tento report NIČ NEZAPISUJE. Slúži na review pred apply."
+	@echo "   Tip: Ak chceš vidieť celý rozsah zmien v repo, použi: make knife-fm-dry"
+	@echo "────────────────────────────────────────────────────────"
+	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --report-id $(id)
+	@ec=$$?; \
+	echo "────────────────────────────────────────────────────────"; \
+	if [ $$ec -eq 0 ]; then \
+	  echo "✅ Report hotový. Ak je všetko OK pre celé repo → make knife-fm-fix"; \
+	else \
+	  echo "⚠️  Skript vrátil exit-code $$ec (pozri log vyššie)."; \
+	fi
+
+## knife-fm-report-tree: Report pre celú zložku KNIFE (ID-tree), použitie: make knife-fm-report-tree id=K083
+knife-fm-report-tree:
+	@if [ -z "$(id)" ]; then \
+		echo "❌ Chýba parameter: id=KXXX"; \
+		echo "   Použitie: make knife-fm-report-tree id=K083"; \
+		exit 2; \
+	fi
+	@echo "────────────────────────────────────────────────────────"
+	@echo "📋 KNIFE FM TREE REPORT – detailné plánované zmeny pre celú zložku ID=$(id)"
+	@echo "   Config: $(CONFIG_JSON)"
+	@echo "────────────────────────────────────────────────────────"
+	@echo "ℹ️  Tento report NIČ NEZAPISUJE. Slúži na review pred apply."
+	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --report-tree $(id)
+	@ec=$$?; \
+	echo "────────────────────────────────────────────────────────"; \
+	if [ $$ec -eq 0 ]; then \
+	  echo "✅ Tree report hotový. Ak je všetko OK → make knife-fm-fix"; \
+	else \
+	  echo "⚠️  Skript vrátil exit-code $$ec (pozri log vyššie)."; \
+	fi
 
 # -------------------------
 # 📝 Frontmatter Tools
@@ -704,14 +815,14 @@ fm-set-slug-file:
 	@if [ -z "$$file" ] || [ -z "$$slug" ]; then echo "Použi: make fm-set-slug-file file=PATH slug=/cesta/bez-locale"; exit 1; fi
 	@python3 tools/fix_frontmatter.py --file "$$file" --set-slug --slug-val "$$slug"
 
-# ## knife-fm-add-missing: doplní YAML frontmatter do .md súborov bez FM (idempotentné)
-.PHONY: knife-fm-add-missing knife-fm-add-missing-dry
+# ## knifes-fm-add-missing: doplní YAML frontmatter do .md súborov bez FM (idempotentné)
+.PHONY: knifes-fm-add-missing knifes-fm-add-missing-dry
 
-knife-fm-add-missing:
+knifes-fm-add-missing:
 	@python3 tools/knife_frontmatter_add_missing.py
-	@echo "→ Next: make knife-guid-backfill knife-meta-backfill fm-fix knife-verify"
+	@echo "→ Next: make knifes-guid-backfill knifes-meta-backfill fm-fix knifes-verify"
 
-knife-fm-add-missing-dry:
+knifes-fm-add-missing-dry:
 	@python3 tools/knife_frontmatter_add_missing.py --dry
 #
 # -------------------------
@@ -782,3 +893,20 @@ release-commit: check-version ## Commit -> push -> tag -> push tag
 	$(MAKE) push-tag VERSION=$(VERSION)
 	@echo "✅ 🚀 Release $(VERSION) hotový."
 	
+# --- KNIFE automation (config-driven; single point of input = knifes_config.json) ---
+.PHONY: knifes-validate knifes-generate knifes-prepare knifes-prepare-strict
+
+knifes-validate:
+	@echo "🔎 Validujem KNIFES CSV podľa knifes_config.json"
+	@node scripts/knifes-validate.mjs
+
+knifes-prepare-strict:
+	@echo "🔎 Validujem KNIFES CSV (strict) podľa knifes_config.json"
+	@node scripts/knifes-validate.mjs --strict
+
+knifes-generate:
+	@echo "🛠  Generujem KNIFE obsah podľa knifes_config.json"
+	@node scripts/knifes-generate.mjs
+
+knifes-prepare: knifes-validate knifes-generate
+	@echo "✅ CSV OK → KNIFE vygenerované."

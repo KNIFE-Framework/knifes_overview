@@ -5,15 +5,24 @@ dao: "knife"
 title: "K062 – Docusaurus slugy a routing"
 description: "Ako fungujú SLUGS v Docusaurus"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "new"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k062-k062-docusaurus-slugy-a-routing"
+locale: "sk"
 sidebar_label: "K062  – Docusaurus slugy a routing"
 sidebar_position: "62"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `7b469b9d-1eb5-48f6-a853-b17f4c775066`

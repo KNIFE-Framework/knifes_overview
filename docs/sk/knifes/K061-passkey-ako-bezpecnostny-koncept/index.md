@@ -5,15 +5,24 @@ dao: "knife"
 title: "Passkey ako bezpečnostný koncept"
 description: "Ako funguje keypass?"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "new"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k061-passkey-ako-bezpecnostny-koncept"
+locale: "sk"
 sidebar_label: "K061 – Passkey ako bezpečnostný koncept"
 sidebar_position: "61"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `35066cd7-1202-4c04-9cfe-02512ca5fa7f`

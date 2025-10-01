@@ -1,21 +1,21 @@
 ---
-id: K064-ga4-gtn-utm-09
+id: "K064-ga4-gtn-utm-09"
 guid: "b993aa83-e659-40e6-aaa9-8c63be8302d9"
-dao: knife
-title: Google Account vs Google Workspace
+dao: "knife"
+title: "Google Account vs Google Workspace"
 description: ""
-author: Roman Kazička
+author: "Roman Kazička"
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-created: 2025-09-24
+created: "2025-09-24"
 modified: ""
-status: draft
-locale: sk
-sidebar_label: Google Account vs Google Workspace
-rights_holder_content: Roman Kazička
+status: "draft"
+locale: "sk"
+sidebar_label: "Google Account vs Google Workspace"
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

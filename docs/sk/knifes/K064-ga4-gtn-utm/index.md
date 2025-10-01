@@ -5,15 +5,24 @@ dao: "knife"
 title: "GA4, GTN, UTM"
 description: "Ako funguje AG4, TGM a UTM?"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE", "images"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "new"
-tags: ["KNIFE", "images"]
-# slug: "/sk/knifes/k064-ga4-gtn-utm"
+locale: "sk"
 sidebar_label: "K064 – GA4, GTN, UTM"
 sidebar_position: "64"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `fd7b354d-8ead-42aa-a615-e545c5c13cd1`

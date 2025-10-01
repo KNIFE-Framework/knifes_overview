@@ -5,15 +5,24 @@ dao: "knife"
 title: "Transparentná -Stabilná infraštruktúra pre Sites"
 description: "Počas práce s GitHub a Pages je potrebné mať zladené prostredie na klientovi a na serveri. Lokál je závislý od OS, od verzií vývojových nástrojov. Ideálne by bolo, keby existovalo stabilné, opakovateľné prostredie pre vytvorenie lokálneho prostredia, bez ohľadu na operačný systém na klientovi – Windows, Mac, Linux."
 author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE", "images"]
 created: "2025-09-24"
 modified: "2025-09-24"
-date: "2025-09-24"
 status: "idea"
-tags: ["KNIFE", "images"]
-# slug: "/sk/knifes/k081-transparentna-stabilna-infrastruktura-pre-sites"
+locale: "sk"
 sidebar_label: "K081 – Transparentná -Stabilná infraštruktúra pre Sites"
 sidebar_position: "81"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `02921a34-5a83-4713-bafa-1be560a98d18`

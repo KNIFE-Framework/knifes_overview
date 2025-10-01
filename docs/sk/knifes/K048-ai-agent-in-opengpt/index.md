@@ -5,15 +5,24 @@ dao: "knife"
 title: "AI – Agent in OpenGPT"
 description: "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K048 – AI – Agent in OpenGPT"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "in progress"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k048-ai-agent-in-opengpt"
+locale: "sk"
 sidebar_label: "K048 – AI – Agent in OpenGPT"
 sidebar_position: "48"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `dfd04696-0904-4798-83bd-5e77bb371baf`

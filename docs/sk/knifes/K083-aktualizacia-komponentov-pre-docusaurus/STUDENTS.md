@@ -1,23 +1,25 @@
 ---
-id: K083_03
-parent: K083
+id: "K083_03"
 guid: "666c06de-ec54-45cd-be1a-38b0333809e2"
-dao: knife
-title: ""
-author: ""
-created: 2025-09-26
-modified: 2025-09-26
-status: draft
-type: knife
-category: deliverable
-tags: []
+dao: "knife"
+title: "KNIFE – K083_03"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: "deliverable"
+type: "knife"
+priority: ""
+tags: [""]
+created: "2025-09-26"
+modified: "2025-09-26"
+status: "draft"
+locale: "sk"
 sidebar_label: "K083_03 –"
-locale: sk
-copyright: "© 2025 Roman Kazička / SystemThinking"
-rights_holder_content: ""
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Educational content. Use at your own risk."
+copyright: "© 2025 Roman Kazička / SystemThinking"
 author_id: ""
 author_did: ""
 ---

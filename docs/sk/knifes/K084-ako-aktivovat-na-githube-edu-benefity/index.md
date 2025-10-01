@@ -5,15 +5,24 @@ dao: "knife"
 title: "Ako aktivovať na GitHube EDU benefity"
 description: "Pokiaľ  spĺňa používateľ kritériá GitHub, môže dostať pre seba pre svoj profil status člena EDU organizácie. Má to viaceroo výhod ako Sites pre privátne repositáre, čo by stálo 3€/mesiac. Detailnejšie v inom Knife. V tomto príspevku je samotná aktivácia týchto benefitov"
 author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE", "images"]
 created: "2025-09-25"
 modified: "2025-09-25"
-date: "2025-09-25"
 status: "in progress"
-tags: ["KNIFE", "images"]
-# slug: "/sk/knifes/k084-ako-aktivovat-na-githube-edu-benefity"
+locale: "sk"
 sidebar_label: "K084 – Ako aktivovať na GitHube EDU benefity"
 sidebar_position: "84"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `c000d02a-b7ed-4e78-a5be-9e8e975445e0`

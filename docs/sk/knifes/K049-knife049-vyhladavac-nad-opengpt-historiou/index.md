@@ -5,15 +5,24 @@ dao: "knife"
 title: "KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 description: "[⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)\\\\n---\\\\n KNIFE K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "draft"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k049-knife049-vyhladavac-nad-opengpt-historiou"
+locale: "sk"
 sidebar_label: "K049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 sidebar_position: "49"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `6fa9ddd3-5de1-4c99-ab0f-db87d301f005`

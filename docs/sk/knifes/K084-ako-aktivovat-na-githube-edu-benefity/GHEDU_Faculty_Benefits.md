@@ -1,23 +1,25 @@
 ---
-id: K084_01
-parent: K084
+id: "K084_01"
 guid: "86b73fab-96ed-432b-aeb6-e262b378aa27"
-dao: knife
-title: ""
-author: ""
-created: 2025-09-26
-modified: 2025-09-26
-status: draft
-type: knife
-category: deliverable
-tags: []
+dao: "knife"
+title: "KNIFE – K084_01"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: "deliverable"
+type: "knife"
+priority: ""
+tags: [""]
+created: "2025-09-26"
+modified: "2025-09-26"
+status: "draft"
+locale: "sk"
 sidebar_label: "K084_01 – Aktivácia GitHub Education Faculty Benefits"
-locale: sk
-copyright: "© 2025 Roman Kazička / SystemThinking"
-rights_holder_content: ""
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Educational content. Use at your own risk."
+copyright: "© 2025 Roman Kazička / SystemThinking"
 author_id: ""
 author_did: ""
 ---

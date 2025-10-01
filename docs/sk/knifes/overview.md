@@ -1,3 +1,27 @@
+---
+dao: "knife"
+title: "KNIFE – Prehľad"
+description: ""
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: [""]
+created: ""
+modified: ""
+status: ""
+locale: "sk"
+sidebar_label: "Home"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
+---
+
 # 📋 KNIFEs Overview
 
 | ID | Display ID | GUID | Category | Title | Status | Priority | Type | Date | Author | Org | Project |

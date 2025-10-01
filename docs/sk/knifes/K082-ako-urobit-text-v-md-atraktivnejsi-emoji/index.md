@@ -5,15 +5,24 @@ dao: "knife"
 title: "Ako urobiť text v MD atraktívnejší (emoji)"
 description: "Čítanie s porozumením je veľmi náročná disciplína. Preto je dôležité priblížiť text ku príbehu pomocou malých obrázkov. Dobrý kandif’dát je EMOJI"
 author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-28"
 modified: "2025-09-28"
-date: "2025-09-28"
 status: "done md"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k082-ako-urobit-text-v-md-atraktivnejsi-emoji"
+locale: "sk"
 sidebar_label: "K082 – Ako urobiť text v MD atraktívnejší (emoji)"
 sidebar_position: "82"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3`

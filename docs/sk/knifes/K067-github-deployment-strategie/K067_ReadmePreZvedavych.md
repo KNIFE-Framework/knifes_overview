@@ -1,21 +1,21 @@
 ---
-id: K067-github-deployment-strategie
+id: "K067-github-deployment-strategie"
 guid: "c0804116-d26d-40ed-991c-e1aaeb6734d4"
-dao: knife
-title: GitHub Deployment Strategie - Pre Zvedavých
+dao: "knife"
+title: "GitHub Deployment Strategie - Pre Zvedavých"
 description: ""
-author: Roman Kazička
+author: "Roman Kazička"
 authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: ""
 tags: ["KNIFE"]
-created: 2025-09-24
+created: "2025-09-24"
 modified: ""
-status: draft
-locale: sk
-sidebar_label: GitHub Deployment Strategie - Pre Zvedavých
-rights_holder_content: Roman Kazička
+status: "draft"
+locale: "sk"
+sidebar_label: "GitHub Deployment Strategie - Pre Zvedavých"
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."

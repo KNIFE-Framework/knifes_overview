@@ -5,15 +5,24 @@ dao: "knife"
 title: "STEM a Makerspace ako metodika vzdelávania"
 description: "Spolupracujem s Makerspace od roku 2016. POJEM STEM  som priprodzene zahrnul do  svojich metodík. Je vhodné to zviditeľniť v mojich aktivitách"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "new"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k059-stem-a-makerspace-ako-metodika-vzdelavania"
+locale: "sk"
 sidebar_label: "K059 – STEM a Makerspace ako metodika vzdelávania"
 sidebar_position: "59"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `d7e5dc5c-968e-4af4-a7b2-d76bcff5f12e`

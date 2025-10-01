@@ -5,15 +5,24 @@ dao: "knife"
 title: "DCMM a DAO – hodnota leadershipu"
 description: "Sebariadenie, dôvera a samočistiace systémy"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "plánované"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k008-dcmm-a-dao-hodnota-leadershipu"
+locale: "sk"
 sidebar_label: "K008 – DCMM a DAO – hodnota leadershipu"
 sidebar_position: "8"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `fbb56d3a-aa9f-4594-bdfd-b30c12c09174`

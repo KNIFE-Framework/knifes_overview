@@ -1,12 +1,26 @@
 ---
-id: KNIFE_Overview_Details
-dao: knife
+id: "KNIFE_Overview_Details"
+dao: "knife"
 title: "📰 KNIFE Overview – Details"
 description: ""
-status: draft
-locale: sk
+author: "Roman Kazička"
+authors: ["Roman Kazička"]
+category: ""
+type: ""
+priority: ""
 tags: ["KNIFE"]
+created: ""
+modified: ""
+status: "draft"
+locale: "sk"
 sidebar_label: "📰 KNIFE Overview – Details"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 # 📰 KNIFE Overview – Details
 

@@ -5,15 +5,24 @@ dao: "knife"
 title: "Porovnanie biznis plánov GitHub"
 description: "Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?"
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "new"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k066-porovnanie-biznis-planov-github"
+locale: "sk"
 sidebar_label: "K066 – Porovnanie biznis plánov GitHub"
 sidebar_position: "66"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `a2c536d5-d18f-4d80-a2bd-9ef502904b9a`

@@ -5,15 +5,24 @@ dao: "knife"
 title: "Language as a Bridge (AI ako most medzi jazykmi)"
 description: "Language as a Bridge → implementácia, nástroje, procesy (ako)."
 author: "Roman Kazicka"
+authors: ["Roman Kazicka"]
+category: ""
+type: ""
+priority: ""
+tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
-status: "ongoing"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k078-language-as-a-bridge-ai-ako-most-medzi-jazykmi"
+status: "inprogress"
+locale: "sk"
 sidebar_label: "K078 – Language as a Bridge (AI ako most medzi jazykmi)"
 sidebar_position: "78"
-locale: "sk"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+author_id: ""
+author_did: ""
 ---
 <!-- fm-visible: start -->
 > **GUID:** `9fa013f5-0130-4af4-8e6e-db4ca6d38397`

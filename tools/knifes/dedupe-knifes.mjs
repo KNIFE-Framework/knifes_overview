@@ -24,7 +24,7 @@ function loadIndexJSON() {
 const dirs = listDirs(KNIFES_DIR).filter(n => /^K\d{3}-/.test(n));
 const groups = new Map();
 for (const d of dirs) {
-  const key = d.slice(0, 4); // 'K078'
+  const key = d.slice(0, 4); // 'K000078'
   if (!groups.has(key)) groups.set(key, []);
   groups.get(key).push(d);
 }

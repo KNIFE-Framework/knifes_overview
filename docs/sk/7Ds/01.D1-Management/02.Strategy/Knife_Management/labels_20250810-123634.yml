@@ -40,9 +40,9 @@ labels:
   - name: Automation
     color: 5319e7
     description: Scripts, Actions, integrations
-  - name: KNIFE-K044
+  - name: KNIFE-K000044
     color: 0052cc
-    description: KNIFE topic K044
-  - name: KNIFE-K053
+    description: KNIFE topic K000044
+  - name: KNIFE-K000053
     color: 0052cc
-    description: KNIFE topic K053 (placeholder)
+    description: KNIFE topic K000053 (placeholder)

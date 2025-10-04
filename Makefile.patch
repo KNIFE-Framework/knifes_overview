@@ -123,7 +123,7 @@
 -	@echo "  dev-gen             - Makrocieľ: knifes-gen + dev (vygeneruje MD z CSV a spraví lokálny dev build/serve)."
 -	@echo "  build-gen           - Makrocieľ: knifes-gen + build (vygeneruje MD a spraví produkčný build)."
 -	@echo "  knifes-gen          - Generuje/aktualizuje MD súbory zo CSV (prehľady + chýbajúce Kxxx skeletony)."
--	@echo "  knife-new           - id=K062 title=\"...\" – rýchlo vytvorí skeleton pre novú KNIFE (adresár, súbor, frontmatter)."
+-	@echo "  knife-new           - id=K000062 title=\"...\" – rýchlo vytvorí skeleton pre novú KNIFE (adresár, súbor, frontmatter)."
 -	@echo "  knife-verify        - Validácie CSV/docs (duplicitné ID, prázdne názvy, kolízie slugov, chýbajúce súbory atď.)."
 -	@echo "  gen-dry             - „suchý“ plán generovania (čo by sa vytvorilo/aktualizovalo), ale nič nezapisuje."
 -	@echo "  dry-verify          - skrátená verzia validácií cez generátor (nezasahuje do súborov)."
@@ -142,7 +142,7 @@
 +	@echo "  dev-gen                - knifes-gen + dev (vygeneruje MD a spustí lokálny dev)"
 +	@echo "  build-gen              - knifes-gen + build (vygeneruje MD a spraví prod build)"
 +	@echo "  knifes-gen             - Generuje/aktualizuje MD zo CSV (prehľady + chýbajúce Kxxx skeletony)"
-+	@echo "  knife-new              - id=K062 title=\"...\" – rýchlo založí skeleton novej KNIFE"
++	@echo "  knife-new              - id=K000062 title=\"...\" – rýchlo založí skeleton novej KNIFE"
 +	@echo "  gen-dry                - „suchý“ plán generovania (nič nezapisuje)"
 +	@echo "  dry-verify             - skrátená validácia cez generátor (bez zásahu)"
 +	@echo "===== ✅ Verifications & Backfill ====="
@@ -307,7 +307,7 @@
 -	@echo "  dev-gen             - Makrocieľ: knifes-gen + dev (vygeneruje MD z CSV a spraví lokálny dev build/serve)."
 -	@echo "  build-gen           - Makrocieľ: knifes-gen + build (vygeneruje MD a spraví produkčný build)."
 -	@echo "  knifes-gen          - Generuje/aktualizuje MD súbory zo CSV (prehľady + chýbajúce Kxxx skeletony)."
--	@echo "  knife-new           - id=K062 title=\"...\" – rýchlo vytvorí skeleton pre novú KNIFE (adresár, súbor, frontmatter)."
+-	@echo "  knife-new           - id=K000062 title=\"...\" – rýchlo vytvorí skeleton pre novú KNIFE (adresár, súbor, frontmatter)."
 -	@echo "  knife-verify        - Validácie CSV/docs (duplicitné ID, prázdne názvy, kolízie slugov, chýbajúce súbory atď.)."
 -	@echo "  gen-dry             - „suchý“ plán generovania (čo by sa vytvorilo/aktualizovalo), ale nič nezapisuje."
 -	@echo "  dry-verify          - skrátená verzia validácií cez generátor (nezasahuje do súborov)."
@@ -778,9 +778,9 @@
 -	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root .
 -
 -## knife-new: založí skeleton KNIFE
--## Použitie: make knife-new id=K062 title="My Topic"
+-## Použitie: make knife-new id=K000062 title="My Topic"
 -knife-new:
--	@if [ -z "$(id)" ]; then echo "Použi: make knife-new id=K062 title='Názov'"; exit 1; fi
+-	@if [ -z "$(id)" ]; then echo "Použi: make knife-new id=K000062 title='Názov'"; exit 1; fi
 -	@if [ ! -f "$(SCRIPTS_DIR)/new_knife.mjs" ]; then \
 -		echo "❌ Chýba $(SCRIPTS_DIR)/new_knife.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
 -	fi

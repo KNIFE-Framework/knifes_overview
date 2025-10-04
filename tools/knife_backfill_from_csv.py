@@ -180,7 +180,7 @@ def load_csv_index(csv_path: pathlib.Path):
             rid = (row.get(id_col) or "").strip().upper()
             if not rid:
                 continue
-            # Normalize IDs like "K075 – Lean canvas" -> "K075"
+            # Normalize IDs like "K000075 – Lean canvas" -> "K000075"
             mm = re.match(r"^(K\d{3})", rid)
             if mm:
                 rid = mm.group(1)

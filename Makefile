@@ -53,6 +53,14 @@ CSV_OVERVIEW ?= $(CSV_DEFAULT)
 # fallback na overview, ak nie je zadané
 CSV_BACKFILL ?= $(CSV_OVERVIEW)
 
+
+# Default locale for normalize/report targets
+LOCALE ?= sk
+
+# Reference KNIFES (read-only governance / templates / rules)
+KNIFES_REF_DIR := $(DOCS_DIR)/sk/ref
+KNIFES_REF_MD_GLOB := $(KNIFES_REF_DIR)/**/index.md
+
 # Minify toggle (default ON). Use: make build MINIFY=0  -> passes --no-minify
 MINIFY ?= 1
 BUILD_EXTRA :=
@@ -82,7 +90,17 @@ endif
   fm-fix fm-fix-dry fm-fix-file fm-fix-file-dry fm-set-slug-file knifes-fm-add-missing knifes-fm-add-missing-dry \
   release-ci release-ci-datetime \
   commit push tag push-tag release release-auto release-commit check-version knifes-finish knifes-finish-dry upgrade-docusaurus \
-  knife-fm-dry knife-fm-fix knife-header-check knife-csv-fix knife-fm-report-id knife-fm-report-tree
+  knife-fm-dry knife-fm-fix knife-header-check knife-csv-fix knife-fm-report-id knife-fm-report-tree \
+  knife-normalize-dry knife-normalize-apply csv-normalize-dry csv-normalize-apply \
+  knifes-frontmatter-audit knifes-frontmatter-fix-dry knifes-frontmatter-fix-apply knifes-frontmatter-merge \
+  knifes-frontmatter-slug-report knifes-frontmatter-slug-comment-dry knifes-frontmatter-slug-comment-apply \
+  knifes-frontmatter-slug-delete-dry knifes-frontmatter-slug-delete-apply \
+  knifes-id6-dry knifes-id6-apply knifes-id6-audit \
+  knifes-frontmatter-audit-id knifes-frontmatter-fix-id-dry knifes-frontmatter-fix-id-apply \
+  knifes-build-dry knifes-build-apply \
+  knifes-datekey-remove-dry knifes-datekey-remove-apply knifes-smartquotes-scan knifes-smartquotes-fix-dry knifes-smartquotes-fix-apply \
+  knife-fm-apply k18-audit k18-fix-dry k18-fix-apply k18-verify k18-align-dry k18-align-apply \
+  knifes-ref-audit knifes-ref-align-dry knifes-ref-align-apply
 
 # -------------------------
 # 📌 Help
@@ -152,9 +170,28 @@ help:
 	@echo "  dev-gen                - knifes-gen + dev (vygeneruje MD a spustí lokálny dev)"
 	@echo "  build-gen              - knifes-gen + build (vygeneruje MD a spraví prod build)"
 	@echo "  knifes-gen             - Generuje/aktualizuje MD zo CSV (prehľady + chýbajúce Kxxx skeletony)"
-	@echo "  knifes-new              - id=K062 title=\"...\" – rýchlo založí skeleton novej KNIFE"
+	@echo "  knifes-new              - id=K000062 title=\"...\" – rýchlo založí skeleton novej KNIFE"
 	@echo "  gen-dry                - „suchý“ plán generovania (nič nezapisuje)"
 	@echo "  dry-verify             - skrátená validácia cez generátor (bez zásahu)"
+	@echo "  knifes-build-dry       - DRY-RUN: build (CSV→MD) podľa configu, nič nezapisuje [NEW 2025-10-04]"
+	@echo "  knifes-build-apply     - APPLY:   build (CSV→MD) podľa configu, zapíše zmeny [NEW 2025-10-04]"
+# -------------------------
+# 🏗 KNIFES Build (explicit DRY/APPLY wrappers)
+# -------------------------
+.PHONY: knifes-build-dry knifes-build-apply
+
+## knifes-build-dry: DRY-RUN build (CSV→MD) – no writes
+knifes-build-dry:
+	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
+	echo "🧪 DRY-RUN: KNIFES build (CSV→MD) – CSV='$$CSV' locale=$(LOCALE)"; \
+	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root . --locale $(LOCALE) --dry-run
+
+## knifes-build-apply: APPLY build (CSV→MD) – writes
+knifes-build-apply:
+	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
+	echo "🛠 APPLY: KNIFES build (CSV→MD) – CSV='$$CSV' locale=$(LOCALE)"; \
+	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root . --locale $(LOCALE)
+
 	@echo "  knifes-finish           - Uzavri KNIFE: FM podsúborov -> backfill -> canonical fix -> verify -> gen"
 	@echo "  knifes_config-finish-dry       - DRY-RUN plán uzavretia KNIFE (nič nezapisuje)"
 	@echo "===== ✅ Verifications & Backfill ====="
@@ -174,12 +211,148 @@ help:
 	@echo "  knifes-fm-add-missing   - Pridá default frontmatter do MD bez FM (idempotentne)"
 	@echo "  knifes-fm-add-missing-dry- DRY-RUN: ukáže, ktoré súbory by dostali frontmatter"
 	@echo "===== 🧼 KNIFE Fix/Checks (FM & Header) ====="
-	@echo "  knife-fm-dry          - DRY-RUN: normalizuje iba Front Matter v docs/ (bez zápisu)"
-	@echo "  knife-fm-fix          - APPLY:   normalizuje Front Matter v docs/ (zapíše zmeny)"
+	@echo "  knife-fm-dry          - DRY-RUN: nový opravný FM nástroj (read-only)"
+	@echo "  knife-fm-fix          - APPLY:   nový opravný FM nástroj (prepíše FM podľa pravidiel)"
+	@echo "  knife-fm-apply        - Alias na knife-fm-fix (APPLY)"
 	@echo "  knife-header-check    - Report:  kontrola H1 nadpisu po FM (technická hlavička)"
 	@echo "  knife-csv-fix         - Pôvodný CSV/folder fix (fallback, bez zásahu do obsahu MD)"
-	@echo "  knife-fm-report-id    - REPORT: detailný výpis plánovaných FM zmien pre jedno ID (make knife-fm-report-id id=K059)"
-	@echo "  knife-fm-report-tree  - REPORT: detailný výpis FM zmien pre celú zložku KNIFE (make knife-fm-report-tree id=K083)"
+	@echo "  knife-fm-report-id    - REPORT: detailný výpis plánovaných FM zmien pre jedno ID (make knife-fm-report-id id=K000059)"
+	@echo "  knife-fm-report-tree  - REPORT: detailný výpis FM zmien pre celú zložku KNIFE (make knife-fm-report-tree id=K000083)"
+	@echo "===== 📐 K18 Baseline (Audit → Fix → Verify) ====="
+	@echo "  k18-audit              - Audit FM (read-only) podľa K18 baseline"
+	@echo "  k18-fix-dry            - DRY-RUN návrh opráv FM podľa K18 (bez zápisu)"
+	@echo "  k18-fix-apply          - APPLY: opraví FM podľa K18 (robí si backup vo vnútri skriptu)"
+	@echo "  k18-verify             - Overí výsledok (audit + lint povinných polí)"
+	@echo "  k18-align-dry          - Sekvencia: audit → fix-dry → re-audit (bez zápisu)"
+	@echo "  k18-align-apply        - Sekvencia: fix-apply → verify"
+	@echo "===== 📚 KNIFES_REF (reference content) ====="
+	@echo "  knifes-ref-audit        - Audit KNIFES_REF (read-only)"
+	@echo "  knifes-ref-align-dry    - Audit → (placeholder dry fix) → Audit again"
+	@echo "  knifes-ref-align-apply  - (placeholder apply fix) → Audit"
+	@echo "===== 🧰 KNIFE Normalize (slug→comment, header/nav) ====="
+	@echo "  knife-normalize-dry    - DRY:  ukáže, ktoré hlavné MD by normalize upravil (bez zápisu)"
+	@echo "  knife-normalize-apply  - APPLY: spustí normalize a zapíše zmeny (slug do komentára, NAV, header)"
+	@echo "===== 🧼 CSV Normalize (aliases + dates + status) ====="
+	@echo "  csv-normalize-dry      - DRY:  aliasy hlavičiek (Date→Created…), dátumy (DD.MM.YYYY→YYYY-MM-DD), stavy (wip→inprogress) [NEW 2025-10-03]"
+	@echo "  csv-normalize-apply    - APPLY: normalizuje CSV (pred zápisom spraví backup) [NEW 2025-10-03]"
+	@echo "===== 🧾 KNIFES Frontmatter (audit/fix/merge) ====="
+	@echo "  knifes-frontmatter-audit        - Audit FM podľa pravidiel (read-only). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-fix-dry      - DRY-RUN: návrhy opráv FM (bez zápisu). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-fix-apply    - APPLY:    opraví FM (bez zásahu do obsahu). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-merge        - Merge FM (napr. CSV→MD doplnenia; config-driven). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-audit-id     - Audit iba pre jedno ID (id=K000059). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-fix-id-dry   - DRY-RUN fix FM pre jedno ID (id=K000059). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-fix-id-apply - APPLY    fix FM pre jedno ID (id=K000059). [NEW 2025-10-03]"
+	@echo "===== 🔗 Slug tools (report/comment/delete) ====="
+	@echo "  knifes-frontmatter-slug-report        - Report súborov s aktívnym/komentovaným slugom (id=K000059 scope=index|all). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-slug-comment-dry   - DRY:  aktívny slug -> komentár (bez zápisu). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-slug-comment-apply - APPLY: aktívny slug -> komentár (zapíše). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-slug-delete-dry    - DRY:  vymaže všetky slug riadky (aktívne aj komentár). [NEW 2025-10-03]"
+	@echo "  knifes-frontmatter-slug-delete-apply  - APPLY: vymaže všetky slug riadky (aktívne aj komentár). [NEW 2025-10-03]"
+	@echo "===== 🧹 FM Sanitation (safe-only) ====="
+	@echo "  knifes-datekey-remove-dry   - DRY: iba odstráni kľúč 'date:' z KNIFE index.md (bez zápisu)"
+	@echo "  knifes-datekey-remove-apply - APPLY: odstráni 'date:' z KNIFE index.md (zapíše)"
+	@echo "  knifes-smartquotes-scan     - Scan: nájde “smart quotes” v docs/ (read-only)"
+	@echo "  knifes-smartquotes-fix-dry  - DRY: nahradí “smart quotes” → \" rovné (bez zápisu)"
+	@echo "  knifes-smartquotes-fix-apply- APPLY: nahradí “smart quotes” → \" rovné (zapíše)"
+	@echo "===== 🔢 KNIFE ID6 Migration (K### → K######) ====="
+	@echo "  knifes-id6-dry     - DRY-RUN: kontrola formátu ID a premenovania priečinkov (bez zápisu). [NEW 2025-10-03]"
+	@echo "  knifes-id6-apply   - APPLY:    premenuje priečinky, prepíše FM id a referencie (opatrne). [NEW 2025-10-03]"
+	@echo "  knifes-id6-audit   - Audit po migrácii: overí zhody id vs. názov priečinka. [NEW 2025-10-03]"
+# -------------------------
+# 🧰 KNIFE Normalize (main MD in each KNIFE folder)
+# -------------------------
+.PHONY: knife-normalize-dry knife-normalize-apply
+
+## knife-normalize-dry: DRY-RUN normalize (no writes)
+knife-normalize-dry:
+	@echo "🧪 DRY-RUN: knifes-normalize (locale=$(LOCALE))"
+	@node scripts/knifes-normalize.mjs --locale $(LOCALE) --dry
+
+## knife-normalize-apply: APPLY normalize (writes)
+knife-normalize-apply:
+	@echo "🛠 APPLY: knifes-normalize (locale=$(LOCALE))"
+	@node scripts/knifes-normalize.mjs --locale $(LOCALE) --apply
+
+
+# -------------------------
+# 🧼 CSV Normalize (aliases + dates + status)
+# -------------------------
+.PHONY: csv-normalize-dry csv-normalize-apply
+
+## csv-normalize-dry: DRY-RUN CSV normalization (no writes)
+csv-normalize-dry:
+	@echo "🧪 DRY-RUN: CSV normalize podľa $(CONFIG_JSON)"
+	@node scripts/knifes-csv-normalize.mjs --config $(CONFIG_JSON) --dry
+
+## csv-normalize-apply: APPLY CSV normalization (with backup)
+csv-normalize-apply:
+	@echo "🛠 APPLY: CSV normalize podľa $(CONFIG_JSON) (backup pred zápisom)"
+	@node scripts/knifes-csv-normalize.mjs --config $(CONFIG_JSON) --apply
+
+
+# -------------------------
+# 🔑 CSV GUID Sync (MD → CSV)
+# -------------------------
+.PHONY: csv-guid-sync-dry csv-guid-sync-apply
+
+## csv-guid-sync-dry: DRY-RUN sync GUID from MD frontmatter into CSV
+csv-guid-sync-dry:
+	@echo "🧪 DRY-RUN: Sync GUID z MD (frontmatter) do CSV podľa $(CONFIG_JSON)"
+	@node scripts/knifes-csv-sync-guid.mjs --config $(CONFIG_JSON) --dry
+
+## csv-guid-sync-apply: APPLY sync GUID from MD into CSV (with backup)
+csv-guid-sync-apply:
+	@echo "🛠 APPLY: Sync GUID z MD (frontmatter) do CSV (backup pred zápisom)"
+	@node scripts/knifes-csv-sync-guid.mjs --config $(CONFIG_JSON) --apply
+
+# Extra: GUID audit alias (read-only – same as DRY)
+.PHONY: csv-guid-sync-audit
+csv-guid-sync-audit:
+	@echo "🔎 AUDIT: Sync GUID (MD → CSV) – read-only"
+	@node $(SCRIPTS_DIR)/knifes-csv-sync-guid.mjs --config $(CONFIG_JSON) --csv $(CSV_OVERVIEW) --fields guid --dry
+
+# -------------------------
+# 🔑 CSV DAO Sync (MD → CSV)
+# -------------------------
+.PHONY: csv-dao-sync-dry csv-dao-sync-apply csv-dao-sync-audit
+
+## csv-dao-sync-dry: DRY-RUN sync DAO from MD frontmatter into CSV
+csv-dao-sync-dry:
+	@echo "🧪 DRY-RUN: Sync DAO z MD (frontmatter) do CSV podľa $(CONFIG_JSON)"
+	@node $(SCRIPTS_DIR)/knifes-csv-sync-guid.mjs --config $(CONFIG_JSON) --csv $(CSV_OVERVIEW) --fields dao --dry
+
+## csv-dao-sync-apply: APPLY sync DAO from MD into CSV (with backup)
+csv-dao-sync-apply:
+	@echo "🛠 APPLY: Sync DAO z MD (frontmatter) do CSV (backup pred zápisom)"
+	@cp $(CSV_OVERVIEW) $(CSV_OVERVIEW).bak || true
+	@node $(SCRIPTS_DIR)/knifes-csv-sync-guid.mjs --config $(CONFIG_JSON) --csv $(CSV_OVERVIEW) --fields dao --apply
+
+## csv-dao-sync-audit: AUDIT (alias DRY) DAO sync
+csv-dao-sync-audit:
+	@echo "🔎 AUDIT: Sync DAO (MD → CSV) – read-only"
+	@node $(SCRIPTS_DIR)/knifes-csv-sync-guid.mjs --config $(CONFIG_JSON) --csv $(CSV_OVERVIEW) --fields dao --dry
+
+# -------------------------
+# 🔑 CSV DID Sync (MD → CSV)
+# -------------------------
+.PHONY: csv-did-sync-dry csv-did-sync-apply csv-did-sync-audit
+
+## csv-did-sync-dry: DRY-RUN sync DID from MD frontmatter into CSV
+csv-did-sync-dry:
+	@echo "🧪 DRY-RUN: Sync DID z MD (frontmatter) do CSV podľa $(CONFIG_JSON)"
+	@node $(SCRIPTS_DIR)/knifes-csv-sync-guid.mjs --config $(CONFIG_JSON) --csv $(CSV_OVERVIEW) --fields did --dry
+
+## csv-did-sync-apply: APPLY sync DID from MD into CSV (with backup)
+csv-did-sync-apply:
+	@echo "🛠 APPLY: Sync DID z MD (frontmatter) do CSV (backup pred zápisom)"
+	@cp $(CSV_OVERVIEW) $(CSV_OVERVIEW).bak || true
+	@node $(SCRIPTS_DIR)/knifes-csv-sync-guid.mjs --config $(CONFIG_JSON) --csv $(CSV_OVERVIEW) --fields did --apply
+
+## csv-did-sync-audit: AUDIT (alias DRY) DID sync
+csv-did-sync-audit:
+	@echo "🔎 AUDIT: Sync DID (MD → CSV) – read-only"
+	@node $(SCRIPTS_DIR)/knifes-csv-sync-guid.mjs --config $(CONFIG_JSON) --csv $(CSV_OVERVIEW) --fields did --dry
 
 help-auth:
 	@echo "===== 🔐 Autentikácia pre Worktree deploy ====="
@@ -555,20 +728,20 @@ next-steps:
 
 ## knifes-gen: CSV -> MD (prehľady + chýbajúce Kxxx súbory)
 knifes-gen:
-	@if [ ! -f "$(SCRIPTS_DIR)/build_knifes.mjs" ]; then \
-		echo "❌ Chýba $(SCRIPTS_DIR)/build_knifes.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
+	@if [ ! -f "$(SCRIPTS_DIR)/knifes_build.mjs" ]; then \
+		echo "❌ Chýba $(SCRIPTS_DIR)/knifes_build.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
 	fi
 	@if [ ! -f "$(strip $(CSV_OVERVIEW))" ]; then \
 		echo "❌ Chýba CSV '$(strip $(CSV_OVERVIEW))'. Ulož export z Calc/Excel alebo použi: make knifes-gen csv=<path>"; \
 		echo "   Príklad: make knifes-gen csv=$(CSV_DEFAULT)"; exit 1; \
 	fi
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
-	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root .
+	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root .
 
 ## knifes-new: založí skeleton KNIFE
-## Použitie: make knifes-new id=K062 title="My Topic"
+## Použitie: make knifes-new id=K000062 title="My Topic"
 knifes-new:
-	@if [ -z "$(id)" ]; then echo "Použi: make knifes-new id=K062 title='Názov'"; exit 1; fi
+	@if [ -z "$(id)" ]; then echo "Použi: make knifes-new id=K000062 title='Názov'"; exit 1; fi
 	@if [ ! -f "$(SCRIPTS_DIR)/new_knife.mjs" ]; then \
 		echo "❌ Chýba $(SCRIPTS_DIR)/new_knife.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
 	fi
@@ -581,20 +754,20 @@ knifes-new:
 
 ## Kombinované príkazy
 dev-gen:
-	node scripts/build_knifes.mjs --csv $(CSV_DEFAULT) --root . --locale sk
+	node scripts/knifes_build.mjs --csv $(CSV_DEFAULT) --root . --locale sk
 
 build-gen: knifes-gen build
 
 ## Len suchý plán generovania (nič sa nezapisuje)
 gen-dry:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
-	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root . --dry-run
+	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root . --dry-run
 
 
 ## Dry-verify priamo cez generátor
 dry-verify:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
-	node "$(SCRIPTS_DIR)/build_knifes.mjs" --csv "$$CSV" --root . --dry-verify
+	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root . --dry-verify
 
 # -------------------------
 # 🧵 KNIFE Finish (one-button flow)
@@ -664,11 +837,13 @@ knifes-verify-frontmatter:
 	@echo "🔎 Kontrolujem KNIFE frontmatter (iba index.md)…"
 	@find docs/sk/knifes -name index.md -print0 \
 	| xargs -0 -n1 -I {} python3 tools/frontmatter_lint.py --file "{}" \
-	  --required guid dao id title created modified
+	  --required guid dao id title created modified \
+	  --id-pattern '^K[0-9]{6}$'
 	@if [ -d "docs/en/knifes" ]; then \
 	  find docs/en/knifes -name index.md -print0 \
 	  | xargs -0 -n1 -I {} python3 tools/frontmatter_lint.py --file "{}" \
-	    --required guid dao id title created modified; \
+	    --required guid dao id title created modified \
+	    --id-pattern '^K[0-9]{6}$'; \
 	fi
 # 3) Kombinovaný alias
 ## knifes-verify-smart: konfiguračne riadená verifikácia CSV/docs
@@ -711,42 +886,46 @@ knifes-validate-csv:
 
 knifes-build-safe:
 	@$(MAKE) knifes-validate-csv
-	node scripts/build_knifes.mjs --csv $(CSV_DEFAULT) --root . --locale sk
+	node scripts/knifes_build.mjs --csv $(CSV_DEFAULT) --root . --locale sk
 
 knifes-audit-frontmatter:
-	node scripts/knifesfrontmatter-audit.mjs docs/sk/knifes	
+	node scripts/knifes-frontmatter-audit.mjs docs/sk/knifes	
 
 # -------------------------
-# 🧼 KNIFE Fix/Checks (FM normalization & header checks)
+# 🧩 KNIFE FM Fix – reálny opravný nástroj (replaces audit)
 # -------------------------
-
 .PHONY: knife-fm-dry knife-fm-fix knife-header-check knife-csv-fix knife-fm-report-id knife-fm-report-tree
 
 ## knife-fm-dry: DRY-RUN normalizácie Front Matter (nič nezapisuje)
 knife-fm-dry:
 	@echo "🧪 DRY-RUN: normalizujem Front Matter v $(DOCS_DIR)/ (len report, bez zápisu)…"
-	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --fm-only --dry
+	@node scripts/knifes-frontmatter-fix.mjs --config $(CONFIG_JSON) --dry
 
 ## knife-fm-fix: Aplikuj normalizáciu Front Matter (zapíše zmeny)
 knife-fm-fix:
 	@echo "🛠  APPLY: normalizujem Front Matter v $(DOCS_DIR)/ (zapíšem zmeny)…"
-	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --fm-only
+	@node scripts/knifes-frontmatter-fix.mjs --config $(CONFIG_JSON) --apply
+
+## knife-fm-apply: Alias na APPLY normalizáciu Front Matter
+knife-fm-apply:
+	@echo "🛠  APPLY (alias): normalizujem Front Matter v $(DOCS_DIR)/ …"
+	@node scripts/knifes-frontmatter-fix.mjs --config $(CONFIG_JSON) --apply
 
 ## knife-header-check: Skontroluj technickú hlavičku obsahu (H1 po FM)
 knife-header-check:
-	@echo "🔎 Kontrolujem H1 nadpis po Front Matter (prvých 20 riadkov obsahu)…"
-	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --check-header
+	@echo "🔎 Auditujem technickú hlavičku (H1 po FM) – read-only…"
+	@node scripts/knifes-frontmatter-audit.mjs "$(DOCS_DIR)/sk/knifes"
 
 ## knife-csv-fix: Spusti pôvodný CSV/folder fix (bez úprav obsahu .md)
 knife-csv-fix:
-	@echo "🧩 CSV/folder fix podľa knifes_fix.mjs (legacy flow)…"
-	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON)
+	@echo "🧩 CSV/folder fix → použijem knifes-frontmatter-fix.mjs (legacy alias)…"
+	@node scripts/knifes-frontmatter-fix.mjs --config $(CONFIG_JSON) --apply
 
-## knife-fm-report-id: Report pre konkrétne ID (detailné FM zmeny), použitie: make knife-fm-report-id id=K059
+## knife-fm-report-id: Report pre konkrétne ID (detailné FM zmeny), použitie: make knife-fm-report-id id=K000059
 knife-fm-report-id:
 	@if [ -z "$(id)" ]; then \
 		echo "❌ Chýba parameter: id=KXXX"; \
-		echo "   Použitie: make knife-fm-report-id id=K059"; \
+		echo "   Použitie: make knife-fm-report-id id=K000059"; \
 		exit 2; \
 	fi
 	@echo "────────────────────────────────────────────────────────"
@@ -757,7 +936,7 @@ knife-fm-report-id:
 	@echo "ℹ️  Tento report NIČ NEZAPISUJE. Slúži na review pred apply."
 	@echo "   Tip: Ak chceš vidieť celý rozsah zmien v repo, použi: make knife-fm-dry"
 	@echo "────────────────────────────────────────────────────────"
-	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --report-id $(id)
+	@node scripts/knifes-frontmatter-fix.mjs --config $(CONFIG_JSON) --dry --id $(id)
 	@ec=$$?; \
 	echo "────────────────────────────────────────────────────────"; \
 	if [ $$ec -eq 0 ]; then \
@@ -766,11 +945,11 @@ knife-fm-report-id:
 	  echo "⚠️  Skript vrátil exit-code $$ec (pozri log vyššie)."; \
 	fi
 
-## knife-fm-report-tree: Report pre celú zložku KNIFE (ID-tree), použitie: make knife-fm-report-tree id=K083
+## knife-fm-report-tree: Report pre celú zložku KNIFE (ID-tree), použitie: make knife-fm-report-tree id=K000083
 knife-fm-report-tree:
 	@if [ -z "$(id)" ]; then \
 		echo "❌ Chýba parameter: id=KXXX"; \
-		echo "   Použitie: make knife-fm-report-tree id=K083"; \
+		echo "   Použitie: make knife-fm-report-tree id=K000083"; \
 		exit 2; \
 	fi
 	@echo "────────────────────────────────────────────────────────"
@@ -778,7 +957,7 @@ knife-fm-report-tree:
 	@echo "   Config: $(CONFIG_JSON)"
 	@echo "────────────────────────────────────────────────────────"
 	@echo "ℹ️  Tento report NIČ NEZAPISUJE. Slúži na review pred apply."
-	@node scripts/knifes_fix.mjs --config $(CONFIG_JSON) --report-tree $(id)
+	@node scripts/knifes-frontmatter-audit.mjs "$(DOCS_DIR)/sk/knifes"
 	@ec=$$?; \
 	echo "────────────────────────────────────────────────────────"; \
 	if [ $$ec -eq 0 ]; then \
@@ -910,3 +1089,236 @@ knifes-generate:
 
 knifes-prepare: knifes-validate knifes-generate
 	@echo "✅ CSV OK → KNIFE vygenerované."
+
+# -------------------------
+# 🧾 KNIFES Frontmatter (audit/fix/merge) – scripts placeholders
+# -------------------------
+#
+# -------------------------
+# 🧹 FM Sanitation (remove deprecated keys, normalize quotes)
+# -------------------------
+.PHONY: knifes-datekey-remove-dry knifes-datekey-remove-apply knifes-smartquotes-scan knifes-smartquotes-fix-dry knifes-smartquotes-fix-apply
+
+## knifes-datekey-remove-dry: DRY – remove deprecated 'date:' key from KNIFE index.md
+knifes-datekey-remove-dry:
+	@echo "🧪 DRY: Removing deprecated 'date:' from KNIFE index.md (no writes)…"
+	@if [ ! -f "scripts/knifes-frontmatter-datekey.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-datekey.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-datekey.mjs --config $(CONFIG_JSON) --key date --dry
+
+## knifes-datekey-remove-apply: APPLY – remove deprecated 'date:' key
+knifes-datekey-remove-apply:
+	@echo "🛠 APPLY: Removing deprecated 'date:' from KNIFE index.md…"
+	@if [ ! -f "scripts/knifes-frontmatter-datekey.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-datekey.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-datekey.mjs --config $(CONFIG_JSON) --key date --apply
+
+## knifes-smartquotes-scan: read-only scan for “smart quotes” in all docs
+knifes-smartquotes-scan:
+	@echo "🔎 SCAN: Hľadám typografické úvodzovky v docs/…"
+	@rg -n --pcre2 '[“”‚’]' $(DOCS_DIR) || true
+
+## knifes-smartquotes-fix-dry: DRY – replace smart quotes with straight quotes (no writes)
+knifes-smartquotes-fix-dry:
+	@echo "🧪 DRY: smart quotes → straight quotes (no writes)…"
+	@if [ ! -f "scripts/knifes-frontmatter-quotes.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-quotes.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-quotes.mjs --config $(CONFIG_JSON) --dry
+
+## knifes-smartquotes-fix-apply: APPLY – replace smart quotes with straight quotes (writes)
+knifes-smartquotes-fix-apply:
+	@echo "🛠 APPLY: smart quotes → straight quotes…"
+	@if [ ! -f "scripts/knifes-frontmatter-quotes.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-quotes.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-quotes.mjs --config $(CONFIG_JSON) --apply
+.PHONY: knifes-frontmatter-audit knifes-frontmatter-fix-dry knifes-frontmatter-fix-apply knifes-frontmatter-merge
+
+knifes-frontmatter-audit:
+	@echo "🔎 Auditujem Front Matter v KNIFE (read-only)…"
+	@if [ ! -f "scripts/knifes-frontmatter-audit.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-audit.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-audit.mjs "$(DOCS_DIR)/sk/knifes"
+
+knifes-frontmatter-fix-dry:
+	@echo "🧪 DRY-RUN: Front Matter fix (bez zápisu)…"
+	@if [ ! -f "scripts/knifes-frontmatter-fix.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-fix.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-fix.mjs --config $(CONFIG_JSON) --dry
+
+knifes-frontmatter-fix-apply:
+	@echo "🛠 APPLY: Front Matter fix (zapíše)…"
+	@if [ ! -f "scripts/knifes-frontmatter-fix.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-fix.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-fix.mjs --config $(CONFIG_JSON) --apply
+
+knifes-frontmatter-merge:
+	@echo "🔗 Merge Front Matter (config-driven)…"
+	@if [ ! -f "scripts/knifes-frontmatter-merge.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-merge.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-merge.mjs --config $(CONFIG_JSON) --csv $(CSV_OVERVIEW)
+
+## knifes-frontmatter-audit-id: Audit iba pre jedno KNIFE ID (id=K000059)
+.PHONY: knifes-frontmatter-audit-id
+knifes-frontmatter-audit-id:
+	@if [ -z "$(id)" ]; then echo "Použi: make knifes-frontmatter-audit-id id=K000059"; exit 2; fi
+	@echo "🔎 Auditujem Front Matter pre ID=$(id) (read-only)…"
+	@if [ ! -f "scripts/knifes-frontmatter-audit.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-audit.mjs"; exit 1; \
+	fi
+	@# audit podporuje argument root dir; filtrujeme cez id6 prefiks priečinka
+	@DIR="$(DOCS_DIR)/sk/knifes/$$(echo $(id) | tr 'A-Z' 'a-z')-*"; \
+	if compgen -G "$$DIR" > /dev/null; then \
+	  node scripts/knifes-frontmatter-audit.mjs "$$(dirname $$DIR)"; \
+	else \
+	  echo "❌ Nenašiel som priečinok pre $(id) pod docs/sk/knifes"; exit 1; \
+	fi
+
+## knifes-frontmatter-fix-id-dry: DRY-RUN fix iba pre jedno ID
+.PHONY: knifes-frontmatter-fix-id-dry
+knifes-frontmatter-fix-id-dry:
+	@if [ -z "$(id)" ]; then echo "Použi: make knifes-frontmatter-fix-id-dry id=K000059"; exit 2; fi
+	@echo "🧪 DRY-RUN: FM fix pre ID=$(id)…"
+	@if [ ! -f "scripts/knifes-frontmatter-fix.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-fix.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-fix.mjs --dry --id $(id)
+
+## knifes-frontmatter-fix-id-apply: APPLY fix iba pre jedno ID
+.PHONY: knifes-frontmatter-fix-id-apply
+knifes-frontmatter-fix-id-apply:
+	@if [ -z "$(id)" ]; then echo "Použi: make knifes-frontmatter-fix-id-apply id=K000059"; exit 2; fi
+	@echo "🛠 APPLY: FM fix pre ID=$(id)…"
+	@if [ ! -f "scripts/knifes-frontmatter-fix.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-fix.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-fix.mjs --apply --id $(id)
+
+# -------------------------
+# 🔗 Slug tools (report/comment/delete) – separate script
+# -------------------------
+.PHONY: knifes-frontmatter-slug-report knifes-frontmatter-slug-comment-dry knifes-frontmatter-slug-comment-apply knifes-frontmatter-slug-delete-dry knifes-frontmatter-slug-delete-apply
+
+knifes-frontmatter-slug-report:
+	@echo "🔎 SLUG REPORT (id=$(id) scope=$(scope))"
+	@if [ ! -f "scripts/knifes-frontmatter-slug.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-slug.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-slug.mjs --config $(CONFIG_JSON) --action report --scope $(if $(scope),$(scope),index) $(if $(id),--id $(id),) --dry
+
+knifes-frontmatter-slug-comment-dry:
+	@echo "🧪 DRY: SLUG comment (id=$(id) scope=$(scope))"
+	@if [ ! -f "scripts/knifes-frontmatter-slug.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-slug.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-slug.mjs --config $(CONFIG_JSON) --action comment --scope $(if $(scope),$(scope),index) $(if $(id),--id $(id),) --dry
+
+knifes-frontmatter-slug-comment-apply:
+	@echo "🛠 APPLY: SLUG comment (id=$(id) scope=$(scope))"
+	@if [ ! -f "scripts/knifes-frontmatter-slug.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-slug.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-slug.mjs --config $(CONFIG_JSON) --action comment --scope $(if $(scope),$(scope),index) $(if $(id),--id $(id),) --apply
+
+knifes-frontmatter-slug-delete-dry:
+	@echo "🧪 DRY: SLUG delete (id=$(id) scope=$(scope))"
+	@if [ ! -f "scripts/knifes-frontmatter-slug.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-slug.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-slug.mjs --config $(CONFIG_JSON) --action delete --scope $(if $(scope),$(scope),index) $(if $(id),--id $(id),) --dry
+
+knifes-frontmatter-slug-delete-apply:
+	@echo "🛠 APPLY: SLUG delete (id=$(id) scope=$(scope))"
+	@if [ ! -f "scripts/knifes-frontmatter-slug.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-slug.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-slug.mjs --config $(CONFIG_JSON) --action delete --scope $(if $(scope),$(scope),index) $(if $(id),--id $(id),) --apply
+
+# -------------------------
+# 🔢 KNIFE ID6 Migration (K### → K######) – separate script
+# -------------------------
+.PHONY: knifes-id6-dry knifes-id6-apply knifes-id6-audit
+
+knifes-id6-dry:
+	@echo "🧪 DRY-RUN: ID6 migration (id=$(id))"
+	@if [ ! -f "scripts/knifes-frontmatter-id6.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-id6.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-id6.mjs --config $(CONFIG_JSON) --dry $(if $(id),--id $(id),)
+
+knifes-id6-apply:
+	@echo "🛠 APPLY: ID6 migration (id=$(id))"
+	@if [ ! -f "scripts/knifes-frontmatter-id6.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-id6.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-id6.mjs --config $(CONFIG_JSON) --apply $(if $(id),--id $(id),)
+
+knifes-id6-audit:
+	@echo "🔍 AUDIT: ID6 migration – post-check"
+	@if [ ! -f "scripts/knifes-frontmatter-id6.mjs" ]; then \
+	  echo "❌ Chýba scripts/knifes-frontmatter-id6.mjs"; exit 1; \
+	fi
+	@node scripts/knifes-frontmatter-id6.mjs --config $(CONFIG_JSON) --audit
+# -------------------------
+# 📐 K18 Baseline – 3-krokový flow (Audit → Fix → Verify)
+# -------------------------
+.PHONY: k18-audit k18-fix-dry k18-fix-apply k18-verify k18-align-dry k18-align-apply
+
+k18-audit:
+	@echo "🔎 K18 AUDIT (read-only)…"
+	@if [ ! -f "scripts/knifes-frontmatter-audit.mjs" ]; then echo "❌ Chýba scripts/knifes-frontmatter-audit.mjs"; exit 1; fi
+	@node scripts/knifes-frontmatter-audit.mjs "$(DOCS_DIR)/sk/knifes"
+
+k18-fix-dry:
+	@echo "🧪 K18 FIX (DRY-RUN)…"
+	@if [ ! -f "scripts/knifes-frontmatter-fix.mjs" ]; then echo "❌ Chýba scripts/knifes-frontmatter-fix.mjs"; exit 1; fi
+	@node scripts/knifes-frontmatter-fix.mjs --config $(CONFIG_JSON) --dry
+
+k18-fix-apply:
+	@echo "🛠 K18 FIX (APPLY)…"
+	@if [ ! -f "scripts/knifes-frontmatter-fix.mjs" ]; then echo "❌ Chýba scripts/knifes-frontmatter-fix.mjs"; exit 1; fi
+	@node scripts/knifes-frontmatter-fix.mjs --config $(CONFIG_JSON) --apply
+
+k18-verify: k18-audit knifes-verify-frontmatter
+	@echo "✅ K18 VERIFY hotovo."
+
+k18-align-dry:
+	@$(MAKE) k18-audit
+	@$(MAKE) k18-fix-dry
+	@$(MAKE) k18-audit
+	@echo "🧪 K18 align DRY sekvencia dokončená."
+
+k18-align-apply:
+	@$(MAKE) k18-fix-apply
+	@$(MAKE) k18-verify
+	@echo "🎉 K18 align APPLY sekvencia dokončená."
+
+# -------------------------
+# 📚 KNIFES_REF tooling (audit + alignment placeholders)
+# -------------------------
+.PHONY: knifes-ref-audit knifes-ref-align-dry knifes-ref-align-apply
+
+knifes-ref-audit:
+	@echo "🔎 Auditujem KNIFES_REF (read-only)…"
+	@if [ ! -f "scripts/knifes-frontmatter-audit.mjs" ]; then echo "❌ Chýba scripts/knifes-frontmatter-audit.mjs"; exit 1; fi
+	@node scripts/knifes-frontmatter-audit.mjs "$(KNIFES_REF_DIR)"
+
+knifes-ref-align-dry:
+	@echo "🧪 KNIFES_REF align (DRY)…"
+	@$(MAKE) knifes-ref-audit
+	@echo "ℹ️  Placeholder: sem doplníme DRY fix pre KNIFES_REF (keď bude pripravený)."
+	@$(MAKE) knifes-ref-audit
+	@echo "🧪 KNIFES_REF align DRY sekvencia dokončená."
+
+knifes-ref-align-apply:
+	@echo "🛠 KNIFES_REF align (APPLY)…"
+	@echo "ℹ️  Placeholder: sem doplníme APPLY fix pre KNIFES_REF (keď bude pripravený)."
+	@$(MAKE) knifes-ref-audit
+	@echo "🎉 KNIFES_REF align APPLY sekvencia dokončená."

@@ -3,7 +3,7 @@
 //   node scripts/build_knifes.mjs --csv data/KNIFE-OVERVIEW-ONLY.csv --root .
 // What it does:
 //  1) Reads CSV (semicolon or comma separated).
-/*  2) For each row with ID like K061:
+/*  2) For each row with ID like K000061:
 //       - Ensures docs/sk/KNIFES/<FolderName>/ exists
 //       - Creates <FolderName>.md if missing (with front matter)
 //     It never overwrites existing .md (idempotent).

@@ -9,7 +9,18 @@ const getArgVal = (name, def=null) => {
   return idx>=0 && process.argv[idx+1] ? process.argv[idx+1] : def;
 };
 
-const DRY = ARGS.has('--dry-run') || !ARGS.has('--write');
+// New semantics: default DRY unless --apply
+// Backward-compat: map legacy flags if used
+if (ARGS.has('--write')) {
+  console.warn('⚠️  --write is deprecated; use --apply');
+  ARGS.add('--apply');
+}
+if (ARGS.has('--dry-run')) {
+  console.warn('⚠️  --dry-run is deprecated; use --dry');
+  ARGS.add('--dry');
+}
+
+const DRY = ARGS.has('--dry') || !ARGS.has('--apply');
 const CSV_PATH = getArgVal('--csv', null);
 const ONLY_ID = getArgVal('--only', null);
 
@@ -31,7 +42,7 @@ function parseFrontmatter(md){
   const block = m[1];
   const after = md.slice(m[0].length);
   const obj = {};
-  for (const line of block split(/\r?\n/)) {
+  for (const line of block.split(/\r?\n/)) {
     const mm = line.match(/^([A-Za-z0-9_]+)\s*:\s*(.*)$/);
     if (!mm) continue;
     const k = mm[1].trim();
@@ -64,11 +75,7 @@ function stringifyFrontmatter(obj){
   return lines.join('\n') + '\n';
 }
 
-function genGuid(id){
-  const uuid = crypto.randomUUID();
-  const safeId = (id || 'KXXX').toUpperCase();
-  return `knife-${safeId}-${uuid}`;
-}
+// Removed genGuid as per instructions
 
 async function* walk(dir) {
   try {
@@ -148,30 +155,50 @@ async function loadCsvMap(csvPath){
     }
     if (!rec.slug && rec.linkslug) rec.slug = rec.linkslug;
     delete rec.linkslug;
-    if (rec.authors && !Array.isArray(rec.authors)) rec.authors = rec.authors.split(',').map(s => s.trim()).filter(Boolean);
-    if (rec.tags && !Array.isArray(rec.tags)) rec.tags = rec.tags.split(',').map(s => s.trim()).filter(Boolean);
+    // Keep raw CSV strings; we will render as inline list only when FM field is empty.
     map.set(id, rec);
   }
   return map;
 }
 
+function isEmptyValue(v) {
+  if (v == null) return true;
+  if (Array.isArray(v)) return v.length === 0;
+  const s = String(v).trim();
+  return s === '' || s === '""' || s === "''";
+}
+function toInlineList(val) {
+  if (Array.isArray(val)) return `[${val.map(s => JSON.stringify(String(s))).join(', ')}]`;
+  // treat comma-separated string from CSV
+  const arr = String(val).split(',').map(s => s.trim()).filter(Boolean);
+  return `[${arr.map(s => JSON.stringify(s)).join(', ')}]`;
+}
+
 function mergeFrontmatter(existing, csvRec){
   const out = { ...existing };
-  if (!('authors' in out) && typeof out.author === 'string' && out.author.trim()) out.authors = [out.author.trim()];
-  if (!out.dao) out.dao = 'knife';
-  if (!out.guid) out.guid = genGuid(out.id);
-  if (!out.locale) out.locale = 'sk';
-
-  if (csvRec) {
-    const candidates = ['title','slug','sidebar_label','sidebar_position','description','status','tags','locale','category','type','priority','authors'];
-    for (const k of candidates){
-      if ((out[k] === undefined || out[k] === null || String(out[k]).trim() === '') && csvRec[k] != null && String(csvRec[k]).trim() !== '') {
-        out[k] = csvRec[k];
+  const warnings = [];
+  if (!csvRec) return { out, warnings };
+  const candidates = ['title','slug','sidebar_label','sidebar_position','description','status','tags','locale','category','type','priority','authors'];
+  for (const k of candidates){
+    const fmVal = out[k];
+    const csvVal = csvRec[k];
+    if (isEmptyValue(fmVal) && !isEmptyValue(csvVal)) {
+      // fill empty from CSV
+      if (k === 'authors' || k === 'tags') {
+        out[k] = toInlineList(csvVal);
+      } else {
+        out[k] = csvVal;
+      }
+    } else if (!isEmptyValue(fmVal) && !isEmptyValue(csvVal)) {
+      // conflict → warn only
+      const fmShow = Array.isArray(fmVal) ? JSON.stringify(fmVal) : String(fmVal);
+      const csvShow = Array.isArray(csvVal) ? JSON.stringify(csvVal) : String(csvVal);
+      if (fmShow.trim() !== csvShow.trim()) {
+        warnings.push({ key:k, fm: fmShow, csv: csvShow });
       }
     }
   }
-
-  return out;
+  return { out, warnings };
 }
 
 async function processFile(p, csvMap){
@@ -187,56 +214,81 @@ async function processFile(p, csvMap){
       if (!mm) continue;
       const k = mm[1].trim();
       let v = mm[2].trim();
-      if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) v = v.slice(1,-1);
       obj[k] = v;
     }
     return [obj, after];
   })(md);
 
-  const id = fm.id;
+  const id = fm.id && String(fm.id).replace(/^["']|["']$/g,'');
   if (ONLY_ID && id !== ONLY_ID) return null;
 
   const csvRec = id && csvMap ? csvMap.get(id) : null;
-  const merged = mergeFrontmatter(fm, csvRec);
+  const mergedRes = mergeFrontmatter(fm, csvRec);
+  const merged = mergedRes.out;
+  const warnings = mergedRes.warnings || [];
 
-  const before = JSON.stringify(fm);
-  const after  = JSON.stringify(merged);
-  if (before === after) return { file:p, changed:false };
-
-  const newText = (function(obj, body){
-    const DEFAULT_ORDER = [
-      'id','guid','dao',
-      'title','description',
-      'authors','status','tags',
-      'slug','sidebar_label','sidebar_position',
-      'locale',
-      'created','modified',
-      'category','type','priority'
-    ];
-    const keys = [...new Set([...DEFAULT_ORDER, ...Object.keys(obj)])];
-    const lines = ['---'];
-    for (const k of keys){
-      if (!(k in obj)) continue;
-      let v = obj[k];
-      if (Array.isArray(v)) lines.push(`${k}: ${JSON.stringify(v)}`);
-      else if (typeof v === 'string') {
-        const needsQuote = /[:#]|^\s|\s$/.test(v);
-        lines.push(`${k}: ${needsQuote ? JSON.stringify(v) : `"${v}"`}`);
-      } else {
-        lines.push(`${k}: ${v}`);
-      }
+  // Determine additions (keys that were empty in FM and are now filled)
+  const additions = [];
+  for (const k of Object.keys(merged)) {
+    const was = fm[k];
+    const now = merged[k];
+    if (was !== now) {
+      // Only count as addition if previous FM value was empty and now is non-empty
+      if (isEmptyValue(was) && !isEmptyValue(now)) additions.push({ key:k, value: now });
     }
-    lines.push('---');
-    return lines.join('\n') + '\n' + body;
-  })(merged, body);
+  }
+
+  if (additions.length === 0 && warnings.length === 0) {
+    return { file:p, changed:false };
+  }
 
   if (DRY) {
-    console.log(`[DRY] would update: ${p}`);
-    return { file:p, changed:true, dry:true };
+    if (additions.length) {
+      console.log(`[DRY] would add: ${p}`);
+      additions.forEach(a => {
+        const valShow = Array.isArray(a.value) ? JSON.stringify(a.value) : String(a.value);
+        console.log(`  + ${a.key} ← CSV ${valShow}`);
+      });
+    }
+    warnings.forEach(w => {
+      console.log(`! warn: CSV vs FM differ – ${w.key}: FM=${w.fm} vs CSV=${w.csv} (no change; handle in FIX)`);
+    });
+    return { file:p, changed: additions.length>0, dry:true };
   } else {
-    await fs.writeFile(p, newText, 'utf8');
-    console.log(`updated: ${p}`);
-    return { file:p, changed:true };
+    // APPLY: add only additions; conflicts only warn
+    if (additions.length) {
+      const newText = (function(obj, body){
+        const DEFAULT_ORDER = [
+          'id','guid','dao',
+          'title','description',
+          'authors','status','tags',
+          'slug','sidebar_label','sidebar_position',
+          'locale',
+          'created','modified',
+          'category','type','priority'
+        ];
+        const keys = [...new Set([...DEFAULT_ORDER, ...Object.keys(obj)])];
+        const lines = ['---'];
+        for (const k of keys){
+          if (!(k in obj)) continue;
+          let v = obj[k];
+          // Preserve strings as-is (they may already contain quotes)
+          if (Array.isArray(v)) {
+            lines.push(`${k}: ${JSON.stringify(v)}`);
+          } else {
+            lines.push(`${k}: ${v}`);
+          }
+        }
+        lines.push('---');
+        return lines.join('\n') + '\n' + body;
+      })(merged, body);
+      await fs.writeFile(p, newText, 'utf8');
+      console.log(`updated: ${p}`);
+    }
+    warnings.forEach(w => {
+      console.log(`! warn: CSV vs FM differ – ${w.key}: FM=${w.fm} vs CSV=${w.csv} (no change; handle in FIX)`);
+    });
+    return { file:p, changed: additions.length>0 };
   }
 }
 
@@ -253,6 +305,6 @@ async function main(){
       }
     } catch {}
   }
-  console.log(`\nDone. Scanned: ${total}, ${DRY ? 'would change' : 'changed'}: ${changed}`);
+  console.log(`\nDone. Scanned: ${total}, ${DRY ? 'would add' : 'added'} (from CSV) in: ${changed} file(s).`);
 }
 main().catch(e => { console.error(e); process.exit(1); });

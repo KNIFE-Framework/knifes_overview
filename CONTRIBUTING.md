@@ -23,7 +23,7 @@ Vnútri používame YAML hlavičku a sekcie ako:
 ```yaml
 ---
 title: Backup OneDrive on Mac using rclone
-id: K044
+id: K000044
 category: Backups
 sfia: 3
 status: hotové
@@ -41,7 +41,7 @@ tags: [backup, onedrive, mac, rclone]
 
 ### 🟢 Najjednoduchšie – cez Pull Request
 1. Forkni repozitár (ak nemáš právo commitovať priamo)
-2. Vytvor novú vetvu (napr. `feat/K045-rsync-qnap`)
+2. Vytvor novú vetvu (napr. `feat/K000045-rsync-qnap`)
 3. Pridaj alebo uprav `.md` súbor
 4. Pošli **Pull Request** do `main`
 
@@ -62,7 +62,7 @@ Tvoje zmeny budú s radosťou prečítané, pripomienkované alebo rovno mergnut
 
 ### Spolupráca
 - Odporúčame používať `feat/KNIFExxx-nazov` pre každú novú tému
-- Napr. `feat/K044-backup-onedrive`
+- Napr. `feat/K000044-backup-onedrive`
 
 To umožní paralelný vývoj viacerých návrhov a neskorší merge cez Pull Request.
 

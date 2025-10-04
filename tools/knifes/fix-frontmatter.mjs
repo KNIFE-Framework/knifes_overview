@@ -38,7 +38,7 @@ function ensureFrontmatterIndex(dir, folder) {
       }
     }
   }
-  const key = folder.slice(0,4); // K078
+  const key = folder.slice(0,4); // K000078
   fm.id = fm.id || folder;
   fm.title = fm.title || `${key} — ${folder.replace(/^K\d{3}-/, '').replace(/-/g, ' ')}`;
   fm.sidebar_label = fm.sidebar_label || key;
@@ -52,7 +52,7 @@ function ensureFrontmatterIndex(dir, folder) {
 const dirs = listDirs(KNIFES_DIR).filter(p => /\/K\d{3}-[^/]+$/.test(p));
 for (const d of dirs) {
   const folder = path.basename(d);
-  ensureCategoryJson(d, folder.slice(0,4)); // 'K078'
+  ensureCategoryJson(d, folder.slice(0,4)); // 'K000078'
   ensureFrontmatterIndex(d, folder);
 }
 

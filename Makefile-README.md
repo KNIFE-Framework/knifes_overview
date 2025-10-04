@@ -31,7 +31,7 @@ make dev            # lokálny server
 2) CSV export ulož do `data/KNIFE-OVERVIEW-ONLY.csv` (alebo použi vlastnú cestu).
 3) Spusti:
    - `make knifes-gen` – vygeneruje/aktualizuje prehľady + chýbajúce Kxxx `.md`
-   - `make knife-new id=K062 title="Docusaurus slugs & routing"` – založí nový KNIFE skeleton
+   - `make knife-new id=K000062 title="Docusaurus slugs & routing"` – založí nový KNIFE skeleton
    - `make dev-gen` – (knifes-gen + dev)
    - `make build-gen` – (knifes-gen + build)
 
@@ -87,12 +87,12 @@ make actions-enable
     ---
   TODO:
 ### Voliteľné: dostať ťahák aj do webovej dokumentácie
-Ak chceš mať aj stránku v Docusauruse (napr. K056), pridaj napr.:
+Ak chceš mať aj stránku v Docusauruse (napr. K000056), pridaj napr.:
 
-`docs/sk/7Ds/01.D1-Management/02.Strategy/Guides/K056-Central-Panel-Git.md`
+`docs/sk/7Ds/01.D1-Management/02.Strategy/Guides/K000056-Central-Panel-Git.md`
 ```md
 ---
-title: K056 – Central Panel for Git (Makefile)
+title: K000056 – Central Panel for Git (Makefile)
 description: Jeden Makefile na build, kontrolu a deploy (Worktree + Actions)
 ---
 

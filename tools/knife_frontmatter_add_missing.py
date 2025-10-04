@@ -33,7 +33,7 @@ PARENT_DIR_RE = re.compile(r"/((K\d{3})[^/]*)/")
 SUB_ID_RE = re.compile(r"^(K\d{3})(?:_|-)(\d{1,3})$")
 
 def find_parent_kid(path: Path) -> str:
-    """Find nearest ancestor dir that starts with K### and return its base K-ID (e.g., K068)."""
+    """Find nearest ancestor dir that starts with K### and return its base K-ID (e.g., K000068)."""
     parts = [*path.parts]
     for i in range(len(parts)-1, -1, -1):
         m = re.match(r"^(K\d{3})", parts[i])
@@ -103,7 +103,7 @@ def detect_locale(path: Path) -> str:
     return "sk" if "sk" in parts else ("en" if "en" in parts else "")
 
 def detect_id_from_path(path: Path) -> str:
-    # hľadá napr. .../knifes/K044-backup-one-drive/...
+    # hľadá napr. .../knifes/K000044-backup-one-drive/...
     m = re.search(r"/(K\d{3})[-_/]", "/".join(path.parts)+"/")
     return m.group(1) if m else ""
 

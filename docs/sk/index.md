@@ -47,7 +47,7 @@ Každý KNIFE má vlastný folder, kde je uložený hlavný článok a podprieč
 
 ## 🧭 Navigácia
 
-- Klikni na ID (napr. **K060**) alebo názov v tabuľke → otvorí sa konkrétny KNIFE.  
+- Klikni na ID (napr. **K000060**) alebo názov v tabuľke → otvorí sa konkrétny KNIFE.  
 - V každom KNIFE článku nájdeš odkazy späť na tieto prehľady.
 
 ---

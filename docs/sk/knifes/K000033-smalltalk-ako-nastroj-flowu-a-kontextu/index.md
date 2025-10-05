@@ -1,28 +1,19 @@
 ---
-id: "K000033"
+id: "K000"
 guid: "4bf0fa16-972c-4cbc-a923-2d28af33f41d"
 dao: "knife"
 title: "Smalltalk ako nástroj flowu a kontextu"
-description: "GUID: 4bf0fa16-972c-4cbc-a923-2d28af33f41d\\\\\\\\nStatus: v riešeni · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
+description: "GUID: 4bf0fa16-972c-4cbc-a923-2d28af33f41d\\nStatus: v riešeni · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-smalltalk-ako-nastroj-flowu-a-kontextu"
 sidebar_label: "K000033 – Smalltalk ako nástroj flowu a kontextu"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "33"
+locale: "sk"
 ---
 <!-- body:start -->
 

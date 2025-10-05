@@ -1,28 +1,19 @@
 ---
-id: "K000063"
+id: "K000"
 guid: "32ff770d-25ab-45d7-b8f0-b7857fd53ecb"
 dao: "knife"
 title: "Automatické generovanie KNIFES"
 description: "Ako používať automatizáciu pri generovaní KNIFES"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-automaticke-generovanie-knifes"
 sidebar_label: "K000063 – Automatické generovanie KNIFES"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "63"
+locale: "sk"
 ---
 <!-- body:start -->
 

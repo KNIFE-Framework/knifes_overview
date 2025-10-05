@@ -1,28 +1,19 @@
 ---
-id: "K000054"
+id: "K000"
 guid: "e6a19133-a51b-4041-a811-6ccd8611fde0"
 dao: "knife"
 title: "Docusaurus Advanced Deployment Pipeline"
 description: "Kontrola referencií v Docusaurus/MkDocs"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-docusaurus-advanced-deployment-pipeline"
 sidebar_label: "K000054 – Docusaurus Advanced Deployment Pipeline"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "54"
+locale: "sk"
 ---
 <!-- body:start -->
 

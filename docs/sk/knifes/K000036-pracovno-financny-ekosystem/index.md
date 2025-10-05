@@ -1,28 +1,19 @@
 ---
-id: "K000036"
+id: "K000"
 guid: "5d8e7ee1-a0d2-474b-832e-c91a030ea3d0"
 dao: "knife"
 title: "Pracovno, finančný ekosystém"
 description: "Absolventi architektúry už počas štúdia sú selektovaní  z komerčných ateliérov. Ponúkajú im brikády, prípadne dohody o vykonaní práce, za cenu nekvalifikovaných robotníkov."
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-pracovno-financny-ekosystem"
 sidebar_label: "K000036 – Pracovno, finančný ekosystém"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "36"
+locale: "sk"
 ---
 <!-- body:start -->
 

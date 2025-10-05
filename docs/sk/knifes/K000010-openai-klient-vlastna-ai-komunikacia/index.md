@@ -1,28 +1,19 @@
 ---
-id: "K000010"
+id: "K000"
 guid: "833ed8e5-8144-4de4-b63a-1d6000dee2a1"
 dao: "knife"
 title: "OpenAI klient – vlastná AI komunikácia"
 description: "Appka s prepojením na OpenAI API a archív komunikácie"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-openai-klient-vlastna-ai-komunikacia"
 sidebar_label: "K000010 – OpenAI klient – vlastná AI komunikácia"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "10"
+locale: "sk"
 ---
 <!-- body:start -->
 

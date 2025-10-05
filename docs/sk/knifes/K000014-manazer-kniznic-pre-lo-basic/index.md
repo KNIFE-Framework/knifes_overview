@@ -1,28 +1,19 @@
 ---
-id: "K000014"
+id: "K000"
 guid: "56e95dd8-a633-4850-8615-063ce541fc44"
 dao: "knife"
 title: "Manažér knižníc pre LO Basic"
 description: "Načítanie a správa knižníc v LO Basic"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-manazer-kniznic-pre-lo-basic"
 sidebar_label: "K000014 – Manažér knižníc pre LO Basic"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "14"
+locale: "sk"
 ---
 <!-- body:start -->
 

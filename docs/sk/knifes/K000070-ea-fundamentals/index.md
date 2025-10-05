@@ -1,28 +1,19 @@
 ---
-id: "K000070"
+id: "K000"
 guid: "c5d8b05b-4afb-4618-8ca4-657a78acd5d8"
 dao: "knife"
 title: "EA Fundamentals"
-description: "GUID: c5d8b05b-4afb-4618-8ca4-657a78acd5d8\\\\\\\\nStatus: new · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
+description: "GUID: c5d8b05b-4afb-4618-8ca4-657a78acd5d8\\nStatus: new · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-ea-fundamentals"
 sidebar_label: "K000070 – EA Fundamentals"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "70"
+locale: "sk"
 ---
 <!-- body:start -->
 

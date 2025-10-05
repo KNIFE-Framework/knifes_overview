@@ -1,28 +1,19 @@
 ---
-id: "K000047"
+id: "K000"
 guid: "82c38956-39d1-4afa-8b78-845c78c22083"
 dao: "knife"
 title: "KNIFE047 – 7S Cycle of Meaningful Knowledge"
 description: "Nové inšpirácie ohľadne riešenia aj z pohľadu marketingu"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-knife047-7s-cycle-of-meaningful-knowledge"
 sidebar_label: "K000047 – KNIFE047 – 7S Cycle of Meaningful Knowledge"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "47"
+locale: "sk"
 ---
 <!-- body:start -->
 

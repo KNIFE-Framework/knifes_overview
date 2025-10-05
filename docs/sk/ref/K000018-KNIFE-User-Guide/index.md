@@ -8,11 +8,11 @@ author: "Roman Kazička"
 authors: ["Roman Kazička"]
 category: "governance"
 type: "user-guide"
-priority: "top"
+priority: "Hi"
 tags: ["KNIFE", "Rules", "Governance"]
 created: "2025-10-04"
 modified: "-"
-status: "active"
+status: "inprogress"
 locale: "sk"
 sidebar_label: "K000018 – KNIFE User Guide"
 rights_holder_content: "Roman Kazička"

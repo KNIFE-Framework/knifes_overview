@@ -1,28 +1,19 @@
 ---
-id: "K000056"
+id: "K000"
 guid: "b27765d2-8514-437e-91f2-5ed1d4f76c43"
 dao: "knife"
 title: "Central Panel for GIT – SDLC Git Management Makefile"
 description: "•…"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-central-panel-for-git-sdlc-git-management-makefile"
 sidebar_label: "K000056 – Central Panel for GIT – SDLC Git Management Makefile"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "56"
+locale: "sk"
 ---
 <!-- body:start -->
 

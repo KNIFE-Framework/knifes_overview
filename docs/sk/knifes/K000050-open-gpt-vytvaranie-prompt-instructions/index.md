@@ -1,28 +1,19 @@
 ---
-id: "K000050"
+id: "K000"
 guid: "abaf199d-563c-487a-88d2-2c8d784afb84"
 dao: "knife"
 title: "Open GPT, vytváranie prompt instructions"
 description: "Vznizkli instrukcie pre zvedavych…"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-open-gpt-vytvaranie-prompt-instructions"
 sidebar_label: "K000050 – Open GPT, vytváranie prompt instructions"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "50"
+locale: "sk"
 ---
 <!-- body:start -->
 

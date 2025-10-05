@@ -1,28 +1,19 @@
 ---
-id: "K000053"
+id: "K000"
 guid: "ecadab7c-5f34-4296-864e-7c75f3ed0997"
 dao: "knife"
 title: "Framework for Project Management in GitHUB"
 description: "Mám strašne veľa tém, veľa úloh, ako to manažovať, aby som sa neutopil v nesplnených úlohách, prípadne nezabudol na dôležité témy a neobjavoval ich znova a znova?"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-framework-for-project-management-in-github"
 sidebar_label: "K000053 – Framework for Project Management in GitHUB"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "53"
+locale: "sk"
 ---
 <!-- body:start -->
 

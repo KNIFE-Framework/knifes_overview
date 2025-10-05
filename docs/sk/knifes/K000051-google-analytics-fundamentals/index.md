@@ -1,28 +1,19 @@
 ---
-id: "K000051"
+id: "K000"
 guid: "9b195cd2-e816-41b8-98be-a2a0a76538ef"
 dao: "knife"
 title: "Google analytics – Fundamentals"
 description: "Bez spätnej väzby je všetko náročnejšie. GA4 poskytuje marketingové spätné väzby"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-google-analytics-fundamentals"
 sidebar_label: "K000051 – Google analytics – Fundamentals"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "51"
+locale: "sk"
 ---
 <!-- body:start -->
 

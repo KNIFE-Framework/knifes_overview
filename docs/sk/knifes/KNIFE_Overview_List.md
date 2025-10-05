@@ -1,111 +1,98 @@
----
-id: "KNIFE_Overview_List"
-guid: "-"
-dao: "knife"
-title: "📑 KNIFE Overview – List"
-description: "-"
-author: "Roman Kazička"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
-created: "-"
-modified: "-"
-status: "draft"
-locale: "sk"
-sidebar_label: "📑 KNIFE Overview – List"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
----
-# 📑 KNIFE Overview – List
-
-| ID | Display ID | GUID | Category | Title | Status | Priority | Type | Date | Author | Org | Project |
-|:--:|:----------:|:----:|:--------:|:------|:------:|--------:|:----:|:----:|:------:|:---:|:-------:|
-| K000001 |  |  | Methodology | [EA modelovanie a motivácia](./K000001-ea-modelovanie-a-motivacia/index.md) | hotové | 🎯 | Metodika / Nástroj | 01.03.2024 | Roman Kazicka |  |  |
-| K000002 |  |  | Verzionanie-sdlc | [Git workflow pre EA modely](./K000002-git-workflow-pre-ea-modely/index.md) | v procese | 🔥 | Integrácia | 04.03.2024 | Roman Kazicka |  |  |
-| K000003 |  |  | Platformy | [LibreOffice + Python integrácia](./K000003-libreoffice-python-integracia/index.md) | v procese | 🔥 | Vývoj / Integrácia | 08.03.2024 | Roman Kazicka |  |  |
-| K000004 |  |  | Technologie | [Docker pre študentov (K12)](./K000004-docker-pre-studentov-k12/index.md) | plánované | 🧠 | Edukačné | 20.03.2024 | Roman Kazicka |  |  |
-| K000005 |  |  | RiverOfMyLife | [BaZi pre racionálne duše](./K000005-bazi-pre-racionalne-duse/index.md) | zaradené | 💡 | Osobný rozvoj / Algoritmika | 18.04.2025 | Roman Kazicka |  |  |
-| K000006 |  |  | UserGuide | [Tímová správa práv v Gitea](./K000006-timova-sprava-prav-v-gitea/index.md) | pripomenúť | 📌 | Správa Gitea / Práva | 08.04.2024 | Roman Kazicka |  |  |
-| K000007 |  |  | UserGUide | [Helper skript na obrázky v Markdown](./K000007-helper-skript-na-obrazky-v-markdown/index.md) | aktívne | ⚙️ | Správa/Automatizácia | 17.04.2024 | Roman Kazicka |  |  |
-| K000008 |  |  | Leadership | [DCMM a DAO – hodnota leadershipu](./K000008-dcmm-a-dao-hodnota-leadershipu/index.md) | plánované | 🧭 | Hodnoty / Strategické | 04.04.2024 | Roman Kazicka |  |  |
-| K000009 |  |  | Marketing | [LinkedIn post engine – AI automatizácia](./K000009-linkedin-post-engine-ai-automatizacia/index.md) | koncept | 🧪 | Marketing / AI | 10.04.2024 | Roman Kazicka |  |  |
-| K000010 |  |  | Products | [OpenAI klient – vlastná AI komunikácia](./K000010-openai-klient-vlastna-ai-komunikacia/index.md) | začiatok | ⚡ | Vývoj / AI | 13.04.2024 | Roman Kazicka |  |  |
-| K000011 |  |  | LO vývoj | [Main.xba šablóna pre LO Basic](./K000011-main-xba-sablona-pre-lo-basic/index.md) | v backlogu | 🧱 | Šablóny / LO | 09.04.2024 | Roman Kazicka |  |  |
-| K000012 |  |  | ModelValidation | [EA Workflow Add-In – pokročilé šablóny](./K000012-ea-workflow-add-in-pokrocile-sablony/index.md) | v backlogu | 📂 | QualityOFModel/EA Add-In | 10.04.2024 | Roman Kazicka |  |  |
-| K000013 |  |  | ModelValidation | [ReadOnlyControl v EA – Workflow Add-In](./K000013-readonlycontrol-v-ea-workflow-add-in/index.md) | koncept | 🔒 | EA Add-In | 10.04.2024 | Roman Kazicka |  |  |
-| K000014 |  |  | LO Development | [Manažér knižníc pre LO Basic](./K000014-manazer-kniznic-pre-lo-basic/index.md) | návrh | 📚 | LibreOffice / Knižnice | 10.04.2024 | Roman Kazicka |  |  |
-| K000015 |  |  | LO Vývoj | [LibreOffice Basic → Python migrácia](./K000015-libreoffice-basic-python-migracia/index.md) | aktívne | 🔁 | Migrácia / Vývoj | 13.04.2024 | Roman Kazicka |  |  |
-| K000016 |  |  | LO Development | [Helper skript pre LO symbolic link](./K000016-helper-skript-pre-lo-symbolic-link/index.md) | v testovaní | 🧪 | Skriptovanie / LO | 13.04.2024 | Roman Kazicka |  |  |
-| K000017 |  |  | Frameworks | [AI-powered TERNO Planner](./K000017-ai-powered-terno-planner/index.md) | closed | 📅 | Plánovanie / AI | 16.04.2025 | Roman Kazicka |  |  |
-| K000019 |  |  | Development | [BaZi výpočty – algoritmus, hodiny, kalendár](./K000019-bazi-vypocty-algoritmus-hodiny-kalendar/index.md) | zaradené | 🧠 | Algoritmika / Osobný rozvoj | 18.04.2025 | Roman Kazicka |  |  |
-| K000020 |  |  | LO Platforma pre komunitu | [LibreOffice ako komunitná platforma](./K000020-libreoffice-ako-komunitna-platforma/index.md) | koncept | 🌍 | Strategické / Komunitné | 10.04.2025 | Roman Kazicka |  |  |
-| K000021 |  |  | Methodology | [Princíp udržateľnosti v architektúre](./K000021-princip-udrzatelnosti-v-architekture/index.md) | koncept | 🌱 | Metodika / SDLC | 20.03.2025 | Roman Kazicka |  |  |
-| K000022 |  |  | EducationViaJoy | [TERNO – terapeutické formy učenia](./K000022-terno-terapeuticke-formy-ucenia/index.md) | plánované | 🎭 | Edukačné / Kultúrne/Edukačný proces | 20.03.2025 | Roman Kazicka |  |  |
-| K000023 |  |  | Smalltalks | [AI interakcie – časová os a emócie](./K000023-ai-interakcie-casova-os-a-emocie/index.md) | v návrhu | 🧭 | AI / UX / Sebapoznanie | 13.04.2025 | Roman Kazicka |  |  |
-| K000024 |  |  | PersonalKMsystem | [OneNote ako zdroj metadát pre AI](./K000024-onenote-ako-zdroj-metadat-pre-ai/index.md) | v návrhu | 🗃️ | Integrácia / Poznámky | 13.04.2025 | Roman Kazicka |  |  |
-| K000025 |  |  | Methodology | [Kategorizácia TERNO podľa SDLC a 7D](./K000025-kategorizacia-terno-podla-sdlc-a-7d/index.md) | zaradené | 📊 | Metodika / Evidencia | 01.03.2025 | Roman Kazicka |  |  |
-| K000026 |  |  | Framework / Edukačné | [KNIFE Framework pre vývoj a učenie sa (LibreOffice, Python)](./K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md) | v procese | 🔥 | Framework / Metodika / Edukačný základ | 20.04.2025 | Roman Kazicka |  |  |
-| K000027 |  |  | Versioning / Git | [Git For Dummies – Central Concepts](./K000027-git-for-dummies-central-concepts/index.md) | v príprave | 🎯 | Edukačné / Praktické | 28.04.2025 | Roman Kazicka |  |  |
-| K000028 |  |  | CASO-CASA | [Context Aware System Ontology, Approach](./K000028-context-aware-system-ontology-approach/index.md) | v príprave |  | Metodika/Framework | 11.05.2025 | Roman Kazicka |  |  |
-| K000029 |  |  | Platformy=OOODEV 4 LO | [Prostredie vývojové python pre LO](./K000029-prostredie-vyvojove-python-pre-lo/index.md) | riešené | 🔥 | Vývoj – Integrácia | 16.05.2025 | Roman Kazicka |  |  |
-| K000030 |  |  | GitHUB pages – Edu | [Príbeh poznania SDLC](./K000030-pribeh-poznania-sdlc/index.md) | V riešení | 🔥 | Vzdelávanie-Marketing | 17.05.2025 | Roman Kazicka |  |  |
-| K000031 |  |  | SDLC framework | [„Document-as-Code“ framework](./K000031-document-as-code-framework/index.md) | V riešení | 🔥 | Praktické používanie na výuku SDLC | 18.05.2025 | Roman Kazicka |  |  |
-| K000032 |  |  | SDLC framework / Release management | [„Enterprise Document-integrated SDLC“](./K000032-enterprise-document-integrated-sdlc/index.md) | V návrhu (alebo V riešení – podľa teba) | 🔥🔥 | Firemné použitie, governance, traceability | 18.05.2025 | Roman Kazicka |  |  |
-| K000033 |  |  | Psychológia práce / Kontext / Kultúra tímu | [Smalltalk ako nástroj flowu a kontextu](./K000033-smalltalk-ako-nastroj-flowu-a-kontextu/index.md) | Návrh (draft) | Stredná až vysoká | Metodika | 20.05.2025 | Roman Kazicka |  |  |
-| K000036 |  |  | Profesia Architekt urbanista na Slovensku | [Pracovno, finančný ekosystém](./K000036-pracovno-financny-ekosystem/index.md) | návrh | Vysoká | Ako na to? | 25.05.2025 | Roman Kazicka |  |  |
-| K000037 |  |  | CAS-ContextAwareSolutions | [Context Aware Solutions / paradigma, solution](./K000037-context-aware-solutions-paradigma-solution/index.md) | inprogress | Vysoka |  | 26.05.2025 | Roman Kazicka |  |  |
-| K000038 |  |  | SSL certificates DIY | [Ako si vyrobit automaticke nastavovanie SSL](./K000038-ako-si-vyrobit-automaticke-nastavovanie-ssl/index.md) | finished | done | User guide | 28.05.2025 | Roman Kazicka |  |  |
-| K000039 |  |  | „Advanced GitHub KM Layer“ | [Sementicke a kontextove vyhladavanie nad GitHUB](./K000039-sementicke-a-kontextove-vyhladavanie-nad-github/index.md) | Init | Middle | Advance features | 28.05.2025 | Roman Kazicka |  |  |
-| K000040 |  |  | Publishing | [Migracia Joomla -->GitHUB MkDocs](./K000040-migracia-joomla-github-mkdocs/index.md) | Init | Middle | Publishing | 06.06.2025 | Roman Kazicka |  |  |
-| K000041 |  |  | Education Framework | [GitHUB Education Framework](./K000041-github-education-framework/index.md) | init | Middle | Education Framework | 10.06.2025 | Roman Kazicka |  |  |
-| K000042 |  |  | SPA-Framework | [SinglePageApplication – Webabased desktop app](./K000042-singlepageapplication-webabased-desktop-app/index.md) | init | Low | SPA framework | 17.06.2025 | Roman Kazicka |  |  |
-| K000043 |  |  | AI based training | [Kontrola odpovedé študentov pomocou API na AI](./K000043-kontrola-odpovede-studentov-pomocou-api-na-ai/index.md) | in Progress | Middle | AI in education | 21.06.2026 | Roman Kazicka |  |  |
-| K000044 |  |  | BACKUP | [OneDrive backup to external disk on QNAP](./K000044-onedrive-backup-to-external-disk-on-qnap/index.md) | inProgress | TOP | How To | 27.07.2025 | Roman Kazicka |  |  |
-| K000045 |  |  | ESG- Krátky úvod | [Základné informácie o ESG](./K000045-zakladne-informacie-o-esg/index.md) | Init | Low | Education Explanantion | 28.07.2025 | Roman Kazicka |  |  |
-| K000046 |  |  | UserGuide | [Thunderbird – Archive-export](./K000046-thunderbird-archive-export/index.md) | done md | Low | HowTO | 04.08.2025 | Roman Kazicka |  |  |
-| K000047 |  |  | Inšpirácie | [KNIFE047 – 7S Cycle of Meaningful Knowledge](./K000047-knife047-7s-cycle-of-meaningful-knowledge/index.md) | init | Low | concepts, methodology | 04.08.2025 | Roman Kazicka |  |  |
-| K000048 |  |  | User Guide | [AI – Agent in OpenGPT](./K000048-ai-agent-in-opengpt/index.md) | in progress | Low | HowTo | 04.08.2025 | Roman Kazicka |  |  |
-| K000049 |  |  | UserGuide | [KNIFE049 – Vyhľadávač nad OpenGPT históriou](./K000049-knife049-vyhladavac-nad-opengpt-historiou/index.md) |  |  |  | 04.08.2025 | Roman Kazicka |  |  |
-| K000050 |  |  | User Guide | [Open GPT, vytváranie prompt instructions](./K000050-open-gpt-vytvaranie-prompt-instructions/index.md) | In progress |  |  | 04.08.2025 | Roman Kazicka |  |  |
-| K000051 |  |  | Marketing | [Google analytics – Fundamentals](./K000051-google-analytics-fundamentals/index.md) | new | Low | HowTo | 04.08.2025 | Roman Kazicka |  |  |
-| K000052 |  |  | Framework / Edukačné | [GitHub LMS Framework](./K000052-github-lms-framework/index.md) | new | duplicity K000041 | Education Framework | 04.08.2025 | Roman Kazicka |  |  |
-| K000053 |  |  | Framewok for Project Management | [Framework for Project Management in GitHUB](./K000053-framework-for-project-management-in-github/index.md) | new | low | SDLC framework | 10.08.2025 | Roman Kazicka |  |  |
-| K000054 |  |  | Best Practice | [Docusaurus Advanced Deployment Pipeline](./K000054-docusaurus-advanced-deployment-pipeline/index.md) | new |  | „Ako si nastaviť build a deploy tak, aby ťa chránil pred sebou samým.“ | 10.08.2025 | Roman Kazicka |  |  |
-| K000055 |  |  | Best Practice | [Ako obnoviť stav z minulosti?](./K000055-ako-obnovit-stav-z-minulosti/index.md) | inprogress | now | Obnov mi dobré údaje | 10.08.2025 | Roman Kazicka |  |  |
-| K000056 |  |  | Best Practice | [Central Panel for GIT – SDLC Git Management Makefile](./K000056-central-panel-for-git-sdlc-git-management-makefile/index.md) | done md |  | Správa súborov s git odporou | 11.08.2025 | Roman Kazicka |  |  |
-| K000057 |  |  | Management-Reporting | [AI Agent na monitoroavanie nákladov OpenGPT](./K000057-ai-agent-na-monitoroavanie-nakladov-opengpt/index.md) | new | now | Reporting nad komunikáciou s OpenGPT formou AI Agenta | 11.08.2025 | Roman Kazicka |  |  |
-| K000058 |  |  | Management-Reporting-from the Past | [AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie](./K000058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie/index.md) | new | now | Reporting od začiatku komunikácie | 11.08.2025 | Roman Kazicka |  |  |
-| K000059 |  |  | Methodology | [STEM a Makerspace ako metodika vzdelávania](./K000059-stem-a-makerspace-ako-metodika-vzdelavania/index.md) | New | now | Systém pre vzdelávanie | 24.08.2025 | Roman Kazicka |  |  |
-| K000060 |  |  | User Guide | [Export Draw.io diagramu do A4 PNG](./K000060-export-draw-io-diagramu-do-a4-png/index.md) | done md | done | Ako na to? | 24.08.2025 | Roman Kazicka |  |  |
-| K000061 |  |  | Security concept | [Passkey ako bezpečnostný koncept](./K000061-passkey-ako-bezpecnostny-koncept/index.md) | new |  | Explanation | 24.08.2025 | Roman Kazicka |  |  |
-| K000062 |  |  | Docusaurus Concept | [Docusaurus slugy a routing](./K000062-docusaurus-slugy-a-routing/index.md) | new |  | Explanation | 24.08.2025 | Roman Kazicka |  |  |
-| K000063 |  |  | User Guide | [Automatické generovanie KNIFES](./K000063-automaticke-generovanie-knifes/index.md) | new |  | User guide | 24.08.2025 | Roman Kazicka |  |  |
-| K000064 |  |  | Marketing | [GA4, GTN, UTM](./K000064-ga4-gtn-utm/index.md) | new | done | User Guides, principles | 27.08.2025 | Roman Kazicka |  |  |
-| K000065 |  |  | Administration | [MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux](./K000065-makefile-for-knife-ecosystem-for-mac-windows-linux/index.md) | New | now | GitHub Administration | 31.08.2025 | Roman Kazicka |  |  |
-| K000066 |  |  | SubscriptionPlans | [Porovnanie biznis plánov GitHub](./K000066-porovnanie-biznis-planov-github/index.md) | New | now | Biznis plány GitHub-Prehľad | 01.09.2025 | Roman Kazicka |  |  |
-| K000067 |  |  | User Guide | [GitHub Deployment stratégie](./K000067-github-deployment-strategie/index.md) | new | now | Koncepty | 02.09.2025 | Roman Kazicka |  |  |
-| K000068 |  |  | User Guide | [Kruhový portrét v GIMP](./K000068-kruhovy-portret-v-gimp/index.md) | new | now | Návod | 05.09.2025 | Roman Kazicka |  |  |
-| K000069 |  |  | Mentoring | [Kto ma pochváli, ak sa nepochválim sám?](./K000069-kto-ma-pochvali-ak-sa-nepochvalim-sam/index.md) | new | now | Inšpirácie na hodnotový marketing seba samého | 05.09.2025 | Roman Kazicka |  |  |
-| K000070 |  |  | Knowledge sharing | [EA Fundamentals](./K000070-ea-fundamentals/index.md) | new | Sparxsystems | Training on the praxis-praktický webinár ako začať pracovať s technológiou Enterprise Architect.
-Cca 6 hodinový webinár o základných nastaveniach EA 16+ | 05.09.2025 | Roman Kazicka |  |  |
-| K000071 |  |  | Methodology | [7Ds-Seven Disciplines for successful solutions](./K000071-7ds-seven-disciplines-for-successful-solutions/index.md) | ongoing | medium | Metodika | 05.09.2025 | Roman Kazicka |  |  |
-| K000072 |  |  | Methodology | [APV-Assets-Perspectives-Views, Keep Your Aseests in Order](./K000072-apv-assets-perspectives-views-keep-your-aseests-in-order/index.md) | ongoing | medium | Metodika | 05.09.2025 | Roman Kazicka |  |  |
-| K000073 |  |  | Methodology | [Q12- Twelve quadrants for starting business](./K000073-q12-twelve-quadrants-for-starting-business/index.md) | ongoing | medium | Metodika | 05.09.2025 | Roman Kazicka |  |  |
-| K000074 |  |  | Methodology | [SDLC-Solution Development Life Cycle](./K000074-sdlc-solution-development-life-cycle/index.md) | ongoing | medium | Metodika | 05.09.2025 | Roman Kazicka |  |  |
-| K000075 |  |  | Methodology | [Lean canvas](./K000075-lean-canvas/index.md) | done md | medium | Metodika | 05.08.2025 | Roman Kazicka |  |  |
-| K000076 |  |  | Methodology | [CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution](./K000076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution/index.md) | ongoing | medium | Metodika na Solution development | 05.09.2025 | Roman Kazicka |  |  |
-| K000077 |  |  | Methodology | [KNIFE047 – 7S Cycle of Meaningful Knowledge](./K000077-knife047-7s-cycle-of-meaningful-knowledge/index.md) | ongoing | medium | Metodika na hodnotvý markerting – PULL marketing | 05.09.2025 | Roman Kazicka |  |  |
-| K000078 |  |  | Implementácia | [Language as a Bridge (AI ako most medzi jazykmi)](./K000078-language-as-a-bridge-ai-ako-most-medzi-jazykmi/index.md) | ongoing | medium | Implementácia, nástroje, Procesy | 05.09.2025 | Roman Kazicka |  |  |
-| K000079 |  |  | Glossary | [Čo znamená slovo že je niečo idempotentné?](./K000079-co-znamena-slovo-ze-je-nieco-idempotentne/index.md) | now | medium | Vysvetlenie pojmu | 15.09.2029 | Roman Kazička |  |  |
-| K000080 |  |  | Explanation | [Docusaurus-vs-github-pages-package-json](./K000080-docusaurus-vs-github-pages-package-json/index.md) | now | medium | Docusaurus vs. GitHub Pages. Architektúra | 17.09.2025 | Roman Kazička |  |  |
-| K000081 |  |  | Infrastructure | [Transparentná -Stabilná infraštruktúra pre Sites](./K000081-transparentna-stabilna-infrastruktura-pre-sites/index.md) | idea | hi | Návod na riešenie | 25.09.2025 | Roman Kazička |  |  |
-| K000082 |  |  | UserGuide pre Markdown | [Ako urobiť text v MD atraktívnejší (emoji)](./K000082-ako-urobit-text-v-md-atraktivnejsi-emoji/index.md) | done md | low | Návod na riešenia | 25.09.2025 | Roman Kazička |  |  |
-| K000083 |  |  | UserGuide | [Aktualizácia komponentov pre Docusaurus](./K000083-aktualizacia-komponentov-pre-docusaurus/index.md) | done md | low | Návod na riešenie | 25.09.2025 | Roman Kazička |  |  |
-| K000084 |  |  | UserGuide | [Ako aktivovať na GitHube EDU benefity](./K000084-ako-aktivovat-na-githube-edu-benefity/index.md) | in progress | low | Návod na riešenie | 26.09.2025 | Roman Kazička |  |  |
+| GUID | ID | Názov | Kategória | Typ | Autor | Dátum | Status | Popis |
+|------|----|--------|-----------|-----|--------|--------|--------|-------|
+`728afefa` | [K000001](./K000001-ea-modelovanie-a-motivacia) | EA modelovanie a motivácia | Verzionanie-sdlc | Integrácia | Roman Kazicka | 2024-03-01 | done | Systém motivácie pomocou lízaniek a spätnej väzby
+`6cf87ac0` | [K000002](./K000002-git-workflow-pre-ea-modely) | Git workflow pre EA modely | Platformy | Vývoj / Integrácia | Roman Kazicka | 2024-03-04 | inprogress | Multirelease stratégie, LemonTree, merge politiky
+`dd435f3c` | [K000003](./K000003-libreoffice-python-integracia) | LibreOffice + Python integrácia | Technologie | Edukačné | Roman Kazicka | 2024-03-08 | inprogress | Skriptovanie v LO cez Python a venv izolácie
+`76ab8f65` | [K000004](./K000004-docker-pre-studentov-k12) | Docker pre študentov (K12) | RiverOfMyLife | Osobný rozvoj / Algoritmika | Roman Kazicka | 2024-03-20 | backlog | Zjednodušené návody a obrázky pre začiatočníkov
+`610c8ab7` | [K000005](./K000005-bazi-pre-racionalne-duse) | BaZi pre racionálne duše | UserGuide | Správa Gitea / Práva | Roman Kazicka | 2025-04-18 | backlog | Sebapoznanie cez dátum a čas narodenia (BaZi)
+`278b53c7` | [K000006](./K000006-timova-sprava-prav-v-gitea) | Tímová správa práv v Gitea | UserGUide | Správa/Automatizácia | Roman Kazicka | 2024-04-08 | backlog | Rozdelenie práv podľa tímov, chránené vetvy, PR politiky
+`745a9616` | [K000007](./K000007-helper-skript-na-obrazky-v-markdown) | Helper skript na obrázky v Markdown | Leadership | Hodnoty / Strategické | Roman Kazicka | 2024-04-17 | aktívne | Generovanie obrázkových blokov do .md vrátane URL
+`fbb56d3a` | [K000008](./K000008-dcmm-a-dao-hodnota-leadershipu) | DCMM a DAO – hodnota leadershipu | Marketing | Marketing / AI | Roman Kazicka | 2024-04-04 | inprogress | Sebariadenie, dôvera a samočistiace systémy
+`2a2564bd` | [K000009](./K000009-linkedin-post-engine-ai-automatizacia) | LinkedIn post engine – AI automatizácia | Products | Vývoj / AI | Roman Kazicka | 2024-04-10 | backlog | Generovanie postov na LinkedIn z obsahu
+`833ed8e5` | [K000010](./K000010-openai-klient-vlastna-ai-komunikacia) | OpenAI klient – vlastná AI komunikácia | LO vývoj | Šablóny / LO | Roman Kazicka | 2024-04-13 | backlog | Appka s prepojením na OpenAI API a archív komunikácie
+`f5282c5a` | [K000011](./K000011-main-xba-sablona-pre-lo-basic) | Main.xba šablóna pre LO Basic | ModelValidation | QualityOFModel/EA Add-In | Roman Kazicka | 2024-04-09 | backlog | Základná štartovacia knižnica makier v LibreOffice
+`5c2a2821` | [K000012](./K000012-ea-workflow-add-in-pokrocile-sablony) | EA Workflow Add-In – pokročilé šablóny | ModelValidation | EA Add-In | Roman Kazicka | 2024-04-10 | backlog | Workflow pre pokročilých analytikov v EA
+`fea26033` | [K000013](./K000013-readonlycontrol-v-ea-workflow-add-in) | ReadOnlyControl v EA – Workflow Add-In | LO Development | LibreOffice / Knižnice | Roman Kazicka | 2024-04-10 | backlog | Obmedzenie práv v EA na základe kontextu a roly
+`56e95dd8` | [K000014](./K000014-manazer-kniznic-pre-lo-basic) | Manažér knižníc pre LO Basic | LO Vývoj | Migrácia / Vývoj | Roman Kazicka | 2024-04-10 | backlog | Načítanie a správa knižníc v LO Basic
+`67a1b9c8` | [K000015](./K000015-libreoffice-basic-python-migracia) | LibreOffice Basic → Python migrácia | LO Development | Skriptovanie / LO | Roman Kazicka | 2024-04-13 | inprogress | Konverzia VB makier do Python skriptov
+`daf7cda8` | [K000016](./K000016-helper-skript-pre-lo-symbolic-link) | Helper skript pre LO symbolic link | Frameworks | Plánovanie / AI | Roman Kazicka | 2024-04-13 | inprogress | Obnova symbolic linku pre user/scripts/
+`41a44dfe` | [K000017](./K000017-ai-powered-terno-planner) | AI-powered TERNO Planner | Framework | UserGuide | Roman Kazicka | 2025-04-16 | done | Nástroj na správu a sledovanie TERNA záznamov
+`5e74e5c2` | [K000018](./K000018-knife-pre-zvedavych) | KNIFE pre zvedavých | Development | Algoritmika / Osobný rozvoj | Roman Kazička | 2025-04-16 | InProgress | KNowledge In Friendle Examples“
+`986a2d27` | [K000019](./K000019-bazi-vypocty-algoritmus-hodiny-kalendar) | BaZi výpočty – algoritmus, hodiny, kalendár | LO Platforma pre komunitu | Strategické / Komunitné | Roman Kazicka | 2025-04-18 | backlog | Výpočtový rámec BaZi v Pythone alebo Exceli, denné a hodinové analýzy, poradca
+`9c178019` | [K000020](./K000020-libreoffice-ako-komunitna-platforma) | LibreOffice ako komunitná platforma | Methodology | Metodika / SDLC | Roman Kazicka | 2025-04-10 | backlog | Podpora LO ako otvoreného, komunitného štandardu pre udržateľné riešenia
+`48dbd9ae` | [K000021](./K000021-princip-udrzatelnosti-v-architekture) | Princíp udržateľnosti v architektúre | EducationViaJoy | Edukačné / Kultúrne/Edukačný proces | Roman Kazicka | 2025-03-20 | koncept | Architektonické a dizajnové rozhodnutia s ohľadom na stabilitu a dlhodobosť
+`27ffa9b9` | [K000022](./K000022-terno-terapeuticke-formy-ucenia) | TERNO – terapeutické formy učenia | Smalltalks | AI / UX / Sebapoznanie | Roman Kazicka | 2025-03-20 | backlog | Satira, emócie a storytelling ako forma výuky a reflektovania reality
+`a9ea072a` | [K000023](./K000023-ai-interakcie-casova-os-a-emocie) | AI interakcie – časová os a emócie | PersonalKMsystem | Integrácia / Poznámky | Roman Kazicka | 2025-04-13 | backlog | Zaznamenávanie malých interakcií, small-talkov a spätných väzieb pre orientáciu v čase
+`18f0681d` | [K000024](./K000024-onenote-ako-zdroj-metadat-pre-ai) | OneNote ako zdroj metadát pre AI | Methodology | Metodika / Evidencia | Roman Kazicka | 2025-04-13 | backlog | Prepájanie osobného poznámkového systému s AI klientom a projektmi
+`0e591458` | [K000025](./K000025-kategorizacia-terno-podla-sdlc-a-7d) | Kategorizácia TERNO podľa SDLC a 7D | Framework / Edukačné | Framework / Metodika / Edukačný základ | Roman Kazicka | 2025-03-01 | inprogress | Zaradenie každého TERNO podľa fázy vývoja a vedomostnej disciplíny
+`eb38351b` | [K000026](./K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python) | KNIFE Framework pre vývoj a učenie sa (LibreOffice, Python) | Versioning / Git | Edukačné / Praktické | Roman Kazicka | 2025-04-20 | Inprogress | Jednotný rámec pre budovanie, testovanie a učenie sa v malých krokoch pomocou LibreOffice + Python. Každý krok reprezen…
+`3264251d` | [K000027](./K000027-git-for-dummies-central-concepts) | Git For Dummies – Central Concepts | CASO-CASA | Metodika/Framework | Roman Kazicka | 2025-04-28 | inprogress | Jednoduché vysvetlenie Git základov pre začiatočníkov v GitEA (organizácia, repozitár, working directory, atď.)
+`735d6a47` | [K000028](./K000028-context-aware-system-ontology-approach) | Context Aware System Ontology, Approach | Platformy=OOODEV 4 LO | Vývoj – Integrácia | Roman Kazicka | 2025-05-11 | inprogress | Každé riešenie je o kontexte. Neexistuje jeden nástroj na vštky problémy. Toto zasahuje do filozofie. 
+Všetko je riaden…
+`31b04e60` | [K000029](./K000029-prostredie-vyvojove-python-pre-lo) | Prostredie vývojové python pre LO | GitHUB pages – Edu | Vzdelávanie-Marketing | Roman Kazicka | 2025-05-16 | inprogress | Profi prostredie pre pyhton dev v LO, OOODEV
+`553c7b60` | [K000030](./K000030-pribeh-poznania-sdlc) | Príbeh poznania SDLC | SDLC framework | Praktické používanie na výuku SDLC | Roman Kazicka | 2025-05-17 | inprogress | Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisa…
+`0b3729dc` | [K000031](./K000031-document-as-code-framework) | „Document-as-Code“ framework | SDLC framework / Release management | Firemné použitie, governance, traceability | Roman Kazicka | 2025-05-18 | inprogress | Tvorba dokumentov ako SDLC proces. Diplomovky, sprievodná dokumentácia pre zákazníklov, ….
+`d7f03d39` | [K000032](./K000032-enterprise-document-integrated-sdlc) | „Enterprise Document-integrated SDLC“ | Psychológia práce / Kontext / Kultúra tímu | Metodika | Roman Kazicka | 2025-05-18 | inprogress | Zavedenie Git-based dokumentačného frameworku pre prepojenie požiadaviek, rozhodnutí a architektúr naprieč SDLC vo fire…
+`4bf0fa16` | [K000033](./K000033-smalltalk-ako-nastroj-flowu-a-kontextu) | Smalltalk ako nástroj flowu a kontextu | Profesia Architekt urbanista na Slovensku | Ako na to? | Roman Kazicka | 2025-05-20 | backlog | Zber a reflexia neformálnych výrokov (smalltalkov) ako podpora tímovej pohody, flow a bezpečného kontextu.
+Zber a štruk…
+`126529d0` | [K000034](./K000034-pracovno-financny-ekosystem) | Pracovno, finančný ekosystém | CAS-ContextAwareSolutions |  | Roman Kazicka | 2025-05-25 | backlog | Absolventi architektúry už počas štúdia sú selektovaní  z komerčných ateliérov. Ponúkajú im brikády, prípadne dohody o …
+`7420d763` | [K000035](./K000035-context-aware-solutions-paradigma-solution) | Context Aware Solutions / paradigma, solution | SSL certificates DIY | User guide | Roman Kazicka | 2025-05-26 | inprogress | 
+`5d8e7ee1` | [K000036](./K000036-pracovno-financny-ekosystem) | Ako si vyrobit automaticke nastavovanie SSL | „Advanced GitHub KM Layer“ | Advance features | Roman Kazicka | 2025-05-28 | done | Pre FIIT PROLABORATE potrebujem SSL certifikaty, ako pre zakaznikov ako Dusan
+`ae7ca16f` | [K000037](./K000037-context-aware-solutions-paradigma-solution) | Sementicke a kontextove vyhladavanie nad GitHUB | Publishing | Publishing | Roman Kazicka | 2025-05-28 | backlog | Nestaci mat len data a informacie, je nevyhnutne ich spajat a dotazovat sa
+`14675413` | [K000038](./K000038-ako-si-vyrobit-automaticke-nastavovanie-ssl) | Migracia Joomla -->GitHUB MkDocs | Education Framework | Education Framework | Roman Kazicka | 2025-06-06 | backlog | Zachovať históriu kurzu (2017–2025), udržať všetko v jednom hlavnom repozitári
+`d65f381f` | [K000039](./K000039-sementicke-a-kontextove-vyhladavanie-nad-github) | GitHUB Education Framework | SPA-Framework | SPA framework | Roman Kazicka | 2025-06-10 | backlog | Zastrešujúci rámec pre vzdelávacie kurzy na GitHube (GitHub Classroom, Pages, Docs generátory). Definuje zásady, šablón…
+`c96e9214` | [K000040](./K000040-migracia-joomla-github-mkdocs) | SinglePageApplication – Webabased desktop app | AI based training | AI in education | Roman Kazicka | 2025-06-17 | backlog | GitHUb je zaklad aj pre vyvoj aplikacii nezavislych na koncovom zariadenie SPA
+Je to obrovsky priestor pre tvor bu vlas…
+`e1f2e352` | [K000041](./K000041-github-education-framework) | Kontrola odpovedé študentov pomocou API na AI | BACKUP | How To | Roman Kazicka | 2026-06-21 | inprogress | Pre veľký počet študentov nie je možné kontrolovať odpovede na voľné otázky. AI by mohlo pomôcť.
+`ed25f447` | [K000042](./K000042-singlepageapplication-webabased-desktop-app) | OneDrive backup to external disk on QNAP | ESG- Krátky úvod | Education Explanantion | Roman Kazicka | 2025-07-27 | inProgress | This KNIFE explains how to create a full backup of your OneDrive data in cases where the local disk does not have suffi…
+`50afe040` | [K000043](./K000043-kontrola-odpovede-studentov-pomocou-api-na-ai) | Základné informácie o ESG | UserGuide | HowTO | Roman Kazicka | 2025-07-28 | Init | Environment, Social, Government is crutial topic for human being survival. It is important to understand  the background
+`dee65721` | [K000044](./K000044-onedrive-backup-to-external-disk-on-qnap) | Thunderbird – Archive-export | Inšpirácie | concepts, methodology | Roman Kazicka | 2025-08-04 | done | Omylom som poslal e-mail do archivu. Mam v  poste asi 60GB udajov. Ako to riesit?
+`550e3260` | [K000045](./K000045-zakladne-informacie-o-esg) | KNIFE047 – 7S Cycle of Meaningful Knowledge | User Guide | HowTo | Roman Kazicka | 2025-08-04 | backlog | Nové inšpirácie ohľadne riešenia aj z pohľadu marketingu
+`b045421e` | [K000046](./K000046-thunderbird-archive-export) | AI – Agent in OpenGPT | UserGuide |  | Roman Kazicka | 2025-08-04 | inprogress | 
+`82c38956` | [K000047](./K000047-knife047-7s-cycle-of-meaningful-knowledge) | KNIFE049 – Vyhľadávač nad OpenGPT históriou | User Guide |  | Roman Kazicka | 2025-08-04 | backlog | 
+`dfd04696` | [K000048](./K000048-ai-agent-in-opengpt) | Open GPT, vytváranie prompt instructions | Marketing | HowTo | Roman Kazicka | 2025-08-04 | inprogress | Vznizkli instrukcie pre zvedavych…
+`6fa9ddd3` | [K000049](./K000049-knife049-vyhladavac-nad-opengpt-historiou) | Google analytics – Fundamentals | Framework / Edukačné | Education Framework | Roman Kazicka | 2025-08-04 | backlog | Bez spňtnej väzby je všetko náročnejšie. GA4 poskytuje marketingové spätné väzby
+`abaf199d` | [K000050](./K000050-open-gpt-vytvaranie-prompt-instructions) | GitHub LMS Framework | Framewok for Project Management | SDLC framework | Roman Kazicka | 2025-08-04 | backlog | 
+`9b195cd2` | [K000051](./K000051-google-analytics-fundamentals) | Framework for Project Management in GitHUB | Best Practice | „Ako si nastaviť build a deploy tak, aby ťa chránil pred sebou samým.“ | Roman Kazicka | 2025-08-10 | backlog | Mám strašne veľa tém, veľa úloh, ako to manažovať, aby som sa neutopil v nesplnených úlohách, prípadne nezabudol na dôl…
+`37c1ee83` | [K000052](./K000052-github-lms-framework) | Docusaurus Advanced Deployment Pipeline | Best Practice | Obnov mi dobré údaje | Roman Kazicka | 2025-08-10 | backlog | Kontrola referencií v Docusaurus/MkDocs
+	•	DRY-run, strict a full link-check, detekcia chýb na začiatku procesu
+	•	Prev…
+`ecadab7c` | [K000053](./K000053-framework-for-project-management-in-github) | Ako obnoviť stav z minulosti? | Best Practice | Správa súborov s git odporou | Roman Kazicka | 2025-08-10 | inprogress | Ako si obnoviť pokazné súbory? Ak mám v minulosti zachytené dobré údaje, nie je problém sa k nim vrátiť.
+	stash, branch…
+`e6a19133` | [K000054](./K000054-docusaurus-advanced-deployment-pipeline) | Central Panel for GIT – SDLC Git Management Makefile | Management-Reporting | Reporting nad komunikáciou s OpenGPT formou AI Agenta | Roman Kazicka | 2025-08-11 | done | •	Jeden Makefile ako „single point of control“
+	•	Všetky Git operácie, build/deploy, kontrola odkazov, sandbox, stash m…
+`547ee1b8` | [K000055](./K000055-ako-obnovit-stav-z-minulosti) | AI Agent na monitoroavanie nákladov OpenGPT | Management-Reporting-from the Past | Reporting od začiatku komunikácie | Roman Kazicka | 2025-08-11 | backlog | Automatické reportovanie vstupných a výstupných tokenov.Presne tak – toto má perfektný predpoklad stať sa AI Agentom, k…
+`b27765d2` | [K000056](./K000056-central-panel-for-git-sdlc-git-management-makefile) | AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie | Methodology | Systém pre vzdelávanie | Roman Kazicka | 2025-08-11 | backlog | Aká bola intenzita komunikácie od začiatku, koľko by to stálo cez API, Ktoré témy skonzumovali najviac energie?
+`1ee7fec7` | [K000057](./K000057-ai-agent-na-monitoroavanie-nakladov-opengpt) | STEM a Makerspace ako metodika vzdelávania | User Guide | Ako na to? | Roman Kazicka | 2025-08-24 | backlog | Spoljupracujem s Makerspace od roku 2016. POJEM STEM  som priprodzene zahrnul do  svojich metodík. Je vhodné to zvidite…
+`51d82867` | [K000058](./K000058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie) | Export Draw.io diagramu do A4 PNG | Security concept | Explanation | Roman Kazicka | 2025-08-24 | done | Ako pripraviť Drawio obázok aby sa vždy vmestil na A4 formát?
+`d7e5dc5c` | [K000059](./K000059-stem-a-makerspace-ako-metodika-vzdelavania) | Passkey ako bezpečnostný koncept | Docusaurus Concept | Explanation | Roman Kazicka | 2025-08-24 | backlog | Ako funguje keypass?
+`df47b738` | [K000060](./K000060-export-draw-io-diagramu-do-a4-png) | Docusaurus slugy a routing | User Guide | User guide | Roman Kazicka | 2025-08-24 | backlog | Ako fungujú SLUGS v Docusaurus
+`35066cd7` | [K000061](./K000061-passkey-ako-bezpecnostny-koncept) | Automatické generovanie KNIFES | Marketing | User Guides, principles | Roman Kazicka | 2025-08-24 | backlog | Ako používať automatizáciu pri generovaní KNIFES
+`7b469b9d` | [K000062](./K000062-docusaurus-slugy-a-routing) | GA4, GTN, UTM | Administration | GitHub Administration | Roman Kazicka | 2025-08-27 | new | Ako funguje AG4, TGM a UTM?
+`32ff770d` | [K000063](./K000063-automaticke-generovanie-knifes) | MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux | SubscriptionPlans | Biznis plány GitHub-Prehľad | Roman Kazicka | 2025-08-31 | New | Administrácia ecosystému KNIFE je pomerne komplexná úloha. Framework podporuje MacOS, Windows a Linux. MAKEFIEL umožňuj…
+`fd7b354d` | [K000064](./K000064-ga4-gtn-utm) | Porovnanie biznis plánov GitHub | User Guide | Koncepty | Roman Kazicka | 2025-09-01 | New | Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?
+`72cf0d0c` | [K000065](./K000065-makefile-for-knife-ecosystem-for-mac-windows-linux) | GitHub Deployment stratégie | User Guide | Návod | Roman Kazicka | 2025-09-02 | new | Deployment obsahu v GitHube sa dá vykonať viacerými spôsobmi.
+Obsah v MD súboroch sa dá konzumovať cez GitHub, cez Web …
+`a2c536d5` | [K000066](./K000066-porovnanie-biznis-planov-github) | Kruhový portrét v GIMP | Mentoring | Inšpirácie na hodnotový marketing seba samého | Roman Kazicka | 2025-09-05 | new | Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút
+`83572f2b` | [K000067](./K000067-github-deployment-strategie) | Kto ma pochváli, ak sa nepochválim sám? | Knowledge sharing | Training on the praxis-praktický webinár ako začať pracovať s technológiou Enterprise Architect.
+Cca 6 hodinový webinár o základných nastaveniach EA 16+ | Roman Kazicka | 2025-09-05 | new | Pre mnohých je ťažko písať o sebe. Ľahko sa skĺzne buď ku preceňovaniu, alebo naopak ku podceňovaniu.
+Je to ako s marke…
+`bfb1bccf` | [K000068](./K000068-kruhovy-portret-v-gimp) | EA Fundamentals | Methodology | Metodika | Roman Kazicka | 2025-09-05 | new | Enterprise architect (Sparxsystems technologies) je univerzálny modelovací nástroj.
+Od roku 2000 ho používam prakticky …
+`ea7ecfe2` | [K000069](./K000069-kto-ma-pochvali-ak-sa-nepochvalim-sam) | 7Ds-Seven Disciplines for successful solutions | Methodology | Metodika | Roman Kazicka | 2025-09-05 | ongoing | Metodika je zameraná na podporu aktivít v rámci SDLC. Každá potencálna iformácia má svoje miesto. A je úplne jedno v ak…
+`c5d8b05b` | [K000070](./K000070-ea-fundamentals) | APV-Assets-Perspectives-Views, Keep Your Aseests in Order | Methodology | Metodika | Roman Kazicka | 2025-09-05 | ongoing | Metodika na podporu manažmentu aktív v rámci SDLC. 
+TAXONÓMIA, ONTOLÓGIA aktív a ich vzťahiv z pohľadu rôznych rolí, ab…
+`d0c8a434` | [K000071](./K000071-7ds-seven-disciplines-for-successful-solutions) | Q12- Twelve quadrants for starting business | Methodology | Metodika | Roman Kazicka | 2025-09-05 | ongoing | Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre…
+`e2e77f43` | [K000072](./K000072-apv-assets-perspectives-views-keep-your-aseests-in-order) | SDLC-Solution Development Life Cycle | Methodology | Metodika | Roman Kazicka | 2025-09-05 | ongoing | Táto metodika vychádza z univerzálneho V – modelu. Podporuje princíly vuizuálneho manažmentu v rámci celého ťivotného c…
+`3908aa84` | [K000073](./K000073-q12-twelve-quadrants-for-starting-business) | Lean canvas | Methodology | Metodika na Solution development | Roman Kazicka | 2025-08-05 | done md | Implemetácia Lean canvas do celkového frameworku pre podporu vytvárania riešení. Patrí ku metodike Q12
+`55dc93cb` | [K000074](./K000074-sdlc-solution-development-life-cycle) | CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution | Methodology | Metodika na hodnotvý markerting – PULL marketing | Roman Kazicka | 2025-09-05 | ongoing | Neexistuje situácia, kedy môžeme ignorovať kontext. Neznalosť tohto princípu vedie k obrovským nepochopeniam, chybám, m…
+`8566c5a6` | [K000075](./K000075-lean-canvas) | KNIFE047 – 7S Cycle of Meaningful Knowledge | Implementácia | Implementácia, nástroje, Procesy | Roman Kazicka | 2025-09-05 | ongoing | Moderné technológie umožňujú využívať a zneužívať rôzne techniky marketingu. Čo si zvolíme PUSH, alebo PULL prístup. Tá…
+`0486c717` | [K000076](./K000076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution) | Language as a Bridge (AI ako most medzi jazykmi) | Glossary | Vysvetlenie pojmu | Roman Kazicka | 2025-09-05 | ongoing | Language as a Bridge → implementácia, nástroje, procesy (ako).
+`67fa4142` | [K000077](./K000077-knife047-7s-cycle-of-meaningful-knowledge) | Čo znamená slovo že je niečo idempotentné? | Explanation | Docusaurus vs. GitHub Pages. Architektúra | Roman Kazička | 2029-09-15 | now | Dosť často sa začalo používať slovo idempotentná operácia. Ako to ale vzniklo? Prečo to vzniklo?
+`9fa013f5` | [K000078](./K000078-language-as-a-bridge-ai-ako-most-medzi-jazykmi) | Docusaurus-vs-github-pages-package-json | Infrastructure | Návod na riešenie | Roman Kazička | 2025-09-17 | now | Ako vytvoriť OS agnostcké prostredie pre KNIFE? Poznanie architektúry odpovie na otázku jednotného systému pre vývoj KN…
+`d668f12d` | [K000079](./K000079-co-znamena-slovo-ze-je-nieco-idempotentne) | Transparentná -Stabilná infraštruktúra pre Sites | UserGuide pre Markdown | Návod na riešenia | Roman Kazička | 2025-09-25 | idea | Počas práce s GitHub a Pages je potrebné mať zladené prostredie na klientovi a na serveri. Lokál je závislý od OS, od v…
+`5174fcab` | [K000080](./K000080-docusaurus-vs-github-pages-package-json) | Ako urobiť text v MD atraktívnejší (emoji) | UserGuide | Návod na riešenie | Roman Kazička | 2025-09-25 | done md | Čítanie s porozumením je veľmi náročná disciplína. Preto je dôležité priblížiť text ku príbehu pomocou malých obrázkov.…
+`02921a34` | [K000081](./K000081-transparentna-stabilna-infrastruktura-pre-sites) | Aktualizácia komponentov pre Docusaurus | UserGuide | Návod na riešenie | Roman Kazička | 2025-09-25 | done md | Všetko má životný cyklus. Naše dokumenty, ale aj systémy a nástroje, ktoré používame. Preto nikdy nemáme stabilné, neme…
+`060ab917` | [K000082](./K000082-ako-urobit-text-v-md-atraktivnejsi-emoji) | Ako aktivovať na GitHube EDU benefity | Testy |  | Roman Kazička | 2025-09-26 | in progress | Pokiaľ  spĺňa používateľ kritériá GitHub, môže dostať pre seba pre svoj profil status člena EDU organizácie. Má to viac…
+`7e41fe41` | [K000083](./K000083-aktualizacia-komponentov-pre-docusaurus) | Testovací knife2 | Testy |  | Roman Kazicka | 2025-09-27 | testing | Tento riadok slúži na overenie funkčnosti generátora
+`c000d02a` | [K000084](./K000084-ako-aktivovat-na-githube-edu-benefity) | Testovací knife3 |  |  | Roman Kazicka | 2025-09-27 | testing | Tento riadok slúži na overenie funkčnosti generátora

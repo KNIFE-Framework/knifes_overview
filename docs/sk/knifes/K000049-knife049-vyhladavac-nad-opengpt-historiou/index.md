@@ -1,28 +1,19 @@
 ---
-id: "K000049"
+id: "K000"
 guid: "6fa9ddd3-5de1-4c99-ab0f-db87d301f005"
 dao: "knife"
 title: "KNIFE049 – Vyhľadávač nad OpenGPT históriou"
-description: "GUID: 6fa9ddd3-5de1-4c99-ab0f-db87d301f005\\\\\\\\nStatus: draft · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
+description: "GUID: 6fa9ddd3-5de1-4c99-ab0f-db87d301f005\\nStatus: draft · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-knife049-vyhladavac-nad-opengpt-historiou"
 sidebar_label: "K000049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "49"
+locale: "sk"
 ---
 <!-- body:start -->
 

@@ -1,28 +1,19 @@
 ---
-id: "K000065"
+id: "K000"
 guid: "72cf0d0c-72d5-41b7-8b70-06b46e43e8ab"
 dao: "knife"
 title: "MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
 description: "Administrácia ecosystému KNIFE je pomerne komplexná úloha. Framework podporuje MacOS, Windows a Linux. MAKEFIEL umožňuje administráciu z jedného miesta."
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-makefile-for-knife-ecosystem-for-mac-windows-linux"
 sidebar_label: "K000065 – MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "65"
+locale: "sk"
 ---
 <!-- body:start -->
 

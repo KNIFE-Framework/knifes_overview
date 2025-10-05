@@ -1,28 +1,19 @@
 ---
-id: "K000017"
+id: "K000"
 guid: "41a44dfe-5b85-480a-8168-710530b572d6"
 dao: "knife"
 title: "AI-powered TERNO Planner"
 description: "Nástroj na správu a sledovanie TERNA záznamov"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-ai-powered-terno-planner"
 sidebar_label: "K000017 – AI-powered TERNO Planner"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "17"
+locale: "sk"
 ---
 <!-- body:start -->
 

@@ -1,28 +1,19 @@
 ---
-id: "K000068"
+id: "K000"
 guid: "bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e"
 dao: "knife"
 title: "Kruhový portrét v GIMP"
 description: "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: []
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE", "images"]
+# slug: "/sk/knifes/k000-kruhovy-portret-v-gimp"
 sidebar_label: "K000068 – Kruhový portrét v GIMP"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "68"
+locale: "sk"
 ---
 <!-- body:start -->
 

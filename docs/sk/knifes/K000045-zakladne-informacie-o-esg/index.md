@@ -1,28 +1,19 @@
 ---
-id: "K000045"
+id: "K000"
 guid: "550e3260-c6ee-402a-9c41-5250e9cd1af3"
 dao: "knife"
 title: "Základné informácie o ESG"
 description: "Environment, Social, Government is crutial topic for human being survival. It is important to understand  the background"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-zakladne-informacie-o-esg"
 sidebar_label: "K000045 – Základné informácie o ESG"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "45"
+locale: "sk"
 ---
 <!-- body:start -->
 

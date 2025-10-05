@@ -1,28 +1,19 @@
 ---
-id: "K000083"
+id: "K000"
 guid: "7e41fe41-1fcc-4dc9-912d-8b422c9ca272"
 dao: "knife"
 title: "Aktualizácia komponentov pre Docusaurus"
 description: "Všetko má životný cyklus. Naše dokumenty, ale aj systémy a nástroje, ktoré používame. Preto nikdy nemáme stabilné, nemenné prostredie. Tak Aj docusaurus sa stále mní a vznikajú závislosti a človek sa môže zblázniť a rieši infraštruktúru a nie to čo potrebuje riešiť."
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-24"
 modified: "2025-09-24"
+date: "2025-09-24"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-aktualizacia-komponentov-pre-docusaurus"
 sidebar_label: "K000083 – Aktualizácia komponentov pre Docusaurus"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "83"
+locale: "sk"
 ---
 <!-- body:start -->
 

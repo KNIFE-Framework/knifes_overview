@@ -1,28 +1,19 @@
 ---
-id: "K000015"
+id: "K000"
 guid: "67a1b9c8-6fc2-4c20-94dd-95a08111ec73"
 dao: "knife"
 title: "LibreOffice Basic → Python migrácia"
 description: "Konverzia VB makier do Python skriptov"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "inprogress"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-libreoffice-basic-python-migracia"
 sidebar_label: "K000015 – LibreOffice Basic → Python migrácia"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "15"
+locale: "sk"
 ---
 <!-- body:start -->
 

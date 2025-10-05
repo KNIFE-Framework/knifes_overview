@@ -1,28 +1,19 @@
 ---
-id: "K000003"
+id: "K000"
 guid: "dd435f3c-8a1d-4fc0-b873-12645f6aa10f"
 dao: "knife"
 title: "LibreOffice + Python integrácia"
 description: "Skriptovanie v LO cez Python a venv izolácie"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "inprogress"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-libreoffice-python-integracia"
 sidebar_label: "K000003 – LibreOffice + Python integrácia"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "3"
+locale: "sk"
 ---
 <!-- body:start -->
 

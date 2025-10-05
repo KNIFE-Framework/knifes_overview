@@ -50,8 +50,12 @@ CSV_DEFAULT := config/data/KNIFES-OVERVIEW-INPUTs.csv
 endif
 # hlavný CSV (možno prebíjať v prostredí)
 CSV_OVERVIEW ?= $(CSV_DEFAULT)
+
 # fallback na overview, ak nie je zadané
 CSV_BACKFILL ?= $(CSV_OVERVIEW)
+
+# Output directory for CSV snapshots/fixes
+OUT_DIR    ?= config/out
 
 
 # Default locale for normalize/report targets
@@ -60,6 +64,8 @@ LOCALE ?= sk
 # Reference KNIFES (read-only governance / templates / rules)
 KNIFES_REF_DIR := $(DOCS_DIR)/sk/ref
 KNIFES_REF_MD_GLOB := $(KNIFES_REF_DIR)/**/index.md
+# KNIFES main directory (default scan root)
+KNIFES_DIR ?= docs/sk/knifes
 
 # Minify toggle (default ON). Use: make build MINIFY=0  -> passes --no-minify
 MINIFY ?= 1
@@ -98,9 +104,11 @@ endif
   knifes-id6-dry knifes-id6-apply knifes-id6-audit \
   knifes-frontmatter-audit-id knifes-frontmatter-fix-id-dry knifes-frontmatter-fix-id-apply \
   knifes-build-dry knifes-build-apply \
+  knifes-gen-dry knifes-gen-apply \
   knifes-datekey-remove-dry knifes-datekey-remove-apply knifes-smartquotes-scan knifes-smartquotes-fix-dry knifes-smartquotes-fix-apply \
   knife-fm-apply k18-audit k18-fix-dry k18-fix-apply k18-verify k18-align-dry k18-align-apply \
-  knifes-ref-audit knifes-ref-align-dry knifes-ref-align-apply
+  knifes-ref-audit knifes-ref-align-dry knifes-ref-align-apply \
+  knifes-csv-scan knifes-fix-csv-dry knifes-fix-csv-apply
 
 # -------------------------
 # 📌 Help
@@ -175,6 +183,9 @@ help:
 	@echo "  dry-verify             - skrátená validácia cez generátor (bez zásahu)"
 	@echo "  knifes-build-dry       - DRY-RUN: build (CSV→MD) podľa configu, nič nezapisuje [NEW 2025-10-04]"
 	@echo "  knifes-build-apply     - APPLY:   build (CSV→MD) podľa configu, zapíše zmeny [NEW 2025-10-04]"
+	@echo "  knifes-csv-scan         - Naskenuje docs/sk/knifes → vytvorí CSV snapshot (timestamp)"
+	@echo "  knifes-fix-csv-dry      - DRY: MD → CSV (fill-only), nič neprepíše (len plán)"
+	@echo "  knifes-fix-csv-apply    - APPLY: MD → CSV (fill-only), zapíše nový CSV s timestampom"
 # -------------------------
 # 🏗 KNIFES Build (explicit DRY/APPLY wrappers)
 # -------------------------
@@ -183,14 +194,14 @@ help:
 ## knifes-build-dry: DRY-RUN build (CSV→MD) – no writes
 knifes-build-dry:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
-	echo "🧪 DRY-RUN: KNIFES build (CSV→MD) – CSV='$$CSV' locale=$(LOCALE)"; \
-	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root . --locale $(LOCALE) --dry-run
+	echo "🧪 DRY-RUN: KNIFES build (CSV→MD) [$$(date -u +'%Y-%m-%d %H:%M:%S UTC')] – CSV='$$CSV' locale=$(LOCALE)"; \
+	node "$(SCRIPTS_DIR)/knifes-build.mjs" --csv "$$CSV" --root . --locale $(LOCALE) --dry-run
 
 ## knifes-build-apply: APPLY build (CSV→MD) – writes
 knifes-build-apply:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
-	echo "🛠 APPLY: KNIFES build (CSV→MD) – CSV='$$CSV' locale=$(LOCALE)"; \
-	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root . --locale $(LOCALE)
+	echo "🛠 APPLY: KNIFES build (CSV→MD) [$$(date -u +'%Y-%m-%d %H:%M:%S UTC')] – CSV='$$CSV' locale=$(LOCALE)"; \
+	node "$(SCRIPTS_DIR)/knifes-build.mjs" --csv "$$CSV" --root . --locale $(LOCALE)
 
 	@echo "  knifes-finish           - Uzavri KNIFE: FM podsúborov -> backfill -> canonical fix -> verify -> gen"
 	@echo "  knifes_config-finish-dry       - DRY-RUN plán uzavretia KNIFE (nič nezapisuje)"
@@ -201,7 +212,7 @@ knifes-build-apply:
 	@echo "  knifes-verify-csv-docs  - CSV/docs konzistencia (duplicitné ID, prázdne názvy, kolízie slugov, chýbajúce súbory)"
 	@echo "  knifes-verify-frontmatter - Lint povinných polí (guid, dao, id, title, created, modified)"
 	@echo "  knifes-audit-frontmatter - Audit existujúcich KNIFE index.md (guid/dao/dates/slug/locale)"
-	@echo "  knifes-verify-smart     - Konfiguráciou riadená verifikácia (scripts/knifes_verify.mjs)"
+	@echo "  knifes-verify-smart     - Konfiguráciou riadená verifikácia (scripts/knifes-verify.mjs)"
 	@echo "===== 📝 Frontmatter Tools ====="
 	@echo "  fm-fix                 - Prepíše frontmatter v docs/ tak, že 'slug' bude zakomentovaný (# slug: \"...\")"
 	@echo "  fm-fix-dry             - Náhľad (DRY-RUN) zmien frontmatteru pre celý docs/ (vytlačí unified diff)"
@@ -371,7 +382,7 @@ help-actions:
 	@echo "===== ⚙️ CI/CD (Cesta 2 – GitHub Actions → Pages) ====="
 	@echo "1) Pridaj .github/workflows/deploy.yml (oficiálny Docusaurus workflow)."
 	@echo "2) Settings -> Pages -> Build and deployment = GitHub Actions."
-	@echo "3) V docusaurus.config nastav správny baseUrl (napr. '/knifes_overview/')."
+	@echo "3) V docusaurus.config nastav správny baseUrl (napr. '/knifes-overview/')."
 	@echo "4) Po push do main sa build nasadí automaticky."
 
 # -------------------------
@@ -728,15 +739,15 @@ next-steps:
 
 ## knifes-gen: CSV -> MD (prehľady + chýbajúce Kxxx súbory)
 knifes-gen:
-	@if [ ! -f "$(SCRIPTS_DIR)/knifes_build.mjs" ]; then \
-		echo "❌ Chýba $(SCRIPTS_DIR)/knifes_build.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
+	@if [ ! -f "$(SCRIPTS_DIR)/knifes-build.mjs" ]; then \
+		echo "❌ Chýba $(SCRIPTS_DIR)/knifes-build.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
 	fi
 	@if [ ! -f "$(strip $(CSV_OVERVIEW))" ]; then \
 		echo "❌ Chýba CSV '$(strip $(CSV_OVERVIEW))'. Ulož export z Calc/Excel alebo použi: make knifes-gen csv=<path>"; \
 		echo "   Príklad: make knifes-gen csv=$(CSV_DEFAULT)"; exit 1; \
 	fi
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
-	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root .
+	node "$(SCRIPTS_DIR)/knifes-build.mjs" --csv "$$CSV" --root .
 
 ## knifes-new: založí skeleton KNIFE
 ## Použitie: make knifes-new id=K000062 title="My Topic"
@@ -754,20 +765,20 @@ knifes-new:
 
 ## Kombinované príkazy
 dev-gen:
-	node scripts/knifes_build.mjs --csv $(CSV_DEFAULT) --root . --locale sk
+	node scripts/knifes-build.mjs --csv $(CSV_DEFAULT) --root . --locale sk
 
 build-gen: knifes-gen build
 
 ## Len suchý plán generovania (nič sa nezapisuje)
 gen-dry:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
-	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root . --dry-run
+	node "$(SCRIPTS_DIR)/knifes-build.mjs" --csv "$$CSV" --root . --dry-run
 
 
 ## Dry-verify priamo cez generátor
 dry-verify:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
-	node "$(SCRIPTS_DIR)/knifes_build.mjs" --csv "$$CSV" --root . --dry-verify
+	node "$(SCRIPTS_DIR)/knifes-build.mjs" --csv "$$CSV" --root . --dry-verify
 
 # -------------------------
 # 🧵 KNIFE Finish (one-button flow)
@@ -863,7 +874,7 @@ knifes-verify-smart:
 	  if [ -n "$$DOCS_FROM_CFG" ]; then DOCS_DIR_ARG="$$DOCS_FROM_CFG"; fi; \
 	fi; \
 	echo "CSV=$$CSV_ARG | locale=$$LOCALE_ARG | section=$$SECTION_ARG | docsDir=$$DOCS_DIR_ARG"; \
-	node scripts/knifes_verify.mjs --csv "$$CSV_ARG" --root . --locale "$$LOCALE_ARG" --section "$$SECTION_ARG" --docs-dir "$$DOCS_DIR_ARG"
+	node scripts/knifes-verify.mjs --csv "$$CSV_ARG" --root . --locale "$$LOCALE_ARG" --section "$$SECTION_ARG" --docs-dir "$$DOCS_DIR_ARG"
 
 ## knifes-verify: spustí oba checky (CSV/docs + frontmatter + smart)
 knifes-verify: knifes-verify-csv-docs knifes-verify-frontmatter knifes-verify-smart
@@ -886,7 +897,7 @@ knifes-validate-csv:
 
 knifes-build-safe:
 	@$(MAKE) knifes-validate-csv
-	node scripts/knifes_build.mjs --csv $(CSV_DEFAULT) --root . --locale sk
+	node scripts/knifes-build.mjs --csv $(CSV_DEFAULT) --root . --locale sk
 
 knifes-audit-frontmatter:
 	node scripts/knifes-frontmatter-audit.mjs docs/sk/knifes	
@@ -1322,3 +1333,45 @@ knifes-ref-align-apply:
 	@echo "ℹ️  Placeholder: sem doplníme APPLY fix pre KNIFES_REF (keď bude pripravený)."
 	@$(MAKE) knifes-ref-audit
 	@echo "🎉 KNIFES_REF align APPLY sekvencia dokončená."
+# -------------------------
+# 🧩 KNIFES Gen New (CSV → MD, seed-only, new script)
+# -------------------------
+.PHONY: knifes-gen-dry knifes-gen-apply
+
+## knifes-gen-dry: DRY-RUN generation (CSV→MD, seed-only)
+knifes-gen-dry:
+	@KNIFE_CSV="$(KNIFE_CSV)"; if [ -z "$$KNIFE_CSV" ]; then KNIFE_CSV="$(strip $(CSV_OVERVIEW))"; fi; \
+	KNIFE_OUT="$(KNIFE_OUT)"; if [ -z "$$KNIFE_OUT" ]; then KNIFE_OUT="docs/sk/knifes"; fi; \
+	echo "🧪 [UAT] DRY-RUN generation (CSV→MD, seed-only) [$$(date -u +'%Y-%m-%d %H:%M:%S UTC')] – CSV='$$KNIFE_CSV' OUT='$$KNIFE_OUT'"; \
+	node scripts/knifes-gen-new.mjs --csv "$$KNIFE_CSV" --out "$$KNIFE_OUT" --dry-run
+
+## knifes-gen-apply: APPLY generation (CSV→MD, seed-only)
+knifes-gen-apply:
+	@KNIFE_CSV="$(KNIFE_CSV)"; if [ -z "$$KNIFE_CSV" ]; then KNIFE_CSV="$(strip $(CSV_OVERVIEW))"; fi; \
+	KNIFE_OUT="$(KNIFE_OUT)"; if [ -z "$$KNIFE_OUT" ]; then KNIFE_OUT="docs/sk/knifes"; fi; \
+	echo "⚙️ [UAT] APPLY generation (CSV→MD, seed-only) [$$(date -u +'%Y-%m-%d %H:%M:%S UTC')] – CSV='$$KNIFE_CSV' OUT='$$KNIFE_OUT'"; \
+	node scripts/knifes-gen-new.mjs --csv "$$KNIFE_CSV" --out "$$KNIFE_OUT"
+
+
+# -------------------------
+# 🧾 CSV Scan & Fix (NEW 2025-10-05)
+# -------------------------
+.PHONY: knifes-csv-scan knifes-fix-csv-dry knifes-fix-csv-apply
+
+## knifes-csv-scan: Scan docs → CSV snapshot (timestamped)
+knifes-csv-scan:
+	@TS="$$(date -u +'%Y-%m-%d %H:%M:%S UTC')"; \
+	echo "🔎 SCAN [$${TS}] → DIR='$(KNIFES_DIR)' OUT='$(OUT_DIR)' CSV_REF='$(strip $(CSV_OVERVIEW))'"; \
+	node scripts/knifes-csv-scan.mjs --dir "$(KNIFES_DIR)" --outdir "$(OUT_DIR)" --csv "$(strip $(CSV_OVERVIEW))"
+
+## knifes-fix-csv-dry: DRY-RUN fill-only merge (MD → CSV)
+knifes-fix-csv-dry:
+	@TS="$$(date -u +'%Y-%m-%d %H:%M:%S UTC')"; \
+	echo "🧪 FIX CSV DRY [$${TS}] → IN='$(strip $(CSV_OVERVIEW))' OUTDIR='$(OUT_DIR)'"; \
+	node scripts/knifes-fix-csv.mjs --dir "$(KNIFES_DIR)" --csv "$(strip $(CSV_OVERVIEW))" --outdir "$(OUT_DIR)" --dry-run
+
+## knifes-fix-csv-apply: APPLY fill-only merge (MD → CSV) → writes new timestamped file
+knifes-fix-csv-apply:
+	@TS="$$(date -u +'%Y-%m-%d %H:%M:%S UTC')"; \
+	echo "⚙️  FIX CSV APPLY [$${TS}] → IN='$(strip $(CSV_OVERVIEW))' OUTDIR='$(OUT_DIR)'"; \
+	node scripts/knifes-fix-csv.mjs --dir "$(KNIFES_DIR)" --csv "$(strip $(CSV_OVERVIEW))" --outdir "$(OUT_DIR)"

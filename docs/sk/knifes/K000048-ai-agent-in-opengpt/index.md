@@ -1,28 +1,19 @@
 ---
-id: "K000048"
+id: "K000"
 guid: "dfd04696-0904-4798-83bd-5e77bb371baf"
 dao: "knife"
 title: "AI – Agent in OpenGPT"
-description: "GUID: dfd04696-0904-4798-83bd-5e77bb371baf\\\\\\\\nStatus: in progress · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
+description: "GUID: dfd04696-0904-4798-83bd-5e77bb371baf\\nStatus: in progress · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-ai-agent-in-opengpt"
 sidebar_label: "K000048 – AI – Agent in OpenGPT"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "48"
+locale: "sk"
 ---
 <!-- body:start -->
 

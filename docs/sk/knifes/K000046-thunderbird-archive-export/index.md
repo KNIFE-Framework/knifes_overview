@@ -1,28 +1,19 @@
 ---
-id: "K000046"
+id: "K000"
 guid: "b045421e-412b-4e20-b0ad-ebe5e1fbed9f"
 dao: "knife"
 title: "Thunderbird – Archive-export"
 description: "Omylom som poslal e-mail do archivu. Mam v  poste asi 60GB udajov. Ako to riesit?"
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-thunderbird-archive-export"
 sidebar_label: "K000046 – Thunderbird – Archive-export"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "46"
+locale: "sk"
 ---
 <!-- body:start -->
 

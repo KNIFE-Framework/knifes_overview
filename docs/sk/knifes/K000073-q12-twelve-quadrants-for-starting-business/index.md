@@ -1,28 +1,19 @@
 ---
-id: "K000073"
+id: "K000"
 guid: "3908aa84-1d7b-4ba7-8d41-ca17e1087d86"
 dao: "knife"
 title: "Q12- Twelve quadrants for starting business"
 description: "Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie."
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "inprogress"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-q12-twelve-quadrants-for-starting-business"
 sidebar_label: "K000073 – Q12- Twelve quadrants for starting business"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "73"
+locale: "sk"
 ---
 <!-- body:start -->
 

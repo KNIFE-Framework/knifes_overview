@@ -1,28 +1,19 @@
 ---
-id: "K000043"
+id: "K000"
 guid: "50afe040-3e25-46cc-bb56-8b594dadf3cf"
 dao: "knife"
 title: "Kontrola odpovedé študentov pomocou API na AI"
 description: "Pre veľký počet študentov nie je možné kontrolovať odpovede na voľné otázky. AI by mohlo pomôcť."
 author: "Roman Kazicka"
-authors: ["Roman Kazička"]
-category: "-"
-type: "-"
-priority: "-"
-tags: ["KNIFE"]
 created: "2025-09-17"
 modified: "2025-09-17"
+date: "2025-09-17"
 status: "backlog"
-locale: "sk"
+tags: ["KNIFE"]
+# slug: "/sk/knifes/k000-kontrola-odpovede-studentov-pomocou-api-na-ai"
 sidebar_label: "K000043 – Kontrola odpovedé študentov pomocou API na AI"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-author_id: "-"
-author_did: "-"
 sidebar_position: "43"
+locale: "sk"
 ---
 <!-- body:start -->
 

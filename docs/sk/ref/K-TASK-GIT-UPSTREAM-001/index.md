@@ -56,8 +56,8 @@ git remote -v
 
 
 1) Nová vetva (prvé pushnutie)
-   git push -u origin <moja-vetva>
-#alias: git push --set-upstream origin <moja-vetva>
+   git push -u origin `<moja-vetva>`
+#alias: git push --set-upstream origin `<moja-vetva>`
 
 ---
 
@@ -157,4 +157,3 @@ z `fix/fm-stabilize` → `UAT` cez tlačidlo *Compare & pull request*.
 ## 🧭 Navigácia
 
 [⬅ Späť na Dashboard](../index.md)  
-[➡ Pokračuj na GIT – PR Workflow (K-TASK-GIT-PR-002)](../K-TASK-GIT-PR-002/index.md)

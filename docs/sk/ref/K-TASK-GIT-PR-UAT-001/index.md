@@ -78,9 +78,4 @@ Výsledok by mal obsahovať riadky pre `origin` aj `upstream`.
 
 ## Súvisiace návody
 
-- [Git workflow](../git-workflow.md)
-- [Testovanie v UAT](../testing-uat.md)
 
----
-
-[← Späť na zoznam návodov](../README.md)

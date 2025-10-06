@@ -82,7 +82,37 @@ git switch fix/fm-stabilize
 3. Vyber:
    - **base:** `UAT`
    - **compare:** `fix/fm-stabilize`
+   - ![alt text](./img/PR_01.png)
+Poďme si to vysvetliť presne podľa  screenshotu 👇
+
+🟡 1️⃣ fix/fm-stabilize had recent pushes
+
+➡️ toto znamená, že tvoja pracovná vetva (fix/fm-stabilize) má nové commity, ktoré ešte neboli zlúčené.
+➡️ Tlačidlo “Compare & pull request” pri tomto riadku ťa zoberie na obrazovku, kde vytvoríš PR z fix/fm-stabilize → do main (predvolený base branch).
+
+⚠️ Toto nechceme — ty teraz chceš poslať PR do UAT, nie do main.
+
+🟡 2️⃣ UAT had recent pushes
+
+➡️ Toto len oznamuje, že vetva UAT tiež dostala nový commit (napr. si ju práve vytvoril alebo pushol).
+➡️ Tlačidlo „Compare & pull request“ tu by otvorilo porovnanie z UAT do main – tiež nie to, čo chceš.
+
+🟢 3️⃣ Správne riešenie: klikni na zelené tlačidlo „New pull request“
+
+➡️ To ti dovolí ručne vybrať:
+
+base branch → UAT
+
+compare branch → fix/fm-stabilize
+
+💡 Potom klikneš “Create pull request”, doplníš názov, popis, štítky — a PR sa vytvorí presne medzi správnymi vetvami.
+
+
+
 4. Klikni **Create pull request**.
+![alt text](./img/PR-identical.png)
+---
+![alt text](./img/PR-identical.png)
 5. Pridaj popis (napr. *UAT sync – CSV a MD align*).
 6. Potvrď vytvorenie.
 

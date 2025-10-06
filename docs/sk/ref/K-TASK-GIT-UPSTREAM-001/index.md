@@ -61,8 +61,8 @@ git remote -v
 
 1) Nová vetva (prvé pushnutie)
 ```
-git push -u origin <moja-vetva>
-# alias: git push --set-upstream origin <moja-vetva>
+git push -u origin \<moja-vetva\>
+# alias: git push --set-upstream origin \<moja-vetva\>
 ```
 
 ---
@@ -99,7 +99,7 @@ git push origin fix/fm-stabilize
 
 - **Zmena:**
   ```
-  git branch --set-upstream-to=origin/<nova-vetva>
+  git branch --set-upstream-to=origin/\<nova-vetva\>
   ```
 - **Odstránenie:**
   ```

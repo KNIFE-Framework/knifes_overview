@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 
 // Build metadata from environment (provided by Makefile / CI)
-const buildDate = process.env.BUILD_DATE || '20250925-2150';
-const appVersion = process.env.APP_VERSION || '20250925-2150';
+const buildDate = process.env.BUILD_DATE || '20251006-2233';
+const appVersion = process.env.APP_VERSION || '20251006-2233';
 const isCI = process.env.CI === 'true' || process.env.CI === '1';
 
 const config: Config = {

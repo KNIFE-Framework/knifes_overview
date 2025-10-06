@@ -12,7 +12,7 @@ priority: "Middle"
 tags: ["GIT", "Upstream", "Workflow"]
 created: "-"
 modified: "-"
-status: "active"
+status: "inprogress"
 locale: "sk"
 sidebar_label: "GIT – Upstream (How-to)"
 rights_holder_content: "Roman Kazička"
@@ -34,30 +34,36 @@ disclaimer: "Use at your own risk. Educational purposes only."
 ```
 git status -sb
 # napr. ## fix/fm-stabilize...origin/fix/fm-stabilize
-
 ```
-##	Aktuálny upstream (len názov):
+
+## Aktuálny upstream (len názov)
+```
 git rev-parse --abbrev-ref --symbolic-full-name @{u}
-# -> origin/fix/fm-stabilize
+# → origin/fix/fm-stabilize
+```
 
-## Všetky lokálne vetvy a ich upstream:
-
+## Všetky lokálne vetvy a ich upstream
+```
 git branch -vv
+```
 
-## 	Prehľad cez šablónu (užitočné do skriptov/Makefile):
+## Prehľad cez šablónu (užitočné do skriptov/Makefile)
+```git for-each-ref --format="%(refname:short) -> %(upstream:short)" refs/heads
+```
 
-git for-each-ref --format="%(refname:short) -> %(upstream:short)" refs/heads
-
-## 	Vzdialené repozitáre (overenie origin):
-
+## Vzdialené repozitáre (overenie origin)
+```
 git remote -v
+```
 
 ## ⚙️ Nastavenie upstreamu
 
 
 1) Nová vetva (prvé pushnutie)
-   git push -u origin `<moja-vetva>`
-#alias: git push --set-upstream origin `<moja-vetva>`
+```
+git push -u origin <moja-vetva>
+# alias: git push --set-upstream origin <moja-vetva>
+```
 
 ---
 

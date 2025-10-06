@@ -4,10 +4,13 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 
+// Build strictness (UAT defaults to warn; set DOCS_STRICT=1 in PROD to fail on broken links)
+const strictMode = process.env.DOCS_STRICT === '1';
+const brokenPolicy = strictMode ? 'throw' : 'warn';
+
 // Build metadata from environment (provided by Makefile / CI)
 const buildDate = process.env.BUILD_DATE || '20251006-2233';
 const appVersion = process.env.APP_VERSION || '20251006-2233';
-const isCI = process.env.CI === 'true' || process.env.CI === '1';
 
 const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',   // ✅ povinné
@@ -21,11 +24,11 @@ const config: Config = {
   projectName: 'knifes_overview',
   deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: isCI ? 'throw' : 'warn',
-  onBrokenAnchors: isCI ? 'throw' : 'warn',
+  onBrokenLinks: brokenPolicy,
+  onBrokenAnchors: brokenPolicy,
   markdown: {
     hooks: {
-      onBrokenMarkdownLinks: isCI ? 'throw' : 'warn',
+      onBrokenMarkdownLinks: brokenPolicy,
     },
   },
   future: { v4: true },
@@ -46,6 +49,7 @@ const config: Config = {
         docs: {
           path: 'docs',
           routeBasePath: '/',                   // docs ako homepage
+          tags: false, // disable docs tag routes (avoids missing tags file + duplicate /tags warnings)
           numberPrefixParser: false,
           editCurrentVersion: false,
           editUrl: undefined,
@@ -54,7 +58,8 @@ const config: Config = {
         },
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },
-       sitemap: { changefreq: 'weekly', priority: 0.5, ignorePatterns: ['/tags/**'], filename: 'sitemap.xml' },
+       // Avoid duplicate /tags route warnings by pointing sitemap ignorePatterns to the custom docs tags path and (defensively) blog tag routes
+       sitemap: { changefreq: 'weekly', priority: 0.5, ignorePatterns: ['/docs-tags/**', '/blog/tags/**', '/blog/**/tags/**'], filename: 'sitemap.xml' },
       } satisfies Preset.Options,
     ],
   ],

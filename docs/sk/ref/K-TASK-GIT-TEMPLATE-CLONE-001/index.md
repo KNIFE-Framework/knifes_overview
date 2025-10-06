@@ -90,8 +90,6 @@ Vytvorenie GitHub Template repozitára z vetvy UAT je kľúčové pre zabezpeče
 
 Pre ďalšie informácie a súvisiace návody si pozrite:
 
-- [K-TASK-GIT-TEMPLATE-USE-002](../K-TASK-GIT-TEMPLATE-USE-002)
-- [REF-GIT-WORKFLOW-001](../../ref/REF-GIT-WORKFLOW-001)
 
 ---
 

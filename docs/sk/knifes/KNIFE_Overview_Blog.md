@@ -117,7 +117,7 @@
 > Nástroj na správu a sledovanie TERNA záznamov
 ---
 
-## [K000018 – KNIFE pre zvedavých](./K000018-knife-pre-zvedavych)
+## [K000018 – KNIFE pre zvedavých](../ref/K000018-KNIFE-User-Guide)
 **Autor:** Roman Kazička · **Dátum:** 2025-04-16 · **Stav:** InProgress · **Kategória/Typ:** Development / Algoritmika / Osobný rozvoj
 **GUID:** 5e74e5c2-9db8-4e44-bec5-9b3d91b36f17
 

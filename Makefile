@@ -13,7 +13,7 @@
 #    Pozri: make help-auth
 # Keď spustíš len `make`, ukáž help
 .DEFAULT_GOAL := help  # zobrazenie help pri samotnom `make`
-
+ 
 SHELL := /bin/bash
 NODE := node
 NPM  := npm

@@ -118,6 +118,42 @@ git push origin fix/fm-stabilize
 
 ---
 
+## ⚠️ Reálny prípad (Error → Solution)
+
+Ak sa pokúsiš zistiť upstream pre vetvu, ktorá ešte nemá nastavený vzdialený ekvivalent, Git vráti chybu:
+
+```
+git rev-parse --abbrev-ref --symbolic-full-name @{u}
+# fatal: no upstream configured for branch 'fix/fm-stabilize'
+```
+
+Táto hláška znamená, že lokálna vetva ešte **nie je spárovaná** so vzdialenou vetvou.  
+Riešením je nastaviť upstream pri prvom pushnutí:
+
+```
+git push -u origin fix/fm-stabilize
+```
+
+Tento príkaz:
+- vytvorí (ak ešte neexistuje) vzdialenú vetvu `fix/fm-stabilize`,
+- spáruje ju s lokálnou vetvou ako **upstream**,
+- a umožní používať jednoduché príkazy:
+  ```
+  git push
+  git pull
+  ```
+
+Overenie, že upstream už funguje:
+```
+git rev-parse --abbrev-ref --symbolic-full-name @{u}
+# → origin/fix/fm-stabilize
+```
+
+Potom môžeš prejsť do GitHub GUI a otvoriť **Pull Request**  
+z `fix/fm-stabilize` → `UAT` cez tlačidlo *Compare & pull request*.
+
+---
+
 ## 🧭 Navigácia
 
 [⬅ Späť na Dashboard](../index.md)  

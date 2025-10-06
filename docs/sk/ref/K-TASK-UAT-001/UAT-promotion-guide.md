@@ -32,7 +32,64 @@ Dostať overené zmeny z **FIX** do **UAT** **cez Pull Request** (PR), so zachov
 
 ## ✅ Predpoklady (sanity check)
 Spusť lokálne (nič neprepisuje):
-```bash
+```
 make knifes-gen-dry
 make knifes-overview-dry
 npm run build
+```
+Po merge do `UAT`:
+
+```
+git checkout UAT
+git pull origin UAT
+make verify
+make knifes-gen-dry
+```
+
+✅ Over, že:
+- sa všetky KNIFE súbory generujú správne,
+- CSV zodpovedá realite,
+- nevznikli nové GUIDy bez dôvodu.
+
+---
+
+## 🚀 5. Príprava na merge do MAIN (produkcia)
+
+Keď je `UAT` overený:
+
+```
+git checkout main
+git pull origin main
+git merge --no-ff UAT -m "merge: verified UAT → main"
+git push origin main
+```
+
+---
+
+## 🧾 6. Poznámky a odporúčania
+
+- `FIX` = technické úpravy a ladenie  
+- `UAT` = testovanie a validácia  
+- `MAIN` = produkčný obsah
+
+Každá vetva má svoj účel – nikdy nerob úpravy priamo v `UAT` alebo `MAIN`.  
+Ak potrebuješ opraviť drobnosti, vytvor novú `fix/*` vetvu a znova ju pošli cez PR.
+
+---
+
+## 📦 7. Odporúčané príkazy pre opakovanie
+
+```
+make csv-guid-sync-dry
+make knifes-csv-scan
+make knifes-gen-dry
+```
+
+Tieto príkazy pomáhajú overiť, že všetky KNIFE majú správne GUID, FM a väzby pred prenosom.
+
+---
+
+> 💡 **Tip:** Ak chceš dať študentom tento proces ako cvičenie, pridaj ho do `docs/sk/ref/UAT-Promotion-Guide.md`  
+> alebo ako úlohu v `GitDocs-Lab` template s parametrom `branch: fix → UAT`.
+
+[⬅ Späť na Dashboard](../index.md)  

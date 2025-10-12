@@ -21,8 +21,10 @@ yarn.lock
 /build/                    # Docusaurus
 /assets/
 # Ak používaš automatický deploy cez GitHub Actions, môžeš odkomentovať
-/.docusaurus/
 
+publishing/docusaurus/build/
+publishing/docusaurus/.docusaurus/
+publishing/docusaurus/.cache/
 
 .vitepress/dist/          # VitePress (ak bez podsložky)
 docs/.vitepress/dist/     # VitePress (v podsložke)

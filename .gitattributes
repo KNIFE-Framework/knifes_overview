@@ -5,3 +5,15 @@
 *.yaml text
 *.json text
 * text=auto eol=lf
+
+# Zjednotenie koncov riadkov
+* text=auto eol=lf
+
+# HTML5 výstupy a binárne formáty nemeníme
+*.zip binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.exe binary
+*.dll binary
+*.htaccess text eol=lf

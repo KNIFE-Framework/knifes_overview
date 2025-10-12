@@ -1,0 +1,3 @@
+# We don't want to pollute git with these. They get created at build time.
+*.json.lzfse
+*.json

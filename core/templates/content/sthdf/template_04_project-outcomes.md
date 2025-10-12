@@ -1,24 +1,3 @@
----
-id: ""
-guid: ""
-dao: "knife"
-title: "📦 Project Outcomes"
-author: ""
-category: "deliverable"
-type: "project-outcomes"
-priority: ""
-tags: []
-slug: ""
-created: ""
-modified: ""
-status: "draft"
-# ⚖️ IP rights
-rights_holder_content: ""
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-locale: "sk"
----
 # 📦 Project Outcomes
 
 ## 🔖 Stav projektu
@@ -43,19 +22,3 @@ locale: "sk"
 
 
 ---
-
-## 5. Pitch Presentation
----
-id: ""
-guid: ""
-dao: "knife"
-title: "Pitch Presentation"
-author: ""
-category: "deliverable"
-type: "pitch-presentation"
-priority: ""
-tags: []
-slug: ""
-created: ""
-modified: ""
-status: "draft"

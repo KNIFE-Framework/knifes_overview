@@ -1,63 +1,53 @@
-name: Deploy Docusaurus to GitHub Pages
+name: Deploy Docusaurus → gh-pages-docusaurus
 
 on:
   push:
     branches: [ main ]
-    tags-ignore:
-      - v*
+    # Re-run only when relevant paths in the repo change
     paths:
-      - "docs/**"
-      - "src/**"
-      - "docusaurus.config.*"
-      - "package.json"
-      - "package-lock.json"
-      - "tsconfig.json"
-      - ".github/workflows/deploy.yml"
-      - "scripts/**"
-      - "sidebars*.ts"
-      - "static/**"
-      - "data/**"
+      - '.github/workflows/deploy.yml'
+      - 'publishing/docusaurus/**'
+      - 'content/**'
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write   # needed to push to gh-pages-docusaurus
 
 concurrency:
-  group: pages
+  group: gh-pages-docusaurus
   cancel-in-progress: true
+
+# 🔧 All run steps are executed inside publishing/docusaurus
+defaults:
+  run:
+    working-directory: publishing/docusaurus
 
 jobs:
   build:
-    # Spusť ak: manuálny dispatch ALEBO (USE_ACTIONS == true s defaultom na true),
-    # a commit správa neobsahuje [noactions]
-    if: ${{ (github.event_name == 'workflow_dispatch' || fromJSON(vars.USE_ACTIONS || 'true'))
-            && !contains(github.event.head_commit.message || '', '[noactions]') }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'   # LTS 20 for stable minifiers
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run build:ci # first deploy: no minify (stable on CI)
+          node-version: 20
+          cache: npm
+          cache-dependency-path: publishing/docusaurus/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Docusaurus
         env:
           NODE_OPTIONS: --max-old-space-size=16384
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: build
+        run: npm run build
 
-  deploy:
-    needs: build
-    if: ${{ (github.event_name == 'workflow_dispatch' || fromJSON(vars.USE_ACTIONS || 'true'))
-            && !contains(github.event.head_commit.message || '', '[noactions]') }}
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to gh-pages-docusaurus
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_branch: gh-pages-docusaurus
+          publish_dir: publishing/docusaurus/build
+          commit_message: 'Deploy ${GITHUB_SHA}'
+          force_orphan: false

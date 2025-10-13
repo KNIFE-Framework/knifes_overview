@@ -2,29 +2,15 @@ name: Deploy Docusaurus → gh-pages-docusaurus
 
 on:
   push:
-    branches: [ main ]
-    # Re-run only when relevant paths in the repo change
-    paths:
-      - '.github/workflows/deploy.yml'
-      - 'publishing/docusaurus/**'
-      - 'content/**'
-  workflow_dispatch:
+    branches: [ main ]  # alebo tvoja vetva
 
 permissions:
-  contents: write   # needed to push to gh-pages-docusaurus
-
-concurrency:
-  group: gh-pages-docusaurus
-  cancel-in-progress: true
-
-# 🔧 All run steps are executed inside publishing/docusaurus
-defaults:
-  run:
-    working-directory: publishing/docusaurus
+  contents: write  # dôležité pre push
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,21 +19,24 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-          cache-dependency-path: publishing/docusaurus/package-lock.json
+          # odstráň cache: 'npm' ak nemáš lock file (viď poznámka nižšie)
 
-      - name: Install dependencies
+      - name: Install deps
         run: npm ci
+        working-directory: publishing/docusaurus
 
       - name: Build Docusaurus
-        env:
-          NODE_OPTIONS: --max-old-space-size=16384
         run: npm run build
+        working-directory: publishing/docusaurus
 
-      - name: Deploy to gh-pages-docusaurus
+      - name: Deploy to gh-pages-docusaurus/docs
         uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}     # <<< toto chýbalo
           publish_branch: gh-pages-docusaurus
           publish_dir: publishing/docusaurus/build
-          commit_message: 'Deploy ${GITHUB_SHA}'
-          force_orphan: false
+          destination_dir: docs                         # Pages má v nastavení /docs
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          # force_orphan: true  # iba pri úplne prvom nasadení tejto vetvy
+          # cname: knifes.systemthinking.sk  # ak používaš custom domain

@@ -9,8 +9,8 @@ const strictMode = process.env.DOCS_STRICT === '1';
 const brokenPolicy = strictMode ? 'throw' : 'warn';
 
 // Build metadata from environment (provided by Makefile / CI)
-const buildDate = process.env.BUILD_DATE || '20251006-2233';
-const appVersion = process.env.APP_VERSION || '20251006-2233';
+const buildDate = process.env.BUILD_DATE || '20251012-2333';
+const appVersion = process.env.APP_VERSION || '20251012-2333';
 
 const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',   // ✅ povinné
@@ -22,7 +22,7 @@ const config: Config = {
 
   organizationName: 'KNIFE-Framework',
   projectName: 'knifes_overview',
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: 'gh-pages-docusaurus',
 
   onBrokenLinks: brokenPolicy,
   onBrokenAnchors: brokenPolicy,
@@ -37,8 +37,8 @@ const config: Config = {
     defaultLocale: 'sk',
     locales: ['sk', 'en'],
     localeConfigs: {
-      sk: { label: 'Slovensky' },
-      en: { label: 'English', path: 'en' },
+      sk: { label: 'Slovenčina', htmlLang: 'sk' },
+      en: { label: 'English', htmlLang: 'en' },
     },
   },
 
@@ -69,6 +69,33 @@ const config: Config = {
       '@docusaurus/plugin-google-gtag',
       { trackingID: 'G-LV31TWZZK6', anonymizeIP: true },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          // Root & locale root fixes
+          { from: '/',        to: '/sk' },
+          { from: '/en',      to: '/en' },
+          { from: '/en/index', to: '/en' },
+          { from: '/sk/index', to: '/sk' },
+
+          // Backward-compatible old paths
+          { from: ['/index', '/home'], to: '/sk' },
+          { from: ['/knifes', '/sk/knifes'],  to: '/sk/knifes/overview' },
+          { from: ['/7Ds'],                 to: '/sk/7Ds' },
+        ],
+        createRedirects(existingPath) {
+          // normalize trailing slash variants
+          if (existingPath !== '/' && existingPath.endsWith('/')) {
+            return [existingPath.slice(0, -1)];
+          }
+          if (existingPath === '/en/') {
+            return ['/en'];
+          }
+          return [];
+        },
+      },
+    ],
     function cssMinimizerWorkaround() {
       return {
         name: 'css-minimizer-parallel-false',
@@ -96,12 +123,11 @@ const config: Config = {
     image: 'img/logo.png',
     navbar: {
       title: 'KNIFE-Home',
-      logo: { alt: 'KNIFE Logo', src: 'img/logo.png' },
+      logo: { alt: 'KNIFE Logo', src: 'img/logo.png', href: '/sk' },
       items: [
-        { to: '/', label: 'Home', position: 'left' },
-        { to: '/sk/knifes/overview/', label: 'KNIFES (SK)', position: 'left' },
-        { to: '/sk/7Ds/', label: '7Ds (SK)', position: 'left' },
-        { to: '/en/', label: 'Docs (EN)', position: 'left' },
+        { to: '/sk', label: 'Home', position: 'left' },
+        { to: '/sk/knifes/overview', label: 'KNIFES', position: 'left' },
+        { to: '/sk/7Ds', label: '7Ds', position: 'left' },
         { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
       ],
     },

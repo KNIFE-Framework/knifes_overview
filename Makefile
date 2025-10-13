@@ -19,7 +19,7 @@ NODE := node
 NPM  := npm
 
 DOCS_DIR  := docs
-BUILD_DIR := build
+BUILD_DIR = $(PUB_BUILD_DIR)
 
 # Build timestamp in UTC (used for footer "Last build")
 BUILD_DATE := $(shell date -u '+%Y-%m-%d %H:%M:%S UTC')
@@ -37,6 +37,13 @@ PAGES_DIR     = $(WORKTREE_DIR)/docs   # <- GH Pages „/docs“ režim
 # macOS sed (BSD) potrebuje -i ''
 SED_INPLACE := sed -E -i ''
 FIND_MD := find $(DOCS_DIR) -type f \( -name "*.md" -o -name "*.mdx" \)
+
+# --- Content → Docusaurus sync paths (Mac) ---
+CONTENT_DOCS_DIR := content/docs
+PUB_DOCUS_DIR    := publishing/docusaurus
+PUB_DOCS_DIR     := $(PUB_DOCUS_DIR)/docs
+PUB_BUILD_DIR    := $(PUB_DOCUS_DIR)/build
+WORKTREE_DOCS    := $(PAGES_DIR)
 
 # KNIFES generator (CSV → MD)
 # default CSV (SSOT export)
@@ -68,10 +75,18 @@ KNIFES_REF_MD_GLOB := $(KNIFES_REF_DIR)/**/index.md
 KNIFES_DIR ?= docs/sk/knifes
 
 # Minify toggle (default ON). Use: make build MINIFY=0  -> passes --no-minify
+
 MINIFY ?= 1
 BUILD_EXTRA :=
 ifeq ($(MINIFY),0)
   BUILD_EXTRA := --no-minify
+endif
+
+# Docusaurus per-locale helpers (keep SK+EN, but allow single-locale runs)
+DS_LOCALE ?=
+BUILD_LOCALE_OPT :=
+ifneq ($(strip $(DS_LOCALE)),)
+  BUILD_LOCALE_OPT := --locale $(DS_LOCALE)
 endif
 
 
@@ -108,7 +123,8 @@ endif
   knifes-datekey-remove-dry knifes-datekey-remove-apply knifes-smartquotes-scan knifes-smartquotes-fix-dry knifes-smartquotes-fix-apply \
   knife-fm-apply k18-audit k18-fix-dry k18-fix-apply k18-verify k18-align-dry k18-align-apply \
   knifes-ref-audit knifes-ref-align-dry knifes-ref-align-apply \
-  knifes-csv-scan knifes-fix-csv-dry knifes-fix-csv-apply
+  knifes-csv-scan knifes-fix-csv-dry knifes-fix-csv-apply \
+  SY01-sync-content P10-preview P20-serve-worktree
 
 # -------------------------
 # 📌 Help
@@ -140,6 +156,9 @@ help:
 	@echo "  build-fast             - Alias na 'make build MINIFY=0' (bez minify)"
 	@echo "  ci-build               - CI-friendly build bez minifikácie (alias na 'make build MINIFY=0')"
 	@echo "  serve                  - Lokálne naservíruj statický build"
+	@echo "  SY01-sync-content      - Sync SSOT (content/docs) → publishing/docusaurus/docs"
+	@echo "  P10-preview            - Prod náhľad: build + serve lokálne (publishing/docusaurus)"
+	@echo "  P20-serve-worktree     - Serve priamo worktree /docs (to čo ide na Pages)"
 	@echo "  upgrade-docusaurus    - Upgrade Docusaurus balíčkov na poslednú verziu (@latest)"
 	@echo "===== 🚀 Release (CI) =====" 
 	@echo "  release-ci             - SemVer patch bump (npm version patch) + push tag → spustí CI release"
@@ -198,78 +217,14 @@ knifes-build-dry:
 	node "$(SCRIPTS_DIR)/knifes-build.mjs" --csv "$$CSV" --root . --locale $(LOCALE) --dry-run
 
 ## knifes-build-apply: APPLY build (CSV→MD) – writes
+# knifes-build-apply: APPLY build (CSV→MD) – writes
 knifes-build-apply:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
 	echo "🛠 APPLY: KNIFES build (CSV→MD) [$$(date -u +'%Y-%m-%d %H:%M:%S UTC')] – CSV='$$CSV' locale=$(LOCALE)"; \
 	node "$(SCRIPTS_DIR)/knifes-build.mjs" --csv "$$CSV" --root . --locale $(LOCALE)
 
-	@echo "  knifes-finish           - Uzavri KNIFE: FM podsúborov -> backfill -> canonical fix -> verify -> gen"
-	@echo "  knifes_config-finish-dry       - DRY-RUN plán uzavretia KNIFE (nič nezapisuje)"
-	@echo "===== ✅ Verifications & Backfill ====="
-	@echo "  knifes-guid-backfill    - Doplní chýbajúce 'guid' a 'dao' do KNIFE MD (len tam, kde chýbajú)"
-	@echo "  knifes-meta-backfill    - Z CSV doplní 'created'; ak chýba 'modified', nastaví ho na 'created'; voliteľne doplní category/type/priority"
-	@echo "  knifes-verify           - Kombinovaný check: CSV/docs + lint frontmatteru (povinné polia)"
-	@echo "  knifes-verify-csv-docs  - CSV/docs konzistencia (duplicitné ID, prázdne názvy, kolízie slugov, chýbajúce súbory)"
-	@echo "  knifes-verify-frontmatter - Lint povinných polí (guid, dao, id, title, created, modified)"
-	@echo "  knifes-audit-frontmatter - Audit existujúcich KNIFE index.md (guid/dao/dates/slug/locale)"
-	@echo "  knifes-verify-smart     - Konfiguráciou riadená verifikácia (scripts/knifes-verify.mjs)"
-	@echo "===== 📝 Frontmatter Tools ====="
-	@echo "  fm-fix                 - Prepíše frontmatter v docs/ tak, že 'slug' bude zakomentovaný (# slug: \"...\")"
-	@echo "  fm-fix-dry             - Náhľad (DRY-RUN) zmien frontmatteru pre celý docs/ (vytlačí unified diff)"
-	@echo "  fm-fix-file            - Prepíše frontmatter iba jedného súboru; použitie: make fm-fix-file file=PATH"
-	@echo "  fm-fix-file-dry        - DRY-RUN pre jeden súbor; použitie: make fm-fix-file-dry file=PATH"
-	@echo "  fm-set-slug-file       - Aktívny slug pre jediný súbor; použitie: make fm-set-slug-file file=PATH slug=/cesta/bez-locale"
-	@echo "  knifes-fm-add-missing   - Pridá default frontmatter do MD bez FM (idempotentne)"
-	@echo "  knifes-fm-add-missing-dry- DRY-RUN: ukáže, ktoré súbory by dostali frontmatter"
-	@echo "===== 🧼 KNIFE Fix/Checks (FM & Header) ====="
-	@echo "  knife-fm-dry          - DRY-RUN: nový opravný FM nástroj (read-only)"
-	@echo "  knife-fm-fix          - APPLY:   nový opravný FM nástroj (prepíše FM podľa pravidiel)"
-	@echo "  knife-fm-apply        - Alias na knife-fm-fix (APPLY)"
-	@echo "  knife-header-check    - Report:  kontrola H1 nadpisu po FM (technická hlavička)"
-	@echo "  knife-csv-fix         - Pôvodný CSV/folder fix (fallback, bez zásahu do obsahu MD)"
-	@echo "  knife-fm-report-id    - REPORT: detailný výpis plánovaných FM zmien pre jedno ID (make knife-fm-report-id id=K000059)"
-	@echo "  knife-fm-report-tree  - REPORT: detailný výpis FM zmien pre celú zložku KNIFE (make knife-fm-report-tree id=K000083)"
-	@echo "===== 📐 K18 Baseline (Audit → Fix → Verify) ====="
-	@echo "  k18-audit              - Audit FM (read-only) podľa K18 baseline"
-	@echo "  k18-fix-dry            - DRY-RUN návrh opráv FM podľa K18 (bez zápisu)"
-	@echo "  k18-fix-apply          - APPLY: opraví FM podľa K18 (robí si backup vo vnútri skriptu)"
-	@echo "  k18-verify             - Overí výsledok (audit + lint povinných polí)"
-	@echo "  k18-align-dry          - Sekvencia: audit → fix-dry → re-audit (bez zápisu)"
-	@echo "  k18-align-apply        - Sekvencia: fix-apply → verify"
-	@echo "===== 📚 KNIFES_REF (reference content) ====="
-	@echo "  knifes-ref-audit        - Audit KNIFES_REF (read-only)"
-	@echo "  knifes-ref-align-dry    - Audit → (placeholder dry fix) → Audit again"
-	@echo "  knifes-ref-align-apply  - (placeholder apply fix) → Audit"
-	@echo "===== 🧰 KNIFE Normalize (slug→comment, header/nav) ====="
-	@echo "  knife-normalize-dry    - DRY:  ukáže, ktoré hlavné MD by normalize upravil (bez zápisu)"
-	@echo "  knife-normalize-apply  - APPLY: spustí normalize a zapíše zmeny (slug do komentára, NAV, header)"
-	@echo "===== 🧼 CSV Normalize (aliases + dates + status) ====="
-	@echo "  csv-normalize-dry      - DRY:  aliasy hlavičiek (Date→Created…), dátumy (DD.MM.YYYY→YYYY-MM-DD), stavy (wip→inprogress) [NEW 2025-10-03]"
-	@echo "  csv-normalize-apply    - APPLY: normalizuje CSV (pred zápisom spraví backup) [NEW 2025-10-03]"
-	@echo "===== 🧾 KNIFES Frontmatter (audit/fix/merge) ====="
-	@echo "  knifes-frontmatter-audit        - Audit FM podľa pravidiel (read-only). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-fix-dry      - DRY-RUN: návrhy opráv FM (bez zápisu). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-fix-apply    - APPLY:    opraví FM (bez zásahu do obsahu). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-merge        - Merge FM (napr. CSV→MD doplnenia; config-driven). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-audit-id     - Audit iba pre jedno ID (id=K000059). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-fix-id-dry   - DRY-RUN fix FM pre jedno ID (id=K000059). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-fix-id-apply - APPLY    fix FM pre jedno ID (id=K000059). [NEW 2025-10-03]"
-	@echo "===== 🔗 Slug tools (report/comment/delete) ====="
-	@echo "  knifes-frontmatter-slug-report        - Report súborov s aktívnym/komentovaným slugom (id=K000059 scope=index|all). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-slug-comment-dry   - DRY:  aktívny slug -> komentár (bez zápisu). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-slug-comment-apply - APPLY: aktívny slug -> komentár (zapíše). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-slug-delete-dry    - DRY:  vymaže všetky slug riadky (aktívne aj komentár). [NEW 2025-10-03]"
-	@echo "  knifes-frontmatter-slug-delete-apply  - APPLY: vymaže všetky slug riadky (aktívne aj komentár). [NEW 2025-10-03]"
-	@echo "===== 🧹 FM Sanitation (safe-only) ====="
-	@echo "  knifes-datekey-remove-dry   - DRY: iba odstráni kľúč 'date:' z KNIFE index.md (bez zápisu)"
-	@echo "  knifes-datekey-remove-apply - APPLY: odstráni 'date:' z KNIFE index.md (zapíše)"
-	@echo "  knifes-smartquotes-scan     - Scan: nájde “smart quotes” v docs/ (read-only)"
-	@echo "  knifes-smartquotes-fix-dry  - DRY: nahradí “smart quotes” → \" rovné (bez zápisu)"
-	@echo "  knifes-smartquotes-fix-apply- APPLY: nahradí “smart quotes” → \" rovné (zapíše)"
-	@echo "===== 🔢 KNIFE ID6 Migration (K### → K######) ====="
-	@echo "  knifes-id6-dry     - DRY-RUN: kontrola formátu ID a premenovania priečinkov (bez zápisu). [NEW 2025-10-03]"
-	@echo "  knifes-id6-apply   - APPLY:    premenuje priečinky, prepíše FM id a referencie (opatrne). [NEW 2025-10-03]"
-	@echo "  knifes-id6-audit   - Audit po migrácii: overí zhody id vs. názov priečinka. [NEW 2025-10-03]"
+# -------------------------
+# ✅ Backfill & Verify
 # -------------------------
 # 🧰 KNIFE Normalize (main MD in each KNIFE folder)
 # -------------------------
@@ -390,17 +345,17 @@ help-actions:
 # -------------------------
 
 install:
-	$(NPM) install
+	cd "$(PUB_DOCUS_DIR)" && $(NPM) install
 
 dev:
-	BUILD_DATE="September 2025" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="September 2025" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start -- $(BUILD_LOCALE_OPT)
 
 clean:
-	$(NPM) run clear || true
-	rm -rf $(BUILD_DIR) .docusaurus
+	cd "$(PUB_DOCUS_DIR)" && $(NPM) run clear || true
+	rm -rf $(PUB_BUILD_DIR) "$(PUB_DOCUS_DIR)/.docusaurus"
 
-build: clean
-	BUILD_DATE="$(BUILD_DATE)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA)
+build: SY01-sync-content clean
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
 
 build-fast:
 	$(MAKE) build MINIFY=0
@@ -408,8 +363,55 @@ build-fast:
 ci-build:
 	$(MAKE) build MINIFY=0
 
+.PHONY: dev-sk dev-en build-sk build-en
+
+dev-sk:
+	$(MAKE) dev DS_LOCALE=sk
+
+dev-en:
+	$(MAKE) dev DS_LOCALE=en
+
+build-sk:
+	$(MAKE) build DS_LOCALE=sk
+
+build-en:
+	$(MAKE) build DS_LOCALE=en
+
 serve:
-	$(NPM) run serve
+	cd "$(PUB_DOCUS_DIR)" && $(NPM) run serve
+
+.PHONY: docusaurus-dev
+
+docusaurus-dev: dev
+
+# -------------------------
+# 🧭 SSOT → Docusaurus sync (Mac)
+# -------------------------
+SY01-sync-content:
+	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Nenájdené: $(CONTENT_DOCS_DIR)"; exit 1; fi
+	@mkdir -p "$(PUB_DOCS_DIR)"
+	rsync -av --delete --checksum "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"
+	@echo "✅ Synced: $(CONTENT_DOCS_DIR) → $(PUB_DOCS_DIR)"
+
+# -------------------------
+# 🎬 Prod preview (build + serve)
+# -------------------------
+P10-preview: SY01-sync-content
+	cd "$(PUB_DOCUS_DIR)" && npm run build
+	cd "$(PUB_DOCUS_DIR)" && npm run serve
+
+# -------------------------
+# 🌿 Lokálny server nad WORKTREE /docs
+# (simuluje presne GitHub Pages obsah)
+# -------------------------
+P20-serve-worktree:
+	@if [ ! -d "$(WORKTREE_DOCS)" ]; then \
+	  echo "❌ Nenájdený worktree /docs: $(WORKTREE_DOCS)"; \
+	  echo "   Spusť najprv: make check-worktree && make build && make copy-build"; \
+	  exit 1; \
+	fi
+	@echo "🌐 Serving $(WORKTREE_DOCS) na http://127.0.0.1:8080"
+	python3 -m http.server 8080 --directory "$(WORKTREE_DOCS)"
 
 upgrade-docusaurus: ## Upgrade Docusaurus packages to latest version
 	npm i @docusaurus/core@latest \
@@ -420,6 +422,7 @@ upgrade-docusaurus: ## Upgrade Docusaurus packages to latest version
 	      @docusaurus/tsconfig@latest \
 	      @docusaurus/types@latest
 
+#
 # -------------------------
 # 🔍 Link Checker
 # -------------------------
@@ -497,6 +500,17 @@ copy-build:
 	  echo "❌ $(WORKTREE_DIR) nie je git worktree. Spusť: make check-worktree"; \
 	  exit 1; \
 	fi
+	@# Safety guard: never allow empty BUILD_DIR (would expand to "/")
+	@if [ -z "$(BUILD_DIR)" ] || [ "$(BUILD_DIR)" = "/" ] || [ ! -d "$(BUILD_DIR)" ]; then \
+	  echo "❌ BUILD_DIR is invalid: '$(BUILD_DIR)'. Expected a built folder like 'publishing/docusaurus/build'."; \
+	  echo "   Hint: run 'make build' first, or check variable resolution with 'make print-vars'."; \
+	  exit 1; \
+	fi
+	@if [ -z "$(PAGES_DIR)" ]; then \
+	  echo "❌ PAGES_DIR is empty – aborting to prevent rsync to root."; \
+	  exit 1; \
+	fi
+	@echo "🔁 rsync: SRC='$(BUILD_DIR)/'  →  DST='$(PAGES_DIR)/'"
 	mkdir -p "$(PAGES_DIR)"
 	rsync -av --delete \
 	  --filter='P .git' \
@@ -509,9 +523,8 @@ commit-deploy:
 	  exit 1; \
 	fi
 	cd $(WORKTREE_DIR) && git add -A
-	cd $(WORKTREE_DIR) && git commit -m "Deploy $$(
-	  date -u +'%Y-%m-%d %H:%M:%S UTC'
-	)" || echo "⚠️ Žiadne zmeny na commit."
+	# Create a safe, single-line commit message with UTC timestamp; don't fail if nothing to commit
+	cd $(WORKTREE_DIR) && bash -lc 'ts=$(date -u +"%Y-%m-%d %H:%M:%S UTC"); git commit -m "Deploy '"$$ts"'"' || echo "⚠️ Žiadne zmeny na commit."
 	cd $(WORKTREE_DIR) && git push origin $(DEPLOY_BRANCH)
 
 # Rýchly lokálny deploy
@@ -1375,3 +1388,209 @@ knifes-fix-csv-apply:
 	@TS="$$(date -u +'%Y-%m-%d %H:%M:%S UTC')"; \
 	echo "⚙️  FIX CSV APPLY [$${TS}] → IN='$(strip $(CSV_OVERVIEW))' OUTDIR='$(OUT_DIR)'"; \
 	node scripts/knifes-fix-csv.mjs --dir "$(KNIFES_DIR)" --csv "$(strip $(CSV_OVERVIEW))" --outdir "$(OUT_DIR)"
+# -------------------------
+# 📄 Makefile — Docusaurus (minimal, cleaned)
+# Date: 20251012
+# Purpose: Local dev/build + optional Git worktree deploy to gh-pages-docusaurus
+# -------------------------
+
+.DEFAULT_GOAL := help
+SHELL := /bin/bash
+NODE := node
+NPM  := npm
+
+# ---- Paths
+CONTENT_DOCS_DIR := content/docs
+PUB_DOCUS_DIR    := publishing/docusaurus
+PUB_DOCS_DIR     := $(PUB_DOCUS_DIR)/docs
+PUB_BUILD_DIR    := $(PUB_DOCUS_DIR)/build
+
+# ---- Worktree Deploy (GitHub Pages /docs mode)
+DEPLOY_BRANCH := gh-pages-docusaurus
+WORKTREE_DIR  := ../$(DEPLOY_BRANCH)
+PAGES_DIR     := $(WORKTREE_DIR)/docs
+
+# ---- Build options
+BUILD_DATE := $(shell date -u '+%Y-%m-%d %H:%M:%S UTC')
+MINIFY ?= 1
+BUILD_EXTRA :=
+ifeq ($(MINIFY),0)
+  BUILD_EXTRA := --no-minify
+endif
+
+# ---- i18n helpers (optional single-locale run)
+DS_LOCALE ?=
+BUILD_LOCALE_OPT :=
+ifneq ($(strip $(DS_LOCALE)),)
+  BUILD_LOCALE_OPT := --locale $(DS_LOCALE)
+endif
+
+# =========================================================
+# H10: Help / Meta
+# =========================================================
+.PHONY: help mode doctor print-vars
+help: ## H10 – Help
+	@echo "================  KNIFE Docusaurus – Minimal Makefile  ================"
+	@echo "Core:"
+	@echo "  SY01-sync-content        – Sync content/docs → publishing/docusaurus/docs"
+	@echo "  D10-dev                  – Start local dev server (option: DS_LOCALE=sk|en)"
+	@echo "  B10-build                – Production build (MINIFY=$(MINIFY))"
+	@echo "  B20-build-fast           – Build without minify (MINIFY=0)"
+	@echo "  S10-serve                – Serve static build locally"
+	@echo ""
+	@echo "Deploy (Git worktree → $(DEPLOY_BRANCH)):"
+	@echo "  W10-check-worktree       – Create/repair worktree ../$(DEPLOY_BRANCH)"
+	@echo "  W20-copy-build           – Rsync build → $(PAGES_DIR)"
+	@echo "  W30-commit-deploy        – Commit & push worktree"
+	@echo "  W40-deploy               – W10 + build + copy + commit"
+	@echo "  W50-full-deploy          – W10 + push-main + build + copy + commit"
+	@echo "  W60-worktree-status      – Show worktree status"
+	@echo ""
+	@echo "Preview:"
+	@echo "  P10-preview              – build + serve (production preview)"
+	@echo ""
+	@echo "Aliases kept for compatibility: dev/build/build-fast/serve/check-worktree/copy-build/commit-deploy/deploy/full-deploy"
+	@echo "======================================================================="
+
+mode: ## H20 – Show deploy mode (worktree availability)
+	@echo "🔎 Deploy mode:"
+	@if [ -d "$(WORKTREE_DIR)/.git" ]; then echo " • Worktree: ENABLED ($(WORKTREE_DIR))"; else echo " • Worktree: disabled"; fi
+
+doctor: ## H30 – Quick environment diagnostic
+	@echo "🩺 Node:  $$(node -v 2>/dev/null || echo n/a)"
+	@echo "🩺 NPM:   $$(npm -v 2>/dev/null || echo n/a)"
+	@echo "🩺 Git:   $$(git --version 2>/dev/null || echo n/a)"
+	@echo "🩺 Origin: $$(git remote -v | awk 'NR==1{print $$2}')"
+	@echo "🩺 Branch: $$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo n/a)"
+
+print-vars: ## H40 – Show key variables
+	@echo "[CONTENT_DOCS_DIR] = $(CONTENT_DOCS_DIR)"
+	@echo "[PUB_DOCUS_DIR]    = $(PUB_DOCUS_DIR)"
+	@echo "[PUB_DOCS_DIR]     = $(PUB_DOCS_DIR)"
+	@echo "[PUB_BUILD_DIR]    = $(PUB_BUILD_DIR)"
+	@echo "[WORKTREE_DIR]     = $(WORKTREE_DIR)"
+	@echo "[PAGES_DIR]        = $(PAGES_DIR)"
+	@echo "[DS_LOCALE]        = $(DS_LOCALE)"
+	@echo "[BUILD_EXTRA]      = $(BUILD_EXTRA)"
+
+# =========================================================
+# SY01: Sync content → docusaurus/docs
+# =========================================================
+.PHONY: SY01-sync-content
+SY01-sync-content: ## SY01 – Sync SSOT content/docs → publishing/docusaurus/docs
+	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
+	@mkdir -p "$(PUB_DOCS_DIR)"
+	rsync -av --delete --checksum "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"
+	@echo "✅ Synced: $(CONTENT_DOCS_DIR) → $(PUB_DOCS_DIR)"
+
+# =========================================================
+# D10: Dev / Clean / Build / Serve
+# =========================================================
+.PHONY: D10-dev clean B10-build B20-build-fast S10-serve dev build build-fast serve dev-sk dev-en build-sk build-en
+
+D10-dev: ## D10 – Start dev server
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start -- $(BUILD_LOCALE_OPT)
+
+clean: ## C10 – Clean caches and build output
+	cd "$(PUB_DOCUS_DIR)" && $(NPM) run clear || true
+	rm -rf "$(PUB_BUILD_DIR)" "$(PUB_DOCUS_DIR)/.docusaurus"
+
+B10-build: SY01-sync-content clean ## B10 – Production build
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
+
+B20-build-fast: ## B20 – Build without minify
+	$(MAKE) B10-build MINIFY=0
+
+S10-serve: ## S10 – Serve static build
+	cd "$(PUB_DOCUS_DIR)" && $(NPM) run serve
+
+# Compatibility aliases
+dev: D10-dev
+build: B10-build
+build-fast: B20-build-fast
+serve: S10-serve
+
+# Locale helpers
+dev-sk:
+	$(MAKE) D10-dev DS_LOCALE=sk
+dev-en:
+	$(MAKE) D10-dev DS_LOCALE=en
+build-sk:
+	$(MAKE) B10-build DS_LOCALE=sk
+build-en:
+	$(MAKE) B10-build DS_LOCALE=en
+
+# =========================================================
+# P10: Production preview (build + serve)
+# =========================================================
+.PHONY: P10-preview
+P10-preview: SY01-sync-content ## P10 – Build + Serve (preview)
+	cd "$(PUB_DOCUS_DIR)" && $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
+	cd "$(PUB_DOCUS_DIR)" && $(NPM) run serve
+
+# =========================================================
+# W10–W60: Worktree deploy (gh-pages-docusaurus)
+# =========================================================
+.PHONY: W10-check-worktree W20-copy-build W30-commit-deploy W40-deploy W50-full-deploy W60-worktree-status remove-worktree push-main \
+        check-worktree copy-build commit-deploy deploy full-deploy worktree-status
+
+W10-check-worktree: ## W10 – Create/repair worktree
+	@if [ -d "$(WORKTREE_DIR)" ]; then \
+	  if git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then \
+	    echo "✅ Worktree OK: $(WORKTREE_DIR) → $(DEPLOY_BRANCH)"; \
+	  else \
+	    echo "⚠️  $(WORKTREE_DIR) exists but isn't a git worktree, resetting…"; \
+	    rm -rf "$(WORKTREE_DIR)"; git worktree prune; git branch -D $(DEPLOY_BRANCH) 2>/dev/null || true; \
+	  fi; \
+	fi; \
+	if ! git worktree list | grep -q "$(WORKTREE_DIR)"; then \
+	  echo "ℹ️  Creating worktree for $(DEPLOY_BRANCH)…"; \
+	  git fetch origin || true; \
+	  if git ls-remote --exit-code --heads origin $(DEPLOY_BRANCH) >/dev/null 2>&1; then \
+	    git worktree add -B $(DEPLOY_BRANCH) "$(WORKTREE_DIR)" origin/$(DEPLOY_BRANCH); \
+	  else \
+	    git branch -f $(DEPLOY_BRANCH) 2>/dev/null || true; \
+	    git worktree add "$(WORKTREE_DIR)" $(DEPLOY_BRANCH); \
+	    cd "$(WORKTREE_DIR)" && git commit --allow-empty -m "init $(DEPLOY_BRANCH)" && git push -u origin $(DEPLOY_BRANCH); \
+	  fi; \
+	fi
+
+W20-copy-build: ## W20 – Rsync build → /docs
+	@if ! git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then echo "❌ $(WORKTREE_DIR) not a git worktree. Run: make W10-check-worktree"; exit 1; fi
+	@if [ -z "$(PUB_BUILD_DIR)" ] || [ ! -d "$(PUB_BUILD_DIR)" ]; then echo "❌ Build not found: $(PUB_BUILD_DIR). Run: make build"; exit 1; fi
+	@echo "🔁 rsync: '$(PUB_BUILD_DIR)/' → '$(PAGES_DIR)/'"
+	mkdir -p "$(PAGES_DIR)"
+	rsync -av --delete --filter='P .git' --filter='P .gitignore' "$(PUB_BUILD_DIR)/" "$(PAGES_DIR)/"
+
+W30-commit-deploy: ## W30 – Commit & push worktree
+	@if ! git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then echo "❌ $(WORKTREE_DIR) not a git worktree. Run: make W10-check-worktree"; exit 1; fi
+	cd $(WORKTREE_DIR) && git add -A
+	cd $(WORKTREE_DIR) && bash -lc 'ts=$$(date -u +"%Y-%m-%d %H:%M:%S UTC"); git commit -m "Deploy '"'"'$$ts'"'"'' || echo "⚠️ Nothing to commit."'
+	cd $(WORKTREE_DIR) && git push origin $(DEPLOY_BRANCH)
+
+W40-deploy: W10-check-worktree B10-build W20-copy-build W30-commit-deploy ## W40 – Build & deploy to worktree
+
+W50-full-deploy: W10-check-worktree push-main B10-build W20-copy-build W30-commit-deploy ## W50 – Push main + build + deploy
+	@echo "🎉 Full deploy → $(DEPLOY_BRANCH)"
+
+W60-worktree-status: ## W60 – Show worktree status
+	@git worktree list
+	@echo "----"
+	@git -C "$(WORKTREE_DIR)" status -sb || true
+
+remove-worktree: ## WX – Remove worktree (safe)
+	git worktree remove "$(WORKTREE_DIR)" 2>/dev/null || true
+	git worktree prune || true
+
+push-main: ## GX – Safe push of main branch
+	@if [ -n "$$(git status --porcelain)" ]; then echo "❌ Uncommitted changes on main!"; exit 1; fi
+	git push origin main
+	@echo "✅ main pushed."
+
+# Compatibility aliases
+check-worktree: W10-check-worktree
+copy-build:     W20-copy-build
+commit-deploy:  W30-commit-deploy
+deploy:         W40-deploy
+full-deploy:    W50-full-deploy
+worktree-status: W60-worktree-status

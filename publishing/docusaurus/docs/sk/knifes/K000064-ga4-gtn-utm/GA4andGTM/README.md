@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000064-ga4-gtn-utm"
 guid: "477ac967-583e-44ce-aedc-849bb601adfc"
 dao: "knife"
 title: "GA4 Guides2"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "-"
 type: "-"
-priority: "-"
+priority: "no"
 tags: ["KNIFE"]
-created: "2025-09-24"
-modified: "-"
-status: "draft"
 locale: "sk"
 sidebar_label: "GA4 Guides2"
+created: "2025-09-24"
+modified: "-"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # GA4 Guides2
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"477ac967-583e-44ce-aedc-849bb601adfc"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `477ac967-583e-44ce-aedc-849bb601adfc`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 **Author:** Roman Kazička  
 **Date:** 2025-08-24  
@@ -60,7 +68,6 @@ author_did: "-"
    - ASCII diagram hierarchie
    - [GA4_Account_vs_Property](./GA4_Account_vs_Property.md)
 
-
 4. **Getting_Started_with_GA4_GTM.md**  
    - Úvod do Google Tag Managera a jeho prepojenie s GA4  
    - Ako GTM zjednodušuje správu eventov a kódov  
@@ -68,12 +75,10 @@ author_did: "-"
    - ASCII diagram toku dát
 [Getting_Started_with_GA4_GTM](./Getting_Started_with_GA4_GTM.md)
 
-
 5. **Getting_Started_with_GA4_UTM.md**  
    - Úvod do Google Campaign Managera a jeho prepojenie s GA4  
    - Ako UTM zjednodušuje správu eventov a kódov zo zdrojov, kde neviem dať metriky  
    - [GettingStarted_GA4_UTM.md](./GettingStarted_GA4_UTM.md)
-
 
 ---
 
@@ -81,4 +86,3 @@ author_did: "-"
 - Tento balík slúži ako základný **štartovací balíček** pre tvoje projekty SystemThinking, LetItGrow, KNIFE a ďalšie.  
 - Každý `.md` súbor môžeš commitnúť do repozitára ako dokumentáciu.  
 - Slúži aj ako interná „mini knižnica“ pre výuku a tréning.
-

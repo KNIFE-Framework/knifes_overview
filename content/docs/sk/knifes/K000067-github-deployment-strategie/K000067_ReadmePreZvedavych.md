@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000067-github-deployment-strategie"
 guid: "c0804116-d26d-40ed-991c-e1aaeb6734d4"
 dao: "knife"
 title: "GitHub Deployment Strategie - Pre Zvedavých"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "-"
 type: "-"
-priority: "-"
+priority: "no"
 tags: ["KNIFE"]
-created: "2025-09-24"
-modified: "-"
-status: "draft"
 locale: "sk"
 sidebar_label: "GitHub Deployment Strategie - Pre Zvedavých"
+created: "2025-09-24"
+modified: "-"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # GitHub Deployment Strategie - Pre Zvedavých
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"c0804116-d26d-40ed-991c-e1aaeb6734d4"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `c0804116-d26d-40ed-991c-e1aaeb6734d4`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 Tento návod je určený pre študentov, ktorí chcú rýchlo a jednoducho nasadiť svoj projekt pomocou GitHubu.
 

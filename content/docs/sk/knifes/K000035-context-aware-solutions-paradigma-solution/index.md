@@ -1,26 +1,43 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000035"
 guid: "a0dd0165-5fd8-4d56-b1e5-46b014bf6dd6"
 dao: "knife"
 title: "Context Aware Solutions / paradigma, solution"
+description: ""
 author: "Roman Kazicka"
+authors: ["Roman Kazicka",""]
 category: "SSL certificates DIY"
 type: "User guide"
-priority: "Vysoka"
+priority: "no"
 tags: []
+locale: "en"
+sidebar_label: "Home"
 created: "2025-05-26"
 modified: "-"
 status: "inprogress"
-# rights & licensing
+privacy: "public"
 rights_holder_content: ""
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Educational purposes only."
-
-authors: ["Roman Kazicka"]
-
-# slug: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
 ---
+# Context Aware Solutions / paradigma, solution
+<!-- fm-visible: start -->
+> **GUID:** `a0dd0165-5fd8-4d56-b1e5-46b014bf6dd6`
+> **Status:** `inprogress` · **Author:** Roman Kazicka · **License:** CC-BY-NC-SA-4.0
+<!-- fm-visible: end -->
 
 ## Summary
 _Doplň stručný popis._

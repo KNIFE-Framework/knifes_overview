@@ -1,35 +1,43 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "01.principles"
 guid: "9b614a56-1f92-4b3f-9fdd-d3ea5bbb938d"
-dao: class
+dao: "class"
 title: "01.Principles"
 description: ""
-author: Roman Kazička
-authors: ["Roman Kazička"]
+author: "Roman Kazička"
+authors: ["Roman Kazička",""]
 category: ""
 type: ""
-priority: ""
+priority: "no"
 tags: []
-created: 2025-09-23
-modified: ""
-status: draft
-locale: sk
+locale: "sk"
 sidebar_label: "01.Principles"
-rights_holder_content: Roman Kazička
+created: "2025-09-23"
+modified: ""
+status: "inprogress"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: ""
 author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # 01.Principles
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"9b614a56-1f92-4b3f-9fdd-d3ea5bbb938d"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `9b614a56-1f92-4b3f-9fdd-d3ea5bbb938d`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 > This is a placeholder for `7Ds/01.D1-Management/04.Decisions/01.Principles/` content.

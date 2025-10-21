@@ -1,38 +1,40 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000"
 guid: "02921a34-5a83-4713-bafa-1be560a98d18"
 dao: "knife"
 title: "Transparentná -Stabilná infraštruktúra pre Sites"
 description: "Počas práce s GitHub a Pages je potrebné mať zladené prostredie na klientovi a na serveri. Lokál je závislý od OS, od verzií vývojových nástrojov. Ideálne by bolo, keby existovalo stabilné, opakovateľné prostredie pre vytvorenie lokálneho prostredia, bez ohľadu na operačný systém na klientovi – Windows, Mac, Linux."
 author: "Roman Kazička"
+authors: ["Roman Kazička",""]
+category: ""
+type: ""
+priority: "no"
+tags: ["KNIFE","images"]
+locale: "sk"
+sidebar_label: "K000081 – Transparentná -Stabilná infraštruktúra pre Sites"
 created: "2025-09-24"
 modified: "2025-09-24"
-date: "2025-09-24"
 status: "backlog"
-tags: ["KNIFE", "images"]
-# slug: "/sk/knifes/k000-transparentna-stabilna-infrastruktura-pre-sites"
-sidebar_label: "K000081 – Transparentná -Stabilná infraštruktúra pre Sites"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
+date: "2025-09-24"
 sidebar_position: "81"
-locale: "sk"
 ---
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `02921a34-5a83-4713-bafa-1be560a98d18`
-> **Status:** `idea` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `02921a34-5a83-4713-bafa-1be560a98d18`
-> **Status:** `idea` · **Author:** Roman Kazička
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `02921a34-5a83-4713-bafa-1be560a98d18`
-> **Status:** `idea` · **Author:** Roman Kazička
-<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->
@@ -40,13 +42,11 @@ locale: "sk"
 ---
 
 # KNIFE K000081 – Transparentná -Stabilná infraštruktúra pre Sites
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"02921a34-5a83-4713-bafa-1be560a98d18"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `"idea"` · **Author:** "Roman Kazička" · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `02921a34-5a83-4713-bafa-1be560a98d18`
+> **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 ## 🎯 Čo rieši (účel, cieľ)
 
@@ -74,7 +74,6 @@ Základná architektúra je popísaná v KNIFE_027 [KNIFE_027-K000027-git-for-du
 - Detaily viď obrázok
 
 ![OS system agnostic riešenie](./img/GitHub-Sites-Concepts-clientSolution.png)
-
 
 ## 🧪 Ako to použiť (aplikácia)
 - Existuje jednoduché transparentné riešenie?

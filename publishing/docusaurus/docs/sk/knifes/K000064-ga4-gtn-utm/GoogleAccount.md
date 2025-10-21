@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000064-ga4-gtn-utm-03"
 guid: "d770f029-a5d4-4c3d-b82d-a8952f4913bf"
 dao: "knife"
 title: "Google Account vs Google Workspace"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "-"
 type: "-"
-priority: "-"
+priority: "no"
 tags: ["KNIFE"]
-created: "2025-09-24"
-modified: "-"
-status: "draft"
 locale: "sk"
 sidebar_label: "Google Account vs Google Workspace"
+created: "2025-09-24"
+modified: "-"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # Google Account vs Google Workspace
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"d770f029-a5d4-4c3d-b82d-a8952f4913bf"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `d770f029-a5d4-4c3d-b82d-a8952f4913bf`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 **Author:** Roman Kazička  
 **Date:** 2025-08-21  
@@ -63,7 +71,6 @@ Na solo použitie nepotrebuješ Workspace. Stačí vytvoriť **osobný Google ú
 
 ## 🗂️ Diagram vzťahov
 
-
 Google Account (Identita)
 │
 ├── roman.kazicka@systemthinking.xyz   ← Osobný Google účet s vlastnou doménou
@@ -76,8 +83,6 @@ Google Account (Identita)
     ├── Centrálna správa účtov
     ├── Firemný Gmail a Drive
     └── Účty vlastnené organizáciou
-
-
 
 📊 Porovnanie: Osobný Google účet vs Workspace
 | Kritérium | Osobný Google účet (aj s vlastnou doménou) | Google Workspace (firemný účet) |
@@ -93,7 +98,7 @@ Google Account (Identita)
 | **Vlastníctvo účtov** | Účet patrí osobe | Účty patria firme |
 | **Typické použitie** | Freelance, solo projekty | Firmy, školy, agentúry |
 
-# Google Accounts Flowchart
+## Google Accounts Flowchart
 
 **Author:** Roman Kazička  
 **Date:** 2025-08-21  
@@ -102,7 +107,7 @@ Google Account (Identita)
 ---
 
 ## 📊 Decision Flowchart
-# Google Accounts Flowchart
+## Google Accounts Flowchart
 
 **Author:** Roman Kazička  
 **Date:** 2025-08-21  
@@ -130,6 +135,5 @@ Google Account (Identita)
                                           │
                                           ▼
                           Rozdeľ podľa účelu (NEmiešaj)
-
 
 [GA4 vs GTM- Koncepčný diagram](./img/ga4_gtm_parallel_links.png)

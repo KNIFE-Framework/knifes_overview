@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000067_makefile_appendix"
 guid: "da331cd7-ea63-41fc-ab47-216b48f9eed9"
 dao: "knife"
 title: "K000067 Appendix – Makefile pre GitHub Pages (A/B režimy)"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "-"
 type: "-"
-priority: "-"
+priority: "no"
 tags: ["KNIFE"]
-created: "2025-09-24"
-modified: "-"
-status: "draft"
 locale: "sk"
 sidebar_label: "K000067 Appendix – Makefile pre GitHub Pages (A/B režimy)"
+created: "2025-09-24"
+modified: "-"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # K000067 Appendix – Makefile pre GitHub Pages (A/B režimy)
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"da331cd7-ea63-41fc-ab47-216b48f9eed9"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `da331cd7-ea63-41fc-ab47-216b48f9eed9`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 Tento appendix obsahuje **kompletný Makefile** pre šablónu `git_class_template_v1` s dvomi nasadzovacími režimami:
 
@@ -69,14 +77,14 @@ Tento appendix obsahuje **kompletný Makefile** pre šablónu `git_class_templat
 > Vlož do koreňa repozitára ako `Makefile`.
 
 ```make
-# =========================
-# Makefile – Docusaurus + GitHub Pages (A/B)
-# =========================
+## =========================
+## Makefile – Docusaurus + GitHub Pages (A/B)
+## =========================
 SHELL := /bin/bash
 NODE  := node
 NPM   := npm
 
-# Režim (len informačný – skutočný prepínač robia ciele use-branch/use-actions)
+## Režim (len informačný – skutočný prepínač robia ciele use-branch/use-actions)
 MODE ?= branch     # branch | actions
 DOMAIN ?=          # pre custom doménu (CNAME)
 
@@ -87,9 +95,9 @@ DOMAIN ?=          # pre custom doménu (CNAME)
         init-pages-actions deploy-actions \
         gh-init-pages gh-pages-status
 
-# -------------------------
-# Základ
-# -------------------------
+## -------------------------
+## Základ
+## -------------------------
 install: ; $(NPM) ci
 
 dev: ; $(NPM) start
@@ -106,9 +114,9 @@ mode:
 	  echo "→ Actions deploy (GitHub Pages workflow)"; \
 	fi
 
-# -------------------------
-# Custom domain helper (CNAME)
-# -------------------------
+## -------------------------
+## Custom domain helper (CNAME)
+## -------------------------
 set-domain:
 	@if [ -z "$(DOMAIN)" ]; then echo "Použitie: make set-domain DOMAIN=sub.domain.tld"; exit 1; fi
 	mkdir -p static && echo "$(DOMAIN)" > static/CNAME
@@ -120,9 +128,9 @@ unset-domain:
 	git add -A && git commit -m "chore: unset CNAME" || true
 	@echo "✅ CNAME odstránený"
 
-# -------------------------
-# A) Branch deploy (jednoduchý)
-# -------------------------
+## -------------------------
+## A) Branch deploy (jednoduchý)
+## -------------------------
 use-branch:
 	@[ -f .github/workflows/deploy.yml ] && mv .github/workflows/deploy.yml .github/workflows/deploy.yml.disabled || true
 	git add -A && git commit -m "ci: use Branch deploy (disable Actions)" || true
@@ -132,37 +140,37 @@ init-pages-branch:
 	@echo "➡️  V UI nastav: Settings → Pages → Build and deployment = Deploy from branch" \
 	      "→ branch: gh-pages, folder: /(root)"
 
-# Vstavané v Docusauruse – push na gh-pages
+## Vstavané v Docusauruse – push na gh-pages
 deploy-branch:
 	$(NPM) run deploy
 
-# -------------------------
-# B) Actions deploy (oficiálny)
-# -------------------------
+## -------------------------
+## B) Actions deploy (oficiálny)
+## -------------------------
 use-actions:
 	@mkdir -p .github/workflows
 	@[ -f .github/workflows/deploy.yml.disabled ] && mv .github/workflows/deploy.yml.disabled .github/workflows/deploy.yml || true
 	git add -A && git commit -m "ci: enable Actions deploy" || true
 	@echo "🔧 ENABLED Actions workflow. Spusť: make init-pages-actions"
 
-# Manuálny init – ak nechceš používať gh CLI
+## Manuálny init – ak nechceš používať gh CLI
 init-pages-actions:
 	@echo "➡️  Settings → Pages → Source = GitHub Actions (uložiť)"; \
 	echo "➡️  Settings → Environments → create 'github-pages' (bez reviewers/wait timer)"; \
 	echo "➡️  Settings → Actions → Workflow permissions: Read & write";
 
-# V CI stačí push do main alebo Run workflow
+## V CI stačí push do main alebo Run workflow
 deploy-actions:
 	@echo "Pushni do main alebo spusti workflow ručne (Run workflow v Actions)."
 
-# -------------------------
-# (Voliteľné) Automatizovaný init cez gh CLI
-# -------------------------
-# Požiadavky: gh auth login; práva na repo
+## -------------------------
+## (Voliteľné) Automatizovaný init cez gh CLI
+## -------------------------
+## Požiadavky: gh auth login; práva na repo
 ORG ?= $(shell git config --get remote.origin.url | sed -E 's#.*/([^/]+)/[^/]+(\.git)?#\1#')
 REPO ?= $(shell basename -s .git `git rev-parse --show-toplevel`)
 
-# Vytvorí env, zapne Pages=Actions, nastaví permissions
+## Vytvorí env, zapne Pages=Actions, nastaví permissions
 gh-init-pages:
 	@echo "🔧 gh-init-pages pre $(ORG)/$(REPO)…"; \
 	gh api -X PUT repos/$(ORG)/$(REPO)/environments/github-pages >/dev/null; \
@@ -187,7 +195,7 @@ gh-pages-status:
 ## Hromadný init (pre desiatky repozitárov)
 
 ```bash
-# vyžaduje: gh auth login
+## vyžaduje: gh auth login
 ORG="06-STH-Projects"
 for REPO in $(gh repo list $ORG --limit 200 --json name -q '.[].name' | grep '^class_'); do
   echo ">>> $ORG/$REPO"

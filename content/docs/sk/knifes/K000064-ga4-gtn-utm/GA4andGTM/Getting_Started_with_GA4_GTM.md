@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000064-ga4-gtn-utm-07"
 guid: "936bcae4-7627-4d7a-a583-02ca86d69835"
 dao: "knife"
 title: "Getting Started with GA4 + GTM"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "-"
 type: "-"
-priority: "-"
+priority: "no"
 tags: ["KNIFE"]
-created: "2025-09-24"
-modified: "-"
-status: "draft"
 locale: "sk"
 sidebar_label: "Getting Started with GA4 + GTM"
+created: "2025-09-24"
+modified: "-"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # Getting Started with GA4 + GTM
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"936bcae4-7627-4d7a-a583-02ca86d69835"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `936bcae4-7627-4d7a-a583-02ca86d69835`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 **Author:** Roman Kazička  
 **Date:** 2025-08-24  
@@ -125,7 +133,6 @@ User action (klik, scroll, form)
 ---
 [ga4_gtm_hierarchy_links.drawio](./ga4_gtm_hierarchy_links.drawio)
 ![ga4_gtm_hierarchy_links.png](./ga4_gtm_hierarchy_links.png)
-
 
 ## 🎯 Odporúčanie pre teba
 

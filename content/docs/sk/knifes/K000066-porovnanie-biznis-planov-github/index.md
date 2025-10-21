@@ -1,51 +1,51 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000"
 guid: "a2c536d5-d18f-4d80-a2bd-9ef502904b9a"
 dao: "knife"
 title: "Porovnanie biznis plánov GitHub"
 description: "Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?"
 author: "Roman Kazicka"
+authors: ["Roman Kazička",""]
+category: ""
+type: ""
+priority: "no"
+tags: ["KNIFE"]
+locale: "sk"
+sidebar_label: "K000066 – Porovnanie biznis plánov GitHub"
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "backlog"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k000-porovnanie-biznis-planov-github"
-sidebar_label: "K000066 – Porovnanie biznis plánov GitHub"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
+date: "2025-09-17"
 sidebar_position: "66"
-locale: "sk"
 ---
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `a2c536d5-d18f-4d80-a2bd-9ef502904b9a`
-> **Status:** `new` · **Author:** Roman Kazicka · **License:** CC-BY-NC-SA-4.0
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `a2c536d5-d18f-4d80-a2bd-9ef502904b9a`
-> **Status:** `new` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `a2c536d5-d18f-4d80-a2bd-9ef502904b9a`
-> **Status:** `new` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K000066 – Porovnanie biznis plánov GitHub
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"a2c536d5-d18f-4d80-a2bd-9ef502904b9a"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `a2c536d5-d18f-4d80-a2bd-9ef502904b9a`
+> **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 ## 🎯 Čo rieši (účel, cieľ)
     S akými nákladmi by som mal počítať, ak by som si chcel vybudovať ekosystém na GitHube?
@@ -60,7 +60,7 @@ locale: "sk"
 ## ⚡ Rýchly návod (Top)
 
 ## 📜 Detailný článok
-# GitHub plány a hodnota Education Benefit
+## GitHub plány a hodnota Education Benefit
 
 | Plan / Účet      | Cena (2025)           | Hlavné funkcie                           | Pre koho je to vhodné?               | Edu ekvivalent |
 |------------------|-----------------------|-------------------------------------------|--------------------------------------|----------------|

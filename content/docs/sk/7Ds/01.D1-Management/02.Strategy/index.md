@@ -1,48 +1,55 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "02.strategy"
 guid: "3341260c-ab5d-423a-b7f9-deaf588f2021"
-dao: class
+dao: "class"
 title: "02.Strategy"
 description: ""
-author: Roman Kazička
-authors: ["Roman Kazička"]
+author: "Roman Kazička"
+authors: ["Roman Kazička",""]
 category: ""
 type: ""
-priority: ""
+priority: "no"
 tags: []
-created: 2025-09-23
-modified: ""
-status: draft
-locale: sk
+locale: "sk"
 sidebar_label: "02.Strategy"
-rights_holder_content: Roman Kazička
+created: "2025-09-23"
+modified: ""
+status: "inprogress"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: ""
 author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # 02.Strategy
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"3341260c-ab5d-423a-b7f9-deaf588f2021"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `3341260c-ab5d-423a-b7f9-deaf588f2021`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 id: index
 title: 02.Strategy
 description: Navigácia pre KNIFE prehľady v oblasti Strategy
 ---
 
-# 📂 Strategy
+## 📂 Strategy
 
 Rýchla navigácia:
 - 📋 **[Zoznam s detailami – tabuľka](../../../knifes/KNIFE_Overview_List.md)**
 - 📰 **[Zoznam s detailami – blog](../../../knifes/KNIFE_Overview_Details.md)**
-
 
 ---
 

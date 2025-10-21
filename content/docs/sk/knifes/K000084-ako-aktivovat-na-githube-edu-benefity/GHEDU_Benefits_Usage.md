@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000084_02"
 guid: "280b3b24-c7e8-4aa9-a870-838c461f8b10"
 dao: "knife"
 title: "KNIFE – K000084_02"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "deliverable"
 type: "knife"
-priority: "-"
+priority: "no"
 tags: ["-"]
-created: "2025-09-26"
-modified: "2025-09-26"
-status: "draft"
 locale: "sk"
 sidebar_label: "K000084_02 –GitHub Education Faculty Benefits – Usage Scenario"
+created: "2025-09-26"
+modified: "2025-09-26"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Educational content. Use at your own risk."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # GitHub Education Faculty Benefits – Usage Scenario
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"280b3b24-c7e8-4aa9-a870-838c461f8b10"`
->   
-> **Category:** `deliverable` · **Type:** `knife` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `280b3b24-c7e8-4aa9-a870-838c461f8b10`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 Tento návod popisuje, čo robiť po schválení GitHub Education Faculty Benefits.
 
@@ -51,10 +59,8 @@ Tento návod popisuje, čo robiť po schválení GitHub Education Faculty Benefi
 
 ![Upgrade to GitHubH Team](./img/activation/GH-UpgradeToGHTEAM.png)
 
-
 ### Kontrola aktivácie
 - Na screenshote je vidno 0€/mesiac, inak by tam bolo 4€/mesiac
-
 
 ![Step 2 - Kontrola aktivácie](./img/activation/Check_bill-01.png)
 - Využitie podľa repozitárov
@@ -104,7 +110,7 @@ Vidno, že poplatky za používanie nejaké sa priebežne počítajú, ale mne s
 
 ![Copilot-07](./img/activation/Copilot-07-VSC.png)
 
-# Získané vlastnosti
+## Získané vlastnosti
 https://github.com/settings/copilot/features
 
 ---
@@ -113,18 +119,16 @@ https://github.com/settings/copilot/features
 - Prejdi na [https://github.com/settings/education/benefits](https://github.com/settings/education/benefits).
 - Mal by svietiť zelený status **Approved**.
 
-
-
 ---
 
-# 🎉 Výhody po aktivácii
+## 🎉 Výhody po aktivácii
 - GitHub Team plan pre organizácie zdarma (private repo, Actions minutes, Pages builds)
 - Copilot Pro pre teba a možnosť kupónov pre študentov
 - Partnerské benefity (JetBrains, Canva EDU, DigitalOcean credits ...)
 
 ---
 
-# 📌 Ďaľšie informácie
+## 📌 Ďaľšie informácie
 
 https://docs.github.com/en/copilot
 

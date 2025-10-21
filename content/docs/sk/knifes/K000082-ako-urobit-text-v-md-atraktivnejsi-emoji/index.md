@@ -1,51 +1,51 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000"
 guid: "060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3"
 dao: "knife"
 title: "Ako urobiť text v MD atraktívnejší (emoji)"
 description: "Čítanie s porozumením je veľmi náročná disciplína. Preto je dôležité priblížiť text ku príbehu pomocou malých obrázkov. Dobrý kandif'dát je EMOJI"
 author: "Roman Kazička"
+authors: ["Roman Kazička",""]
+category: ""
+type: ""
+priority: "no"
+tags: ["KNIFE"]
+locale: "sk"
+sidebar_label: "K000082 – Ako urobiť text v MD atraktívnejší (emoji)"
 created: "2025-09-28"
 modified: "2025-09-28"
-date: "2025-09-28"
 status: "backlog"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k000-ako-urobit-text-v-md-atraktivnejsi-emoji"
-sidebar_label: "K000082 – Ako urobiť text v MD atraktívnejší (emoji)"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
+date: "2025-09-28"
 sidebar_position: "82"
-locale: "sk"
 ---
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3`
-> **Status:** `done md` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3`
-> **Status:** `done md` · **Author:** Roman Kazička
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3`
-> **Status:** `done md` · **Author:** Roman Kazička
-<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../overview.md)
 ---
 # KNIFE K000082 – Ako urobiť text v MD atraktívnejší (emoji)
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `"done md"` · **Author:** "Roman Kazička" · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3`
+> **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 ## 🎯 Čo rieši (účel, cieľ)
 - Obyčajný plain  text je fádny a oko sa nemá na čom zastaviť. Emoji malý grafický symbol, vyjadrujúci príbeh. Malá kotvička pre oko aj pre mozog.  
@@ -64,7 +64,7 @@ locale: "sk"
 👉 https://gist.github.com/rxaviers/7360908
 	•	Zoznam emoji, ktoré určite fungujú v GitHub Markdown preview.
 ## 🧪 Ako to použiť (aplikácia)
-# 🗂 Emoji legenda (KNIFE)
+## 🗂 Emoji legenda (KNIFE)
 
 Tieto emoji používaj v MD súboroch ako vizuálne značky:
 

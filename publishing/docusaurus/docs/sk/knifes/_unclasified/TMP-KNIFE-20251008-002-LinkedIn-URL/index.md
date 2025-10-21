@@ -1,20 +1,45 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "TMP-KNIFE-20251008-002"
 guid: "b4c6f7e2-63a8-45e9-b3de-4b9c74c119f9"
 dao: "LetItGrow-FieldNotes"
 title: "Ako LinkedIn skracuje odkazy a čo s tým"
-short_title: "LinkedIn a skracovanie URL"
-category: "Seeds"
-status: "draft"
-priority: "medium"
+description: "Pozorovanie a riešenie správania LinkedInu, ktorý automaticky prepisuje všetky odkazy na lnkd.in – a ako si zachovať vlastný brand pomocou vlastného presmerovania (napr. /go/ alebo bit.ly)."
 author: "Roman Kazička"
+authors: ["Roman Kazička",""]
+category: "Seeds"
+type: ""
+priority: "middle"
+tags: []
+locale: "en"
+sidebar_label: "Home"
 created: "2025-10-08"
 modified: ""
-description: "Pozorovanie a riešenie správania LinkedInu, ktorý automaticky prepisuje všetky odkazy na lnkd.in – a ako si zachovať vlastný brand pomocou vlastného presmerovania (napr. /go/ alebo bit.ly)."
+status: "inprogress"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
+short_title: "LinkedIn a skracovanie URL"
 ---
-
 # 🔗 Ako LinkedIn skracuje odkazy a čo s tým
+
+<!-- fm-visible: start -->
+> **GUID:** `b4c6f7e2-63a8-45e9-b3de-4b9c74c119f9`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
+<!-- fm-visible: end -->
 
 LinkedIn automaticky prepisuje všetky externé odkazy na **lnkd.in**.  
 Robí to kvôli bezpečnosti, meraniu kliknutí a ochrane pred škodlivými linkami.  

@@ -1,26 +1,43 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000034"
 guid: "cd2b41b5-45c1-4464-9c35-94ad9309bbea"
 dao: "knife"
 title: "Pracovno, finančný ekosystém"
+description: ""
 author: "Roman Kazicka"
+authors: ["Roman Kazicka",""]
 category: "CAS-ContextAwareSolutions"
 type: "Koncepty"
-priority: "Vysoká"
+priority: "no"
 tags: ["Pracovné právo"]
+locale: "en"
+sidebar_label: "Home"
 created: "2025-05-25"
 modified: "-"
 status: "backlog"
-# rights & licensing
+privacy: "public"
 rights_holder_content: ""
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Educational purposes only."
-
-authors: ["Roman Kazicka"]
-
-# slug: ""
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
 ---
+# Pracovno, finančný ekosystém
+<!-- fm-visible: start -->
+> **GUID:** `cd2b41b5-45c1-4464-9c35-94ad9309bbea`
+> **Status:** `backlog` · **Author:** Roman Kazicka · **License:** CC-BY-NC-SA-4.0
+<!-- fm-visible: end -->
 
 ## Summary
 _Doplň stručný popis._

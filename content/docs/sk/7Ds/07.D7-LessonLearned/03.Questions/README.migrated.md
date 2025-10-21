@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "readme.migrated"
 guid: "ef304618-4c60-4a17-b1bd-2ff8e63b973a"
-dao: class
+dao: "class"
 title: "03.Questions"
 description: ""
-author: Roman Kazička
-authors: ["Roman Kazička"]
+author: "Roman Kazička"
+authors: ["Roman Kazička",""]
 category: ""
 type: ""
-priority: ""
+priority: "no"
 tags: []
-created: 2025-09-23
-modified: ""
-status: draft
-locale: sk
+locale: "sk"
 sidebar_label: "03.Questions"
-rights_holder_content: Roman Kazička
+created: "2025-09-23"
+modified: ""
+status: "inprogress"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: ""
 author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # 03.Questions (EN)
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"ef304618-4c60-4a17-b1bd-2ff8e63b973a"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `ef304618-4c60-4a17-b1bd-2ff8e63b973a`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 This is a sub-section under dimension `07.D7-LessonLearned`.
 

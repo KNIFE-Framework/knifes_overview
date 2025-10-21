@@ -1,39 +1,48 @@
 ---
-id: guide_tokens
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
+id: "guide_tokens"
 guid: "4148f6d5-5dd4-4280-a694-f85e85410fd1"
-dao: class
-title: Docusaurus-Guide
+dao: "class"
+title: "Docusaurus-Guide"
 description: ""
-author: Roman Kazička
-authors: ["Roman Kazička"]
+author: "Roman Kazička"
+authors: ["Roman Kazička",""]
 category: ""
 type: ""
-priority: ""
+priority: "no"
 tags: []
-created: 2025-09-23
+locale: "sk"
+sidebar_label: "Docusaurus-Guide"
+created: "2025-09-23"
 modified: ""
-status: draft
-locale: sk
-sidebar_label: Docusaurus-Guide
-rights_holder_content: Roman Kazička
+status: "inprogress"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: ""
 author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # Token Management
-<!-- fm-visible: start -->
 
-> **GUID:** `"4148f6d5-5dd4-4280-a694-f85e85410fd1"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: start -->
+> **GUID:** `4148f6d5-5dd4-4280-a694-f85e85410fd1`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
 Details about how to manage tokens, security practices, and usage examples.
 
-# Git Worktree Deploy Guide
+## Git Worktree Deploy Guide
 
 ## 1. Úvod
 

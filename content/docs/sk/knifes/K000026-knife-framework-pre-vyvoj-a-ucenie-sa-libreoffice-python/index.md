@@ -1,24 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "REF-UAT-001"
 guid: "uat-guide-20251005"
 dao: "knife"
 title: "Postup pre presun zmien z vetvy FIX do UAT"
+description: ""
 author: "Roman Kazička"
+authors: ["Roman Kazička",""]
 category: "governance"
 type: "user-guide"
 priority: "top"
-tags: ["GIT", "UAT", "Workflow"]
-created: "2025-10-05"
-modified: "-"
-status: "active"
+tags: ["GIT","UAT","Workflow"]
 locale: "sk"
 sidebar_label: "Presun zmien z FIX do UAT"
+created: "2025-10-05"
+modified: "-"
+status: "inprogress"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Educational purposes only."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
 ---
-
 # 🧭 Postup pre presun zmien z vetvy **FIX** do **UAT**
+
+<!-- fm-visible: start -->
+> **GUID:** `uat-guide-20251005`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
+<!-- fm-visible: end -->
 
 Tento postup popisuje odporúčaný spôsob, ako presunúť stabilizované zmeny z pracovnej vetvy `fix/*` do testovacej vetvy `UAT`.  
 Cieľom je zachovať transparentnosť, možnosť spätnej kontroly a zamedziť nechceným zmenám v produkcii.

@@ -1,36 +1,44 @@
 ---
-id: knife_github_cheatsheet
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
+id: "knife_github_cheatsheet"
 guid: "a2c01b52-d968-456d-9b69-4b80c3390eee"
-dao: class
+dao: "class"
 title: "02.Strategy"
 description: ""
-author: Roman Kazička
-authors: ["Roman Kazička"]
+author: "Roman Kazička"
+authors: ["Roman Kazička",""]
 category: ""
 type: ""
-priority: ""
+priority: "no"
 tags: []
-created: 2025-09-23
-modified: ""
-status: draft
-locale: sk
+locale: "sk"
 sidebar_label: "02.Strategy"
-rights_holder_content: Roman Kazička
+created: "2025-09-23"
+modified: ""
+status: "inprogress"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: ""
 author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # 🛡️ KNIFE Cheat Sheet: GitHub Issues, Milestones, Projects
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"a2c01b52-d968-456d-9b69-4b80c3390eee"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `a2c01b52-d968-456d-9b69-4b80c3390eee`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 This cheat sheet summarizes how to manage KNIFE tasks and progress using GitHub tools.
 
@@ -115,7 +123,6 @@ Start with Issues + Milestones. Use Projects when the number of tasks grows.
 | Label        | Color tag to categorize issues  |
 | Project      | Visual tool to track tasks      |
 | Template     | Predefined form for Issues/PRs  |
-
 
 [⬆ Back to 01.D1-Management](../index.md)
 

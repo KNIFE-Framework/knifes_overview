@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000067-02"
 guid: "cc334b31-6f4f-4dbd-b5f2-c3c2e8c9bc83"
 dao: "knife"
 title: "Naming Convention pre Subdomény"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "-"
 type: "-"
-priority: "-"
+priority: "no"
 tags: ["KNIFE"]
-created: "2025-09-24"
-modified: "-"
-status: "draft"
 locale: "sk"
 sidebar_label: "Naming Convention pre Subdomény"
+created: "2025-09-24"
+modified: "-"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # Naming Convention pre Subdomény
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"cc334b31-6f4f-4dbd-b5f2-c3c2e8c9bc83"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `cc334b31-6f4f-4dbd-b5f2-c3c2e8c9bc83`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 Táto dokumentácia popisuje konvenciu pomenovania subdomén používaných v rámci našich projektov a nasadení. Dodržiavanie jednotnej štruktúry a pravidiel zabezpečuje konzistenciu, lepšiu orientáciu a správu domén.
 

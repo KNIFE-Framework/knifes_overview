@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000064-ga4-gtn-utm-08"
 guid: "764e0ca3-9ca6-42a6-a2c9-fb80c7ee9f24"
 dao: "knife"
 title: "Getting Started with GA4 & UTM"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "-"
 type: "-"
-priority: "-"
+priority: "no"
 tags: ["KNIFE"]
-created: "2025-09-24"
-modified: "-"
-status: "draft"
 locale: "sk"
 sidebar_label: "Getting Started with GA4 & UTM"
+created: "2025-09-24"
+modified: "-"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # Getting Started with GA4 & UTM
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"764e0ca3-9ca6-42a6-a2c9-fb80c7ee9f24"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `764e0ca3-9ca6-42a6-a2c9-fb80c7ee9f24`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 ## 🔎 Čo je UTM?
 UTM = **Urchin Tracking Module**  
@@ -79,7 +87,6 @@ Môžete si pripraviť jednoduchú tabuľku (napr. v Exceli/Calcu) a len dopĺň
 | Base URL | utm_source | utm_medium | utm_campaign | utm_content | Vygenerovaný link |
 |----------|------------|------------|--------------|-------------|-------------------|
 | https://systemthinking.sk | linkedin | post | august2025 | button1 | https://systemthinking.sk/?utm_source=linkedin&utm_medium=post&utm_campaign=august2025&utm_content=button1 |
-
 
 ### Generátor UTM 
 1. [UTM_Generator_Template_with_Formula.xlsx](./UTM_Generator_Template_with_Formula.xlsx)

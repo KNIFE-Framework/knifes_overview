@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "releasenotes"
 guid: "4b66c05e-f376-4782-822c-bc023083493f"
 dao: "knife"
 title: "KNIFE Overview — Release v1.1.1 (2025-09-07)"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "-"
 type: "-"
-priority: "-"
+priority: "no"
 tags: ["KNIFE"]
-created: "2025-09-24"
-modified: "-"
-status: "draft"
 locale: "sk"
 sidebar_label: "KNIFE Overview — Release v1.1.1 (2025-09-07)"
+created: "2025-09-24"
+modified: "-"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # KNIFE Overview — Release v1.1.1 (2025-09-07)
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"4b66c05e-f376-4782-822c-bc023083493f"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `draft` · **Author:** Roman Kazička · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `4b66c05e-f376-4782-822c-bc023083493f`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 > Veľa úprav ale veľký problém nastal pri generovaní Detailného overview a s premenovaním "docs/sk/KNIFES"  na knife... 
 > V budúcnosti musím nahradiť prehľady detailné dynamickým generovaním.

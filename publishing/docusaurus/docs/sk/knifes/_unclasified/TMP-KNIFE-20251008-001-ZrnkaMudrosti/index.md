@@ -1,20 +1,45 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "TMP-KNIFE-20251008-001"
 guid: "1c4d6e79-2e4d-4dfb-8c23-bdc9a8b6028b"
 dao: "LetItGrow-FieldNotes"
 title: "Zrnká múdrosti na cestách"
-short_title: "Zrnká múdrosti"
-category: "Seeds"
-status: "draft"
-priority: "low"
+description: "Priebežný záznam spontánnych poznatkov a myšlienok, ktoré vznikajú počas cesty, výučby alebo interakcie s komunitou."
 author: "Roman Kazička"
+authors: ["Roman Kazička",""]
+category: "Seeds"
+type: ""
+priority: "low"
+tags: []
+locale: "en"
+sidebar_label: "Home"
 created: "2025-10-08"
 modified: ""
-description: "Priebežný záznam spontánnych poznatkov a myšlienok, ktoré vznikajú počas cesty, výučby alebo interakcie s komunitou."
+status: "inprogress"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC BY-SA 4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
+short_title: "Zrnká múdrosti"
 ---
-
 # 🌱 Zrnká múdrosti na cestách
+
+<!-- fm-visible: start -->
+> **GUID:** `1c4d6e79-2e4d-4dfb-8c23-bdc9a8b6028b`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC BY-SA 4.0
+<!-- fm-visible: end -->
 
 Tieto poznámky vznikajú spontánne – ako malé semienka poznania,
 ktoré ešte čakajú na svoje miesto v systéme KNIFE.

@@ -1,42 +1,49 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000084_01"
 guid: "86b73fab-96ed-432b-aeb6-e262b378aa27"
 dao: "knife"
 title: "KNIFE – K000084_01"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "deliverable"
 type: "knife"
-priority: "-"
+priority: "no"
 tags: ["-"]
-created: "2025-09-26"
-modified: "2025-09-26"
-status: "draft"
 locale: "sk"
 sidebar_label: "K000084_01 – Aktivácia GitHub Education Faculty Benefits"
+created: "2025-09-26"
+modified: "2025-09-26"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Educational content. Use at your own risk."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # Aktivácia GitHub Education Faculty Benefits
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"86b73fab-96ed-432b-aeb6-e262b378aa27"`
->   
-> **Category:** `deliverable` · **Type:** `knife` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `86b73fab-96ed-432b-aeb6-e262b378aa27`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 ## 1. Otvor portál GitHub Education
 👉 [https://education.github.com/benefits](https://education.github.com/benefits)
 
 ![Step 1 - GitHub Education homepage](./img/GHEDU-HomePage.png)
-
 
 ### Linka na GItBenefit Dashboard
 Klikni **Get benefits**.
@@ -87,7 +94,7 @@ Na tejto stránke sa dajú pridávť jednotlivé organizácie a im podriadené r
 ![alt text](./img/UPdateOrganisationToGHTeam.png)
 ---
 
-# 🎉 Hotovo!
+## 🎉 Hotovo!
 Teraz máš:
 - GitHub Team plan pre organizácie zdarma
 - Copilot Pro kupóny

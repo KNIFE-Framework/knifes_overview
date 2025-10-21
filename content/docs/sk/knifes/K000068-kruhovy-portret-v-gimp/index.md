@@ -1,38 +1,40 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000"
 guid: "bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e"
 dao: "knife"
 title: "Kruhový portrét v GIMP"
 description: "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút"
 author: "Roman Kazicka"
+authors: ["Roman Kazička",""]
+category: ""
+type: ""
+priority: "no"
+tags: ["KNIFE","images"]
+locale: "sk"
+sidebar_label: "K000068 – Kruhový portrét v GIMP"
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "backlog"
-tags: ["KNIFE", "images"]
-# slug: "/sk/knifes/k000-kruhovy-portret-v-gimp"
-sidebar_label: "K000068 – Kruhový portrét v GIMP"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
+date: "2025-09-17"
 sidebar_position: "68"
-locale: "sk"
 ---
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e`
-> **Status:** `new` · **Author:** Roman Kazicka · **License:** CC-BY-NC-SA-4.0
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e`
-> **Status:** `new` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e`
-> **Status:** `new` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->
@@ -40,13 +42,11 @@ locale: "sk"
 ---
 
 # K000068 – Ako urobiť kruhový portrét s transparentným pozadím a efektom
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e`
+> **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 **Category**: Vizualizácia / Tooling  
 **Status**: hotové  

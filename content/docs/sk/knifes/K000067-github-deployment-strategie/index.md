@@ -1,41 +1,49 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000"
 guid: "83572f2b-c6d2-4f75-9a41-22457168d71e"
 dao: "knife"
 title: "GitHub Deployment stratégie"
 description: "Deployment obsahu v GitHube sa dá vykonať viacerými spôsobmi."
 author: "Roman Kazicka"
+authors: ["Roman Kazička",""]
+category: ""
+type: ""
+priority: "no"
+tags: ["KNIFE"]
+locale: "sk"
+sidebar_label: "K000067 – GitHub Deployment stratégie"
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "backlog"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k000-github-deployment-strategie"
-sidebar_label: "K000067 – GitHub Deployment stratégie"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
+date: "2025-09-17"
 sidebar_position: "67"
-locale: "sk"
 ---
 <!-- body:start -->
 
-<!-- fm-visible: start -->
-> **GUID:** `83572f2b-c6d2-4f75-9a41-22457168d71e`
-> **Status:** `new` · **Author:** Roman Kazicka · **License:** CC-BY-NC-SA-4.0
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `83572f2b-c6d2-4f75-9a41-22457168d71e`
-> **Status:** `new` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `83572f2b-c6d2-4f75-9a41-22457168d71e`
-> **Status:** `new` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
-<!-- body:start -->
 ---
 # KNIFE K000067 – GItHub Deployment stratégie
+
+<!-- fm-visible: start -->
+> **GUID:** `83572f2b-c6d2-4f75-9a41-22457168d71e`
+> **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
+<!-- fm-visible: end -->
 
 ## 🚀 Quickstart
 
@@ -59,14 +67,7 @@ Pre študentov a rýchly štart je k dispozícii skrátený návod, ktorý pomá
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
-# KNIFE K000067 – GitHub Deployment stratégie
-<!-- fm-visible: start -->
-
-> **GUID:** `"83572f2b-c6d2-4f75-9a41-22457168d71e"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `"new"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
-<!-- fm-visible: end -->
-
+## KNIFE K000067 – GitHub Deployment stratégie
 
 ## 🎯 Čo rieši (účel, cieľ)
 
@@ -137,7 +138,6 @@ Pre pravidlá tvorby názvov subdomén pozri [Appendix – Naming Convention](./
 - Ak potrebujete vlastný build proces a automatizáciu, použite **Actions deploy**.
 - Pre vlastnú doménu nezabudnite na správne nastavenie DNS a súboru `CNAME`.
 - Pozrite si prílohy pre konkrétne ukážky konfigurácie a workflow.
-
 
 ## ✅ Hodnota / Zhrnutie
 

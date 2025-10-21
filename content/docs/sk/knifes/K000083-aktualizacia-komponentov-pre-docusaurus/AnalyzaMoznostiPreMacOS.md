@@ -1,36 +1,44 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000083_01"
 guid: "48faadc5-190a-424f-8d25-6e99df7010b3"
 dao: "knife"
 title: "KNIFE – K000083_01"
 description: "-"
 author: "Roman Kazička"
-authors: ["Roman Kazička"]
+authors: ["Roman Kazička",""]
 category: "deliverable"
 type: "knife"
-priority: "-"
+priority: "no"
 tags: ["-"]
-created: "2025-09-26"
-modified: "2025-09-26"
-status: "draft"
 locale: "sk"
 sidebar_label: "K000083_01 –"
+created: "2025-09-26"
+modified: "2025-09-26"
+status: "inprogress"
+privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
 license: "CC-BY-NC-SA-4.0"
 disclaimer: "Educational content. Use at your own risk."
 copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
 author_id: "-"
 author_did: "-"
+fm_reserved1: ""
+fm_reserved2: ""
 ---
 # Analýza možností pre MacOS – inštalácia Node.js v22
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"48faadc5-190a-424f-8d25-6e99df7010b3"`
->   
-> **Category:** `deliverable` · **Type:** `knife` · **Status:** `draft` · **Author:** "" · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `48faadc5-190a-424f-8d25-6e99df7010b3`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 V prostredí MacOS existujú tri hlavné prístupy, ako spravovať verziu Node.js.  
 Každý má svoje **výhody, nevýhody a odporúčané použitie**.
@@ -111,4 +119,3 @@ Volta je moderný správca verzií Node, ktorý inštaluje binárky priamo do PA
 - **Študenti**: Homebrew cesta – najjednoduchšie, menej chýb.
 - **Ty ako maintainer**: NVM – dáva kontrolu a `.nvmrc` zabezpečí konzistenciu.
 - **Alternatíva**: Volta – môže byť rýchlejšia a pohodlnejšia, ak nechceš riešiť overhead NVM.
-

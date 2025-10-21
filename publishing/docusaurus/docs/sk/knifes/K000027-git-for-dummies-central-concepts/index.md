@@ -1,51 +1,51 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000"
 guid: "3264251d-6fb5-41f2-b8eb-9b726c2542f2"
 dao: "knife"
 title: "Git For Dummies – Central Concepts"
 description: "Jednoduché vysvetlenie Git základov pre začiatočníkov v GitEA (organizácia, repozitár, working directory, atď.)"
 author: "Roman Kazicka"
+authors: ["Roman Kazička",""]
+category: ""
+type: ""
+priority: "no"
+tags: ["KNIFE","images"]
+locale: "sk"
+sidebar_label: "K000027 – Git For Dummies – Central Concepts"
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "backlog"
-tags: ["KNIFE", "images"]
-# slug: "/sk/knifes/k000-git-for-dummies-central-concepts"
-sidebar_label: "K000027 – Git For Dummies – Central Concepts"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
+date: "2025-09-17"
 sidebar_position: "27"
-locale: "sk"
 ---
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `3264251d-6fb5-41f2-b8eb-9b726c2542f2`
-> **Status:** `v príprave` · **Author:** Roman Kazicka · **License:** CC-BY-NC-SA-4.0
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `3264251d-6fb5-41f2-b8eb-9b726c2542f2`
-> **Status:** `v príprave` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `3264251d-6fb5-41f2-b8eb-9b726c2542f2`
-> **Status:** `v príprave` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
 ---
 # KNIFE K000027 – Git For Dummies – Central Concepts
+
 <!-- fm-visible: start -->
-
-> **GUID:** `"3264251d-6fb5-41f2-b8eb-9b726c2542f2"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `"v príprave"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+> **GUID:** `3264251d-6fb5-41f2-b8eb-9b726c2542f2`
+> **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
-
 
 ## 🎯 Čo rieši (účel, cieľ)
 
@@ -91,8 +91,6 @@ Pri synchronizácií obsahov, vzniká niekoľko typických scenárov, ale výsle
   - vysoká miera autonómnosti
   - poriadok v procese tvorby riešenia -vytváranie metadát o aktivitách nad danými súbormi
   - poriadok v súboroch - možnosť uchovávať, porovnávať rôzne verzie súborov (textových, pre binárne súbory jepotrebné dedikované aplikácie)
-
-
 
 ## 📜 Detailný článok
 

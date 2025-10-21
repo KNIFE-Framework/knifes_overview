@@ -24,7 +24,7 @@ priority: ""                  # top | middle | low | no
 tags: ["", ""]                # e.g. ["knowledgemanagement","3RS","CAA"]
 
 # 🌍 Localization & Routing
-slug: ""                      # optional, relative path override
+#slug: ""                      # optional, relative path override
 locale: "en"                  # sk | en | other
 sidebar_label: "Home"
 
@@ -32,6 +32,7 @@ sidebar_label: "Home"
 created: "2025-09-24"
 modified: "YYYY-MM-DDTHH:MM:SSZ"
 status: ""                    # backlog | inprogress | done | archived | other
+privacy: "public"             # public | private
 
 # ⚖️ Intellectual Property
 rights_holder_content: "Roman Kazička"

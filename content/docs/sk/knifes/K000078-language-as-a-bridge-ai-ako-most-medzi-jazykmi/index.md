@@ -1,38 +1,40 @@
 ---
+fm_version: "1.0.1"
+fm_build: "2025-10-12T10:35:00Z"
+fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
 id: "K000"
 guid: "9fa013f5-0130-4af4-8e6e-db4ca6d38397"
 dao: "knife"
 title: "Language as a Bridge (AI ako most medzi jazykmi)"
 description: "Language as a Bridge → implementácia, nástroje, procesy (ako)."
 author: "Roman Kazicka"
+authors: ["Roman Kazička",""]
+category: ""
+type: ""
+priority: "no"
+tags: ["KNIFE"]
+locale: "sk"
+sidebar_label: "K000078 – Language as a Bridge (AI ako most medzi jazykmi)"
 created: "2025-09-17"
 modified: "2025-09-17"
-date: "2025-09-17"
 status: "inprogress"
-tags: ["KNIFE"]
-# slug: "/sk/knifes/k000-language-as-a-bridge-ai-ako-most-medzi-jazykmi"
-sidebar_label: "K000078 – Language as a Bridge (AI ako most medzi jazykmi)"
+privacy: "public"
+rights_holder_content: "Roman Kazička"
+rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazička / SystemThinking"
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_system: ""
+author_id: ""
+author_did: ""
+fm_reserved1: ""
+fm_reserved2: ""
+date: "2025-09-17"
 sidebar_position: "78"
-locale: "sk"
 ---
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `9fa013f5-0130-4af4-8e6e-db4ca6d38397`
-> **Status:** `inprogress` · **Author:** Roman Kazicka · **License:** CC-BY-NC-SA-4.0
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `9fa013f5-0130-4af4-8e6e-db4ca6d38397`
-> **Status:** `ongoing` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
-<!-- body:start -->
-
-<!-- fm-visible: start -->
-> **GUID:** `9fa013f5-0130-4af4-8e6e-db4ca6d38397`
-> **Status:** `ongoing` · **Author:** Roman Kazicka
-<!-- fm-visible: end -->
 <!-- body:start -->
 
 <!-- nav:knifes -->
@@ -40,11 +42,10 @@ locale: "sk"
 ---
 
 # K000078 – Language as a Bridge  
-<!-- fm-visible: start -->
 
-> **GUID:** `"9fa013f5-0130-4af4-8e6e-db4ca6d38397"`
->   
-> **Category:** `""` · **Type:** `""` · **Status:** `"ongoing"` · **Author:** "Roman Kazicka" · **License:** "CC-BY-NC-SA-4.0"
+<!-- fm-visible: start -->
+> **GUID:** `9fa013f5-0130-4af4-8e6e-db4ca6d38397`
+> **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
 **Téma:** AI ako most medzi jazykmi  
@@ -130,4 +131,4 @@ Most medzi nimi stavia AI – a vďaka tomu poznanie môže voľne prúdiť.
 
 **Motto K000077:**  
 > „Jazyk nemusí byť bariérou.  
-> AI stavia mosty, aby sme mohli každý rásť na vlastnej pôde.“  
+> AI stavia mosty, aby sme mohli každý rásť na vlastnej pôde.“

@@ -10,4 +10,4 @@ else
   echo "❗ Python nie je nainštalovaný. Preskakujem check." >&2
   exit 0
 fi
-$PY .github/tools/casecheck.py
+$PY core/scripts/tools/casecheck.py

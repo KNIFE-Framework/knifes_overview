@@ -36,7 +36,7 @@ fm_reserved2: ""
 # 🧭 Postup pre presun zmien z vetvy **FIX** do **UAT**
 
 <!-- fm-visible: start -->
-> **GUID:** `uat-guide-20251005`
+> **GUID:** `63773bd8-2732-4e66-8aee-00deb8db06a1`
 > **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

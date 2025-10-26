@@ -36,7 +36,7 @@ fm_reserved2: ""
 # 🎥 OBS Fundamentals – Základy nahrávania a správy scén
 
 <!-- fm-visible: start -->
-> **GUID:** `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx`
+> **GUID:** `2c1bdac4-6f59-49d9-9840-3f353ef9b9f7`
 > **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

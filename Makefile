@@ -1463,6 +1463,10 @@ help: ## H10 – Help
 	@echo "  FM23-fmfix-apply        – APPLY: Canonical FM normalize (writes)"
 	@echo "  FM24-idem-dry           – DRY: Idempotent FM fixer"
 	@echo "  FM24-idem-apply         – APPLY: Idempotent FM fixer"
+	@echo "  FM25-sync-visible-dry    – DRY: sync visible header (GUID/Author/Status) z FM"
+	@echo "  FM25-sync-visible        – APPLY: sync visible header (GUID/Author/Status) z FM"
+	@echo "     e.g.: make FM25-sync-visible-dry OPTS='--root content/docs/sk/knifes'"
+	@echo "           make FM25-sync-visible OPTS='--root content/docs/sk/knifes'"
 	@echo ""
 	@echo "  ⚙️ Tips:"
 	@echo "    make FM20-fix-dry OPTS='--help'      → zobrazí všetky dostupné voľby"
@@ -1847,33 +1851,17 @@ FM24-idem-apply:
 	@echo "🛠 APPLY: Idempotent FM fixer…"
 	@mkdir -p logs
 	@python3 core/scripts/tools/knife_idempotent_fix_v5.py --apply $(OPTS)
-	@echo "✅ Idempotent fixer applied."
 
-# =========================================================
-# PUBLISH: one-button pipeline (uses existing SY01/W* targets)
-# - Integrates FM audit/fix as pre-flight checks
-# =========================================================
-.PHONY: PUB05-sync PUB05-sync-safe PUB10-build PUB20-stage PUB30-commit PUB40-push publish publish-safe
+# -------------------------------------------------------------
+#  FM25 – Sync 'fm-visible' block (GUID, Author, Status) with FM
+# -------------------------------------------------------------
+.PHONY: FM25-sync-visible-dry FM25-sync-visible
+FM25-sync-visible-dry:
+	@echo "🧪 DRY: Sync fm-visible with Front Matter (no writes)…"
+	@python3 core/scripts/tools/fm_sync_visible.py --root content/docs --include "**/*.md" $(OPTS) || true
+	@echo "✅ DRY done. Review output above."
 
-## PUB05-sync: sync SSOT content → publishing/docusaurus/docs
-PUB05-sync:
-PUB05-sync: SYNC_MODE=HARD
-PUB05-sync: G40-guard-privacy G45-guard-puboverrides
-	@$(MAKE) SY01-sync-content
-
-## PUB05-sync-safe: safe sync (no --delete, preserves local pub overrides)
-PUB05-sync-safe:
-PUB05-sync-safe: SYNC_MODE=SAFE
-PUB05-sync-safe: G40-guard-privacy G45-guard-puboverrides
-	@echo "🔁 SAFE sync (no --delete) SSOT → publishing/docusaurus/docs"
-	@test -d "$(CONTENT_DOCS_DIR)" || (echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1)
-	@mkdir -p "$(PUB_DOCS_DIR)"
-	rsync -av --checksum \
-	  "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"
-	@echo "✅ SAFE sync complete (preserved local overrides in publishing/)."
-
-## PUB10-build: production build (respects MINIFY/DS_LOCALE)
-PUB10-build:
-	@$(MAKE) B10-build
-
-## PUB20-stage: ensure worktree and co<truncated__content/>
+FM25-sync-visible:
+	@echo "🔄 APPLY: Sync fm-visible with Front Matter (writes)…"
+	@python3 core/scripts/tools/fm_sync_visible.py --root content/docs --include "**/*.md" --apply $(OPTS)
+	@echo "✅ Visible header synced."

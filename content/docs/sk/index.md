@@ -34,6 +34,6 @@ fm_reserved2: ""
 ---
 # KNIFE – Prehľad
 <!-- fm-visible: start -->
-> **GUID:** `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx`
+> **GUID:** `7afa4bdc-bb40-490b-8697-c9bf7c3ba848`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->

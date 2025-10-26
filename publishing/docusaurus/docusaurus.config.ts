@@ -9,8 +9,8 @@ const strictMode = process.env.DOCS_STRICT === '1';
 const brokenPolicy = strictMode ? 'throw' : 'warn';
 
 // Build metadata from environment (provided by Makefile / CI)
-const buildDate = process.env.BUILD_DATE || '20251022-2222';
-const appVersion = process.env.APP_VERSION || '20251022-2222';
+const buildDate = process.env.BUILD_DATE || '20251026-2626';
+const appVersion = process.env.APP_VERSION || '20251026-2626';
 
 const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',   // ✅ povinné

@@ -1,86 +1,80 @@
 #!/usr/bin/env python3
-import sys, uuid, pathlib, io, re
+"""
+guid_backfill.py — string-only GUID fixer for Markdown Front Matter.
 
-# Malý parser YAML frontmatteru bez externých balíkov
-FM_RE = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
+Usage:
+  python3 core/scripts/tools/guid_backfill.py --root content
+  python3 core/scripts/tools/guid_backfill.py --root content --apply
+"""
+import argparse, re, uuid
+from pathlib import Path
 
-def parse_frontmatter(text):
-    m = FM_RE.match(text)
+FM_BLOCK_RE = re.compile(r'(?s)^\s*---\s*(.*?)\s*---\s*(.*)$')
+KV_RE = lambda key: re.compile(rf'^({re.escape(key)}\s*:\s*)(["\']?)(.*?)(\2)\s*$', re.M)
+UUID4_RE = re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$')
+PLACEHOLDER_RE = re.compile(r'^[xX]{8}-[xX]{4}-[xX]{4}-[xX]{4}-[xX]{12}$')
+
+def replace_kv(fm, key, new_value):
+    pat = KV_RE(key)
+    if pat.search(fm):
+        return pat.sub(lambda m: f'{m.group(1)}"{new_value}"', fm, count=1)
+    lines = fm.splitlines()
+    lines.insert(1 if len(lines)>1 else 0, f'{key}: "{new_value}"')
+    return "\n".join(lines)
+
+def get_kv(fm, key):
+    pat = KV_RE(key)
+    m = pat.search(fm)
+    return m.group(3).strip() if m else None
+
+def valid_uuid4(s): return bool(s and UUID4_RE.match(s.strip().lower()))
+def placeholder(s): return bool(s and PLACEHOLDER_RE.match(s.strip()))
+
+def process(md: Path, apply: bool):
+    txt = md.read_text(encoding="utf-8", errors="ignore")
+    m = FM_BLOCK_RE.match(txt)
     if not m:
-        return {}, text, None
-    raw = m.group(1)
-    body = text[m.end():]
-    data = {}
-    for line in raw.splitlines():
-        if not line.strip() or line.strip().startswith("#"):
-            continue
-        # jednoduché kľúč: hodnota (bez hlbokých štruktúr)
-        if ":" in line:
-            k, v = line.split(":", 1)
-            k = k.strip()
-            v = v.strip()
-            # odstraň úvodzovky
-            if v.startswith('"') and v.endswith('"'):
-                v = v[1:-1]
-            if v.startswith("'") and v.endswith("'"):
-                v = v[1:-1]
-            data[k] = v
-    return data, body, m
-
-def dump_frontmatter(data, body):
-    # zachováme jednoduché poradie kľúčov (id → guid → dao → …)
-    keys_order = ["id","guid","dao","title","description","author","authors","status","tags","slug","sidebar_label","sidebar_position","locale","created","modified"]
-    keys = [k for k in keys_order if k in data] + [k for k in data if k not in keys_order]
-    buf = io.StringIO()
-    buf.write("---\n")
-    for k in keys:
-        v = data[k]
-        if isinstance(v, str):
-            # ak obsahuje dvojbodku alebo medzeru, dáme úvodzovky bezpečne
-            if ":" in v or "#" in v or v.strip() != v:
-                buf.write(f'{k}: "{v}"\n')
-            else:
-                buf.write(f"{k}: \"{v}\"\n")
-        else:
-            buf.write(f'{k}: "{v}"\n')
-    buf.write("---\n")
-    buf.write(body)
-    return buf.getvalue()
-
-def process_file(mdpath: pathlib.Path):
-    text = mdpath.read_text(encoding="utf-8")
-    data, body, m = parse_frontmatter(text)
-    if not data:
-        # bez frontmatteru – nič nerobíme
-        return False
-
-    changed = False
-    if "dao" not in data or not str(data["dao"]).strip():
-        data["dao"] = "knife"
-        changed = True
-
-    if "guid" not in data or not str(data["guid"]).strip():
-        kid = data.get("id", "").strip() or "KXXX"
-        data["guid"] = f"knife-{kid}-{uuid.uuid4()}"
-        changed = True
-
-    if changed:
-        new_text = dump_frontmatter(data, body)
-        mdpath.write_text(new_text, encoding="utf-8")
-    return changed
+        return ("skip-no-fm", "", "")
+    fm, body = m.group(1), m.group(2)
+    old = get_kv(fm, "guid")
+    need = (not old) or placeholder(old) or (not valid_uuid4(old))
+    if not need:
+        return ("ok", old, old)
+    new_guid = str(uuid.uuid4())
+    fm2 = replace_kv(fm, "guid", new_guid)
+    new_txt = f"---\n{fm2}\n---\n{body}"
+    if apply:
+        md.write_text(new_txt, encoding="utf-8")
+    return ("inserted" if not old else "fixed", old or "", new_guid)
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: guid_backfill.py <docs_root>", file=sys.stderr)
-        sys.exit(2)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--root", default="content")
+    ap.add_argument("--include", action="append", default=["**/*.md", "**/*.mdx"])
+    ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--apply", action="store_true")
+    args = ap.parse_args()
 
-    docs_root = pathlib.Path(sys.argv[1])
-    count = 0
-    for md in docs_root.rglob("index.md"):
-        if "/knifes/" in str(md).replace("\\","/"):
-            if process_file(md):
-                count += 1
-    print(f"[guid_backfill] Updated files: {count}")
+    root = Path(args.root)
+    files = []
+    for pat in args.include:
+        files += list(root.glob(pat))
+    files = [p for p in files if p.is_file()]
+    if args.limit: files = files[:args.limit]
+
+    print(f"🔎 Scanning {root} ({len(files)} files)")
+    ok=fixed=inserted=skipped=0
+    for p in files:
+        status, old, new = process(p, apply=args.apply)
+        if status == "ok": ok+=1
+        elif status in ("fixed","inserted"):
+            print(f"{'✅' if args.apply else '🧪'} {status.upper()}: {p} {old or '<missing>'} → {new}")
+            if status=="fixed": fixed+=1
+            else: inserted+=1
+        else:
+            skipped+=1
+    print(f"\n📊 Summary: ok={ok} fixed={fixed} inserted={inserted} skipped={skipped}")
+    if not args.apply: print("ℹ️  Re-run with --apply to write changes.")
 
 if __name__ == "__main__":
     main()

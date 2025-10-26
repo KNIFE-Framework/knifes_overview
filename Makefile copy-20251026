@@ -72,7 +72,7 @@ LOCALE ?= sk
 KNIFES_REF_DIR := $(DOCS_DIR)/sk/ref
 KNIFES_REF_MD_GLOB := $(KNIFES_REF_DIR)/**/index.md
 # KNIFES main directory (default scan root)
-CONTENT_KNIFES_DIR := content/docs/$(LOCALE)/knifes
+CONTENT_KNIFES_DIR := content/knifes
 KNIFES_DIR ?= $(CONTENT_KNIFES_DIR)
 # Minify toggle (default ON). Use: make build MINIFY=0  -> passes --no-minify
 
@@ -762,22 +762,45 @@ knifes-gen:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
 	node "$(SCRIPTS_DIR)/knifes-build.mjs" --csv "$$CSV" --root .
 
-TEMPLATE_MD ?= core/templates/system/FM-Core.md
-CONTENT_KNIFES_DIR ?= content/docs/sk/knifes
-LOCALE ?= sk
-
-## knifes-new: Python-only generator (DRY: KNIFE_DRY=1, FORCE: KNIFE_FORCE=1)
+## knifes-new: založí skeleton KNIFE do content/knifes/<NAME_DIR>/index.md (s bezpečným slugom, podporuje NAME/TITLE aliasy)
+## Použitie: make knifes-new id=K000062 name="Journey to Git" [title="Plný názov"]
 knifes-new:
-	python3 core/scripts/tools/knife_new.py \
-	  --id "$(id)" \
-	  --name "$(name)" \
-	  $(if $(title),--title "$(title)",) \
-	  --template "$(TEMPLATE_MD)" \
-	  --outroot "$(CONTENT_KNIFES_DIR)" \
-	  $(if $(LOCALE),--locale "$(LOCALE)",) \
-	  $(if $(KNIFE_DRY),--dry,) \
-	  $(if $(KNIFE_FORCE),--force,)
-
+	bash -lc 'set -e; \
+	  echo "▶ ENTER knifes-new"; \
+	  # Resolve params with fallbacks: name/title accept NAME/TITLE as aliases \
+	  NAME_VAL="$(name)"; if [ -z "$NAME_VAL" ]; then NAME_VAL="$(NAME)"; fi; \
+	  TITLE_VAL="$(title)"; if [ -z "$TITLE_VAL" ]; then TITLE_VAL="$(TITLE)"; fi; \
+	  # Trim leading/trailing spaces (BSD sed compatible) \
+	  NAME_VAL=$(printf %s "$NAME_VAL" | sed -E "s/^ +//; s/ +$//"); \
+	  TITLE_VAL=$(printf %s "$TITLE_VAL" | sed -E "s/^ +//; s/ +$//"); \
+	  # If title still empty, default to name \
+	  if [ -z "$TITLE_VAL" ]; then TITLE_VAL="$NAME_VAL"; fi; \
+	  # Create safe folder slug from NAME (lowercase, non-ascii/unsafe -> '-') \
+	  SAFE_NAME=$(printf %s "$NAME_VAL" | tr "[:upper:]" "[:lower:]" | sed -E "s/[^a-z0-9._-]+/-/g; s/-+/-/g; s/^-|-$//g"); \
+	  echo "ARGS id=$(id) name_raw='\$NAME_VAL' title_raw='\$TITLE_VAL' safe='\$SAFE_NAME'"; \
+	  echo "🔧 DEBUG: id=$(id) | NAME_VAL='\$NAME_VAL' | TITLE_VAL='\$TITLE_VAL' | SAFE_NAME='\$SAFE_NAME' | SCRIPTS_DIR='$(SCRIPTS_DIR)'"; \
+	  echo "🆕 KNIFE seed → id=$(id) name='\$NAME_VAL' title='\$TITLE_VAL'"; \
+	  echo "   dir: '\$SAFE_NAME'  out: $(CONTENT_KNIFES_DIR)/\$SAFE_NAME/index.md  template: core/templates/system/FM-Core.md"; \
+	  # Validate required params \
+	  if [ -z "$(id)" ] || [ -z "$SAFE_NAME" ]; then \
+	    echo "Použitie: make knifes-new id=K000062 name='FolderName' [title='Plný názov]'  (alternatívy aj NAME= / TITLE=)"; exit 1; \
+	  fi; \
+	  # Check generator script exists \
+	  if [ ! -f "$(SCRIPTS_DIR)/knifes-gen-new.mjs" ]; then \
+	    echo "❌ Chýba $(SCRIPTS_DIR)/knifes-gen-new.mjs – skopíruj scripts/ do koreňa repozitára."; exit 1; \
+	  fi; \
+	  # Guard against overwrite unless KNIFE_FORCE=1 \
+	  TARGET_DIR="$(CONTENT_KNIFES_DIR)/$SAFE_NAME"; \
+	  if [ -e "$TARGET_DIR/index.md" ] && [ -z "$(KNIFE_FORCE)" ]; then \
+	    echo "❌ Cieľ už existuje: $TARGET_DIR/index.md (použi KNIFE_FORCE=1 ak ho chceš prepísať)"; exit 1; \
+	  fi; \
+	  mkdir -p "$TARGET_DIR"; \
+	  # Call generator: ID, NAME_DIR (SAFE_NAME), TITLE_VAL \
+	  node "$(SCRIPTS_DIR)/knifes-gen-new.mjs" "$(id)" "$SAFE_NAME" "$TITLE_VAL" \
+	    --template "core/templates/system/FM-Core.md" \
+	    --outroot "$(CONTENT_KNIFES_DIR)" \
+	    $(if $(KNIFE_FORCE),--force,); \
+	  echo "✅ Vytvorené/aktualizované: $(CONTENT_KNIFES_DIR)/$SAFE_NAME/index.md"'
 dev-gen:
 	node scripts/knifes-build.mjs --csv $(CSV_DEFAULT) --root . --locale sk
 
@@ -1353,14 +1376,14 @@ knifes-gen-dry:
 	@KNIFE_CSV="$(KNIFE_CSV)"; if [ -z "$$KNIFE_CSV" ]; then KNIFE_CSV="$(strip $(CSV_OVERVIEW))"; fi; \
 	KNIFE_OUT="$(KNIFE_OUT)"; if [ -z "$$KNIFE_OUT" ]; then KNIFE_OUT="$(KNIFES_DIR)"; fi; \
 	echo "🧪 [UAT] DRY-RUN generation (CSV→MD, seed-only) [$$(date -u +'%Y-%m-%d %H:%M:%S UTC')] – CSV='$$KNIFE_CSV' OUT='$$KNIFE_OUT'"; \
-	node "$(SCRIPTS_DIR)/knifes-gen-new.mjs" --csv "$$KNIFE_CSV" --out "$$KNIFE_OUT" --dry-run
+	node scripts/knifes-gen-new.mjs --csv "$$KNIFE_CSV" --out "$$KNIFE_OUT" --dry-run
 
 ## knifes-gen-apply: APPLY generation (CSV→MD, seed-only)
 knifes-gen-apply:
 	@KNIFE_CSV="$(KNIFE_CSV)"; if [ -z "$$KNIFE_CSV" ]; then KNIFE_CSV="$(strip $(CSV_OVERVIEW))"; fi; \
 	KNIFE_OUT="$(KNIFE_OUT)"; if [ -z "$$KNIFE_OUT" ]; then KNIFE_OUT="$(KNIFES_DIR)"; fi; \
 	echo "⚙️ [UAT] APPLY generation (CSV→MD, seed-only) [$$(date -u +'%Y-%m-%d %H:%M:%S UTC')] – CSV='$$KNIFE_CSV' OUT='$$KNIFE_OUT'"; \
-	node "$(SCRIPTS_DIR)/knifes-gen-new.mjs" --csv "$$KNIFE_CSV" --out "$$KNIFE_OUT"
+	node scripts/knifes-gen-new.mjs --csv "$$KNIFE_CSV" --out "$$KNIFE_OUT"
 
 
 # -------------------------
@@ -1437,8 +1460,6 @@ help: ## H10 – Help
 	@echo ""
 	@echo "Deploy (Git worktree → $(DEPLOY_BRANCH)):"
 	@echo "  G10-guard-clean        – Warn if working tree dirty (auto-run by W40/W50)"
-	@echo "  (auto) G15/G20/G30     – Divergence & stale-build guards before W40/W50"
-	@echo "  (auto) privacy guards  – G40/G45 run before PUB05-sync / PUB05-sync-safe"
 	@echo "  W10-check-worktree       – Create/repair worktree ../$(DEPLOY_BRANCH)"
 	@echo "  W20-copy-build           – Rsync build → $(PAGES_DIR)"
 	@echo "  W30-commit-deploy        – Commit & push worktree"
@@ -1451,22 +1472,10 @@ help: ## H10 – Help
 	@echo ""
 	@echo "FM tools:"
 	@echo "  FM10-audit              – Audit Front Matter (read-only)"
-	@echo "  FM11-lint               – Lint Front Matter (read-only)"
 	@echo "  FM20-fix-dry            – DRY-RUN normalize/fix (no writes)"
 	@echo "  FM20-fix-apply          – APPLY normalize/fix (writes + backups)"
 	@echo "  FM20-fix                – Alias to FM20-fix-dry"
-	@echo "  FM22-guid-dry           – DRY: GUID backfill (missing/placeholder/invalid)"
-	@echo "  FM22-guid-apply         – APPLY: GUID backfill (writes, safe string ops)"
-	@echo "     e.g.: make FM22-guid-dry OPTS='--root content'"
-	@echo "           make FM22-guid-apply OPTS='--root content --apply'"
-	@echo "  FM23-fmfix-dry          – DRY: Canonical FM normalize (no writes)"
-	@echo "  FM23-fmfix-apply        – APPLY: Canonical FM normalize (writes)"
-	@echo "  FM24-idem-dry           – DRY: Idempotent FM fixer"
-	@echo "  FM24-idem-apply         – APPLY: Idempotent FM fixer"
 	@echo ""
-	@echo "  ⚙️ Tips:"
-	@echo "    make FM20-fix-dry OPTS='--help'      → zobrazí všetky dostupné voľby"
-	@echo "    make FM20-fix-apply OPTS='...'       → preposiela argumenty do skriptu"
 	@echo "Publish:"
 	@echo "  PUB05-sync              – Sync SSOT → publishing/docusaurus/docs (hard sync, uses --delete)"
 	@echo "  PUB05-sync-safe         – Safe sync (no --delete, preserves local pub overrides)"
@@ -1484,22 +1493,19 @@ help: ## H10 – Help
 	@echo "  publish-safe            – content audit+fix → SAFE sync → publish audit+fix → build → stage → commit"
 	@echo ""
 	@echo "KNIFE Tools:"
-	@echo "  knifes-new               – Create new KNIFE (id, name, title)  [DRY: KNIFE_DRY=1]"
-	@echo "                             • KNIFE_DRY=1  → kontrola bez zápisu"
-	@echo "                             • KNIFE_FORCE=1 → prepíše existujúci KNIFE"
-	@echo "  knifes-gen               – Generate KNIFEs from CSV (config-driven)"
-	@echo "  knifes-verify            – Verify CSV/docs consistency + FM integrity"
-	@echo "  knifes-fix-csv-dry       – Dry merge MD → CSV (no writes)"
-	@echo "  knifes-fix-csv-apply     – Apply merge MD → CSV (writes + backup)"
-	@echo "  knifes-csv-scan          – Snapshot docs → CSV (timestamped)"
-	@echo "  knifes-frontmatter-audit-id – Audit one KNIFE by id=KXXXX"
-	@echo "  knifes-verify-frontmatter – Lint required FM fields in index.md"
-	@echo "  dev-gen / build-gen      – Generate + dev/build pipelines"
+	@echo "  knifes-new               – Create new KNIFE (id, name, title)"
+	@echo "  knifes-gen               – CSV→MD generator (config-driven)"
+	@echo "  dev-gen                  – knifes-gen + dev (locale=sk)"
+	@echo "  build-gen                – knifes-gen + build"
+	@echo "  gen-dry                  – dry plan (CSV→MD, no writes)"
+	@echo "  dry-verify               – short verification via generator"
+	@echo "  knifes-verify            – CSV/docs + FM + smart verify"
+	@echo "  knifes-verify-frontmatter – lint required FM fields (index.md only)"
+	@echo "  knifes-frontmatter-audit-id – audit one KNIFE by id=K000059"
+	@echo "  knifes-build-dry / knifes-build-apply – config build (CSV→MD)"
+	@echo "  knifes-csv-scan          – docs → CSV snapshot (timestamped)"
+	@echo "  knifes-fix-csv-dry / knifes-fix-csv-apply – fill-only merge (MD→CSV)"
 	@echo ""
-	@echo "  ⚙️ Tips:"
-	@echo "    make -n knifes-new ...        → zobrazí plán (bez spustenia)"
-	@echo "    KNIFE_DRY=1 make knifes-new … → validácia parametrov bez vytvorenia"
-	@echo "    KNIFE_FORCE=1 make knifes-new … → prepíše existujúci KNIFE"	@echo ""
 	@echo "Aliases kept for compatibility: dev/build/build-fast/serve/check-worktree/copy-build/commit-deploy/deploy/full-deploy"
 	@echo "Notes:"
 	@echo "  • Safe sync honors markers: '.publock' or '.puboverride/' prevents overwrites in publishing/"
@@ -1551,7 +1557,7 @@ clean: ## C10 – Clean caches and build output
 	cd "$(PUB_DOCUS_DIR)" && $(NPM) run clear || true
 	rm -rf "$(PUB_BUILD_DIR)" "$(PUB_DOCUS_DIR)/.docusaurus"
 
-B10-build: G50-guard-node-deps SY01-sync-content clean ## B10 – Production build
+B10-build: SY01-sync-content clean ## B10 – Production build
 	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
 
 B20-build-fast: ## B20 – Build without minify
@@ -1604,84 +1610,6 @@ G10-guard-clean:
 	  echo "✓ Working tree clean."; \
 	fi
 
-
-# Warn on main ahead/behind vs origin
-.PHONY: G15-guard-divergence
-G15-guard-divergence:
-	@set -e; \
-	upstream="origin/main"; \
-	git fetch origin >/dev/null 2>&1 || true; \
-	status="$$(git rev-list --left-right --count $$upstream...HEAD 2>/dev/null || echo)"; \
-	if [ -n "$$status" ]; then \
-	  ahead="$$(echo $$status | awk '{print $$2}')"; behind="$$(echo $$status | awk '{print $$1}')"; \
-	  if [ "$$ahead" != "0" ] || [ "$$behind" != "0" ]; then \
-	    echo "⚠️  main diverged from $$upstream (ahead $$ahead, behind $$behind). Consider: git pull --rebase && git push"; \
-	    [ "$${FAIL_ON_WARN:-0}" = "1" ] && exit 1 || true; \
-	  else echo "✓ main in sync with $$upstream."; fi; \
-	else echo "ℹ️  Unable to compute divergence (no upstream?)."; fi
-
-# Warn if worktree branch diverged from its origin
-.PHONY: G20-guard-worktree-div
-G20-guard-worktree-div:
-	@set -e; \
-	if git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then \
-	  git -C "$(WORKTREE_DIR)" fetch origin >/dev/null 2>&1 || true; \
-	  status="$$(git -C "$(WORKTREE_DIR)" rev-list --left-right --count origin/$(DEPLOY_BRANCH)...HEAD 2>/dev/null || echo)"; \
-	  if [ -n "$$status" ]; then \
-	    ahead="$$(echo $$status | awk '{print $$2}')"; behind="$$(echo $$status | awk '{print $$1}')"; \
-	    if [ "$$ahead" != "0" ] || [ "$$behind" != "0" ]; then \
-	      echo "⚠️  Worktree $(DEPLOY_BRANCH) diverged (ahead $$ahead, behind $$behind). Consider pulling before deploy."; \
-	      [ "$${FAIL_ON_WARN:-0}" = "1" ] && exit 1 || true; \
-	    else echo "✓ Worktree in sync with origin/$(DEPLOY_BRANCH)."; fi; \
-	  fi; \
-	else echo "ℹ️  Worktree not ready (skip)."; fi
-
-# Warn if build older than content (stale build)
-.PHONY: G30-guard-build-stale
-G30-guard-build-stale:
-	@set -e; \
-	if [ -d "$(PUB_BUILD_DIR)" ]; then \
-	  last_build="$$(find "$(PUB_BUILD_DIR)" -type f -exec stat -f '%m' {} + | sort -n | tail -1)"; \
-	  last_src="$$(find "$(CONTENT_DOCS_DIR)" -type f \( -name '*.md' -o -name '*.mdx' \) -exec stat -f '%m' {} + | sort -n | tail -1)"; \
-	  if [ -n "$$last_build" ] && [ -n "$$last_src" ] && [ "$$last_src" -gt "$$last_build" ]; then \
-	    echo "⚠️  Build looks stale vs content. Run: make B10-build"; \
-	    [ "$${FAIL_ON_WARN:-0}" = "1" ] && exit 1 || true; \
-	  else echo "✓ Build is fresh enough."; fi; \
-	else echo "ℹ️  No build folder yet (first deploy will build)."; fi
-
-# Privacy awareness (warn if HARD sync + private content present)
-.PHONY: G40-guard-privacy
-G40-guard-privacy:
-	@set -e; \
-	if command -v rg >/dev/null 2>&1; then \
-	  if rg -n --pcre2 'privacy:\s*private' "$(CONTENT_DOCS_DIR)" >/dev/null 2>&1; then \
-	    if [ "$${SYNC_MODE:-HARD}" = "HARD" ]; then \
-	      echo "⚠️  Found privacy=private in content, but using HARD sync. Consider PUB05-sync-safe or PUB06-sync-privacy."; \
-	      [ "$${FAIL_ON_WARN:-0}" = "1" ] && exit 1 || true; \
-	    else echo "✓ Privacy present, SAFE sync assumed."; fi; \
-	  fi; \
-	fi
-
-# Warn about local overrides/locks in publishing when doing HARD sync
-.PHONY: G45-guard-puboverrides
-G45-guard-puboverrides:
-	@set -e; \
-	if [ -d "$(PUB_DOCS_DIR)/.puboverride" ] || [ -f "$(PUB_DOCS_DIR)/.publock" ]; then \
-	  if [ "$${SYNC_MODE:-HARD}" = "HARD" ]; then \
-	    echo "⚠️  Local overrides/locks detected in publishing/. HARD sync may overwrite them."; \
-	    [ "$${FAIL_ON_WARN:-0}" = "1" ] && exit 1 || true; \
-	  else echo "ℹ️  Overrides present – SAFE sync will preserve them."; fi; \
-	fi
-
-# Basic node deps check (before build)
-.PHONY: G50-guard-node-deps
-G50-guard-node-deps:
-	@set -e; \
-	if [ ! -d "$(PUB_DOCUS_DIR)/node_modules" ]; then \
-	  echo "⚠️  Missing node_modules in $(PUB_DOCUS_DIR). Run: (cd $(PUB_DOCUS_DIR) && npm install)"; \
-	  [ "$${FAIL_ON_WARN:-0}" = "1" ] && exit 1 || true; \
-	else echo "✓ node_modules present."; fi
-
 W10-check-worktree: ## W10 – Create/repair worktree
 	@if [ -d "$(WORKTREE_DIR)" ]; then \
 	  if git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then \
@@ -1716,9 +1644,9 @@ W30-commit-deploy: ## W30 – Commit & push worktree
 	cd $(WORKTREE_DIR) && ts=$$(date -u +"%Y-%m-%d %H:%M:%S UTC"); git commit -m "Deploy $$ts" || echo "⚠️ Nothing to commit."
 	cd $(WORKTREE_DIR) && git push origin $(DEPLOY_BRANCH)
 
-W40-deploy: G10-guard-clean G15-guard-divergence G20-guard-worktree-div G30-guard-build-stale W10-check-worktree B10-build W20-copy-build W30-commit-deploy ## W40 – Build & deploy to worktree
+W40-deploy: G10-guard-clean W10-check-worktree B10-build W20-copy-build W30-commit-deploy ## W40 – Build & deploy to worktree
 
-W50-full-deploy: G10-guard-clean G15-guard-divergence G20-guard-worktree-div G30-guard-build-stale W10-check-worktree push-main B10-build W20-copy-build W30-commit-deploy ## W50 – Push main + build + deploy
+W50-full-deploy: G10-guard-clean W10-check-worktree push-main B10-build W20-copy-build W30-commit-deploy ## W50 – Push main + build + deploy
 	@echo "🎉 Full deploy → $(DEPLOY_BRANCH)"
 
 W60-worktree-status: ## W60 – Show worktree status
@@ -1751,12 +1679,7 @@ worktree-status: W60-worktree-status
 FM10-audit:
 	@echo "🔍 Auditing Front Matter in Markdown files (read-only)..."
 	@mkdir -p logs
-	@python3 core/scripts/tools/fm_audit.py \
-		--root content \
-		--also docs \
-		--template "$(TEMPLATE_MD)" \
-		--locales sk,en \
-		--output logs/fm_audit_report.csv || true
+	@python3 core/scripts/tools/fm_audit.py --root content --also docs --template system/template/FM_full.yaml --locales sk,en --output logs/fm_audit_report.csv || true
 	@echo "📋 FM audit complete. Report saved to logs/fm_audit_report.csv"
 
 # -------------------------------------------------------------
@@ -1791,64 +1714,6 @@ FM20-fix-apply:
 # Backward-compatible alias (defaults to DRY)
 FM20-fix: FM20-fix-dry
 
-# -------------------------------------------------------------
-#  FM11-lint – Lint Front Matter (read-only)
-# -------------------------------------------------------------
-.PHONY: FM11-lint
-FM11-lint:
-	@echo "🔎 Linting Front Matter (read-only)…"
-	@mkdir -p logs
-	@python3 core/scripts/tools/frontmatter_lint.py $(OPTS) || true
-	@echo "📋 Lint complete. (Use OPTS='--help' to see options)"
-
-#
-# -------------------------------------------------------------
-#  FM22 – GUID fixes (missing / placeholder / invalid) – Python only
-# -------------------------------------------------------------
-.PHONY: FM22-guid-dry FM22-guid-apply
-FM22-guid-dry:
-	@echo "🧪 DRY: GUID backfill (no writes)…"
-	@mkdir -p logs
-	@python3 core/scripts/tools/guid_backfill.py $(OPTS) || true
-	@echo "✅ DRY done. Review output above."
-
-FM22-guid-apply:
-	@echo "🛠 APPLY: GUID backfill (writes)…"
-	@mkdir -p logs
-	@python3 core/scripts/tools/guid_backfill.py --apply $(OPTS)
-	@echo "✅ GUID apply complete."
-
-# -------------------------------------------------------------
-#  FM23 – Canonical FM normalize/fix (Python)
-# -------------------------------------------------------------
-.PHONY: FM23-fmfix-dry FM23-fmfix-apply
-FM23-fmfix-dry:
-	@echo "🧪 DRY: Canonical FM normalize (no writes)…"
-	@mkdir -p logs
-	@python3 core/scripts/tools/fix_frontmatter.py $(OPTS) --dry-run || true
-	@echo "📋 Report (optional): use OPTS='--report logs/fm_fix_report.csv'"
-
-FM23-fmfix-apply:
-	@echo "🛠 APPLY: Canonical FM normalize (writes)…"
-	@mkdir -p logs
-	@python3 core/scripts/tools/fix_frontmatter.py --apply $(OPTS)
-	@echo "✅ FM normalize applied."
-
-# -------------------------------------------------------------
-#  FM24 – Idempotent fixer (Python all-in-one) if present
-# -------------------------------------------------------------
-.PHONY: FM24-idem-dry FM24-idem-apply
-FM24-idem-dry:
-	@echo "🧪 DRY: Idempotent FM fixer…"
-	@mkdir -p logs
-	@python3 core/scripts/tools/knife_idempotent_fix_v5.py $(OPTS) --dry-run || true
-
-FM24-idem-apply:
-	@echo "🛠 APPLY: Idempotent FM fixer…"
-	@mkdir -p logs
-	@python3 core/scripts/tools/knife_idempotent_fix_v5.py --apply $(OPTS)
-	@echo "✅ Idempotent fixer applied."
-
 # =========================================================
 # PUBLISH: one-button pipeline (uses existing SY01/W* targets)
 # - Integrates FM audit/fix as pre-flight checks
@@ -1857,14 +1722,10 @@ FM24-idem-apply:
 
 ## PUB05-sync: sync SSOT content → publishing/docusaurus/docs
 PUB05-sync:
-PUB05-sync: SYNC_MODE=HARD
-PUB05-sync: G40-guard-privacy G45-guard-puboverrides
 	@$(MAKE) SY01-sync-content
 
 ## PUB05-sync-safe: safe sync (no --delete, preserves local pub overrides)
 PUB05-sync-safe:
-PUB05-sync-safe: SYNC_MODE=SAFE
-PUB05-sync-safe: G40-guard-privacy G45-guard-puboverrides
 	@echo "🔁 SAFE sync (no --delete) SSOT → publishing/docusaurus/docs"
 	@test -d "$(CONTENT_DOCS_DIR)" || (echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1)
 	@mkdir -p "$(PUB_DOCS_DIR)"
@@ -1876,4 +1737,160 @@ PUB05-sync-safe: G40-guard-privacy G45-guard-puboverrides
 PUB10-build:
 	@$(MAKE) B10-build
 
-## PUB20-stage: ensure worktree and co<truncated__content/>
+## PUB20-stage: ensure worktree and copy build into /docs
+PUB20-stage:
+	@$(MAKE) W10-check-worktree
+	@$(MAKE) W20-copy-build
+
+## PUB30-commit: commit & push worktree (idempotent)
+PUB30-commit:
+	@$(MAKE) W30-commit-deploy
+
+## PUB40-push: kept for clarity (push happens in PUB30-commit)
+PUB40-push:
+	@echo "ℹ️  Push is executed in PUB30-commit (commit-deploy). Nothing to do."
+
+## publish: FM audit + (apply fix) → sync → build → stage → commit
+publish: FM10-audit FM20-fix-apply PUB05-sync PUB10-build PUB20-stage PUB30-commit
+	@echo "🎉 Publish complete."
+
+## publish-safe: FM audit+fix → SAFE sync → publish audit+fix → build → stage → commit
+publish-safe: FM10-audit FM20-fix-apply PUB05-sync-safe PUB12-audit-pubdocs PUB10-build PUB20-stage PUB30-commit
+	@echo "🎉 Publish SAFE complete."
+
+# =========================================================
+# 📋 Publish audit/fix (publishing/docusaurus/docs)
+# =========================================================
+.PHONY: PUB12-audit-pubdocs PUB22-fix-pubdocs-dry PUB22-fix-pubdocs-apply
+
+PUB12-audit-pubdocs:
+	@echo "🔍 Auditing FM in publishing/docusaurus/docs (read-only)…"
+	@mkdir -p logs
+	@python3 core/scripts/tools/fm_audit.py \
+		--root publishing/docusaurus/docs \
+		--template system/templates/FM_full.yaml \
+		--locales sk,en \
+		--output logs/fm_audit_publish.csv || true
+	@echo "📋 Report: logs/fm_audit_publish.csv"
+
+PUB22-fix-pubdocs-dry:
+	@echo "🧪 DRY-RUN: Normalizing FM in publishing/docusaurus/docs…"
+	@mkdir -p logs
+	@python3 core/scripts/tools/fm_fix.py \
+		--root publishing/docusaurus/docs \
+		--include "**/*.md" \
+		--include "**/*.mdx" \
+		--backup-ext .bak \
+		--report logs/fm_fix_publish.csv \
+		--dry-run || true
+	@echo "📋 Dry report: logs/fm_fix_publish.csv"
+
+PUB22-fix-pubdocs-apply:
+	@echo "🛠 APPLY: Normalizing FM in publishing/docusaurus/docs (with backups)…"
+	@mkdir -p logs
+	@python3 core/scripts/tools/fm_fix.py \
+		--root publishing/docusaurus/docs \
+		--include "**/*.md" \
+		--include "**/*.mdx" \
+		--backup \
+		--backup-ext .bak \
+		--report logs/fm_fix_publish.csv
+	@echo "✅ Publish FM fix complete. Report: logs/fm_fix_publish.csv"
+
+	.PHONY: PUB06-sync-privacy PUB07-sync-privacy-hard PUB11-audit-privacy
+
+## PUB06-sync-privacy: SAFE sync s rešpektovaním privacy (bez --delete)
+PUB06-sync-privacy:
+	@echo "🔒 Sync (privacy-aware, SAFE)…"
+	@test -d "$(CONTENT_DOCS_DIR)" || (echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1)
+	@mkdir -p "$(PUB_DOCS_DIR)" logs
+	@TMP_EXCL=$$(mktemp); \
+	  python3 core/scripts/tools/fm_list_privates.py \
+	    --root "$(CONTENT_DOCS_DIR)" --mode auto > "$$TMP_EXCL"; \
+	  echo "• Excluding private paths:"; sed 's/^/   - /' "$$TMP_EXCL" || true; \
+	  rsync -av --checksum \
+	    --exclude-from="$$TMP_EXCL" \
+	    "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"; \
+	  rm -f "$$TMP_EXCL"
+	@echo "✅ Privacy-aware SAFE sync complete."
+
+## PUB07-sync-privacy-hard: HARD sync s rešpektovaním privacy (s --delete)
+PUB07-sync-privacy-hard:
+	@echo "🔒 Sync (privacy-aware, HARD --delete)…"
+	@test -d "$(CONTENT_DOCS_DIR)" || (echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1)
+	@mkdir -p "$(PUB_DOCS_DIR)" logs
+	@TMP_EXCL=$$(mktemp); \
+	  python3 core/scripts/tools/fm_list_privates.py \
+	    --root "$(CONTENT_DOCS_DIR)" --mode auto > "$$TMP_EXCL"; \
+	  echo "• Excluding private paths:"; sed 's/^/   - /' "$$TMP_EXCL" || true; \
+	  rsync -av --delete --checksum \
+	    --exclude-from="$$TMP_EXCL" \
+	    "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"; \
+	  rm -f "$$TMP_EXCL"
+	@echo "✅ Privacy-aware HARD sync complete."
+
+## PUB11-audit-privacy: varuj, ak sa v publishing/ nachádzajú private dokumenty
+PUB11-audit-privacy:
+	@echo "🔎 Auditing publishing for privacy: private…"
+	@if [ -d "$(PUB_DOCS_DIR)" ]; then \
+	  rg -n --pcre2 'privacy:\s*private' "$(PUB_DOCS_DIR)" || echo "✓ No private documents in publishing/"; \
+	else \
+	  echo "ℹ️  $(PUB_DOCS_DIR) does not exist yet."; \
+	fi
+
+
+	.PHONY: FM30-expand-dry FM30-expand-apply
+
+## FM30-expand-dry: DRY-RUN – rozšír krátky FM na plný podľa FM-Core.md (len report)
+FM30-expand-dry:
+	@echo "🧪 DRY-RUN: Expanding short FM → full FM (template=core/templates/system/FM-Core.md)…"
+	@mkdir -p logs
+	@python3 core/scripts/tools/fm_expand.py \
+		--root content \
+		--include "**/*.md" \
+		--include "**/*.mdx" \
+		--template core/templates/system/FM-Core.md \
+		--report logs/fm_expand_report.csv \
+		--dry-run || true
+	@echo "📋 Report: logs/fm_expand_report.csv"
+
+## FM30-expand-apply: APPLY – zapíš plný FM (zálohy .bak)
+FM30-expand-apply:
+	@echo "🛠 APPLY: Expanding short FM → full FM (writes + backups)…"
+	@mkdir -p logs
+	@python3 core/scripts/tools/fm_expand.py \
+		--root content \
+		--include "**/*.md" \
+		--include "**/*.mdx" \
+		--template core/templates/system/FM-Core.md \
+		--backup-ext .bak \
+		--report logs/fm_expand_report.csv
+	@echo "✅ FM expand complete. Report: logs/fm_expand_report.csv"
+
+
+	.PHONY: FM11-audit-text FM21-fix-text-dry FM21-fix-text-apply NEW-from-template
+
+FM11-audit-text:
+	@mkdir -p logs
+	python3 core/scripts/tools/fm_audit_text.py \
+	  --root content --also publishing/docusaurus/docs \
+	  --output logs/fm_audit_text.csv
+
+FM21-fix-text-dry:
+	@mkdir -p logs
+	python3 core/scripts/tools/fm_fix_text.py \
+	  --root content --also publishing/docusaurus/docs
+
+FM21-fix-text-apply:
+	@mkdir -p logs
+	python3 core/scripts/tools/fm_fix_text.py \
+	  --root content --also publishing/docusaurus/docs --apply
+
+
+# --------------------------------------------------------------------
+# FM template location (for new files, expansion, etc.)
+# Prefer canonical new path, fallback to legacy if missing
+TEMPLATE_MD ?= core/templates/system/FM-Core.md
+ifeq ("$(wildcard $(TEMPLATE_MD))","")
+  TEMPLATE_MD := system/templates/FM-Core.md
+endif

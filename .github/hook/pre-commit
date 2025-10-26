@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+echo "🔍 pre-commit: case-collision check"
+# Autodetekcia Pythonu (Win/macOS/Linux)
+if command -v python3 >/dev/null 2>&1; then
+  PY=python3
+elif command -v python >/dev/null 2>&1; then
+  PY=python
+else
+  echo "❗ Python nie je nainštalovaný. Preskakujem check." >&2
+  exit 0
+fi
+$PY .github/tools/casecheck.py

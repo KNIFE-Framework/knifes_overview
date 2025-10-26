@@ -36,7 +36,7 @@ fm_reserved2: ""
 # 🧰 Active Presenter Essentials – Strih, titulky, kvízy, export
 
 <!-- fm-visible: start -->
-> **GUID:** `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx`
+> **GUID:** `29137d69-fb85-41f5-8f98-69c2da54208a`
 > **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

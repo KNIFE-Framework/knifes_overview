@@ -36,7 +36,7 @@ fm_reserved2: ""
 # 🎬 Video Workflow (SK originál → EN titulky/voice)
 
 <!-- fm-visible: start -->
-> **GUID:** `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx`
+> **GUID:** `e93b08eb-d3f0-481a-a892-025eebcd68b9`
 > **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

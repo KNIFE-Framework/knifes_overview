@@ -36,7 +36,7 @@ fm_reserved2: ""
 # Názov KNIFE (zmeň ma)
 
 <!-- fm-visible: start -->
-> **GUID:** `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx`
+> **GUID:** `47324cdc-e64b-4fb2-afeb-e54dd50c1751`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

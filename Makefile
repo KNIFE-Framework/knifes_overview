@@ -1718,6 +1718,7 @@ W30-commit-deploy: ## W30 – Commit & push worktree
 	@if ! git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then echo "❌ $(WORKTREE_DIR) not a git worktree. Run: make W10-check-worktree"; exit 1; fi
 	cd $(WORKTREE_DIR) && git add -A
 	cd $(WORKTREE_DIR) && ts=$$(date -u +"%Y-%m-%d %H:%M:%S UTC"); git commit -m "Deploy $$ts" || echo "⚠️ Nothing to commit."
+	git pull origin gh-pages-docusaurus --rebase || true
 	cd $(WORKTREE_DIR) && git push origin $(DEPLOY_BRANCH)
 
 W40-deploy: G10-guard-clean G15-guard-divergence G20-guard-worktree-div G30-guard-build-stale W10-check-worktree B10-build W20-copy-build W30-commit-deploy ## W40 – Build & deploy to worktree

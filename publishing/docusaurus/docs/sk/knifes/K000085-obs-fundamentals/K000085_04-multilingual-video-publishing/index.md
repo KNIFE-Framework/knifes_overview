@@ -36,7 +36,7 @@ fm_reserved2: ""
 # 🌍 Multilingual Video Publishing – SK originál, EN titulky a EN voice
 
 <!-- fm-visible: start -->
-> **GUID:** `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx`
+> **GUID:** `bcadd10f-a1fa-4797-8eda-565d63d4443b`
 > **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

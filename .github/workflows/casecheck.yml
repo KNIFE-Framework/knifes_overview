@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run case-collision check
         run: |
-          python3 tools/casecheck.py
+          python3 core/tools/scripts/casecheck.py

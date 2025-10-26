@@ -26,7 +26,7 @@ tags: ["knife", "student", "project", "outcomes"]
 # 🌍 Localization & Routing
 slug: "/sk/knifes/K000004-Project-Outcomes"
 locale: "sk"
-sidebar_label: "Project Outcomes"
+#sidebar_label: "Project Outcomes"
 
 # 🕒 Lifecycle
 created: "2025-10-13"

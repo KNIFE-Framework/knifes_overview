@@ -2,7 +2,7 @@
 fm_version: "1.0.1"
 fm_build: "2025-10-12T10:35:00Z"
 fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "KXXXXXXX"
+id: "KNIFE_OVERVIEW_HOME"
 guid: "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx"
 dao: "knife"
 title: "KNIFE – Prehľad"
@@ -14,7 +14,6 @@ type: ""
 priority: "no"
 tags: []
 locale: "en"
-sidebar_label: "Home"
 created: "2025-09-24"
 modified: "YYYY-MM-DDTHH:MM:SSZ"
 status: "backlog"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "KNIFE – Prehľad"
 ---
 # 📋 KNIFEs Overview
 

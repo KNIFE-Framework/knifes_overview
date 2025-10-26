@@ -3,8 +3,8 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   docs: [
-    // Domov (existuje ako docs/sk/index.md => id: 'sk/index')
-    { type: 'doc', id: 'sk/index', label: '🏠 Domov' },
+    // Domov (existuje ako docs/sk/index.md => id: 'sk/KNIFE_HOME')
+    { type: 'doc', id: 'sk/KNIFE_HOME', label: '🏠 Domov' },
 
     // 7Ds (autogen z docs/sk/7Ds)
     {

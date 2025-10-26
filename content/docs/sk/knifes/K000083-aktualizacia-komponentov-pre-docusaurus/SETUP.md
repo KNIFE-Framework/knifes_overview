@@ -14,7 +14,6 @@ type: "knife"
 priority: "no"
 tags: ["-"]
 locale: "sk"
-sidebar_label: "K000083_02 –"
 created: "2025-09-26"
 modified: "2025-09-26"
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: "-"
 author_did: "-"
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "K000083_02 –"
 ---
 # Rýchla cesta k Node 22 (vyber si 1 možnosť)
 

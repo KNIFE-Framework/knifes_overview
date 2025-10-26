@@ -26,7 +26,7 @@ tags: ["about-me", "student", "introduction"]
 # 🌍 Localization & Routing
 slug: "about-me"
 locale: "sk"
-sidebar_label: "About Me"
+#sidebar_label: "About Me"
 
 # 🕒 Lifecycle
 created: "2025-10-13"

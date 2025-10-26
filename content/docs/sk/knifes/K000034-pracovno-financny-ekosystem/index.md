@@ -14,7 +14,6 @@ type: "Koncepty"
 priority: "no"
 tags: ["Pracovné právo"]
 locale: "en"
-sidebar_label: "Home"
 created: "2025-05-25"
 modified: "-"
 status: "backlog"
@@ -32,8 +31,10 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "Pracovno, finančný ekosystém"
 ---
 # Pracovno, finančný ekosystém
+
 <!-- fm-visible: start -->
 > **GUID:** `cd2b41b5-45c1-4464-9c35-94ad9309bbea`
 > **Status:** `backlog` · **Author:** Roman Kazicka · **License:** CC-BY-NC-SA-4.0

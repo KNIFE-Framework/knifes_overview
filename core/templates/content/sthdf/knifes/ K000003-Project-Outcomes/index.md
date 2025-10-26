@@ -26,7 +26,7 @@ tags: ["project", "outcomes", "reflection"]
 # 🌍 Localization & Routing
 slug: "project-outcomes"
 locale: "sk"
-sidebar_label: "Project Outcomes"
+#sidebar_label: "Project Outcomes"
 
 # 🕒 Lifecycle
 created: "2025-10-13"

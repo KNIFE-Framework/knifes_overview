@@ -21,7 +21,7 @@ const HEADER_ALIASES = {
   id: ['ID', 'Id', 'id', '\uFEFFID'],
   short_title: ['ShortTitle', 'Short Title', 'title'],
   folder_name: ['FolderName', 'Folder Name'],
-  sidebar_label: ['SidebarLabel', 'Sidebar Label'],
+  #sidebar_label: ['SidebarLabel', 'Sidebar Label'],
   date: ['Date', 'Date of Record', 'created'],
 };
 
@@ -400,7 +400,7 @@ function buildFrontMatter(row, d, opts) {
     description: row.Description ? String(row.Description).replace(/\\{2,}/g,'\\') : '',
     status: row.Status ? String(row.Status).toLowerCase() : 'draft',
     slug,
-    sidebar_label: `${id} – ${shortTitle}`,
+    #sidebar_label: `${id} – ${shortTitle}`,
     sidebar_position: position,
     tags,
     locale: loc

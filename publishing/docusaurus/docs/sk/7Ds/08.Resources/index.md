@@ -2,7 +2,7 @@
 fm_version: "1.0.1"
 fm_build: "2025-10-12T10:35:00Z"
 fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "index"
+id: "KXXXXXXX"
 guid: "9c3f6889-d692-45f4-9c74-42721ee3785c"
 dao: "class"
 title: "08.Resources"
@@ -14,7 +14,6 @@ type: ""
 priority: "no"
 tags: []
 locale: "sk"
-sidebar_label: "08.Resources"
 created: "2025-09-23"
 modified: ""
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "08.Resources"
 ---
 # 08.Resources
 

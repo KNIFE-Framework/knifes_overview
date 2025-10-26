@@ -2,7 +2,7 @@
 fm_version: "1.0.1"
 fm_build: "2025-10-12T10:35:00Z"
 fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "issue_template_task_with_status_20250810-123634"
+# id: ""
 guid: "13607548-8311-408f-9a6c-cae8456d81f0"
 dao: "class"
 title: "[TASK] Krátky názov"
@@ -14,7 +14,6 @@ type: ""
 priority: "no"
 tags: []
 locale: "sk"
-sidebar_label: "[TASK] Krátky názov"
 created: "2025-09-23"
 modified: ""
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "[TASK] Krátky názov"
 ---
 # [TASK] Krátky názov
 

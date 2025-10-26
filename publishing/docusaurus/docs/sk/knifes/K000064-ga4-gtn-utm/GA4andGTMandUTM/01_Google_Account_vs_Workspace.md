@@ -14,7 +14,6 @@ type: "-"
 priority: "no"
 tags: ["KNIFE"]
 locale: "sk"
-sidebar_label: "Google Account vs Google Workspace"
 created: "2025-09-24"
 modified: "-"
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: "-"
 author_did: "-"
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "Google Account vs Google Workspace"
 ---
 # Google Account vs Google Workspace
 

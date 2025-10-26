@@ -15,7 +15,7 @@ priority: "top"
 tags: ["terminology","glossary","standards"]
 slug: ""
 locale: "sk"
-sidebar_label: "Terminology"
+#sidebar_label: "Terminology"
 created: "2025-10-12"
 modified: ""
 status: "inprogress"

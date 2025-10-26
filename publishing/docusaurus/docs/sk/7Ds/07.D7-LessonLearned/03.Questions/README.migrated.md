@@ -2,7 +2,7 @@
 fm_version: "1.0.1"
 fm_build: "2025-10-12T10:35:00Z"
 fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "readme.migrated"
+id: "KXXXXXXX"
 guid: "ef304618-4c60-4a17-b1bd-2ff8e63b973a"
 dao: "class"
 title: "03.Questions"
@@ -14,7 +14,6 @@ type: ""
 priority: "no"
 tags: []
 locale: "sk"
-sidebar_label: "03.Questions"
 created: "2025-09-23"
 modified: ""
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "03.Questions"
 ---
 # 03.Questions (EN)
 

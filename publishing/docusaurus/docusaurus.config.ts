@@ -9,8 +9,8 @@ const strictMode = process.env.DOCS_STRICT === '1';
 const brokenPolicy = strictMode ? 'throw' : 'warn';
 
 // Build metadata from environment (provided by Makefile / CI)
-const buildDate = process.env.BUILD_DATE || '20251012-2333';
-const appVersion = process.env.APP_VERSION || '20251012-2333';
+const buildDate = process.env.BUILD_DATE || '20251022-2222';
+const appVersion = process.env.APP_VERSION || '20251022-2222';
 
 const config: Config = {
   title: 'KNIFE Preview - Knowledge in Friendly Examples',   // ✅ povinné
@@ -81,7 +81,7 @@ const config: Config = {
 
           // Backward-compatible old paths
           { from: ['/index', '/home'], to: '/sk' },
-          { from: ['/knifes', '/sk/knifes'],  to: '/sk/knifes/overview' },
+          { from: ['/knifes', '/sk/knifes'],  to: '/sk/knifes/KNIFE_OVERVIEW_LIST' },
           { from: ['/7Ds'],                 to: '/sk/7Ds' },
         ],
         createRedirects(existingPath) {
@@ -126,7 +126,7 @@ const config: Config = {
       logo: { alt: 'KNIFE Logo', src: 'img/logo.png', href: '/sk' },
       items: [
         { to: '/sk', label: 'Home', position: 'left' },
-        { to: '/sk/knifes/overview', label: 'KNIFES', position: 'left' },
+        { to: '/sk/knifes/KNIFE_OVERVIEW_LIST', label: 'KNIFES', position: 'left' },
         { to: '/sk/7Ds', label: '7Ds', position: 'left' },
         { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
       ],

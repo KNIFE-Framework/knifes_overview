@@ -14,7 +14,6 @@ type: "user-guide"
 priority: "top"
 tags: ["GIT","UAT","Workflow"]
 locale: "sk"
-sidebar_label: "Presun zmien z FIX do UAT"
 created: "2025-10-05"
 modified: "-"
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "Presun zmien z FIX do UAT"
 ---
 # 🧭 Postup pre presun zmien z vetvy **FIX** do **UAT**
 

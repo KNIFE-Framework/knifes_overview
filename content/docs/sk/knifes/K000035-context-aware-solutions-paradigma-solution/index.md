@@ -14,7 +14,6 @@ type: "User guide"
 priority: "no"
 tags: []
 locale: "en"
-sidebar_label: "Home"
 created: "2025-05-26"
 modified: "-"
 status: "inprogress"
@@ -32,8 +31,10 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "Context Aware Solutions / paradigma, solution"
 ---
 # Context Aware Solutions / paradigma, solution
+
 <!-- fm-visible: start -->
 > **GUID:** `a0dd0165-5fd8-4d56-b1e5-46b014bf6dd6`
 > **Status:** `inprogress` · **Author:** Roman Kazicka · **License:** CC-BY-NC-SA-4.0

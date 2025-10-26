@@ -2,7 +2,7 @@
 fm_version: "1.0.1"
 fm_build: "2025-10-12T10:35:00Z"
 fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "readme_task_management_20250810-123634"
+# id: ""
 guid: "94f360ff-201a-4c7c-bfc7-c2255ee6c7fb"
 dao: "class"
 title: "Knife_Management"
@@ -14,7 +14,6 @@ type: ""
 priority: "no"
 tags: []
 locale: "sk"
-sidebar_label: "Knife_Management"
 created: "2025-09-23"
 modified: ""
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "Knife_Management"
 ---
 # Project Task Management – Minimal, GitHub-first
 

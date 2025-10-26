@@ -18,7 +18,7 @@ priority: "top"
 tags: ["todo","wishlist","deferred","decision","info"]
 
 locale: "sk"
-sidebar_label: "TOD-List"
+#sidebar_label: "TOD-List"
 created: "2025-10-12"
 modified: ""
 status: "inprogress"

@@ -2,7 +2,7 @@
 fm_version: "1.0.1"
 fm_build: "2025-10-12T10:35:00Z"
 fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "guide_tokens"
+# id: ""
 guid: "4148f6d5-5dd4-4280-a694-f85e85410fd1"
 dao: "class"
 title: "Docusaurus-Guide"
@@ -14,7 +14,6 @@ type: ""
 priority: "no"
 tags: []
 locale: "sk"
-sidebar_label: "Docusaurus-Guide"
 created: "2025-09-23"
 modified: ""
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "Docusaurus-Guide"
 ---
 # Token Management
 

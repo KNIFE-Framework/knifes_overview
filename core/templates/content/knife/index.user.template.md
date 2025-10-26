@@ -1,21 +1,18 @@
 <!-- User-facing content template (MD). No FM at top. -->
 # Názov KNIFE (zmeň ma)
 
-> Tento súbor je **obsahový template** pre používateľa. Systém pri publikovaní
-> doplní YAML Front Matter automaticky na základe CSV a systemTemplate (fm.knife.yml).
+## 🎯 Čo rieši (účel, cieľ)
 
-## Summary
-Stručný popis...
+## 🧩 Ako to rieši (princíp)
 
-## Context
-Prečo to vzniklo, komu pomáha...
+## 🧪 Ako to použiť (aplikácia)
 
-## Steps
-- krok 1
-- krok 2
+---
 
-## Outcomes
-- čo dosiahneš
+## ⚡ Rýchly návod (Top)
 
-## Resources
-- odkazy
+## 📜 Detailný článok
+
+## 💡 Tipy a poznámky
+
+## ✅ Hodnota / Zhrnutie

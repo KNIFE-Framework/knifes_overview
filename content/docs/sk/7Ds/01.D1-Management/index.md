@@ -2,7 +2,7 @@
 fm_version: "1.0.1"
 fm_build: "2025-10-12T10:35:00Z"
 fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "01.d1-management"
+id: "KXXXXXXX"
 guid: "48bde968-147b-4a02-aabb-f2bc7c27eb73"
 dao: "class"
 title: "01.D1-Management"
@@ -14,7 +14,6 @@ type: ""
 priority: "no"
 tags: []
 locale: "sk"
-sidebar_label: "01.D1-Management"
 created: "2025-09-23"
 modified: ""
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+###sidebar_label: "01.D1-Management"
 ---
 # 01.D1-Management
 

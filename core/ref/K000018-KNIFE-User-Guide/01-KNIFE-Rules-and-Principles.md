@@ -14,7 +14,7 @@ created: "2025-09-17"
 modified: "2025-09-30"
 status: "inprogress"
 locale: "sk"
-sidebar_label: "K000000018-01 –  KNIFEs - Rules and Princpiples"
+#sidebar_label: "K000000018-01 –  KNIFEs - Rules and Princpiples"
 sidebar_position: 1
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"

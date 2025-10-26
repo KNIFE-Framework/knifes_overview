@@ -14,7 +14,6 @@ type: "knife"
 priority: "no"
 tags: ["-"]
 locale: "sk"
-sidebar_label: "K000084_02 –GitHub Education Faculty Benefits – Usage Scenario"
 created: "2025-09-26"
 modified: "2025-09-26"
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: "-"
 author_did: "-"
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "K000084_02 –GitHub Education Faculty Benefits – Usage Scenario"
 ---
 # GitHub Education Faculty Benefits – Usage Scenario
 

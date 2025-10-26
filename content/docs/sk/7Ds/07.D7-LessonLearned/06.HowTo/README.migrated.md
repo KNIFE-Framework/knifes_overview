@@ -2,7 +2,7 @@
 fm_version: "1.0.1"
 fm_build: "2025-10-12T10:35:00Z"
 fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "readme.migrated"
+id: "KXXXXXXX"
 guid: "0d82a7dc-ceb7-46d4-8b82-89bab85260b8"
 dao: "class"
 title: "06.HowTo"
@@ -14,7 +14,6 @@ type: ""
 priority: "no"
 tags: []
 locale: "sk"
-sidebar_label: "06.HowTo"
 created: "2025-09-23"
 modified: ""
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "06.HowTo"
 ---
 # 06.HowTo (EN)
 

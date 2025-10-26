@@ -14,7 +14,6 @@ type: "tutorial"
 priority: "top"
 tags: ["webinars","tutorials"]
 locale: "en"
-sidebar_label: "HOBS-Fundamentals"
 created: "2025-10-19"
 modified: "YYYY-MM-DDTHH:MM:SSZ"
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: "RomanKazicka"
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "HOBS-Fundamentals"
 ---
 # 🌍 Multilingual Video Publishing – SK originál, EN titulky a EN voice
 

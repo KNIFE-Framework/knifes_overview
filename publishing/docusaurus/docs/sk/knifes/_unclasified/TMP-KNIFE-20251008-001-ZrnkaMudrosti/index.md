@@ -14,7 +14,6 @@ type: ""
 priority: "low"
 tags: []
 locale: "en"
-sidebar_label: "Home"
 created: "2025-10-08"
 modified: ""
 status: "inprogress"
@@ -32,6 +31,7 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "Zrnká múdrosti na cestách"
 short_title: "Zrnká múdrosti"
 ---
 # 🌱 Zrnká múdrosti na cestách

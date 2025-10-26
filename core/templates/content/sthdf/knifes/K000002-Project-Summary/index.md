@@ -26,7 +26,7 @@ tags: ["project", "summary", "student"]
 # 🌍 Localization & Routing
 slug: "project-summary"
 locale: "sk"
-sidebar_label: "Project Summary"
+#sidebar_label: "Project Summary"
 
 # 🕒 Lifecycle
 created: "2025-10-13"

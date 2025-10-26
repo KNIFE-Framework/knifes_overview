@@ -15,18 +15,18 @@ description: ""
 
 # 👥 Authorship
 author: "Roman Kazička"
-authors: ["Roman Kazička", "", ""]
+authors: ["Roman Kazička"]
 
 # 🗂 Classification
 category: ""                  # deliverable | methodology | knife | howto | other
 type: ""                      # about-me | pitch-presentation | project-summary | howto | other
 priority: ""                  # top | middle | low | no
-tags: ["", ""]                # e.g. ["knowledgemanagement","3RS","CAA"]
+tags: ["knife"]               # e.g. ["knowledgemanagement","3RS","CAA"]
 
 # 🌍 Localization & Routing
-#slug: ""                      # optional, relative path override
+#slug: ""                     # optional, relative path override
 locale: "en"                  # sk | en | other
-sidebar_label: "Home"
+#sidebar_label: "Home"        # only in case You want to change the sidebar label ( derived from Title, or ID) 
 
 # 🕒 Lifecycle
 created: "2025-09-24"

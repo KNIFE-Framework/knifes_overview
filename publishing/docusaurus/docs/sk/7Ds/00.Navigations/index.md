@@ -48,4 +48,4 @@ fm_reserved2: ""
 - [05.D5-Implementation](../05.D5-Implementation/index.md)
 - [06.D6-Verification-Testing](../06.D6-Verification-Testing/index.md)
 - [07.D7-LessonLearned](../07.D7-LessonLearned/index.md)
-- [08.Resources](../08.Resources/index.md)
+

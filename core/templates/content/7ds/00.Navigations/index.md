@@ -19,7 +19,7 @@ Použi túto mapu ako hlavný navigačný prehľad celého SDLC / 7Ds cyklu.
 | 5️⃣ | [**D5 – Implementation**](./05.D5-Implementation/index.md) | Realizácia návrhu, vývoj a integrácia riešenia. |
 | 6️⃣ | [**D6 – Verification & Testing**](./06.D6-Verification-Testing/index.md) | Overenie kvality a testovanie riešenia. |
 | 7️⃣ | [**D7 – Lessons Learned**](./07.D7-LessonLearned/index.md) | Získané poznatky, odporúčania a spätná väzba. |
-| 8️⃣ | [**Resources**](./08.Resources/index.md) | Ľudia, čas, financie, infraštruktúra a ostatné zdroje. |
+
 
 ---
 

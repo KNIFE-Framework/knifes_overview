@@ -1402,6 +1402,12 @@ PUB_DOCUS_DIR    := publishing/docusaurus
 PUB_DOCS_DIR     := $(PUB_DOCUS_DIR)/docs
 PUB_BUILD_DIR    := $(PUB_DOCUS_DIR)/build
 
+# ---- Frontmatter tools (unified)
+FM_TOOL := core/scripts/tools/fix_frontmatter.py
+FM_LINT := core/scripts/tools/frontmatter_lint.py
+FM_ROOT ?= $(CONTENT_DOCS_DIR)
+OPTS ?=
+
 # ---- Worktree Deploy (GitHub Pages /docs mode)
 DEPLOY_BRANCH := gh-pages-docusaurus
 WORKTREE_DIR  := ../$(DEPLOY_BRANCH)
@@ -1427,90 +1433,137 @@ endif
 # =========================================================
 .PHONY: help mode doctor print-vars
 help: ## H10 – Help
-	@echo "================  KNIFE Docusaurus – Minimal Makefile  ================"
-	@echo "Core:"
-	@echo "  SY01-sync-content        – Sync content/docs → publishing/docusaurus/docs"
-	@echo "  D10-dev                  – Start local dev server (option: DS_LOCALE=sk|en)"
-	@echo "  B10-build                – Production build (MINIFY=$(MINIFY))"
-	@echo "  B20-build-fast           – Build without minify (MINIFY=0)"
-	@echo "  S10-serve                – Serve static build locally"
+	@echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+	@echo "┃                       KNIFE Docusaurus – Makefile                     ┃"
+	@echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
 	@echo ""
-	@echo "Deploy (Git worktree → $(DEPLOY_BRANCH)):"
-	@echo "  G10-guard-clean        – Warn if working tree dirty (auto-run by W40/W50)"
-	@echo "  (auto) G15/G20/G30     – Divergence & stale-build guards before W40/W50"
-	@echo "  (auto) privacy guards  – G40/G45 run before PUB05-sync / PUB05-sync-safe"
-	@echo "  W10-check-worktree       – Create/repair worktree ../$(DEPLOY_BRANCH)"
-	@echo "  W20-copy-build           – Rsync build → $(PAGES_DIR)"
-	@echo "  W30-commit-deploy        – Commit & push worktree"
-	@echo "  W40-deploy               – W10 + build + copy + commit"
-	@echo "  W50-full-deploy          – W10 + push-main + build + copy + commit"
-	@echo "  W60-worktree-status      – Show worktree status"
+	@echo "┌──────────────────────────────┬────────────────────────────────────────┐"
+	@echo "│ Core                                                              │"
+	@echo "├──────────────────────────────┼────────────────────────────────────────┤"
+	@echo "│ SY01-sync-content            │ Sync content/docs → publishing/docs    │"
+	@echo "│ D10-dev                      │ Start local dev server (DS_LOCALE=sk|en)│"
+	@echo "│ B10-build                    │ Production build (MINIFY=1|0)          │"
+	@echo "│ B20-build-fast               │ Build without minify                    │"
+	@echo "│ S10-serve                    │ Serve static build locally              │"
+	@echo "└──────────────────────────────┴────────────────────────────────────────┘"
 	@echo ""
-	@echo "Preview:"
-	@echo "  P10-preview              – build + serve (production preview)"
+	@echo "┌──────────────────────────────┬────────────────────────────────────────┐"
+	@echo "│ Deploy (Git worktree → gh-pages-docusaurus)                        │"
+	@echo "├──────────────────────────────┼────────────────────────────────────────┤"
+	@echo "│ W10-check-worktree           │ Create/repair worktree ../gh-pages…    │"
+	@echo "│ W20-copy-build               │ Rsync build → worktree /docs           │"
+	@echo "│ W30-commit-deploy            │ Commit & push worktree                  │"
+	@echo "│ W40-deploy                   │ W10 + build + copy + commit             │"
+	@echo "│ W50-full-deploy              │ W10 + push-main + build + copy + commit │"
+	@echo "│ W60-worktree-status          │ Show worktree status                    │"
+	@echo "└──────────────────────────────┴────────────────────────────────────────┘"
 	@echo ""
-	@echo "FM tools:"
-	@echo "  FM10-audit              – Audit Front Matter (read-only)"
-	@echo "  FM11-lint               – Lint Front Matter (read-only)"
-	@echo "  FM20-fix-dry            – DRY-RUN normalize/fix (no writes)"
-	@echo "  FM20-fix-apply          – APPLY normalize/fix (writes + backups)"
-	@echo "  FM20-fix                – Alias to FM20-fix-dry"
-	@echo "  FM22-guid-dry           – DRY: GUID backfill (missing/placeholder/invalid)"
-	@echo "  FM22-guid-apply         – APPLY: GUID backfill (writes, safe string ops)"
-	@echo "     e.g.: make FM22-guid-dry OPTS='--root content'"
-	@echo "           make FM22-guid-apply OPTS='--root content --apply'"
-	@echo "  FM23-fmfix-dry          – DRY: Canonical FM normalize (no writes)"
-	@echo "  FM23-fmfix-apply        – APPLY: Canonical FM normalize (writes)"
-	@echo "  FM24-idem-dry           – DRY: Idempotent FM fixer"
-	@echo "  FM24-idem-apply         – APPLY: Idempotent FM fixer"
-	@echo "  FM25-sync-visible-dry    – DRY: sync visible header (GUID/Author/Status) z FM"
-	@echo "  FM25-sync-visible        – APPLY: sync visible header (GUID/Author/Status) z FM"
-	@echo "     e.g.: make FM25-sync-visible-dry OPTS='--root content/docs/sk/knifes'"
-	@echo "           make FM25-sync-visible OPTS='--root content/docs/sk/knifes'"
+	@echo "┌──────────────────────────────┬────────────────────────────────────────┐"
+	@echo "│ Preview                                                         │"
+	@echo "├──────────────────────────────┼────────────────────────────────────────┤"
+	@echo "│ P10-preview                 │ Build + Serve (production preview)      │"
+	@echo "└──────────────────────────────┴────────────────────────────────────────┘"
 	@echo ""
-	@echo "  ⚙️ Tips:"
-	@echo "    make FM20-fix-dry OPTS='--help'      → zobrazí všetky dostupné voľby"
-	@echo "    make FM20-fix-apply OPTS='...'       → preposiela argumenty do skriptu"
-	@echo "Publish:"
-	@echo "  PUB05-sync              – Sync SSOT → publishing/docusaurus/docs (hard sync, uses --delete)"
-	@echo "  PUB05-sync-safe         – Safe sync (no --delete, preserves local pub overrides)"
-	@echo "  PUB06-sync-privacy      – SAFE sync rešpektujúci privacy (vylúči priečinky/súbory s privacy=private)"
-	@echo "  PUB07-sync-privacy-hard – HARD sync (--delete) rešpektujúci privacy"
-	@echo "  PUB10-build             – Build site (production)"
-	@echo "  PUB11-audit-privacy     – Audit, či sa do publishing/ nedostal obsah s privacy=private"
-	@echo "  PUB12-audit-pubdocs     – Audit Front Matter in publishing/docusaurus/docs (read-only)"
-	@echo "  PUB20-stage             – Stage build into gh-pages worktree (/docs)"
-	@echo "  PUB22-fix-pubdocs-dry   – DRY fix Front Matter in publishing (no writes)"
-	@echo "  PUB22-fix-pubdocs-apply – APPLY fix Front Matter in publishing (with backups)"
-	@echo "  PUB30-commit            – Commit & push staged changes"
-	@echo "  PUB40-push              – (kept for clarity; push is done in commit step)"
-	@echo "  publish                 – FM audit+fix → sync → build → stage → commit"
-	@echo "  publish-safe            – content audit+fix → SAFE sync → publish audit+fix → build → stage → commit"
+	@echo "┌──────────────────────────────┬────────────────────────────────────────┐"
+	@echo "│ Front Matter Tools                                              │"
+	@echo "├──────────────────────────────┼────────────────────────────────────────┤"
+	@echo "│ FM10-audit                  │ Audit Front Matter (read-only)          │"
+	@echo "│ FM11-lint                   │ Lint Front Matter (read-only)           │"
+	@echo "│ FM20-fix-dry                │ DRY-RUN normalize/fix (no writes)       │"
+	@echo "│ FM20-fix-apply              │ APPLY normalize/fix (writes + backups)  │"
+	@echo "│ FM20-fix                    │ Alias to FM20-fix-dry                    │"
+	@echo "│ FM22-guid-dry               │ DRY: GUID backfill                       │"
+	@echo "│ FM22-guid-apply             │ APPLY: GUID backfill                     │"
+	@echo "│ FM23-fmfix-dry              │ DRY: Canonical FM normalize              │"
+	@echo "│ FM23-fmfix-apply            │ APPLY: Canonical FM normalize            │"
+	@echo "│ FM24-idem-dry               │ DRY: Idempotent FM fixer                 │"
+	@echo "│ FM24-idem-apply             │ APPLY: Idempotent FM fixer               │"
+	@echo "│ FM25-sync-visible-dry       │ DRY: sync visible header from FM         │"
+	@echo "│ FM25-sync-visible           │ APPLY: sync visible header from FM       │"
+	@echo "└──────────────────────────────┴────────────────────────────────────────┘"
 	@echo ""
-	@echo "KNIFE Tools:"
-	@echo "  knifes-new               – Create new KNIFE (id, name, title)  [DRY: KNIFE_DRY=1]"
-	@echo "                             • KNIFE_DRY=1  → kontrola bez zápisu"
-	@echo "                             • KNIFE_FORCE=1 → prepíše existujúci KNIFE"
-	@echo "  knifes-gen               – Generate KNIFEs from CSV (config-driven)"
-	@echo "  knifes-verify            – Verify CSV/docs consistency + FM integrity"
-	@echo "  knifes-fix-csv-dry       – Dry merge MD → CSV (no writes)"
-	@echo "  knifes-fix-csv-apply     – Apply merge MD → CSV (writes + backup)"
-	@echo "  knifes-csv-scan          – Snapshot docs → CSV (timestamped)"
-	@echo "  knifes-frontmatter-audit-id – Audit one KNIFE by id=KXXXX"
-	@echo "  knifes-verify-frontmatter – Lint required FM fields in index.md"
-	@echo "  dev-gen / build-gen      – Generate + dev/build pipelines"
+	@echo "   🔎 Differences:"
+	@echo "     • lint  = formal field check, no fixes"
+	@echo "     • audit = simulate fixes, no writes (plan only)"
+	@echo "     • fix   = normalize/apply changes (idempotent)"
 	@echo ""
-	@echo "  ⚙️ Tips:"
-	@echo "    make -n knifes-new ...        → zobrazí plán (bez spustenia)"
-	@echo "    KNIFE_DRY=1 make knifes-new … → validácia parametrov bez vytvorenia"
-	@echo "    KNIFE_FORCE=1 make knifes-new … → prepíše existujúci KNIFE"	@echo ""
-	@echo "Aliases kept for compatibility: dev/build/build-fast/serve/check-worktree/copy-build/commit-deploy/deploy/full-deploy"
+	@echo "   💡 Usage:"
+	@echo "     make FM10-audit OPTS='--root content/docs'"
+	@echo "     make FM11-lint  OPTS='--root content/docs/sk'"
+	@echo "     make FM20-fix-dry  OPTS='--root content/docs'"
+	@echo "     make FM20-fix-apply OPTS='--root content/docs'"
+	@echo ""
+	@echo "┌──────────────────────────────┬────────────────────────────────────────┐"
+	@echo "│ Publish (content → publishing → worktree/docs)                   │"
+	@echo "├──────────────────────────────┼────────────────────────────────────────┤"
+	@echo "│ PUB05-sync                  │ HARD sync (delete) content → publishing │"
+	@echo "│ PUB05-sync-safe             │ SAFE sync (no delete)                   │"
+	@echo "│ PUB06-sync-privacy          │ SAFE sync respecting privacy            │"
+	@echo "│ PUB07-sync-privacy-hard     │ HARD sync respecting privacy            │"
+	@echo "│ PUB10-build                 │ Production build                        │"
+	@echo "│ PUB11-audit-privacy         │ Assert no privacy leaks in publishing   │"
+	@echo "│ PUB12-audit-pubdocs         │ Lint FM in publishing/docs              │"
+	@echo "│ PUB20-stage                 │ Stage build into worktree (/docs)       │"
+	@echo "│ PUB22-fix-pubdocs-dry       │ DRY FM normalize in publishing/docs     │"
+	@echo "│ PUB22-fix-pubdocs-apply     │ APPLY FM normalize in publishing/docs   │"
+	@echo "│ PUB30-commit                │ Commit & push staged changes            │"
+	@echo "│ PUB40-push                  │ Explicit push of deploy branch          │"
+	@echo "│ publish                     │ Strict pipeline (hard sync)             │"
+	@echo "│ publish-safe                │ Safe pipeline (privacy-aware)           │"
+	@echo "└──────────────────────────────┴────────────────────────────────────────┘"
+	@echo ""
+	@echo "┌──────────────────────────────┬────────────────────────────────────────┐"
+	@echo "│ KNIFE Tools                                                     │"
+	@echo "├──────────────────────────────┼────────────────────────────────────────┤"
+	@echo "│ knifes-new                  │ Create new KNIFE (id, name, title)      │"
+	@echo "│ knifes-gen                  │ Generate KNIFEs from CSV (config)        │"
+	@echo "│ knifes-verify               │ Verify CSV/docs + FM integrity            │"
+	@echo "│ knifes-fix-csv-dry          │ Dry merge MD → CSV (no writes)           │"
+	@echo "│ knifes-fix-csv-apply        │ Apply merge MD → CSV (backup)            │"
+	@echo "│ knifes-csv-scan             │ Snapshot docs → CSV (timestamped)        │"
+	@echo "│ knifes-frontmatter-audit-id │ Audit one KNIFE by id=KXXXX               │"
+	@echo "│ knifes-verify-frontmatter   │ Lint required FM fields in index.md       │"
+	@echo "│ dev-gen / build-gen         │ Generate + dev/build pipelines            │"
+	@echo "└──────────────────────────────┴────────────────────────────────────────┘"
+	@echo ""
+	@echo "Tips:"
+	@echo "  • KNIFE_DRY=1 make knifes-new …     # validate only"
+	@echo "  • KNIFE_FORCE=1 make knifes-new …   # overwrite existing KNIFE"
+	@echo "  • make -n target                    # print plan without execution"
+	@echo ""
 	@echo "Notes:"
-	@echo "  • Safe sync honors markers: '.publock' or '.puboverride/' prevents overwrites in publishing/"
-	@echo "  • Privacy-aware sync:"
-	@echo "      – ak má priečinok index.md s 'privacy=private', NEpublikuje sa celý priečinok + podpriečinky"
-	@echo "      – ak je 'privacy=private' iba na konkrétnom .md, vynechá sa len tento súbor"
-	@echo "======================================================================="
+	@echo "  • Safe sync honors markers: '.publock' or '.puboverride/' in publishing/"
+	@echo "  • Privacy-aware sync excludes folders with 'privacy: private' in FM"
+	@echo ""
+	@echo "Aliases:"
+	@echo "  dev/build/build-fast/serve"
+	@echo "  check-worktree/copy-build/commit-deploy/deploy/full-deploy/worktree-status"
+	@echo ""
+	@echo "┌──────────────────────────────┬────────────────────────────────────────┐"
+	@echo "│ Shortcuts                                                      │"
+	@echo "├──────────────────────────────┼────────────────────────────────────────┤"
+	@echo "│ mode                       │ Show deploy mode                          │"
+	@echo "│ doctor                     │ Environment diagnostic                    │"
+	@echo "│ print-vars                 │ Show key variables                         │"
+	@echo "└──────────────────────────────┴────────────────────────────────────────┘"
+
+FM10-audit-legacy:
+	@echo "🔎 FM audit (read-only) on $(FM_ROOT)…"
+	@python3 $(FM_TOOL) --root "$(FM_ROOT)" --dry-run $(OPTS) || true
+
+FM11-lint-legacy:
+	@echo "🔎 Linting Front Matter in $(FM_ROOT) (read-only)…"
+	@python3 $(FM_LINT) --root "$(FM_ROOT)" || true
+
+FM20-fix-dry-legacy:
+	@echo "🧪 DRY-RUN: Normalizing Front Matter (no writes)…"
+	@python3 $(FM_TOOL) --root "$(FM_ROOT)" --dry-run $(OPTS)
+
+FM20-fix-apply-legacy:
+	@echo "🛠 APPLY: Normalizing Front Matter (writes with backups)…"
+	@python3 $(FM_TOOL) --root "$(FM_ROOT)" --apply $(OPTS)
+
+FM20-fix: FM20-fix-dry
 
 mode: ## H20 – Show deploy mode (worktree availability)
 	@echo "🔎 Deploy mode:"
@@ -1537,11 +1590,126 @@ print-vars: ## H40 – Show key variables
 # SY01: Sync content → docusaurus/docs
 # =========================================================
 .PHONY: SY01-sync-content
+
 SY01-sync-content: ## SY01 – Sync SSOT content/docs → publishing/docusaurus/docs
 	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
 	@mkdir -p "$(PUB_DOCS_DIR)"
 	rsync -av --delete --checksum "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"
 	@echo "✅ Synced: $(CONTENT_DOCS_DIR) → $(PUB_DOCS_DIR)"
+
+# =========================================================
+# PUBxx: Publishing sync / audit / stage helpers
+# (kept consistent with help section)
+# =========================================================
+.PHONY: PUB05-sync PUB05-sync-safe PUB06-sync-privacy PUB07-sync-privacy-hard \
+        PUB10-build PUB11-audit-privacy PUB12-audit-pubdocs \
+        PUB20-stage PUB22-fix-pubdocs-dry PUB22-fix-pubdocs-apply \
+        PUB30-commit PUB40-push publish publish-safe
+
+# PUB05 – HARD sync (delete) from content → publishing
+PUB05-sync:
+	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
+	@mkdir -p "$(PUB_DOCS_DIR)"
+	rsync -av --delete --checksum "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"
+	@echo "✅ PUB05-sync: HARD synced $(CONTENT_DOCS_DIR) → $(PUB_DOCS_DIR)"
+
+# PUB05-safe – SAFE sync (no delete) from content → publishing
+PUB05-sync-safe:
+	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
+	@mkdir -p "$(PUB_DOCS_DIR)"
+	rsync -av --checksum "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"
+	@echo "✅ PUB05-sync-safe: SAFE synced (no delete) $(CONTENT_DOCS_DIR) → $(PUB_DOCS_DIR)"
+
+# Helper: build exclude list for privacy-aware rsync (folders/files with 'privacy: private')
+# Produces a temporary exclude file and echoes its path
+define _make_privacy_exclude
+tmp_excl=$$(mktemp); \
+if command -v rg >/dev/null 2>&1; then \
+  rg -n --pcre2 'privacy:\s*private' "$(CONTENT_DOCS_DIR)" | awk -F: '{print $$1}' | while read -r f; do d="$$(dirname "$$f")"; p="$${d#$(CONTENT_DOCS_DIR)/}/"; echo "$$p" >> "$$tmp_excl"; done; \
+else \
+  grep -RIl 'privacy:\s*private' "$(CONTENT_DOCS_DIR)" | while read -r f; do d="$$(dirname "$$f")"; p="$${d#$(CONTENT_DOCS_DIR)/}/"; echo "$$p" >> "$$tmp_excl"; done; \
+fi; \
+echo ".publock" >> "$$tmp_excl"; \
+echo "$$tmp_excl"
+endef
+
+# PUB06 – SAFE privacy-aware sync (excludes privacy=private content; no delete)
+PUB06-sync-privacy:
+	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
+	@mkdir -p "$(PUB_DOCS_DIR)"
+	@tmp_excl="$$( $(value _make_privacy_exclude) )"; \
+	rsync -av --checksum --exclude-from="$$tmp_excl" "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"; \
+	rm -f "$$tmp_excl"
+	@echo "✅ PUB06-sync-privacy: SAFE sync with privacy exclusions"
+
+# PUB07 – HARD privacy-aware sync (excludes privacy=private content; with delete)
+PUB07-sync-privacy-hard:
+	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
+	@mkdir -p "$(PUB_DOCS_DIR)"
+	@tmp_excl="$$( $(value _make_privacy_exclude) )"; \
+	rsync -av --delete --checksum --exclude-from="$$tmp_excl" "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"; \
+	rm -f "$$tmp_excl"
+	@echo "✅ PUB07-sync-privacy-hard: HARD sync with privacy exclusions"
+
+# PUB10 – alias for production build
+PUB10-build: B10-build
+	@true
+
+# PUB11 – audit that no privacy=private leaked into publishing/
+PUB11-audit-privacy:
+	@set -e; \
+	if [ ! -d "$(PUB_DOCS_DIR)" ]; then echo "ℹ️  $(PUB_DOCS_DIR) not found; run a sync first."; exit 0; fi; \
+	if command -v rg >/dev/null 2>&1; then \
+	  if rg -n --pcre2 'privacy:\s*private' "$(PUB_DOCS_DIR)" >/dev/null 2>&1; then \
+	    echo "❌ Found 'privacy: private' inside $(PUB_DOCS_DIR). Remove or exclude these paths."; \
+	    rg -n --pcre2 'privacy:\s*private' "$(PUB_DOCS_DIR)"; exit 2; \
+	  else echo "✅ No privacy markers in $(PUB_DOCS_DIR)."; fi; \
+	else \
+	  hits=$$(grep -RIn 'privacy:\s*private' "$(PUB_DOCS_DIR)" || true); \
+	  if [ -n "$$hits" ]; then echo "❌ Found privacy markers:"; echo "$$hits"; exit 2; else echo "✅ No privacy markers in $(PUB_DOCS_DIR)."; fi; \
+	fi
+
+# PUB12 – lint FM inside publishing/ docs (read-only)
+PUB12-audit-pubdocs:
+	@echo "🔎 Linting Front Matter in $(PUB_DOCS_DIR) (read-only)…"
+	@mkdir -p logs
+	@python3 core/scripts/tools/frontmatter_lint.py --root "$(PUB_DOCS_DIR)" || true
+	@echo "📋 PUB12 audit complete."
+
+# PUB20 – stage build into worktree (/docs)
+PUB20-stage: W20-copy-build
+	@true
+
+# PUB22 – fix FM in publishing/ (dry/apply)
+PUB22-fix-pubdocs-dry:
+	@echo "🧪 DRY: FM normalize in $(PUB_DOCS_DIR)…"
+	@mkdir -p logs
+	@python3 core/scripts/tools/fix_frontmatter.py --root "$(PUB_DOCS_DIR)" --dry-run || true
+	@echo "📋 Dry report ready (optional: use --report to CSV via OPTS)."
+
+PUB22-fix-pubdocs-apply:
+	@echo "🛠 APPLY: FM normalize in $(PUB_DOCS_DIR)…"
+	@mkdir -p logs
+	@python3 core/scripts/tools/fix_frontmatter.py --root "$(PUB_DOCS_DIR)" --apply
+	@echo "✅ FM normalized in publishing."
+
+# PUB30 – commit staged worktree changes
+PUB30-commit: W30-commit-deploy
+	@true
+
+# PUB40 – explicit push of deploy branch (normally W30 already pushes)
+PUB40-push:
+	@if ! git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then echo "❌ $(WORKTREE_DIR) not a git worktree. Run: make W10-check-worktree"; exit 1; fi
+	cd $(WORKTREE_DIR) && git push origin $(DEPLOY_BRANCH) || true
+	@echo "✅ Pushed $(DEPLOY_BRANCH)."
+
+# publish – strict pipeline (hard sync; fails on privacy leak)
+publish: FM10-audit FM20-fix-apply PUB05-sync PUB10-build PUB20-stage PUB11-audit-privacy PUB30-commit
+	@echo "🎉 publish: Done."
+
+# publish-safe – safe & privacy-aware pipeline (no delete, privacy excluded)
+publish-safe: FM10-audit FM20-fix-apply PUB06-sync-privacy PUB10-build PUB22-fix-pubdocs-dry PUB20-stage PUB30-commit
+	@echo "🎉 publish-safe: Done."
 
 # =========================================================
 # D10: Dev / Clean / Build / Serve

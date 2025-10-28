@@ -53,6 +53,7 @@ fm_reserved2: ""
 - [05.WorkActivitiesEvidence](./05.WorkActivitiesEvidence/index.md)
 - [06.Reportings](./06.Reportings/index.md)
 - [07.Publishing](./07.Publishing/index.md)
+- [08.Resources](./08.Resources/index.md)
 
 ---
-[⬆ Back to 7Ds Dashboard](../index.md)
+[⬆ Back to 7Ds Dashboard](../../7Ds/00.Navigations/index.md)  | [⬆ Back to 01.D1.Management  Dashboard](../index.md)

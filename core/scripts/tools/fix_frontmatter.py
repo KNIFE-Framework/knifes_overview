@@ -415,6 +415,7 @@ def iter_targets(root: Path, single: Path | None):
 
 def main():
     ap = argparse.ArgumentParser(description="ADD-ONLY front matter fixer: only appends missing keys; never rewrites existing lines.")
+    ap.add_argument("--apply", action="store_true", help="Alias for write mode (no effect, kept for Makefile compatibility)")
     ap.add_argument("--root", default="docs", help="Root directory to scan")
     ap.add_argument("--file", help="Single file path to process")
 

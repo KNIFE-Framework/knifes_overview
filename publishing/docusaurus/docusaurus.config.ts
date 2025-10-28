@@ -33,29 +33,11 @@ const config: Config = {
   },
   future: { v4: true },
 
-  i18n: {
-    defaultLocale: 'sk',
-    locales: ['sk', 'en'],
-    localeConfigs: {
-      sk: { label: 'Slovenčina', htmlLang: 'sk' },
-      en: { label: 'English', htmlLang: 'en' },
-    },
-  },
-
   presets: [
     [
       'classic',
       {
-        docs: {
-          path: 'docs',
-          routeBasePath: '/',                   // docs ako homepage
-          tags: false, // disable docs tag routes (avoids missing tags file + duplicate /tags warnings)
-          numberPrefixParser: false,
-          editCurrentVersion: false,
-          editUrl: undefined,
-          exclude: ['**/README.migrated.md', '**/README_.md', '**/_legacy/**'],
-          sidebarPath: require.resolve('./sidebars.ts'),
-        },
+        docs: false,
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },
        // Avoid duplicate /tags route warnings by pointing sitemap ignorePatterns to the custom docs tags path and (defensively) blog tag routes
@@ -66,6 +48,32 @@ const config: Config = {
 
   plugins: [
     [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'sk',
+        path: 'docs/sk',
+        routeBasePath: '/sk',
+        sidebarPath: require.resolve('./sidebars.ts'), // ← TU
+        numberPrefixParser: false,
+        editCurrentVersion: false,
+        tags: false,
+        exclude: ['**/README.migrated.md', '**/README_.md', '**/_legacy/**'],
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'en',
+        path: 'docs/en',
+        routeBasePath: '/en',
+        sidebarPath: require.resolve('./sidebars.ts'), // ← TU
+        numberPrefixParser: false,
+        editCurrentVersion: false,
+        tags: false,
+        exclude: ['**/README.migrated.md', '**/README_.md', '**/_legacy/**'],
+      },
+    ],
+    [
       '@docusaurus/plugin-google-gtag',
       { trackingID: 'G-LV31TWZZK6', anonymizeIP: true },
     ],
@@ -73,15 +81,13 @@ const config: Config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
-          // Root & locale root fixes
-          { from: '/',        to: '/sk' },
-          { from: '/en',      to: '/en' },
+          { from: '/', to: '/sk' },
+          { from: ['/index', '/home'], to: '/sk' },
+          { from: ['/knifes', '/sk/knifes'],  to: '/sk/knifes/KNIFE_OVERVIEW_LIST' },
           { from: '/en/index', to: '/en' },
           { from: '/sk/index', to: '/sk' },
 
           // Backward-compatible old paths
-          { from: ['/index', '/home'], to: '/sk' },
-          { from: ['/knifes', '/sk/knifes'],  to: '/sk/knifes/KNIFE_OVERVIEW_LIST' },
           { from: ['/7Ds'],                 to: '/sk/7Ds' },
         ],
         createRedirects(existingPath) {

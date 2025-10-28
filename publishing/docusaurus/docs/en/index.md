@@ -2,8 +2,8 @@
 fm_version: "1.0.1"
 fm_build: "2025-10-12T10:35:00Z"
 fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "KXXXXXXX"
-guid: "e96817b9-cbe3-41df-87e1-72da8bd737cd"
+id: "KNIFE_OVERVIEW_HOME_01"
+guid: "fae1ca43-0ec4-4fea-9306-4490f5d3e13d"
 dao: "knife"
 title: "KNIFE – Prehľad"
 description: ""
@@ -31,9 +31,14 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+#sidebar_label: "KNIFE – Prehľad"
 ---
-# KNIFE – Prehľad
+# 📋 KNIFEs Overview
+
 <!-- fm-visible: start -->
-> **GUID:** `e96817b9-cbe3-41df-87e1-72da8bd737cd`
+> **GUID:** `fae1ca43-0ec4-4fea-9306-4490f5d3e13d`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
+
+| ID   | Category | Title | Status | Priority | Type | Date | Author | Org | Project |
+|------|----------|-------|--------|---------:|------|------|--------|-----|---------|

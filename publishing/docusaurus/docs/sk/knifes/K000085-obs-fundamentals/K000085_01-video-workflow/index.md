@@ -72,4 +72,4 @@ outputs:
   mp4_en: "videos/2025/final/K0061_WEB01_en.mp4"
 ```
 
-[Diagram OBS štruktúry](../Multimedia_KXXXXXX-obs-fundamentals/OBS-Structure.drawio)
+[Diagram OBS štruktúry](../OBS-Structure.drawio)

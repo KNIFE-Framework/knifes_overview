@@ -1,22 +1,22 @@
 ---
 fm_version: "1.0.1"
-fm_build: "2025-10-12T10:35:00Z"
-fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "KXXXXXXX"
+fm_build: "2025-10-28T00:00:00Z"
+fm_version_comment: "Stabilné ID/slug pre navigáciu (hub + SK + EN)"
+id: SK_7DS_HOME
 guid: "754B9ECA-35DC-42EC-9219-5F658EF0C424"
-dao: "class"
-title: "7Ds"
-description: ""
+dao: "knife"
+title: "7Ds (SK)"
+description: "Úvod do 7Ds sekcie."
 author: "Roman Kazička"
-authors: ["Roman Kazička",""]
+authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: "no"
 tags: []
 locale: "sk"
-created: "2025-09-23"
-modified: ""
-status: "inprogress"
+created: "2025-10-28"
+modified: "YYYY-MM-DDTHH:MM:SSZ"
+status: "draft"
 privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
@@ -31,9 +31,11 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
-###sidebar_label: "7Ds"
+slug: /sk/7Ds/
+sidebar_position: 1
 ---
-# 7Ds
+# 7Ds (SK)
+
 
 <!-- fm-visible: start -->
 > **GUID:** `754B9ECA-35DC-42EC-9219-5F658EF0C424`
@@ -49,4 +51,4 @@ SK
 - [05.D5-Implementation](./05.D5-Implementation/index.md)
 - [06.D6-Verification-Testing](./06.D6-Verification-Testing/index.md)
 - [07.D7-LessonLearned](./07.D7-LessonLearned/index.md)
-- [08.Resources](./08.Resources/index.md)
+

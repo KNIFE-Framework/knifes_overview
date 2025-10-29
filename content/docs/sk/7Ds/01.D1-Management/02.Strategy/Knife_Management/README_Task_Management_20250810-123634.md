@@ -1,37 +1,39 @@
 ---
-fm_version: "1.0.1"
-fm_build: "2025-10-12T10:35:00Z"
-fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-# id: ""
-guid: "94f360ff-201a-4c7c-bfc7-c2255ee6c7fb"
-dao: "class"
-title: "Knife_Management"
-description: ""
-author: "Roman Kazička"
-authors: ["Roman Kazička",""]
-category: ""
-type: ""
-priority: "no"
+fm_version: 1.0.1
+fm_build: '2025-10-12T10:35:00Z'
+fm_version_comment: Added field fm_version_comment to document reasons for FM updates
+guid: 94f360ff-201a-4c7c-bfc7-c2255ee6c7fb
+dao: class
+title: Knife_Management
+description: ''
+author: "Roman Kazi\u010Dka"
+authors:
+- "Roman Kazi\u010Dka"
+- ''
+category: ''
+type: ''
+priority: 'no'
 tags: []
-locale: "sk"
-created: "2025-09-23"
-modified: ""
-status: "inprogress"
-privacy: "public"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-origin_repo: ""
-origin_repo_url: ""
-origin_commit: ""
-origin_system: ""
-author_id: ""
-author_did: ""
-fm_reserved1: ""
-fm_reserved2: ""
-#sidebar_label: "Knife_Management"
+locale: sk
+created: '2025-09-23'
+modified: ''
+status: inprogress
+privacy: public
+rights_holder_content: "Roman Kazi\u010Dka"
+rights_holder_system: "Roman Kazi\u010Dka (CAA/KNIFE/LetItGrow)"
+license: CC-BY-NC-SA-4.0
+disclaimer: Use at your own risk. Methods provided as-is; participation is voluntary
+  and context-aware.
+copyright: "\xA9 2025 Roman Kazi\u010Dka / SystemThinking"
+origin_repo: ''
+origin_repo_url: ''
+origin_commit: ''
+origin_system: ''
+author_id: ''
+author_did: ''
+fm_reserved1: ''
+fm_reserved2: ''
+id: KNIFE_MANAGEMENT_README_TASK_MANAGEMENT_20250810_123634_MD_F466
 ---
 # Project Task Management – Minimal, GitHub-first
 

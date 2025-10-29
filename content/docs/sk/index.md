@@ -1,22 +1,22 @@
 ---
 fm_version: "1.0.1"
-fm_build: "2025-10-12T10:35:00Z"
-fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "KNIFE_HOME"
+fm_build: "2025-10-28T00:00:00Z"
+fm_version_comment: "Stabilné ID/slug pre navigáciu (hub + SK + EN)"
+id: SK_KNIFE_HOME
 guid: "7afa4bdc-bb40-490b-8697-c9bf7c3ba848"
 dao: "knife"
-title: " "
-description: ""
+title: "KNIFE – Prehľad (SK)"
+description: "Slovenská domovská stránka dokumentácie KNIFE."
 author: "Roman Kazička"
-authors: ["Roman Kazička",""]
+authors: ["Roman Kazička"]
 category: ""
 type: ""
 priority: "no"
 tags: []
-locale: "en"
-created: "2025-09-24"
+locale: "sk"
+created: "2025-10-28"
 modified: "YYYY-MM-DDTHH:MM:SSZ"
-status: "backlog"
+status: "draft"
 privacy: "public"
 rights_holder_content: "Roman Kazička"
 rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
@@ -31,9 +31,15 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+slug: /sk/
+sidebar_position: 1
 ---
-# KNIFE – Prehľad
+
+# KNIFE – Prehľad (SK)
 <!-- fm-visible: start -->
 > **GUID:** `7afa4bdc-bb40-490b-8697-c9bf7c3ba848`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
+Toto je hlavná stránka slovenskej dokumentácie.
+
+

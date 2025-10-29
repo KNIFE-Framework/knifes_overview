@@ -1,37 +1,39 @@
 ---
-fm_version: "1.0.1"
-fm_build: "2025-10-12T10:35:00Z"
-fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
-id: "KXXXXXXX"
-guid: "48bde968-147b-4a02-aabb-f2bc7c27eb73"
-dao: "class"
-title: "01.D1-Management"
-description: ""
-author: "Roman Kazička"
-authors: ["Roman Kazička",""]
-category: ""
-type: ""
-priority: "no"
+fm_version: 1.0.1
+fm_build: '2025-10-12T10:35:00Z'
+fm_version_comment: Added field fm_version_comment to document reasons for FM updates
+id: 7DS_01_D1_MANAGEMENT_91D7
+guid: 48bde968-147b-4a02-aabb-f2bc7c27eb73
+dao: class
+title: 01.D1-Management
+description: ''
+author: "Roman Kazi\u010Dka"
+authors:
+- "Roman Kazi\u010Dka"
+- ''
+category: ''
+type: ''
+priority: 'no'
 tags: []
-locale: "sk"
-created: "2025-09-23"
-modified: ""
-status: "inprogress"
-privacy: "public"
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
-disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
-origin_repo: ""
-origin_repo_url: ""
-origin_commit: ""
-origin_system: ""
-author_id: ""
-author_did: ""
-fm_reserved1: ""
-fm_reserved2: ""
-###sidebar_label: "01.D1-Management"
+locale: sk
+created: '2025-09-23'
+modified: ''
+status: inprogress
+privacy: public
+rights_holder_content: "Roman Kazi\u010Dka"
+rights_holder_system: "Roman Kazi\u010Dka (CAA/KNIFE/LetItGrow)"
+license: CC-BY-NC-SA-4.0
+disclaimer: Use at your own risk. Methods provided as-is; participation is voluntary
+  and context-aware.
+copyright: "\xA9 2025 Roman Kazi\u010Dka / SystemThinking"
+origin_repo: ''
+origin_repo_url: ''
+origin_commit: ''
+origin_system: ''
+author_id: ''
+author_did: ''
+fm_reserved1: ''
+fm_reserved2: ''
 ---
 # 01.D1-Management
 

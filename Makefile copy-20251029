@@ -2042,16 +2042,3 @@ FM20-fix-dry:
 
 FM21-fix-apply:
 	@python3 core/scripts/tools/fm_fix_placeholders.py content/docs
-
-	## FM12-audit-guid: Audit GUID (missing/invalid/all-ones) → logs/fm_audit_guid.csv
-FM12-audit-guid:
-	@python3 core/scripts/tools/fm_audit_ids.py --only-guid --report logs/fm_audit_guid.csv || true
-	@echo "[fm_audit_guid] report=logs/fm_audit_guid.csv"
-
-## FM22-fix-guid-dry: Nahradiť chýbajúce/placeholder GUID deterministickým UUID5 (dry-run)
-FM22-fix-guid-dry:
-	@python3 core/scripts/tools/fm_fix_guid.py --dry --roots content/docs publishing/docusaurus/docs
-
-## FM22-fix-guid: Nahradiť chýbajúce/placeholder GUID deterministickým UUID5 (write)
-FM22-fix-guid:
-	@python3 core/scripts/tools/fm_fix_guid.py --roots content/docs publishing/docusaurus/docs

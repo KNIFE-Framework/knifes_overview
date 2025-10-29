@@ -1,153 +1,50 @@
-// docusaurus.config.ts
-import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
-
-// Build strictness (UAT defaults to warn; set DOCS_STRICT=1 in PROD to fail on broken links)
-const strictMode = process.env.DOCS_STRICT === '1';
-const brokenPolicy = strictMode ? 'throw' : 'warn';
-
-// Build metadata from environment (provided by Makefile / CI)
-const buildDate = process.env.BUILD_DATE || '20251026-2626';
-const appVersion = process.env.APP_VERSION || '20251026-2626';
+import {themes as prismThemes} from 'prism-react-renderer';
 
 const config: Config = {
-  title: 'KNIFE Preview - Knowledge in Friendly Examples',   // ✅ povinné
-  tagline: 'Context Aware Approach',
-  url: 'https://knifes.systemthinking.sk',                   // ✅ povinné (root URL nasadenia)
-  baseUrl: '/',                                              // ✅ povinné (prefix cesty)
-  trailingSlash: false,
+  title: 'KNIFE Overview',
+  url: 'http://localhost',          // vývoj
+  baseUrl: '/',                     // koreň webu
   favicon: 'img/favicon.ico',
 
-  organizationName: 'KNIFE-Framework',
-  projectName: 'knifes_overview',
-  deploymentBranch: 'gh-pages-docusaurus',
-
-  onBrokenLinks: brokenPolicy,
-  onBrokenAnchors: brokenPolicy,
-  markdown: {
-    hooks: {
-      onBrokenMarkdownLinks: brokenPolicy,
-    },
+  i18n: {
+    defaultLocale: 'sk',
+    locales: ['sk', 'en'],
   },
-  future: { v4: true },
 
+  // KĽÚČOVÉ: zapnúť classic preset s pluginom "docs"
   presets: [
     [
       'classic',
       {
-        docs: false,
+        docs: {
+          path: 'docs',                     // ./publishing/docusaurus/docs
+          routeBasePath: '/',               // / => domov ide z docs
+          sidebarPath: require.resolve('./sidebars.ts'),
+          includeCurrentVersion: true,
+          editCurrentVersion: false,
+        },
         blog: false,
-        theme: { customCss: require.resolve('./src/css/custom.css') },
-       // Avoid duplicate /tags route warnings by pointing sitemap ignorePatterns to the custom docs tags path and (defensively) blog tag routes
-       sitemap: { changefreq: 'weekly', priority: 0.5, ignorePatterns: ['/docs-tags/**', '/blog/tags/**', '/blog/**/tags/**'], filename: 'sitemap.xml' },
-      } satisfies Preset.Options,
-    ],
-  ],
-
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'sk',
-        path: 'docs/sk',
-        routeBasePath: '/sk',
-        sidebarPath: require.resolve('./sidebars.ts'), // ← TU
-        numberPrefixParser: false,
-        editCurrentVersion: false,
-        tags: false,
-        exclude: ['**/README.migrated.md', '**/README_.md', '**/_legacy/**'],
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'en',
-        path: 'docs/en',
-        routeBasePath: '/en',
-        sidebarPath: require.resolve('./sidebars.ts'), // ← TU
-        numberPrefixParser: false,
-        editCurrentVersion: false,
-        tags: false,
-        exclude: ['**/README.migrated.md', '**/README_.md', '**/_legacy/**'],
-      },
-    ],
-    [
-      '@docusaurus/plugin-google-gtag',
-      { trackingID: 'G-LV31TWZZK6', anonymizeIP: true },
-    ],
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          { from: '/', to: '/sk' },
-          { from: ['/index', '/home'], to: '/sk' },
-          { from: ['/knifes', '/sk/knifes'],  to: '/sk/knifes/KNIFE_OVERVIEW_LIST' },
-          { from: '/en/index', to: '/en' },
-          { from: '/sk/index', to: '/sk' },
-
-          // Backward-compatible old paths
-          { from: ['/7Ds'],                 to: '/sk/7Ds' },
-        ],
-        createRedirects(existingPath) {
-          // normalize trailing slash variants
-          if (existingPath !== '/' && existingPath.endsWith('/')) {
-            return [existingPath.slice(0, -1)];
-          }
-          if (existingPath === '/en/') {
-            return ['/en'];
-          }
-          return [];
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
-    function cssMinimizerWorkaround() {
-      return {
-        name: 'css-minimizer-parallel-false',
-        configureWebpack() {
-          return {
-            optimization: {
-              minimizer: [
-                new CssMinimizerPlugin({
-                  parallel: false,
-                  // Use CSO instead of cssnano to avoid "Unexpected '/'" parse errors
-                  minify: CssMinimizerPlugin.cssoMinify,
-                  minimizerOptions: {
-                    restructure: false,
-                  },
-                }),
-              ],
-            },
-          };
-        },
-      };
-    },
   ],
 
   themeConfig: {
-    image: 'img/logo.png',
     navbar: {
-      title: 'KNIFE-Home',
-      logo: { alt: 'KNIFE Logo', src: 'img/logo.png', href: '/sk' },
+      title: 'KNIFE',
       items: [
-        { to: '/sk', label: 'Home', position: 'left' },
-        { to: '/sk/knifes/KNIFE_OVERVIEW_LIST', label: 'KNIFES', position: 'left' },
-        { to: '/sk/7Ds', label: '7Ds', position: 'left' },
-        { href: 'https://github.com/KNIFE-Framework/knifes_overview', label: 'GitHub', position: 'right' },
+        {to: '/sk/', label: 'SK', position: 'left'},
+        {to: '/en/', label: 'EN', position: 'left'},
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [],
-      copyright: `© ${new Date().getFullYear()} Context Aware Solutions. Version: ${appVersion} • Last build: ${buildDate} • Built with Docusaurus.`,
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
     },
-    prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
-    docs: { sidebar: { hideable: true, autoCollapseCategories: true } },
-  } satisfies Preset.ThemeConfig,
-
-  // Ak si kdekoľvek mal vlastné polia (napr. writeJsonindex.md), daj ich sem:
-  // customFields: { writeJsonIndex: true },
+  },
 };
 
 export default config;

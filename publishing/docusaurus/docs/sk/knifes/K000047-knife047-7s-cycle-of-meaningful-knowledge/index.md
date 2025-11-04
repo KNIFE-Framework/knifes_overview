@@ -38,7 +38,7 @@ sidebar_position: "47"
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../overview.md
+> [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 ---
 # KNIFE K000047 – KNIFE047 – 7S Cycle of Meaningful Knowledge
 

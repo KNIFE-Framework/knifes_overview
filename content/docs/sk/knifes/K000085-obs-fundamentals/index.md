@@ -35,6 +35,9 @@ fm_reserved2: ""
 ---
 # 🎥 OBS Fundamentals – Základy nahrávania a správy scén
 
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
+---
 <!-- fm-visible: start -->
 > **GUID:** `2c1bdac4-6f59-49d9-9840-3f353ef9b9f7`
 > **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0

@@ -34,6 +34,9 @@ fm_reserved2: ""
 ---
 # Docusaurus-ID-a-jeho-pouzitie
 
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
+---
 <!-- fm-visible: start -->
 > **GUID:** `9e070810-b93a-46e3-89cc-ea0ec118e9df`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0

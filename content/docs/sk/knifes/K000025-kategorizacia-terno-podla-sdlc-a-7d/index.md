@@ -38,7 +38,7 @@ sidebar_position: "25"
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 ---
 # KNIFE K000025 – Kategorizácia TERNO podľa SDLC a 7D
 

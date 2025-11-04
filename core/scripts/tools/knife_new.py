@@ -1,138 +1,118 @@
 #!/usr/bin/env python3
-"""
-KNIFE Python-only generator
-- No YAML parsing. Pure string templating.
-- Cross-platform paths.
-- DRY and FORCE modes.
-"""
-import argparse, os, re, sys, uuid, datetime
+import argparse
+from pathlib import Path
+from datetime import datetime
+import uuid
+import yaml
+import sys
 
-def slugify(name: str) -> str:
-    s = name.strip().lower()
-    s = re.sub(r"[^a-z0-9._-]+", "-", s)
-    s = re.sub(r"-+", "-", s)
-    return s.strip("-")
 
-def abspath(p: str) -> str:
-    return os.path.abspath(os.path.expandvars(os.path.expanduser(p)))
+# --- Ensure project root is in sys.path ---
+import os
+from pathlib import Path
+import sys
 
-def read_text(path: str) -> str:
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read()
+# try relative (for IDE runs)
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../..')))
 
-def write_text(path: str, content: str) -> None:
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(content)
+# ensure also current working directory (for makefile runs)
+if str(Path.cwd()) not in sys.path:
+    sys.path.insert(0, str(Path.cwd()))
 
-def replace_kv_line(doc: str, key: str, new_value_quoted: str) -> str:
-    """
-    Replace a YAML key's quoted string value on its own line (non-invasive).
-    Matches lines like:
-      title: "Something"
-    and replaces the whole line with:
-      title: "New Value"
-    """
-    pattern = rf'(?m)^(?P<k>{re.escape(key)}\s*:\s*)"(?:[^"\\]|\.|)*"\s*$'
-    repl = rf'\g<k>{new_value_quoted}'
-    return re.sub(pattern, repl, doc)
+from core.scripts.tools.knife_sanity import sanity_check
+ 
+def load_yaml(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    with path.open("r", encoding="utf-8") as f:
+        return yaml.safe_load(f) or {}
 
-def ensure_guid(doc: str) -> str:
-    # Replace placeholder GUID if present, otherwise inject/replace a guid line.
-    guid_re = r'(?m)^guid:\s*"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx"\s*$'
-    if re.search(guid_re, doc):
-        return re.sub(guid_re, f'guid: "{uuid.uuid4()}"', doc)
-    # If a guid line exists with any value, leave it; otherwise insert after id if possible.
-    if re.search(r'(?m)^guid:\s*".*"\s*$', doc):
-        return doc
-    # Try insert after id line
-    id_match = re.search(r'(?m)^id:\s*".*"\s*$', doc)
-    if id_match:
-        idx = id_match.end()
-        return doc[:idx] + '\n' + f'guid: "{uuid.uuid4()}"' + doc[idx:]
-    # Fallback: append before closing FM if present
-    fm_end = doc.find('\n---', 0)
-    if fm_end != -1:
-        return doc[:fm_end] + '\n' + f'guid: "{uuid.uuid4()}"' + doc[fm_end:]
-    return doc
 
-def set_id(doc: str, kid: str) -> str:
-    # Replace KXXXXXXX placeholder if present, else replace id line if exists.
-    doc = re.sub(r'(?m)^id:\s*"KXXXXXXX"\s*$', f'id: "{kid}"', doc)
-    doc = re.sub(r'(?m)^id:\s*".*"\s*$', f'id: "{kid}"', doc, count=1)
-    return doc
+def fill(text: str, ctx: dict) -> str:
+    for k, v in ctx.items():
+        text = text.replace("{{" + k + "}}", v)
+    return text
 
-def maybe_set_locale(doc: str, locale: str | None) -> str:
-    if not locale:
-        return doc
-    # Replace only if line exists; do not inject if missing.
-    return re.sub(r'(?m)^locale:\s*".*"\s*$', f'locale: "{locale}"', doc, count=1)
-
-def set_fm_build_now(doc: str) -> str:
-    now_iso = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
-    pattern = r'(?m)^fm_build:\s*".*"\s*$'
-    if re.search(pattern, doc):
-        return re.sub(pattern, f'fm_build: "{now_iso}"', doc, count=1)
-    return doc
 
 def main():
-    ap = argparse.ArgumentParser(description="Create KNIFE entry (Python-only, string templating).")
-    ap.add_argument("--id", required=True, help="KNIFE ID (e.g., K000123)")
-    ap.add_argument("--name", required=True, help="Human folder name")
-    ap.add_argument("--title", help="Full title; defaults to --name")
-    ap.add_argument("--template", default="core/templates/system/FM-Core.md")
-    ap.add_argument("--outroot", default="content/docs/sk/knifes")
-    ap.add_argument("--locale", help="Override locale value in FM (optional)")
-    ap.add_argument("--dry", action="store_true")
-    ap.add_argument("--force", action="store_true")
-    args = ap.parse_args()
+    parser = argparse.ArgumentParser(description="KNIFE generator (FM + user header + body)")
+    parser.add_argument("--id", required=True)
+    parser.add_argument("--name", required=True)
+    parser.add_argument("--title", required=False, default="")
+    parser.add_argument("--locale", required=False, default="")
+    parser.add_argument("--outroot", required=False)
+    # allow override, but we will usually load from config
+    parser.add_argument("--config-global", default="config/global.yml")
+    parser.add_argument("--config-knife", default="config/knifes/knife_config.yml")
+    parser.add_argument("--dry", action="store_true")
+    parser.add_argument("--force", action="store_true")
+    args = parser.parse_args()
 
-    title_val = (args.title or args.name).strip()
-    safe = slugify(args.name)
-    scripts_cwd = os.getcwd()  # informational
-    template_path = abspath(args.template)
-    outroot_path = abspath(args.outroot)
-    target_dir = os.path.join(outroot_path, safe)
-    target_md = os.path.join(target_dir, "index.md")
+    # sanity check environment before generating
+    sanity_check(args.config_global, args.config_knife)
 
-    print(f"ARGS: id={args.id} name='{args.name}' title='{title_val}' safe='{safe}'")
-    print(f"PATHS: cwd='{scripts_cwd}' template='{template_path}' outroot='{outroot_path}'")
+    # 1) load configs
+    global_cfg = load_yaml(Path(args.config_global))
+    knife_cfg = load_yaml(Path(args.config_knife))
 
-    if not os.path.isfile(template_path):
-        print(f"❌ Missing template file: {template_path}")
-        sys.exit(2)
+    # 2) resolve paths from config
+    template_fm = Path(knife_cfg.get("template_fm", "core/templates/system/FM-Core.md"))
+    template_header = Path(knife_cfg.get("template_header", "core/templates/content/knifes/knife-user-header.md"))
+    template_body = Path(knife_cfg.get("template_body", "core/templates/content/knifes/knife-body-template.md"))
+    outroot = Path(args.outroot or knife_cfg.get("content_dir", "content/docs/sk/knifes"))
 
-    # Compose content from template (pure string ops)
-    doc = read_text(template_path)
+    # 3) read templates
+    fm_core = template_fm.read_text(encoding="utf-8")
+    user_header = template_header.read_text(encoding="utf-8")
+    body = template_body.read_text(encoding="utf-8")
+    nav_path = Path("core/templates/content/knifes/knife-nav.md")
+    if nav_path.exists():
+        nav = nav_path.read_text(encoding="utf-8")
+    else:
+        nav = ""
 
-    # Standard replacements (non-invasive)
-    doc = set_id(doc, args.id)
-    doc = replace_kv_line(doc, "title", f'"{title_val}"')
-    doc = ensure_guid(doc)
-    doc = set_fm_build_now(doc)
-    if args.locale:
-        doc = maybe_set_locale(doc, args.locale)
+    # 4) context
+    now = datetime.now().strftime("%Y-%m-%d")
+    guid = str(uuid.uuid4())
+    title = args.title or args.name
+    locale = args.locale or knife_cfg.get("locale") or global_cfg.get("default_locale", "sk")
 
-    # Prepend user header
-    now_iso = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
-    header = f"<!-- Auto-generated by KNIFE Python Generator on {now_iso} -->\n"
-    content = header + "\n" + doc.strip() + "\n\n"
+    ctx = {
+        "ID": args.id,
+        "NAME": args.name,
+        "TITLE": title,
+        "GUID": guid,
+        "CREATED": now,
+        "LOCALE": locale,
+        "AUTHOR": global_cfg.get("author", "Unknown"),
+        "LICENSE": global_cfg.get("license", "CC-BY-NC-SA-4.0"),
+        "RIGHTS_HOLDER_SYSTEM": global_cfg.get("rights_holder_system", ""),
+        "ORIGIN_SYSTEM": global_cfg.get("default_origin_system", "mix"),
+    }
+
+    # 5) compose
+    fm_part = fill(fm_core, ctx).strip()
+    header_part = fill(user_header, ctx).strip()
+    nav = fill(nav, ctx).strip()
+    body_part = fill(body, ctx).strip()
+    final_doc = f"{fm_part}\n{header_part}\n{nav}\n{body_part}\n"
+
+    # 6) output path
+    out_dir = outroot / f"{args.id}-{args.name}"
+    out_file = out_dir / "index.md"
+
+    if out_file.exists() and not args.force and not args.dry:
+        print(f"❗ {out_file} already exists. Use --force.", file=sys.stderr)
+        sys.exit(1)
 
     if args.dry:
-        print("🧪 DRY CHECK:")
-        print(f"   ✅ OK – would create: {target_md}")
-        print("   Preview (first 10 lines):")
-        preview = "\n".join(content.splitlines()[:10])
-        print(preview)
-        sys.exit(0)
+        print(final_doc)
+        return
 
-    # Real mode
-    if os.path.exists(target_md) and not args.force:
-        print(f"❌ Target exists: {target_md} (use --force to overwrite)")
-        sys.exit(3)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_file.write_text(final_doc, encoding="utf-8")
+    print(f"✅ KNIFE created: {out_file}")
 
-    write_text(target_md, content)
-    print(f"✅ Created/updated: {target_md}")
 
 if __name__ == "__main__":
     main()

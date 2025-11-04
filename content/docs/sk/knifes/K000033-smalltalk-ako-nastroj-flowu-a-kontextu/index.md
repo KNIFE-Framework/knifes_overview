@@ -36,9 +36,9 @@ date: "2025-09-17"
 sidebar_position: "33"
 ---
 <!-- body:start -->
-
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 ---
 # KNIFE K000033 – Smalltalk ako nástroj flowu a kontextu
 

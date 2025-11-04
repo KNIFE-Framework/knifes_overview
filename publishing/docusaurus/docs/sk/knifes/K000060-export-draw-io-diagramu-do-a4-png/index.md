@@ -38,7 +38,7 @@ sidebar_position: "60"
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 ---
 # KNIFE K000060 – Export Draw.io diagramu do A4 PNG
 

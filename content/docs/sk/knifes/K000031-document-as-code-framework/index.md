@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000031"
 guid: "0b3729dc-ca0b-4025-879a-c6fc72a83d84"
 dao: "knife"
-title: "„Document-as-Code\\\\\\\\\\\\\\\" framework"
+title: "Document-as-Code framework"
 description: "Tvorba dokumentov ako SDLC proces. Diplomovky, sprievodná dokumentácia pre zákazníklov, …."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -38,7 +38,7 @@ sidebar_position: "31"
 <!-- body:start -->
 
 <!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../overview.md • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 ---
 # KNIFE K000031 – „Document-as-Code“ framework
 

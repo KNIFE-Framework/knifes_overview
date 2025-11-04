@@ -62,7 +62,19 @@ CSV_OVERVIEW ?= $(CSV_DEFAULT)
 CSV_BACKFILL ?= $(CSV_OVERVIEW)
 
 # Output directory for CSV snapshots/fixes
+
 OUT_DIR    ?= config/out
+
+# -------------------------
+# 7Ds scaffolding & FM-Core apply (paths + scripts)
+# -------------------------
+SEVENDS_ROOT            := content/docs/sk/7Ds
+SEVENDS_TEMPLATE_BODY   := core/templates/content/7ds/body
+SEVENDS_HEADER_TMPL     := core/templates/7ds/header/7ds_user_header.md
+SEVENDS_FM_CORE         := core/templates/system/FM-Core.md
+SEVENDS_SCRIPT_CLONE    := core/scripts/tools/7ds_clone_from_template.py
+SEVENDS_SCRIPT_FM_APPLY := core/scripts/tools/fm_apply_from_core_7ds.py
+INSTANCE ?=
 
 
 # Default locale for normalize/report targets
@@ -124,7 +136,9 @@ endif
   knife-fm-apply k18-audit k18-fix-dry k18-fix-apply k18-verify k18-align-dry k18-align-apply \
   knifes-ref-audit knifes-ref-align-dry knifes-ref-align-apply \
   knifes-csv-scan knifes-fix-csv-dry knifes-fix-csv-apply \
-  SY01-sync-content P10-preview P20-serve-worktree
+  SY01-sync-content P10-preview P20-serve-worktree \
+  D11-7ds-dry D12-7ds-apply \
+  FM70-7ds-apply-from-core FM71-7ds-dry-from-core
 
 # -------------------------
 # 📌 Help
@@ -762,21 +776,69 @@ knifes-gen:
 	@CSV="$(csv)"; if [ -z "$$CSV" ]; then CSV="$(strip $(CSV_OVERVIEW))"; fi; \
 	node "$(SCRIPTS_DIR)/knifes-build.mjs" --csv "$$CSV" --root .
 
-TEMPLATE_MD ?= core/templates/system/FM-Core.md
-CONTENT_KNIFES_DIR ?= content/docs/sk/knifes
-LOCALE ?= sk
+# ================================================
+# 🔪 KNIFE GENERATOR from CLI (config-aware version)
+# ================================================
 
-## knifes-new: Python-only generator (DRY: KNIFE_DRY=1, FORCE: KNIFE_FORCE=1)
+# CLI variables (backward compatible with older syntax)
+id       ?=
+name     ?=
+title    ?=
+KNIFE_DRY     ?=
+KNIFE_FORCE   ?=
+
+# Template and config locations
+CONFIG_GLOBAL     ?= config/global.yml
+CONFIG_KNIFE      ?= config/knifes/knife_config.yml
+TEMPLATE_MD       ?= core/templates/system/FM-Core.md
+CONTENT_KNIFES_DIR?= content/docs/sk/knifes
+
+# KNIFE overview generator (Blog / List / Details)
+KNIFE_OVERVIEW_SCRIPT ?= core/scripts/tools/knife_overview_generate.py
+KNIFE_OVERVIEW_ROOT   ?= content/docs/sk/knifes
+KNIFE_OVERVIEW_OUT    ?= content/docs/sk/knifes/knifes_overview
+KNIFE_OVERVIEW_FM     ?= core/templates/system/FM-Core.md
+KNIFE_OVERVIEW_LOCALE ?= sk
+
+## knifes-new: create new KNIFE from templates + config
+## usage:
+##   make knifes-new id=K000087 name="github-create-release" title="GitHub – Create Release"
+## options:
+##   KNIFE_DRY=1    → preview only (no file write)
+##   KNIFE_FORCE=1  → overwrite existing knife
 knifes-new:
+	@echo "🚀 Generating new KNIFE..."
 	python3 core/scripts/tools/knife_new.py \
 	  --id "$(id)" \
 	  --name "$(name)" \
 	  $(if $(title),--title "$(title)",) \
-	  --template "$(TEMPLATE_MD)" \
+	  --config-global "$(CONFIG_GLOBAL)" \
+	  --config-knife "$(CONFIG_KNIFE)" \
 	  --outroot "$(CONTENT_KNIFES_DIR)" \
-	  $(if $(LOCALE),--locale "$(LOCALE)",) \
 	  $(if $(KNIFE_DRY),--dry,) \
 	  $(if $(KNIFE_FORCE),--force,)
+	@echo "✅ Done. Check content/docs/sk/knifes/$(id)-$(name)/index.md"
+
+## knifes-overview: regenerate KNIFE overview pages (Blog, List, Details)
+knifes-overview:
+	@echo "📊 Regenerating KNIFE overviews into $(KNIFE_OVERVIEW_OUT) …"
+	@mkdir -p "$(KNIFE_OVERVIEW_OUT)"
+	python3 "$(KNIFE_OVERVIEW_SCRIPT)" \
+	  --root "$(KNIFE_OVERVIEW_ROOT)" \
+	  --fm-core "$(KNIFE_OVERVIEW_FM)" \
+	  --out-dir "$(KNIFE_OVERVIEW_OUT)" \
+	  --locale "$(KNIFE_OVERVIEW_LOCALE)"
+	@echo "✅ KNIFE overviews regenerated."
+
+## knifes-overview-dry: preview KNIFE overview pages (no writes)
+knifes-overview-dry:
+	@echo "🧪 Preview KNIFE overviews (no write) …"
+	python3 "$(KNIFE_OVERVIEW_SCRIPT)" \
+	  --root "$(KNIFE_OVERVIEW_ROOT)" \
+	  --fm-core "$(KNIFE_OVERVIEW_FM)" \
+	  --out-dir "$(KNIFE_OVERVIEW_OUT)" \
+	  --locale "$(KNIFE_OVERVIEW_LOCALE)" \
+	  --preview
 
 dev-gen:
 	node scripts/knifes-build.mjs --csv $(CSV_DEFAULT) --root . --locale sk
@@ -1480,7 +1542,93 @@ help: ## H10 – Help
 	@echo "│ FM24-idem-apply             │ APPLY: Idempotent FM fixer               │"
 	@echo "│ FM25-sync-visible-dry       │ DRY: sync visible header from FM         │"
 	@echo "│ FM25-sync-visible           │ APPLY: sync visible header from FM       │"
+	@echo "│ FM60-7ds-audit             │ Audit FM len pre content/docs/sk/7Ds               │"
+	@echo "│ FM61-7ds-fix-dry           │ DRY: normalizuj FM v content/docs/sk/7Ds            │"
+	@echo "│ FM62-7ds-fix-apply         │ APPLY: normalizuj FM v content/docs/sk/7Ds + backup │"
+	@echo "│ FM70-7ds-apply-from-core     │ APPLY: Merge FM-Core → 7Ds (safe)        │"
+	@echo "│ FM71-7ds-dry-from-core       │ DRY:   Preview FM-Core merge for 7Ds     │"
+	
+FM60-7ds-audit:
+	@echo "🔎 FM audit (content/docs/sk/7Ds) – read-only…"
+	@mkdir -p logs
+	@python3 core/scripts/tools/fm_audit.py \
+	  --root content/docs/sk/7Ds \
+	  --output logs/fm_audit_7ds.csv \
+	  --short || true
+	@echo "📄 Report: logs/fm_audit_7ds.csv"
+	@echo "📋 Missing FM (content/docs/sk/7Ds):"
+	@awk -F, 'NR>1 && $$3=="missing" {print "  • " $$1}' logs/fm_audit_7ds.csv || true
+	@echo "(ak nič nevypísalo, tak sú všetky OK)"
+
+FM61-7ds-fix-dry:
+	@echo "🧪 DRY: FM normalize (content/docs/sk/7Ds) – no writes…"
+	@python3 core/scripts/tools/fix_frontmatter.py --root content/docs/sk/7Ds --dry-run || true
+
+FM62-7ds-fix-apply:
+	@ts=$$(date -u +%Y%m%d-%H%M%SZ); \
+	echo "🛟 Backupujem pôvodné 7Ds FM do logs/fm-backup/7Ds-$$ts …"; \
+	mkdir -p logs/fm-backup/7Ds-$$ts; \
+	find content/docs/sk/7Ds -type f -name "*.md" -print0 | xargs -0 -I{} cp {} logs/fm-backup/7Ds-$$ts/; \
+	echo "🛠 APPLY: FM normalize (content/docs/sk/7Ds)…"; \
+	python3 core/scripts/tools/fix_frontmatter.py --root content/docs/sk/7Ds --apply
+	
+	
 	@echo "└──────────────────────────────┴────────────────────────────────────────┘"
+	@echo "│ D11-7ds-dry                  │ DRY:  Scaffold 7Ds from templates        │"
+	@echo "│ D12-7ds-apply                │ APPLY: Scaffold 7Ds into content/docs     │"
+	
+.PHONY: D11-7ds-dry D12-7ds-apply
+
+## D11-7ds-dry: DRY – scaffold 7Ds structure from templates (no writes by script itself)
+D11-7ds-dry:
+	@echo "🧪 7Ds clone DRY – root='$(SEVENDS_ROOT)'"
+	@test -d "$(SEVENDS_TEMPLATE_BODY)" || { echo "❌ Missing $(SEVENDS_TEMPLATE_BODY)"; exit 1; }
+	@test -f "$(SEVENDS_FM_CORE)" || { echo "❌ Missing $(SEVENDS_FM_CORE)"; exit 1; }
+	@test -f "$(SEVENDS_HEADER_TMPL)" || { echo "❌ Missing $(SEVENDS_HEADER_TMPL)"; exit 1; }
+	@python3 "$(SEVENDS_SCRIPT_CLONE)" \
+	  --root "$(SEVENDS_ROOT)" \
+	  --template-root "$(SEVENDS_TEMPLATE_BODY)" \
+	  --fm-core "$(SEVENDS_FM_CORE)" \
+	  --header-template "$(SEVENDS_HEADER_TMPL)"
+
+## D12-7ds-apply: APPLY – scaffold 7Ds structure into content/docs
+D12-7ds-apply:
+	@echo "🛠 7Ds clone APPLY – root='$(SEVENDS_ROOT)'"
+	@test -d "$(SEVENDS_TEMPLATE_BODY)" || { echo "❌ Missing $(SEVENDS_TEMPLATE_BODY)"; exit 1; }
+	@test -f "$(SEVENDS_FM_CORE)" || { echo "❌ Missing $(SEVENDS_FM_CORE)"; exit 1; }
+	@test -f "$(SEVENDS_HEADER_TMPL)" || { echo "❌ Missing $(SEVENDS_HEADER_TMPL)"; exit 1; }
+	@python3 "$(SEVENDS_SCRIPT_CLONE)" \
+	  --root "$(SEVENDS_ROOT)" \
+	  --template-root "$(SEVENDS_TEMPLATE_BODY)" \
+	  --fm-core "$(SEVENDS_FM_CORE)" \
+	  --header-template "$(SEVENDS_HEADER_TMPL)" \
+	  --apply
+
+.PHONY: FM70-7ds-apply-from-core FM71-7ds-dry-from-core
+
+## FM71-7ds-dry-from-core: DRY – preview merge of FM-Core into 7Ds (report only)
+FM71-7ds-dry-from-core:
+	@echo "🧪 DRY: FM-Core → 7Ds merge preview…"
+	@mkdir -p logs
+	@python3 "$(SEVENDS_SCRIPT_FM_APPLY)" \
+	  --root "$(SEVENDS_ROOT)" \
+	  --fmcore "$(SEVENDS_FM_CORE)" \
+	  --config-global "config/global.yml" \
+	  --report "logs/fm_apply_from_core_7ds_report.csv" \
+	  --dry --only-changed || true
+	@echo "📄 Report: logs/fm_apply_from_core_7ds_report.csv"
+
+## FM70-7ds-apply-from-core: APPLY – merge FM-Core into 7Ds (idempotent write)
+FM70-7ds-apply-from-core:
+	@echo "🛠 APPLY: FM-Core → 7Ds merge…"
+	@mkdir -p logs
+	@python3 "$(SEVENDS_SCRIPT_FM_APPLY)" \
+	  --root "$(SEVENDS_ROOT)" \
+	  --fmcore "$(SEVENDS_FM_CORE)" \
+	  --config-global "config/global.yml" \
+	  --report "logs/fm_apply_from_core_7ds_report.csv" \
+	  --apply
+	@echo "✅ Done. Report: logs/fm_apply_from_core_7ds_report.csv"
 	@echo ""
 	@echo "   🔎 Differences:"
 	@echo "     • lint  = formal field check, no fixes"
@@ -1516,6 +1664,8 @@ help: ## H10 – Help
 	@echo "│ KNIFE Tools                                                     │"
 	@echo "├──────────────────────────────┼────────────────────────────────────────┤"
 	@echo "│ knifes-new                  │ Create new KNIFE (id, name, title)      │"
+	@echo "│ knifes-overview             │ Rebuild KNIFE overview (Blog/List/Details) │"
+	@echo "│ knifes-overview-dry         │ Preview KNIFE overview (no write)           │"
 	@echo "│ knifes-gen                  │ Generate KNIFEs from CSV (config)        │"
 	@echo "│ knifes-verify               │ Verify CSV/docs + FM integrity            │"
 	@echo "│ knifes-fix-csv-dry          │ Dry merge MD → CSV (no writes)           │"
@@ -2055,3 +2205,24 @@ FM22-fix-guid-dry:
 ## FM22-fix-guid: Nahradiť chýbajúce/placeholder GUID deterministickým UUID5 (write)
 FM22-fix-guid:
 	@python3 core/scripts/tools/fm_fix_guid.py --roots content/docs publishing/docusaurus/docs
+
+	# --- 7Ds templaty na jednom mieste ---
+FM_CORE         := core/templates/system/FM-Core.md
+TPL_7DS_BODY    := core/templates/7ds/body
+HDR_7DS         := core/templates/7ds/header/7ds_user_header.md
+DST_7DS         := content/docs/sk/7Ds
+
+D11-7ds-dry:
+	python3 core/scripts/tools/7ds_clone_from_template.py \
+	  --root $(DST_7DS) \
+	  --template-root $(TPL_7DS_BODY) \
+	  --fm-core $(FM_CORE) \
+	  --header-template $(HDR_7DS)
+
+D12-7ds-apply:
+	python3 core/scripts/tools/7ds_clone_from_template.py \
+	  --root $(DST_7DS) \
+	  --template-root $(TPL_7DS_BODY) \
+	  --fm-core $(FM_CORE) \
+	  --header-template $(HDR_7DS) \
+	  --apply

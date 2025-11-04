@@ -123,12 +123,13 @@ def audit_file(path: str) -> Dict[str, str]:
 
 
 def walk_md_files(root: str) -> list:
+    """Recursively walk root and return all .md or .mdx files (case-insensitive)."""
     results = []
     for dirpath, dirnames, filenames in os.walk(root):
         for fn in filenames:
-            if not fn.lower().endswith(".md"):
-                continue
-            results.append(os.path.join(dirpath, fn))
+            lower = fn.lower()
+            if lower.endswith(".md") or lower.endswith(".mdx"):
+                results.append(os.path.join(dirpath, fn))
     return results
 
 
@@ -150,6 +151,8 @@ def main():
     start = datetime.utcnow()
     root = args.root
     paths = walk_md_files(root)
+    if not paths:
+        print(f"⚠️ No markdown files found under {root}")
 
     issues = 0
     rows = []

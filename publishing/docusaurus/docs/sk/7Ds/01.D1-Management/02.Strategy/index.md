@@ -50,8 +50,7 @@ description: Navigácia pre KNIFE prehľady v oblasti Strategy
 ## 📂 Strategy
 
 Rýchla navigácia:
-- 📋 **[Zoznam s detailami – tabuľka](../../../knifes/KNIFE_Overview_List.md)**
-- 📰 **[Zoznam s detailami – blog](../../../knifes/KNIFE_Overview_Details.md)**
+
 
 ---
 

@@ -1,55 +1,49 @@
 ---
 # 🧩 Versioning
 fm_version: "1.0.1"
-fm_build: "2025-10-12T10:35:00Z"
-fm_version_comment: "Added field fm_version_comment to document reasons for FM updates"
+fm_build: "{{CREATED}}"
+fm_version_comment: ""
 
 # 🆔 Identity
-id: "KXXXXXXX"
-guid: "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx"
+id: "{{ID}}"
+guid: "{{GUID}}"
 
 # 🧭 Context
-dao: "knife"                  # knife | class | project
-title: "KNIFE – Prehľad"
+dao: "knife"
+title: "{{TITLE}}"
 description: ""
 
 # 👥 Authorship
-author: "Roman Kazička"
-authors: ["Roman Kazička"]
+author: "{{AUTHOR}}"
+authors: ["{{AUTHOR}}"]
 
 # 🗂 Classification
-category: ""                  # deliverable | methodology | knife | howto | other
-type: ""                      # about-me | pitch-presentation | project-summary | howto | other
-priority: ""                  # top | middle | low | no
-tags: ["knife"]               # e.g. ["knowledgemanagement","3RS","CAA"]
+category: ""
+type: ""
+priority: ""
+tags: ["knife"]
 
 # 🌍 Localization & Routing
-#slug: ""                     # optional, relative path override
-locale: "en"                  # sk | en | other
-#sidebar_label: "Home"        # only in case You want to change the sidebar label ( derived from Title, or ID) 
+locale: "{{LOCALE}}"
 
 # 🕒 Lifecycle
-created: "2025-09-24"
-modified: "YYYY-MM-DDTHH:MM:SSZ"
-status: ""                    # backlog | inprogress | done | archived | other
-privacy: "public"             # public | private
+created: "{{CREATED}}"
+modified: ""
+status: "draft"
+privacy: "public"
 
 # ⚖️ Intellectual Property
-rights_holder_content: "Roman Kazička"
-rights_holder_system: "Roman Kazička (CAA/KNIFE/LetItGrow)"
-license: "CC-BY-NC-SA-4.0"
+rights_holder_content: "{{AUTHOR}}"
+rights_holder_system: "{{RIGHTS_HOLDER_SYSTEM}}"
+license: "{{LICENSE}}"
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 Roman Kazička / SystemThinking"
+copyright: "© 2025 {{AUTHOR}}"
 
 # 🔗 Provenance (Origin)
 origin_repo: ""
 origin_repo_url: ""
 origin_commit: ""
-origin_system: ""             # sites | docusaurus | hugo | mix | other
-
-# 🪪 Optional Identifiers
-author_id: ""
-author_did: ""
+origin_system: "{{ORIGIN_SYSTEM}}"
 
 # 🧱 Reserved / Future use
 fm_reserved1: ""

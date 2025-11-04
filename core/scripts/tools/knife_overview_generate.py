@@ -15,7 +15,7 @@ Použitie:
 Poznámky:
 - Parser FM používa "string-only" prístup (bez PyYAML); očakáva kľúče v podobe `key: "value"` a
   jednoduché zoznamy `authors: ["A","B"]`, `tags: ["x","y"]`. Nevadí, ak chýbajú kľúče; skript je tolerantný.
-- Ignoruje priečinky _meta, _unclasified a súbory *.template.md, *.FM.bak.md.
+- Ignoruje priečinky _meta, _unclasified a súbory *f.template.md, *.FM.bak.md.
 - Výstupy:
     KNIFE_Overview_List.md
     KNIFE_Overview_Blog.md
@@ -189,7 +189,9 @@ def render_blog(items: List[Dict[str, object]]) -> str:
         cid = it['id']
         title = it['title'] or cid
         created = it['created'] or ''
-        path = it['path']
+        # fix link: use relative ../{slug}/index.md
+        slug = it['path'].rstrip('/').split('/')[-1]
+        path = f"../{slug}/index.md"
         lines.append(f"- **{cid}** — {created} — [{title}]({path})")
     return "\n".join(lines) + ("\n" if lines else "")
 
@@ -198,7 +200,9 @@ def render_list(items: List[Dict[str, object]]) -> str:
     lines = []
     for it in items:
         title = it['title'] or it['id']
-        path = it['path']
+        # fix link: use relative ../{slug}/index.md
+        slug = it['path'].rstrip('/').split('/')[-1]
+        path = f"../{slug}/index.md"
         status = it['status'] or ''
         prio = it['priority'] or ''
         cid = it['id']
@@ -213,7 +217,9 @@ def render_details(items: List[Dict[str, object]]) -> str:
     for it in items:
         cid = it['id']
         title = it['title'] or cid
-        path = it['path']
+        # fix link: use relative ../{slug}/index.md
+        slug = it['path'].rstrip('/').split('/')[-1]
+        path = f"../{slug}/index.md"
         created = it['created'] or ''
         status = it['status'] or ''
         prio = it['priority'] or ''
@@ -255,6 +261,15 @@ def wrap_md(fm_raw: str, h1: str, fm_visible_map: Dict[str, object]) -> str:
     fmv = build_fm_visible(fm_visible_map)
     return f"---\n{fm_raw.strip()}\n---\n\n{h1}\n\n{fmv}\n"
 
+# ---------- helper: apply placeholders ----------
+
+def apply_placeholders(text: str, ctx: Dict[str, str]) -> str:
+    def replacer(match):
+        key = match.group(1)
+        return ctx.get(key, match.group(0))
+    pattern = re.compile(r'\{\{(\w+)\}\}')
+    return pattern.sub(replacer, text)
+
 # ---------- main ----------
 
 def main():
@@ -262,10 +277,47 @@ def main():
     ap.add_argument('--root', required=True, help='root docs (napr. content/docs)')
     ap.add_argument('--locale', default='sk')
     ap.add_argument('--fm-core', required=True)
-    ap.add_argument('--out-dir', required=True)
+    #ap.add_argument('--out-dir', required=True)
+    ap.add_argument('--out-dir', default='content/docs/sk/knifes/knifes_overview')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--preview', action='store_true')
     args = ap.parse_args()
+
+    # Load config/global.yml if exists (lightweight manual parser)
+    ctx = {}
+    config_path = Path('config/global.yml')
+    if config_path.exists():
+        try:
+            import yaml
+            with open(config_path, 'r', encoding='utf-8') as f:
+                cfg = yaml.safe_load(f)
+                if isinstance(cfg, dict):
+                    ctx['AUTHOR'] = str(cfg.get('author', ''))
+                    ctx['LICENSE'] = str(cfg.get('license', ''))
+                    ctx['RIGHTS_HOLDER_SYSTEM'] = str(cfg.get('rights_holder_system', ''))
+                    ctx['ORIGIN_SYSTEM'] = str(cfg.get('origin_system', ''))
+        except ImportError:
+            # fallback manual parse (very simple)
+            with open(config_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith('#'):
+                        continue
+                    if ':' in line:
+                        k, v = line.split(':', 1)
+                        k = k.strip().lower()
+                        v = v.strip().strip('"').strip("'")
+                        if k == 'author':
+                            ctx['AUTHOR'] = v
+                        elif k == 'license':
+                            ctx['LICENSE'] = v
+                        elif k == 'rights_holder_system':
+                            ctx['RIGHTS_HOLDER_SYSTEM'] = v
+                        elif k == 'origin_system':
+                            ctx['ORIGIN_SYSTEM'] = v
+
+    # Add CREATED date
+    ctx['CREATED'] = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
     items = collect_knifes(args.root, args.locale)
 
@@ -314,6 +366,7 @@ def main():
 
         # final text (ensure content_md is a string)
         final_text = body + "\n" + (content_md or "")
+        final_text = apply_placeholders(final_text, ctx)
 
         if args.preview:
             print(f"\n--- {pg['file']} (preview)\n{final_text}\n")

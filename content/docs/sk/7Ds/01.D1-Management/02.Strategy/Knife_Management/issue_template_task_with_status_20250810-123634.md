@@ -1,35 +1,36 @@
 ---
 fm_version: 1.0.1
-fm_build: '2025-11-04T21:23:29Z'
-fm_version_comment: Added field fm_version_comment to document reasons for FM updates
-id: KNIFE_MANAGEMENT_ISSUE_TEMPLATE_TASK_WITH_STATUS_20250810_123634_MD_E1D9
-guid: 13607548-8311-408f-9a6c-cae8456d81f0
+fm_build: '2025-11-05T09:52:55Z'
+fm_version_comment: ''
+id: 01_D1-MANAGEMENT_02_STRATEGY_KNIFE_MANAGEMENT_ISSUE_TEMPLATE_TASK_WITH_STATUS_20250810-123634_8E7B1F
+guid: 51ad70f8-b23b-441c-a15b-613584735295
 dao: 7ds
 title: '[TASK] Krátky názov'
 description: ''
 author: Roman Kazička
 authors:
-- Roman Kazička
+- '{{AUTHOR}}'
 category: ''
 type: ''
-priority: 'no'
+priority: ''
 tags:
-- 7ds
 - knife
+- 7ds
 locale: sk
-created: '2025-09-23'
-modified: '2025-09-23'
-status: inprogress
+created: '2025-11-05T09:52:55Z'
+modified: ''
+status: draft
 privacy: public
 rights_holder_content: Roman Kazička
 rights_holder_system: Roman Kazička (CAA/KNIFE/LetItGrow)
 license: CC-BY-NC-SA-4.0
-disclaimer: Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.
-copyright: © 2025 Roman Kazička / SystemThinking
+disclaimer: Use at your own risk. Methods provided as-is; participation is voluntary
+  and context-aware.
+copyright: © 2025 Roman Kazička
 origin_repo: ''
 origin_repo_url: ''
 origin_commit: ''
-origin_system: docusaurus
+origin_system: CAA/KNIFE
 fm_reserved1: ''
 fm_reserved2: ''
 ---

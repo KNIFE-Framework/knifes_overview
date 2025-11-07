@@ -1,35 +1,36 @@
 ---
 fm_version: 1.0.1
-fm_build: '2025-11-04T21:23:29Z'
-fm_version_comment: Added field fm_version_comment to document reasons for FM updates
-id: 7DS_05_D5_IMPLEMENTATION_2F6E
-guid: 10d2fb92-f5d3-4a25-855d-070c53ffc7ce
+fm_build: '2025-11-05T09:52:55Z'
+fm_version_comment: ''
+id: 05_D5-IMPLEMENTATION_B4569F
+guid: 5fb0b72f-cb4e-401e-8d9f-b4a44972b917
 dao: 7ds
 title: 05.D5-Implementation
 description: ''
 author: Roman Kazička
 authors:
-- Roman Kazička
+- '{{AUTHOR}}'
 category: ''
 type: ''
-priority: 'no'
+priority: ''
 tags:
-- 7ds
 - knife
+- 7ds
 locale: sk
-created: '2025-09-23'
-modified: '2025-09-23'
-status: inprogress
+created: '2025-11-05T09:52:55Z'
+modified: ''
+status: draft
 privacy: public
 rights_holder_content: Roman Kazička
 rights_holder_system: Roman Kazička (CAA/KNIFE/LetItGrow)
 license: CC-BY-NC-SA-4.0
-disclaimer: Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.
-copyright: © 2025 Roman Kazička / SystemThinking
+disclaimer: Use at your own risk. Methods provided as-is; participation is voluntary
+  and context-aware.
+copyright: © 2025 Roman Kazička
 origin_repo: ''
 origin_repo_url: ''
 origin_commit: ''
-origin_system: docusaurus
+origin_system: CAA/KNIFE
 fm_reserved1: ''
 fm_reserved2: ''
 ---

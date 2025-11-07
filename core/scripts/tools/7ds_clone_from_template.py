@@ -1,172 +1,206 @@
-from pathlib import Path
-from datetime import datetime
-from getpass import getuser
-import argparse
-import yaml
-import re
-import hashlib
-import uuid
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-DEF_HEADER_TPL = "core/templates/content/7ds/header/7ds_user_header.md"
-DEF_FM_CORE    = "core/templates/system/FM-Core.md"
+"""
+7ds_clone_from_template.py
+
+Clone a hierarchical 7Ds template tree into a new instance under content/docs/sk/<instance>.
+- Accepts a template root (defaults to core/templates/content/7ds).
+- If the template root contains a top-level "body" directory, that layer is stripped from the destination paths.
+- Injects an optional user header comment (HTML or Markdown) at the top of each generated .md file.
+- Optionally runs fm_apply_from_core_7ds.py to replace the front matter from FM-Core.md.
+
+Usage examples:
+  # Create new instance skeleton (no FM replacement)
+  python3 core/scripts/tools/7ds_clone_from_template.py --instance 7ds-jahody
+
+  # Create skeleton and immediately apply FM from core
+  python3 core/scripts/tools/7ds_clone_from_template.py \
+    --instance 7ds-jahody \
+    --apply \
+    --fm-core core/templates/system/FM-Core.md
+"""
+
+import argparse
+import os
+import re
+import shutil
+import sys
+from pathlib import Path
+
+# ---------- helpers ----------
 
 def load_text(p: Path) -> str:
     return p.read_text(encoding="utf-8")
 
-def strip_existing_fm(md_text: str) -> str:
-    """Vyhodí existujúci FM blok, nech sa neopakuje."""
-    if md_text.startswith("---"):
-        parts = md_text.split("\n---\n", 1)
-        if len(parts) == 2:
-            # odstráni prvý '---' a prvý blok po ňom
-            return parts[1]  # zvyšok za FM
-    return md_text
+def write_text(p: Path, s: str) -> None:
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(s, encoding="utf-8")
 
-def render_header(template_path: Path) -> str:
-    tpl = load_text(template_path)
-    return (tpl
-            .replace("{{USER}}", getuser())
-            .replace("{{NOW}}", datetime.now().strftime("%Y-%m-%d %H:%M")))
-
-def load_fm_core(fm_core_md_path: Path) -> dict:
+def load_fm_core(path: Path) -> dict:
     """
-    Načíta prvý YAML front-matter blok zo súboru FM-Core.md.
-    Tolerantné voči:
-      - UTF-8 BOM na začiatku,
-      - prázdnym znakom pred '---',
-      - rôznym koncom riadkov (\n / \r\n),
-      - chýbajúcemu trailing newline po záverečnom '---',
-      - náhodným „smart dashes“ (–, —) na úplnom začiatku.
+    Load FM core YAML from a file that contains a front-matter block near the top.
+    Tolerates UTF-8 BOM, leading whitespace/newlines, and comments.
+    Returns a dict (empty if parsing yields None). Raises if not a dict.
     """
-    text = load_text(fm_core_md_path)
-
-    # odstráň BOM a leading whitespace/newlines
-    text = text.lstrip("\ufeff\r\n \t")
-
-    # ak sú náhodou „smart dashes“ na úplnom začiatku, premapuj prvé tri znaky
-    if text[:3].count("—") or text[:3].count("–"):
-        prefix = text[:3].replace("—", "-").replace("–", "-")
-        text = prefix + text[3:]
-
-    # match: --- <CR/LF> ... <CR/LF> --- [EOF alebo CR/LF]
-    m = re.match(r"^---\s*\r?\n(.*?)\r?\n---\s*(?:\r?\n|$)", text, flags=re.DOTALL)
+    text = path.read_text(encoding="utf-8")
+    # Strip BOM + leading whitespace/newlines
+    text = text.lstrip("\ufeff\r\n\t ")
+    # Find the first front-matter block delimited by --- ... ---
+    m = re.search(r"^---\s*\n(.*?)\n---\s*", text, re.DOTALL | re.MULTILINE)
     if not m:
-        # fallback: ak je záverečné '---' posledný znak bez \n
-        m = re.match(r"^---\s*\r?\n(.*?)\r?\n---\s*$", text, flags=re.DOTALL)
+        raise RuntimeError("FM-Core.md neobsahuje platný FM blok na začiatku (--- ... ---).")
+    yaml_block = m.group(1)
+    try:
+        import yaml  # ensure PyYAML
+    except Exception as e:
+        raise RuntimeError(f"PyYAML nie je dostupný: {e}")
+    data = yaml.safe_load(yaml_block)
+    if data is None:
+        data = {}
+    if not isinstance(data, dict):
+        raise RuntimeError("FM-Core front-matter sa neparsuje na mapu/dict.")
+    return data
 
-    if not m:
-        raise RuntimeError("FM-Core.md neobsahuje platný FM blok na začiatku.")
+def render_header(header_template: Path | None) -> str:
+    if not header_template:
+        return ""
+    if not header_template.exists():
+        # Header is optional; just warn in console and continue silently for generation.
+        print(f"⚠️  Header template not found: {header_template}", file=sys.stderr)
+        return ""
+    return load_text(header_template).rstrip() + "\n\n"
 
-    fm_dict = yaml.safe_load(m.group(1)) or {}
-    if not isinstance(fm_dict, dict):
-        raise RuntimeError("FM-Core.md: front-matter nie je YAML map (dict).")
-    return fm_dict
+def find_content_root(tpl_root: Path) -> tuple[Path, Path]:
+    """
+    Returns (content_root, strip_prefix).
+    If tpl_root/body exists, use that as content_root and strip_prefix=tpl_root/'body'.
+    Otherwise use tpl_root for both.
+    """
+    body = tpl_root / "body"
+    if body.exists() and body.is_dir():
+        return body, body
+    return tpl_root, tpl_root
 
-def build_fm(fm_core: dict, *, title: str, dao: str, locale: str) -> dict:
-    fm = dict(fm_core)  # základ z FM-Core
-    # povinné overrides pre 7Ds klony:
-    fm["title"] = title
-    fm["dao"] = dao
-    fm["locale"] = locale
-    # dáta:
-    today = datetime.now().strftime("%Y-%m-%d")
-    fm.setdefault("created", today)
-    fm["modified"] = today
-    # doplníme orientačný komentár o pôvode:
-    fm["fm_version_comment"] = "Initialized from FM-Core via 7ds_clone_from_template"
-    return fm
+def copy_tree_with_header(src_root: Path, strip_prefix: Path, dst_root: Path, header: str, dry: bool, verbose: bool) -> list[Path]:
+    """
+    Copy all files from src_root into dst_root, preserving relative paths after removing strip_prefix.
+    If header is non-empty and destination is a Markdown file, prepend header.
+    Returns list of written file paths.
+    """
+    written: list[Path] = []
+    for p in src_root.rglob("*"):
+        if p.is_dir():
+            continue
+        rel = p.relative_to(strip_prefix)
+        out = dst_root / rel
+        if dry:
+            if p.suffix.lower() == ".md":
+                print(f"[DRY] would write: {out}")
+            else:
+                print(f"[DRY] would copy: {p} to {out}")
+            written.append(out)
+            continue
+        # Always ensure directory structure exists
+        out.parent.mkdir(parents=True, exist_ok=True)
+        if p.suffix.lower() == ".md":
+            content = load_text(p)
+            # Prepend header (if any)
+            if header:
+                content = header + content.lstrip()
+            write_text(out, content)
+        else:
+            # For non-md assets, just copy
+            shutil.copy2(p, out)
+        written.append(out)
+    return written
 
-def dump_fm(fm: dict) -> str:
-    return f"---\n{yaml.safe_dump(fm, sort_keys=False, allow_unicode=True)}---\n"
+def run_auto_fm_apply(root: Path, fm_core: Path, instance_tag: str) -> int:
+    """
+    Call fm_apply_from_core_7ds.py residing in core/scripts/tools/.
+    Returns process exit code.
+    """
+    tool = Path(__file__).parent / "fm_apply_from_core_7ds.py"
+    if not tool.exists():
+        # also allow it one level up (historical locations)
+        alt = (Path(__file__).parent / ".." / "fm_apply_from_core_7ds.py").resolve()
+        if alt.exists():
+            tool = alt
+        else:
+            print(f"⚠️  Auto-FM tool not found: {tool}", file=sys.stderr)
+            return 2
 
-def assemble_output(fm_yaml: str, header_comment: str, body_md: str) -> str:
-    # PRESNE PORADIE: FM → header → body
-    return f"{fm_yaml}\n{header_comment}\n{body_md}"
+    cmd = [
+        sys.executable,
+        str(tool),
+        "--root", str(root),
+        "--fm-core", str(fm_core),
+        "--apply",
+        "--instance-tag", instance_tag,
+    ]
+    print("↪️ Running auto FM apply:", " ".join(cmd))
+    return os.spawnvp(os.P_WAIT, cmd[0], cmd)
 
-def _slug(s: str) -> str:
-    s = s.upper()
-    # Replace any char not in A-Z0-9_-. with '_'
-    s = re.sub(r"[^A-Z0-9_\-\.]", "_", s)
-    # Collapse multiple underscores/dashes/dots to single underscore
-    s = re.sub(r"[_\-.]+", "_", s)
-    # Trim leading/trailing underscores
-    s = s.strip("_")
-    return s
-
-def _short_hash(text: str, n: int = 6) -> str:
-    h = hashlib.sha1(text.encode("utf-8")).hexdigest()
-    return h[:n].upper()
-
-def make_deterministic_ids(rel_path: Path, instance: str) -> tuple[str, str]:
-    slug_base = _slug(rel_path.parent.as_posix().replace("/", "_"))
-    if not slug_base:
-        slug_base = _slug(rel_path.stem)
-    short = _short_hash(f"{instance}:{rel_path.as_posix()}")
-    id_ = f"{slug_base}_{short}"
-    guid = uuid.uuid5(uuid.NAMESPACE_URL, f"7ds:{instance}:{rel_path.as_posix()}")
-    return id_, guid
+# ---------- main ----------
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--root", default="content/docs/sk")
-    ap.add_argument("--template-root", default="core/templates/content/7ds")
-    ap.add_argument("--fm-core", default=DEF_FM_CORE)
-    ap.add_argument("--header-template", default=DEF_HEADER_TPL)
-    ap.add_argument("--locale", default="sk")
-    ap.add_argument("--dao", default="7ds")
-    ap.add_argument("--apply", action="store_true")
-    ap.add_argument("--instance", default="", help="Logical name of this 7Ds instance (e.g., 'STHDF-2025'). When provided, output root becomes ROOT/INSTANCE and IDs/guids become deterministic per instance.")
-    ap.add_argument("--mode", choices=["replace","skip"], default="replace", help="On existing destination files: 'replace' overwrites, 'skip' leaves them untouched.")
+    ap.add_argument("--instance", required=True, help="Názov inštancie (napr. 7ds-STHDF-2025). Vytvorí sa pod content/docs/sk/<instance>.")
+    ap.add_argument("--template-root", default="core/templates/content/7ds", help="Koreň šablóny 7Ds.")
+    ap.add_argument("--header-template", default="core/templates/7ds/header/7ds_user_header.md", help="Voliteľná hlavička pridávaná na začiatok .md.")
+    ap.add_argument("--fm-core", default="core/templates/system/FM-Core.md", help="FM-Core s YAML front-matterom.")
+    # CLI contract v1.0 additions
+    ap.add_argument("--dry", action="store_true", help="Dry run mode: nevytvára súbory, len vypíše, čo by vytvoril (default ak --apply nie je zadané).")
+    ap.add_argument("--apply", action="store_true", help="Skutočný zápis súborov a aplikácia FM.")
+    ap.add_argument("--root", default="content/docs/sk", help="Koreň pre inštancie (default: content/docs/sk).")
+    ap.add_argument("--out-root", help="Výstupný koreň namiesto --root (ak je zadaný).")
+    ap.add_argument("--locale", help="Locale (voliteľné).")
+    ap.add_argument("--force", action="store_true", help="Force overwrite existing files (voliteľné).")
+    ap.add_argument("--verbose", action="store_true", help="Verbose output (voliteľné).")
     args = ap.parse_args()
-    instance = args.instance.strip() if args.instance else None
-    base_root = Path(args.root)
-    dest_root = base_root / instance if instance else base_root
+
+    # Ak nie je explicitne --apply, tak predpokladaj dry režim
+    dry = not args.apply
+
+    instance = args.instance.strip()
+    base_root = Path(args.out_root) if args.out_root else Path(args.root)
+    dest_root = base_root / instance
+    print(f"📁 Destination root: {dest_root.resolve()}")
+    print(f"ℹ️  Instance: {instance}")
+    if dry:
+        print("ℹ️  Running in DRY mode (no files will be written)")
+
     tpl_root = Path(args.template_root)
-    fm_core = load_fm_core(Path(args.fm_core))
-    # Enforce variant A: overwrite 'dao' and 'tags' fields for 7Ds context
-    # (dao is set to '7ds', tags are set to ['7Ds', 'context'])
-    fm_core["dao"] = "7ds"
-    fm_core["tags"] = ["7Ds", "context"]
-    header_t = Path(args.header_template)
+    if not tpl_root.exists():
+        raise SystemExit(f"Template root neexistuje: {tpl_root}")
 
-    print(f"📁 Destination root: {dest_root}")
-    if instance:
-        print(f"ℹ️  Instance: {instance}")
+    content_root, strip_prefix = find_content_root(tpl_root)
+    if content_root != tpl_root:
+        print("🗂️  Stripping template top-level folder: body")
 
-    # prejde všetky index.md v template štruktúre:
-    for tpl_idx in tpl_root.rglob("index.md"):
-        rel = tpl_idx.relative_to(tpl_root)
-        dst_idx = dest_root / rel
+    header = render_header(Path(args.header_template))
 
-        # názov/heading odvodíme z názvu priečinku:
-        title = tpl_idx.parent.name
+    # 1) Copy tree (+ optional header injection)
+    written = copy_tree_with_header(content_root, strip_prefix, dest_root, header, dry=dry, verbose=args.verbose)
+    for w in written:
+        # echo minimal list but not too verbose
+        if w.suffix.lower() == ".md" and not dry:
+            print(f"✓ wrote: {w}")
 
-        body = load_text(tpl_idx)
-        body = strip_existing_fm(body)
-
-        det_id, det_guid = make_deterministic_ids(rel, args.instance)
-
-        fm_dict = build_fm(fm_core, title=title, dao=args.dao, locale=args.locale)
-        if "id" not in fm_dict or not fm_dict["id"]:
-            fm_dict["id"] = det_id
-        if "guid" not in fm_dict or not fm_dict["guid"]:
-            fm_dict["guid"] = str(det_guid)
-        fm_dict["tags"] = ["7ds"] + ([args.instance] if args.instance else [])
-
-        fm_yaml = dump_fm(fm_dict)
-        header_comment = render_header(header_t)
-
-        out = assemble_output(fm_yaml, header_comment, body)
-
-        if args.apply:
-            if dst_idx.exists() and args.mode == "skip":
-                print(f"↷ skip (exists): {dst_idx}")
-                continue
-            dst_idx.parent.mkdir(parents=True, exist_ok=True)
-            dst_idx.write_text(out, encoding="utf-8")
-            print(f"✓ wrote: {dst_idx}")
+    # 2) Optionally apply FM from core
+    if args.apply:
+        fm_core = Path(args.fm_core)
+        # Validate FM-Core is parseable to provide an early, clear error
+        try:
+            _ = load_fm_core(fm_core)
+        except Exception as e:
+            raise SystemExit(str(e))
+        rc = run_auto_fm_apply(dest_root, fm_core, instance_tag=instance)
+        if rc != 0:
+            print(f"⚠️ Auto-FM step failed with exit code {rc}", file=sys.stderr)
         else:
-            print(f"🧪 {dst_idx} (dry-run): OK (would write)")
+            print("✅ FM application completed successfully.")
+        print("➡️ Next step: FM70-7ds-apply-from-core")
 
 if __name__ == "__main__":
     main()

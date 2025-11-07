@@ -1,4 +1,3 @@
-<!-- User-facing content template (MD). No FM at top. -->
 # Názov KNIFE (zmeň ma)
 
 ## 🎯 Čo rieši (účel, cieľ)
@@ -17,4 +16,4 @@
 
 ## ✅ Hodnota / Zhrnutie
 
-> [⬅ KNIFES – Prehľad](../overview.md) • [Zoznam](../KNIFE_Overview_List.md) • [Detaily](../KNIFE_Overview_Details.md)
+> [⬅ KNIFES – Prehľad](/sk/knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](/sk/knifes_overview/KNIFE_Overview_List) • [Detaily](/sk/knifes_overview/KNIFE_Overview_Details)

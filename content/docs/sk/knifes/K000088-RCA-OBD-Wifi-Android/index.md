@@ -128,7 +128,7 @@ Výsledky ukazujú scenár **✅ Ping, ❌ Port, ❌ ELM komunikácia**,
 - Car Scanner ELM OBD2  
 - ELM327 Identifier  
 - PingTools Network Utilities  
-- Android 13 Settings (Network, Battery, Permissions)
+- Android 11 Settings (Network, Battery, Permissions)
 
 ---
 

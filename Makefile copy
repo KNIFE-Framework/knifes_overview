@@ -73,9 +73,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@echo " LOCALE   = $(LOCALE)"
 	@echo " INSTANCE = $(INSTANCE)"
 	@bash -c 'ROOT_BASE="content/docs/$(LOCALE)/7Ds"; if [ -n "$(INSTANCE)" ]; then ROOT_PATH="content/docs/$(LOCALE)/$(INSTANCE)"; else ROOT_PATH="$$ROOT_BASE"; fi; echo " TARGET ROOT → $$ROOT_PATH"'
-	@printf " Pattern: make D12-7ds-apply INSTANCE=sthdf_2025 LOCALE=sk\n"
-	@printf " \033[36m%-28s\033[0m | %s\n" "new-item-instance" "Vytvorí novú inštanciu frameworku (TYPE, NAME, TITLE)"
-	@printf "\n"
+	@printf " Pattern: make D12-7ds-apply INSTANCE=sthdf_2025 LOCALE=sk\n\n"
 
 	@printf "\033[1;33m🚀 DEPLOY / WORKTREE\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
@@ -216,22 +214,6 @@ FM20-fix-dry: ## DRY: normalizácia Front Matter (no writes)
 
 FM20-fix-apply: ## APPLY: normalizácia Front Matter (writes)
 	@python3 $(FM_TOOL) --root "$(CONTENT_DOCS_DIR)" --apply $(OPTS)
-
-# ─────────────────────────────────────────────────────────
-# UNIVERSAL FRAMEWORK INSTANCE – new_item_instance.py
-# ─────────────────────────────────────────────────────────
-.PHONY: new-item-instance
-new-item-instance: ## Vytvorí novú inštanciu frameworku (TYPE, NAME, TITLE)
-	@if [ -z "$(TYPE)" ] || [ -z "$(NAME)" ] || [ -z "$(TITLE)" ]; then \
-		echo "❌ Usage: make new-item-instance TYPE=sdlc NAME=integration TITLE='Integration Project'"; \
-		exit 1; \
-	fi
-	@python3 core/scripts/tools/new_item_instance.py \
-		--type "$(TYPE)" \
-		--name "$(NAME)" \
-		--title "$(TITLE)" \
-		--output "content/docs/$(LOCALE)"
-	@echo "✅ Instance created: $(TYPE)_$(NAME)"
 
 # ─────────────────────────────────────────────────────────
 # 7Ds – scaffold + FM-Core merge

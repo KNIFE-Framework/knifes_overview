@@ -1,12 +1,12 @@
 ---
 # 🧩 Versioning
 fm_version: "1.0.1"
-fm_build: "2025-11-02"
+fm_build: "2025-11-07"
 fm_version_comment: ""
 
 # 🆔 Identity
 id: "KNIFE_OVERVIEW_DETAILS"
-guid: "628a8fd2-c2d1-4439-87de-59e0a5308ead"
+guid: "ff39048a-91b0-470c-9f66-ac47db03d3c8"
 
 # 🧭 Context
 dao: "knife"
@@ -27,7 +27,7 @@ tags: ["knife"]
 locale: "sk"
 
 # 🕒 Lifecycle
-created: "2025-11-02"
+created: "2025-11-07"
 modified: ""
 status: "draft"
 privacy: "public"
@@ -53,7 +53,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `628a8fd2-c2d1-4439-87de-59e0a5308ead`
+> **GUID:** `ff39048a-91b0-470c-9f66-ac47db03d3c8`
 > **Status:** `draft` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

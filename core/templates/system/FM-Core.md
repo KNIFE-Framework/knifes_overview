@@ -29,7 +29,7 @@ locale: "{{LOCALE}}"
 # 🕒 Lifecycle
 created: "{{CREATED}}"
 modified: ""
-status: "draft"
+status: "backlog"
 privacy: "public"
 
 # ⚖️ Intellectual Property

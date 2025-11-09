@@ -48,6 +48,6 @@ Toto je hlavná stránka slovenskej dokumentácie.
 
 - 🔪 [KNIFE príspevky](./knifes/index.md)
 - ⚙️ [7Ds rámec](./7Ds/index.md)
-- 🧱 [SDLC modely](./sdlc_integration/index.md)
-- 🧭 [Späť na Hub](../index.md)
+- 🧱 [SDLC modely](./sdlc/sdlc_integration/index.md)
+- 🧭 [Späť na Hub](../sk/index.md)
 

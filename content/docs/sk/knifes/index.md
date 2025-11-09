@@ -31,7 +31,6 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
-slug: /sk/knifes/
 sidebar_position: 1
 ---
 # KNIFES (SK)

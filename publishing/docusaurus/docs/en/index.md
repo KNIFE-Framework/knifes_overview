@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "KNIFE_OVERVIEW_HOME_01"
 guid: "fae1ca43-0ec4-4fea-9306-4490f5d3e13d"
 dao: "knife"
-title: "KNIFE – Prehľad"
+title: "KNIFE – Overview (EN)"
 description: ""
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -33,7 +33,7 @@ fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "KNIFE – Prehľad"
 ---
-# 📋 KNIFEs Overview
+# 📋 Home  Overview (EN)
 
 <!-- fm-visible: start -->
 > **GUID:** `fae1ca43-0ec4-4fea-9306-4490f5d3e13d`

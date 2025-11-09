@@ -8,7 +8,7 @@ fm_version_comment: ""          # poznámka k verzii alebo zmene
 # 🆔 Identity
 # Jedinečné identifikátory entity
 id: "KNIFE_OVERVIEW_DETAILS"                          # systémové ID (napr. KNIFE_K000001)
-guid: "25182f8e-3443-4912-a433-0f3fdfb4c081"                        # globálne unikátne ID (UUID4)
+guid: "766d2722-7e79-4e35-b218-efebee75731f"                        # globálne unikátne ID (UUID4)
 
 # 🧭 Context
 # Konceptuálny rámec a stručný opis
@@ -31,7 +31,7 @@ tags: []                        # kľúčové tagy / heslá
 # 🌍 Localization & Routing
 # Jazykové verzie a cesty
 locale: "sk"                    # jazyk (sk/en)
-slug: "/sk/knifes/KNIFE_Overview_Details"                        # alternatívna URL / trvalý link
+#slug: ""                        # alternatívna URL / trvalý link
 
 # 🕒 Lifecycle
 # Stav vývoja a publikovania
@@ -77,7 +77,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `25182f8e-3443-4912-a433-0f3fdfb4c081`
+> **GUID:** `766d2722-7e79-4e35-b218-efebee75731f`
 > **Status:** `backlog` · **Author:**  · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -86,17 +86,15 @@ fm_reserved2: ""
 
 | ID | Title | Created | Status | Priority |
 |---|---|---|---|---|
-| SK_KNIFES_HOME | [KNIFES (SK)](../knifes/index.md) | 2025-10-28 | draft | no |
 | REF-UAT-001 | [Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md) | 2025-10-05 | inprogress | top |
-| K000123 | [Just a test](../path-check/index.md) | 2025-09-24 |  |  |
 | K000089 | [Kedy SSh a kedy HTTPS?](../K000089-SmartGit Nastavenie/index.md) | 2025-11-07 | Inprogress |  |
 | K000088 | [RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)](../K000088-RCA-OBD-Wifi-Android/index.md) | 2025-11-07 | inprogress |  |
 | K000087 | [GitHub-Create Release](../K000087-GitHub-Create_releasek/index.md) | 2025-11-02 | draft |  |
 | K000086 | [Docusaurus-ID-a-jeho-pouzitie](../K000086-docusaurus-id-a-jeho-pouzitie/index.md) | 2025-10-22 | backlog | no |
-| K000085_04 | [OBS Fundamentals – Multilingual - Video - Publishing](../K000085_04-multilingual-video-publishing/index.md) | 2025-10-19 | inprogress | top |
-| K000085_03 | [OBS Fundamentals – Active Presenter Essential](../K000085_03-active-presenter-essentials/index.md) | 2025-10-19 | inprogress | top |
-| K000085_02 | [OBS Fundamentals – Základy nahrávania a správy scén](../K000085_02-obs-fundamentals/index.md) | 2025-10-19 | inprogress | top |
-| K000085_01 | [OBS Fundamentals – Video Workflow (SK originál → EN titulky/voice](../K000085_01-video-workflow/index.md) | 2025-10-19 | inprogress | top |
+| K000085_04 | [OBS Fundamentals – Multilingual - Video - Publishing](../K000085-obs-fundamentals/K000085_04-multilingual-video-publishing/index.md) | 2025-10-19 | inprogress | top |
+| K000085_03 | [OBS Fundamentals – Active Presenter Essential](../K000085-obs-fundamentals/K000085_03-active-presenter-essentials/index.md) | 2025-10-19 | inprogress | top |
+| K000085_02 | [OBS Fundamentals – Základy nahrávania a správy scén](../K000085-obs-fundamentals/K000085_02-obs-fundamentals/index.md) | 2025-10-19 | inprogress | top |
+| K000085_01 | [OBS Fundamentals – Video Workflow (SK originál → EN titulky/voice](../K000085-obs-fundamentals/K000085_01-video-workflow/index.md) | 2025-10-19 | inprogress | top |
 | K000085 | [OBS Fundamentals – Základy nahrávania a správy scén](../K000085-obs-fundamentals/index.md) | 2025-10-19 | inprogress | top |
 | K000084 | [Ako aktivovať na GitHube EDU benefity](../K000084-ako-aktivovat-na-githube-edu-benefity/index.md) | 2025-09-25 | backlog | no |
 | K000083 | [Aktualizácia komponentov pre Docusaurus](../K000083-aktualizacia-komponentov-pre-docusaurus/index.md) | 2025-09-24 | backlog | no |

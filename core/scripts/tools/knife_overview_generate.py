@@ -30,7 +30,19 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
 
+
 # ---------- helpers: fs ----------
+ # ---------- helpers: paths ----------
+
+def rel_link_from_overview(item_dir_path: str, docs_root: str, overview_out_dir: str) -> str:
+    """Return a POSIX relative link from the overview output dir to the item's index.md.
+    - item_dir_path: path like '/sk/knifes/K000085_01-video-workflow'
+    - docs_root: root docs directory like 'content/docs'
+    - overview_out_dir: output dir like 'content/docs/sk/knifes/knifes_overview'
+    """
+    target = Path(docs_root) / item_dir_path.lstrip('/') / 'index.md'
+    rel = Path(os.path.relpath(target, Path(overview_out_dir)))
+    return rel.as_posix()
 
 def read_text(p: str) -> str:
     with open(p, 'r', encoding='utf-8') as f:
@@ -140,6 +152,9 @@ def collect_knifes(root: str, locale: str) -> List[Dict[str, object]]:
     if not base.exists():
         return items
     for p in base.rglob('index.md'):
+        # skip KNIFES home (content/docs/<locale>/knifes/index.md)
+        if p.parent == base:
+            continue
         # skip excluded directories
         parts = set(p.parts)
         if parts & EXCLUDE_DIRS:
@@ -187,27 +202,23 @@ def collect_knifes(root: str, locale: str) -> List[Dict[str, object]]:
 
 # ---------- renderers ----------
 
-def render_blog(items: List[Dict[str, object]]) -> str:
+def render_blog(items: List[Dict[str, object]], *, docs_root: str, overview_out_dir: str) -> str:
     # Blog: chrono feeling by ID ascending and show ID first for clarity
     lines = []
     for it in sorted(items, key=lambda x: x.get('id', '')):
         cid = it['id']
         title = it['title'] or cid
         created = it['created'] or ''
-        # link relative from knifes_overview/ to sibling doc folder
-        slug = it['path'].rstrip('/').split('/')[-1]
-        path = f"../{slug}/index.md"
+        path = rel_link_from_overview(it['path'], docs_root, overview_out_dir)
         lines.append(f"- **{cid}** — {created} — [{title}]({path})")
     return "\n".join(lines) + ("\n" if lines else "")
 
 
-def render_list(items: List[Dict[str, object]]) -> str:
+def render_list(items: List[Dict[str, object]], *, docs_root: str, overview_out_dir: str) -> str:
     lines = []
     for it in items:
         title = it['title'] or it['id']
-        # link relative from knifes_overview/ to sibling doc folder
-        slug = it['path'].rstrip('/').split('/')[-1]
-        path = f"../{slug}/index.md"
+        path = rel_link_from_overview(it['path'], docs_root, overview_out_dir)
         status = it['status'] or ''
         prio = it['priority'] or ''
         cid = it['id']
@@ -215,16 +226,13 @@ def render_list(items: List[Dict[str, object]]) -> str:
     return "\n".join(lines) + ("\n" if lines else "")
 
 
-def render_details(items: List[Dict[str, object]]) -> str:
-    # simple Markdown table (avoid heavy formatting)
+def render_details(items: List[Dict[str, object]], *, docs_root: str, overview_out_dir: str) -> str:
     header = "| ID | Title | Created | Status | Priority |\n|---|---|---|---|---|\n"
     rows = []
     for it in items:
         cid = it['id']
         title = it['title'] or cid
-        # link relative from knifes_overview/ to sibling doc folder
-        slug = it['path'].rstrip('/').split('/')[-1]
-        path = f"../{slug}/index.md"
+        path = rel_link_from_overview(it['path'], docs_root, overview_out_dir)
         created = it['created'] or ''
         status = it['status'] or ''
         prio = it['priority'] or ''
@@ -257,10 +265,9 @@ def build_overview_fm(fm_core_text: str, *,
     fm_out = replace_fm_kv_line(fm_out, 'title', title)
     fm_out = replace_fm_kv_line(fm_out, 'locale', locale)
     fm_out = replace_fm_kv_line(fm_out, 'created', today)
-    if slug:
-        fm_out = replace_fm_kv_line(fm_out, 'slug', slug)
     # Safety: ensure no sidebar_label remains in FM (we rely on title in sidebars)
     fm_out = remove_fm_key_lines(fm_out, 'sidebar_label')
+    fm_out = remove_fm_key_lines(fm_out, 'slug')
 
     return fm_out
 
@@ -302,10 +309,14 @@ def main():
     ap.add_argument('--locale', default='sk')
     ap.add_argument('--fm-core', required=True)
     #ap.add_argument('--out-dir', required=True)
-    ap.add_argument('--out-dir', default='content/docs/sk/knifes/knifes_overview')
+    ap.add_argument('--out-dir', default=None)
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--preview', action='store_true')
     args = ap.parse_args()
+
+    if not args.out_dir:
+        args.out_dir = os.path.join(args.root, args.locale, 'knifes', 'knifes_overview')
+    overview_out_dir = args.out_dir
 
     # Preview mode via --preview or env vars
     preview_mode = bool(
@@ -367,7 +378,6 @@ def main():
             'id': 'KNIFE_OVERVIEW_BLOG',
             'title': '📰 KNIFE Overview – Blog',
             'priority': 'middle',
-            'slug': f"/{args.locale}/knifes/KNIFE_Overview_Blog",
             'nav_key': 'blog',
             'render': render_blog,
         },
@@ -376,7 +386,6 @@ def main():
             'id': 'KNIFE_OVERVIEW_LIST',
             'title': '🗂 KNIFE Overview – List',
             'priority': 'top',
-            'slug': f"/{args.locale}/knifes/KNIFE_Overview_List",
             'nav_key': 'list',
             'render': render_list,
         },
@@ -385,7 +394,6 @@ def main():
             'id': 'KNIFE_OVERVIEW_DETAILS',
             'title': '📊 KNIFE Overview – Details',
             'priority': 'top',
-            'slug': f"/{args.locale}/knifes/KNIFE_Overview_Details",
             'nav_key': 'details',
             'render': render_details,
         },
@@ -402,11 +410,11 @@ def main():
             page_id=pg['id'],
             title=pg['title'],
             locale=args.locale,
-            slug=pg.get('slug'),
         )
 
         # render page-specific content (blog/list/details)
-        content_md = pg['render'](items) if callable(pg.get('render')) else ""
+        render_fn = pg.get('render')
+        content_md = render_fn(items, docs_root=args.root, overview_out_dir=overview_out_dir) if callable(render_fn) else ""
 
         # visible header based on FM
         fmd = fm_to_dict(fm_raw)
@@ -418,6 +426,8 @@ def main():
 
         # final text (ensure content_md is a string)
         final_text = body + "\n" + (content_md or "")
+        # Normalize any legacy breadcrumb pointing to ../knifes/index.md to ../index.md
+        final_text = final_text.replace('](../knifes/index.md)', '](../index.md)')
         final_text = apply_placeholders(final_text, ctx)
 
         if preview_mode:

@@ -8,7 +8,7 @@ fm_version_comment: ""          # poznámka k verzii alebo zmene
 # 🆔 Identity
 # Jedinečné identifikátory entity
 id: "KNIFE_OVERVIEW_BLOG"                          # systémové ID (napr. KNIFE_K000001)
-guid: "ce7c08c3-d63f-4aed-bfae-2df991b3ea9d"                        # globálne unikátne ID (UUID4)
+guid: "79f04f60-e6d0-4796-8f38-84f0756de612"                        # globálne unikátne ID (UUID4)
 
 # 🧭 Context
 # Konceptuálny rámec a stručný opis
@@ -31,7 +31,7 @@ tags: []                        # kľúčové tagy / heslá
 # 🌍 Localization & Routing
 # Jazykové verzie a cesty
 locale: "sk"                    # jazyk (sk/en)
-slug: "/sk/knifes/KNIFE_Overview_Blog"                        # alternatívna URL / trvalý link
+#slug: ""                        # alternatívna URL / trvalý link
 
 # 🕒 Lifecycle
 # Stav vývoja a publikovania
@@ -77,7 +77,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `ce7c08c3-d63f-4aed-bfae-2df991b3ea9d`
+> **GUID:** `79f04f60-e6d0-4796-8f38-84f0756de612`
 > **Status:** `backlog` · **Author:**  · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -167,14 +167,12 @@ fm_reserved2: ""
 - **K000083** — 2025-09-24 — [Aktualizácia komponentov pre Docusaurus](../K000083-aktualizacia-komponentov-pre-docusaurus/index.md)
 - **K000084** — 2025-09-25 — [Ako aktivovať na GitHube EDU benefity](../K000084-ako-aktivovat-na-githube-edu-benefity/index.md)
 - **K000085** — 2025-10-19 — [OBS Fundamentals – Základy nahrávania a správy scén](../K000085-obs-fundamentals/index.md)
-- **K000085_01** — 2025-10-19 — [OBS Fundamentals – Video Workflow (SK originál → EN titulky/voice](../K000085_01-video-workflow/index.md)
-- **K000085_02** — 2025-10-19 — [OBS Fundamentals – Základy nahrávania a správy scén](../K000085_02-obs-fundamentals/index.md)
-- **K000085_03** — 2025-10-19 — [OBS Fundamentals – Active Presenter Essential](../K000085_03-active-presenter-essentials/index.md)
-- **K000085_04** — 2025-10-19 — [OBS Fundamentals – Multilingual - Video - Publishing](../K000085_04-multilingual-video-publishing/index.md)
+- **K000085_01** — 2025-10-19 — [OBS Fundamentals – Video Workflow (SK originál → EN titulky/voice](../K000085-obs-fundamentals/K000085_01-video-workflow/index.md)
+- **K000085_02** — 2025-10-19 — [OBS Fundamentals – Základy nahrávania a správy scén](../K000085-obs-fundamentals/K000085_02-obs-fundamentals/index.md)
+- **K000085_03** — 2025-10-19 — [OBS Fundamentals – Active Presenter Essential](../K000085-obs-fundamentals/K000085_03-active-presenter-essentials/index.md)
+- **K000085_04** — 2025-10-19 — [OBS Fundamentals – Multilingual - Video - Publishing](../K000085-obs-fundamentals/K000085_04-multilingual-video-publishing/index.md)
 - **K000086** — 2025-10-22 — [Docusaurus-ID-a-jeho-pouzitie](../K000086-docusaurus-id-a-jeho-pouzitie/index.md)
 - **K000087** — 2025-11-02 — [GitHub-Create Release](../K000087-GitHub-Create_releasek/index.md)
 - **K000088** — 2025-11-07 — [RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)](../K000088-RCA-OBD-Wifi-Android/index.md)
 - **K000089** — 2025-11-07 — [Kedy SSh a kedy HTTPS?](../K000089-SmartGit Nastavenie/index.md)
-- **K000123** — 2025-09-24 — [Just a test](../path-check/index.md)
 - **REF-UAT-001** — 2025-10-05 — [Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md)
-- **SK_KNIFES_HOME** — 2025-10-28 — [KNIFES (SK)](../knifes/index.md)

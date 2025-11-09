@@ -31,7 +31,7 @@ tags: []                        # kľúčové tagy / heslá
 # 🌍 Localization & Routing
 # Jazykové verzie a cesty
 locale: "sk"                    # jazyk (sk/en)
-slug: ""                        # alternatívna URL / trvalý link
+#slug: ""                        # alternatívna URL / trvalý link
 
 # 🕒 Lifecycle
 # Stav vývoja a publikovania

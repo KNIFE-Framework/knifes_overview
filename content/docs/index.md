@@ -38,5 +38,5 @@ sidebar_position: "1"
 
 Vitaj v KNIFE dokumentácii. Vyber si jazyk:
 
-- 🇸🇰 **Slovensky** → [/sk/](/sk/)
-- 🇬🇧 **English** → [/en/](/en/)
+- 🇸🇰 **Slovensky** → [/sk/](./sk/index.md)
+- 🇬🇧 **English** → [/en/](./en/index.md)

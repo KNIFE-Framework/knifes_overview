@@ -53,7 +53,12 @@ CSV_DEFAULT   := config/data/KNIFES-OVERVIEW-INPUTs.csv
 endif
 CSV_OVERVIEW ?= $(CSV_DEFAULT)
 LOCALE       ?= sk
+
 KNIFES_DIR   ?= content/docs/$(LOCALE)/knifes
+
+# SDLC / Q12 scaffold dirs
+SDLC_DIR ?= content/docs/$(LOCALE)/sdlc
+Q12_DIR  ?= content/docs/$(LOCALE)/q12
 
 # ─────────────────────────────────────────────────────────
 # HELP (autogenerovaný z „##“ popisov)
@@ -134,6 +139,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 .PHONY: SY01-sync-content dev build build-fast serve
 SY01-sync-content: ## Sync SSOT content → publishing/docusaurus/docs (hard, delete)
 	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
+	@$(MAKE) --no-print-directory knifes-overview
 	@mkdir -p "$(PUB_DOCS_DIR)"
 	rsync -av --delete --checksum "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"
 	@echo "✅ Synced: $(CONTENT_DOCS_DIR) → $(PUB_DOCS_DIR)"
@@ -330,7 +336,7 @@ KNIFE_FORCE ?=
 CONFIG_GLOBAL     ?= config/global.yml
 CONFIG_KNIFE      ?= config/knifes/knife_config.yml
 KNIFE_OVERVIEW_SCRIPT ?= core/scripts/tools/knife_overview_generate.py
-KNIFE_OVERVIEW_ROOT   ?= content/docs/$(LOCALE)/knifes
+KNIFE_OVERVIEW_ROOT   ?= content/docs
 KNIFE_OVERVIEW_OUT    ?= content/docs/$(LOCALE)/knifes/knifes_overview
 KNIFE_OVERVIEW_FM     ?= core/templates/system/FM-Core.md
 KNIFE_OVERVIEW_LOCALE ?= $(LOCALE)
@@ -391,7 +397,6 @@ print-locale: ## Vypíše aktuálne LOCALE a DS_LOCALE
 # HELP+: praktické príklady (copy‑paste)
 # ─────────────────────────────────────────────────────────
 .PHONY: help-examples help+
-help-examples: ## Ukáže praktické príklady (tabuľka)
 	@printf " \033[1m%-40s\033[0m | \033[1m%s\033[0m\n" "Command" "What it does"
 	@printf "%-40s-+-%s\n" "----------------------------------------" "----------------------------------------------"
 	@printf " %-40s | %s\n" "make dev" "Spustí Docusaurus dev server"
@@ -416,6 +421,8 @@ help-examples: ## Ukáže praktické príklady (tabuľka)
 	@printf " %-40s | %s\n" "make knifes-overview" "Zregeneruje prehľady (Blog/List/Details)"
 	@printf " %-40s | %s\n" "make knifes-build-dry" "CSV → MD build (DRY) podľa configu"
 	@printf " %-40s | %s\n" "make knifes-build-apply" "CSV → MD build (APPLY) podľa configu"
+	@printf " %-40s | %s\n" "make S21-sdlc-new SDLC_NAME=integration SDLC_TITLE='Integration Project' LOCALE=sk" "Vytvorí novú SDLC inštanciu cez generátor"
+	@printf " %-40s | %s\n" "make Q21-q12-new Q12_NAME=mgmt Q12_TITLE='Q12 Management Layer' LOCALE=sk" "Vytvorí novú Q12 inštanciu cez generátor"
 	@printf "\n"
 	@printf " %-40s | %s\n" "make doctor" "Rýchla diagnostika prostredia"
 	@printf " %-40s | %s\n" "make print-vars" "Vypíše dôležité premenné"
@@ -424,6 +431,37 @@ help-examples: ## Ukáže praktické príklady (tabuľka)
 
 help+: help-examples
 
+
+# ─────────────────────────────────────────────────────────
+# SDLC / Q12 – scaffold cez univerzálny generátor
+# ─────────────────────────────────────────────────────────
+.PHONY: S21-sdlc-new Q21-q12-new
+
+S21-sdlc-new: ## SDLC: vytvor novú SDLC inštanciu (SDLC_NAME=..., SDLC_TITLE=...)
+	@if [ -z "$(SDLC_NAME)" ] || [ -z "$(SDLC_TITLE)" ]; then \
+		echo "❌ Usage: make S21-sdlc-new SDLC_NAME=integration SDLC_TITLE='Integration Project' LOCALE=sk"; \
+		exit 1; \
+	fi
+	@mkdir -p "$(SDLC_DIR)"
+	@python3 core/scripts/tools/new_item_instance.py \
+		--type sdlc \
+		--name "$(SDLC_NAME)" \
+		--title "$(SDLC_TITLE)" \
+		--output "$(SDLC_DIR)"
+	@echo "✅ SDLC created: $(SDLC_DIR)/sdlc_$(SDLC_NAME)"
+
+Q21-q12-new: ## Q12: vytvor novú Q12 inštanciu (Q12_NAME=..., Q12_TITLE=...)
+	@if [ -z "$(Q12_NAME)" ] || [ -z "$(Q12_TITLE)" ]; then \
+		echo "❌ Usage: make Q21-q12-new Q12_NAME=mgmt Q12_TITLE='Q12 Management Layer' LOCALE=sk"; \
+		exit 1; \
+	fi
+	@mkdir -p "$(Q12_DIR)"
+	@python3 core/scripts/tools/new_item_instance.py \
+		--type q12 \
+		--name "$(Q12_NAME)" \
+		--title "$(Q12_TITLE)" \
+		--output "$(Q12_DIR)"
+	@echo "✅ Q12 created: $(Q12_DIR)/q12_$(Q12_NAME)"
 
 # ─────────────────────────────────────────────────────────
 # ROADMAP / TODO – placeholdery (neblokujú CI)

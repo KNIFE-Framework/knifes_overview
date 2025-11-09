@@ -37,3 +37,17 @@ sidebar_position: 1
 # KNIFES (SK)
 
 Rozcestník KNIFE príspevkov.
+
+---
+
+## 📊 Prehľady KNIFE príspevkov
+
+Tu nájdeš rýchle odkazy na prehľady všetkých KNIFE záznamov podľa rôznych pohľadov:
+
+- 📰 [Blogový prehľad](./knifes_overview/KNIFE_Overview_Blog.md) — zoradený podľa ID s dátumom vytvorenia.
+- 🗂️ [Zoznamový prehľad](./knifes_overview/KNIFE_Overview_List.md) — stručný zoznam so statusom a prioritou.
+- 📈 [Detailný prehľad](./knifes_overview/KNIFE_Overview_Details.md) — tabuľka s ID, dátumom, statusom a prioritou.
+
+---
+
+📚 *Pre návrat na hlavnú stránku dokumentácie klikni na [🧭 Hub](../index.md)*

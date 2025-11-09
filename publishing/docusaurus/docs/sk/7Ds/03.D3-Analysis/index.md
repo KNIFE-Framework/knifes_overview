@@ -1,37 +1,36 @@
 ---
 fm_version: 1.0.1
-fm_build: '2025-10-12T10:35:00Z'
-fm_version_comment: Added field fm_version_comment to document reasons for FM updates
-id: 7DS_03_D3_ANALYSIS_6CB7
-guid: 38310048-2b55-4e46-bf25-a6e839b0e5cd
-dao: class
+fm_build: '2025-11-05T09:52:55Z'
+fm_version_comment: ''
+id: 03_D3-ANALYSIS_A58912
+guid: 712eb519-5150-44d8-9464-358d652f4663
+dao: 7ds
 title: 03.D3-Analysis
 description: ''
-author: "Roman Kazi\u010Dka"
+author: Roman Kazička
 authors:
-- "Roman Kazi\u010Dka"
-- ''
+- '{{AUTHOR}}'
 category: ''
 type: ''
-priority: 'no'
-tags: []
+priority: ''
+tags:
+- knife
+- 7ds
 locale: sk
-created: '2025-09-23'
+created: '2025-11-05T09:52:55Z'
 modified: ''
-status: inprogress
+status: draft
 privacy: public
-rights_holder_content: "Roman Kazi\u010Dka"
-rights_holder_system: "Roman Kazi\u010Dka (CAA/KNIFE/LetItGrow)"
+rights_holder_content: Roman Kazička
+rights_holder_system: Roman Kazička (CAA/KNIFE/LetItGrow)
 license: CC-BY-NC-SA-4.0
 disclaimer: Use at your own risk. Methods provided as-is; participation is voluntary
   and context-aware.
-copyright: "\xA9 2025 Roman Kazi\u010Dka / SystemThinking"
+copyright: © 2025 Roman Kazička
 origin_repo: ''
 origin_repo_url: ''
 origin_commit: ''
-origin_system: ''
-author_id: ''
-author_did: ''
+origin_system: CAA/KNIFE
 fm_reserved1: ''
 fm_reserved2: ''
 ---

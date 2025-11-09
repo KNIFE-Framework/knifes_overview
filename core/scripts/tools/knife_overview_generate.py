@@ -155,12 +155,17 @@ def collect_knifes(root: str, locale: str) -> List[Dict[str, object]]:
         if not fm_raw:
             continue
         d = fm_to_dict(fm_raw)
-        # only KNIFE items with id like K\d{6}
+        # only KNIFE items (case-insensitive DAO) and tolerant ID (K000000 or K000000-...)
         item_id = str(d.get('id', ''))
-        if not re.match(r'^K\d{6}$', item_id):
-            # tolerate non-standard, but keep if dao==knife
-            if (d.get('dao') or '').strip() != 'knife':
-                continue
+        dao_val = str(d.get('dao', ''))
+        dao_norm = dao_val.strip().lower()
+
+        # accept ID that starts with K###### optionally followed by hyphen or word boundary
+        id_ok = bool(re.match(r'^K\d{6}(\b|-)?', item_id))
+
+        # keep if ID looks ok OR dao explicitly says knife (any case)
+        if not id_ok and dao_norm != 'knife':
+            continue
         title = str(d.get('title', 'Untitled'))
         created = str(d.get('created', ''))
         status = str(d.get('status', ''))
@@ -189,7 +194,7 @@ def render_blog(items: List[Dict[str, object]]) -> str:
         cid = it['id']
         title = it['title'] or cid
         created = it['created'] or ''
-        # fix link: use relative ../{slug}/index.md
+        # link relative from knifes_overview/ to sibling doc folder
         slug = it['path'].rstrip('/').split('/')[-1]
         path = f"../{slug}/index.md"
         lines.append(f"- **{cid}** — {created} — [{title}]({path})")
@@ -200,7 +205,7 @@ def render_list(items: List[Dict[str, object]]) -> str:
     lines = []
     for it in items:
         title = it['title'] or it['id']
-        # fix link: use relative ../{slug}/index.md
+        # link relative from knifes_overview/ to sibling doc folder
         slug = it['path'].rstrip('/').split('/')[-1]
         path = f"../{slug}/index.md"
         status = it['status'] or ''
@@ -217,7 +222,7 @@ def render_details(items: List[Dict[str, object]]) -> str:
     for it in items:
         cid = it['id']
         title = it['title'] or cid
-        # fix link: use relative ../{slug}/index.md
+        # link relative from knifes_overview/ to sibling doc folder
         slug = it['path'].rstrip('/').split('/')[-1]
         path = f"../{slug}/index.md"
         created = it['created'] or ''
@@ -232,7 +237,8 @@ def build_overview_fm(fm_core_text: str, *,
                       page_id: str,
                       title: str,
                       locale: str,
-                      guid: Optional[str] = None) -> str:
+                      guid: Optional[str] = None,
+                      slug: Optional[str] = None) -> str:
     """
     Kopíruje FM z FM-Core.md a dosadí len:
     id, guid, title, locale, created.
@@ -251,6 +257,8 @@ def build_overview_fm(fm_core_text: str, *,
     fm_out = replace_fm_kv_line(fm_out, 'title', title)
     fm_out = replace_fm_kv_line(fm_out, 'locale', locale)
     fm_out = replace_fm_kv_line(fm_out, 'created', today)
+    if slug:
+        fm_out = replace_fm_kv_line(fm_out, 'slug', slug)
     # Safety: ensure no sidebar_label remains in FM (we rely on title in sidebars)
     fm_out = remove_fm_key_lines(fm_out, 'sidebar_label')
 
@@ -270,6 +278,22 @@ def apply_placeholders(text: str, ctx: Dict[str, str]) -> str:
     pattern = re.compile(r'\{\{(\w+)\}\}')
     return pattern.sub(replacer, text)
 
+def build_nav(current: str, locale: str) -> str:
+    """
+    Simple navigation between 3 overview pages + back to KNIFES index.
+    `current` is one of: 'blog' | 'list' | 'details'
+    """
+    items = [
+        ("blog",    "[📰 Blog](./KNIFE_Overview_Blog.md)"),
+        ("list",    "[🗂 List](./KNIFE_Overview_List.md)"),
+        ("details", "[📊 Details](./KNIFE_Overview_Details.md)"),
+    ]
+    parts = []
+    for key, link in items:
+        parts.append(f"**{link}**" if key == current else link)
+    parts.append("[↩️ KNIFES](../index.md)")
+    return " | ".join(parts) + "\n\n"
+
 # ---------- main ----------
 
 def main():
@@ -282,6 +306,13 @@ def main():
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--preview', action='store_true')
     args = ap.parse_args()
+
+    # Preview mode via --preview or env vars
+    preview_mode = bool(
+        args.preview
+        or os.environ.get('PREVIEW') == '1'
+        or os.environ.get('KNIFE_PREVIEW') == '1'
+    )
 
     # Load config/global.yml if exists (lightweight manual parser)
     ctx = {}
@@ -316,6 +347,12 @@ def main():
                         elif k == 'origin_system':
                             ctx['ORIGIN_SYSTEM'] = v
 
+    # Defaults for placeholders (ENV > hardcoded fallback)
+    ctx.setdefault('AUTHOR', os.getenv('AUTHOR', os.getenv('USER', 'author')))
+    ctx.setdefault('LICENSE', os.getenv('LICENSE', 'CC-BY-NC-SA-4.0'))
+    ctx.setdefault('RIGHTS_HOLDER_SYSTEM', os.getenv('RIGHTS_HOLDER_SYSTEM', 'CAA / KNIFE / LetItGrow'))
+    ctx.setdefault('ORIGIN_SYSTEM', os.getenv('ORIGIN_SYSTEM', 'CAA'))
+
     # Add CREATED date
     ctx['CREATED'] = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
@@ -330,6 +367,8 @@ def main():
             'id': 'KNIFE_OVERVIEW_BLOG',
             'title': '📰 KNIFE Overview – Blog',
             'priority': 'middle',
+            'slug': f"/{args.locale}/knifes/KNIFE_Overview_Blog",
+            'nav_key': 'blog',
             'render': render_blog,
         },
         {
@@ -337,6 +376,8 @@ def main():
             'id': 'KNIFE_OVERVIEW_LIST',
             'title': '🗂 KNIFE Overview – List',
             'priority': 'top',
+            'slug': f"/{args.locale}/knifes/KNIFE_Overview_List",
+            'nav_key': 'list',
             'render': render_list,
         },
         {
@@ -344,9 +385,15 @@ def main():
             'id': 'KNIFE_OVERVIEW_DETAILS',
             'title': '📊 KNIFE Overview – Details',
             'priority': 'top',
+            'slug': f"/{args.locale}/knifes/KNIFE_Overview_Details",
+            'nav_key': 'details',
             'render': render_details,
         },
     ]
+
+    def _fm_for_preview(fm_raw_text: str, page_id: str) -> str:
+        # change id: X -> X_PREVIEW (one occurrence only)
+        return replace_fm_kv_line(fm_raw_text, 'id', f"{page_id}_PREVIEW")
 
     any_change = False
     for pg in pages:
@@ -355,6 +402,7 @@ def main():
             page_id=pg['id'],
             title=pg['title'],
             locale=args.locale,
+            slug=pg.get('slug'),
         )
 
         # render page-specific content (blog/list/details)
@@ -364,21 +412,44 @@ def main():
         fmd = fm_to_dict(fm_raw)
         body = wrap_md(fm_raw, f"# {pg['title']}", fmd)
 
+        nav_key = pg.get('nav_key', '')
+        if nav_key:
+            body += build_nav(nav_key, args.locale)
+
         # final text (ensure content_md is a string)
         final_text = body + "\n" + (content_md or "")
         final_text = apply_placeholders(final_text, ctx)
 
-        if args.preview:
-            print(f"\n--- {pg['file']} (preview)\n{final_text}\n")
+        if preview_mode:
+            # Write side-by-side preview file with unique id to avoid duplicate-id collisions
+            preview_path = pg['file'].replace('.md', '.preview.md')
+            fm_preview = _fm_for_preview(fm_raw, pg['id'])
+            body_preview = wrap_md(fm_preview, f"# {pg['title']}", fm_to_dict(fm_preview))
+            if nav_key:
+                body_preview += build_nav(nav_key, args.locale)
+            final_preview = body_preview + "\n" + (content_md or "")
+            final_preview = apply_placeholders(final_preview, ctx)
+            write_text_if_changed(preview_path, final_preview)
+            print(f"\n--- {preview_path} (preview written with unique id)\n")
 
         if not args.dry_run:
             changed = write_text_if_changed(pg['file'], final_text)
             any_change = any_change or changed
 
     if args.dry_run:
-        print(f"Dry-run. Items found: {len(items)}. No files written.")
+        msg = f"Dry-run. Items: {len(items)}."
+        if preview_mode:
+            msg += " Preview files were written."
+        else:
+            msg += " No files written."
+        print(msg)
     else:
-        print("Overview pages generated." + (" (changes written)" if any_change else " (no changes)"))
+        msg = "Overview pages generated."
+        if any_change:
+            msg += " (changes written)"
+        if preview_mode:
+            msg += " Preview files also written."
+        print(msg)
 
 
 if __name__ == '__main__':

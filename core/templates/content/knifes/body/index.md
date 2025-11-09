@@ -1,4 +1,3 @@
-<!-- User-facing content template (MD). No FM at top. -->
 # Názov KNIFE (zmeň ma)
 
 ## 🎯 Čo rieši (účel, cieľ)
@@ -16,3 +15,10 @@
 ## 💡 Tipy a poznámky
 
 ## ✅ Hodnota / Zhrnutie
+
+<!-- body:start -->
+
+<!-- nav:knifes -->
+> [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
+---
+

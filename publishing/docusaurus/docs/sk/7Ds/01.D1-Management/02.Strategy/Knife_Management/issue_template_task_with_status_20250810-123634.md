@@ -1,39 +1,38 @@
 ---
 fm_version: 1.0.1
-fm_build: '2025-10-12T10:35:00Z'
-fm_version_comment: Added field fm_version_comment to document reasons for FM updates
-guid: 13607548-8311-408f-9a6c-cae8456d81f0
-dao: class
-title: "[TASK] Kr\xE1tky n\xE1zov"
+fm_build: '2025-11-05T09:52:55Z'
+fm_version_comment: ''
+id: 01_D1-MANAGEMENT_02_STRATEGY_KNIFE_MANAGEMENT_ISSUE_TEMPLATE_TASK_WITH_STATUS_20250810-123634_8E7B1F
+guid: 51ad70f8-b23b-441c-a15b-613584735295
+dao: 7ds
+title: '[TASK] Krátky názov'
 description: ''
-author: "Roman Kazi\u010Dka"
+author: Roman Kazička
 authors:
-- "Roman Kazi\u010Dka"
-- ''
+- '{{AUTHOR}}'
 category: ''
 type: ''
-priority: 'no'
-tags: []
+priority: ''
+tags:
+- knife
+- 7ds
 locale: sk
-created: '2025-09-23'
+created: '2025-11-05T09:52:55Z'
 modified: ''
-status: inprogress
+status: draft
 privacy: public
-rights_holder_content: "Roman Kazi\u010Dka"
-rights_holder_system: "Roman Kazi\u010Dka (CAA/KNIFE/LetItGrow)"
+rights_holder_content: Roman Kazička
+rights_holder_system: Roman Kazička (CAA/KNIFE/LetItGrow)
 license: CC-BY-NC-SA-4.0
 disclaimer: Use at your own risk. Methods provided as-is; participation is voluntary
   and context-aware.
-copyright: "\xA9 2025 Roman Kazi\u010Dka / SystemThinking"
+copyright: © 2025 Roman Kazička
 origin_repo: ''
 origin_repo_url: ''
 origin_commit: ''
-origin_system: ''
-author_id: ''
-author_did: ''
+origin_system: CAA/KNIFE
 fm_reserved1: ''
 fm_reserved2: ''
-id: KNIFE_MANAGEMENT_ISSUE_TEMPLATE_TASK_WITH_STATUS_20250810_123634_MD_E1D9
 ---
 # [TASK] Krátky názov
 

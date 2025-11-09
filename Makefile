@@ -23,6 +23,9 @@ endif
 
 # Build voľby
 BUILD_DATE := $(shell date -u '+%Y-%m-%d %H:%M:%S UTC')
+RELEASE_TAG := $(shell git describe --tags --always --dirty 2>/dev/null || echo dev)
+COMMIT_SHA := $(shell git rev-parse --short HEAD 2>/dev/null || echo local)
+GITHUB_REPO_URL ?= https://github.com/KNIFE-Framework/knifes_overview
 MINIFY ?= 1
 BUILD_EXTRA :=
 ifeq ($(MINIFY),0)
@@ -145,16 +148,16 @@ SY01-sync-content: ## Sync SSOT content → publishing/docusaurus/docs (hard, de
 	@echo "✅ Synced: $(CONTENT_DOCS_DIR) → $(PUB_DOCS_DIR)"
 
 dev: ## Spustí lokálny dev server Docusaurusu
-	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start -- $(BUILD_LOCALE_OPT)
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start -- $(BUILD_LOCALE_OPT)
 
 build: SY01-sync-content ## Production build (MINIFY=1|0, DS_LOCALE=sk|en)
-	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
 
 build-fast: ## Build bez minifikácie (rýchly test)
 	$(MAKE) build MINIFY=0
 
 serve: ## Naservíruje statický build lokálne
-	cd "$(PUB_DOCUS_DIR)" && $(NPM) run serve
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" $(NPM) run serve
 
 # ─────────────────────────────────────────────────────────
 # WORKTREE DEPLOY (Cesta 1) – bezpečné, stručné
@@ -387,6 +390,9 @@ print-vars: ## Vypíše kľúčové premenné
 	@echo "[PAGES_DIR]        = $(PAGES_DIR)"
 	@echo "[DS_LOCALE]        = $(DS_LOCALE)"
 	@echo "[BUILD_EXTRA]      = $(BUILD_EXTRA)"
+	@echo "[RELEASE_TAG]     = $(RELEASE_TAG)"
+	@echo "[COMMIT_SHA]      = $(COMMIT_SHA)"
+	@echo "[GITHUB_REPO_URL] = $(GITHUB_REPO_URL)"
 
 # Helper: Print current LOCALE and DS_LOCALE
 .PHONY: print-locale

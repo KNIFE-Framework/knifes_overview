@@ -8,7 +8,7 @@ fm_version_comment: ""          # poznámka k verzii alebo zmene
 # 🆔 Identity
 # Jedinečné identifikátory entity
 id: "KNIFE_OVERVIEW_BLOG"                          # systémové ID (napr. KNIFE_K000001)
-guid: "79f04f60-e6d0-4796-8f38-84f0756de612"                        # globálne unikátne ID (UUID4)
+guid: "d14c3d10-e077-475e-b149-d849cf425320"                        # globálne unikátne ID (UUID4)
 
 # 🧭 Context
 # Konceptuálny rámec a stručný opis
@@ -77,7 +77,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `79f04f60-e6d0-4796-8f38-84f0756de612`
+> **GUID:** `d14c3d10-e077-475e-b149-d849cf425320`
 > **Status:** `backlog` · **Author:**  · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

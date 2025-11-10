@@ -177,7 +177,8 @@ serve: ## Naservíruje statický build lokálne
 
 .PHONY: W05-clean-worktree
 W05-clean-worktree: ## Vyčistí worktree (zachová .git), vhodné pred rsync
-	@if [ ! -d "$(WORKTREE_DIR)/.git" ]; then echo "❌ Worktree neexistuje. Spusť najprv W10-check-worktree"; exit 1; fi
+	@if ! git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then \
+	  echo "❌ Worktree neexistuje. Spusť najprv W10-check-worktree"; exit 1; fi
 	@echo "🧹 Čistím worktree: $(WORKTREE_DIR)"
 	@git -C "$(WORKTREE_DIR)" clean -fdx
 W10-check-worktree: ## Vytvorí/overí worktree ../gh-pages-docusaurus → /docs

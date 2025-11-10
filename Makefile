@@ -81,7 +81,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@printf "\033[1;34m🧩 CORE / BUILD / SERVE\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(SY01-sync-content|dev|build|build-fast|serve):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(SY00-clean-pubdocs|SY01-sync-content|dev|build|build-fast|build-clean|serve):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
 	@printf "\033[1;94m📦 INSTANCE SCOPE\033[0m\n"
@@ -146,7 +146,15 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 # ─────────────────────────────────────────────────────────
 # CORE: SYNC / DEV / BUILD / SERVE
 # ─────────────────────────────────────────────────────────
-.PHONY: SY01-sync-content dev build build-fast serve
+.PHONY: SY00-clean-pubdocs SY01-sync-content dev build build-fast build-clean serve
+
+SY00-clean-pubdocs: ## Hard clean: vyprázdni publishing/docusaurus/docs (ponechá priečinok)
+	@mkdir -p "$(PUB_DOCS_DIR)"
+	@echo "🧹 Hard clean: $(PUB_DOCS_DIR)/*"
+	@rm -rf "$(PUB_DOCS_DIR)"/* 2>/dev/null || true
+build-clean: ## Hard clean + sync + production build (istý reset publish/docs)
+	$(MAKE) SY00-clean-pubdocs
+	$(MAKE) build
 SY01-sync-content: ## Sync SSOT content → publishing/docusaurus/docs (hard, delete)
 	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
 	@$(MAKE) --no-print-directory knifes-overview
@@ -436,6 +444,8 @@ print-locale: ## Vypíše aktuálne LOCALE a DS_LOCALE
 	@printf " %-40s | %s\n" "make build DS_LOCALE=sk" "Build len pre SK lokalizáciu"
 	@printf " %-40s | %s\n" "make build-fast" "Rýchly build bez minifikácie"
 	@printf " %-40s | %s\n" "make build-core" "Build bez rsync/sync (len Docusaurus)"
+	@printf " %-40s | %s\n" "make SY00-clean-pubdocs" "Vyprázdni publishing/docusaurus/docs (hard clean)"
+	@printf " %-40s | %s\n" "make build-clean" "Hard clean + sync + production build"
 	@printf " %-40s | %s\n" "make W05-clean-worktree" "Vyčistí worktree pred rsyncom"
 	@printf " %-40s | %s\n" "make knifes-overview-commit" "Commitne zmeny overview → odstráni '-dirty'"
 	@printf " %-40s | %s\n" "make serve" "Naservíruje lokálne už vybuildované stránky"

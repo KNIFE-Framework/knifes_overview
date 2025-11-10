@@ -1,73 +1,91 @@
 ---
 # 🧩 Versioning
-# Účel: verzovanie a audit FM-Core alebo inštancie
-fm_version: "1.0.1"             # verzia formátu FM
-fm_build: "2025-11-09"          # dátum buildu / generovania
-fm_version_comment: ""          # poznámka k verzii alebo zmene
+# Verzia formátu FM
+fm_version: "1.0.1"
+# Dátum buildu / generovania
+fm_build: "2025-11-09"
+# Poznámka k verzii alebo zmene
+fm_version_comment: ""
 
 # 🆔 Identity
 # Jedinečné identifikátory entity
-id: "KNIFE_OVERVIEW_LIST"                          # systémové ID (napr. KNIFE_K000001)
-guid: "03077303-ff32-4a13-843d-bde5e10ead49"                        # globálne unikátne ID (UUID4)
+# systémové ID (napr. KNIFE_K000001)
+id: "KNIFE_OVERVIEW_LIST"
+# globálne unikátne ID (UUID4)
+guid: "da0fa8f9-ebc4-4525-a7f5-663d9b45d92c"
 
 # 🧭 Context
-# Konceptuálny rámec a stručný opis
-dao: ""                         # typ entity (knife, q12, sdlc, 7ds, thesei…)
-title: "🗂 KNIFE Overview – List"                       # názov / titul príspevku
-description: ""                 # krátky popis účelu alebo kontextu
+# Typ entity (knife, q12, sdlc, 7ds, thesei…)
+dao: ""
+# Názov / titul príspevku
+title: "🗂 KNIFE Overview – List"
+# Krátky popis účelu alebo kontextu
+description: ""
 
 # 👥 Authorship
-# Autorské údaje a kolaborácia
-author: ""                      # hlavný autor
-authors: []                     # zoznam autorov alebo prispievateľov
+# Hlavný autor
+author: ""
+# Zoznam autorov alebo prispievateľov
+authors: []
 
 # 🗂 Classification
-# Kategorizácia obsahu
-category: ""                    # nadradená téma
-type: ""                        # typ príspevku (case, guide, tutorial…)
-priority: ""                    # význam (low, medium, high)
-tags: []                        # kľúčové tagy / heslá
+# Nadradená téma
+category: ""
+# Typ príspevku (case, guide, tutorial…)
+type: ""
+# Význam (low, medium, high)
+priority: ""
+# Kľúčové tagy / heslá
+tags: []
 
 # 🌍 Localization & Routing
-# Jazykové verzie a cesty
-locale: "sk"                    # jazyk (sk/en)
-#slug: ""                        # alternatívna URL / trvalý link
+# Jazyk (sk/en)
+locale: "sk"
+# alternatívna URL / trvalý link
+#slug: ""
 
 # 🕒 Lifecycle
-# Stav vývoja a publikovania
-created: "2025-11-09"                     # dátum vytvorenia
-modified: ""                    # dátum poslednej úpravy
-status: "backlog"               # stav (backlog, draft, inprogress, done)
-privacy: "public"               # viditeľnosť (public, private, internal)
+# Dátum vytvorenia
+created: "2025-11-10"
+# Dátum poslednej úpravy
+modified: ""
+# Stav (backlog, draft, inprogress, done)
+status: "backlog"
+# Viditeľnosť (public, private, internal)
+privacy: "public"
 
 # ⚖️ Intellectual Property
-# Autorské práva a licencia
-rights_holder_content: ""       # vlastník obsahu (autor)
-rights_holder_system: "CAA / KNIFE / LetItGrow"  # systémový držiteľ práv
-license: "CC-BY-NC-SA-4.0"      # typ licencie
+# Vlastník obsahu (autor)
+rights_holder_content: ""
+# Systémový držiteľ práv
+rights_holder_system: "CAA / KNIFE / LetItGrow"
+# Typ licencie
+license: "CC-BY-NC-SA-4.0"
+# Disclaimer
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-copyright: "© 2025 <autor>"     # copyrightový podpis
+# Copyrightový podpis
+copyright: "© 2025 <autor>"
 
 # 🔗 Provenance (Origin)
 # Audit pôvodu zápisu
 # -------------------------------------------------------------------
 # origin_repo ............. názov repozitára, kde zápis vznikol
-# origin_repo_url ......... URL zdroja
-# origin_commit ........... commit hash
-# origin_branch ........... branch / vetva
-# origin_system ........... nadradený rámec (CAA, STHDF, LetItGrow…)
-# origin_author ........... pôvodný autor zápisu
-# origin_imported_from .... zdroj, ak importované
-# origin_import_date ...... dátum importu
-# -------------------------------------------------------------------
 origin_repo: ""
+# origin_repo_url ......... URL zdroja
 origin_repo_url: ""
+# origin_commit ........... commit hash
 origin_commit: ""
+# origin_branch ........... branch / vetva
 origin_branch: ""
+# origin_system ........... nadradený rámec (CAA, STHDF, LetItGrow…)
 origin_system: "CAA"
+# origin_author ........... pôvodný autor zápisu
 origin_author: ""
+# origin_imported_from .... zdroj, ak importované
 origin_imported_from: ""
+# origin_import_date ...... dátum importu
 origin_import_date: ""
+# -------------------------------------------------------------------
 
 # 🧱 Reserved / Future use
 fm_reserved1: ""
@@ -77,7 +95,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `03077303-ff32-4a13-843d-bde5e10ead49`
+> **GUID:** `da0fa8f9-ebc4-4525-a7f5-663d9b45d92c`
 > **Status:** `backlog` · **Author:**  · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -85,6 +103,7 @@ fm_reserved2: ""
 
 
 - **REF-UAT-001** · [Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md) · _inprogress_ · top
+- **K000091** · [K000091](../K000091-Zrodenie git sveta/index.md) · _backlog_ · -
 - **K000089** · [Kedy SSh a kedy HTTPS?](../K000089-SmartGit Nastavenie/index.md) · _Inprogress_ · -
 - **K000088** · [RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)](../K000088-RCA-OBD-Wifi-Android/index.md) · _inprogress_ · -
 - **K000087** · [GitHub-Create Release](../K000087-GitHub-Create_releasek/index.md) · _draft_ · -

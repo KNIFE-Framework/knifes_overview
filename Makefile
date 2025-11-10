@@ -23,7 +23,14 @@ endif
 
 # Build voľby
 BUILD_DATE := $(shell date -u '+%Y-%m-%d %H:%M:%S UTC')
-RELEASE_TAG := $(shell git describe --tags --always --dirty 2>/dev/null || echo dev)
+# Build info (optional: include "-dirty" suffix)
+TAG_INCLUDE_DIRTY ?= 0
+ifeq ($(TAG_INCLUDE_DIRTY),1)
+  RELEASE_TAG := $(shell git describe --tags --always --dirty 2>/dev/null || echo dev)
+else
+  # strip a possible "-dirty" suffix so builds don't fluctuate just because previews were regenerated
+  RELEASE_TAG := $(shell git describe --tags --always 2>/dev/null | sed 's/-dirty$$//' || echo dev)
+endif
 COMMIT_SHA := $(shell git rev-parse --short HEAD 2>/dev/null || echo local)
 GITHUB_REPO_URL ?= https://github.com/KNIFE-Framework/knifes_overview
 MINIFY ?= 1
@@ -156,13 +163,23 @@ build: SY01-sync-content ## Production build (MINIFY=1|0, DS_LOCALE=sk|en)
 build-fast: ## Build bez minifikácie (rýchly test)
 	$(MAKE) build MINIFY=0
 
+.PHONY: build-core
+build-core: ## Build bez syncu obsahu (nerobí rsync ani regeneráciu overview)
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
+
 serve: ## Naservíruje statický build lokálne
 	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" $(NPM) run serve
 
 # ─────────────────────────────────────────────────────────
 # WORKTREE DEPLOY (Cesta 1) – bezpečné, stručné
 # ─────────────────────────────────────────────────────────
-.PHONY: W10-check-worktree W20-copy-build W30-commit-deploy W40-deploy W50-full-deploy W60-worktree-status
+ .PHONY: W10-check-worktree W20-copy-build W30-commit-deploy W40-deploy W50-full-deploy W60-worktree-status
+
+.PHONY: W05-clean-worktree
+W05-clean-worktree: ## Vyčistí worktree (zachová .git), vhodné pred rsync
+	@if [ ! -d "$(WORKTREE_DIR)/.git" ]; then echo "❌ Worktree neexistuje. Spusť najprv W10-check-worktree"; exit 1; fi
+	@echo "🧹 Čistím worktree: $(WORKTREE_DIR)"
+	@git -C "$(WORKTREE_DIR)" clean -fdx
 W10-check-worktree: ## Vytvorí/overí worktree ../gh-pages-docusaurus → /docs
 	@if [ -d "$(WORKTREE_DIR)" ] && ! git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then \
 	  echo "⚠️  $(WORKTREE_DIR) existuje, ale nie je git worktree – čistím…"; rm -rf "$(WORKTREE_DIR)"; git worktree prune; \
@@ -193,8 +210,9 @@ W30-commit-deploy: ## Commit & push worktree (deploy)
 	cd "$(WORKTREE_DIR)" && git push origin $(DEPLOY_BRANCH)
 	@echo "✅ Deploy pushnutý → $(DEPLOY_BRANCH)"
 
-W40-deploy: ## Rýchly deploy: W10 + build + W20 + W30
+W40-deploy: ## Rýchly deploy: W10 + clean-worktree + build + W20 + W30
 	$(MAKE) W10-check-worktree
+	$(MAKE) W05-clean-worktree
 	$(MAKE) build
 	$(MAKE) W20-copy-build
 	$(MAKE) W30-commit-deploy
@@ -365,6 +383,11 @@ knifes-overview: ## Zregeneruje KNIFE prehľady (Blog/List/Details)
 	  --out-dir "$(KNIFE_OVERVIEW_OUT)" \
 	  --locale "$(KNIFE_OVERVIEW_LOCALE)"
 
+.PHONY: knifes-overview-commit
+knifes-overview-commit: ## Commitne zmeny v KNIFE overview (ak existujú)
+	@git add "content/docs/*/knifes/knifes_overview/KNIFE_Overview_"*.md 2>/dev/null || true
+	@ts=$$(date -u +'%Y-%m-%d %H:%M:%S UTC'); git commit -m "chore(overview): regenerate KNIFE overview ($$ts)" || echo "ℹ️  Žiadne zmeny na commit"
+
 # ─────────────────────────────────────────────────────────
 # UTIL: diagnostika
 # ─────────────────────────────────────────────────────────
@@ -393,6 +416,8 @@ print-vars: ## Vypíše kľúčové premenné
 	@echo "[RELEASE_TAG]     = $(RELEASE_TAG)"
 	@echo "[COMMIT_SHA]      = $(COMMIT_SHA)"
 	@echo "[GITHUB_REPO_URL] = $(GITHUB_REPO_URL)"
+	@echo "[TAG_INCLUDE_DIRTY] = $(TAG_INCLUDE_DIRTY)"
+	@echo "[BUILD_DATE]       = $(BUILD_DATE)"
 
 # Helper: Print current LOCALE and DS_LOCALE
 .PHONY: print-locale
@@ -409,6 +434,9 @@ print-locale: ## Vypíše aktuálne LOCALE a DS_LOCALE
 	@printf " %-40s | %s\n" "make build" "Production build (minify by default)"
 	@printf " %-40s | %s\n" "make build DS_LOCALE=sk" "Build len pre SK lokalizáciu"
 	@printf " %-40s | %s\n" "make build-fast" "Rýchly build bez minifikácie"
+	@printf " %-40s | %s\n" "make build-core" "Build bez rsync/sync (len Docusaurus)"
+	@printf " %-40s | %s\n" "make W05-clean-worktree" "Vyčistí worktree pred rsyncom"
+	@printf " %-40s | %s\n" "make knifes-overview-commit" "Commitne zmeny overview → odstráni '-dirty'"
 	@printf " %-40s | %s\n" "make serve" "Naservíruje lokálne už vybuildované stránky"
 	@printf "\n"
 	@printf " %-40s | %s\n" "make W10-check-worktree" "Pripraví worktree na branch gh-pages-docusaurus"

@@ -13,8 +13,9 @@ const commitLink =
 
 const config: Config = {
   title: 'KNIFE Overview',
-  url: 'http://localhost',
-  baseUrl: '/',
+  url: 'https://knife-framework.github.io',
+  baseUrl: '/knifes_overview/',
+  deploymentBranch: 'gh-pages',
   favicon: 'img/favicon.ico',
 
   i18n: {

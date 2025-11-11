@@ -100,7 +100,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@printf "\033[1;33m🚀 DEPLOY / WORKTREE\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(W[0-9]+-[a-zA-Z0-9-]+|W60-worktree-status|mode):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(deploy|deploy-fast|W[0-9]+-[a-zA-Z0-9-]+|W60-worktree-status|mode):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
 	@printf "\033[1;32m🧾 FRONT MATTER (FM)\033[0m\n"
@@ -228,6 +228,22 @@ W30-commit-deploy: ## Commit & push worktree (deploy)
 	cd "$(WORKTREE_DIR)" && ts=$$(date -u +'%Y-%m-%d %H:%M:%S UTC'); git commit -m "Deploy $$ts" || echo "ℹ️  Žiadne zmeny"
 	cd "$(WORKTREE_DIR)" && git push origin $(DEPLOY_BRANCH)
 	@echo "✅ Deploy pushnutý → $(DEPLOY_BRANCH)"
+
+.PHONY: deploy deploy-fast W40-deploy-fast
+
+deploy: ## Full deploy (alias of W40-deploy)
+	$(MAKE) W40-deploy
+
+deploy-fast: ## Full deploy without minify (alias of W40-deploy-fast)
+	$(MAKE) W40-deploy-fast
+
+W40-deploy-fast: ## Rýchly deploy: W10 + clean-worktree + build (no-minify) + W20 + W30
+	$(MAKE) W10-check-worktree
+	$(MAKE) W05-clean-worktree
+	$(MAKE) build MINIFY=0
+	$(MAKE) W20-copy-build
+	$(MAKE) W30-commit-deploy
+	@echo "🎉 Full deploy (fast, no-minify) hotový."
 
 W40-deploy: ## Rýchly deploy: W10 + clean-worktree + build + W20 + W30
 	$(MAKE) W10-check-worktree
@@ -467,6 +483,8 @@ help-examples:
 	@printf "\n"
 	@printf " %-40s | %s\n" "make W10-check-worktree" "Pripraví worktree na branch gh-pages-docusaurus"
 	@printf " %-40s | %s\n" "make W40-deploy" "Build + rsync do worktree + commit + push"
+	@printf " %-40s | %s\n" "make deploy" "Alias na W40-deploy (plný deploy)"
+	@printf " %-40s | %s\n" "make deploy-fast" "Alias na W40-deploy-fast (bez minify)"
 	@printf " %-40s | %s\n" "make W50-full-deploy" "Push main → full deploy (bez necommitnutých zmien)"
 	@printf "\n"
 	@printf " %-40s | %s\n" "make FM10-audit" "Audit Front Matter (read-only)"

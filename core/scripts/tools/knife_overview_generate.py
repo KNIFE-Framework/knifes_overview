@@ -29,6 +29,7 @@ import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
+from typing import Tuple
 
 
 # ---------- helpers: fs ----------
@@ -146,28 +147,35 @@ EXCLUDE_DIRS = {"_meta", "_unclasified", "_legacy"}
 EXCLUDE_SUFFIXES = (".template.md", ".FM.bak.md")
 
 
-def collect_knifes(root: str, locale: str) -> List[Dict[str, object]]:
+def collect_knifes(root: str, locale: str, *, include_drafts: bool, include_nonpublic: bool, debug: bool = False) -> List[Dict[str, object]]:
     base = Path(root) / locale / 'knifes'
     items: List[Dict[str, object]] = []
     if not base.exists():
         return items
+    def _dbg(msg: str):
+        if debug:
+            print(f"[knife_overview] {msg}")
     for p in base.rglob('index.md'):
         # skip KNIFES home (content/docs/<locale>/knifes/index.md)
         if p.parent == base:
+            _dbg(f"skip home: {p}")
             continue
         # skip excluded directories
         parts = set(p.parts)
         if parts & EXCLUDE_DIRS:
+            _dbg(f"skip excluded dir: {p}")
             continue
         # skip overview pages themselves
         if any(name in p.as_posix() for name in [
             'KNIFE_Overview_List.md','KNIFE_Overview_Blog.md','KNIFE_Overview_Details.md'
         ]):
+            _dbg(f"skip overview page: {p}")
             continue
         # read and parse FM
         text = read_text(str(p))
         fm_raw = extract_first_fm_block_raw(text)
         if not fm_raw:
+            _dbg(f"skip no FM: {p}")
             continue
         d = fm_to_dict(fm_raw)
         # only KNIFE items (case-insensitive DAO) and tolerant ID (K000000 or K000000-...)
@@ -175,17 +183,28 @@ def collect_knifes(root: str, locale: str) -> List[Dict[str, object]]:
         dao_val = str(d.get('dao', ''))
         dao_norm = dao_val.strip().lower()
 
-        # accept ID that starts with K###### optionally followed by hyphen or word boundary
-        id_ok = bool(re.match(r'^K\d{6}(\b|-)?', item_id))
+        # accept K###### optionally followed by hyphen or underscore (e.g., K000085, K000085-foo, K000085_04)
+        id_ok = bool(re.match(r'^K\d{6}($|\\b|[-_])', item_id))
 
         # keep if ID looks ok OR dao explicitly says knife (any case)
         if not id_ok and dao_norm != 'knife':
+            _dbg(f"skip id/dao mismatch (id='{item_id}', dao='{dao_val}') at {p}")
             continue
         title = str(d.get('title', 'Untitled'))
         created = str(d.get('created', ''))
         status = str(d.get('status', ''))
         priority = str(d.get('priority', ''))
         guid = str(d.get('guid', ''))
+        privacy = str(d.get('privacy', ''))
+        # visibility policy: exclude by default unless explicitly included
+        status_norm = (status or "").strip().lower()
+        privacy_norm = (privacy or "public").strip().lower()
+        if not include_nonpublic and privacy_norm != "public":
+            _dbg(f"skip nonpublic (privacy='{privacy_norm}') at {p}")
+            continue
+        if not include_drafts and status_norm in ("draft", "backlog", ""):
+            _dbg(f"skip draft/backlog (status='{status_norm}') at {p}")
+            continue
         path_rel = '/' + str(p.parent.as_posix()).split('/docs/', 1)[-1]
         items.append({
             'id': item_id,
@@ -194,6 +213,7 @@ def collect_knifes(root: str, locale: str) -> List[Dict[str, object]]:
             'status': status,
             'priority': priority,
             'guid': guid,
+            'privacy': privacy,
             'path': path_rel,
         })
     # sort canonically by ID (descending)
@@ -312,6 +332,7 @@ def main():
     ap.add_argument('--out-dir', default=None)
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--preview', action='store_true')
+    ap.add_argument('--debug', action='store_true')
     args = ap.parse_args()
 
     if not args.out_dir:
@@ -367,7 +388,18 @@ def main():
     # Add CREATED date
     ctx['CREATED'] = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 
-    items = collect_knifes(args.root, args.locale)
+    # Include drafts/backlog by default (unless explicitly disabled); non-public excluded by default
+    link_drafts = os.environ.get('KNIFE_INCLUDE_DRAFTS', '1') != '0'
+    if preview_mode:
+        link_drafts = True  # force include in preview
+
+    link_nonpublic = (
+        os.environ.get('KNIFE_LINK_NONPUBLIC', '0') == '1'
+        or os.environ.get('KNIFE_INCLUDE_NONPUBLIC', '0') == '1'
+    )
+    # (Removed duplicate --debug argument and parse_args call)
+
+    items = collect_knifes(args.root, args.locale, include_drafts=link_drafts, include_nonpublic=link_nonpublic, debug=args.debug)
 
     fm_core_text = read_text(args.fm_core)
 
@@ -446,6 +478,11 @@ def main():
             changed = write_text_if_changed(pg['file'], final_text)
             any_change = any_change or changed
 
+    if args.debug:
+        ids = [it.get('id') for it in items]
+        print(f"[knife_overview] collected {len(items)} items")
+        if ids:
+            print(f"[knife_overview] newest: {ids[0]}, oldest: {ids[-1]}")
     if args.dry_run:
         msg = f"Dry-run. Items: {len(items)}."
         if preview_mode:

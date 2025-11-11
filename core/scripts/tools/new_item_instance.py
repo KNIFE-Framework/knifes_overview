@@ -127,17 +127,19 @@ def _fm_replace_scalar(fm_text: str, key: str, value: str) -> str:
     repl    = rf'\1"{value}"'
     return re.sub(pattern, repl, fm_text, flags=re.MULTILINE)
 
-def _render_fm_from_core(fm_text: str, *, dao_val: str, name: str, title: str, locale: str, author: str) -> str:
+def _render_fm_from_core(fm_text: str, *, dao_val: str, name: str, title: str, locale: str, author: str, id_override: str = None, status_value: str = None) -> str:
     """
     Take FM-Core.md content (with defaults like "") and inject dynamic values:
     id, guid, dao, title, locale, created, author, status.
     Leaves all other fields as-is.
     """
     # Safe defaults
-    knife_id_like = name if name.startswith("K") else f"{dao_val.upper()}_{name}"
+    knife_id_like = (id_override.strip() if id_override else (name if name.startswith("K") else f"{dao_val.upper()}_{name}"))
     guid_value    = str(uuid.uuid4())
     created_value = datetime.date.today().isoformat()
-    status_value  = "draft"
+    # Respect FM-Core default; if caller didn't request status, keep whatever is in FM-Core.
+    if status_value is None:
+        status_value = None  # means: don't touch FM 'status'
 
     out = fm_text or ""
     # Required fields
@@ -147,17 +149,34 @@ def _render_fm_from_core(fm_text: str, *, dao_val: str, name: str, title: str, l
     out = _fm_replace_scalar(out, "title", title or knife_id_like)
     out = _fm_replace_scalar(out, "locale", locale or "sk")
     out = _fm_replace_scalar(out, "created", created_value)
-    out = _fm_replace_scalar(out, "status", status_value)
+    if status_value:
+        # override explicitly
+        out = _fm_replace_scalar(out, "status", status_value)
+    else:
+        # if FM-Core has empty status, normalize to its default (usually "backlog") by not touching it
+        pass
     if not author:
         author = os.getenv("USER", "author")
     if author:
         out = _fm_replace_scalar(out, "author", author)
     return out
 
-def create_instance(ftype, name, title, output_root):
+def create_instance(ftype, name, title, output_root, id_arg=None):
     # Resolve type to template folder (handles knife/knifes) and normalized DAO
     tnorm = TEMPLATE_TYPE_ALIASES.get(ftype.lower(), ftype.lower())
     dao_val = DAO_TYPE_MAP.get(tnorm, tnorm)
+
+    # Determine effective ID
+    base_id = None
+    if id_arg and str(id_arg).strip():
+        base_id = str(id_arg).strip()
+    elif name.startswith("K"):
+        # allow passing "K000123-Short Name" or just "K000123"
+        base_id = name.split()[0]
+        if "-" in name.split()[0]:
+            base_id = name.split()[0].split("-")[0]
+    else:
+        base_id = f"{dao_val.upper()}_{name}"
 
     # Paths
     template_dir = f"core/templates/content/{tnorm}"
@@ -171,7 +190,11 @@ def create_instance(ftype, name, title, output_root):
         sys.exit(1)
 
     # Output directory
-    dest = os.path.join(output_root, f"{dao_val}_{name}")
+    if tnorm == "knifes" and base_id.startswith("K"):
+        # KNIFE convention: <ID>-<name>
+        dest = os.path.join(output_root, f"{base_id}-{name}")
+    else:
+        dest = os.path.join(output_root, f"{dao_val}_{name}")
     os.makedirs(dest, exist_ok=True)
 
     # --- Read and enrich FM-Core ---
@@ -180,7 +203,18 @@ def create_instance(ftype, name, title, output_root):
         print(f"⚠️ Warning: FM-Core not found at {FM_CORE_PATH}")
     locale = "sk"
     author = os.getenv("USER", "author")
-    fm = _render_fm_from_core(fm_raw, dao_val=dao_val, name=name, title=title, locale=locale, author=author)
+    # Default status: honor FM-Core (backlog). Allow override via env KNIFE_DEFAULT_STATUS.
+    default_status = os.getenv("KNIFE_DEFAULT_STATUS", "").strip() or None
+    fm = _render_fm_from_core(
+        fm_raw,
+        dao_val=dao_val,
+        name=name,
+        title=title,
+        locale=locale,
+        author=author,
+        id_override=base_id,
+        status_value=default_status
+    )
     print("🧩 FM injected: id/dao/title/guid/created/status/author")
 
     # Try to enrich Provenance from .git/config
@@ -217,8 +251,8 @@ def create_instance(ftype, name, title, output_root):
         )
 
     # --- Compose final index.md ---
-    if 'id: ""' in fm:
-        fm = _fm_replace_scalar(fm, "id", f"{dao_val.upper()}_{name}")
+    if 'id: ""' in fm or re.search(r'^id:\s*$', fm, flags=re.MULTILINE):
+        fm = _fm_replace_scalar(fm, "id", base_id)
     index_content = f"{fm}\n\n{header_content}\n\n{body_content}\n"
     with open(os.path.join(dest, "index.md"), "w", encoding="utf-8") as f:
         f.write(index_content)
@@ -232,16 +266,17 @@ def create_instance(ftype, name, title, output_root):
             if os.path.isdir(src):
                 shutil.copytree(src, dst, dirs_exist_ok=True)
 
-    print(f"✅ Instance created: {dao_val}_{name}")
+    print(f"✅ Instance created")
     print(f"📁 Output → {dest}")
-    print(f"🆔 ID used: {dao_val.upper()}_{name}")
+    print(f"🆔 ID used: {base_id}")
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--type", required=True)
     p.add_argument("--name", required=True)
     p.add_argument("--title", required=True)
+    p.add_argument("--id", required=False, help="Explicit ID for the instance (e.g., K000091 for KNIFE)")
     p.add_argument("--output", required=True)
     args = p.parse_args()
 
-    create_instance(args.type, args.name, args.title, args.output)
+    create_instance(args.type, args.name, args.title, args.output, id_arg=getattr(args, "id", None))

@@ -12,19 +12,19 @@ fm_version_comment: ""
 # systémové ID (napr. KNIFE_K000001)
 id: "K000091"
 # globálne unikátne ID (UUID4)
-guid: ""
+guid: "29e6bd9c-4ae5-46fa-9b8d-609dba1aef2f"
 
 # 🧭 Context
 # Typ entity (knife, q12, sdlc, 7ds, thesei…)
-dao: ""
+dao: "knife"
 # Názov / titul príspevku
-title: ""
+title: "Krátka história Git – Linus Torvalds"
 # Krátky popis účelu alebo kontextu
 description: ""
 
 # 👥 Authorship
 # Hlavný autor
-author: ""
+author: "romankazicka"
 # Zoznam autorov alebo prispievateľov
 authors: []
 
@@ -46,7 +46,7 @@ locale: "sk"
 
 # 🕒 Lifecycle
 # Dátum vytvorenia
-created: ""
+created: "2025-11-11"
 # Dátum poslednej úpravy
 modified: ""
 # Stav (backlog, draft, inprogress, done)
@@ -91,6 +91,7 @@ origin_import_date: ""
 fm_reserved1: ""
 fm_reserved2: ""
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->
@@ -99,8 +100,8 @@ fm_reserved2: ""
 # Krátka história Git – Linus Torvalds
 
 <!-- fm-visible: start -->
-> **GUID:** `6a897482-f21b-4bce-8aae-cbf9c9c56e43`
-> **Status:** `{{STATUS}}` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
+> **GUID:** `29e6bd9c-4ae5-46fa-9b8d-609dba1aef2f`
+> **Status:** `backlog` · **Author:** romankazicka · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
 # Názov KNIFE (zmeň ma)

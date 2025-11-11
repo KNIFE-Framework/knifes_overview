@@ -373,16 +373,18 @@ KNIFE_OVERVIEW_LOCALE ?= $(LOCALE)
 
 knifes-new: ## Vytvorí novú KNIFE (id=K000123 name="..." title="...")
 	@echo "🚀 Generujem KNIFE…"
-	python3 core/scripts/tools/knife_new.py \
-	  --id "$(id)" \
+	@if [ -z "$(name)" ] || [ -z "$(title)" ]; then \
+	  echo "❌ Usage: make knifes-new id=K000123 name='...' title='...'"; \
+	  exit 1; \
+	fi
+	@mkdir -p "content/docs/$(LOCALE)/knifes"
+	python3 core/scripts/tools/new_item_instance.py \
+	  --type knifes \
 	  --name "$(name)" \
-	  $(if $(title),--title "$(title)",) \
-	  --config-global "$(CONFIG_GLOBAL)" \
-	  --config-knife "$(CONFIG_KNIFE)" \
-	  --outroot "content/docs/$(LOCALE)/knifes" \
-	  $(if $(KNIFE_DRY),--dry,) \
-	  $(if $(KNIFE_FORCE),--force,)
-	@echo "✅ Hotovo: content/docs/$(LOCALE)/knifes/$(id)-$(name)/index.md"
+	  --title "$(title)" \
+	  $(if $(id),--id "$(id)",) \
+	  --output "content/docs/$(LOCALE)/knifes"
+	@echo "✅ Hotovo: content/docs/$(LOCALE)/knifes/$(if $(id),$(id)-,knife_)$(name)/index.md"
 
 knifes-overview: ## Zregeneruje KNIFE prehľady (Blog/List/Details)
 	@mkdir -p "$(KNIFE_OVERVIEW_OUT)"

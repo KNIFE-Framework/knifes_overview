@@ -12,7 +12,7 @@ fm_version_comment: ""
 # systémové ID (napr. KNIFE_K000001)
 id: "KNIFE_OVERVIEW_LIST"
 # globálne unikátne ID (UUID4)
-guid: "da0fa8f9-ebc4-4525-a7f5-663d9b45d92c"
+guid: "a414f0aa-f816-4ac6-bded-dad9bc3c7347"
 
 # 🧭 Context
 # Typ entity (knife, q12, sdlc, 7ds, thesei…)
@@ -46,7 +46,7 @@ locale: "sk"
 
 # 🕒 Lifecycle
 # Dátum vytvorenia
-created: "2025-11-10"
+created: "2025-11-11"
 # Dátum poslednej úpravy
 modified: ""
 # Stav (backlog, draft, inprogress, done)
@@ -95,7 +95,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `da0fa8f9-ebc4-4525-a7f5-663d9b45d92c`
+> **GUID:** `a414f0aa-f816-4ac6-bded-dad9bc3c7347`
 > **Status:** `backlog` · **Author:**  · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -103,16 +103,11 @@ fm_reserved2: ""
 
 
 - **REF-UAT-001** · [Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md) · _inprogress_ · top
-- **K000091** · [K000091](../K000091-Zrodenie git sveta/index.md) · _backlog_ · -
+- **K000091** · [Krátka história Git – Linus Torvalds](../K000091-Zrodenie git sveta/index.md) · _backlog_ · -
 - **K000089** · [Kedy SSh a kedy HTTPS?](../K000089-SmartGit Nastavenie/index.md) · _Inprogress_ · -
 - **K000088** · [RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)](../K000088-RCA-OBD-Wifi-Android/index.md) · _inprogress_ · -
 - **K000087** · [GitHub-Create Release](../K000087-GitHub-Create_releasek/index.md) · _draft_ · -
 - **K000086** · [Docusaurus-ID-a-jeho-pouzitie](../K000086-docusaurus-id-a-jeho-pouzitie/index.md) · _backlog_ · no
-- **K000085_04** · [OBS Fundamentals – Multilingual - Video - Publishing](../K000085-obs-fundamentals/K000085_04-multilingual-video-publishing/index.md) · _inprogress_ · top
-- **K000085_03** · [OBS Fundamentals – Active Presenter Essential](../K000085-obs-fundamentals/K000085_03-active-presenter-essentials/index.md) · _inprogress_ · top
-- **K000085_02** · [OBS Fundamentals – Základy nahrávania a správy scén](../K000085-obs-fundamentals/K000085_02-obs-fundamentals/index.md) · _inprogress_ · top
-- **K000085_01** · [OBS Fundamentals – Video Workflow (SK originál → EN titulky/voice](../K000085-obs-fundamentals/K000085_01-video-workflow/index.md) · _inprogress_ · top
-- **K000085** · [OBS Fundamentals – Základy nahrávania a správy scén](../K000085-obs-fundamentals/index.md) · _inprogress_ · top
 - **K000084** · [Ako aktivovať na GitHube EDU benefity](../K000084-ako-aktivovat-na-githube-edu-benefity/index.md) · _backlog_ · no
 - **K000083** · [Aktualizácia komponentov pre Docusaurus](../K000083-aktualizacia-komponentov-pre-docusaurus/index.md) · _backlog_ · no
 - **K000082** · [Ako urobiť text v MD atraktívnejší (emoji)](../K000082-ako-urobit-text-v-md-atraktivnejsi-emoji/index.md) · _backlog_ · no

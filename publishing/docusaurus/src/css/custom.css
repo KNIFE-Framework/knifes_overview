@@ -1,4 +1,4 @@
-/*
+/ *
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
@@ -29,11 +29,11 @@
   --ifm-color-primary-lighter: #ffbf66;
   --ifm-color-primary-lightest: #ffd699;
   --docusaurus-highlighted-code-line-bg: rgba(92, 64, 51, 0.3);
-  --ifm-background-color: #693d00; /* page background */
-  --ifm-background-surface-color: #2b2521; /* content surface */
-  --ifm-navbar-background-color: #2b2521; /* navbar */
-  --ifm-menu-color-background-active: #3b2f2a; /* active menu item */
-  --ifm-menu-color-background-hover: #3b2f2a; /* hover menu item */
+  --ifm-background-color: #f37a09; /* warm brown page background */
+  --ifm-background-surface-color: #2e2218; /* slightly darker content surface */
+  --ifm-navbar-background-color: #2e2218; /* navbar background in brown tone */
+  --ifm-menu-color-background-active: #4b3625; /* active menu item with brown accent */
+  --ifm-menu-color-background-hover: #4b3625; /* hover menu item */
   --ifm-menu-color: #d2b48c; /* text in menu */
   --ifm-link-color: #ffd166; /* brighter amber links for contrast */
   --ifm-link-hover-color: #ffe39d; /* lighter on hover */

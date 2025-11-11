@@ -34,7 +34,12 @@ const config: Config = {
           includeCurrentVersion: true,
           editCurrentVersion: false,
         },
-        blog: false,
+        blog: {
+          routeBasePath: 'blog', // presunie /tags → /blog/tags
+          showReadingTime: true,
+          blogTitle: 'KNIFE Blog',
+          blogDescription: 'Updates and notes',
+        },
         theme: { customCss: require.resolve('./src/css/custom.css') },
       },
     ],
@@ -46,6 +51,13 @@ const config: Config = {
   themeConfig: {
     navbar: {
       title: 'KNIFE',
+      logo: {
+        alt: 'KNIFE',
+        src: 'img/logo.png',
+        srcDark: 'img/logo-dark.png',
+        target: '_self', // alebo '_blank' ak chceš nové okno
+        href: 'https://systemthinking.sk', // ← sem vložíš svoj cieľový link
+      },
       items: [
         {to: '/sk/', label: 'SK', position: 'left'},
         {to: '/en/', label: 'EN', position: 'left'},
@@ -59,15 +71,15 @@ const config: Config = {
     },
 
     // Announcement bar hore (možno kedykoľvek vypnúť/komentovať)
-    announcementBar: {
-      id: 'build_info',
-      content: commitLink
-        ? `🔖 <strong>Release:</strong> ${RELEASE_TAG} &nbsp;•&nbsp; <strong>Commit:</strong> <a href="${commitLink}" target="_blank" rel="noopener noreferrer">${COMMIT_SHA}</a> &nbsp;•&nbsp; <strong>Build:</strong> ${BUILD_DATE}`
-        : `🔖 <strong>Release:</strong> ${RELEASE_TAG} &nbsp;•&nbsp; <strong>Commit:</strong> ${COMMIT_SHA} &nbsp;•&nbsp; <strong>Build:</strong> ${BUILD_DATE}`,
-      backgroundColor: '#f5f6f7',
-      textColor: '#091E42',
-      isCloseable: true,
-    },
+   // announcementBar: {
+    //  id: 'build_info',
+    //  content: commitLink
+    //    ? `🔖 <strong>Release:</strong> ${RELEASE_TAG} &nbsp;•&nbsp; <strong>Commit:</strong> <a href="${commitLink}" target="_blank" rel="noopener noreferrer">${COMMIT_SHA}</a> &nbsp;•&nbsp; <strong>Build:</strong> ${BUILD_DATE}`
+    //    : `🔖 <strong>Release:</strong> ${RELEASE_TAG} &nbsp;•&nbsp; <strong>Commit:</strong> ${COMMIT_SHA} &nbsp;•&nbsp; <strong>Build:</strong> ${BUILD_DATE}`,
+   //   backgroundColor: '#f7f70aff',
+    //  textColor: '#091E42',
+   //   isCloseable: true,
+   // },
 
     footer: {
       style: 'dark',

@@ -91,39 +91,69 @@ origin_import_date: ""
 fm_reserved1: ""
 fm_reserved2: ""
 ---
-
+# Krátka história Git – Linus Torvalds
 <!-- body:start -->
 
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 ---
-# Krátka história Git – Linus Torvalds
+
 
 <!-- fm-visible: start -->
 > **GUID:** `29e6bd9c-4ae5-46fa-9b8d-609dba1aef2f`
 > **Status:** `backlog` · **Author:** romankazicka · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
-# Názov KNIFE (zmeň ma)
 
-## 🎯 Čo rieši (účel, cieľ)
-
-## 🧩 Ako to rieši (princíp)
-
-## 🧪 Ako to použiť (aplikácia)
-
----
-
-## ⚡ Rýchly návod (Top)
-
-## 📜 Detailný článok
-
-## 💡 Tipy a poznámky
-
-## ✅ Hodnota / Zhrnutie
 
 <!-- body:start -->
+# K000091-Krátka história Git – Linus Torvalds
 
+
+## 1. Chaos pred Gitom
+V začiatkoch open-source vývoja sa používali centralizované systémy ako CVS a SVN. Každý commit musel prejsť centrálnym serverom – vývojári sa bili o prístupové práva a merge bol nočnou morou.
+A Linus Torvalds?
+Génius, ktorý si jedného dňa povedal:
+
+„Nebudem čakať, kým mi niekto napíše lepší verzionovací systém — napíšem si ho sám.“
+…a o pár víkendov neskôr vznikol Git. 🤯
+
+💡 Fun fact:
+Keď sa ho pýtali, prečo ho nazval „Git“, odpovedal:
+
+“Because I’m an egotistical bastard, and I name all my projects after myself. First Linux, now Git.”
+(v britskom slangu git = „debil“ alebo „trucovitý človek“) 😂
+
+💬 Small Talk Moment:
+„Git ťa najprv poníži, potom ťa osvieti. A až keď spravíš svoj prvý úspešný rebase bez straty dát, stávaš sa zasväteným.“ 🧙‍♂️✨
+
+
+
+## 2. Bitka o kernel (2005)
+Linus Torvalds spravoval Linux Kernel pomocou proprietárneho nástroja **BitKeeper**. Keď licencia padla, rozhodol sa napísať vlastný systém. Za **desať dní** vytvoril prvú verziu Gitu — rýchlu, bezpečnú a plne distribuovanú.
+
+## 3. Zrod filozofie
+Git nebol len technický nástroj. Bol to manifest: *„Verím vývojárom. Každý z vás má právo mať celý svet kódu vo svojich rukách.“*
+Každý klon repozitára je úplná kópia histórie — nie odbočka, ale nový vesmír.
+
+## 4. Od kernelu po GitHub
+O pár rokov neskôr prišiel **GitHub (2008)**. Kombinácia Git + sociálne funkcie zmenila svet vývoja. „Forkni, oprav, pošli pull request.“ — jednoduché, elegantné a demokratické.
+
+## 5. Git dnes
+Git sa stal štandardom. Vznikli varianty ako **GitLab**, **Bitbucket**, **Gitea**, a dokonca školské frameworky ako **GitHub Classroom**.  
+Z kedysi “chaotického kernel hacku” sa stal ekosystém pre firmy, univerzity aj vedcov.
+
+## 6. Lekcia pre študentov SDLC
+Git je viac než nástroj. Je to **filozofia dôvery, decentralizácie a zodpovednosti**.  
+Každý commit je malý podpis – „toto som urobil ja a stojím si za tým.“
+
+---
+💬 *Small Talk Moment:*  
+„Linus nechcel vytvoriť kult, len nástroj. Ale keď máš dobrý commit, ľudia ho merge-nú.“ 😄
+<!-- BODY:END -->
+
+
+<!-- body:start -->
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 ---

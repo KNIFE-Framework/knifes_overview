@@ -12,7 +12,7 @@ fm_version_comment: ""
 # systémové ID (napr. KNIFE_K000001)
 id: "KNIFE_OVERVIEW_BLOG"
 # globálne unikátne ID (UUID4)
-guid: "9beb303e-6c41-42a4-aba9-16016538320f"
+guid: "a456c090-5d7a-49a0-b4d7-22bb59adc775"
 
 # 🧭 Context
 # Typ entity (knife, q12, sdlc, 7ds, thesei…)
@@ -95,7 +95,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `9beb303e-6c41-42a4-aba9-16016538320f`
+> **GUID:** `a456c090-5d7a-49a0-b4d7-22bb59adc775`
 > **Status:** `backlog` · **Author:**  · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -185,8 +185,9 @@ fm_reserved2: ""
 - **K000083** — 2025-09-24 — [Aktualizácia komponentov pre Docusaurus](../K000083-aktualizacia-komponentov-pre-docusaurus/index.md)
 - **K000084** — 2025-09-25 — [Ako aktivovať na GitHube EDU benefity](../K000084-ako-aktivovat-na-githube-edu-benefity/index.md)
 - **K000086** — 2025-10-22 — [Docusaurus-ID-a-jeho-pouzitie](../K000086-docusaurus-id-a-jeho-pouzitie/index.md)
-- **K000087** — 2025-11-02 — [GitHub-Create Release](../K000087-GitHub-Create_releasek/index.md)
+- **K000087** — 2025-11-02 — [GitHub-Create Release](../K000087-GitHub-Create-release/index.md)
 - **K000088** — 2025-11-07 — [RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)](../K000088-RCA-OBD-Wifi-Android/index.md)
-- **K000089** — 2025-11-07 — [Kedy SSh a kedy HTTPS?](../K000089-SmartGit Nastavenie/index.md)
-- **K000091** — 2025-11-11 — [Krátka história Git – Linus Torvalds](../K000091-Zrodenie git sveta/index.md)
+- **K000089** — 2025-11-07 — [Kedy SSh a kedy HTTPS?](../K000089-SmartGit-Nastavenie/index.md)
+- **K000090** — 2025-11-11 — [VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max](../K000090-VMWARE-Fusion-NAT2DHCP/index.md)
+- **K000091** — 2025-11-11 — [Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/index.md)
 - **REF-UAT-001** — 2025-10-05 — [Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md)

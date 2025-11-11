@@ -12,7 +12,7 @@ fm_version_comment: ""
 # systémové ID (napr. KNIFE_K000001)
 id: "KNIFE_OVERVIEW_DETAILS"
 # globálne unikátne ID (UUID4)
-guid: "b6c36ca6-547c-46aa-b789-77111efee418"
+guid: "bc7b716e-2ac5-401c-bfbd-e00863d6d902"
 
 # 🧭 Context
 # Typ entity (knife, q12, sdlc, 7ds, thesei…)
@@ -95,7 +95,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `b6c36ca6-547c-46aa-b789-77111efee418`
+> **GUID:** `bc7b716e-2ac5-401c-bfbd-e00863d6d902`
 > **Status:** `backlog` · **Author:**  · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -105,10 +105,11 @@ fm_reserved2: ""
 | ID | Title | Created | Status | Priority |
 |---|---|---|---|---|
 | REF-UAT-001 | [Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md) | 2025-10-05 | inprogress | top |
-| K000091 | [Krátka história Git – Linus Torvalds](../K000091-Zrodenie git sveta/index.md) | 2025-11-11 | backlog |  |
-| K000089 | [Kedy SSh a kedy HTTPS?](../K000089-SmartGit Nastavenie/index.md) | 2025-11-07 | Inprogress |  |
+| K000091 | [Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/index.md) | 2025-11-11 | backlog |  |
+| K000090 | [VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max](../K000090-VMWARE-Fusion-NAT2DHCP/index.md) | 2025-11-11 | backlog |  |
+| K000089 | [Kedy SSh a kedy HTTPS?](../K000089-SmartGit-Nastavenie/index.md) | 2025-11-07 | Inprogress |  |
 | K000088 | [RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)](../K000088-RCA-OBD-Wifi-Android/index.md) | 2025-11-07 | inprogress |  |
-| K000087 | [GitHub-Create Release](../K000087-GitHub-Create_releasek/index.md) | 2025-11-02 | draft |  |
+| K000087 | [GitHub-Create Release](../K000087-GitHub-Create-release/index.md) | 2025-11-02 | draft |  |
 | K000086 | [Docusaurus-ID-a-jeho-pouzitie](../K000086-docusaurus-id-a-jeho-pouzitie/index.md) | 2025-10-22 | backlog | no |
 | K000084 | [Ako aktivovať na GitHube EDU benefity](../K000084-ako-aktivovat-na-githube-edu-benefity/index.md) | 2025-09-25 | backlog | no |
 | K000083 | [Aktualizácia komponentov pre Docusaurus](../K000083-aktualizacia-komponentov-pre-docusaurus/index.md) | 2025-09-24 | backlog | no |

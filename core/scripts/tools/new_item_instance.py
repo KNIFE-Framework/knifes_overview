@@ -6,6 +6,13 @@ Usage:
 """
 
 import argparse, os, shutil, datetime, uuid, sys, configparser, re
+import unicodedata
+def _sanitize_name(name: str) -> str:
+    """Replace spaces with '-' and remove diacritics for filesystem-safe names."""
+    name = re.sub(r"\s+", "-", name.strip())
+    nfkd = unicodedata.normalize("NFKD", name)
+    name_ascii = "".join(c for c in nfkd if not unicodedata.combining(c))
+    return name_ascii
 from pathlib import Path
 
 FM_CORE_PATH = "core/templates/system/FM-Core.md"
@@ -190,11 +197,11 @@ def create_instance(ftype, name, title, output_root, id_arg=None):
         sys.exit(1)
 
     # Output directory
+    safe_name = _sanitize_name(name)
     if tnorm == "knifes" and base_id.startswith("K"):
-        # KNIFE convention: <ID>-<name>
-        dest = os.path.join(output_root, f"{base_id}-{name}")
+        dest = os.path.join(output_root, f"{base_id}-{safe_name}")
     else:
-        dest = os.path.join(output_root, f"{dao_val}_{name}")
+        dest = os.path.join(output_root, f"{dao_val}_{safe_name}")
     os.makedirs(dest, exist_ok=True)
 
     # --- Read and enrich FM-Core ---

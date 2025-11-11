@@ -33,13 +33,13 @@ const config: Config = {
           sidebarPath: require.resolve('./sidebars.ts'),
           includeCurrentVersion: true,
           editCurrentVersion: false,
+          // zobrazíme konkrétny dokument ako homepage, aby sa hneď ukázal sidebar
+          //homePageId: 'sk/index',
+          // zmeníme default /tags na /doc-tags, aby nebol konflikt
+          //tags: 'doc-tags',
         },
-        blog: {
-          routeBasePath: 'blog', // presunie /tags → /blog/tags
-          showReadingTime: true,
-          blogTitle: 'KNIFE Blog',
-          blogDescription: 'Updates and notes',
-        },
+        // Blog nepoužívame – vypneme, aby nevznikal duplicitný /tags
+        blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },
       },
     ],
@@ -49,6 +49,12 @@ const config: Config = {
   plugins: [],
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,              // umožní používateľovi zložiť/rozbaliť sidebar
+        autoCollapseCategories: false, // nechávame sekcie otvorené (Home uvidí celý strom)
+      },
+    },
     navbar: {
       title: 'KNIFE',
       logo: {
@@ -97,6 +103,10 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+  },
+
+  future: {
+    experimental_faster: false, // disables experimental minifier causing build crashes
   },
 };
 

@@ -33,11 +33,16 @@ else
 endif
 COMMIT_SHA := $(shell git rev-parse --short HEAD 2>/dev/null || echo local)
 GITHUB_REPO_URL ?= https://github.com/KNIFE-Framework/knifes_overview
+
 MINIFY ?= 1
 BUILD_EXTRA :=
 ifeq ($(MINIFY),0)
   BUILD_EXTRA := --no-minify
 endif
+
+# Build toggles
+SYNC_CONTENT ?= 1         # 1=generate overview + rsync before build (default); 0=skip (behave like bare CLI)
+KNIFE_DEBUG  ?= 0         # 1=pass --debug to knife_overview_generate.py
 
 # Worktree deploy → gh-pages-docusaurus:/docs
 DEPLOY_BRANCH := gh-pages-docusaurus
@@ -165,7 +170,12 @@ SY01-sync-content: ## Sync SSOT content → publishing/docusaurus/docs (hard, de
 dev: ## Spustí lokálny dev server Docusaurusu
 	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start -- $(BUILD_LOCALE_OPT)
 
-build: SY01-sync-content ## Production build (MINIFY=1|0, DS_LOCALE=sk|en)
+build: ## Production build (MINIFY=1|0, DS_LOCALE=sk|en, SYNC_CONTENT=1|0)
+	@if [ "$(SYNC_CONTENT)" != "0" ]; then \
+	  $(MAKE) --no-print-directory SY01-sync-content; \
+	else \
+	  echo "ℹ️  SYNC_CONTENT=0 → skipping overview generation + rsync (CLI-like build)."; \
+	fi
 	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
 
 build-fast: ## Build bez minifikácie (rýchly test)
@@ -181,7 +191,7 @@ serve: ## Naservíruje statický build lokálne
 # ─────────────────────────────────────────────────────────
 # WORKTREE DEPLOY (Cesta 1) – bezpečné, stručné
 # ─────────────────────────────────────────────────────────
- .PHONY: W10-check-worktree W20-copy-build W30-commit-deploy W40-deploy W50-full-deploy W60-worktree-status
+.PHONY: W10-check-worktree W20-copy-build W30-commit-deploy W40-deploy W50-full-deploy W60-worktree-status
 
 .PHONY: W05-clean-worktree
 W05-clean-worktree: ## Vyčistí worktree (zachová .git), vhodné pred rsync
@@ -392,7 +402,8 @@ knifes-overview: ## Zregeneruje KNIFE prehľady (Blog/List/Details)
 	  --root "$(KNIFE_OVERVIEW_ROOT)" \
 	  --fm-core "$(KNIFE_OVERVIEW_FM)" \
 	  --out-dir "$(KNIFE_OVERVIEW_OUT)" \
-	  --locale "$(KNIFE_OVERVIEW_LOCALE)"
+	  --locale "$(KNIFE_OVERVIEW_LOCALE)" \
+	  $(if $(filter 1,$(KNIFE_DEBUG)),--debug,)
 
 .PHONY: knifes-overview-commit
 knifes-overview-commit: ## Commitne zmeny v KNIFE overview (ak existujú)
@@ -439,10 +450,12 @@ print-locale: ## Vypíše aktuálne LOCALE a DS_LOCALE
 # HELP+: praktické príklady (copy‑paste)
 # ─────────────────────────────────────────────────────────
 .PHONY: help-examples help+
+help-examples:
 	@printf " \033[1m%-40s\033[0m | \033[1m%s\033[0m\n" "Command" "What it does"
 	@printf "%-40s-+-%s\n" "----------------------------------------" "----------------------------------------------"
 	@printf " %-40s | %s\n" "make dev" "Spustí Docusaurus dev server"
 	@printf " %-40s | %s\n" "make build" "Production build (minify by default)"
+	@printf " %-40s | %s\n" "make build SYNC_CONTENT=0" "Build bez overview/rsync (rovnaké správanie ako ručný CLI build)"
 	@printf " %-40s | %s\n" "make build DS_LOCALE=sk" "Build len pre SK lokalizáciu"
 	@printf " %-40s | %s\n" "make build-fast" "Rýchly build bez minifikácie"
 	@printf " %-40s | %s\n" "make build-core" "Build bez rsync/sync (len Docusaurus)"
@@ -466,6 +479,7 @@ print-locale: ## Vypíše aktuálne LOCALE a DS_LOCALE
 	@printf " %-40s | %s\n" "make validate-instance INSTANCE=7ds_sthdf_2025" "Overí konvenciu INSTANCE (<typ>_<meno>)"
 	@printf " %-40s | %s\n" "make knifes-new id=K000123 name=... title=..." "Vytvorí kostru nového KNIFE (index.md + FM)"
 	@printf " %-40s | %s\n" "make knifes-overview" "Zregeneruje prehľady (Blog/List/Details)"
+	@printf " %-40s | %s\n" "make knifes-overview KNIFE_DEBUG=1" "Spustí prehľady s --debug (diagnostika zberu položiek)"
 	@printf " %-40s | %s\n" "make knifes-build-dry" "CSV → MD build (DRY) podľa configu"
 	@printf " %-40s | %s\n" "make knifes-build-apply" "CSV → MD build (APPLY) podľa configu"
 	@printf " %-40s | %s\n" "make S21-sdlc-new SDLC_NAME=integration SDLC_TITLE='Integration Project' LOCALE=sk" "Vytvorí novú SDLC inštanciu cez generátor"

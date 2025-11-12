@@ -3091,7 +3091,7 @@ html[data-theme='dark'] {
   transform: rotate(3deg) translate(0, -4px);
 }
 
-/ *
+/*
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
@@ -3122,9 +3122,9 @@ html[data-theme='dark'] {
   --ifm-color-primary-lighter: #ffbf66;
   --ifm-color-primary-lightest: #ffd699;
   --docusaurus-highlighted-code-line-bg: rgba(92, 64, 51, 0.3);
-  --ifm-background-color: #f37a09; /* warm brown page background */
-  --ifm-background-surface-color: #2e2218; /* slightly darker content surface */
-  --ifm-navbar-background-color: #2e2218; /* navbar background in brown tone */
+  --ifm-background-color: #fb5f109f; /* warm brown page background */
+  --ifm-background-surface-color: #fb5f109f; /* slightly darker content surface */
+  --ifm-navbar-background-color: #fb5f109f; /* navbar background in brown tone */
   --ifm-menu-color-background-active: #4b3625; /* active menu item with brown accent */
   --ifm-menu-color-background-hover: #4b3625; /* hover menu item */
   --ifm-menu-color: #d2b48c; /* text in menu */
@@ -3199,6 +3199,10 @@ html[data-theme='dark'] {
 [data-theme='dark'] .pagination-nav__link:hover {
   border-color: rgba(255, 227, 157, 0.65);
   box-shadow: 0 0 0 1px rgba(255, 227, 157, 0.25);
+}
+
+html[data-theme='dark'] body {
+  background-color: var(--ifm-background-color);
 }
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.

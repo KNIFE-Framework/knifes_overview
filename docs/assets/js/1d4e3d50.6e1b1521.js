@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-knifes-overview-knife-overview-list-md-1d4.json
-const site_docs_sk_knifes_knifes_overview_knife_overview_list_md_1d4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","title":"🗂 KNIFE Overview – List","description":"","source":"@site/docs/sk/knifes/knifes_overview/KNIFE_Overview_List.md","sourceDirName":"sk/knifes/knifes_overview","slug":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2025-11-09","fm_version_comment":"","id":"KNIFE_OVERVIEW_LIST","guid":"bef94b1c-4d8d-428c-b5ea-058051841221","dao":"","title":"🗂 KNIFE Overview – List","description":"","author":"","authors":[],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2025-11-12","modified":"","status":"backlog","privacy":"public","rights_holder_content":"","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 <autor>","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"docs","previous":{"title":"📊 KNIFE Overview – Details","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS"},"next":{"title":"Git workflow pre EA modely","permalink":"/sk/knifes/K000002-git-workflow-pre-ea-modely/"}}');
+const site_docs_sk_knifes_knifes_overview_knife_overview_list_md_1d4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","title":"🗂 KNIFE Overview – List","description":"","source":"@site/docs/sk/knifes/knifes_overview/KNIFE_Overview_List.md","sourceDirName":"sk/knifes/knifes_overview","slug":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2025-11-09","fm_version_comment":"","id":"KNIFE_OVERVIEW_LIST","guid":"9266e5aa-4b26-4e6e-a90f-310ffaf6e61d","dao":"","title":"🗂 KNIFE Overview – List","description":"","author":"","authors":[],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2025-11-12","modified":"","status":"backlog","privacy":"public","rights_holder_content":"","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 <autor>","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"docs","previous":{"title":"📊 KNIFE Overview – Details","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS"},"next":{"title":"Git workflow pre EA modely","permalink":"/sk/knifes/K000002-git-workflow-pre-ea-modely/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	fm_build: '2025-11-09',
 	fm_version_comment: '',
 	id: 'KNIFE_OVERVIEW_LIST',
-	guid: 'bef94b1c-4d8d-428c-b5ea-058051841221',
+	guid: '9266e5aa-4b26-4e6e-a90f-310ffaf6e61d',
 	dao: '',
 	title: '🗂 KNIFE Overview – List',
 	description: '',
@@ -97,7 +97,7 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "GUID:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "bef94b1c-4d8d-428c-b5ea-058051841221"
+          children: "9266e5aa-4b26-4e6e-a90f-310ffaf6e61d"
         }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Status:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {

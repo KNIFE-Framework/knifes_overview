@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-knifes-overview-knife-overview-details-md-2e7.json
-const site_docs_sk_knifes_knifes_overview_knife_overview_details_md_2e7_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS","title":"📊 KNIFE Overview – Details","description":"","source":"@site/docs/sk/knifes/knifes_overview/KNIFE_Overview_Details.md","sourceDirName":"sk/knifes/knifes_overview","slug":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS","permalink":"/knifes_overview/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2025-11-09","fm_version_comment":"","id":"KNIFE_OVERVIEW_DETAILS","guid":"c0362ebf-d61a-4676-9a19-388cd2c3dba5","dao":"","title":"📊 KNIFE Overview – Details","description":"","author":"","authors":[],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2025-11-11","modified":"","status":"backlog","privacy":"public","rights_holder_content":"","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 <autor>","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"docs","previous":{"title":"📰 KNIFE Overview – Blog","permalink":"/knifes_overview/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG"},"next":{"title":"🗂 KNIFE Overview – List","permalink":"/knifes_overview/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST"}}');
+const site_docs_sk_knifes_knifes_overview_knife_overview_details_md_2e7_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS","title":"📊 KNIFE Overview – Details","description":"","source":"@site/docs/sk/knifes/knifes_overview/KNIFE_Overview_Details.md","sourceDirName":"sk/knifes/knifes_overview","slug":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS","permalink":"/knifes_overview/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2025-11-09","fm_version_comment":"","id":"KNIFE_OVERVIEW_DETAILS","guid":"f5063d7d-ae37-4594-8fbf-7779624f5a1b","dao":"","title":"📊 KNIFE Overview – Details","description":"","author":"","authors":[],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2025-11-12","modified":"","status":"backlog","privacy":"public","rights_holder_content":"","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 <autor>","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"docs","previous":{"title":"📰 KNIFE Overview – Blog","permalink":"/knifes_overview/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG"},"next":{"title":"🗂 KNIFE Overview – List","permalink":"/knifes_overview/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	fm_build: '2025-11-09',
 	fm_version_comment: '',
 	id: 'KNIFE_OVERVIEW_DETAILS',
-	guid: 'c0362ebf-d61a-4676-9a19-388cd2c3dba5',
+	guid: 'f5063d7d-ae37-4594-8fbf-7779624f5a1b',
 	dao: '',
 	title: '📊 KNIFE Overview – Details',
 	description: '',
@@ -42,7 +42,7 @@ const frontMatter = {
 	priority: '',
 	tags: [],
 	locale: 'sk',
-	created: '2025-11-11',
+	created: '2025-11-12',
 	modified: '',
 	status: 'backlog',
 	privacy: 'public',
@@ -100,7 +100,7 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "GUID:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "c0362ebf-d61a-4676-9a19-388cd2c3dba5"
+          children: "f5063d7d-ae37-4594-8fbf-7779624f5a1b"
         }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Status:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
@@ -113,18 +113,18 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.a, {
-        href: "/knifes_overview/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG",
+        href: "/knifes_overview/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG",
         children: "📰 Blog"
       }), " | ", (0,jsx_runtime.jsx)(_components.a, {
-        href: "/knifes_overview/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST",
+        href: "/knifes_overview/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST",
         children: "🗂 List"
       }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: (0,jsx_runtime.jsx)(_components.a, {
-          href: "/knifes_overview/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS",
+          href: "/knifes_overview/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS",
           children: "📊 Details"
         })
       }), " | ", (0,jsx_runtime.jsx)(_components.a, {
-        href: "/knifes_overview/sk/knifes/",
+        href: "/knifes_overview/en/sk/knifes/",
         children: "↩️ KNIFES"
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
@@ -148,7 +148,7 @@ function _createMdxContent(props) {
             children: "REF-UAT-001"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/",
+              href: "/knifes_overview/en/sk/knifes/K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/",
               children: "Postup pre presun zmien z vetvy FIX do UAT"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -163,7 +163,7 @@ function _createMdxContent(props) {
             children: "K000091"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000091-Zrodenie-git-sveta/",
+              href: "/knifes_overview/en/sk/knifes/K000091-Zrodenie-git-sveta/",
               children: "Krátka história Git – Linus Torvalds"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -176,7 +176,7 @@ function _createMdxContent(props) {
             children: "K000090"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000090-VMWARE-Fusion-NAT2DHCP/",
+              href: "/knifes_overview/en/sk/knifes/K000090-VMWARE-Fusion-NAT2DHCP/",
               children: "VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -189,7 +189,7 @@ function _createMdxContent(props) {
             children: "K000089"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000089-SmartGit-Nastavenie/",
+              href: "/knifes_overview/en/sk/knifes/K000089-SmartGit-Nastavenie/",
               children: "Kedy SSh a kedy HTTPS?"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -202,7 +202,7 @@ function _createMdxContent(props) {
             children: "K000088"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000088-RCA-OBD-Wifi-Android/",
+              href: "/knifes_overview/en/sk/knifes/K000088-RCA-OBD-Wifi-Android/",
               children: "RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -215,7 +215,7 @@ function _createMdxContent(props) {
             children: "K000087"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000087-GitHub-Create-release/",
+              href: "/knifes_overview/en/sk/knifes/K000087-GitHub-Create-release/",
               children: "GitHub-Create Release"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -228,7 +228,7 @@ function _createMdxContent(props) {
             children: "K000086"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000086-docusaurus-id-a-jeho-pouzitie/",
+              href: "/knifes_overview/en/sk/knifes/K000086-docusaurus-id-a-jeho-pouzitie/",
               children: "Docusaurus-ID-a-jeho-pouzitie"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -243,7 +243,7 @@ function _createMdxContent(props) {
             children: "K000084"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000084-ako-aktivovat-na-githube-edu-benefity/",
+              href: "/knifes_overview/en/sk/knifes/K000084-ako-aktivovat-na-githube-edu-benefity/",
               children: "Ako aktivovať na GitHube EDU benefity"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -258,7 +258,7 @@ function _createMdxContent(props) {
             children: "K000083"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000083-aktualizacia-komponentov-pre-docusaurus/",
+              href: "/knifes_overview/en/sk/knifes/K000083-aktualizacia-komponentov-pre-docusaurus/",
               children: "Aktualizácia komponentov pre Docusaurus"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -273,7 +273,7 @@ function _createMdxContent(props) {
             children: "K000082"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000082-ako-urobit-text-v-md-atraktivnejsi-emoji/",
+              href: "/knifes_overview/en/sk/knifes/K000082-ako-urobit-text-v-md-atraktivnejsi-emoji/",
               children: "Ako urobiť text v MD atraktívnejší (emoji)"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -288,7 +288,7 @@ function _createMdxContent(props) {
             children: "K000081"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000081-transparentna-stabilna-infrastruktura-pre-sites/",
+              href: "/knifes_overview/en/sk/knifes/K000081-transparentna-stabilna-infrastruktura-pre-sites/",
               children: "Transparentná -Stabilná infraštruktúra pre Sites"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -303,7 +303,7 @@ function _createMdxContent(props) {
             children: "K000080"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000080-docusaurus-vs-github-pages-package-json/",
+              href: "/knifes_overview/en/sk/knifes/K000080-docusaurus-vs-github-pages-package-json/",
               children: "Docusaurus-vs-github-pages-package-json"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -318,7 +318,7 @@ function _createMdxContent(props) {
             children: "K000079"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000079-co-znamena-slovo-ze-je-nieco-idempotentne/",
+              href: "/knifes_overview/en/sk/knifes/K000079-co-znamena-slovo-ze-je-nieco-idempotentne/",
               children: "Čo znamená slovo že je niečo idempotentné?"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -333,7 +333,7 @@ function _createMdxContent(props) {
             children: "K000078"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000078-language-as-a-bridge-ai-ako-most-medzi-jazykmi/",
+              href: "/knifes_overview/en/sk/knifes/K000078-language-as-a-bridge-ai-ako-most-medzi-jazykmi/",
               children: "Language as a Bridge (AI ako most medzi jazykmi)"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -348,7 +348,7 @@ function _createMdxContent(props) {
             children: "K000077"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000077-knife047-7s-cycle-of-meaningful-knowledge/",
+              href: "/knifes_overview/en/sk/knifes/K000077-knife047-7s-cycle-of-meaningful-knowledge/",
               children: "KNIFE047 – 7S Cycle of Meaningful Knowledge"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -363,7 +363,7 @@ function _createMdxContent(props) {
             children: "K000076"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution/",
+              href: "/knifes_overview/en/sk/knifes/K000076-caa-context-aware-approach-casy-context-aware-systems-caso-context-aware-solution/",
               children: "CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -378,7 +378,7 @@ function _createMdxContent(props) {
             children: "K000075"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000075-lean-canvas/",
+              href: "/knifes_overview/en/sk/knifes/K000075-lean-canvas/",
               children: "Lean canvas"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -393,7 +393,7 @@ function _createMdxContent(props) {
             children: "K000074"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000074-sdlc-solution-development-life-cycle/",
+              href: "/knifes_overview/en/sk/knifes/K000074-sdlc-solution-development-life-cycle/",
               children: "SDLC-Solution Development Life Cycle"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -408,7 +408,7 @@ function _createMdxContent(props) {
             children: "K000073"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000073-q12-twelve-quadrants-for-starting-business/",
+              href: "/knifes_overview/en/sk/knifes/K000073-q12-twelve-quadrants-for-starting-business/",
               children: "Q12- Twelve quadrants for starting business"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -423,7 +423,7 @@ function _createMdxContent(props) {
             children: "K000072"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000072-apv-assets-perspectives-views-keep-your-aseests-in-order/",
+              href: "/knifes_overview/en/sk/knifes/K000072-apv-assets-perspectives-views-keep-your-aseests-in-order/",
               children: "APV-Assets-Perspectives-Views, Keep Your Aseests in Order"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -438,7 +438,7 @@ function _createMdxContent(props) {
             children: "K000071"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000071-7ds-seven-disciplines-for-successful-solutions/",
+              href: "/knifes_overview/en/sk/knifes/K000071-7ds-seven-disciplines-for-successful-solutions/",
               children: "7Ds-Seven Disciplines for successful solutions"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -453,7 +453,7 @@ function _createMdxContent(props) {
             children: "K000070"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000070-ea-fundamentals/",
+              href: "/knifes_overview/en/sk/knifes/K000070-ea-fundamentals/",
               children: "EA Fundamentals"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -468,7 +468,7 @@ function _createMdxContent(props) {
             children: "K000069"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000069-kto-ma-pochvali-ak-sa-nepochvalim-sam/",
+              href: "/knifes_overview/en/sk/knifes/K000069-kto-ma-pochvali-ak-sa-nepochvalim-sam/",
               children: "Kto ma pochváli, ak sa nepochválim sám?"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -483,7 +483,7 @@ function _createMdxContent(props) {
             children: "K000068"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000068-kruhovy-portret-v-gimp/",
+              href: "/knifes_overview/en/sk/knifes/K000068-kruhovy-portret-v-gimp/",
               children: "Kruhový portrét v GIMP"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -498,7 +498,7 @@ function _createMdxContent(props) {
             children: "K000067"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000067-github-deployment-strategie/",
+              href: "/knifes_overview/en/sk/knifes/K000067-github-deployment-strategie/",
               children: "GitHub Deployment stratégie"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -513,7 +513,7 @@ function _createMdxContent(props) {
             children: "K000066"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000066-porovnanie-biznis-planov-github/",
+              href: "/knifes_overview/en/sk/knifes/K000066-porovnanie-biznis-planov-github/",
               children: "Porovnanie biznis plánov GitHub"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -528,7 +528,7 @@ function _createMdxContent(props) {
             children: "K000065"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000065-makefile-for-knife-ecosystem-for-mac-windows-linux/",
+              href: "/knifes_overview/en/sk/knifes/K000065-makefile-for-knife-ecosystem-for-mac-windows-linux/",
               children: "MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -543,7 +543,7 @@ function _createMdxContent(props) {
             children: "K000064"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000064-ga4-gtn-utm/",
+              href: "/knifes_overview/en/sk/knifes/K000064-ga4-gtn-utm/",
               children: "GA4, GTN, UTM"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -558,7 +558,7 @@ function _createMdxContent(props) {
             children: "K000063"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000063-automaticke-generovanie-knifes/",
+              href: "/knifes_overview/en/sk/knifes/K000063-automaticke-generovanie-knifes/",
               children: "Automatické generovanie KNIFES"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -573,7 +573,7 @@ function _createMdxContent(props) {
             children: "K000062"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000062-docusaurus-slugy-a-routing/",
+              href: "/knifes_overview/en/sk/knifes/K000062-docusaurus-slugy-a-routing/",
               children: "K000062 – Docusaurus slugy a routing"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -588,7 +588,7 @@ function _createMdxContent(props) {
             children: "K000061"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000061-passkey-ako-bezpecnostny-koncept/",
+              href: "/knifes_overview/en/sk/knifes/K000061-passkey-ako-bezpecnostny-koncept/",
               children: "Passkey ako bezpečnostný koncept"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -603,7 +603,7 @@ function _createMdxContent(props) {
             children: "K000060"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000060-export-draw-io-diagramu-do-a4-png/",
+              href: "/knifes_overview/en/sk/knifes/K000060-export-draw-io-diagramu-do-a4-png/",
               children: "Export Draw.io diagramu do A4 PNG"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -618,7 +618,7 @@ function _createMdxContent(props) {
             children: "K000059"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000059-stem-a-makerspace-ako-metodika-vzdelavania/",
+              href: "/knifes_overview/en/sk/knifes/K000059-stem-a-makerspace-ako-metodika-vzdelavania/",
               children: "STEM a Makerspace ako metodika vzdelávania"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -633,7 +633,7 @@ function _createMdxContent(props) {
             children: "K000058"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie/",
+              href: "/knifes_overview/en/sk/knifes/K000058-ai-agent-na-monitoroavanie-nakladov-opengpt-od-pociatku-komunikacie/",
               children: "AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -648,7 +648,7 @@ function _createMdxContent(props) {
             children: "K000057"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000057-ai-agent-na-monitoroavanie-nakladov-opengpt/",
+              href: "/knifes_overview/en/sk/knifes/K000057-ai-agent-na-monitoroavanie-nakladov-opengpt/",
               children: "AI Agent na monitoroavanie nákladov OpenGPT"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -663,7 +663,7 @@ function _createMdxContent(props) {
             children: "K000056"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000056-central-panel-for-git-sdlc-git-management-makefile/",
+              href: "/knifes_overview/en/sk/knifes/K000056-central-panel-for-git-sdlc-git-management-makefile/",
               children: "Central Panel for GIT – SDLC Git Management Makefile"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -678,7 +678,7 @@ function _createMdxContent(props) {
             children: "K000055"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000055-ako-obnovit-stav-z-minulosti/",
+              href: "/knifes_overview/en/sk/knifes/K000055-ako-obnovit-stav-z-minulosti/",
               children: "Ako obnoviť stav z minulosti?"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -693,7 +693,7 @@ function _createMdxContent(props) {
             children: "K000054"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000054-docusaurus-advanced-deployment-pipeline/",
+              href: "/knifes_overview/en/sk/knifes/K000054-docusaurus-advanced-deployment-pipeline/",
               children: "Docusaurus Advanced Deployment Pipeline"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -708,7 +708,7 @@ function _createMdxContent(props) {
             children: "K000053"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000053-framework-for-project-management-in-github/",
+              href: "/knifes_overview/en/sk/knifes/K000053-framework-for-project-management-in-github/",
               children: "Framework for Project Management in GitHUB"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -723,7 +723,7 @@ function _createMdxContent(props) {
             children: "K000052"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000052-github-lms-framework/",
+              href: "/knifes_overview/en/sk/knifes/K000052-github-lms-framework/",
               children: "GitHub LMS Framework"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -738,7 +738,7 @@ function _createMdxContent(props) {
             children: "K000051"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000051-google-analytics-fundamentals/",
+              href: "/knifes_overview/en/sk/knifes/K000051-google-analytics-fundamentals/",
               children: "Google analytics – Fundamentals"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -753,7 +753,7 @@ function _createMdxContent(props) {
             children: "K000050"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000050-open-gpt-vytvaranie-prompt-instructions/",
+              href: "/knifes_overview/en/sk/knifes/K000050-open-gpt-vytvaranie-prompt-instructions/",
               children: "Open GPT, vytváranie prompt instructions"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -768,7 +768,7 @@ function _createMdxContent(props) {
             children: "K000049"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000049-knife049-vyhladavac-nad-opengpt-historiou/",
+              href: "/knifes_overview/en/sk/knifes/K000049-knife049-vyhladavac-nad-opengpt-historiou/",
               children: "KNIFE049 – Vyhľadávač nad OpenGPT históriou"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -783,7 +783,7 @@ function _createMdxContent(props) {
             children: "K000048"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000048-ai-agent-in-opengpt/",
+              href: "/knifes_overview/en/sk/knifes/K000048-ai-agent-in-opengpt/",
               children: "AI – Agent in OpenGPT"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -798,7 +798,7 @@ function _createMdxContent(props) {
             children: "K000047"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000047-knife047-7s-cycle-of-meaningful-knowledge/",
+              href: "/knifes_overview/en/sk/knifes/K000047-knife047-7s-cycle-of-meaningful-knowledge/",
               children: "KNIFE047 – 7S Cycle of Meaningful Knowledge"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -813,7 +813,7 @@ function _createMdxContent(props) {
             children: "K000046"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000046-thunderbird-archive-export/",
+              href: "/knifes_overview/en/sk/knifes/K000046-thunderbird-archive-export/",
               children: "Thunderbird – Archive-export"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -828,7 +828,7 @@ function _createMdxContent(props) {
             children: "K000045"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000045-zakladne-informacie-o-esg/",
+              href: "/knifes_overview/en/sk/knifes/K000045-zakladne-informacie-o-esg/",
               children: "Základné informácie o ESG"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -843,7 +843,7 @@ function _createMdxContent(props) {
             children: "K000044"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000044-onedrive-backup-to-external-disk-on-qnap/",
+              href: "/knifes_overview/en/sk/knifes/K000044-onedrive-backup-to-external-disk-on-qnap/",
               children: "OneDrive backup to external disk on QNAP"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -858,7 +858,7 @@ function _createMdxContent(props) {
             children: "K000043"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000043-kontrola-odpovede-studentov-pomocou-api-na-ai/",
+              href: "/knifes_overview/en/sk/knifes/K000043-kontrola-odpovede-studentov-pomocou-api-na-ai/",
               children: "Kontrola odpovedé študentov pomocou API na AI"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -873,7 +873,7 @@ function _createMdxContent(props) {
             children: "K000042"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000042-singlepageapplication-webabased-desktop-app/",
+              href: "/knifes_overview/en/sk/knifes/K000042-singlepageapplication-webabased-desktop-app/",
               children: "SinglePageApplication – Webabased desktop app"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -888,7 +888,7 @@ function _createMdxContent(props) {
             children: "K000041"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000041-github-education-framework/",
+              href: "/knifes_overview/en/sk/knifes/K000041-github-education-framework/",
               children: "GitHUB Education Framework"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -903,7 +903,7 @@ function _createMdxContent(props) {
             children: "K000040"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000040-migracia-joomla-github-mkdocs/",
+              href: "/knifes_overview/en/sk/knifes/K000040-migracia-joomla-github-mkdocs/",
               children: "Migracia Joomla -->GitHUB MkDocs"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -918,7 +918,7 @@ function _createMdxContent(props) {
             children: "K000039"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000039-sementicke-a-kontextove-vyhladavanie-nad-github/",
+              href: "/knifes_overview/en/sk/knifes/K000039-sementicke-a-kontextove-vyhladavanie-nad-github/",
               children: "Sementicke a kontextove vyhladavanie nad GitHUB"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -933,7 +933,7 @@ function _createMdxContent(props) {
             children: "K000038"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000038-ako-si-vyrobit-automaticke-nastavovanie-ssl/",
+              href: "/knifes_overview/en/sk/knifes/K000038-ako-si-vyrobit-automaticke-nastavovanie-ssl/",
               children: "Ako si vyrobit automaticke nastavovanie SSL"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -948,7 +948,7 @@ function _createMdxContent(props) {
             children: "K000037"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000037-context-aware-solutions-paradigma-solution/",
+              href: "/knifes_overview/en/sk/knifes/K000037-context-aware-solutions-paradigma-solution/",
               children: "Context Aware Solutions / paradigma, solution"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -963,7 +963,7 @@ function _createMdxContent(props) {
             children: "K000036"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000036-pracovno-financny-ekosystem/",
+              href: "/knifes_overview/en/sk/knifes/K000036-pracovno-financny-ekosystem/",
               children: "Pracovno, finančný ekosystém"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -978,7 +978,7 @@ function _createMdxContent(props) {
             children: "K000035"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000035-context-aware-solutions-paradigma-solution/",
+              href: "/knifes_overview/en/sk/knifes/K000035-context-aware-solutions-paradigma-solution/",
               children: "Context Aware Solutions / paradigma, solution"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -993,7 +993,7 @@ function _createMdxContent(props) {
             children: "K000034"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000034-pracovno-financny-ekosystem/",
+              href: "/knifes_overview/en/sk/knifes/K000034-pracovno-financny-ekosystem/",
               children: "Pracovno, finančný ekosystém"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1008,7 +1008,7 @@ function _createMdxContent(props) {
             children: "K000033"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000033-smalltalk-ako-nastroj-flowu-a-kontextu/",
+              href: "/knifes_overview/en/sk/knifes/K000033-smalltalk-ako-nastroj-flowu-a-kontextu/",
               children: "Smalltalk ako nástroj flowu a kontextu"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1023,7 +1023,7 @@ function _createMdxContent(props) {
             children: "K000032"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000032-enterprise-document-integrated-sdlc/",
+              href: "/knifes_overview/en/sk/knifes/K000032-enterprise-document-integrated-sdlc/",
               children: "Enterprise Document-integrated SDLC"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1038,7 +1038,7 @@ function _createMdxContent(props) {
             children: "K000031"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000031-document-as-code-framework/",
+              href: "/knifes_overview/en/sk/knifes/K000031-document-as-code-framework/",
               children: "Document-as-Code framework"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1053,7 +1053,7 @@ function _createMdxContent(props) {
             children: "K000030"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000030-pribeh-poznania-sdlc/",
+              href: "/knifes_overview/en/sk/knifes/K000030-pribeh-poznania-sdlc/",
               children: "Príbeh poznania SDLC"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1068,7 +1068,7 @@ function _createMdxContent(props) {
             children: "K000029"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000029-prostredie-vyvojove-python-pre-lo/",
+              href: "/knifes_overview/en/sk/knifes/K000029-prostredie-vyvojove-python-pre-lo/",
               children: "Prostredie vývojové python pre LO"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1083,7 +1083,7 @@ function _createMdxContent(props) {
             children: "K000028"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000028-context-aware-system-ontology-approach/",
+              href: "/knifes_overview/en/sk/knifes/K000028-context-aware-system-ontology-approach/",
               children: "Context Aware System Ontology, Approach"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1098,7 +1098,7 @@ function _createMdxContent(props) {
             children: "K000027"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000027-git-for-dummies-central-concepts/",
+              href: "/knifes_overview/en/sk/knifes/K000027-git-for-dummies-central-concepts/",
               children: "Git For Dummies – Central Concepts"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1113,7 +1113,7 @@ function _createMdxContent(props) {
             children: "K000025"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000025-kategorizacia-terno-podla-sdlc-a-7d/",
+              href: "/knifes_overview/en/sk/knifes/K000025-kategorizacia-terno-podla-sdlc-a-7d/",
               children: "Kategorizácia TERNO podľa SDLC a 7D"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1128,7 +1128,7 @@ function _createMdxContent(props) {
             children: "K000024"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000024-onenote-ako-zdroj-metadat-pre-ai/",
+              href: "/knifes_overview/en/sk/knifes/K000024-onenote-ako-zdroj-metadat-pre-ai/",
               children: "OneNote ako zdroj metadát pre AI"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1143,7 +1143,7 @@ function _createMdxContent(props) {
             children: "K000023"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000023-ai-interakcie-casova-os-a-emocie/",
+              href: "/knifes_overview/en/sk/knifes/K000023-ai-interakcie-casova-os-a-emocie/",
               children: "AI interakcie – časová os a emócie"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1158,7 +1158,7 @@ function _createMdxContent(props) {
             children: "K000022"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000022-terno-terapeuticke-formy-ucenia/",
+              href: "/knifes_overview/en/sk/knifes/K000022-terno-terapeuticke-formy-ucenia/",
               children: "TERNO – terapeutické formy učenia"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1173,7 +1173,7 @@ function _createMdxContent(props) {
             children: "K000021"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000021-princip-udrzatelnosti-v-architekture/",
+              href: "/knifes_overview/en/sk/knifes/K000021-princip-udrzatelnosti-v-architekture/",
               children: "Princíp udržateľnosti v architektúre"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1188,7 +1188,7 @@ function _createMdxContent(props) {
             children: "K000020"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000020-libreoffice-ako-komunitna-platforma/",
+              href: "/knifes_overview/en/sk/knifes/K000020-libreoffice-ako-komunitna-platforma/",
               children: "LibreOffice ako komunitná platforma"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1203,7 +1203,7 @@ function _createMdxContent(props) {
             children: "K000019"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000019-bazi-vypocty-algoritmus-hodiny-kalendar/",
+              href: "/knifes_overview/en/sk/knifes/K000019-bazi-vypocty-algoritmus-hodiny-kalendar/",
               children: "BaZi výpočty – algoritmus, hodiny, kalendár"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1218,7 +1218,7 @@ function _createMdxContent(props) {
             children: "K000017"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000017-ai-powered-terno-planner/",
+              href: "/knifes_overview/en/sk/knifes/K000017-ai-powered-terno-planner/",
               children: "AI-powered TERNO Planner"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1233,7 +1233,7 @@ function _createMdxContent(props) {
             children: "K000016"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000016-helper-skript-pre-lo-symbolic-link/",
+              href: "/knifes_overview/en/sk/knifes/K000016-helper-skript-pre-lo-symbolic-link/",
               children: "Helper skript pre LO symbolic link"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1248,7 +1248,7 @@ function _createMdxContent(props) {
             children: "K000015"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000015-libreoffice-basic-python-migracia/",
+              href: "/knifes_overview/en/sk/knifes/K000015-libreoffice-basic-python-migracia/",
               children: "LibreOffice Basic → Python migrácia"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1263,7 +1263,7 @@ function _createMdxContent(props) {
             children: "K000014"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000014-manazer-kniznic-pre-lo-basic/",
+              href: "/knifes_overview/en/sk/knifes/K000014-manazer-kniznic-pre-lo-basic/",
               children: "Manažér knižníc pre LO Basic"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1278,7 +1278,7 @@ function _createMdxContent(props) {
             children: "K000013"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000013-readonlycontrol-v-ea-workflow-add-in/",
+              href: "/knifes_overview/en/sk/knifes/K000013-readonlycontrol-v-ea-workflow-add-in/",
               children: "ReadOnlyControl v EA – Workflow Add-In"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1293,7 +1293,7 @@ function _createMdxContent(props) {
             children: "K000012"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000012-ea-workflow-add-in-pokrocile-sablony/",
+              href: "/knifes_overview/en/sk/knifes/K000012-ea-workflow-add-in-pokrocile-sablony/",
               children: "EA Workflow Add-In – pokročilé šablóny"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1308,7 +1308,7 @@ function _createMdxContent(props) {
             children: "K000011"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000011-main-xba-sablona-pre-lo-basic/",
+              href: "/knifes_overview/en/sk/knifes/K000011-main-xba-sablona-pre-lo-basic/",
               children: "Main.xba šablóna pre LO Basic"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1323,7 +1323,7 @@ function _createMdxContent(props) {
             children: "K000010"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000010-openai-klient-vlastna-ai-komunikacia/",
+              href: "/knifes_overview/en/sk/knifes/K000010-openai-klient-vlastna-ai-komunikacia/",
               children: "OpenAI klient – vlastná AI komunikácia"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1338,7 +1338,7 @@ function _createMdxContent(props) {
             children: "K000009"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000009-linkedin-post-engine-ai-automatizacia/",
+              href: "/knifes_overview/en/sk/knifes/K000009-linkedin-post-engine-ai-automatizacia/",
               children: "LinkedIn post engine – AI automatizácia"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1353,7 +1353,7 @@ function _createMdxContent(props) {
             children: "K000008"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000008-dcmm-a-dao-hodnota-leadershipu/",
+              href: "/knifes_overview/en/sk/knifes/K000008-dcmm-a-dao-hodnota-leadershipu/",
               children: "DCMM a DAO – hodnota leadershipu"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1368,7 +1368,7 @@ function _createMdxContent(props) {
             children: "K000007"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000007-helper-skript-na-obrazky-v-markdown/",
+              href: "/knifes_overview/en/sk/knifes/K000007-helper-skript-na-obrazky-v-markdown/",
               children: "Helper skript na obrázky v Markdown"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1383,7 +1383,7 @@ function _createMdxContent(props) {
             children: "K000006"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000006-timova-sprava-prav-v-gitea/",
+              href: "/knifes_overview/en/sk/knifes/K000006-timova-sprava-prav-v-gitea/",
               children: "Tímová správa práv v Gitea"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1398,7 +1398,7 @@ function _createMdxContent(props) {
             children: "K000005"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000005-bazi-pre-racionalne-duse/",
+              href: "/knifes_overview/en/sk/knifes/K000005-bazi-pre-racionalne-duse/",
               children: "BaZi pre racionálne duše"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1413,7 +1413,7 @@ function _createMdxContent(props) {
             children: "K000004"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000004-docker-pre-studentov-k12/",
+              href: "/knifes_overview/en/sk/knifes/K000004-docker-pre-studentov-k12/",
               children: "Docker pre študentov (K12)"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1428,7 +1428,7 @@ function _createMdxContent(props) {
             children: "K000003"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000003-libreoffice-python-integracia/",
+              href: "/knifes_overview/en/sk/knifes/K000003-libreoffice-python-integracia/",
               children: "LibreOffice + Python integrácia"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1443,7 +1443,7 @@ function _createMdxContent(props) {
             children: "K000002"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000002-git-workflow-pre-ea-modely/",
+              href: "/knifes_overview/en/sk/knifes/K000002-git-workflow-pre-ea-modely/",
               children: "Git workflow pre EA modely"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -1458,7 +1458,7 @@ function _createMdxContent(props) {
             children: "K000001"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
-              href: "/knifes_overview/sk/knifes/K000001-ea-modelovanie-a-motivacia/",
+              href: "/knifes_overview/en/sk/knifes/K000001-ea-modelovanie-a-motivacia/",
               children: "EA modelovanie a motivácia"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {

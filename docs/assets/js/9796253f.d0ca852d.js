@@ -75,6 +75,10 @@ const toc = [{
   "id": "-kontext",
   "level": 2
 }, {
+  "value": "Inštalácia VMWARE Fusion (Free)",
+  "id": "inštalácia-vmware-fusion-free",
+  "level": 2
+}, {
   "value": "🔍 Diagnostika",
   "id": "-diagnostika",
   "level": 2
@@ -170,6 +174,16 @@ function _createMdxContent(props) {
       }), ", museli sme ju získať z ", (0,jsx_runtime.jsx)(_components.em, {
         children: "technického mirroru"
       }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "inštalácia-vmware-fusion-free",
+      children: "Inštalácia VMWARE Fusion (Free)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Ak sa nechceš trápiť s Broadcom portálom:\nPouži oficiálne zrkadlo s podpisom (od VMware ešte pred akvizíciou):\n👉 ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://www.techspot.com/downloads/2755-vmware-fusion-mac.html",
+        children: "https://www.techspot.com/downloads/2755-vmware-fusion-mac.html"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Tu je VMware Fusion 13.5.2 (Universal) – beží na Intel aj M1/M2, a po spustení\nlen zvolíš “Use for personal use” → Continue without license."
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-diagnostika",
       children: "🔍 Diagnostika"

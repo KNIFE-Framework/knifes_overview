@@ -12,7 +12,7 @@ fm_version_comment: ""
 # systémové ID (napr. KNIFE_K000001)
 id: "KNIFE_OVERVIEW_BLOG"
 # globálne unikátne ID (UUID4)
-guid: "a456c090-5d7a-49a0-b4d7-22bb59adc775"
+guid: "0b4aec2b-adba-416c-9538-7ec13b0dceb7"
 
 # 🧭 Context
 # Typ entity (knife, q12, sdlc, 7ds, thesei…)
@@ -46,7 +46,7 @@ locale: "sk"
 
 # 🕒 Lifecycle
 # Dátum vytvorenia
-created: "2025-11-11"
+created: "2025-11-12"
 # Dátum poslednej úpravy
 modified: ""
 # Stav (backlog, draft, inprogress, done)
@@ -95,7 +95,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `a456c090-5d7a-49a0-b4d7-22bb59adc775`
+> **GUID:** `0b4aec2b-adba-416c-9538-7ec13b0dceb7`
 > **Status:** `backlog` · **Author:**  · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

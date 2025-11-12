@@ -32,7 +32,12 @@ else
   RELEASE_TAG := $(shell git describe --tags --always 2>/dev/null | sed 's/-dirty$$//' || echo dev)
 endif
 COMMIT_SHA := $(shell git rev-parse --short HEAD 2>/dev/null || echo local)
+
 GITHUB_REPO_URL ?= https://github.com/KNIFE-Framework/knifes_overview
+# Derive repo name for GH Pages baseUrl (e.g., /knifes_overview/)
+REPO_NAME := $(notdir $(basename $(GITHUB_REPO_URL)))
+DEFAULT_SITE_URL := https://knifes.systemthinking.sk
+DEFAULT_BASE_URL := /
 
 MINIFY ?= 1
 BUILD_EXTRA :=
@@ -168,7 +173,15 @@ SY01-sync-content: ## Sync SSOT content → publishing/docusaurus/docs (hard, de
 	@echo "✅ Synced: $(CONTENT_DOCS_DIR) → $(PUB_DOCS_DIR)"
 
 dev: ## Spustí lokálny dev server Docusaurusu
-	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) start -- $(BUILD_LOCALE_OPT)
+	cd "$(PUB_DOCUS_DIR)" && \
+	SITE_URL="$${SITE_URL:-http://localhost:3000}" \
+	BASE_URL="$${BASE_URL:-/}" \
+	BUILD_DATE="$(BUILD_DATE)" \
+	RELEASE_TAG="$(RELEASE_TAG)" \
+	COMMIT_SHA="$(COMMIT_SHA)" \
+	GITHUB_REPO_URL="$(GITHUB_REPO_URL)" \
+	NODE_OPTIONS=--max-old-space-size=16384 \
+	$(NPM) start -- $(BUILD_LOCALE_OPT)
 
 build: ## Production build (MINIFY=1|0, DS_LOCALE=sk|en, SYNC_CONTENT=1|0)
 	@if [ "$(SYNC_CONTENT)" != "0" ]; then \
@@ -176,17 +189,18 @@ build: ## Production build (MINIFY=1|0, DS_LOCALE=sk|en, SYNC_CONTENT=1|0)
 	else \
 	  echo "ℹ️  SYNC_CONTENT=0 → skipping overview generation + rsync (CLI-like build)."; \
 	fi
-	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" SITE_URL="$${SITE_URL:-$(DEFAULT_SITE_URL)}" BASE_URL="$${BASE_URL:-$(DEFAULT_BASE_URL)}" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
 
 build-fast: ## Build bez minifikácie (rýchly test)
 	$(MAKE) build MINIFY=0
 
 .PHONY: build-core
 build-core: ## Build bez syncu obsahu (nerobí rsync ani regeneráciu overview)
-	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" SITE_URL="$${SITE_URL:-$(DEFAULT_SITE_URL)}" BASE_URL="$${BASE_URL:-$(DEFAULT_BASE_URL)}" NODE_OPTIONS=--max-old-space-size=16384 $(NPM) run build -- $(BUILD_EXTRA) $(BUILD_LOCALE_OPT)
 
 serve: ## Naservíruje statický build lokálne
-	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" $(NPM) run serve
+	cd "$(PUB_DOCUS_DIR)" && BUILD_DATE="$(BUILD_DATE)" RELEASE_TAG="$(RELEASE_TAG)" COMMIT_SHA="$(COMMIT_SHA)" GITHUB_REPO_URL="$(GITHUB_REPO_URL)" SITE_URL="$${SITE_URL:-$(DEFAULT_SITE_URL)}" BASE_URL="$${BASE_URL:-$(DEFAULT_BASE_URL)}" $(NPM) run serve
+
 
 # ─────────────────────────────────────────────────────────
 # WORKTREE DEPLOY (Cesta 1) – bezpečné, stručné
@@ -245,6 +259,7 @@ W40-deploy-fast: ## Rýchly deploy: W10 + clean-worktree + build (no-minify) + W
 	$(MAKE) W30-commit-deploy
 	@echo "🎉 Full deploy (fast, no-minify) hotový."
 
+
 W40-deploy: ## Rýchly deploy: W10 + clean-worktree + build + W20 + W30
 	$(MAKE) W10-check-worktree
 	$(MAKE) W05-clean-worktree
@@ -252,6 +267,23 @@ W40-deploy: ## Rýchly deploy: W10 + clean-worktree + build + W20 + W30
 	$(MAKE) W20-copy-build
 	$(MAKE) W30-commit-deploy
 	@echo "🎉 Full deploy hotový."
+
+.PHONY: W41-deploy-domain W41-deploy-domain-fast
+W41-deploy-domain-fast: ## Rýchly deploy na vlastnú doménu: W10 + clean-worktree + build (no-minify; SITE_URL=https://knifes.systemthinking.sk BASE_URL=/) + W20 + W30
+	$(MAKE) W10-check-worktree
+	$(MAKE) W05-clean-worktree
+	SITE_URL=https://knifes.systemthinking.sk BASE_URL=/ $(MAKE) build MINIFY=0
+	$(MAKE) W20-copy-build
+	$(MAKE) W30-commit-deploy
+	@echo "🎉 Full deploy (domain, fast, no-minify) hotový."
+
+W41-deploy-domain: ## Deploy na vlastnú doménu: W10 + clean-worktree + build (SITE_URL=https://knifes.systemthinking.sk BASE_URL=/) + W20 + W30
+	$(MAKE) W10-check-worktree
+	$(MAKE) W05-clean-worktree
+	SITE_URL=https://knifes.systemthinking.sk BASE_URL=/ $(MAKE) build
+	$(MAKE) W20-copy-build
+	$(MAKE) W30-commit-deploy
+	@echo "🎉 Full deploy (domain) hotový."
 
 W50-full-deploy: ## Plný scenár: push main + build + stage + commit
 	@if [ -n "$$(git status --porcelain)" ]; then echo "❌ Máš necommitnuté zmeny na main!"; exit 1; fi
@@ -456,6 +488,8 @@ print-vars: ## Vypíše kľúčové premenné
 	@echo "[GITHUB_REPO_URL] = $(GITHUB_REPO_URL)"
 	@echo "[TAG_INCLUDE_DIRTY] = $(TAG_INCLUDE_DIRTY)"
 	@echo "[BUILD_DATE]       = $(BUILD_DATE)"
+	@echo "[REPO_NAME]       = $(REPO_NAME)"
+	@echo "[DEFAULT_BASE_URL]= $(DEFAULT_BASE_URL)"
 
 # Helper: Print current LOCALE and DS_LOCALE
 .PHONY: print-locale
@@ -470,6 +504,7 @@ help-examples:
 	@printf " \033[1m%-40s\033[0m | \033[1m%s\033[0m\n" "Command" "What it does"
 	@printf "%-40s-+-%s\n" "----------------------------------------" "----------------------------------------------"
 	@printf " %-40s | %s\n" "make dev" "Spustí Docusaurus dev server"
+	@printf " %-40s | %s\n" "SITE_URL=http://localhost:3000 BASE_URL=/ make dev" "Spustí dev s lokálnym URL a \"/\" baseUrl (funguje aj na GH po zmene BASE_URL)"
 	@printf " %-40s | %s\n" "make build" "Production build (minify by default)"
 	@printf " %-40s | %s\n" "make build SYNC_CONTENT=0" "Build bez overview/rsync (rovnaké správanie ako ručný CLI build)"
 	@printf " %-40s | %s\n" "make build DS_LOCALE=sk" "Build len pre SK lokalizáciu"
@@ -485,6 +520,8 @@ help-examples:
 	@printf " %-40s | %s\n" "make W40-deploy" "Build + rsync do worktree + commit + push"
 	@printf " %-40s | %s\n" "make deploy" "Alias na W40-deploy (plný deploy)"
 	@printf " %-40s | %s\n" "make deploy-fast" "Alias na W40-deploy-fast (bez minify)"
+	@printf " %-40s | %s\n" "make W41-deploy-domain" "Deploy s vlastnou doménou (SITE_URL=https://knifes.systemthinking.sk BASE_URL=/)"
+	@printf " %-40s | %s\n" "make W41-deploy-domain-fast" "Fast deploy s vlastnou doménou (no-minify)"
 	@printf " %-40s | %s\n" "make W50-full-deploy" "Push main → full deploy (bez necommitnutých zmien)"
 	@printf "\n"
 	@printf " %-40s | %s\n" "make FM10-audit" "Audit Front Matter (read-only)"

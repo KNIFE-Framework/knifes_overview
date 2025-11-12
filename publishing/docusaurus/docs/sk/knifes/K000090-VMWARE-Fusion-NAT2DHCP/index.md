@@ -115,6 +115,15 @@ Všetky virtuálne stroje stratili konektivitu.
 Nové politiky Apple a zmeny po odkúpení **VMware firmou Broadcom** (nové licencie, sťahovanie) situáciu ešte sťažili.  
 Najnovšiu verziu Fusion už **nebolo možné stiahnuť priamo z oficiálneho portálu**, museli sme ju získať z *technického mirroru*.  
 
+## Inštalácia VMWARE Fusion (Free)
+ Ak sa nechceš trápiť s Broadcom portálom:
+Použi oficiálne zrkadlo s podpisom (od VMware ešte pred akvizíciou):
+👉 https://www.techspot.com/downloads/2755-vmware-fusion-mac.html
+
+Tu je VMware Fusion 13.5.2 (Universal) – beží na Intel aj M1/M2, a po spustení
+len zvolíš “Use for personal use” → Continue without license.
+
+
 ## 🔍 Diagnostika
 
 ```

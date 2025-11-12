@@ -6,6 +6,8 @@ const {
   COMMIT_SHA = 'local',
   BUILD_DATE = '',
   GITHUB_REPO_URL = '',
+  SITE_URL = 'https://knife-framework.github.io',
+  BASE_URL = '/knifes_overview/',
 } = process.env;
 
 const commitLink =
@@ -13,8 +15,8 @@ const commitLink =
 
 const config: Config = {
   title: 'KNIFE Overview',
-  url: 'https://knife-framework.github.io',
-  baseUrl: '/knifes_overview/',
+  url: SITE_URL,
+  baseUrl: BASE_URL,
   deploymentBranch: 'gh-pages',
   favicon: 'img/favicon.ico',
 
@@ -62,11 +64,10 @@ const config: Config = {
         src: 'img/logo.png',
         srcDark: 'img/logo-dark.png',
         target: '_self', // alebo '_blank' ak chceš nové okno
-        href: 'https://systemthinking.sk', // ← sem vložíš svoj cieľový link
+        href: '/', // ← sem vložíš svoj cieľový link
       },
       items: [
-        {to: '/sk/', label: 'SK', position: 'left'},
-        {to: '/en/', label: 'EN', position: 'left'},
+        { type: 'localeDropdown', position: 'left' },
         // malý “chip” s build info vpravo
         {
           href: commitLink || '#',

@@ -8206,7 +8206,7 @@ const sidebarName=currentDocRoute.sidebar;const sidebarItems=sidebarName?version
     },
     "footer": {
       "style": "dark",
-      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2025 SystemThinking<br/>\n    🔖 Release: <strong>v5.0.0-rc2-6-g1a201d63</strong><br/>\n    💡 Commit: <code>1a201d63</code><br/>\n    🕒 Build: 2025-11-12 12:22:39 UTC\n  </div>\n",
+      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2025 SystemThinking<br/>\n    🔖 Release: <strong>v5.0.0-rc2-6-g1a201d63</strong><br/>\n    💡 Commit: <code>1a201d63</code><br/>\n    🕒 Build: 2025-11-12 20:01:48 UTC\n  </div>\n",
       "links": []
     },
     "prism": {

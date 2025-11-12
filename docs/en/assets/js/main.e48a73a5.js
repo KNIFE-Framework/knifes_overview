@@ -8197,8 +8197,8 @@ const sidebarName=currentDocRoute.sidebar;const sidebarItems=sidebarName?version
           "dropdownItemsAfter": []
         },
         {
-          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/1a201d63",
-          "label": "Release v5.0.0-rc2-6-g1a201d63 • 1a201d63",
+          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/a6c47c7b",
+          "label": "Release v5.0.0-rc2-7-ga6c47c7b • a6c47c7b",
           "position": "right"
         }
       ],
@@ -8206,7 +8206,7 @@ const sidebarName=currentDocRoute.sidebar;const sidebarItems=sidebarName?version
     },
     "footer": {
       "style": "dark",
-      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2025 SystemThinking<br/>\n    🔖 Release: <strong>v5.0.0-rc2-6-g1a201d63</strong><br/>\n    💡 Commit: <code>1a201d63</code><br/>\n    🕒 Build: 2025-11-12 20:57:47 UTC\n  </div>\n",
+      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2025 SystemThinking<br/>\n    🔖 Release: <strong>v5.0.0-rc2-7-ga6c47c7b</strong><br/>\n    💡 Commit: <code>a6c47c7b</code><br/>\n    🕒 Build: 2025-11-12 20:59:47 UTC\n  </div>\n",
       "links": []
     },
     "prism": {

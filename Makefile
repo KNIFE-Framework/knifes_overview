@@ -105,7 +105,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@printf "\033[1;33m🚀 DEPLOY / WORKTREE\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(deploy|deploy-fast|W[0-9]+-[a-zA-Z0-9-]+|W60-worktree-status|mode):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(deploy):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
 	@printf "\033[1;32m🧾 FRONT MATTER (FM)\033[0m\n"
@@ -205,7 +205,7 @@ serve: ## Naservíruje statický build lokálne
 # ─────────────────────────────────────────────────────────
 # WORKTREE DEPLOY (Cesta 1) – bezpečné, stručné
 # ─────────────────────────────────────────────────────────
-.PHONY: W10-check-worktree W20-copy-build W30-commit-deploy W40-deploy W50-full-deploy W60-worktree-status
+.PHONY: W10-check-worktree W20-copy-build W30-commit-deploy W50-full-deploy W60-worktree-status deploy
 
 .PHONY: W05-clean-worktree
 W05-clean-worktree: ## Vyčistí worktree (zachová .git), vhodné pred rsync
@@ -240,50 +240,19 @@ W30-commit-deploy: ## Commit & push worktree (deploy)
 	@if ! git -C "$(WORKTREE_DIR)" rev-parse --is-inside-work-tree >/dev/null 2>&1; then echo "❌ Worktree nie je pripravený"; exit 1; fi
 	cd "$(WORKTREE_DIR)" && git add -A
 	cd "$(WORKTREE_DIR)" && ts=$$(date -u +'%Y-%m-%d %H:%M:%S UTC'); git commit -m "Deploy $$ts" || echo "ℹ️  Žiadne zmeny"
+	# Bezpečné riešenie non-fast-forward: najprv rebase proti originu, potom push
+	cd "$(WORKTREE_DIR)" && git fetch origin $(DEPLOY_BRANCH)
+	cd "$(WORKTREE_DIR)" && git pull --rebase --autostash origin $(DEPLOY_BRANCH) || true
 	cd "$(WORKTREE_DIR)" && git push origin $(DEPLOY_BRANCH)
 	@echo "✅ Deploy pushnutý → $(DEPLOY_BRANCH)"
 
-.PHONY: deploy deploy-fast W40-deploy-fast
-
-deploy: ## Full deploy (alias of W40-deploy)
-	$(MAKE) W40-deploy
-
-deploy-fast: ## Full deploy without minify (alias of W40-deploy-fast)
-	$(MAKE) W40-deploy-fast
-
-W40-deploy-fast: ## Rýchly deploy: W10 + clean-worktree + build (no-minify) + W20 + W30
-	$(MAKE) W10-check-worktree
-	$(MAKE) W05-clean-worktree
-	$(MAKE) build MINIFY=0
-	$(MAKE) W20-copy-build
-	$(MAKE) W30-commit-deploy
-	@echo "🎉 Full deploy (fast, no-minify) hotový."
-
-
-W40-deploy: ## Rýchly deploy: W10 + clean-worktree + build + W20 + W30
-	$(MAKE) W10-check-worktree
-	$(MAKE) W05-clean-worktree
-	$(MAKE) build
-	$(MAKE) W20-copy-build
-	$(MAKE) W30-commit-deploy
-	@echo "🎉 Full deploy hotový."
-
-.PHONY: W41-deploy-domain W41-deploy-domain-fast
-W41-deploy-domain-fast: ## Rýchly deploy na vlastnú doménu: W10 + clean-worktree + build (no-minify; SITE_URL=https://knifes.systemthinking.sk BASE_URL=/) + W20 + W30
+deploy: ## Full deploy na vlastnú doménu (SITE_URL=https://knifes.systemthinking.sk BASE_URL=/, no-minify)
 	$(MAKE) W10-check-worktree
 	$(MAKE) W05-clean-worktree
 	SITE_URL=https://knifes.systemthinking.sk BASE_URL=/ $(MAKE) build MINIFY=0
 	$(MAKE) W20-copy-build
 	$(MAKE) W30-commit-deploy
-	@echo "🎉 Full deploy (domain, fast, no-minify) hotový."
-
-W41-deploy-domain: ## Deploy na vlastnú doménu: W10 + clean-worktree + build (SITE_URL=https://knifes.systemthinking.sk BASE_URL=/) + W20 + W30
-	$(MAKE) W10-check-worktree
-	$(MAKE) W05-clean-worktree
-	SITE_URL=https://knifes.systemthinking.sk BASE_URL=/ $(MAKE) build
-	$(MAKE) W20-copy-build
-	$(MAKE) W30-commit-deploy
-	@echo "🎉 Full deploy (domain) hotový."
+	@echo "🎉 Full deploy hotový (domain, no-minify)."
 
 W50-full-deploy: ## Plný scenár: push main + build + stage + commit
 	@if [ -n "$$(git status --porcelain)" ]; then echo "❌ Máš necommitnuté zmeny na main!"; exit 1; fi
@@ -516,13 +485,7 @@ help-examples:
 	@printf " %-40s | %s\n" "make knifes-overview-commit" "Commitne zmeny overview → odstráni '-dirty'"
 	@printf " %-40s | %s\n" "make serve" "Naservíruje lokálne už vybuildované stránky"
 	@printf "\n"
-	@printf " %-40s | %s\n" "make W10-check-worktree" "Pripraví worktree na branch gh-pages-docusaurus"
-	@printf " %-40s | %s\n" "make W40-deploy" "Build + rsync do worktree + commit + push"
-	@printf " %-40s | %s\n" "make deploy" "Alias na W40-deploy (plný deploy)"
-	@printf " %-40s | %s\n" "make deploy-fast" "Alias na W40-deploy-fast (bez minify)"
-	@printf " %-40s | %s\n" "make W41-deploy-domain" "Deploy s vlastnou doménou (SITE_URL=https://knifes.systemthinking.sk BASE_URL=/)"
-	@printf " %-40s | %s\n" "make W41-deploy-domain-fast" "Fast deploy s vlastnou doménou (no-minify)"
-	@printf " %-40s | %s\n" "make W50-full-deploy" "Push main → full deploy (bez necommitnutých zmien)"
+	@printf " %-40s | %s\n" "make deploy" "Full deploy na vlastnú doménu (no-minify)"
 	@printf "\n"
 	@printf " %-40s | %s\n" "make FM10-audit" "Audit Front Matter (read-only)"
 	@printf " %-40s | %s\n" "make FM11-lint" "Lint FM (read-only)"

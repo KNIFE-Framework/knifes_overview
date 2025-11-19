@@ -47,6 +47,34 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: '🆘 Help',
+      link: { type: 'generated-index', slug: '/sk/help/overview' },
+      collapsed: true,
+      items: [
+        { type: 'doc', id: 'sk/help/release-notes', label: 'Release Notes' },
+        {
+          type: 'category',
+          label: 'HOWTO',
+          items: [
+            'sk/help/howto/new-knife',
+            'sk/help/howto/new-sthdf',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'OS Install',
+          items: [
+            'sk/help/os-install/index',
+            'sk/help/os-install/macos',
+            'sk/help/os-install/windows-msys2',
+            'sk/help/os-install/linux',
+          ],
+        },
+        { type: 'doc', id: 'sk/help/docusaurus', label: 'Docusaurus' },
+      ],
+    },
   ],
 };
 

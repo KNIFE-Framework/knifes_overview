@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000077"
 guid: "67fa4142-7407-4ca8-a24a-a0777669bc26"
 dao: "knife"
-title: "KNIFE047 – 7S Cycle of Meaningful Knowledge"
+title: "K000077 – KNIFE047 – 7S Cycle of Meaningful Knowledge"
 description: "Moderné technológie umožňujú využívať a zneužívať rôzne techniky marketingu. Čo si zvolíme PUSH, alebo PULL prístup. Táto metodika je zameraná na PULL marketing."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000077 – KNIFE047 – 7S Cycle of Meaningful Knowledge"
 date: "2025-09-17"
 sidebar_position: "77"
+sidebar_label: "K000077 – KNIFE047 – 7S Cycle of Meaningful Knowledge"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

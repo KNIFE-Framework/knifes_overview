@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000085_04"
 guid: "bcadd10f-a1fa-4797-8eda-565d63d4443b"
 dao: "knife"
-title: "OBS Fundamentals – Multilingual - Video - Publishing"
+title: "K000085_04 – OBS Fundamentals – Multilingual - Video - Publishing"
 description: " Základy práce s OBS v kontexte tvorny multimediálneho obsahu"
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -32,7 +32,9 @@ author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "HOBS-Fundamentals"
+sidebar_label: "K000085_04 – OBS Fundamentals – Multilingual - Video - Publishing"
 ---
+
 # 🌍 Multilingual Video Publishing – SK originál, EN titulky a EN voice
 
 <!-- fm-visible: start -->

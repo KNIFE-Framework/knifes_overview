@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000023"
 guid: "a9ea072a-2fc0-425a-ac4d-9140d92ab221"
 dao: "knife"
-title: "AI interakcie – časová os a emócie"
+title: "K000023 – AI interakcie – časová os a emócie"
 description: "Zaznamenávanie malých interakcií, small-talkov a spätných väzieb pre orientáciu v čase"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000023 – AI interakcie – časová os a emócie"
 date: "2025-09-17"
 sidebar_position: "23"
+sidebar_label: "K000023 – AI interakcie – časová os a emócie"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

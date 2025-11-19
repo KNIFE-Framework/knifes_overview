@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000047"
 guid: "82c38956-39d1-4afa-8b78-845c78c22083"
 dao: "knife"
-title: "KNIFE047 – 7S Cycle of Meaningful Knowledge"
+title: "K000047 – KNIFE047 – 7S Cycle of Meaningful Knowledge"
 description: "Nové inšpirácie ohľadne riešenia aj z pohľadu marketingu"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000047 – KNIFE047 – 7S Cycle of Meaningful Knowledge"
 date: "2025-09-17"
 sidebar_position: "47"
+sidebar_label: "K000047 – KNIFE047 – 7S Cycle of Meaningful Knowledge"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

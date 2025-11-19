@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000056"
 guid: "b27765d2-8514-437e-91f2-5ed1d4f76c43"
 dao: "knife"
-title: "Central Panel for GIT – SDLC Git Management Makefile"
+title: "K000056 – Central Panel for GIT – SDLC Git Management Makefile"
 description: "•…"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000056 – Central Panel for GIT – SDLC Git Management Makefile"
 date: "2025-09-17"
 sidebar_position: "56"
+sidebar_label: "K000056 – Central Panel for GIT – SDLC Git Management Makefile"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000029"
 guid: "31b04e60-ff57-4a5b-95b3-e24be0a1e338"
 dao: "knife"
-title: "Prostredie vývojové python pre LO"
+title: "K000029 – Prostredie vývojové python pre LO"
 description: "Profi prostredie pre pyhton dev v LO, OOODEV"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000029 – Prostredie vývojové python pre LO"
 date: "2025-09-17"
 sidebar_position: "29"
+sidebar_label: "K000029 – Prostredie vývojové python pre LO"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

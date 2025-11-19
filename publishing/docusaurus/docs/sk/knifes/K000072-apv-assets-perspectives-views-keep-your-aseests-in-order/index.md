@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000072"
 guid: "e2e77f43-e904-4438-8a74-07ac68541237"
 dao: "knife"
-title: "APV-Assets-Perspectives-Views, Keep Your Aseests in Order"
+title: "K000072 – APV-Assets-Perspectives-Views, Keep Your Aseests in Order"
 description: "Metodika na podporu manažmentu aktív v rámci SDLC."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000072 – APV-Assets-Perspectives-Views, Keep Your Aseests in Order"
 date: "2025-09-17"
 sidebar_position: "72"
+sidebar_label: "K000072 – APV-Assets-Perspectives-Views, Keep Your Aseests in Order"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000055"
 guid: "547ee1b8-84a2-4c6c-97c3-205967de0847"
 dao: "knife"
-title: "Ako obnoviť stav z minulosti?"
+title: "K000055 – Ako obnoviť stav z minulosti?"
 description: "Ako si obnoviť pokazné súbory? Ak mám v minulosti zachytené dobré údaje, nie je problém sa k nim vrátiť."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000055 – Ako obnoviť stav z minulosti?"
 date: "2025-09-17"
 sidebar_position: "55"
+sidebar_label: "K000055 – Ako obnoviť stav z minulosti?"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

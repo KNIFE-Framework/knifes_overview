@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000010"
 guid: "833ed8e5-8144-4de4-b63a-1d6000dee2a1"
 dao: "knife"
-title: "OpenAI klient – vlastná AI komunikácia"
+title: "K000010 – OpenAI klient – vlastná AI komunikácia"
 description: "Appka s prepojením na OpenAI API a archív komunikácie"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000010 – OpenAI klient – vlastná AI komunikácia"
 date: "2025-09-17"
 sidebar_position: "10"
+sidebar_label: "K000010 – OpenAI klient – vlastná AI komunikácia"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

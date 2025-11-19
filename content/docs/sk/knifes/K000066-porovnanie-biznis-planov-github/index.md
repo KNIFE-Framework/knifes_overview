@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000066"
 guid: "a2c536d5-d18f-4d80-a2bd-9ef502904b9a"
 dao: "knife"
-title: "Porovnanie biznis plánov GitHub"
+title: "K000066 – Porovnanie biznis plánov GitHub"
 description: "Aká sú štartovacie náklady na profesionálny ekosystém v rámci GitHub?"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000066 – Porovnanie biznis plánov GitHub"
 date: "2025-09-17"
 sidebar_position: "66"
+sidebar_label: "K000066 – Porovnanie biznis plánov GitHub"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

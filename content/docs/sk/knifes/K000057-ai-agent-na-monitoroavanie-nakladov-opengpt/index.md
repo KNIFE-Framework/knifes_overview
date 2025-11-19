@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000057"
 guid: "1ee7fec7-5397-4920-b47d-48035c5c9125"
 dao: "knife"
-title: "AI Agent na monitoroavanie nákladov OpenGPT"
+title: "K000057 – AI Agent na monitoroavanie nákladov OpenGPT"
 description: "Automatické reportovanie vstupných a výstupných tokenov.Presne tak – toto má perfektný predpoklad stať sa AI Agentom"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000057 – AI Agent na monitoroavanie nákladov OpenGPT"
 date: "2025-09-17"
 sidebar_position: "57"
+sidebar_label: "K000057 – AI Agent na monitoroavanie nákladov OpenGPT"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

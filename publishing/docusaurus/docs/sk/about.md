@@ -16,11 +16,11 @@ Tento repozitár slúži ako **centrálny prehľad** (overview) všetkých KNIFE
 
 ## Pre koho je určený
 
-- študentov, ktorí chcú:
+- študentom, ktorí chcú:
   - pochopiť štruktúru KNIFE,
   - vedieť, ako si vytvoriť vlastný príspevok,
 - učiteľov a mentorov,
-- kohokoľvek, kto chce **transparentne dokumentovať poznanie**.
+- kohokoľvek, kto chce **transparentne zaznamenávať svoje poznanie**.
 
 ## Ako pokračovať
 

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000009"
 guid: "2a2564bd-e234-42ed-acd9-e80ddb128b17"
 dao: "knife"
-title: "LinkedIn post engine – AI automatizácia"
+title: "K000009 – LinkedIn post engine – AI automatizácia"
 description: "Generovanie postov na LinkedIn z obsahu"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000009 – LinkedIn post engine – AI automatizácia"
 date: "2025-09-17"
 sidebar_position: "9"
+sidebar_label: "K000009 – LinkedIn post engine – AI automatizácia"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

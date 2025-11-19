@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000059"
 guid: "d7e5dc5c-968e-4af4-a7b2-d76bcff5f12e"
 dao: "knife"
-title: "STEM a Makerspace ako metodika vzdelávania"
+title: "K000059 – STEM a Makerspace ako metodika vzdelávania"
 description: "Spolupracujem s Makerspace od roku 2016. POJEM STEM  som priprodzene zahrnul do  svojich metodík. Je vhodné to zviditeľniť v mojich aktivitách"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000059 – STEM a Makerspace ako metodika vzdelávania"
 date: "2025-09-17"
 sidebar_position: "59"
+sidebar_label: "K000059 – STEM a Makerspace ako metodika vzdelávania"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

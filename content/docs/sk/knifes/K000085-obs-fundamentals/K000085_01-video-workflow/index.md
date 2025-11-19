@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000085_01"
 guid: "e93b08eb-d3f0-481a-a892-025eebcd68b9"
 dao: "knife"
-title: "OBS Fundamentals – Video Workflow (SK originál → EN titulky/voice"
+title: "K000085_01 – OBS Fundamentals – Video Workflow (SK originál → EN titulky/voice"
 description: " Základy práce s OBS v kontexte tvorny multimediálneho obsahu"
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -32,7 +32,9 @@ author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "HOBS-Fundamentals"
+sidebar_label: "K000085_01 – OBS Fundamentals – Video Workflow (SK originál → EN titulky/voice"
 ---
+
 # 🎬 Video Workflow (SK originál → EN titulky/voice)
 
 <!-- fm-visible: start -->

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000038"
 guid: "14675413-a6ee-4b45-9be4-1e2012d03c95"
 dao: "knife"
-title: "Ako si vyrobit automaticke nastavovanie SSL"
+title: "K000038 – Ako si vyrobit automaticke nastavovanie SSL"
 description: "Pre FIIT PROLABORATE potrebujem SSL certifikaty, ako pre zakaznikov ako Dusan"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000038 – Ako si vyrobit automaticke nastavovanie SSL"
 date: "2025-09-17"
 sidebar_position: "38"
+sidebar_label: "K000038 – Ako si vyrobit automaticke nastavovanie SSL"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

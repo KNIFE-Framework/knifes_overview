@@ -9,7 +9,7 @@ V tejto sekcii nájdeš **praktické návody**, ktoré sú súčasťou platformy
 ## Čo tu nájdeš
 
 - [Inštalácia a základné príkazy Docusaurusu](./docusaurus.md)
-- [Inštalácia nástrojov podľa operačného systému](./os-install/windows-msys2.md)
+- [Inštalácia nástrojov podľa operačného systému](./os-install/)
 - [Ako vytvoriť nový KNIFE príspevok](./howto/new-knife.md)
 - [Ako vytvoriť novú STHDF inštanciu kurzu](./howto/new-sthdf.md)
 

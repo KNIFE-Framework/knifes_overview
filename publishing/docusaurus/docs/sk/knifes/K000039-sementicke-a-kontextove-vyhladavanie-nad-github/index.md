@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000039"
 guid: "d65f381f-c6dd-43af-a6e3-1742a5adb17d"
 dao: "knife"
-title: "Sementicke a kontextove vyhladavanie nad GitHUB"
+title: "K000039 – Sementicke a kontextove vyhladavanie nad GitHUB"
 description: "Nestaci mat len data a informacie, je nevyhnutne ich spajat a dotazovat sa"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000039 – Sementicke a kontextove vyhladavanie nad GitHUB"
 date: "2025-09-17"
 sidebar_position: "39"
+sidebar_label: "K000039 – Sementicke a kontextove vyhladavanie nad GitHUB"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

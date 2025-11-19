@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000025"
 guid: "0e591458-c661-4f18-8e85-9c1c14efaedc"
 dao: "knife"
-title: "Kategorizácia TERNO podľa SDLC a 7D"
+title: "K000025 – Kategorizácia TERNO podľa SDLC a 7D"
 description: "Zaradenie každého TERNO podľa fázy vývoja a vedomostnej disciplíny"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000025 – Kategorizácia TERNO podľa SDLC a 7D"
 date: "2025-09-17"
 sidebar_position: "25"
+sidebar_label: "K000025 – Kategorizácia TERNO podľa SDLC a 7D"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

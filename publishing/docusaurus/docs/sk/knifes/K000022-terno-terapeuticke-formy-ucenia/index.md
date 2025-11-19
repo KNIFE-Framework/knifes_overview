@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000022"
 guid: "27ffa9b9-04b5-4a79-921c-38123de82f2d"
 dao: "knife"
-title: "TERNO – terapeutické formy učenia"
+title: "K000022 – TERNO – terapeutické formy učenia"
 description: "Satira, emócie a storytelling ako forma výuky a reflektovania reality"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000022 – TERNO – terapeutické formy učenia"
 date: "2025-09-17"
 sidebar_position: "22"
+sidebar_label: "K000022 – TERNO – terapeutické formy učenia"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

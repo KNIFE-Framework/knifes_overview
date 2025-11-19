@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000050"
 guid: "abaf199d-563c-487a-88d2-2c8d784afb84"
 dao: "knife"
-title: "Open GPT, vytváranie prompt instructions"
+title: "K000050 – Open GPT, vytváranie prompt instructions"
 description: "Vznizkli instrukcie pre zvedavych…"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -35,6 +35,7 @@ sidebar_label: "K000050 – Open GPT, vytváranie prompt instructions"
 date: "2025-09-17"
 sidebar_position: "50"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

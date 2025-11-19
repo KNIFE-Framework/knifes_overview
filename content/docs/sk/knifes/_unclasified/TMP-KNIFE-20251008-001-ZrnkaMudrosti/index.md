@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "TMP-KNIFE-20251008-001"
 guid: "1c4d6e79-2e4d-4dfb-8c23-bdc9a8b6028b"
 dao: "LetItGrow-FieldNotes"
-title: "Zrnká múdrosti na cestách"
+title: "TMP-KNIFE-20251008-001 – Zrnká múdrosti na cestách"
 description: "Priebežný záznam spontánnych poznatkov a myšlienok, ktoré vznikajú počas cesty, výučby alebo interakcie s komunitou."
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -33,7 +33,9 @@ fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "Zrnká múdrosti na cestách"
 short_title: "Zrnká múdrosti"
+sidebar_label: "TMP-KNIFE-20251008-001 – Zrnká múdrosti na cestách"
 ---
+
 # 🌱 Zrnká múdrosti na cestách
 
 <!-- fm-visible: start -->

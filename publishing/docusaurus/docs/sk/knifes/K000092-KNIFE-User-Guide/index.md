@@ -24,7 +24,7 @@ guid: "accf306c-827e-4f02-b343-a4081e931e30"
 dao: "knife"
 
 # Názov zápisu – dopĺňa používateľ
-title: "KNIFE User Guide v2"
+title: "K000092 – KNIFE User Guide v2"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
 description: "{{DESCRIPTION}}"

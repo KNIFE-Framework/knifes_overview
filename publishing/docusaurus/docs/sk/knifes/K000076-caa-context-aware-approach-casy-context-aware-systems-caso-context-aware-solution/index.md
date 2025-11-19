@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000076"
 guid: "0486c717-dc17-41c2-ab44-f2f365c4a7be"
 dao: "knife"
-title: "CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution"
+title: "K000076 – CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution"
 description: "Neexistuje situácia, kedy môžeme ignorovať kontext. Neznalosť tohto princípu vedie k obrovským nepochopeniam, chybám, manipuláciam, sporom. Úplne zbytočne. Ak sa na začiatku ujasní kontext, tak okamžite sa dostavuje porozumenie a nastáva konštruktívny prístup."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000076 – CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution"
 date: "2025-09-17"
 sidebar_position: "76"
+sidebar_label: "K000076 – CAA- Context Aware Approach, CASY-Context Aware Systems, CASo-Context Aware Solution"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

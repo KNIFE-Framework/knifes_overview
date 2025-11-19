@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000008"
 guid: "fbb56d3a-aa9f-4594-bdfd-b30c12c09174"
 dao: "knife"
-title: "DCMM a DAO – hodnota leadershipu"
+title: "K000008 – DCMM a DAO – hodnota leadershipu"
 description: "Sebariadenie, dôvera a samočistiace systémy"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000008 – DCMM a DAO – hodnota leadershipu"
 date: "2025-09-17"
 sidebar_position: "8"
+sidebar_label: "K000008 – DCMM a DAO – hodnota leadershipu"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

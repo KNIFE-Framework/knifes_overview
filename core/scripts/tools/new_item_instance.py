@@ -748,12 +748,16 @@ def main() -> None:
             cli_title=cli_title,
         )
 
-        # KNIFE: ak máme CLI title/name, prepíšeme 'title' vo FM
-        # a zároveň nastavíme sidebar_label na rovnakú hodnotu
-        knife_title = args.title or args.name
+        # KNIFE: ak máme CLI title/name, prepíšeme 'title' vo FM.
+        # Ak je k dispozícii explicitné ID, spojíme ho s názvom, napr. "K000099 – Moje KNIFE".
+        # sidebar_label nechávame na Docusaurus – generátor nezasahuje do Docusaurus‑špecifických polí.
+        knife_title = args.title or args.name or instance_name
         if knife_title:
-            _set_or_replace_fm_key(fm_lines, "title", _yaml_quote(knife_title))
-            _set_or_replace_fm_key(fm_lines, "sidebar_label", _yaml_quote(knife_title))
+            if explicit_id:
+                combined_title = f"{explicit_id} – {knife_title}"
+            else:
+                combined_title = knife_title
+            _set_or_replace_fm_key(fm_lines, "title", _yaml_quote(combined_title))
 
         # Mapovanie placeholderov z FM pre telo a header
         fm_mapping = _build_placeholder_mapping_from_fm(fm_lines)
@@ -838,6 +842,14 @@ def main() -> None:
     debug_print(args.debug, f"Projects templates root: {projects_root}")
     debug_print(args.debug, f"Students templates root: {students_root}")
 
+    # Rozlíšenie STHDF stromu pre projekty a študentov cez odlišný CLI title.
+    # Ako základ použijeme buď cli_title (ak bol zadaný z CLI),
+    # alebo instance_name (napr. STHDF_2025_ST_001).
+    base_title = cli_title or instance_name or ""
+
+    projects_cli_title = f"{base_title} – projekty" if base_title else "projekty"
+    students_cli_title = f"{base_title} – študenti" if base_title else "študenti"
+
     projects_dst = target_root / "projects"
     process_template_tree(
         src_root=projects_root,
@@ -847,7 +859,7 @@ def main() -> None:
         instance_name=instance_name,
         template_header_path=template_header_path,
         explicit_id=explicit_id,
-        cli_title=cli_title,
+        cli_title=projects_cli_title,
         exists_mode=exists_mode,
         debug=args.debug,
         dry_run=args.dry_run,
@@ -862,7 +874,7 @@ def main() -> None:
         instance_name=instance_name,
         template_header_path=template_header_path,
         explicit_id=explicit_id,
-        cli_title=cli_title,
+        cli_title=students_cli_title,
         exists_mode=exists_mode,
         debug=args.debug,
         dry_run=args.dry_run,

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000027"
 guid: "3264251d-6fb5-41f2-b8eb-9b726c2542f2"
 dao: "knife"
-title: "Git For Dummies – Central Concepts"
+title: "K000027 – Git For Dummies – Central Concepts"
 description: "Jednoduché vysvetlenie Git základov pre začiatočníkov v GitEA (organizácia, repozitár, working directory, atď.)"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000027 – Git For Dummies – Central Concepts"
 date: "2025-09-17"
 sidebar_position: "27"
+sidebar_label: "K000027 – Git For Dummies – Central Concepts"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

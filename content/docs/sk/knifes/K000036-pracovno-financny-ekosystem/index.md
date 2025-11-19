@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000036"
 guid: "5d8e7ee1-a0d2-474b-832e-c91a030ea3d0"
 dao: "knife"
-title: "Pracovno, finančný ekosystém"
+title: "K000036 – Pracovno, finančný ekosystém"
 description: "Absolventi architektúry už počas štúdia sú selektovaní  z komerčných ateliérov. Ponúkajú im brikády, prípadne dohody o vykonaní práce, za cenu nekvalifikovaných robotníkov."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000036 – Pracovno, finančný ekosystém"
 date: "2025-09-17"
 sidebar_position: "36"
+sidebar_label: "K000036 – Pracovno, finančný ekosystém"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

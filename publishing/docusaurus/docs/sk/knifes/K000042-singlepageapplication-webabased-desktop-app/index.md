@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000042"
 guid: "ed25f447-b17f-4a3a-941e-bb441e170fc3"
 dao: "knife"
-title: "SinglePageApplication – Webabased desktop app"
+title: "K000042 – SinglePageApplication – Webabased desktop app"
 description: "GitHUb je zaklad aj pre vyvoj aplikacii nezavislych na koncovom zariadenie SPA"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000042 – SinglePageApplication – Webabased desktop app"
 date: "2025-09-17"
 sidebar_position: "42"
+sidebar_label: "K000042 – SinglePageApplication – Webabased desktop app"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

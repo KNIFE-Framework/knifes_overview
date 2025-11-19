@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000017"
 guid: "41a44dfe-5b85-480a-8168-710530b572d6"
 dao: "knife"
-title: "AI-powered TERNO Planner"
+title: "K000017 – AI-powered TERNO Planner"
 description: "Nástroj na správu a sledovanie TERNA záznamov"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000017 – AI-powered TERNO Planner"
 date: "2025-09-17"
 sidebar_position: "17"
+sidebar_label: "K000017 – AI-powered TERNO Planner"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

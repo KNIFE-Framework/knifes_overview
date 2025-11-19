@@ -10,7 +10,7 @@ guid: "8d84e744-939c-4b00-8369-0493275c5d4c"
 
 # 🧭 Context
 dao: "knife"
-title: "Kedy SSh a kedy HTTPS?"
+title: "K000089 – Kedy SSh a kedy HTTPS?"
 description: ""
 
 # 👥 Authorship
@@ -48,7 +48,9 @@ origin_system: "mix"
 # 🧱 Reserved / Future use
 fm_reserved1: ""
 fm_reserved2: ""
+sidebar_label: "K000089 – Kedy SSh a kedy HTTPS?"
 ---
+
 # Kedy SSh a kedy HTTPS?
 > KNIFE K000089 created by Roman Kazička on 2025-11-07  
 > GUID: 8d84e744-939c-4b00-8369-0493275c5d4c
@@ -191,4 +193,3 @@ Pri integrácii SmartGit ↔ GitHub potrebujeme zvoliť prístupový režim. **H
 - [ ] `~/.ssh/config` pre viac účtov  
 - [ ] Agent beží, kľúč nahratý  
 - [ ] Dokumentované rotačné pravidlá (odvolanie kľúčov/PAT)
-

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000073"
 guid: "3908aa84-1d7b-4ba7-8d41-ca17e1087d86"
 dao: "knife"
-title: "Q12- Twelve quadrants for starting business"
+title: "K000073 – Q12- Twelve quadrants for starting business"
 description: "Metodika zameraná na 12 kvadrantov, ktoré je minimálne potrebné zohľadniť pri budovaní nového biznisu. Vhodné najmä pre startupy, ale aj pre každého jednotlivca, ktorý by chcel rozbehnúť vlastné podnikanie."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000073 – Q12- Twelve quadrants for starting business"
 date: "2025-09-17"
 sidebar_position: "73"
+sidebar_label: "K000073 – Q12- Twelve quadrants for starting business"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000013"
 guid: "fea26033-7add-4816-bfc1-a7e65df4d2b4"
 dao: "knife"
-title: "ReadOnlyControl v EA – Workflow Add-In"
+title: "K000013 – ReadOnlyControl v EA – Workflow Add-In"
 description: "Obmedzenie práv v EA na základe kontextu a roly"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000013 – ReadOnlyControl v EA – Workflow Add-In"
 date: "2025-09-17"
 sidebar_position: "13"
+sidebar_label: "K000013 – ReadOnlyControl v EA – Workflow Add-In"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

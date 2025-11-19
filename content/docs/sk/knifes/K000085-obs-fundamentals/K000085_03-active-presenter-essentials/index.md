@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000085_03"
 guid: "29137d69-fb85-41f5-8f98-69c2da54208a"
 dao: "knife"
-title: "OBS Fundamentals – Active Presenter Essential"
+title: "K000085_03 – OBS Fundamentals – Active Presenter Essential"
 description: " Základy práce s OBS v kontexte tvorny multimediálneho obsahu"
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -32,7 +32,9 @@ author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "HOBS-Fundamentals"
+sidebar_label: "K000085_03 – OBS Fundamentals – Active Presenter Essential"
 ---
+
 # 🧰 Active Presenter Essentials – Strih, titulky, kvízy, export
 
 <!-- fm-visible: start -->

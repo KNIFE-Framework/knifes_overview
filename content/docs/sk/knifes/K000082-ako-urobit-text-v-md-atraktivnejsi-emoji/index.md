@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000082"
 guid: "060ab917-70a9-4e1f-b1db-a6c9fc8ce8b3"
 dao: "knife"
-title: "Ako urobiť text v MD atraktívnejší (emoji)"
+title: "K000082 – Ako urobiť text v MD atraktívnejší (emoji)"
 description: "Čítanie s porozumením je veľmi náročná disciplína. Preto je dôležité priblížiť text ku príbehu pomocou malých obrázkov. Dobrý kandif'dát je EMOJI"
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000082 – Ako urobiť text v MD atraktívnejší (emoji)"
 date: "2025-09-28"
 sidebar_position: "82"
+sidebar_label: "K000082 – Ako urobiť text v MD atraktívnejší (emoji)"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

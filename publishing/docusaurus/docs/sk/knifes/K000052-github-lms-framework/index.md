@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000052"
 guid: "37c1ee83-aa1c-4a67-a8f5-ed3fdae3e7aa"
 dao: "knife"
-title: "GitHub LMS Framework"
+title: "K000052 – GitHub LMS Framework"
 description: "GUID: 37c1ee83-aa1c-4a67-a8f5-ed3fdae3e7aa\\nStatus: new · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000052 – GitHub LMS Framework"
 date: "2025-09-17"
 sidebar_position: "52"
+sidebar_label: "K000052 – GitHub LMS Framework"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

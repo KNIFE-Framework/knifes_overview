@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000075"
 guid: "8566c5a6-e260-4cb7-bf8e-d7eedc89bf7f"
 dao: "knife"
-title: "Lean canvas"
+title: "K000075 – Lean canvas"
 description: "Implemetácia Lean canvas do celkového frameworku pre podporu vytvárania riešení. Patrí ku metodike Q12"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000075 – Lean canvas"
 date: "2025-09-17"
 sidebar_position: "75"
+sidebar_label: "K000075 – Lean canvas"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

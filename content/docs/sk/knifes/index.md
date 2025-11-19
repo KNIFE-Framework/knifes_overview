@@ -5,7 +5,7 @@ fm_version_comment: "Stabilné ID/slug pre navigáciu (hub + SK + EN)"
 id: SK_KNIFES_HOME
 guid: "fae1ca43-0ec4-4fea-9306-4490f5d3e13d"
 dao: "knife"
-title: "KNIFES (SK)"
+title: "SK_KNIFES_HOME – KNIFES (SK)"
 description: "Úvod do KNIFES sekcie."
 author: "Roman Kazička"
 authors: ["Roman Kazička"]
@@ -32,7 +32,9 @@ author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
 sidebar_position: 1
+sidebar_label: "SK_KNIFES_HOME – KNIFES (SK)"
 ---
+
 # KNIFES (SK)
 
 Rozcestník KNIFE príspevkov.

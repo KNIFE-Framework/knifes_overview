@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000004"
 guid: "76ab8f65-0259-48ab-adbf-86cfa6a80d57"
 dao: "knife"
-title: "Docker pre študentov (K12)"
+title: "K000004 – Docker pre študentov (K12)"
 description: "Zjednodušené návody a obrázky pre začiatočníkov"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000004 – Docker pre študentov (K12)"
 date: "2025-09-17"
 sidebar_position: "4"
+sidebar_label: "K000004 – Docker pre študentov (K12)"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

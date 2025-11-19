@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000068"
 guid: "bfb1bccf-cf2c-4d8a-bc29-c00c6b7e1b8e"
 dao: "knife"
-title: "Kruhový portrét v GIMP"
+title: "K000068 – Kruhový portrét v GIMP"
 description: "Pri publikovaní na Web potrebujem kruhový formát obrázkov. Najjednoduchšie je použiť GIMP. Práca na 5 minút"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000068 – Kruhový portrét v GIMP"
 date: "2025-09-17"
 sidebar_position: "68"
+sidebar_label: "K000068 – Kruhový portrét v GIMP"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

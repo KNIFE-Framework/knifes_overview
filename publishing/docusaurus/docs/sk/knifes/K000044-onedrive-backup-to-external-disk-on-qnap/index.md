@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000044"
 guid: "dee65721-5f92-4cf5-8a45-0dd0ace2a7e9"
 dao: "knife"
-title: "OneDrive backup to external disk on QNAP"
+title: "K000044 – OneDrive backup to external disk on QNAP"
 description: "This KNIFE explains how to create a full backup of your OneDrive data in cases where the local disk does not have sufficient capacity to mirror the entire cloud content. When 'Files On-Demand' is enabled, standard tools are unable to copy files – they can at best read their metadata. However, using tools like `rclone`, it becomes possible to back up the cloud directly without needing local mirroring."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000044 – OneDrive backup to external disk on QNAP"
 date: "2025-09-17"
 sidebar_position: "44"
+sidebar_label: "K000044 – OneDrive backup to external disk on QNAP"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

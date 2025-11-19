@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000021"
 guid: "48dbd9ae-966a-4a5b-8eda-bd4257793384"
 dao: "knife"
-title: "Princíp udržateľnosti v architektúre"
+title: "K000021 – Princíp udržateľnosti v architektúre"
 description: "Architektonické a dizajnové rozhodnutia s ohľadom na stabilitu a dlhodobosť"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000021 – Princíp udržateľnosti v architektúre"
 date: "2025-09-17"
 sidebar_position: "21"
+sidebar_label: "K000021 – Princíp udržateľnosti v architektúre"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -10,7 +10,7 @@ guid: "eb2e1db1-04e1-47df-b143-29b1113c2ca0"
 
 # 🧭 Context
 dao: "knife"
-title: "RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)"
+title: "K000088 – RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)"
 description: "Ako diagnostikovať závadu v aute keď sa nedá naštartovať a servis je ďaleko? OBDII môže byť pomôcka"
 
 # 👥 Authorship
@@ -48,7 +48,9 @@ origin_system: "mix"
 # 🧱 Reserved / Future use
 fm_reserved1: ""
 fm_reserved2: ""
+sidebar_label: "K000088 – RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)"
 ---
+
 # RCA-OBDII Wifi Adaptér nekomunikuje s autom(Android OS?)
 > KNIFE K000088 created by Roman Kazička on 2025-11-07  
 > GUID: eb2e1db1-04e1-47df-b143-29b1113c2ca0

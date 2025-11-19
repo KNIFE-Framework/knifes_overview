@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000024"
 guid: "18f0681d-54db-4a41-a7fd-b77386a7299e"
 dao: "knife"
-title: "OneNote ako zdroj metadát pre AI"
+title: "K000024 – OneNote ako zdroj metadát pre AI"
 description: "Prepájanie osobného poznámkového systému s AI klientom a projektmi"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000024 – OneNote ako zdroj metadát pre AI"
 date: "2025-09-17"
 sidebar_position: "24"
+sidebar_label: "K000024 – OneNote ako zdroj metadát pre AI"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

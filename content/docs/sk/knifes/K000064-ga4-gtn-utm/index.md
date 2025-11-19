@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000064"
 guid: "fd7b354d-8ead-42aa-a615-e545c5c13cd1"
 dao: "knife"
-title: "GA4, GTN, UTM"
+title: "K000064 – GA4, GTN, UTM"
 description: "Ako funguje AG4, TGM a UTM?"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000064 – GA4, GTN, UTM"
 date: "2025-09-17"
 sidebar_position: "64"
+sidebar_label: "K000064 – GA4, GTN, UTM"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000035"
 guid: "a0dd0165-5fd8-4d56-b1e5-46b014bf6dd6"
 dao: "knife"
-title: "Context Aware Solutions / paradigma, solution"
+title: "K000035 – Context Aware Solutions / paradigma, solution"
 description: ""
 author: "Roman Kazicka"
 authors: ["Roman Kazicka",""]
@@ -32,7 +32,9 @@ author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "Context Aware Solutions / paradigma, solution"
+sidebar_label: "K000035 – Context Aware Solutions / paradigma, solution"
 ---
+
 # Context Aware Solutions / paradigma, solution
 
 <!-- fm-visible: start -->

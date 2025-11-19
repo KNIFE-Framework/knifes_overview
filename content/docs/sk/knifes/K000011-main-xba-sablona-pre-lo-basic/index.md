@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000011"
 guid: "f5282c5a-cda6-4028-8f5a-ce9d3637c5c8"
 dao: "knife"
-title: "Main.xba šablóna pre LO Basic"
+title: "K000011 – Main.xba šablóna pre LO Basic"
 description: "Základná štartovacia knižnica makier v LibreOffice"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000011 – Main.xba šablóna pre LO Basic"
 date: "2025-09-17"
 sidebar_position: "11"
+sidebar_label: "K000011 – Main.xba šablóna pre LO Basic"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

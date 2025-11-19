@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000007"
 guid: "745a9616-e53d-4a82-b14d-7e7fbf8bfef8"
 dao: "knife"
-title: "Helper skript na obrázky v Markdown"
+title: "K000007 – Helper skript na obrázky v Markdown"
 description: "Generovanie obrázkových blokov do .md vrátane URL"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000007 – Helper skript na obrázky v Markdown"
 date: "2025-09-17"
 sidebar_position: "7"
+sidebar_label: "K000007 – Helper skript na obrázky v Markdown"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

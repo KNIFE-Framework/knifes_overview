@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000054"
 guid: "e6a19133-a51b-4041-a811-6ccd8611fde0"
 dao: "knife"
-title: "Docusaurus Advanced Deployment Pipeline"
+title: "K000054 – Docusaurus Advanced Deployment Pipeline"
 description: "Kontrola referencií v Docusaurus/MkDocs"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000054 – Docusaurus Advanced Deployment Pipeline"
 date: "2025-09-17"
 sidebar_position: "54"
+sidebar_label: "K000054 – Docusaurus Advanced Deployment Pipeline"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

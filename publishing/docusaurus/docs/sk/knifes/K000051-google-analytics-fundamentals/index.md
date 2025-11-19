@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000051"
 guid: "9b195cd2-e816-41b8-98be-a2a0a76538ef"
 dao: "knife"
-title: "Google analytics – Fundamentals"
+title: "K000051 – Google analytics – Fundamentals"
 description: "Bez spätnej väzby je všetko náročnejšie. GA4 poskytuje marketingové spätné väzby"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000051 – Google analytics – Fundamentals"
 date: "2025-09-17"
 sidebar_position: "51"
+sidebar_label: "K000051 – Google analytics – Fundamentals"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

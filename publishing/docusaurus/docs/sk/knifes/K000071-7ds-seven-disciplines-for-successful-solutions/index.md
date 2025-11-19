@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000071"
 guid: "d0c8a434-fc6d-4444-8c4e-7577fd78dc0a"
 dao: "knife"
-title: "7Ds-Seven Disciplines for successful solutions"
+title: "K000071 – 7Ds-Seven Disciplines for successful solutions"
 description: "Metodika je zameraná na podporu aktivít v rámci SDLC. Každá potencálna iformácia má svoje miesto. A je úplne jedno v akej technológií sa implementuje."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000071 – 7Ds-Seven Disciplines for successful solutions"
 date: "2025-09-17"
 sidebar_position: "71"
+sidebar_label: "K000071 – 7Ds-Seven Disciplines for successful solutions"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

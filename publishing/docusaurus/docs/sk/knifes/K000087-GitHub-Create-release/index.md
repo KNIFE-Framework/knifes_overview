@@ -10,7 +10,7 @@ guid: "39f18657-40e8-496b-80a3-b82c535478b4"
 
 # 🧭 Context
 dao: "knife"
-title: "GitHub-Create Release"
+title: "K000087 – GitHub-Create Release"
 description: ""
 
 # 👥 Authorship
@@ -48,6 +48,7 @@ origin_system: "mix"
 # 🧱 Reserved / Future use
 fm_reserved1: ""
 fm_reserved2: ""
+sidebar_label: "K000087 – GitHub-Create Release"
 ---
 
 <!-- nav:knifes -->
@@ -76,4 +77,3 @@ fm_reserved2: ""
 ## 💡 Tipy a poznámky
 
 ## ✅ Hodnota / Zhrnutie
-

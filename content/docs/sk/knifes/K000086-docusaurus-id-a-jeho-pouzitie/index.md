@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000086"
 guid: "9e070810-b93a-46e3-89cc-ea0ec118e9df"
 dao: "knife"
-title: "Docusaurus-ID-a-jeho-pouzitie"
+title: "K000086 – Docusaurus-ID-a-jeho-pouzitie"
 description: ""
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -31,7 +31,9 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
+sidebar_label: "K000086 – Docusaurus-ID-a-jeho-pouzitie"
 ---
+
 # Docusaurus-ID-a-jeho-pouzitie
 
 <!-- nav:knifes -->

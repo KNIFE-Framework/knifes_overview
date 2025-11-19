@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000074"
 guid: "55dc93cb-b910-48ef-8ce7-8a72009286f5"
 dao: "knife"
-title: "SDLC-Solution Development Life Cycle"
+title: "K000074 – SDLC-Solution Development Life Cycle"
 description: "Táto metodika vychádza z univerzálneho V – modelu. Podporuje princíly vuizuálneho manažmentu v rámci celého ťivotného cyklu riešení. To záhŕňa desiatky rolí a stovky rolí v rátane zákazníka, dodávateľa, subdodávateľov, a podnikateľského prostredia, regulátorov, zákonov, politickej situácie"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000074 – SDLC-Solution Development Life Cycle"
 date: "2025-09-17"
 sidebar_position: "74"
+sidebar_label: "K000074 – SDLC-Solution Development Life Cycle"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

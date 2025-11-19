@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000014"
 guid: "56e95dd8-a633-4850-8615-063ce541fc44"
 dao: "knife"
-title: "Manažér knižníc pre LO Basic"
+title: "K000014 – Manažér knižníc pre LO Basic"
 description: "Načítanie a správa knižníc v LO Basic"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000014 – Manažér knižníc pre LO Basic"
 date: "2025-09-17"
 sidebar_position: "14"
+sidebar_label: "K000014 – Manažér knižníc pre LO Basic"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

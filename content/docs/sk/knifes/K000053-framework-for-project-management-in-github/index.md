@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000053"
 guid: "ecadab7c-5f34-4296-864e-7c75f3ed0997"
 dao: "knife"
-title: "Framework for Project Management in GitHUB"
+title: "K000053 – Framework for Project Management in GitHUB"
 description: "Mám strašne veľa tém, veľa úloh, ako to manažovať, aby som sa neutopil v nesplnených úlohách, prípadne nezabudol na dôležité témy a neobjavoval ich znova a znova?"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000053 – Framework for Project Management in GitHUB"
 date: "2025-09-17"
 sidebar_position: "53"
+sidebar_label: "K000053 – Framework for Project Management in GitHUB"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

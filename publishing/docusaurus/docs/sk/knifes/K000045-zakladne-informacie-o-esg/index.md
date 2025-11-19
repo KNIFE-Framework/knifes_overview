@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000045"
 guid: "550e3260-c6ee-402a-9c41-5250e9cd1af3"
 dao: "knife"
-title: "Základné informácie o ESG"
+title: "K000045 – Základné informácie o ESG"
 description: "Environment, Social, Government is crutial topic for human being survival. It is important to understand  the background"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000045 – Základné informácie o ESG"
 date: "2025-09-17"
 sidebar_position: "45"
+sidebar_label: "K000045 – Základné informácie o ESG"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

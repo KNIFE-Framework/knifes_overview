@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000084"
 guid: "c000d02a-b7ed-4e78-a5be-9e8e975445e0"
 dao: "knife"
-title: "Ako aktivovať na GitHube EDU benefity"
+title: "K000084 – Ako aktivovať na GitHube EDU benefity"
 description: "Pokiaľ  spĺňa používateľ kritériá GitHub, môže dostať pre seba pre svoj profil status člena EDU organizácie. Má to viaceroo výhod ako Sites pre privátne repositáre, čo by stálo 3€/mesiac. Detailnejšie v inom Knife. V tomto príspevku je samotná aktivácia týchto benefitov"
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000084 – Ako aktivovať na GitHube EDU benefity"
 date: "2025-09-25"
 sidebar_position: "84"
+sidebar_label: "K000084 – Ako aktivovať na GitHube EDU benefity"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

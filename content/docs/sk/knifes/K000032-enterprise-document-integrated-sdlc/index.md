@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000032"
 guid: "d7f03d39-ef27-4747-96b3-1ed94589eb90"
 dao: "knife"
-title: "Enterprise Document-integrated SDLC"
+title: "K000032 – Enterprise Document-integrated SDLC"
 description: "Zavedenie Git-based dokumentačného frameworku pre prepojenie požiadaviek, rozhodnutí a architektúr naprieč SDLC vo firemnom prostredí s množstvom stakeholderov, JIRA taskov, externých dodávateľov a zložitým change manažmentom."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000032 – „Enterprise Document-integrated SDLC\\\\\\\\\\\\\\\""
 date: "2025-09-17"
 sidebar_position: "32"
+sidebar_label: "K000032 – Enterprise Document-integrated SDLC"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

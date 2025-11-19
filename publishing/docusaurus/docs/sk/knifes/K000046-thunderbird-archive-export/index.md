@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000046"
 guid: "b045421e-412b-4e20-b0ad-ebe5e1fbed9f"
 dao: "knife"
-title: "Thunderbird – Archive-export"
+title: "K000046 – Thunderbird – Archive-export"
 description: "Omylom som poslal e-mail do archivu. Mam v  poste asi 60GB udajov. Ako to riesit?"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000046 – Thunderbird – Archive-export"
 date: "2025-09-17"
 sidebar_position: "46"
+sidebar_label: "K000046 – Thunderbird – Archive-export"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -18,7 +18,7 @@ guid: "ea330316-5451-4251-be58-caf1c163e86a"
 # Typ entity (knife, q12, sdlc, 7ds, thesei…)
 dao: "knife"
 # Názov / titul príspevku
-title: "VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max"
+title: "K000090 – VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max"
 # Krátky popis účelu alebo kontextu
 description: ""
 
@@ -90,6 +90,7 @@ origin_import_date: ""
 # 🧱 Reserved / Future use
 fm_reserved1: ""
 fm_reserved2: ""
+sidebar_label: "K000090 – VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max"
 ---
 
 <!-- body:start -->

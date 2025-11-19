@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "REF-UAT-001"
 guid: "63773bd8-2732-4e66-8aee-00deb8db06a1"
 dao: "knife"
-title: "Postup pre presun zmien z vetvy FIX do UAT"
+title: "REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT"
 description: ""
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -32,7 +32,9 @@ author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "Presun zmien z FIX do UAT"
+sidebar_label: "REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT"
 ---
+
 # 🧭 Postup pre presun zmien z vetvy **FIX** do **UAT**
 
 <!-- fm-visible: start -->

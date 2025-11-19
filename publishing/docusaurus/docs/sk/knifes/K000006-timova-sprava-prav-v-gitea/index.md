@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000006"
 guid: "278b53c7-c34d-42b5-8969-3d22e63badd7"
 dao: "knife"
-title: "Tímová správa práv v Gitea"
+title: "K000006 – Tímová správa práv v Gitea"
 description: "Rozdelenie práv podľa tímov, chránené vetvy, PR politiky"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000006 – Tímová správa práv v Gitea"
 date: "2025-09-17"
 sidebar_position: "6"
+sidebar_label: "K000006 – Tímová správa práv v Gitea"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

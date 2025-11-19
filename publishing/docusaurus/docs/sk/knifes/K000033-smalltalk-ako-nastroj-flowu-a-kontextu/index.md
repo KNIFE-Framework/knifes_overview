@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000033"
 guid: "4bf0fa16-972c-4cbc-a923-2d28af33f41d"
 dao: "knife"
-title: "Smalltalk ako nástroj flowu a kontextu"
+title: "K000033 – Smalltalk ako nástroj flowu a kontextu"
 description: "GUID: 4bf0fa16-972c-4cbc-a923-2d28af33f41d\\nStatus: v riešeni · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000033 – Smalltalk ako nástroj flowu a kontextu"
 date: "2025-09-17"
 sidebar_position: "33"
+sidebar_label: "K000033 – Smalltalk ako nástroj flowu a kontextu"
 ---
+
 <!-- body:start -->
 <!-- nav:knifes -->
 <!-- nav:knifes -->

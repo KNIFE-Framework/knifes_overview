@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000083"
 guid: "7e41fe41-1fcc-4dc9-912d-8b422c9ca272"
 dao: "knife"
-title: "Aktualizácia komponentov pre Docusaurus"
+title: "K000083 – Aktualizácia komponentov pre Docusaurus"
 description: "Všetko má životný cyklus. Naše dokumenty, ale aj systémy a nástroje, ktoré používame. Preto nikdy nemáme stabilné, nemenné prostredie. Tak Aj docusaurus sa stále mní a vznikajú závislosti a človek sa môže zblázniť a rieši infraštruktúru a nie to čo potrebuje riešiť."
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000083 – Aktualizácia komponentov pre Docusaurus"
 date: "2025-09-24"
 sidebar_position: "83"
+sidebar_label: "K000083 – Aktualizácia komponentov pre Docusaurus"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

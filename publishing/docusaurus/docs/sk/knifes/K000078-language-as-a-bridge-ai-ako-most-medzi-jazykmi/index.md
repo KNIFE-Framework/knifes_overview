@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000078"
 guid: "9fa013f5-0130-4af4-8e6e-db4ca6d38397"
 dao: "knife"
-title: "Language as a Bridge (AI ako most medzi jazykmi)"
+title: "K000078 – Language as a Bridge (AI ako most medzi jazykmi)"
 description: "Language as a Bridge → implementácia, nástroje, procesy (ako)."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000078 – Language as a Bridge (AI ako most medzi jazykmi)"
 date: "2025-09-17"
 sidebar_position: "78"
+sidebar_label: "K000078 – Language as a Bridge (AI ako most medzi jazykmi)"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

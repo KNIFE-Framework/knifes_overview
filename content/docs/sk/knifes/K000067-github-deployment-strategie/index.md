@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000067"
 guid: "83572f2b-c6d2-4f75-9a41-22457168d71e"
 dao: "knife"
-title: "GitHub Deployment stratégie"
+title: "K000067 – GitHub Deployment stratégie"
 description: "Deployment obsahu v GitHube sa dá vykonať viacerými spôsobmi."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000067 – GitHub Deployment stratégie"
 date: "2025-09-17"
 sidebar_position: "67"
+sidebar_label: "K000067 – GitHub Deployment stratégie"
 ---
+
 <!-- body:start -->
 
 ---

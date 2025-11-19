@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000048"
 guid: "dfd04696-0904-4798-83bd-5e77bb371baf"
 dao: "knife"
-title: "AI – Agent in OpenGPT"
+title: "K000048 – AI – Agent in OpenGPT"
 description: "GUID: dfd04696-0904-4798-83bd-5e77bb371baf\\nStatus: in progress · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000048 – AI – Agent in OpenGPT"
 date: "2025-09-17"
 sidebar_position: "48"
+sidebar_label: "K000048 – AI – Agent in OpenGPT"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000020"
 guid: "9c178019-c50a-4a28-b344-afd80f289523"
 dao: "knife"
-title: "LibreOffice ako komunitná platforma"
+title: "K000020 – LibreOffice ako komunitná platforma"
 description: "Podpora LO ako otvoreného, komunitného štandardu pre udržateľné riešenia"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000020 – LibreOffice ako komunitná platforma"
 date: "2025-09-17"
 sidebar_position: "20"
+sidebar_label: "K000020 – LibreOffice ako komunitná platforma"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

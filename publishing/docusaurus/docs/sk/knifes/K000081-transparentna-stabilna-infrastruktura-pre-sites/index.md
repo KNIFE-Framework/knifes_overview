@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000081"
 guid: "02921a34-5a83-4713-bafa-1be560a98d18"
 dao: "knife"
-title: "Transparentná -Stabilná infraštruktúra pre Sites"
+title: "K000081 – Transparentná -Stabilná infraštruktúra pre Sites"
 description: "Počas práce s GitHub a Pages je potrebné mať zladené prostredie na klientovi a na serveri. Lokál je závislý od OS, od verzií vývojových nástrojov. Ideálne by bolo, keby existovalo stabilné, opakovateľné prostredie pre vytvorenie lokálneho prostredia, bez ohľadu na operačný systém na klientovi – Windows, Mac, Linux."
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000081 – Transparentná -Stabilná infraštruktúra pre Sites"
 date: "2025-09-24"
 sidebar_position: "81"
+sidebar_label: "K000081 – Transparentná -Stabilná infraštruktúra pre Sites"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000012"
 guid: "5c2a2821-7814-4e7f-b479-33fd736bf633"
 dao: "knife"
-title: "EA Workflow Add-In – pokročilé šablóny"
+title: "K000012 – EA Workflow Add-In – pokročilé šablóny"
 description: "Workflow pre pokročilých analytikov v EA"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000012 – EA Workflow Add-In – pokročilé šablóny"
 date: "2025-09-17"
 sidebar_position: "12"
+sidebar_label: "K000012 – EA Workflow Add-In – pokročilé šablóny"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

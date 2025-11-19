@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000028"
 guid: "735d6a47-d44c-40c7-861c-8fca193b68ef"
 dao: "knife"
-title: "Context Aware System Ontology, Approach"
+title: "K000028 – Context Aware System Ontology, Approach"
 description: "Každé riešenie je o kontexte. Neexistuje jeden nástroj na vštky problémy. Toto zasahuje do filozofie."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000028 – Context Aware System Ontology, Approach"
 date: "2025-09-17"
 sidebar_position: "28"
+sidebar_label: "K000028 – Context Aware System Ontology, Approach"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

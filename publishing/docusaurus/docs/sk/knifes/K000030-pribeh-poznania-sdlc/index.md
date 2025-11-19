@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000030"
 guid: "553c7b60-ab06-4412-96dc-84d0ea2fa323"
 dao: "knife"
-title: "Príbeh poznania SDLC"
+title: "K000030 – Príbeh poznania SDLC"
 description: "Pripravujem vzdelávacie kurzy, marketing cez LI, PT, YT, keby som priebezne zverejnoval svoju cestu, mal by som co pisať a bolo by to v kontexte KM, SDLC"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000030 – Príbeh poznania SDLC"
 date: "2025-09-17"
 sidebar_position: "30"
+sidebar_label: "K000030 – Príbeh poznania SDLC"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

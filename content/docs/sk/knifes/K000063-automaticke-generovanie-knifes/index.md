@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000063"
 guid: "32ff770d-25ab-45d7-b8f0-b7857fd53ecb"
 dao: "knife"
-title: "Automatické generovanie KNIFES"
+title: "K000063 – Automatické generovanie KNIFES"
 description: "Ako používať automatizáciu pri generovaní KNIFES"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000063 – Automatické generovanie KNIFES"
 date: "2025-09-17"
 sidebar_position: "63"
+sidebar_label: "K000063 – Automatické generovanie KNIFES"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

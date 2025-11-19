@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000002"
 guid: "6cf87ac0-1644-4134-8c67-8e61da2dca78"
 dao: "knife"
-title: "Git workflow pre EA modely"
+title: "K000002 – Git workflow pre EA modely"
 description: "Multirelease stratégie, LemonTree, merge politiky"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000002 – Git workflow pre EA modely"
 date: "2025-09-17"
 sidebar_position: "2"
+sidebar_label: "K000002 – Git workflow pre EA modely"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

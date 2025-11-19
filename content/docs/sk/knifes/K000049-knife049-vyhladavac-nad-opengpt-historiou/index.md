@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000049"
 guid: "6fa9ddd3-5de1-4c99-ab0f-db87d301f005"
 dao: "knife"
-title: "KNIFE049 – Vyhľadávač nad OpenGPT históriou"
+title: "K000049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 description: "GUID: 6fa9ddd3-5de1-4c99-ab0f-db87d301f005\\nStatus: draft · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 date: "2025-09-17"
 sidebar_position: "49"
+sidebar_label: "K000049 – KNIFE049 – Vyhľadávač nad OpenGPT históriou"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

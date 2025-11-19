@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000070"
 guid: "c5d8b05b-4afb-4618-8ca4-657a78acd5d8"
 dao: "knife"
-title: "EA Fundamentals"
+title: "K000070 – EA Fundamentals"
 description: "GUID: c5d8b05b-4afb-4618-8ca4-657a78acd5d8\\nStatus: new · Author: Roman Kazicka · License: CC-BY-NC-SA-4.0"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000070 – EA Fundamentals"
 date: "2025-09-17"
 sidebar_position: "70"
+sidebar_label: "K000070 – EA Fundamentals"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

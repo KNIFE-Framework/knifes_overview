@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000065"
 guid: "72cf0d0c-72d5-41b7-8b70-06b46e43e8ab"
 dao: "knife"
-title: "MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
+title: "K000065 – MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
 description: "Administrácia ecosystému KNIFE je pomerne komplexná úloha. Framework podporuje MacOS, Windows a Linux. MAKEFIEL umožňuje administráciu z jedného miesta."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000065 – MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
 date: "2025-09-17"
 sidebar_position: "65"
+sidebar_label: "K000065 – MAKEFILE for KNIFE Ecosystem for Mac,Windows, Linux"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

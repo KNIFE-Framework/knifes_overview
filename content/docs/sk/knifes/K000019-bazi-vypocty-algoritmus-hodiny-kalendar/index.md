@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000019"
 guid: "986a2d27-e983-4c02-b17b-f54b5625c188"
 dao: "knife"
-title: "BaZi výpočty – algoritmus, hodiny, kalendár"
+title: "K000019 – BaZi výpočty – algoritmus, hodiny, kalendár"
 description: "Výpočtový rámec BaZi v Pythone alebo Exceli, denné a hodinové analýzy, poradca"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000019 – BaZi výpočty – algoritmus, hodiny, kalendár"
 date: "2025-09-17"
 sidebar_position: "19"
+sidebar_label: "K000019 – BaZi výpočty – algoritmus, hodiny, kalendár"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

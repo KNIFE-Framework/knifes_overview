@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000080"
 guid: "5174fcab-7594-4e7e-8582-7396133dec8c"
 dao: "knife"
-title: "Docusaurus-vs-github-pages-package-json"
+title: "K000080 – Docusaurus-vs-github-pages-package-json"
 description: "Ako vytvoriť OS agnostcké prostredie pre KNIFE? Poznanie architektúry odpovie na otázku jednotného systému pre vývoj KNIFES"
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000080 – Docusaurus-vs-github-pages-package-json"
 date: "2025-09-17"
 sidebar_position: "80"
+sidebar_label: "K000080 – Docusaurus-vs-github-pages-package-json"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

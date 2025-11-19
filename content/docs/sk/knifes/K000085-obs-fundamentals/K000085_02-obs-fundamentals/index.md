@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000085_02"
 guid: "44c57f49-30f3-468c-ab27-583972c5ee3a"
 dao: "knife"
-title: "OBS Fundamentals – Základy nahrávania a správy scén"
+title: "K000085_02 – OBS Fundamentals – Základy nahrávania a správy scén"
 description: " Základy práce s OBS v kontexte tvorny multimediálneho obsahu"
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -32,7 +32,9 @@ author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "HOBS-Fundamentals"
+sidebar_label: "K000085_02 – OBS Fundamentals – Základy nahrávania a správy scén"
 ---
+
 # 🎥 OBS Fundamentals – Základy nahrávania a správy scén
 
 <!-- fm-visible: start -->

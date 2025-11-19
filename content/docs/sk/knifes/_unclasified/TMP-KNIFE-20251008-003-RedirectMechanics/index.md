@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "TMP-KNIFE-20251008-002-TMP-KNIFE-20251008-003-RedirectMechanics"
 guid: "b4c6f7e2-63a8-45e9-b3de-4b9c74c119f9"
 dao: "LetItGrow-FieldNotes"
-title: "Ako LinkedIn skracuje odkazy a čo s tým"
+title: "TMP-KNIFE-20251008-002-TMP-KNIFE-20251008-003-RedirectMechanics – Ako LinkedIn skracuje odkazy a čo s tým"
 description: "Pozorovanie a riešenie správania LinkedInu, ktorý automaticky prepisuje všetky odkazy na lnkd.in – a ako si zachovať vlastný brand pomocou vlastného presmerovania (napr. /go/ alebo bit.ly)."
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -33,7 +33,9 @@ fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "Ako LinkedIn skracuje odkazy a čo s tým"
 short_title: "LinkedIn a skracovanie URL"
+sidebar_label: "TMP-KNIFE-20251008-002-TMP-KNIFE-20251008-003-RedirectMechanics – Ako LinkedIn skracuje odkazy a čo s tým"
 ---
+
 # 🔗 Ako LinkedIn skracuje odkazy a čo s tým
 
 <!-- fm-visible: start -->

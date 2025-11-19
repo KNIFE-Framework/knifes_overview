@@ -18,7 +18,7 @@ guid: "29e6bd9c-4ae5-46fa-9b8d-609dba1aef2f"
 # Typ entity (knife, q12, sdlc, 7ds, thesei…)
 dao: "knife"
 # Názov / titul príspevku
-title: "Krátka história Git – Linus Torvalds"
+title: "K000091 – Krátka história Git – Linus Torvalds"
 # Krátky popis účelu alebo kontextu
 description: ""
 
@@ -90,7 +90,9 @@ origin_import_date: ""
 # 🧱 Reserved / Future use
 fm_reserved1: ""
 fm_reserved2: ""
+sidebar_label: "K000091 – Krátka história Git – Linus Torvalds"
 ---
+
 # Krátka história Git – Linus Torvalds
 <!-- body:start -->
 

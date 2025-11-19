@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000040"
 guid: "c96e9214-93fc-4799-ae2d-43fa543430fd"
 dao: "knife"
-title: "Migracia Joomla -->GitHUB MkDocs"
+title: "K000040 – Migracia Joomla -->GitHUB MkDocs"
 description: "Zachovať históriu kurzu (2017–2025), udržať všetko v jednom hlavnom repozitári"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000040 – Migracia Joomla -->GitHUB MkDocs"
 date: "2025-09-17"
 sidebar_position: "40"
+sidebar_label: "K000040 – Migracia Joomla -->GitHUB MkDocs"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

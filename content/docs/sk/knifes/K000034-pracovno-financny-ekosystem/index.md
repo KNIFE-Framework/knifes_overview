@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000034"
 guid: "cd2b41b5-45c1-4464-9c35-94ad9309bbea"
 dao: "knife"
-title: "Pracovno, finančný ekosystém"
+title: "K000034 – Pracovno, finančný ekosystém"
 description: ""
 author: "Roman Kazicka"
 authors: ["Roman Kazicka",""]
@@ -32,7 +32,9 @@ author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
 #sidebar_label: "Pracovno, finančný ekosystém"
+sidebar_label: "K000034 – Pracovno, finančný ekosystém"
 ---
+
 # Pracovno, finančný ekosystém
 
 <!-- fm-visible: start -->

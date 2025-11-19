@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000005"
 guid: "610c8ab7-dffb-4172-bf31-0fd95e5102dd"
 dao: "knife"
-title: "BaZi pre racionálne duše"
+title: "K000005 – BaZi pre racionálne duše"
 description: "Sebapoznanie cez dátum a čas narodenia (BaZi)"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000005 – BaZi pre racionálne duše"
 date: "2025-09-17"
 sidebar_position: "5"
+sidebar_label: "K000005 – BaZi pre racionálne duše"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

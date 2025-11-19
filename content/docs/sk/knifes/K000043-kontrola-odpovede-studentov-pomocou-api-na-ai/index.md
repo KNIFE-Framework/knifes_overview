@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000043"
 guid: "50afe040-3e25-46cc-bb56-8b594dadf3cf"
 dao: "knife"
-title: "Kontrola odpovedé študentov pomocou API na AI"
+title: "K000043 – Kontrola odpovedé študentov pomocou API na AI"
 description: "Pre veľký počet študentov nie je možné kontrolovať odpovede na voľné otázky. AI by mohlo pomôcť."
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000043 – Kontrola odpovedé študentov pomocou API na AI"
 date: "2025-09-17"
 sidebar_position: "43"
+sidebar_label: "K000043 – Kontrola odpovedé študentov pomocou API na AI"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

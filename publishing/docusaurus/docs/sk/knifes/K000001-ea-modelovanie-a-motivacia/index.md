@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000001"
 guid: "728afefa-b72f-4aa6-b31e-4a388cdd7a46"
 dao: "knife"
-title: "EA modelovanie a motivácia"
+title: "K000001 – EA modelovanie a motivácia"
 description: "Systém motivácie pomocou lízaniek a spätnej väzby"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000001 – EA modelovanie a motivácia"
 date: "2025-09-17"
 sidebar_position: "1"
+sidebar_label: "K000001 – EA modelovanie a motivácia"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000061"
 guid: "35066cd7-1202-4c04-9cfe-02512ca5fa7f"
 dao: "knife"
-title: "Passkey ako bezpečnostný koncept"
+title: "K000061 – Passkey ako bezpečnostný koncept"
 description: "Ako funguje keypass?"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000061 – Passkey ako bezpečnostný koncept"
 date: "2025-09-17"
 sidebar_position: "61"
+sidebar_label: "K000061 – Passkey ako bezpečnostný koncept"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

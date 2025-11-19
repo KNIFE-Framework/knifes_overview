@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000079"
 guid: "d668f12d-7a40-4940-998f-13dba8edeb2b"
 dao: "knife"
-title: "Čo znamená slovo že je niečo idempotentné?"
+title: "K000079 – Čo znamená slovo že je niečo idempotentné?"
 description: "Dosť často sa začalo používať slovo idempotentná operácia. Ako to ale vzniklo? Prečo to vzniklo?"
 author: "Roman Kazička"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000079 – Čo znamená slovo že je niečo idempotentné?"
 date: "2025-09-17"
 sidebar_position: "79"
+sidebar_label: "K000079 – Čo znamená slovo že je niečo idempotentné?"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

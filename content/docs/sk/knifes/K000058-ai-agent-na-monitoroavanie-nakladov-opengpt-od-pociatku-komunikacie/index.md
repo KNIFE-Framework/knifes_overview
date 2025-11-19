@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000058"
 guid: "51d82867-eba4-49e4-a6fb-977cf669c250"
 dao: "knife"
-title: "AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie"
+title: "K000058 – AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie"
 description: "Aká bola intenzita komunikácie od začiatku, koľko by to stálo cez API, Ktoré témy skonzumovali najviac energie?"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000058 – AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie"
 date: "2025-09-17"
 sidebar_position: "58"
+sidebar_label: "K000058 – AI Agent na monitoroavanie nákladov OpenGPT od počiatku komunikácie"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

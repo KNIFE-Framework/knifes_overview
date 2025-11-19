@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000060"
 guid: "df47b738-87e7-4385-af12-555ac3e1666b"
 dao: "knife"
-title: "Export Draw.io diagramu do A4 PNG"
+title: "K000060 – Export Draw.io diagramu do A4 PNG"
 description: "Ako pripraviť Drawio obázok aby sa vždy vmestil na A4 formát?"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000060 – Export Draw.io diagramu do A4 PNG"
 date: "2025-09-17"
 sidebar_position: "60"
+sidebar_label: "K000060 – Export Draw.io diagramu do A4 PNG"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000016"
 guid: "daf7cda8-38d2-4206-84f7-1cdc8a169276"
 dao: "knife"
-title: "Helper skript pre LO symbolic link"
+title: "K000016 – Helper skript pre LO symbolic link"
 description: "Obnova symbolic linku pre user/scripts/"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000016 – Helper skript pre LO symbolic link"
 date: "2025-09-17"
 sidebar_position: "16"
+sidebar_label: "K000016 – Helper skript pre LO symbolic link"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

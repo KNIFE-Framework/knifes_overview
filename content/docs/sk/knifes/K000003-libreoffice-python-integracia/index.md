@@ -5,7 +5,7 @@ fm_version_comment: "Added field fm_version_comment to document reasons for FM u
 id: "K000003"
 guid: "dd435f3c-8a1d-4fc0-b873-12645f6aa10f"
 dao: "knife"
-title: "LibreOffice + Python integrácia"
+title: "K000003 – LibreOffice + Python integrácia"
 description: "Skriptovanie v LO cez Python a venv izolácie"
 author: "Roman Kazicka"
 authors: ["Roman Kazička",""]
@@ -34,7 +34,9 @@ fm_reserved2: ""
 #sidebar_label: "K000003 – LibreOffice + Python integrácia"
 date: "2025-09-17"
 sidebar_position: "3"
+sidebar_label: "K000003 – LibreOffice + Python integrácia"
 ---
+
 <!-- body:start -->
 
 <!-- nav:knifes -->

@@ -67,3 +67,6 @@ Ako by sa projekt mohol rozvíjať ďalej?
 
 
 ---
+
+## Navigácia
+- [↩️ Späť](../index.md)

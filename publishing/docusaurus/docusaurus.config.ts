@@ -58,7 +58,7 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'KNIFE',
+      title: 'KNIFE Overview',
       logo: {
         alt: 'KNIFE',
         src: 'img/logo.png',
@@ -68,7 +68,8 @@ const config: Config = {
       },
       items: [
         { type: 'localeDropdown', position: 'left' },
-        // malý “chip” s build info vpravo
+        { to: '/sk/about', label: 'About', position: 'right' },
+        { to: '/sk/help',  label: 'Help',  position: 'right' },
         {
           href: commitLink || '#',
           label: `Release ${RELEASE_TAG} • ${COMMIT_SHA}`,

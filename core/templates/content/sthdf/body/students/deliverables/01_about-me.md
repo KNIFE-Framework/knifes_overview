@@ -14,3 +14,6 @@
 - Čo očakávam od spolupráce s tímom a komunitou 
 ## 🚀 Čo viem ponúknuť
 - Čo chcem ponúknuť v rámci kurzu 
+
+## Navigácia
+- [↩️ Späť](../index.md)

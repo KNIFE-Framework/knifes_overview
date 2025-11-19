@@ -79,6 +79,15 @@ KNIFES_DIR   ?= content/docs/$(LOCALE)/knifes
 # SDLC / Q12 scaffold dirs
 SDLC_DIR ?= content/docs/$(LOCALE)/sdlc
 Q12_DIR  ?= content/docs/$(LOCALE)/q12
+STHDF_DIR ?= content/docs/$(LOCALE)/sthdf
+
+# Ako sa má generator správať, keď cieľový súbor/priečinok už existuje.
+# Povolené hodnoty (mapujú sa na --exists v new_item_instance.py):
+#  - skip   ... (default) nič neprepíše, existujúce súbory ponechá
+#  - error  ... skončí chybou, ak niečo existuje
+#  - replace... prepíše/generuje nanovo podľa templatu
+#  - merge  ... rezervované do budúcna, teraz = skip
+EXISTS ?= skip
 
 # ─────────────────────────────────────────────────────────
 # HELP (autogenerovaný z „##“ popisov)
@@ -88,54 +97,63 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@printf "\n\033[1mKNIFE Makefile – Help (so sekciami)\033[0m\n"
 	@printf "Built at: %s\n\n" "$(BUILD_DATE)"
 
-	@printf "\033[1;34m🧩 CORE / BUILD / SERVE\033[0m\n"
+	@printf "\033[1;90m🧩 CORE / BUILD / SERVE\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
 	@awk 'BEGIN{FS=":.*## "};/^(SY00-clean-pubdocs|SY01-sync-content|dev|build|build-fast|build-clean|serve):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
-	@printf "\033[1;94m📦 INSTANCE SCOPE\033[0m\n"
+	@printf "\033[1;90m📦 INSTANCE SCOPE\033[0m\n"
 	@echo " LOCALE   = $(LOCALE)"
 	@echo " INSTANCE = $(INSTANCE)"
 	@bash -c 'ROOT_BASE="content/docs/$(LOCALE)/7Ds"; if [ -n "$(INSTANCE)" ]; then ROOT_PATH="content/docs/$(LOCALE)/$(INSTANCE)"; else ROOT_PATH="$$ROOT_BASE"; fi; echo " TARGET ROOT → $$ROOT_PATH"'
 	@printf " Pattern: make D12-7ds-apply INSTANCE=sthdf_2025 LOCALE=sk\n"
 	@printf " \033[36m%-28s\033[0m | %s\n" "new-item-instance" "Vytvorí novú inštanciu frameworku (TYPE, NAME, TITLE)"
+	@printf " \033[36m%-28s\033[0m | %s\n" "S21-sdlc-new" "SDLC inštancia (SDLC_NAME, SDLC_TITLE, LOCALE)"
+	@printf " \033[36m%-28s\033[0m | %s\n" "Q21-q12-new"  "Q12 inštancia (Q12_NAME, Q12_TITLE, LOCALE)"
+	@printf " \033[36m%-28s\033[0m | %s\n" "S31-sthdf-new" "STHDF inštancia (STHDF_NAME, STHDF_TITLE, LOCALE)"
 	@printf "\n"
 
 	@printf "\033[1;33m🚀 DEPLOY / WORKTREE\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(deploy):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(deploy):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
 	@printf "\033[1;32m🧾 FRONT MATTER (FM)\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(FM[0-9]+-[a-zA-Z0-9-]+):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(FM[0-9]+-[a-zA-Z0-9-]+):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
-	@printf "\033[1;35m📚 KNIFE TOOLS\033[0m\n"
+	@printf "\033[1;90m📚 KNIFE TOOLS\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(knifes[-a-z]+):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(knifes[-a-z]+):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
-	@printf "\033[1;36m🌱 7Ds TOOLS\033[0m\n"
+	@printf "\033[1;90m🌱 7Ds TOOLS\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(D[0-9]+-[a-zA-Z0-9-]+|FM7[0-9]+-[a-zA-Z0-9-]+):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(D[0-9]+-[a-zA-Z0-9-]+|FM7[0-9]+-[a-zA-Z0-9-]+):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
-	@printf "\033[1;90m📐 SDLC (placeholders)\033[0m\n"
+	@printf " \033[1;90m 📐 SDLC (Solution Develepment Life Cycle)\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(S[0-9]+-[a-zA-Z0-9-]+):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(S11-sdlc-dry|S12-sdlc-apply|S21-sdlc-new):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
-	@printf "\033[1;90m🔢 Q12 (placeholders)\033[0m\n"
+	@printf "\033[1;90m🎓 STHDF (class instance)\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(Q[0-9]+-[a-zA-Z0-9-]+):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(S31-sthdf-new):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@printf "\n"
+
+	@printf "\033[1;90m🔢 Q12 (Twelve Quadrants)\033[0m\n"
+	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
+	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
+	@awk 'BEGIN{FS=":.*## "};/^(Q[0-9]+-[a-zA-Z0-9-]+):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
 	@printf "\033[1;90m📜 THESIS (placeholders)\033[0m\n"
@@ -147,7 +165,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@printf "\033[1;37m🩺 DIAGNOSTIKA / UTIL\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(doctor|print-[a-z]+|print-locale|mode|validate-instance|help|help\+):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(doctor|print-[a-z]+|print-locale|mode|validate-instance|help|help\+):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
 	@printf "\033[1m📘 Examples\033[0m\n"
@@ -293,7 +311,8 @@ new-item-instance: ## Vytvorí novú inštanciu frameworku (TYPE, NAME, TITLE)
 		--type "$(TYPE)" \
 		--name "$(NAME)" \
 		--title "$(TITLE)" \
-		--output "content/docs/$(LOCALE)"
+		--output "content/docs/$(LOCALE)" \
+		--exists "$(EXISTS)"
 	@echo "✅ Instance created: $(TYPE)_$(NAME)"
 
 # ─────────────────────────────────────────────────────────
@@ -410,7 +429,8 @@ knifes-new: ## Vytvorí novú KNIFE (id=K000123 name="..." title="...")
 	  --name "$(name)" \
 	  --title "$(title)" \
 	  $(if $(id),--id "$(id)",) \
-	  --output "content/docs/$(LOCALE)/knifes"
+	  --output "content/docs/$(LOCALE)/knifes" \
+	  --exists "$(EXISTS)"
 	@echo "✅ Hotovo: content/docs/$(LOCALE)/knifes/$(if $(id),$(id)-,knife_)$(name)/index.md"
 
 knifes-overview: ## Zregeneruje KNIFE prehľady (Blog/List/Details)
@@ -465,6 +485,23 @@ print-vars: ## Vypíše kľúčové premenné
 print-locale: ## Vypíše aktuálne LOCALE a DS_LOCALE
 	@echo "[LOCALE]    = $(LOCALE)"
 	@echo "[DS_LOCALE] = $(DS_LOCALE)"
+
+# Validate INSTANCE variable format
+.PHONY: validate-instance
+validate-instance: ## Overí konvenciu INSTANCE (<typ>_<meno>)
+	@if [ -z "$(INSTANCE)" ]; then \
+	  echo "❌ INSTANCE nie je nastavené. Použi napr. INSTANCE=7ds_sthdf_2025"; \
+	  exit 1; \
+	fi; \
+	BASE="$${INSTANCE%%_*}"; \
+	NAME="$${INSTANCE#*_}"; \
+	if [ -z "$$BASE" ] || [ "$$BASE" = "$$NAME" ] || [ -z "$$NAME" ]; then \
+	  echo "❌ INSTANCE musí byť vo formáte <typ>_<meno>, napr. 7ds_sthdf_2025"; \
+	  exit 1; \
+	fi; \
+	echo "✅ INSTANCE OK"; \
+	echo " • TYPE = $$BASE"; \
+	echo " • NAME = $$NAME";
 # ─────────────────────────────────────────────────────────
 # HELP+: praktické príklady (copy‑paste)
 # ─────────────────────────────────────────────────────────
@@ -493,9 +530,11 @@ help-examples:
 	@printf " %-40s | %s\n" "make FM20-fix-apply" "APPLY normalizácie FM (zapisuje)"
 	@printf "\n"
 	@printf " %-40s | %s\n" "make D11-7ds-dry INSTANCE=7ds_sthdf_2025 LOCALE=sk" "Scaffold 7Ds (DRY) do /sk/7ds_sthdf_2025"
+	@printf " %-40s | %s\n" "make S31-sthdf-new STHDF_NAME=sthdf_2025 STHDF_TITLE='STHDF 2025/2026' LOCALE=sk [EXISTS=skip|replace|error]" "Vytvorí alebo re‑vygeneruje STHDF inštanciu cez generátor"
 	@printf " %-40s | %s\n" "make D12-7ds-apply INSTANCE=7ds_sthdf_2025 LOCALE=sk" "Scaffold 7Ds (APPLY) do /sk/7ds_sthdf_2025"
 	@printf " %-40s | %s\n" "make validate-instance INSTANCE=7ds_sthdf_2025" "Overí konvenciu INSTANCE (<typ>_<meno>)"
-	@printf " %-40s | %s\n" "make knifes-new id=K000123 name=... title=..." "Vytvorí kostru nového KNIFE (index.md + FM)"
+	@printf " %-40s | %s\n" "make knifes-new id=K000123 name=... title=... [EXISTS=skip|replace|error]" "Vytvorí kostru nového KNIFE (index.md + FM)"
+	@printf " %-40s | %s\n" "make knifes-new id=K000123 name=... title=... EXISTS=replace" "Znovu vygeneruje KNIFE aj keď priečinok už existuje"
 	@printf " %-40s | %s\n" "make knifes-overview" "Zregeneruje prehľady (Blog/List/Details)"
 	@printf " %-40s | %s\n" "make knifes-overview KNIFE_DEBUG=1" "Spustí prehľady s --debug (diagnostika zberu položiek)"
 	@printf " %-40s | %s\n" "make knifes-build-dry" "CSV → MD build (DRY) podľa configu"
@@ -514,8 +553,9 @@ help+: help-examples
 # ─────────────────────────────────────────────────────────
 # SDLC / Q12 – scaffold cez univerzálny generátor
 # ─────────────────────────────────────────────────────────
-.PHONY: S21-sdlc-new Q21-q12-new
+.PHONY: S21-sdlc-new S31-sthdf-new Q21-q12-new
 
+# SDLC / Q12 / STHDF – scaffold cez univerzálny generátor
 S21-sdlc-new: ## SDLC: vytvor novú SDLC inštanciu (SDLC_NAME=..., SDLC_TITLE=...)
 	@if [ -z "$(SDLC_NAME)" ] || [ -z "$(SDLC_TITLE)" ]; then \
 		echo "❌ Usage: make S21-sdlc-new SDLC_NAME=integration SDLC_TITLE='Integration Project' LOCALE=sk"; \
@@ -526,7 +566,8 @@ S21-sdlc-new: ## SDLC: vytvor novú SDLC inštanciu (SDLC_NAME=..., SDLC_TITLE=.
 		--type sdlc \
 		--name "$(SDLC_NAME)" \
 		--title "$(SDLC_TITLE)" \
-		--output "$(SDLC_DIR)"
+		--output "$(SDLC_DIR)" \
+		--exists "$(EXISTS)"
 	@echo "✅ SDLC created: $(SDLC_DIR)/sdlc_$(SDLC_NAME)"
 
 Q21-q12-new: ## Q12: vytvor novú Q12 inštanciu (Q12_NAME=..., Q12_TITLE=...)
@@ -539,9 +580,25 @@ Q21-q12-new: ## Q12: vytvor novú Q12 inštanciu (Q12_NAME=..., Q12_TITLE=...)
 		--type q12 \
 		--name "$(Q12_NAME)" \
 		--title "$(Q12_TITLE)" \
-		--output "$(Q12_DIR)"
+		--output "$(Q12_DIR)" \
+		--exists "$(EXISTS)"
 	@echo "✅ Q12 created: $(Q12_DIR)/q12_$(Q12_NAME)"
-
+# ─────────────────────────────────────────────────────────
+# ROADMAP / sthdf
+# ─────────────────────────────────────────────────────────
+S31-sthdf-new: ## STHDF: vytvor novú STHDF inštanciu (STHDF_NAME=..., STHDF_TITLE=...)
+	@if [ -z "$(STHDF_NAME)" ] || [ -z "$(STHDF_TITLE)" ]; then \
+		echo "❌ Usage: make S31-sthdf-new STHDF_NAME=sthdf_2025 STHDF_TITLE='STHDF 2025/2026' LOCALE=sk"; \
+		exit 1; \
+	fi
+	@mkdir -p "$(STHDF_DIR)"
+	@python3 core/scripts/tools/new_item_instance.py \
+		--type sthdf \
+		--name "$(STHDF_NAME)" \
+		--title "$(STHDF_TITLE)" \
+		--output "$(STHDF_DIR)" \
+		--exists "$(EXISTS)"
+	@echo "✅ STHDF created: $(STHDF_DIR)/sthdf_$(STHDF_NAME)"
 # ─────────────────────────────────────────────────────────
 # ROADMAP / TODO – placeholdery (neblokujú CI)
 # ─────────────────────────────────────────────────────────
@@ -581,3 +638,6 @@ Q11-q12-dry: ## 🚧 Q12 scaffold (DRY) – zatiaľ neimplementované
 
 Q12-q12-apply: ## 🚧 Q12 scaffold (APPLY) – zatiaľ neimplementované
 	@echo "🚧 Q12 scaffold (APPLY) – zatiaľ neimplementované"
+
+
+ 

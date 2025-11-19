@@ -21,34 +21,49 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #ff9800;
-  --ifm-color-primary-dark: #e68900;
-  --ifm-color-primary-darker: #cc7a00;
-  --ifm-color-primary-darkest: #b36b00;
-  --ifm-color-primary-light: #ffad33;
-  --ifm-color-primary-lighter: #ffbf66;
-  --ifm-color-primary-lightest: #ffd699;
-  --docusaurus-highlighted-code-line-bg: rgba(92, 64, 51, 0.3);
-  --ifm-background-color: #fb5f109f; /* warm brown page background */
-  --ifm-background-surface-color: #fb5f109f; /* slightly darker content surface */
-  --ifm-navbar-background-color: #fb5f109f; /* navbar background in brown tone */
-  --ifm-menu-color-background-active: #4b3625; /* active menu item with brown accent */
-  --ifm-menu-color-background-hover: #4b3625; /* hover menu item */
-  --ifm-menu-color: #d2b48c; /* text in menu */
-  --ifm-link-color: #ffd166; /* brighter amber links for contrast */
-  --ifm-link-hover-color: #ffe39d; /* lighter on hover */
-  --ifm-link-color-visited: #ffb84d; /* visited state */
-  --ifm-font-color-base: #f7f7f7; /* slightly brighter text */
-  --ifm-heading-color: #ffffff; /* headings remain white */
-  --ifm-color-emphasis-600: #e0e0e0; /* emphasized text */
-  --ifm-color-emphasis-700: #f0f0f0; /* stronger emphasized text */
-  --ifm-navbar-link-color: #f4e7d0;
-  --ifm-navbar-link-hover-color: #ffe0b2;
-  --ifm-navbar-link-active-color: #ffe0b2;
+  /* Primary brown palette */
+  --ifm-color-primary: #c26a2e;
+  --ifm-color-primary-dark: #a85726;
+  --ifm-color-primary-darker: #8f4a20;
+  --ifm-color-primary-darkest: #733a19;
+  --ifm-color-primary-light: #d7814a;
+  --ifm-color-primary-lighter: #e59a69;
+  --ifm-color-primary-lightest: #f2b585;
+
+  /* Backgrounds */
+  --ifm-background-color: #eb990c;           /* hlavné pozadie – veľmi tmavá hnedá */
+  --ifm-background-surface-color: #f1834ce9;   /* povrch (karty, obsah) – o kúsok svetlejšia */
+  --ifm-navbar-background-color: #c94a0bbd;    /* navbar v rovnakej tmavej hnedej */
+
+  /* Sidebar / menu */
+  --ifm-menu-color-background-active: #c8601b;
+  --ifm-menu-color-background-hover: #f85e0c;
+  --ifm-menu-color: #f0e0cf;
+
+  /* Text & headings */
+  --ifm-font-color-base: #f5f2eb;
+  --ifm-heading-color: #ffffff;
+  --ifm-color-emphasis-600: #e0d7cc;
+  --ifm-color-emphasis-700: #f3e8dd;
+
+  /* Odkazy */
+  --ifm-link-color: #ffcf6a;
+  --ifm-link-hover-color: #ffe39d;
+  --ifm-link-color-visited: #f5b25c;
+
+  /* Navbar – text a odkazy */
+  --ifm-navbar-link-color: #f0e0cf;
+  --ifm-navbar-link-hover-color: #ffe39d;
+  --ifm-navbar-link-active-color: #ffd166;
   --ifm-navbar-title-color: #ffffff;
+
+  /* Aktívne položky v menu / breadcrumbs / pagination */
   --ifm-menu-color-active: #ffffff;
   --ifm-breadcrumb-color-active: #ffd166;
   --ifm-pagination-nav-color: #ffd166;
+
+  /* Zvýraznenie riadkov kódu */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 209, 102, 0.12);
 }
 
 [data-theme='dark'] .navbar__link { color: var(--ifm-navbar-link-color) !important; }
@@ -105,6 +120,7 @@
   box-shadow: 0 0 0 1px rgba(255, 227, 157, 0.25);
 }
 
-html[data-theme='dark'] body {
-  background-color: var(--ifm-background-color);
+/* Force override dark background (Infima override) */
+html[data-theme='dark'] {
+  --ifm-background-color: #ffa20044 !important;
 }

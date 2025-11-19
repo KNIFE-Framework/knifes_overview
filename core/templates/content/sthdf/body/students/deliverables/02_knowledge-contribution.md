@@ -27,3 +27,6 @@
 - **Tagy:** (kľúčové slová) 
 ## 🌍 Referencie
 - Linky na zdroje, ktoré som použil  
+
+## Navigácia
+- [↩️ Späť](../index.md)

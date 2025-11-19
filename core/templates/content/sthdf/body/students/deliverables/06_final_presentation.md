@@ -14,3 +14,7 @@
 - Čo tím reálne dodal  
 - Ako to vyzerá (screenshoty, demo, repo link)  
 ## 🧭 Porovnanie s Project Summary
+
+---
+## Navigácia
+- [↩️ Späť](../index.md)

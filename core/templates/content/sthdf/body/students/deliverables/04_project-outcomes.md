@@ -22,3 +22,5 @@
 
 
 ---
+## Navigácia
+- [↩️ Späť](../index.md)

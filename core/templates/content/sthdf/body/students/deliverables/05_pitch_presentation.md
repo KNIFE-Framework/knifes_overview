@@ -31,3 +31,6 @@
 ## 🧭 Tipy
 - Menej textu, viac vizualizácií  
 - Jedna hlavná myšlienka na slide
+
+## Navigácia
+- [↩️ Späť](../index.md)

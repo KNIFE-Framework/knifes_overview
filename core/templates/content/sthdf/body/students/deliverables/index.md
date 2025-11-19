@@ -45,6 +45,10 @@ Nižšie nájdeš rýchle odkazy na všetky povinné výstupy. Odkazy sú **rela
 
 <!-- NAV:BEGIN -->
 ---
+
+## Navigácia
 - ↩️ [Späť na študenta](../index.md)  
-- 📚 Voliteľné: **SDLC kostra** – [otvor](../sdlc/index.md) (ak potrebuješ detailnejšie artefakty)
+
 <!-- NAV:END -->
+
+

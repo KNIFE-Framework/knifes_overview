@@ -6,3 +6,7 @@
 5. Ako to súvisí s tvojím projektom alebo budúcou praxou?  
 6. Akú jednu vetu by si chcel, aby si z tohto zapamätali tvoji spolužiaci?
 7. čo by si doporučil na zlepšenie predmetu?
+---
+
+## Navigácia
+- [↩️ Späť](../index.md)

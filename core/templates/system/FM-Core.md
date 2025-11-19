@@ -1,93 +1,128 @@
 ---
-# 🧩 Versioning
-# Verzia formátu FM
+# 🧩 Versioning – systém dopĺňa automaticky
 fm_version: "1.0.1"
-# Dátum buildu / generovania
-fm_build: "2025-11-09"
-# Poznámka k verzii alebo zmene
+
+# Dátum buildu – generuje skript
+fm_build: "{{FM_BUILD}}"
+
+# Poznámka k verzii – voliteľné
 fm_version_comment: ""
 
-# 🆔 Identity
-# Jedinečné identifikátory entity
-# systémové ID (napr. KNIFE_K000001)
-id: ""
-# globálne unikátne ID (UUID4)
-guid: ""
 
-# 🧭 Context
-# Typ entity (knife, q12, sdlc, 7ds, thesei…)
-dao: ""
-# Názov / titul príspevku
-title: ""
-# Krátky popis účelu alebo kontextu
-description: ""
+# 🆔 IDENTITY --------------------------------------------------------
 
-# 👥 Authorship
-# Hlavný autor
-author: ""
-# Zoznam autorov alebo prispievateľov
-authors: []
+# ID generuje CLI / skript
+id: "{{ID}}"
 
-# 🗂 Classification
-# Nadradená téma
+# Unikátne UUID – generuje skript
+guid: "{{GUID}}"
+
+
+# 🧭 CONTEXT ---------------------------------------------------------
+
+# DAO / doména (knife, sdlc, q12, 7ds...) dopĺňa skript
+dao: "{{DAO}}"
+
+# Názov zápisu – dopĺňa používateľ
+title: "{{TITLE}}"
+
+# Krátky popis – dopĺňa používateľ (voliteľné)
+description: "{{DESCRIPTION}}"
+
+
+# 👥 AUTHORSHIP ------------------------------------------------------
+
+# Hlavný autor – z globálneho configu
+author: "{{AUTHOR}}"
+
+# Zoznam autorov – generuje skript
+authors:
+  - "{{AUTHOR}}"
+
+
+# 🗂 CLASSIFICATION ---------------------------------------------------
+
+# Nadradená kategória – môže doplniť používateľ
 category: ""
-# Typ príspevku (case, guide, tutorial…)
+
+# Typ dokumentu (guide, case, tutorial...) – používateľ (voliteľné)
 type: ""
-# Význam (low, medium, high)
+
+# Priorita (low/medium/high) – voliteľné
 priority: ""
-# Kľúčové tagy / heslá
+
+# Tagy – generátor pridá základné, človek môže rozšíriť
 tags: []
 
-# 🌍 Localization & Routing
-# Jazyk (sk/en)
-locale: "sk"
-# alternatívna URL / trvalý link
-#slug: ""
 
-# 🕒 Lifecycle
-# Dátum vytvorenia
-created: ""
-# Dátum poslednej úpravy
+# 🌍 LOCALIZATION -----------------------------------------------------
+
+# Jazyk dokumentu – doplní skript podľa štruktúry
+locale: "sk"
+
+
+# 🕒 LIFECYCLE --------------------------------------------------------
+
+# Dátum vytvorenia – generuje skript
+created: "{{CREATED}}"
+
+# Dátum poslednej úpravy – dopĺňa človek
 modified: ""
-# Stav (backlog, draft, inprogress, done)
+
+# Stav dokumentu – default "backlog"
 status: "backlog"
-# Viditeľnosť (public, private, internal)
+
+# Viditeľnosť – default "public"
 privacy: "public"
 
-# ⚖️ Intellectual Property
-# Vlastník obsahu (autor)
-rights_holder_content: ""
-# Systémový držiteľ práv
+
+# ⚖ INTELLECTUAL PROPERTY -------------------------------------------
+
+# Držiteľ práv k obsahu – dopĺňa skript
+rights_holder_content: "{{AUTHOR}}"
+
+# Systémový vlastník práv
 rights_holder_system: "CAA / KNIFE / LetItGrow"
-# Typ licencie
+
+# Licencia
 license: "CC-BY-NC-SA-4.0"
+
 # Disclaimer
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-# Copyrightový podpis
-copyright: "© 2025 <autor>"
 
-# 🔗 Provenance (Origin)
-# Audit pôvodu zápisu
-# -------------------------------------------------------------------
-# origin_repo ............. názov repozitára, kde zápis vznikol
+# Copyright
+copyright: "© 2025 {{AUTHOR}}"
+
+
+# 🔗 ORIGIN / PROVENANCE ---------------------------------------------
+
+# Repozitár pôvodu
 origin_repo: ""
-# origin_repo_url ......... URL zdroja
-origin_repo_url: ""
-# origin_commit ........... commit hash
-origin_commit: ""
-# origin_branch ........... branch / vetva
-origin_branch: ""
-# origin_system ........... nadradený rámec (CAA, STHDF, LetItGrow…)
-origin_system: "CAA"
-# origin_author ........... pôvodný autor zápisu
-origin_author: ""
-# origin_imported_from .... zdroj, ak importované
-origin_imported_from: ""
-# origin_import_date ...... dátum importu
-origin_import_date: ""
-# -------------------------------------------------------------------
 
-# 🧱 Reserved / Future use
+# URL pôvodného repozitára
+origin_repo_url: ""
+
+# Commit pôvodu
+origin_commit: ""
+
+# Branch pôvodu
+origin_branch: ""
+
+# Systém pôvodu (CAA/KNIFE/STHDF…)
+origin_system: "CAA"
+
+# Pôvodný autor
+origin_author: "{{AUTHOR}}"
+
+# Importovaný zdroj
+origin_imported_from: ""
+
+# Dátum importu
+origin_import_date: ""
+
+
+# 🧱 RESERVED ---------------------------------------------------------
+
 fm_reserved1: ""
 fm_reserved2: ""
 ---

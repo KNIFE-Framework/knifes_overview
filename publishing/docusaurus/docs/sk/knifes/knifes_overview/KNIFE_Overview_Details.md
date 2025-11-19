@@ -1,93 +1,128 @@
 ---
-# 🧩 Versioning
-# Verzia formátu FM
+# 🧩 Versioning – systém dopĺňa automaticky
 fm_version: "1.0.1"
-# Dátum buildu / generovania
-fm_build: "2025-11-09"
-# Poznámka k verzii alebo zmene
+
+# Dátum buildu – generuje skript
+fm_build: "{{FM_BUILD}}"
+
+# Poznámka k verzii – voliteľné
 fm_version_comment: ""
 
-# 🆔 Identity
-# Jedinečné identifikátory entity
-# systémové ID (napr. KNIFE_K000001)
+
+# 🆔 IDENTITY --------------------------------------------------------
+
+# ID generuje CLI / skript
 id: "KNIFE_OVERVIEW_DETAILS"
-# globálne unikátne ID (UUID4)
-guid: "2e120c59-45fe-43d0-8451-4c6abe83cb89"
 
-# 🧭 Context
-# Typ entity (knife, q12, sdlc, 7ds, thesei…)
-dao: ""
-# Názov / titul príspevku
+# Unikátne UUID – generuje skript
+guid: "e7509472-40a2-4942-bd88-7bbeb2d3467e"
+
+
+# 🧭 CONTEXT ---------------------------------------------------------
+
+# DAO / doména (knife, sdlc, q12, 7ds...) dopĺňa skript
+dao: "{{DAO}}"
+
+# Názov zápisu – dopĺňa používateľ
 title: "📊 KNIFE Overview – Details"
-# Krátky popis účelu alebo kontextu
-description: ""
 
-# 👥 Authorship
-# Hlavný autor
-author: ""
-# Zoznam autorov alebo prispievateľov
-authors: []
+# Krátky popis – dopĺňa používateľ (voliteľné)
+description: "{{DESCRIPTION}}"
 
-# 🗂 Classification
-# Nadradená téma
+
+# 👥 AUTHORSHIP ------------------------------------------------------
+
+# Hlavný autor – z globálneho configu
+author: "Roman Kazička"
+
+# Zoznam autorov – generuje skript
+authors:
+  - "Roman Kazička"
+
+
+# 🗂 CLASSIFICATION ---------------------------------------------------
+
+# Nadradená kategória – môže doplniť používateľ
 category: ""
-# Typ príspevku (case, guide, tutorial…)
+
+# Typ dokumentu (guide, case, tutorial...) – používateľ (voliteľné)
 type: ""
-# Význam (low, medium, high)
+
+# Priorita (low/medium/high) – voliteľné
 priority: ""
-# Kľúčové tagy / heslá
+
+# Tagy – generátor pridá základné, človek môže rozšíriť
 tags: []
 
-# 🌍 Localization & Routing
-# Jazyk (sk/en)
-locale: "sk"
-# alternatívna URL / trvalý link
-#slug: ""
 
-# 🕒 Lifecycle
-# Dátum vytvorenia
-created: "2025-11-13"
-# Dátum poslednej úpravy
+# 🌍 LOCALIZATION -----------------------------------------------------
+
+# Jazyk dokumentu – doplní skript podľa štruktúry
+locale: "sk"
+
+
+# 🕒 LIFECYCLE --------------------------------------------------------
+
+# Dátum vytvorenia – generuje skript
+created: "2025-11-18"
+
+# Dátum poslednej úpravy – dopĺňa človek
 modified: ""
-# Stav (backlog, draft, inprogress, done)
+
+# Stav dokumentu – default "backlog"
 status: "backlog"
-# Viditeľnosť (public, private, internal)
+
+# Viditeľnosť – default "public"
 privacy: "public"
 
-# ⚖️ Intellectual Property
-# Vlastník obsahu (autor)
-rights_holder_content: ""
-# Systémový držiteľ práv
+
+# ⚖ INTELLECTUAL PROPERTY -------------------------------------------
+
+# Držiteľ práv k obsahu – dopĺňa skript
+rights_holder_content: "Roman Kazička"
+
+# Systémový vlastník práv
 rights_holder_system: "CAA / KNIFE / LetItGrow"
-# Typ licencie
+
+# Licencia
 license: "CC-BY-NC-SA-4.0"
+
 # Disclaimer
 disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
-# Copyrightový podpis
-copyright: "© 2025 <autor>"
 
-# 🔗 Provenance (Origin)
-# Audit pôvodu zápisu
-# -------------------------------------------------------------------
-# origin_repo ............. názov repozitára, kde zápis vznikol
+# Copyright
+copyright: "© 2025 Roman Kazička"
+
+
+# 🔗 ORIGIN / PROVENANCE ---------------------------------------------
+
+# Repozitár pôvodu
 origin_repo: ""
-# origin_repo_url ......... URL zdroja
-origin_repo_url: ""
-# origin_commit ........... commit hash
-origin_commit: ""
-# origin_branch ........... branch / vetva
-origin_branch: ""
-# origin_system ........... nadradený rámec (CAA, STHDF, LetItGrow…)
-origin_system: "CAA"
-# origin_author ........... pôvodný autor zápisu
-origin_author: ""
-# origin_imported_from .... zdroj, ak importované
-origin_imported_from: ""
-# origin_import_date ...... dátum importu
-origin_import_date: ""
-# -------------------------------------------------------------------
 
-# 🧱 Reserved / Future use
+# URL pôvodného repozitára
+origin_repo_url: ""
+
+# Commit pôvodu
+origin_commit: ""
+
+# Branch pôvodu
+origin_branch: ""
+
+# Systém pôvodu (CAA/KNIFE/STHDF…)
+origin_system: "CAA"
+
+# Pôvodný autor
+origin_author: "Roman Kazička"
+
+# Importovaný zdroj
+origin_imported_from: ""
+
+# Dátum importu
+origin_import_date: ""
+
+
+# 🧱 RESERVED ---------------------------------------------------------
+
 fm_reserved1: ""
 fm_reserved2: ""
 ---
@@ -95,8 +130,8 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `2e120c59-45fe-43d0-8451-4c6abe83cb89`
-> **Status:** `backlog` · **Author:**  · **License:** CC-BY-NC-SA-4.0
+> **GUID:** `e7509472-40a2-4942-bd88-7bbeb2d3467e`
+> **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
 [📰 Blog](./KNIFE_Overview_Blog.md) | [🗂 List](./KNIFE_Overview_List.md) | **[📊 Details](./KNIFE_Overview_Details.md)** | [↩️ KNIFES](../index.md)
@@ -105,6 +140,7 @@ fm_reserved2: ""
 | ID | Title | Created | Status | Priority |
 |---|---|---|---|---|
 | REF-UAT-001 | [Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md) | 2025-10-05 | inprogress | top |
+| K000092 | [KNIFE User Guide v2](../K000092-KNIFE-User-Guide/index.md) | 2025-11-17 23:03 | backlog |  |
 | K000091 | [Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/index.md) | 2025-11-11 | backlog |  |
 | K000090 | [VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max](../K000090-VMWARE-Fusion-NAT2DHCP/index.md) | 2025-11-11 | backlog |  |
 | K000089 | [Kedy SSh a kedy HTTPS?](../K000089-SmartGit-Nastavenie/index.md) | 2025-11-07 | Inprogress |  |

@@ -37,8 +37,9 @@ const config: Config = {
           editCurrentVersion: false,
           // zobrazíme konkrétny dokument ako homepage, aby sa hneď ukázal sidebar
           //homePageId: 'sk/index',
-          // zmeníme default /tags na /doc-tags, aby nebol konflikt
-          //tags: 'doc-tags',
+          // aktivujeme tag stránky pre dokumentáciu a presunieme ich z default /tags na /doc-tags,
+          // aby nebol konflikt s blogom (ak by sa neskôr zapol)
+          tagsBasePath: 'doc-tags',
         },
         // Blog nepoužívame – vypneme, aby nevznikal duplicitný /tags
         blog: false,

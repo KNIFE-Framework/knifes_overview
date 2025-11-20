@@ -60,6 +60,22 @@ const sidebars: SidebarsConfig = {
           items: [
             'sk/help/howto/new-knife',
             'sk/help/howto/new-sthdf',
+            {
+              type: 'category',
+              label: '🏫 GitHub Classroom',
+              items: [
+                'sk/help/howto/github-classroom/GH-Class-Onboarding-Teachers',
+                'sk/help/howto/github-classroom/GH-Class-Onboarding-Students',
+                'sk/help/howto/github-classroom/GH-Class-Assistants',
+                'sk/help/howto/github-classroom/ClassRoomProjects',
+                'sk/help/howto/github-classroom/GH-Class-Sync-B',
+                'sk/help/howto/github-classroom/GH-Class-Sync',
+                'sk/help/howto/github-classroom/GitHub-Class-Update',
+                'sk/help/howto/github-classroom/GH-Class-Troubleshooting',
+                'sk/help/howto/github-classroom/index',
+                
+              ],
+            },
           ],
         },
         {

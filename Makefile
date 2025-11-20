@@ -404,7 +404,8 @@ knifes-verify: ## Verify: CSV/docs + FM (smart)
 	node scripts/knifes-verify.mjs --csv "$$CSV_ARG" --root . --locale "$$LOCALE_ARG" --section "knifes" --docs-dir "$$DOCS_DIR_ARG"
 
 # „new“ + „overview“ volajú tvoje existujúce Python skripty
-id ?=
+ID ?=
+id ?= $(ID)
 name ?=
 title ?=
 KNIFE_DRY   ?=
@@ -417,10 +418,10 @@ KNIFE_OVERVIEW_OUT    ?= content/docs/$(LOCALE)/knifes/knifes_overview
 KNIFE_OVERVIEW_FM     ?= core/templates/system/FM-Core.md
 KNIFE_OVERVIEW_LOCALE ?= $(LOCALE)
 
-knifes-new: ## Vytvorí novú KNIFE (id=K000123 name="..." title="...")
+knifes-new: ## Vytvorí novú KNIFE (ID=K000123 name="..." title="...")
 	@echo "🚀 Generujem KNIFE…"
 	@if [ -z "$(name)" ] || [ -z "$(title)" ]; then \
-	  echo "❌ Usage: make knifes-new id=K000123 name='...' title='...'"; \
+	  echo "❌ Usage: make knifes-new ID=K000123 name='...' title='...'"; \
 	  exit 1; \
 	fi
 	@mkdir -p "content/docs/$(LOCALE)/knifes"
@@ -533,8 +534,8 @@ help-examples:
 	@printf " %-40s | %s\n" "make S31-sthdf-new STHDF_NAME=sthdf_2025 STHDF_TITLE='STHDF 2025/2026' LOCALE=sk [EXISTS=skip|replace|error]" "Vytvorí alebo re‑vygeneruje STHDF inštanciu cez generátor"
 	@printf " %-40s | %s\n" "make D12-7ds-apply INSTANCE=7ds_sthdf_2025 LOCALE=sk" "Scaffold 7Ds (APPLY) do /sk/7ds_sthdf_2025"
 	@printf " %-40s | %s\n" "make validate-instance INSTANCE=7ds_sthdf_2025" "Overí konvenciu INSTANCE (<typ>_<meno>)"
-	@printf " %-40s | %s\n" "make knifes-new id=K000123 name=... title=... [EXISTS=skip|replace|error]" "Vytvorí kostru nového KNIFE (index.md + FM)"
-	@printf " %-40s | %s\n" "make knifes-new id=K000123 name=... title=... EXISTS=replace" "Znovu vygeneruje KNIFE aj keď priečinok už existuje"
+	@printf " %-40s | %s\n" "make knifes-new ID=K000123 name=... title=... [EXISTS=skip|replace|error]" "Vytvorí kostru nového KNIFE (index.md + FM)"
+	@printf " %-40s | %s\n" "make knifes-new ID=K000123 name=... title=... EXISTS=replace" "Znovu vygeneruje KNIFE aj keď priečinok už existuje"
 	@printf " %-40s | %s\n" "make knifes-overview" "Zregeneruje prehľady (Blog/List/Details)"
 	@printf " %-40s | %s\n" "make knifes-overview KNIFE_DEBUG=1" "Spustí prehľady s --debug (diagnostika zberu položiek)"
 	@printf " %-40s | %s\n" "make knifes-build-dry" "CSV → MD build (DRY) podľa configu"

@@ -625,6 +625,12 @@ def main() -> None:
 
     args = parser.parse_args()
 
+    # Fallback: ak nebol zadaný --id, skús environment premennú ID (napr. z Makefile: ID=K000100)
+    if not args.item_id:
+        env_id = os.environ.get("ID")
+        if env_id:
+            args.item_id = env_id
+
     # Mapovanie typ → default config
     type_to_config = {
         "sthdf": "config/sthdf/sthdf_config.yml",

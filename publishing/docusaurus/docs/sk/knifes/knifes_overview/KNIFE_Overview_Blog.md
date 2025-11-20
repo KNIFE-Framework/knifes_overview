@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG"
 
 # Unikátne UUID – generuje skript
-guid: "f6ccd594-4715-4250-905c-a9f28abc5da9"
+guid: "98f520d5-6416-4fdc-852e-9a4ea736e9d7"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -64,7 +64,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2025-11-19"
+created: "2025-11-20"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -130,13 +130,14 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `f6ccd594-4715-4250-905c-a9f28abc5da9`
+> **GUID:** `98f520d5-6416-4fdc-852e-9a4ea736e9d7`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
 **[📰 Blog](./KNIFE_Overview_Blog.md)** | [🗂 List](./KNIFE_Overview_List.md) | [📊 Details](./KNIFE_Overview_Details.md) | [↩️ KNIFES](../index.md)
 
 
+- **Ako komunikovať s porozumenímE_index** — 2025-11-20 10:28 — [titul-Ako komunikovať s porozumeníme](../Ako-komunikova-s-porozumen-mE/index.md)
 - **K000001** — 2025-09-17 — [K000001 – EA modelovanie a motivácia](../K000001-ea-modelovanie-a-motivacia/index.md)
 - **K000002** — 2025-09-17 — [K000002 – Git workflow pre EA modely](../K000002-git-workflow-pre-ea-modely/index.md)
 - **K000003** — 2025-09-17 — [K000003 – LibreOffice + Python integrácia](../K000003-libreoffice-python-integracia/index.md)
@@ -226,5 +227,6 @@ fm_reserved2: ""
 - **K000090** — 2025-11-11 — [K000090 – VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max](../K000090-VMWARE-Fusion-NAT2DHCP/index.md)
 - **K000091** — 2025-11-11 — [K000091 – Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/index.md)
 - **K000092** — 2025-11-17 23:03 — [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/index.md)
-- **K000123** — 2025-11-19 09:24 — [K000123 – Čisté FM bez sidebar_label](../K000123-sthdf_instance/index.md)
+- **K000100** — 2025-11-20 10:44 — [K000100 – titul-Ako komunikovať s porozumeníme](../K000100-Ako-komunikova-s-porozumen-mE/index.md)
+- **K000999** — 2025-11-20 13:31 — [K000999 – Môj prvý KNIFE](../K000999-sthdf_instance/index.md)
 - **REF-UAT-001** — 2025-10-05 — [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md)

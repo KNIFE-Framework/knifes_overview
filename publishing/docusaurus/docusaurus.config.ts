@@ -39,7 +39,7 @@ const config: Config = {
           //homePageId: 'sk/index',
           // aktivujeme tag stránky pre dokumentáciu a presunieme ich z default /tags na /doc-tags,
           // aby nebol konflikt s blogom (ak by sa neskôr zapol)
-          tagsBasePath: 'doc-tags',
+          // dočasne vypínam pre warning v builde 21.11.2025,//tagsBasePath: 'doc-tags',
         },
         // Blog nepoužívame – vypneme, aby nevznikal duplicitný /tags
         blog: false,

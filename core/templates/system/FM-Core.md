@@ -51,7 +51,12 @@ type: ""
 # Priorita (low/medium/high) – voliteľné
 priority: ""
 
-# Tagy – generátor pridá základné, človek môže rozšíriť
+# Tagy – odporúča sa 2–6 tagov.
+# Typy tagov:
+#   - rámce: knife, 7ds, sdlc, q12
+#   - účel: tutorial, guide, pattern, case-study
+#   - téma: git, backup, ai, communication
+#   - úroveň: beginner, intermediate, advanced
 tags: []
 
 

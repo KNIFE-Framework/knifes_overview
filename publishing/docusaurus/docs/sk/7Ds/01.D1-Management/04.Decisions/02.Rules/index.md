@@ -16,6 +16,7 @@ priority: ''
 tags:
 - knife
 - 7ds
+- rules and principles
 locale: sk
 created: '2025-11-05T09:52:55Z'
 modified: ''
@@ -40,5 +41,17 @@ fm_reserved2: ''
 > **GUID:** `1c13243e-aa94-4d62-ab48-8093a8e68777`
 > **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
+
+
+# 1. Každý príspevok má metadáta
+
+Dôvod:
+Metadáta o dátach sú základom pre spravovanie obsahu na rôznej úrovni abstraktnosti. 
+Pomáha ho pri tvrdom vyhľadávaní, filtrovaní, ale aj pri sémantických vyhľadávaniach.
+
+# 2. Každý aplikačný skript vykonáva len jeden use case
+Napríklad vyutvorenie inštancie jedného typu - knife, sdlc, q12, 7Ds,...
+Dôvod: 
+Aby sa stabilizoval vývoj. Čím viac fukncií je v jednej funkcii, tým výššia pravdepodobnosť veďľajších efektov, nároky na testovanie.
 
 > This is a placeholder for `7Ds/01.D1-Management/04.Decisions/02.Rules` content.

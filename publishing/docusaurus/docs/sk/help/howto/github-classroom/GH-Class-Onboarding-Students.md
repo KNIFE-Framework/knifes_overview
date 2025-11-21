@@ -14,6 +14,8 @@
 ```bash
 git clone <url>
 ```
+# Ukážka z reálnych aktivít
+
 
 ## 5. Prvý commit
 - Doplň *AboutMe* a pushni.

@@ -1,0 +1,10 @@
+dao: "7ds"
+locale: "sk"
+
+content_dir: "content/docs/sk/7Ds"
+
+template_fm: "core/templates/system/FM-Core.md"
+template_header: "core/templates/content/7ds/header/index.md"
+
+templates:
+  root: "core/templates/content/7ds/body"

@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG"
 
 # Unikátne UUID – generuje skript
-guid: "98f520d5-6416-4fdc-852e-9a4ea736e9d7"
+guid: "5fb79571-f8ad-476a-905c-2b649af4f1e3"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -51,7 +51,12 @@ type: ""
 # Priorita (low/medium/high) – voliteľné
 priority: ""
 
-# Tagy – generátor pridá základné, človek môže rozšíriť
+# Tagy – odporúča sa 2–6 tagov.
+# Typy tagov:
+#   - rámce: knife, 7ds, sdlc, q12
+#   - účel: tutorial, guide, pattern, case-study
+#   - téma: git, backup, ai, communication
+#   - úroveň: beginner, intermediate, advanced
 tags: []
 
 
@@ -64,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2025-11-20"
+created: "2025-11-21"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -130,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `98f520d5-6416-4fdc-852e-9a4ea736e9d7`
+> **GUID:** `5fb79571-f8ad-476a-905c-2b649af4f1e3`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -228,5 +233,4 @@ fm_reserved2: ""
 - **K000091** — 2025-11-11 — [K000091 – Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/index.md)
 - **K000092** — 2025-11-17 23:03 — [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/index.md)
 - **K000100** — 2025-11-20 10:44 — [K000100 – titul-Ako komunikovať s porozumeníme](../K000100-Ako-komunikova-s-porozumen-mE/index.md)
-- **K000999** — 2025-11-20 13:31 — [K000999 – Môj prvý KNIFE](../K000999-sthdf_instance/index.md)
 - **REF-UAT-001** — 2025-10-05 — [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md)

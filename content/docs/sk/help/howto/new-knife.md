@@ -27,7 +27,7 @@ Výsledkom je:
 
 # Nový KNIFE z CLI
 
-> Spúšťaj z rootu repozitára `knifes_overview-03`.
+> Spúšťaj z rootu repozitára napríklad `knifes_overview-03`.
 
 ## 3. Vytvorenie KNIFE cez Python CLI (macOS / Linux)
 
@@ -36,19 +36,21 @@ python3 core/scripts/tools/new_item_instance.py \
   --type knifes \
   --config config/knifes/knifes_config.yml \
   --id K000123 \
+  --name "Moj-prvy-KNIFE" \
   --title "Môj prvý KNIFE" \
-  --exists fail
+  --exists error
 ```
 
 ## 4. Vytvorenie KNIFE cez Python CLI (Windows / MSYS2)
 
 ```
-python core/scripts/tools/new_item_instance.py ^
+python3 core/scripts/tools/new_item_instance.py ^
   --type knifes ^
   --config config/knifes/knifes_config.yml ^
   --id K000123 ^
+  --name "Moj-prvy-KNIFE" ^
   --title "Môj prvý KNIFE" ^
-  --exists fail
+  --exists error
 ```
 
 > 🔁 Namiesto `K000123` a názvu si doplň vlastné KNIFE ID a názov.
@@ -79,17 +81,28 @@ Jedinečné ID KNIFE.
 - Formát: `K` + 6 číslic (napr. `K000123`).
 - Používa sa v názve priečinka aj vo Front Matter.
 
+### `--name "Moj-prvy-KNIFE"`
+Technické meno inštancie.  
+Používa sa pre:
+- názov priečinka (slug),
+- fallback pre title (ak nie je zadaný),
+- referenčný názov pre generátor.
+
+Ak parameter nešpecifikujete, generátor KNIFE použije predvolený názov:  
+```
+new_knife
+```
+
 ### `--title "Môj prvý KNIFE"`
-Ľudský názov KNIFE.
-Generátor vytvorí výsledné `title` vo formáte:
+Ľudský názov KNIFE. V kombinácii s ID sa vytvorí finálny nadpis:
 ```
 K000123 – Môj prvý KNIFE
 ```
 Docusaurus si tento názov automaticky zobrazí v sidebare.
 
-### `--exists fail`
+### `--exists error`
 Politika existujúceho obsahu:
-- `fail` – ak priečinok existuje, generátor skončí chybou,
+- `error` – ak priečinok existuje, generátor skončí chybou,
 - ďalšie možné hodnoty podľa konfigurácie: `skip`, `replace`.
 
 ---

@@ -583,7 +583,7 @@ Q21-q12-new: ## Q12: vytvor novú Q12 inštanciu (Q12_NAME=..., Q12_TITLE=...)
 		--title "$(Q12_TITLE)" \
 		--output "$(Q12_DIR)" \
 		--exists "$(EXISTS)"
-	@echo "✅ Q12 created: $(Q12_DIR)/q12_$(Q12_NAME)"
+	@echo "✅ Q12 created under: $(Q12_DIR)"
 # ─────────────────────────────────────────────────────────
 # ROADMAP / sthdf
 # ─────────────────────────────────────────────────────────

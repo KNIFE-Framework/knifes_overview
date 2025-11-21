@@ -39,8 +39,9 @@ python3 core/scripts/tools/new_item_instance.py \
   --type sthdf \
   --config config/sthdf/sthdf_instance_config.yml \
   --id STHDF_2025_ST_001 \
+  --name "STHDF 2025 ST 001" \
   --title "STHDF 2025 ST 001" \
-  --exists fail
+  --exists error
 ```
 
 ## 4. Python CLI (Windows / MSYS2)
@@ -50,8 +51,9 @@ python core/scripts/tools/new_item_instance.py ^
   --type sthdf ^
   --config config/sthdf/sthdf_instance_config.yml ^
   --id STHDF_2025_ST_001 ^
+  --name "STHDF 2025 ST 001" ^
   --title "STHDF 2025 ST 001" ^
-  --exists fail
+  --exists error
 ```
 
 > 🔁 ID aj názov si doplň podľa konkrétneho študenta.
@@ -76,16 +78,22 @@ Príklady:
 - `STHDF_2025_ST_001`
 - `STHDF_2025_ST_023`
 
+### `--name "STHDF 2025 ST 001"`
+Technické meno inštancie (použije sa pri tvorbe názvov priečinkov a ako fallback pre title).  
+Odporúčame držať ho v rovnakom formáte ako ID alebo ľudsky čitateľný variant ID.
+
 ### `--title "STHDF 2025 ST 001"`
-Ľudský názov pre UI.
+Ľudský názov pre UI. V kombinácii s ID sa používa ako základ pre titulky a nadpisy.
 Používa sa ako základ pre automatické vytvorenie:
 - `STHDF 2025 ST 001 – projekty`
 - `STHDF 2025 ST 001 – študenti`
 
-### `--exists fail`
+### `--exists error`
 Politika pri existujúcich súboroch.
-- `fail` – bezpečná voľba, nič neprepíše.
-- môžeš použiť aj `replace` alebo `skip` (ak sú definované v Makefile).
+- `error` – bezpečná voľba, nič neprepíše (ak niečo existuje, skript skončí chybou),
+- `replace` – prepíše existujúce súbory,
+- `skip` – preskočí generovanie, ak cieľ existuje,
+- `merge` – rezerva pre budúce scenáre (aktuálne sa bežne nepoužíva v kurze).
 
 ---
 

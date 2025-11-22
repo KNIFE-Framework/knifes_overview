@@ -1,8 +1,6 @@
 <!-- body:start -->
 
-<!-- nav:SDLC -->
-> [↩ Q12 – Navigácia](../index.md) • [Štruktúra](../Q12-Structure.md)
----
+<!-- nav: sdlc -->
 # {{TITLE}}
 
 <!-- fm-visible: start -->

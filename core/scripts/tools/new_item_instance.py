@@ -1,260 +1,246 @@
 #!/usr/bin/env python3
 """
-new_item_instance.py (refactored)
+new_item_instance.py
 
-Jeden vstupný bod, ktorý:
-  - načíta config
-  - pripraví shared context
-  - podľa typu zavolá špecializovaný generátor (new_knifes, new_q12, new_sthdf, ...)
+Orchestrátor pre generovanie nových inštancií rôznych typov:
+- knife
+- sthdf
+- 7ds
+- q12 (pripravené)
+- sdlc (pripravené)
+- thesis (pripravené)
 
-Externé rozhranie (CLI parametre) ostáva zachované.
+Spoločné princípy:
+- Config YAML popisuje DAO, cesty a default hodnoty.
+- FM-Core je SSOT (core/templates/system/FM-Core.md) – obsah vrátane `---` sa NEMENÍ.
+- Orchestrátor pripraví spoločný `ctx` a zavolá typový generátor new_*.py.
 """
 
+from __future__ import annotations
+
 import argparse
-import os
+import sys
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 
-from base_fm import (
-    debug_print,
-    parse_simple_yaml,
-    parse_fm_core_block,
-)
-
-from new_knife import generate as generate_knife
-from new_q12 import generate as generate_q12
-from new_sthdf import generate as generate_sthdf
-from new_sdlc import generate as generate_sdlc
-from new_7ds import generate as generate_7ds
-from new_thesis import generate as generate_thesis
+from base_fm import parse_simple_yaml, debug_print
 
 
-def main() -> None:
+# -- Typovo-špecifické generátory ------------------------------------------
+
+
+def _missing_generator(name: str):
+    def _fn(ctx: Dict[str, Any]) -> None:
+        raise SystemExit(f"Generator '{name}' nie je ešte implementovaný alebo nie je dostupný.")
+    return _fn
+
+
+try:
+    from new_knife import generate as generate_knife  # type: ignore
+except ImportError:  # pragma: no cover
+    generate_knife = _missing_generator("new_knife")
+
+try:
+    from new_sthdf import generate as generate_sthdf  # type: ignore
+except ImportError:  # pragma: no cover
+    generate_sthdf = _missing_generator("new_sthdf")
+
+try:
+    from new_7ds import generate as generate_7ds  # type: ignore
+except ImportError:  # pragma: no cover
+    generate_7ds = _missing_generator("new_7ds")
+
+# Q12 / SDLC / Thesis – zatiaľ môžu byť len placeholdery, neskôr nahradíš
+try:
+    from new_q12 import generate as generate_q12  # type: ignore
+except ImportError:  # pragma: no cover
+    generate_q12 = _missing_generator("new_q12")
+
+try:
+    from new_sdlc import generate as generate_sdlc  # type: ignore
+except ImportError:  # pragma: no cover
+    generate_sdlc = _missing_generator("new_sdlc")
+
+try:
+    from new_thesis import generate as generate_thesis  # type: ignore
+except ImportError:  # pragma: no cover
+    generate_thesis = _missing_generator("new_thesis")
+
+
+TYPE_HANDLERS = {
+    "knife": generate_knife,
+    "sthdf": generate_sthdf,
+    "7ds": generate_7ds,
+    "q12": generate_q12,
+    "sdlc": generate_sdlc,
+    "thesis": generate_thesis,
+}
+
+
+# -- Pomocné funkcie -------------------------------------------------------
+
+
+def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description=(
-            "Vytvorí novú inštanciu frameworku (napr. STHDF/KNIFE/SDLC/Q12) "
-            "podľa YAML configu (bez YAML knižnice)."
-        )
+        description="Vytvorí novú inštanciu položky (KNIFE / STHDF / 7DS / Q12 / SDLC / Thesis) "
+                    "podľa konfiguračného YAML a FM-Core."
     )
 
     parser.add_argument(
         "--type",
-        dest="item_type",
-        help=(
-            "Typ inštancie (napr. sthdf, sdlc, q12, knife, 7ds, thesis). Ak je zadaný, vyberie sa zodpovedajúci default config a prepíše --config."
-        ),
+        required=True,
+        help="Typ položky: knife | sthdf | 7ds | q12 | sdlc | thesis",
     )
     parser.add_argument(
         "--config",
-        dest="config_path",
-        default="config/sthdf/sthdf_config.yml",
-        help="Cesta ku config YAML (default: config/sthdf/sthdf_config.yml)",
-    )
-    parser.add_argument(
-        "--name",
-        dest="name",
-        default=None,
-        help=(
-            "Logické meno inštancie (napr. sthdf_2025 alebo KNIFE-User-Guide). "
-            "Používa sa v názve priečinka a ako fallback pre title."
-        ),
-    )
-    parser.add_argument(
-        "--title",
-        dest="title",
-        default=None,
-        help=(
-            "Ľudský názov inštancie (napr. 'STHDF 2025/2026' alebo 'KNIFE User Guide'). "
-            "Používa sa v FM.title a v placeholderoch."
-        ),
+        required=True,
+        help="Cesta k config YAML (napr. config/sthdf/sthdf_config.yml)",
     )
     parser.add_argument(
         "--id",
-        dest="item_id",
-        default=None,
-        help=(
-            "Explicit ID to inject into Front Matter (použije sa v {{ID}} placeholderi). "
-            "Ak nie je zadané, ID sa vygeneruje z instance + relatívnej cesty."
-        ),
+        dest="id",
+        required=True,
+        help="ID / prefix inštancie (napr. 2025_ST_001, K000123, 7ds_PlatobnyPortal...)",
     )
     parser.add_argument(
-        "--output",
-        dest="output_dir",
-        default=None,
-        help=(
-            "Cieľový root pre obsah (napr. content/docs/sk/sthdf alebo content/docs/sk/knifes). "
-            "Ak je zadaný, prepíše content_dir z configu."
-        ),
+        "--name",
+        required=True,
+        help="Meno/address nového priečinka (instance_name). Zvyčajne rovnaké ako --id.",
     )
     parser.add_argument(
-        "--instance",
-        dest="instance",
+        "--title",
+        required=False,
         default=None,
-        help=(
-            "Názov inštancie (napr. sthdf_2025 alebo 2025_ST_0001). "
-            "Ak nie je zadaný, použije sa meno z --name alebo fallback podľa typu."
-        ),
+        help="Titulok (ak nie je zadaný, použije sa --name).",
     )
     parser.add_argument(
         "--exists",
-        dest="exists_mode",
-        choices=["skip", "error", "replace", "merge"],
-        default="skip",
-        help=(
-            "Ako sa správať, ak cieľové súbory/priečinky už existujú: "
-            "'skip' (default) = nesiahať na existujúce; "
-            "'error' = skončiť s chybou; "
-            "'replace' = zmazať cieľový priečinok a znovu vygenerovať; "
-            "'merge' = rezervované (aktuálne sa správa ako 'skip')."
-        ),
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Len vypíše, čo by sa spravilo (bez zápisu súborov).",
+        choices=["error", "skip", "replace"],
+        default="error",
+        help="Správanie pri existujúcej inštancii (default: error).",
     )
     parser.add_argument(
         "--debug",
         action="store_true",
-        help="Detailnejší výpis krokov.",
+        help="Zapne debug výstup.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        dest="dry_run",
+        action="store_true",
+        help="Len ukáže, čo by sa spravilo (bez zápisu na disk).",
     )
 
-    args = parser.parse_args()
+    return parser.parse_args(argv)
 
-    # Fallback: --id z env premennnej ID
-    if not args.item_id:
-        env_id = os.environ.get("ID")
-        if env_id:
-            args.item_id = env_id
 
-    type_to_config = {
-        "sthdf": "config/sthdf/sthdf_config.yml",
-        "sdlc": "config/sdlc/sdlc_config.yml",
-        "q12": "config/q12/q12_config.yml",
-        "knife": "config/knifes/knifes_config.yml",
-        "knifes": "config/knifes/knifes_config.yml",
-        "7ds": "config/7ds/7ds_config.yml",
-        "thesis": "config/thesis/thesis_config.yml",
-    }
+def _validate_config(config_path: str, cfg: Dict[str, Any]) -> None:
+    """Základná validácia configu – nech chyby neprechádzajú mlčky."""
 
-    # Výber configu
-    if args.item_type:
-        mapped = type_to_config.get(args.item_type)
-        if mapped:
-            config_path = Path(mapped)
-            debug_print(
-                args.debug,
-                f"--type={args.item_type} → config={config_path}",
-            )
-        else:
-            debug_print(
-                args.debug,
-                f"Neznámy --type '{args.item_type}', používam --config {args.config_path}",
-            )
-            config_path = Path(args.config_path)
-    else:
-        config_path = Path(args.config_path)
+    required_keys = ["dao", "content_dir", "template_fm"]
+    for key in required_keys:
+        if key not in cfg:
+            raise SystemExit(f"Config '{config_path}' chýba povinný kľúč '{key}'")
 
-    config = parse_simple_yaml(config_path)
+    # FM-Core musí existovať – je SSOT
+    fm_path = Path(cfg["template_fm"])
+    if not fm_path.is_file():
+        raise SystemExit(f"template_fm neexistuje: {fm_path}")
 
-    # Effective type: prefer CLI --type, fallback na config['dao']
-    effective_type = (args.item_type or str(config.get("dao", ""))).lower()
+    # content_dir nemusí fyzicky existovať (môžeme ho vytvoriť), ale necháme info
+    content_dir = Path(cfg["content_dir"])
+    debug_print(True, f"[CFG] content_dir (nemusí ešte existovať): {content_dir}")
 
-    # Rozhodnutie mena inštancie
-    if args.instance:
-        instance_name = args.instance
-    elif args.name:
-        instance_name = args.name
-    else:
-        if effective_type in ("knife", "knifes"):
-            instance_name = "new_knife"
-        else:
-            instance_name = "sthdf_instance"
+    # Voliteľné template_root (pre 7ds / q12 / sdlc / thesis)
+    template_root = cfg.get("template_root")
+    if template_root:
+        t_root = Path(template_root)
+        if not t_root.exists():
+            raise SystemExit(f"template_root neexistuje: {t_root}")
 
-    # Unified CLI title fallback
-    cli_title = args.title or args.name or instance_name
 
-    debug_print(
-        args.debug,
-        (
-            f"Config: {config_path}, dao={config.get('dao')}, "
-            f"instance={instance_name}, name={args.name}, title={args.title}"
-        ),
-    )
+def _load_fm_core(fm_core_path: Path) -> list[str]:
+    """Načíta FM-Core ako zoznam riadkov.
 
-    # Output root
-    if args.output_dir:
-        content_dir = Path(args.output_dir)
-    else:
-        default_root = "content/docs/sk/sthdf"
-        if effective_type in ("knife", "knifes"):
-            default_root = "content/docs/sk/knifes"
-        elif effective_type == "q12":
-            default_root = "content/docs/sk/q12"
-        content_dir = Path(config.get("content_dir", default_root))
+    Nezasahujeme do obsahu – vrátane `---` delimitrov.
+    """
+    text = fm_core_path.read_text(encoding="utf-8")
+    # vraciame list bez `\n`, new_* si s tým vie poradiť
+    return text.splitlines()
 
-    # Špecifické nastavenia pre templaty
-    templates_cfg = config.get("templates") or {}
-    projects_root_str = templates_cfg.get("projects_root", "")
-    students_root_str = templates_cfg.get("students_root", "")
-    templates_root_str = templates_cfg.get("root", "") or templates_cfg.get("templates_root", "")
 
-    projects_root = Path(projects_root_str) if projects_root_str else None
-    students_root = Path(students_root_str) if students_root_str else None
-    templates_root = Path(templates_root_str) if templates_root_str else None
+def _build_ctx(cfg: Dict[str, Any], args: argparse.Namespace, fm_core_lines: list[str]) -> Dict[str, Any]:
+    """Postaví spoločný kontext pre všetky typy generátorov.
 
-    # FM-Core
-    fm_core_path = Path(config.get("template_fm", "core/templates/system/FM-Core.md"))
-    fm_core_lines = parse_fm_core_block(fm_core_path, debug=args.debug)
+    Špecifiká (projects_root/students_root...) si riešia new_*.py cez cfg.
+    """
 
-    # Header template (voliteľný)
-    template_header_cfg = config.get("template_header")
-    template_header_path = (
-        Path(template_header_cfg) if template_header_cfg is not None else None
-    )
+    content_dir = Path(cfg["content_dir"])
 
-    explicit_id: Optional[str] = args.item_id
-    exists_mode: str = args.exists_mode
+    cli_title = args.title or args.name
 
-    # Shared context pre špecializované generátory
     ctx: Dict[str, Any] = {
-        "effective_type": effective_type,
-        "config": config,
+        "dao": cfg.get("dao"),
+        "config": cfg,  # celé YAML, nech new_*.py má všetko k dispozícii
         "content_dir": content_dir,
-        "instance_name": instance_name,
-        "explicit_id": explicit_id,
+        "instance_name": args.name,
         "cli_title": cli_title,
         "fm_core_lines": fm_core_lines,
-        "template_header_path": template_header_path,
-        "exists_mode": exists_mode,
+        "explicit_id": args.id,
+        "exists_mode": args.exists,
         "debug": args.debug,
         "dry_run": args.dry_run,
-        "projects_root": projects_root,
-        "students_root": students_root,
-        "templates_root": templates_root,
-        "raw_name": args.name,
+        "defaults": cfg.get("defaults", {}),
     }
 
-    # Routing podľa typu – použijeme staticky importované generátory
-    if effective_type == "knife":
-        return generate_knife(ctx)
+    # Propagate template_root if present
+    if "template_root" in cfg:
+        ctx["template_root"] = cfg["template_root"]
 
-    if effective_type == "q12":
-        return generate_q12(ctx)
+    return ctx
 
-    if effective_type == "sthdf":
-        return generate_sthdf(ctx)
 
-    if effective_type == "sdlc":
-        return generate_sdlc(ctx)
+# -- Hlavný vstup ----------------------------------------------------------
 
-    if effective_type == "7ds":
-        return generate_7ds(ctx)
 
-    if effective_type == "thesis":
-        return generate_thesis(ctx)
-    # Future: 7ds, thesis, mm...
-    print(f"Unsupported type '{effective_type}'. Nie je ešte implementované.")
+def main(argv: list[str] | None = None) -> None:
+    args = _parse_args(argv)
+
+    item_type = args.type
+    config_path = args.config
+
+    if item_type not in TYPE_HANDLERS:
+        raise SystemExit(f"Unsupported type '{item_type}'. Nie je ešte implementované.")
+
+    handler = TYPE_HANDLERS[item_type]
+
+    # 1) Načítaj config YAML
+    cfg = parse_simple_yaml(config_path)
+
+    # 2) Validácia základných kľúčov + ciest
+    _validate_config(config_path, cfg)
+
+    # 3) Načítaj FM-Core
+    fm_core_path = Path(cfg["template_fm"])
+    fm_core_lines = _load_fm_core(fm_core_path)
+
+    # 4) Postav kontext
+    ctx = _build_ctx(cfg, args, fm_core_lines)
+
+    debug_print(args.debug, f"[ORCH] Typ: {item_type}")
+    debug_print(args.debug, f"[ORCH] Config: {config_path}")
+    debug_print(args.debug, f"[ORCH] Content dir: {ctx['content_dir']}")
+    debug_print(args.debug, f"[ORCH] Instance: {ctx['instance_name']}")
+    debug_print(args.debug, f"[ORCH] ID: {ctx['explicit_id']}")
+    debug_print(args.debug, f"[ORCH] Title: {ctx['cli_title']}")
+
+    # 5) Dry-run – iba informácia, že handler by bežal
+    if args.dry_run:
+        print(f"[DRY-RUN][ORCH] Spustil by som handler pre typ '{item_type}' s ctx.instance='{ctx['instance_name']}'")
+        return
+
+    # 6) Zavolaj konkrétny generátor
+    handler(ctx)
 
 
 if __name__ == "__main__":

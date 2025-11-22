@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG"
 
 # Unikátne UUID – generuje skript
-guid: "17f7c13f-3d01-4a29-9c19-c4a424cf7307"
+guid: "421834d1-d719-4932-b9a5-95f2bd81b1b8"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `17f7c13f-3d01-4a29-9c19-c4a424cf7307`
+> **GUID:** `421834d1-d719-4932-b9a5-95f2bd81b1b8`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -233,4 +233,5 @@ fm_reserved2: ""
 - **K000091** — 2025-11-11 — [K000091 – Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/index.md)
 - **K000092** — 2025-11-17 23:03 — [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/index.md)
 - **K000100** — 2025-11-20 10:44 — [K000100 – titul-Ako komunikovať s porozumeníme](../K000100-Ako-komunikova-s-porozumen-mE/index.md)
+- **K000999** — 2025-11-22 22:22 — [K000999 – KNIFE – Test script-created instance](../K000999/index.md)
 - **REF-UAT-001** — 2025-10-05 — [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md)

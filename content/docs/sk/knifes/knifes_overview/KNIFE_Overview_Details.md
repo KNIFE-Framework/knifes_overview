@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS"
 
 # Unikátne UUID – generuje skript
-guid: "f1a81e56-8ab5-4428-92cb-dfd881cd7c14"
+guid: "3c94b0c8-2137-4e07-9c93-dd6f0b80d0b7"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `f1a81e56-8ab5-4428-92cb-dfd881cd7c14`
+> **GUID:** `3c94b0c8-2137-4e07-9c93-dd6f0b80d0b7`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -145,6 +145,7 @@ fm_reserved2: ""
 | ID | Title | Created | Status | Priority |
 |---|---|---|---|---|
 | REF-UAT-001 | [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md) | 2025-10-05 | inprogress | top |
+| K000999 | [K000999 – KNIFE – Test script-created instance](../K000999/index.md) | 2025-11-22 22:22 | backlog |  |
 | K000100 | [K000100 – titul-Ako komunikovať s porozumeníme](../K000100-Ako-komunikova-s-porozumen-mE/index.md) | 2025-11-20 10:44 | backlog |  |
 | K000092 | [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/index.md) | 2025-11-17 23:03 | backlog |  |
 | K000091 | [K000091 – Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/index.md) | 2025-11-11 | backlog |  |

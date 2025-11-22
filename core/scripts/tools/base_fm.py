@@ -47,7 +47,10 @@ def _strip_yaml_value(value: str) -> str:
     return value
 
 
-def parse_simple_yaml(path: Path) -> Dict[str, Any]:
+def parse_simple_yaml(path) -> Dict[str, Any]:
+    # Normalize to Path
+    if not isinstance(path, Path):
+        path = Path(path)
     if not path.is_file():
         raise FileNotFoundError(f"Config YAML not found: {path}")
 
@@ -265,7 +268,7 @@ def build_fm_lines_for_file(
 
 
 def render_fm_block(fm_lines: List[str]) -> str:
-    return "---\n" + "\n".join(fm_lines).rstrip() + "\n---\n\n"
+    return "\n".join(fm_lines).rstrip() + "\n\n"
 
 
 def should_inject_header(body_text: str) -> bool:

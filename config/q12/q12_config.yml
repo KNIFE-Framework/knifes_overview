@@ -1,137 +1,16 @@
-from pathlib import Path
-import re
-import uuid
-from typing import Any, Dict, List, Optional
+# 🎓 Q12-SPECIFIC CONFIG
+dao: "q12"
+content_dir: "content/docs/sk/q12"
+template_fm: "core/templates/system/FM-Core.md"
 
-def process_template_tree(
-    src_root: Path,
-    dst_root: Path,
-    fm_core_lines: List[str],
-    config: Dict[str, Any],
-    instance_name: str,
-    template_header_path: Optional[Path],
-    explicit_id: Optional[str] = None,
-    root_title: Optional[str] = None,
-    debug: bool = False,
-    dry_run: bool = False,
-) -> None:
-    # ... other code ...
+template_header: "core/templates/content/q12/header/q12-user-header.md"
+template_root: "core/templates/content/q12/body"
 
-    for src_path in src_root.rglob("*"):
-        if src_path.is_dir():
-            # ... handle directories ...
-            continue
-        rel_path = src_path.relative_to(src_root)
 
-        # Determine effective title based on location
-        if rel_path.name == "index.md" and rel_path.parent == Path("."):
-            # Root index of the generated tree
-            if root_title:
-                effective_title = root_title
-            else:
-                effective_title = "Index"
-        elif rel_path.name == "index.md":
-            # Section index (use folder name)
-            section_name = rel_path.parent.name
-            section_title = (
-                section_name.replace("_", " ")
-                .replace("-", " ")
-                .replace(".", " ")
-                .strip()
-                or "Index"
-            )
-            effective_title = section_title
-        else:
-            # Regular content file (use file stem)
-            stem = rel_path.stem
-            file_title = (
-                stem.replace("_", " ")
-                .replace("-", " ")
-                .replace(".", " ")
-                .strip()
-                or "Page"
-            )
-            effective_title = file_title
+id_prefix: "q12"
+locale: "sk"
 
-        dst_path = dst_root / rel_path
-
-        # ... other code ...
-
-        replacements = {
-            "{{ID}}": item_id,
-            "{{GUID}}": guid,
-            "{{STATUS}}": status,
-            "{{AUTHOR}}": author,
-            "{{LICENSE}}": license_value,
-            "{{CREATED}}": created,
-            "{{DAO}}": dao_value,
-            "{{LOCALE}}": locale_value,
-            "{{TITLE}}": effective_title,
-        }
-
-        # ... other code ...
-
-def main():
-    # ... argument parsing and other setup ...
-
-    if args.type == "sthdf":
-        # ... setup ...
-        process_template_tree(
-            src_root=body_root,
-            dst_root=instance_root,
-            fm_core_lines=fm_core_lines,
-            config=config,
-            instance_name=instance_name,
-            template_header_path=template_header_path,
-            explicit_id=None,
-            root_title=args.title,
-            debug=args.debug,
-            dry_run=args.dry_run,
-        )
-
-    elif args.type == "sdlc":
-        # ... setup ...
-        process_template_tree(
-            src_root=body_root,
-            dst_root=instance_root,
-            fm_core_lines=fm_core_lines,
-            config=config,
-            instance_name=instance_name,
-            template_header_path=template_header_path,
-            explicit_id=None,
-            root_title=args.title,
-            debug=args.debug,
-            dry_run=args.dry_run,
-        )
-
-    elif args.type == "q12":
-        # ... setup ...
-        process_template_tree(
-            src_root=body_root,
-            dst_root=instance_root,
-            fm_core_lines=fm_core_lines,
-            config=config,
-            instance_name=instance_name,
-            template_header_path=template_header_path,
-            explicit_id=None,
-            root_title=args.title,
-            debug=args.debug,
-            dry_run=args.dry_run,
-        )
-
-    elif args.type == "knifes":
-        # ... setup ...
-        process_template_tree(
-            src_root=body_root,
-            dst_root=instance_root,
-            fm_core_lines=fm_core_lines,
-            config=config,
-            instance_name=instance_name,
-            template_header_path=template_header_path,
-            explicit_id=None,
-            root_title=args.title,
-            debug=args.debug,
-            dry_run=args.dry_run,
-        )
-
-    # ... rest of main() ...
+defaults:
+  author: "Roman Kazicka"
+  status: "backlog"
+  privacy: "public"

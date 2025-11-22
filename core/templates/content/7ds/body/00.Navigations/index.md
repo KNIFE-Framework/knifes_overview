@@ -21,15 +21,7 @@ Použi túto mapu ako hlavný navigačný prehľad celého SDLC / 7Ds cyklu.
 | 7️⃣ | [**D7 – Lessons Learned**](../07.D7-LessonLearned/index.md) | Získané poznatky, odporúčania a spätná väzba. |
 
 
----
 
-## 🧩 Doplnkové sekcie
-
-- [00.Navigations](./00.Navigations/index.md) – centrálna mapa s odkazmi naprieč dokumentáciou.  
-- [Docusaurus Guide](./01.D1-Management/02.Strategy/Docusaurus-Guide/Guide_Intro.md) – odporúčania pre písanie dokumentácie.  
-- [HowTo a Troubleshooting](./07.D7-LessonLearned/06.HowTo/index.md) – praktické mini-návody.  
-
----
 
 
 

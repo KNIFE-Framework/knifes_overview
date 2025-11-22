@@ -24,6 +24,9 @@ from base_fm import (
 from new_knife import generate as generate_knife
 from new_q12 import generate as generate_q12
 from new_sthdf import generate as generate_sthdf
+from new_sdlc import generate as generate_sdlc
+from new_7ds import generate as generate_7ds
+from new_thesis import generate as generate_thesis
 
 
 def main() -> None:
@@ -38,8 +41,7 @@ def main() -> None:
         "--type",
         dest="item_type",
         help=(
-            "Typ inštancie (napr. sthdf, sdlc, q12, knife). "
-            "Ak je zadaný, vyberie sa zodpovedajúci default config a prepíše --config."
+            "Typ inštancie (napr. sthdf, sdlc, q12, knife, 7ds, thesis). Ak je zadaný, vyberie sa zodpovedajúci default config a prepíše --config."
         ),
     )
     parser.add_argument(
@@ -132,6 +134,7 @@ def main() -> None:
         "knife": "config/knifes/knifes_config.yml",
         "knifes": "config/knifes/knifes_config.yml",
         "7ds": "config/7ds/7ds_config.yml",
+        "thesis": "config/thesis/thesis_config.yml",
     }
 
     # Výber configu
@@ -233,15 +236,23 @@ def main() -> None:
     }
 
     # Routing podľa typu – použijeme staticky importované generátory
-    if effective_type in ("knife", "knifes"):
+    if effective_type == "knife":
         return generate_knife(ctx)
 
     if effective_type == "q12":
         return generate_q12(ctx)
 
-    if effective_type in ("sthdf", "sdlc"):
+    if effective_type == "sthdf":
         return generate_sthdf(ctx)
 
+    if effective_type == "sdlc":
+        return generate_sdlc(ctx)
+
+    if effective_type == "7ds":
+        return generate_7ds(ctx)
+
+    if effective_type == "thesis":
+        return generate_thesis(ctx)
     # Future: 7ds, thesis, mm...
     print(f"Unsupported type '{effective_type}'. Nie je ešte implementované.")
 

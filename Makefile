@@ -41,11 +41,17 @@ REPO_NAME := $(notdir $(basename $(GITHUB_REPO_URL)))
 DEFAULT_SITE_URL := https://knifes.systemthinking.sk
 DEFAULT_BASE_URL := /
 
+
 MINIFY ?= 1
 BUILD_EXTRA :=
 ifeq ($(MINIFY),0)
   BUILD_EXTRA := --no-minify
 endif
+
+# Release / tags
+TAG               ?=
+RELEASE_TITLE     ?=
+RELEASE_NOTES_FILE ?= ReleaseNote.md
 
 # Build toggles
 SYNC_CONTENT ?= 1         # 1=generate overview + rsync before build (default); 0=skip (behave like bare CLI)
@@ -120,6 +126,12 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
 	@awk 'BEGIN{FS=":.*## "};/^(deploy):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@printf "\n"
+
+	@printf "\033[1;35m🏷  RELEASE / TAGS\033[0m\n"
+	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
+	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
+	@awk 'BEGIN{FS=":.*## "};/^(release-[a-zA-Z0-9-]+):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
 	@printf "\033[1;32m🧾 FRONT MATTER (FM)\033[0m\n"
@@ -293,6 +305,43 @@ W60-worktree-status: ## Status worktree (debug)
 	@git worktree list
 	@echo "----"
 	@git -C "$(WORKTREE_DIR)" status -sb || true
+
+# ─────────────────────────────────────────────────────────
+# RELEASE / TAGS – GitHub CLI
+# ─────────────────────────────────────────────────────────
+.PHONY: release-gh
+
+release-gh: ## Vytvorí GitHub release pre TAG (TAG=v0.4.0, RELEASE_TITLE='...', RELEASE_NOTES_FILE=ReleaseNote.md)
+	@if ! command -v gh >/dev/null 2>&1; then \
+	  echo "❌ GitHub CLI 'gh' nie je nainštalovaný. Pozri https://cli.github.com/"; \
+	  exit 1; \
+	fi
+	@if [ -z "$(TAG)" ]; then \
+	  echo "❌ Musíš zadať TAG, napr.:"; \
+	  echo "   make release-gh TAG=v0.4.0 RELEASE_TITLE='KNIFE Overview v0.4.0'"; \
+	  exit 1; \
+	fi
+	@if ! git rev-parse "$(TAG)" >/dev/null 2>&1; then \
+	  echo "❌ TAG '$(TAG)' neexistuje v tomto repozitári. Najprv ho vytvor/pushni."; \
+	  exit 1; \
+	fi
+	@TITLE="$(RELEASE_TITLE)"; \
+	if [ -z "$$TITLE" ]; then \
+	  TITLE="$(TAG)"; \
+	fi; \
+	if [ ! -f "$(RELEASE_NOTES_FILE)" ]; then \
+	  echo "ℹ️ Súbor '$(RELEASE_NOTES_FILE)' neexistuje – použijem --generate-notes."; \
+	  gh release create "$(TAG)" \
+	    --title "$$TITLE" \
+	    --verify-tag \
+	    --generate-notes; \
+	else \
+	  echo "📄 Používam release poznámky z '$(RELEASE_NOTES_FILE)'"; \
+	  gh release create "$(TAG)" \
+	    --title "$$TITLE" \
+	    --verify-tag \
+	    --notes-file "$(RELEASE_NOTES_FILE)"; \
+	fi
 
 # ─────────────────────────────────────────────────────────
 # FRONT MATTER – audit / lint / fix

@@ -132,7 +132,23 @@ def _yaml_quote(value: str) -> str:
     return f'"{escaped}"'
 
 
+
 # ------------ Helpers: ID, Title, Author, Placeholders ------------
+
+def extract_h1_from_body(body_text: str) -> Optional[str]:
+    """
+    Nájde prvý riadok, ktorý vyzerá ako Markdown nadpis (#, ##, ...),
+    a vráti jeho text bez hashov. Ak sa nenájde, vráti None.
+    """
+    for raw in body_text.splitlines():
+        line = raw.strip()
+        if not line.startswith("#"):
+            continue
+        # odstráň úvodné # a medzery
+        title = line.lstrip("#").strip()
+        if title:
+            return title
+    return None
 
 def _generate_id(instance_name: str, rel_path: Path) -> str:
     rel_no_suffix = rel_path.with_suffix("").as_posix()
@@ -214,6 +230,7 @@ def build_fm_lines_for_file(
     rel_path: Path,
     explicit_id: Optional[str] = None,
     cli_title: Optional[str] = None,
+    body_h1: Optional[str] = None,
 ) -> List[str]:
     lines = list(fm_core_lines)
 
@@ -238,8 +255,13 @@ def build_fm_lines_for_file(
 
     rel_str = rel_path.as_posix()
     if rel_str == "index.md" and cli_title:
+        # Root index – použijeme CLI title (napr. "7Ds – Platobný portál")
         generated_title = cli_title
+    elif body_h1:
+        # Bežné stránky – použijeme prvý H1 nadpis z tela
+        generated_title = body_h1
     else:
+        # Fallback – pôvodné správanie z názvu súboru/cesty
         generated_title = _generate_title(rel_path)
 
     author_value = _get_author_from_config(config)
@@ -262,7 +284,11 @@ def build_fm_lines_for_file(
         l.lstrip().startswith("created:") for l in lines
     )
     if not has_created_key:
+        # Ak created v FM-Core nie je, nastavíme ho na aktuálny čas
         _set_or_replace_fm_key(lines, "created", _yaml_quote(created_ts))
+    else:
+        # Ak created už existuje, pri generovaní doplníme/aktualizujeme modified
+        _set_or_replace_fm_key(lines, "modified", _yaml_quote(created_ts))
 
     return lines
 
@@ -321,6 +347,9 @@ def process_template_tree(
             debug_print(debug, f"create: {dst_path}")
             body = load_text(src_path)
 
+            # Z tela si vezmeme prvý H1 nadpis (ak existuje)
+            body_h1 = extract_h1_from_body(body)
+
             fm_lines = build_fm_lines_for_file(
                 fm_core_lines=fm_core_lines,
                 config=config,
@@ -328,6 +357,7 @@ def process_template_tree(
                 rel_path=rel,
                 explicit_id=explicit_id,
                 cli_title=cli_title,
+                body_h1=body_h1,
             )
 
             fm_mapping = _build_placeholder_mapping_from_fm(fm_lines)

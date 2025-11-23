@@ -24,7 +24,7 @@ guid: "465b4a65-625e-4de9-8ec9-1e29ddc5f753"
 dao: "knife"
 
 # Názov zápisu – dopĺňa používateľ
-title: "titul-Ako komunikovať s porozumeníme"
+title: "titul-Ako komunikovať s porozumením"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
 description: "{{DESCRIPTION}}"
@@ -132,7 +132,7 @@ fm_reserved2: ""
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 ---
-# titul-Ako komunikovať s porozumeníme
+# titul-Ako komunikovať s porozumením
 
 <!-- fm-visible: start -->
 > **GUID:** `465b4a65-625e-4de9-8ec9-1e29ddc5f753`

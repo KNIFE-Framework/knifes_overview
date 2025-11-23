@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS"
 
 # Unikátne UUID – generuje skript
-guid: "3c94b0c8-2137-4e07-9c93-dd6f0b80d0b7"
+guid: "67a0ae6e-f32a-4d95-b3cd-0ff45644909e"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2025-11-22"
+created: "2025-11-23"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `3c94b0c8-2137-4e07-9c93-dd6f0b80d0b7`
+> **GUID:** `67a0ae6e-f32a-4d95-b3cd-0ff45644909e`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -146,7 +146,7 @@ fm_reserved2: ""
 |---|---|---|---|---|
 | REF-UAT-001 | [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md) | 2025-10-05 | inprogress | top |
 | K000999 | [K000999 – KNIFE – Test script-created instance](../K000999/index.md) | 2025-11-22 22:22 | backlog |  |
-| K000100 | [K000100 – titul-Ako komunikovať s porozumeníme](../K000100-Ako-komunikova-s-porozumen-mE/index.md) | 2025-11-20 10:44 | backlog |  |
+| K000100 | [K000100 – titul-Ako komunikovať s porozumením](../K000100-Ako-komunikova-s-porozumen-mE/index.md) | 2025-11-20 10:44 | backlog |  |
 | K000092 | [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/index.md) | 2025-11-17 23:03 | backlog |  |
 | K000091 | [K000091 – Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/index.md) | 2025-11-11 | backlog |  |
 | K000090 | [K000090 – VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max](../K000090-VMWARE-Fusion-NAT2DHCP/index.md) | 2025-11-11 | backlog |  |
@@ -236,4 +236,4 @@ fm_reserved2: ""
 | K000003 | [K000003 – LibreOffice + Python integrácia](../K000003-libreoffice-python-integracia/index.md) | 2025-09-17 | inprogress | no |
 | K000002 | [K000002 – Git workflow pre EA modely](../K000002-git-workflow-pre-ea-modely/index.md) | 2025-09-17 | inprogress | no |
 | K000001 | [K000001 – EA modelovanie a motivácia](../K000001-ea-modelovanie-a-motivacia/index.md) | 2025-09-17 | done | no |
-| Ako komunikovať s porozumenímE_index | [titul-Ako komunikovať s porozumeníme](../Ako-komunikova-s-porozumen-mE/index.md) | 2025-11-20 10:28 | backlog |  |
+| Ako komunikovať s porozumenímE_index | [titul-Ako komunikovať s porozumením](../Ako-komunikova-s-porozumen-mE/index.md) | 2025-11-20 10:28 | backlog |  |

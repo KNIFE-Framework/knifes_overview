@@ -34,7 +34,7 @@ origin_system: CAA/KNIFE
 fm_reserved1: ''
 fm_reserved2: ''
 ---
-# 7ds (SK)
+# 7ds (SK)- Navigačná stránka pre 7Ds
 
 
 <!-- fm-visible: start -->

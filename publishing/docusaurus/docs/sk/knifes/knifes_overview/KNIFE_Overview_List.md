@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "2faa14b6-d236-404c-b28d-10e2629ca167"
+guid: "32e8cb22-a901-4b15-8196-4897238cd12d"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2025-11-22"
+created: "2025-11-23"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `2faa14b6-d236-404c-b28d-10e2629ca167`
+> **GUID:** `32e8cb22-a901-4b15-8196-4897238cd12d`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -144,7 +144,7 @@ fm_reserved2: ""
 
 - **REF-UAT-001** · [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/index.md) · _inprogress_ · top
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/index.md) · _backlog_ · -
-- **K000100** · [K000100 – titul-Ako komunikovať s porozumeníme](../K000100-Ako-komunikova-s-porozumen-mE/index.md) · _backlog_ · -
+- **K000100** · [K000100 – titul-Ako komunikovať s porozumením](../K000100-Ako-komunikova-s-porozumen-mE/index.md) · _backlog_ · -
 - **K000092** · [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/index.md) · _backlog_ · -
 - **K000091** · [K000091 – Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/index.md) · _backlog_ · -
 - **K000090** · [K000090 – VMWare Fusion NAT2DHCP Resurrection -mac OS Srquoia and M2 Max](../K000090-VMWARE-Fusion-NAT2DHCP/index.md) · _backlog_ · -
@@ -234,4 +234,4 @@ fm_reserved2: ""
 - **K000003** · [K000003 – LibreOffice + Python integrácia](../K000003-libreoffice-python-integracia/index.md) · _inprogress_ · no
 - **K000002** · [K000002 – Git workflow pre EA modely](../K000002-git-workflow-pre-ea-modely/index.md) · _inprogress_ · no
 - **K000001** · [K000001 – EA modelovanie a motivácia](../K000001-ea-modelovanie-a-motivacia/index.md) · _done_ · no
-- **Ako komunikovať s porozumenímE_index** · [titul-Ako komunikovať s porozumeníme](../Ako-komunikova-s-porozumen-mE/index.md) · _backlog_ · -
+- **Ako komunikovať s porozumenímE_index** · [titul-Ako komunikovať s porozumením](../Ako-komunikova-s-porozumen-mE/index.md) · _backlog_ · -

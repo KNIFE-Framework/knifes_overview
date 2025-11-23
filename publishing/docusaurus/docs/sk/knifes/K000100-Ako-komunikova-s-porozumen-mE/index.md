@@ -24,7 +24,7 @@ guid: "a88f105a-aaba-42e0-8574-3b4d5f83627e"
 dao: "knife"
 
 # Názov zápisu – dopĺňa používateľ
-title: "K000100 – titul-Ako komunikovať s porozumeníme"
+title: "K000100 – titul-Ako komunikovať s porozumením"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
 description: "{{DESCRIPTION}}"
@@ -132,7 +132,7 @@ fm_reserved2: ""
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 ---
-# K000100 – titul-Ako komunikovať s porozumeníme
+# K000100 – titul-Ako komunikovať s porozumením
 
 <!-- fm-visible: start -->
 > **GUID:** `a88f105a-aaba-42e0-8574-3b4d5f83627e`
@@ -249,7 +249,7 @@ Stačí napísať:
 
 A idem generovať ZIP.
 
-## A DOTERAZ SOM SA NEDOČKA VÝSTUPOV
+## A DOTERAZ SOM SA NEDOČKAL VÝSTUPOV
 
 Zdá sa, že platforma bráni riešeniu komplexnejších úloh.
 

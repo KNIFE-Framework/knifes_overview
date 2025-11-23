@@ -13,6 +13,7 @@ V tejto sekcii nájdeš **praktické návody**, ktoré sú súčasťou platformy
 - [Ako vytvoriť nový KNIFE príspevok](./howto/new-knife.md)
 - [Ako vytvoriť novú STHDF inštanciu kurzu](./howto/new-sthdf.md)
 
+
 ## Prečo je to oddelené od konkrétnych tried
 
 Tieto návody sú navrhnuté ako **stála súčasť aplikácie**:

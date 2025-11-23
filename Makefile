@@ -13,6 +13,8 @@ CONTENT_DOCS_DIR := content/docs
 PUB_DOCUS_DIR    := publishing/docusaurus
 PUB_DOCS_DIR     := $(PUB_DOCUS_DIR)/docs
 PUB_BUILD_DIR    := $(PUB_DOCUS_DIR)/build
+CONTENT_ASSETS_DIR := $(CONTENT_DOCS_DIR)/assets
+PUB_STATIC_DIR     := $(PUB_DOCUS_DIR)/static
 
 # i18n (voliteľne: DS_LOCALE=sk|en)
 DS_LOCALE ?=
@@ -100,7 +102,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@printf "\033[1;90m🧩 CORE / BUILD / SERVE\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(SY00-clean-pubdocs|SY01-sync-content|dev|build|build-fast|build-clean|serve):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(SY00-clean-pubdocs|SY01-sync-content|SY02-sync-assets|dev|build|build-fast|build-clean|serve):.*## /{printf " \033[36m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
 	@printf "\033[1;90m📦 INSTANCE SCOPE\033[0m\n"
@@ -174,7 +176,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 # ─────────────────────────────────────────────────────────
 # CORE: SYNC / DEV / BUILD / SERVE
 # ─────────────────────────────────────────────────────────
-.PHONY: SY00-clean-pubdocs SY01-sync-content dev build build-fast build-clean serve
+.PHONY: SY00-clean-pubdocs SY01-sync-content SY02-sync-assets dev build build-fast build-clean serve
 
 SY00-clean-pubdocs: ## Hard clean: vyprázdni publishing/docusaurus/docs (ponechá priečinok)
 	@mkdir -p "$(PUB_DOCS_DIR)"
@@ -187,8 +189,17 @@ SY01-sync-content: ## Sync SSOT content → publishing/docusaurus/docs (hard, de
 	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
 	@$(MAKE) --no-print-directory knifes-overview
 	@mkdir -p "$(PUB_DOCS_DIR)"
-	rsync -av --delete --checksum "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"
+	rsync -av --delete --checksum \
+	  --exclude 'assets/' \
+	  "$(CONTENT_DOCS_DIR)/" "$(PUB_DOCS_DIR)/"
 	@echo "✅ Synced: $(CONTENT_DOCS_DIR) → $(PUB_DOCS_DIR)"
+
+SY02-sync-assets: ## Sync assets (HTML5, obrázky…) → publishing/docusaurus/static/assets
+	@if [ ! -d "$(CONTENT_ASSETS_DIR)" ]; then \
+	  echo "ℹ️  Skipping assets sync: $(CONTENT_ASSETS_DIR) neexistuje"; exit 0; fi
+	@mkdir -p "$(PUB_STATIC_DIR)/assets"
+	rsync -av --delete --checksum "$(CONTENT_ASSETS_DIR)/" "$(PUB_STATIC_DIR)/assets/"
+	@echo "✅ Synced assets: $(CONTENT_ASSETS_DIR) → $(PUB_STATIC_DIR)/assets"
 
 dev: ## Spustí lokálny dev server Docusaurusu
 	cd "$(PUB_DOCUS_DIR)" && \
@@ -204,6 +215,7 @@ dev: ## Spustí lokálny dev server Docusaurusu
 build: ## Production build (MINIFY=1|0, DS_LOCALE=sk|en, SYNC_CONTENT=1|0)
 	@if [ "$(SYNC_CONTENT)" != "0" ]; then \
 	  $(MAKE) --no-print-directory SY01-sync-content; \
+	  $(MAKE) --no-print-directory SY02-sync-assets; \
 	else \
 	  echo "ℹ️  SYNC_CONTENT=0 → skipping overview generation + rsync (CLI-like build)."; \
 	fi

@@ -10,12 +10,12 @@ Materiály sú určené pre:
 - 👥 projektové tímy.
 
 ---
-
+- 👉 [Onboarding všeobecne](./ClassRoomOnboarding.md)
 ## 🔖 1. Onboarding pre učiteľov
 Úvodný návod pre založenie triedy, assignmentov a ročníkového frameworku.
 
 👉 **GH-Class-Onboarding-Teachers.md**
-
+- 👉 [Onboarding pre učiteľov](./GH-Class-Onboarding-Teachers.md)
 ---
 
 ## 🎓 2. Onboarding pre študentov
@@ -23,19 +23,21 @@ Prvé kroky po kliknutí na assignment, vytvorenie identity a prvý commit.
 
 👉 **GH-Class-Onboarding-Students.md**
 
+- 👉 [Onboarding pre študentov](./GH-Class-Onboarding-Students.md)
 ---
 
 ## 🤝 3. Práca asistentov (Teaching Assistants)
 Ako pridať asistenta, jeho práva a odporúčaný workflow počas semestra.
-
+- 👉 [Asistenti ](./ClassRoomAssistents.md)
 👉 **GH-Class-Assistants.md**
-
+- 👉 [Asistenti – práva a workflow](./GH-Class-Assistants.md)
 ---
 
 ## 🧩 4. Projektové tímy (Group Projects)
 Ako vytvoriť projektové skupiny, prefixy PRJ_XXX a kontrola tímov.
 
 👉 **GH-Class-Group-Projects.md**
+- 👉 [Projektové tímy (Group Projects)](./ClassRoomProjects.md)
 
 ---
 
@@ -43,6 +45,9 @@ Ako vytvoriť projektové skupiny, prefixy PRJ_XXX a kontrola tímov.
 Ako učiteľ aktualizuje existujúce študentské repozitáre po zmene template.
 
 👉 **GH-Class-Sync.md**
+- 👉 [Sync assignmentov](./GH-Class-Sync.md)
+- 👉 [Sync assignmentov - iná verzia](./GH-Class-Sync-B.md)
+- 👉 [Sync update](./GitHub-Class-Update.md)
 
 ---
 
@@ -50,6 +55,7 @@ Ako učiteľ aktualizuje existujúce študentské repozitáre po zmene template.
 Najčastejšie problémy a rýchle riešenia: onboarding, prístupy, prefixy, buildy.
 
 👉 **GH-Class-Troubleshooting.md**
+- 👉 [Troubleshooting](./GH-Class-Troubleshooting.md)
 
 ---
 

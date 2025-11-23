@@ -3,11 +3,11 @@
 new_7ds.py
 
 Špecializovaný generátor pre 7ds inštancie (napr. 7ds-2025_ST_001).
-Volá ho new_item_instance.py po vyhodnotení typu "sthdf".
+Volá ho new_item_instance.py po vyhodnotení typu "7ds".
 
 Zodpovednosť:
 - Vytvoriť cieľový priečinok pre inštanciu (pod content_dir).
-- Prejsť celý strom šablón v core/templates/content/sthdf/body (alebo v ceste z configu).
+- Prejsť celý strom šablón v core/templates/content/7ds/body (alebo v ceste z configu).
 - Pre každý .md súbor:
   - vygenerovať Front Matter na základe FM-Core + configu + ID + title
   - nahradiť placeholdery z FM-Core v tele šablóny
@@ -46,9 +46,9 @@ def _safe_name(raw_name: str, fallback: str = "7ds_instance") -> str:
 
 def _resolve_body_root(config: Dict[str, Any]) -> Path:
     """
-    Zistí koreňový adresár pre body šablóny STHDF.
+    Zistí koreňový adresár pre body šablóny 7Ds.
 
-    Preferuje sa hodnota v config/sthdf/sthdf_config.yml, napr.:
+    Preferuje sa hodnota v config/7ds/7ds_config.yml, napr.:
       template_body_root: "core/templates/content/7ds/body"
 
     Ak tam nie je, fallback je práve táto cesta.
@@ -108,9 +108,12 @@ def _process_markdown_file(
     )
 
     # Upravíme title tak, aby obsahoval ID + title (rovnako ako pri KNIFE)
-    combined_title = _build_combined_title(explicit_id, cli_title, instance_name)
-    if combined_title:
-        _set_or_replace_fm_key(fm_lines, "title", _yaml_quote(combined_title))
+    # 👉 Platí iba pre root `index.md`. Podstránky si nechávajú vlastný title
+    # (napr. odvodený z prvého H1 alebo z názvu súboru cez base_fm).
+    if is_root:
+        combined_title = _build_combined_title(explicit_id, cli_title, instance_name)
+        if combined_title:
+            _set_or_replace_fm_key(fm_lines, "title", _yaml_quote(combined_title))
 
     # Pre nested 7ds docs odstránime id z FM, aby sa neopakoval rovnaký id
     if not is_root:
@@ -126,10 +129,10 @@ def _process_markdown_file(
     parts: List[str] = []
     parts.append(render_fm_block(fm_lines))
 
-    # Pre všetky podstránky pridáme komentár s ID STHDF inštancie
-    sthdf_id_for_comment = explicit_id or instance_name
-    if not is_root and sthdf_id_for_comment:
-        parts.append(f"<!-- STHDF_INSTANCE_ID: {sthdf_id_for_comment} -->\n\n")
+    # Pre všetky podstránky pridáme komentár s ID 7Ds inštancie
+    id_7ds_for_comment = explicit_id or instance_name
+    if not is_root and id_7ds_for_comment:
+        parts.append(f"<!-- 7DS_INSTANCE_ID: {id_7ds_for_comment} -->\n\n")
 
     # Zistí, či telo obsahuje marker na vloženie header template
     inject_header = should_inject_header(body)
@@ -164,100 +167,88 @@ def generate(ctx: Dict[str, Any]) -> None:
     """
     Hlavný vstupný bod pre generovanie 7ds inštancie.
 
-    Očakávané položky v ctx:
+    ŠPECIÁLNA verzia pre 7Ds:
+      - nepoužíva common_generate_tree,
+      - prechádza strom šablóny a pre každý .md súbor volá _process_markdown_file,
+      - rešpektuje FM-Core ako SSOT,
+      - pre root index.md nastaví title v tvare "ID – Title",
+      - pre podstránky necháva title odvodený z H1 / názvu súboru (cez base_fm).
+
+    Očakávané položky v ctx (pripravené new_item_instance.py):
       - config: načítaný YAML config/7ds/7ds_config.yml
-      - content_dir: Path – koreň pre zápis STHDF inštancií (content/docs/sk/sthdf)
-      - instance_name: napr. "7ds-2025_ST_001"
-      - explicit_id: napr. "7ds-2025_ST_001" (môže byť rovnaké ako instance_name)
-      - cli_title: ľudský title (napr. "Môj prvý 7ds študent")
+      - content_dir: Path – koreň pre zápis 7Ds inštancií (content/docs/sk/7ds)
+      - instance_name: napr. "7ds_PlatobnyPortal"
+      - explicit_id: napr. "7ds_PlatobnyPortal" (môže byť rovnaké ako instance_name)
+      - cli_title: ľudský title (napr. "7Ds – Platobný portál")
       - fm_core_lines: List[str] – obsah FM-Core template
       - template_header_path: voliteľná cesta na header template
-      - exists_mode: "skip" | "error" | "replace" | "merge"
+      - exists_mode: "skip" | "error" | "replace"
       - debug: bool
       - dry_run: bool
-      - raw_name: voliteľné surové meno (napr. z CLI)
     """
     config: Dict[str, Any] = ctx["config"]
     content_dir: Path = ctx["content_dir"]
     instance_name: str = ctx["instance_name"]
+
     explicit_id: Optional[str] = ctx.get("explicit_id")
     cli_title: Optional[str] = ctx.get("cli_title")
     fm_core_lines: List[str] = ctx["fm_core_lines"]
     template_header_path: Optional[str] = ctx.get("template_header_path")
-    exists_mode: str = ctx.get("exists_mode", "skip")
+
+    exists_mode: str = ctx.get("exists_mode", "error")
     debug: bool = ctx.get("debug", False)
     dry_run: bool = ctx.get("dry_run", False)
-    raw_name: Optional[str] = ctx.get("raw_name")
 
-    # Názvy a cesty
-    base_name = explicit_id or raw_name or instance_name or "7ds_instance"
-    folder_name = _safe_name(base_name, fallback="7ds_instance")
-    target_root = content_dir / folder_name
+    # Koreň šablóny pre 7Ds (z configu alebo default)
+    template_root = _resolve_body_root(config)
 
-    debug_print(debug, f"[7DS] instance_name={instance_name}, explicit_id={explicit_id}")
-    debug_print(debug, f"[7DS] target_root={target_root}")
+    # Cieľový koreň jedného 7Ds zápisu
+    output_root = content_dir / instance_name
 
-    # Riešenie existujúceho priečinka
-    target_index = target_root / "index.md"
-    if target_index.exists():
-        if exists_mode in ("skip", "merge"):
-            debug_print(debug, f"[7ds] exists → skip/merge: {target_index}")
-            print(
-                f"STHDF instance already exists at: {target_root} (exists={exists_mode})"
-            )
-            return
+    debug_print(debug, f"[7ds] template_root={template_root}")
+    debug_print(debug, f"[7ds] output_root={output_root}")
+
+    # Konflikt cieľového priečinka podľa režimu exists_mode
+    if output_root.exists():
         if exists_mode == "error":
-            raise SystemExit(
-                f"STHDF instance already exists at: {target_root} (exists=error)"
-            )
+            raise SystemExit(f"[7ds] Cieľový priečinok už existuje: {output_root}")
+        if exists_mode == "skip":
+            debug_print(debug, f"[7ds] Exists + skip → nič nerobím ({output_root})")
+            return
         if exists_mode == "replace":
-            if not dry_run:
-                if target_root.exists() and target_root.is_dir():
-                    shutil.rmtree(target_root)
-                ensure_dir(target_root, debug=debug, dry_run=dry_run)
+            shutil.rmtree(output_root)
 
-    # Zistíme koreň šablóny pre STHDF
-    body_root = _resolve_body_root(config)
-    if not body_root.exists() or not body_root.is_dir():
-        raise FileNotFoundError(
-            f"STHDF template body root not found or not a directory: {body_root}"
-        )
+    if dry_run:
+        print(f"[DRY-RUN][7ds] Vytvoril by som strom pod {output_root}")
+        return
 
-    debug_print(debug, f"[7ds] Using body_root={body_root}")
+    # Reálne kopírovanie stromu z template_root do output_root
+    for src_path in template_root.rglob("*"):
+        rel_path = src_path.relative_to(template_root)
+        dest_path = output_root / rel_path
 
-    # Prejdeme celý strom šablón
-    for src_path in body_root.rglob("*"):
         if src_path.is_dir():
+            ensure_dir(dest_path, debug=debug, dry_run=dry_run)
             continue
 
-        rel_path = src_path.relative_to(body_root)
-        dest_path = target_root / rel_path
-
-        # Nemarkdownové súbory len skopírujeme
-        if src_path.suffix.lower() != ".md":
+        if src_path.suffix.lower() == ".md":
+            _process_markdown_file(
+                src_path=src_path,
+                dest_path=dest_path,
+                rel_path=rel_path,
+                fm_core_lines=fm_core_lines,
+                config=config,
+                instance_name=instance_name,
+                explicit_id=explicit_id,
+                cli_title=cli_title,
+                template_header_path=template_header_path,
+                debug=debug,
+                dry_run=dry_run,
+            )
+        else:
+            # Nekopírujeme nič v DRY režime
             if not dry_run:
                 ensure_dir(dest_path.parent, debug=debug, dry_run=dry_run)
                 shutil.copy2(src_path, dest_path)
-            debug_print(debug, f"[7ds] copied asset: {rel_path}")
-            continue
 
-        # Markdown – spracujeme ako šablónu s FM
-        debug_print(debug, f"[7ds] rendering markdown: {rel_path}")
-        _process_markdown_file(
-            src_path=src_path,
-            dest_path=dest_path,
-            rel_path=rel_path,
-            fm_core_lines=fm_core_lines,
-            config=config,
-            instance_name=instance_name,
-            explicit_id=explicit_id,
-            cli_title=cli_title,
-            template_header_path=template_header_path,
-            debug=debug,
-            dry_run=dry_run,
-        )
-
-    print(
-        f"7dts instance generated at: {target_root} "
-        f"{'(dry-run)' if dry_run else ''}"
-    )
+    print(f"7ds instance generated at: {output_root}")

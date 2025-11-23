@@ -2,7 +2,7 @@
 """
 new_q12.py
 
-Špecializovaný generátor pre Q12 inštancie (napr. 2025_ST_001).
+Špecializovaný generátor pre q12 inštancie (napr. q12-2025_ST_001).
 Volá ho new_item_instance.py po vyhodnotení typu "q12".
 
 Zodpovednosť:
@@ -34,7 +34,7 @@ from base_fm import (
 )
 
 
-def _safe_name(raw_name: str, fallback: str = "q12") -> str:
+def _safe_name(raw_name: str, fallback: str = "q12_instance") -> str:
     """
     Vytvorí bezpečný názov priečinka zo zadaného mena.
     Povolené znaky: A-Z, a-z, 0-9, -, _
@@ -108,11 +108,14 @@ def _process_markdown_file(
     )
 
     # Upravíme title tak, aby obsahoval ID + title (rovnako ako pri KNIFE)
-    combined_title = _build_combined_title(explicit_id, cli_title, instance_name)
-    if combined_title:
-        _set_or_replace_fm_key(fm_lines, "title", _yaml_quote(combined_title))
+    # 👉 Platí iba pre root `index.md`. Podstránky si nechávajú vlastný title
+    # (napr. odvodený z prvého H1 alebo z názvu súboru cez base_fm).
+    if is_root:
+        combined_title = _build_combined_title(explicit_id, cli_title, instance_name)
+        if combined_title:
+            _set_or_replace_fm_key(fm_lines, "title", _yaml_quote(combined_title))
 
-    # Pre nested Q12 docs odstránime id z FM, aby sa neopakoval rovnaký id
+    # Pre nested q12 docs odstránime id z FM, aby sa neopakoval rovnaký id
     if not is_root:
         cleaned_fm_lines: List[str] = []
         for line in fm_lines:
@@ -127,9 +130,9 @@ def _process_markdown_file(
     parts.append(render_fm_block(fm_lines))
 
     # Pre všetky podstránky pridáme komentár s ID Q12 inštancie
-    q12 = explicit_id or instance_name
-    if not is_root and q12:
-        parts.append(f"<!-- Q12_INSTANCE_ID: {q12} -->\n\n")
+    id_q12_for_comment = explicit_id or instance_name
+    if not is_root and id_q12_for_comment:
+        parts.append(f"<!-- 7DS_INSTANCE_ID: {id_q12_for_comment} -->\n\n")
 
     # Zistí, či telo obsahuje marker na vloženie header template
     inject_header = should_inject_header(body)
@@ -162,102 +165,90 @@ def _process_markdown_file(
 
 def generate(ctx: Dict[str, Any]) -> None:
     """
-    Hlavný vstupný bod pre generovanie Q12 inštancie.
+    Hlavný vstupný bod pre generovanie q12 inštancie.
 
-    Očakávané položky v ctx:
+    ŠPECIÁLNA verzia pre Q12:
+      - nepoužíva common_generate_tree,
+      - prechádza strom šablóny a pre každý .md súbor volá _process_markdown_file,
+      - rešpektuje FM-Core ako SSOT,
+      - pre root index.md nastaví title v tvare "ID – Title",
+      - pre podstránky necháva title odvodený z H1 / názvu súboru (cez base_fm).
+
+    Očakávané položky v ctx (pripravené new_item_instance.py):
       - config: načítaný YAML config/q12/q12_config.yml
       - content_dir: Path – koreň pre zápis Q12 inštancií (content/docs/sk/q12)
-      - instance_name: napr. "2025_ST_001"
-      - explicit_id: napr. "2025_ST_001" (môže byť rovnaké ako instance_name)
-      - cli_title: ľudský title (napr. "Môj prvý Q12 študent")
+      - instance_name: napr. "q12_PlatobnyPortal"
+      - explicit_id: napr. "q12_PlatobnyPortal" (môže byť rovnaké ako instance_name)
+      - cli_title: ľudský title (napr. "Q12 – Platobný portál")
       - fm_core_lines: List[str] – obsah FM-Core template
       - template_header_path: voliteľná cesta na header template
-      - exists_mode: "skip" | "error" | "replace" | "merge"
+      - exists_mode: "skip" | "error" | "replace"
       - debug: bool
       - dry_run: bool
-      - raw_name: voliteľné surové meno (napr. z CLI)
     """
     config: Dict[str, Any] = ctx["config"]
     content_dir: Path = ctx["content_dir"]
     instance_name: str = ctx["instance_name"]
+
     explicit_id: Optional[str] = ctx.get("explicit_id")
     cli_title: Optional[str] = ctx.get("cli_title")
     fm_core_lines: List[str] = ctx["fm_core_lines"]
     template_header_path: Optional[str] = ctx.get("template_header_path")
-    exists_mode: str = ctx.get("exists_mode", "skip")
+
+    exists_mode: str = ctx.get("exists_mode", "error")
     debug: bool = ctx.get("debug", False)
     dry_run: bool = ctx.get("dry_run", False)
-    raw_name: Optional[str] = ctx.get("raw_name")
 
-    # Názvy a cesty
-    base_name = explicit_id or raw_name or instance_name or "q12_instance"
-    folder_name = _safe_name(base_name, fallback="q12_instance")
-    target_root = content_dir / folder_name
+    # Koreň šablóny pre Q12 (z configu alebo default)
+    template_root = _resolve_body_root(config)
 
-    debug_print(debug, f"[Q12] instance_name={instance_name}, explicit_id={explicit_id}")
-    debug_print(debug, f"[Q12] target_root={target_root}")
+    # Cieľový koreň jedného Q12 zápisu
+    output_root = content_dir / instance_name
 
-    # Riešenie existujúceho priečinka
-    target_index = target_root / "index.md"
-    if target_index.exists():
-        if exists_mode in ("skip", "merge"):
-            debug_print(debug, f"[Q12] exists → skip/merge: {target_index}")
-            print(
-                f"Q12 instance already exists at: {target_root} (exists={exists_mode})"
-            )
-            return
+    debug_print(debug, f"[q12] template_root={template_root}")
+    debug_print(debug, f"[q12] output_root={output_root}")
+
+    # Konflikt cieľového priečinka podľa režimu exists_mode
+    if output_root.exists():
         if exists_mode == "error":
-            raise SystemExit(
-                f"Q12 instance already exists at: {target_root} (exists=error)"
-            )
+            raise SystemExit(f"[q12] Cieľový priečinok už existuje: {output_root}")
+        if exists_mode == "skip":
+            debug_print(debug, f"[q12] Exists + skip → nič nerobím ({output_root})")
+            return
         if exists_mode == "replace":
-            if not dry_run:
-                if target_root.exists() and target_root.is_dir():
-                    shutil.rmtree(target_root)
-                ensure_dir(target_root, debug=debug, dry_run=dry_run)
+            shutil.rmtree(output_root)
 
-    # Zistíme koreň šablóny pre Q12
-    body_root = _resolve_body_root(config)
-    if not body_root.exists() or not body_root.is_dir():
-        raise FileNotFoundError(
-            f"Q12 template body root not found or not a directory: {body_root}"
-        )
+    if dry_run:
+        print(f"[DRY-RUN][q12] Vytvoril by som strom pod {output_root}")
+        return
 
-    debug_print(debug, f"[Q12] Using body_root={body_root}")
+    # Reálne kopírovanie stromu z template_root do output_root
+    for src_path in template_root.rglob("*"):
+        rel_path = src_path.relative_to(template_root)
+        dest_path = output_root / rel_path
 
-    # Prejdeme celý strom šablón
-    for src_path in body_root.rglob("*"):
         if src_path.is_dir():
+            ensure_dir(dest_path, debug=debug, dry_run=dry_run)
             continue
 
-        rel_path = src_path.relative_to(body_root)
-        dest_path = target_root / rel_path
-
-        # Nemarkdownové súbory len skopírujeme
-        if src_path.suffix.lower() != ".md":
+        if src_path.suffix.lower() == ".md":
+            _process_markdown_file(
+                src_path=src_path,
+                dest_path=dest_path,
+                rel_path=rel_path,
+                fm_core_lines=fm_core_lines,
+                config=config,
+                instance_name=instance_name,
+                explicit_id=explicit_id,
+                cli_title=cli_title,
+                template_header_path=template_header_path,
+                debug=debug,
+                dry_run=dry_run,
+            )
+        else:
+            # Nekopírujeme nič v DRY režime
             if not dry_run:
                 ensure_dir(dest_path.parent, debug=debug, dry_run=dry_run)
                 shutil.copy2(src_path, dest_path)
-            debug_print(debug, f"[Q12] copied asset: {rel_path}")
-            continue
 
-        # Markdown – spracujeme ako šablónu s FM
-        debug_print(debug, f"[Q12] rendering markdown: {rel_path}")
-        _process_markdown_file(
-            src_path=src_path,
-            dest_path=dest_path,
-            rel_path=rel_path,
-            fm_core_lines=fm_core_lines,
-            config=config,
-            instance_name=instance_name,
-            explicit_id=explicit_id,
-            cli_title=cli_title,
-            template_header_path=template_header_path,
-            debug=debug,
-            dry_run=dry_run,
-        )
-
-    print(
-        f"Q12 instance generated at: {target_root} "
-        f"{'(dry-run)' if dry_run else ''}"
-    )
+    print(f"q12 instance generated at: {output_root}")

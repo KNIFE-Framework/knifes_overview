@@ -3,7 +3,7 @@
 fm_version: "1.0.1"
 
 # Dátum buildu – generuje skript
-fm_build: "2025-11-23T11:33:49.012735+00:00"
+fm_build: "2025-11-23T15:34:17.201409+00:00"
 
 # Poznámka k verzii – voliteľné
 fm_version_comment: ""
@@ -14,7 +14,7 @@ fm_version_comment: ""
 # ID generuje CLI / skript
 
 # Unikátne UUID – generuje skript
-guid: "57083742-9405-413f-89c8-b9f321d3339d"
+guid: "eee29af3-3219-46f7-99de-b14fb6bc7d5a"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -23,7 +23,7 @@ guid: "57083742-9405-413f-89c8-b9f321d3339d"
 dao: "7ds"
 
 # Názov zápisu – dopĺňa používateľ
-title: "01-7ds_PlatobnyPortal – 01-7Ds – Platobný portál"
+title: "01.D1 Management"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
 description: "{{DESCRIPTION}}"
@@ -68,10 +68,10 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2025-11-23 12:33"
+created: "2025-11-23 16:34"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2025-11-23 12:33"
+modified: "2025-11-23 16:34"
 
 # Stav dokumentu – default "backlog"
 status: "backlog"
@@ -131,7 +131,7 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-<!-- STHDF_INSTANCE_ID: 01-7ds_PlatobnyPortal -->
+<!-- 7DS_INSTANCE_ID: 01-7ds_PlatobnyPortal -->
 
 # 01.D1-Management
 

@@ -1,7 +1,42 @@
 ---
 title: Release Notes
 ---
+ 
+### 🔖 Ako vytvoriť Release v0.4.0
 
+Existujú dva spôsoby: **CLI (git)** alebo **GitHub UI**.
+
+#### ✅ 1. RELEASE cez CLI
+1. Skontroluj stav:
+   ```bash
+   git status
+   ```
+2. Pridaj zmeny:
+   ```bash
+   git add -A
+   ```
+3. Commitni:
+   ```bash
+   git commit -m "Release v0.4.0"
+   ```
+4. Vytvor tag:
+   ```bash
+   git tag v0.4.0
+   ```
+5. Pushni branch aj tag:
+   ```bash
+   git push
+   git push origin v0.4.0
+   ```
+
+#### ✅ 2. RELEASE cez GitHub (UI)
+1. Otvor GitHub repo → **Releases**
+2. Klikni **Draft a new release**
+3. Tag version: `v0.4.0`
+4. Target: `main`
+5. Title: `v0.4.0 – STHDF HELP & Generátor`
+6. Popis môžeš skopírovať z tejto stránky
+7. Klikni **Publish Release**
 # Release Notes – KNIFE Overview & STHDF Framework
 
 Táto stránka zhromažďuje zmeny, ktoré ovplyvňujú:

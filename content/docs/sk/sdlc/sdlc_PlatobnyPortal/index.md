@@ -3,7 +3,7 @@
 fm_version: "1.0.1"
 
 # Dátum buildu – generuje skript
-fm_build: "2025-11-23T16:18:39.192302+00:00"
+fm_build: "2025-11-24T19:50:22.750816+00:00"
 
 # Poznámka k verzii – voliteľné
 fm_version_comment: ""
@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "sdlc_PlatobnyPortal"
 
 # Unikátne UUID – generuje skript
-guid: "f2d66b27-f903-48f3-b3c1-e532b32f243d"
+guid: "addb2a77-fe8c-4e2a-b662-e76c0563e11b"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,10 +69,10 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2025-11-23 17:18"
+created: "2025-11-24 20:50"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2025-11-23 17:18"
+modified: "2025-11-24 20:50"
 
 # Stav dokumentu – default "backlog"
 status: "backlog"
@@ -132,37 +132,33 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# 👥 Študenti – Dashboard
+# 🧭 Project Summary – SDLC v9 (Full Lifecycle)
 
-V tejto sekcii sa nachádzajú študentské deliverables.
-
-## 🔗 Navigácia
-
-- **01 – About Me**  
-  → [01 – About Me](./students/deliverables/01_about-me.md)
-  
-- **02 – Knowledge Contribution (A2)**  
-  → [02 – Knowledge Contribution (A2)](./students/deliverables/02_knowledge-contribution.md)
-
-- **03 – Project Summary**  
-  → [03 – Project Summary](./students/deliverables/03_project-summary.md)
-
-- **04 – Project Outcomes**  
-  → [04 – Project Outcomes](./students/deliverables/04_project-outcomes.md)
-
-- **05 – Pitch Presentation**  
-  → [05 – Pitch Presentation](./students/deliverables/05_pitch_presentation.md)
-
-- **06 – Final Presentation**  
-  → [06 – Final Presentation](./students/deliverables/06_final_presentation.md)
-
-- **07 – Reflexia**  
-  → [07 – Reflexia](./students/deliverables/07_reflexia.md)
+Tento priečinok obsahuje **9 etáp SDLC** – od požiadaviek po riadenie zmien.  
+Každá fáza má vlastný `index.md` so stručným opisom a úlohami.
 
 ---
 
-## ℹ️ Poznámka
-Tento súbor je súčasťou *defaultného template* a zabezpečuje stabilitu sidebaru aj navigácie.
+## 📂 Etapy SDLC
 
-## Navigácia
-- [↩️ Späť](../../index.md)
+1️⃣ [**01-Business**](./01-business/index.md) – Zachytenie potrieb, cieľov a očakávaní používateľov.  
+
+2️⃣ [**02-Top Level Architecture**](./02-top-level-architecture/index.md) – koncepty, analýza uskutočniteľnosti, rizík a alternatív riešenia.  
+
+3️⃣ [**03-Solution Architecture**](./03-solution-architecture/index.md) – Návrh architektúry, dátového modelu a UI/UX.  
+
+4️⃣ [**04-Analysis**](./04-analysis/index.md) – Analýsa kontextov, riešenia návrhu.  
+
+5️⃣ [**05-Design**](./05-design/index.md) – Návrhy riešenia.
+
+6️⃣ [**06-Implementation**](./06-implementation/index.md) – Implementácia.
+  
+7️⃣ [**07-Testing & Verification**](./07-testing-verification/index.md) Overenie kvality – test cases, QA checklist, výsledky– Údržba a drobné vylepšenia po nasadení.  
+
+8️⃣ [**08-Operation**](./08-operation/index.md) – Nasadenie a prevádzka.  
+
+9️⃣ [**09-Change Management**](./09-Change-Management/index.md) – Riadenie zmien – Change Log, Impact Analysis, CR.
+
+---
+
+**Navigation:** [🏠 Home](../index.md) · Otvor niektorú z podpriečinkov ↑

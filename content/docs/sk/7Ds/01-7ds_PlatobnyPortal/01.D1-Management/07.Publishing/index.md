@@ -3,7 +3,7 @@
 fm_version: "1.0.1"
 
 # Dátum buildu – generuje skript
-fm_build: "2025-11-23T15:34:17.210982+00:00"
+fm_build: "2025-11-24T17:01:36.710608+00:00"
 
 # Poznámka k verzii – voliteľné
 fm_version_comment: ""
@@ -14,7 +14,7 @@ fm_version_comment: ""
 # ID generuje CLI / skript
 
 # Unikátne UUID – generuje skript
-guid: "b4096d5a-a631-4fec-8818-3f631e771166"
+guid: "c2e0ace8-1c38-4981-a645-ed57914e435c"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -68,10 +68,10 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2025-11-23 16:34"
+created: "2025-11-24 18:01"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2025-11-23 16:34"
+modified: "2025-11-24 18:01"
 
 # Stav dokumentu – default "backlog"
 status: "backlog"

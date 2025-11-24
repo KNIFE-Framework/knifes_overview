@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-new_sthdf.py
+new_sdlc.py
 
-Špecializovaný generátor pre sthdf inštancie (napr. sthdf-2025_ST_001).
-Volá ho new_item_instance.py po vyhodnotení typu "sthdf".
+Špecializovaný generátor pre sdlc inštancie (napr. sdlc-2025_ST_001).
+Volá ho new_item_instance.py po vyhodnotení typu "sdlc".
 
 Zodpovednosť:
 - Vytvoriť cieľový priečinok pre inštanciu (pod content_dir).
-- Prejsť celý strom šablón v core/templates/content/sthdf/body (alebo v ceste z configu).
+- Prejsť celý strom šablón v core/templates/content/sdlc/body (alebo v ceste z configu).
 - Pre každý .md súbor:
   - vygenerovať Front Matter na základe FM-Core + configu + ID + title
   - nahradiť placeholdery z FM-Core v tele šablóny
@@ -34,7 +34,7 @@ from base_fm import (
 )
 
 
-def _safe_name(raw_name: str, fallback: str = "sthdf_instance") -> str:
+def _safe_name(raw_name: str, fallback: str = "sdlc_instance") -> str:
     """
     Vytvorí bezpečný názov priečinka zo zadaného mena.
     Povolené znaky: A-Z, a-z, 0-9, -, _
@@ -46,10 +46,10 @@ def _safe_name(raw_name: str, fallback: str = "sthdf_instance") -> str:
 
 def _resolve_body_root(config: Dict[str, Any]) -> Path:
     """
-    Zistí koreňový adresár pre body šablóny STHDF.
+    Zistí koreňový adresár pre body šablóny sdlc.
 
-    Preferuje sa hodnota v config/sthdf/sthdf_config.yml, napr.:
-      template_body_root: "core/templates/content/sthdf/body"
+    Preferuje sa hodnota v config/sdlc/sdlc_config.yml, napr.:
+      template_body_root: "core/templates/content/sdlc/body"
 
     Ak tam nie je, fallback je práve táto cesta.
     """
@@ -57,7 +57,7 @@ def _resolve_body_root(config: Dict[str, Any]) -> Path:
     if raw:
         return Path(raw)
     # Fallback – aktuálna defaultná cesta v projekte
-    return Path("core/templates/content/sthdf/body")
+    return Path("core/templates/content/sdlc/body")
 
 
 def _build_combined_title(explicit_id: Optional[str], cli_title: Optional[str], instance_name: str) -> Optional[str]:
@@ -115,7 +115,7 @@ def _process_markdown_file(
         if combined_title:
             _set_or_replace_fm_key(fm_lines, "title", _yaml_quote(combined_title))
 
-    # Pre nested sthdf docs odstránime id z FM, aby sa neopakoval rovnaký id
+    # Pre nested sdlc docs odstránime id z FM, aby sa neopakoval rovnaký id
     if not is_root:
         cleaned_fm_lines: List[str] = []
         for line in fm_lines:
@@ -129,10 +129,10 @@ def _process_markdown_file(
     parts: List[str] = []
     parts.append(render_fm_block(fm_lines))
 
-    # Pre všetky podstránky pridáme komentár s ID STHDF inštancie
-    id_sthdf_for_comment = explicit_id or instance_name
-    if not is_root and id_sthdf_for_comment:
-        parts.append(f"<!-- STHDF_INSTANCE_ID: {id_sthdf_for_comment} -->\n\n")
+    # Pre všetky podstránky pridáme komentár s ID sdlc inštancie
+    id_sdlc_for_comment = explicit_id or instance_name
+    if not is_root and id_sdlc_for_comment:
+        parts.append(f"<!-- sdlc_INSTANCE_ID: {id_sdlc_for_comment} -->\n\n")
 
     # Zistí, či telo obsahuje marker na vloženie header template
     inject_header = should_inject_header(body)
@@ -165,9 +165,9 @@ def _process_markdown_file(
 
 def generate(ctx: Dict[str, Any]) -> None:
     """
-    Hlavný vstupný bod pre generovanie sthdf inštancie.
+    Hlavný vstupný bod pre generovanie sdlc inštancie.
 
-    ŠPECIÁLNA verzia pre STHDF:
+    ŠPECIÁLNA verzia pre sdlc:
       - nepoužíva common_generate_tree,
       - prechádza strom šablóny a pre každý .md súbor volá _process_markdown_file,
       - rešpektuje FM-Core ako SSOT,
@@ -175,11 +175,11 @@ def generate(ctx: Dict[str, Any]) -> None:
       - pre podstránky necháva title odvodený z H1 / názvu súboru (cez base_fm).
 
     Očakávané položky v ctx (pripravené new_item_instance.py):
-      - config: načítaný YAML config/sthdf/sthdf_config.yml
-      - content_dir: Path – koreň pre zápis STHDF inštancií (content/docs/sk/sthdf)
-      - instance_name: napr. "sthdf_PlatobnyPortal"
-      - explicit_id: napr. "sthdf_PlatobnyPortal" (môže byť rovnaké ako instance_name)
-      - cli_title: ľudský title (napr. "STHDF – Platobný portál")
+      - config: načítaný YAML config/sdlc/sdlc_config.yml
+      - content_dir: Path – koreň pre zápis sdlc inštancií (content/docs/sk/sdlc)
+      - instance_name: napr. "sdlc_PlatobnyPortal"
+      - explicit_id: napr. "sdlc_PlatobnyPortal" (môže byť rovnaké ako instance_name)
+      - cli_title: ľudský title (napr. "sdlc – Platobný portál")
       - fm_core_lines: List[str] – obsah FM-Core template
       - template_header_path: voliteľná cesta na header template
       - exists_mode: "skip" | "error" | "replace"
@@ -199,27 +199,27 @@ def generate(ctx: Dict[str, Any]) -> None:
     debug: bool = ctx.get("debug", False)
     dry_run: bool = ctx.get("dry_run", False)
 
-    # Koreň šablóny pre STHDF (z configu alebo default)
+    # Koreň šablóny pre sdlc (z configu alebo default)
     template_root = _resolve_body_root(config)
 
-    # Cieľový koreň jedného STHDF zápisu
+    # Cieľový koreň jedného sdlc zápisu
     output_root = content_dir / instance_name
 
-    debug_print(debug, f"[sthdf] template_root={template_root}")
-    debug_print(debug, f"[sthdf] output_root={output_root}")
+    debug_print(debug, f"[sdlc] template_root={template_root}")
+    debug_print(debug, f"[sdlc] output_root={output_root}")
 
     # Konflikt cieľového priečinka podľa režimu exists_mode
     if output_root.exists():
         if exists_mode == "error":
-            raise SystemExit(f"[sthdf] Cieľový priečinok už existuje: {output_root}")
+            raise SystemExit(f"[sdlc] Cieľový priečinok už existuje: {output_root}")
         if exists_mode == "skip":
-            debug_print(debug, f"[sthdf] Exists + skip → nič nerobím ({output_root})")
+            debug_print(debug, f"[sdlc] Exists + skip → nič nerobím ({output_root})")
             return
         if exists_mode == "replace":
             shutil.rmtree(output_root)
 
     if dry_run:
-        print(f"[DRY-RUN][sthdf] Vytvoril by som strom pod {output_root}")
+        print(f"[DRY-RUN][sdlc] Vytvoril by som strom pod {output_root}")
         return
 
     # Reálne kopírovanie stromu z template_root do output_root
@@ -251,4 +251,4 @@ def generate(ctx: Dict[str, Any]) -> None:
                 ensure_dir(dest_path.parent, debug=debug, dry_run=dry_run)
                 shutil.copy2(src_path, dest_path)
 
-    print(f"sthdf instance generated at: {output_root}")
+    print(f"sdlc instance generated at: {output_root}")

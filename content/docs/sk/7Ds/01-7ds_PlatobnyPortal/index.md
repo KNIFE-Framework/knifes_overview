@@ -3,7 +3,7 @@
 fm_version: "1.0.1"
 
 # Dátum buildu – generuje skript
-fm_build: "2025-11-23T15:34:17.200390+00:00"
+fm_build: "2025-11-24T17:01:36.698021+00:00"
 
 # Poznámka k verzii – voliteľné
 fm_version_comment: ""
@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "01-7ds_PlatobnyPortal"
 
 # Unikátne UUID – generuje skript
-guid: "0d538389-b9b0-4053-b7f3-48e8ba1ea25c"
+guid: "44d8ce67-2cc2-4385-b320-6192f6a541e1"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,10 +69,10 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2025-11-23 16:34"
+created: "2025-11-24 18:01"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2025-11-23 16:34"
+modified: "2025-11-24 18:01"
 
 # Stav dokumentu – default "backlog"
 status: "backlog"

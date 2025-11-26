@@ -146,5 +146,5 @@ sidebar_position: 0
 Rýchly rozcestník pre interné stránky kurzu.
 
 - [About the Course](about/index.md)
-- [Assignments & Milestones](conditions/index.md)
+- [Assignments & Milestones](../conditions/index.md)
 - [Showcase](showcase/index.md)

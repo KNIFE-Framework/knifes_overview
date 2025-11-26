@@ -150,7 +150,7 @@ knife:
   kc_refs: []
 ---
 
-[🏠 Domov](../../index.md) · [⬅️ Nahor](../index.md)
+[🏠 Domov](../index.md) · [⬅️ Nahor](../index.md)
 
 # Assignments & Milestones
 

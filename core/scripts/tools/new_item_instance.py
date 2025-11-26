@@ -9,7 +9,7 @@ Orchestrátor pre generovanie nových inštancií rôznych typov:
 - q12 (pripravené)
 - sdlc (pripravené)
 - thesis (pripravené)
-
+- class_sthdf_dashboard
 Spoločné princípy:
 - Config YAML popisuje DAO, cesty a default hodnoty.
 - FM-Core je SSOT (core/templates/system/FM-Core.md) – obsah vrátane `---` sa NEMENÍ.
@@ -66,6 +66,11 @@ try:
 except ImportError:  # pragma: no cover
     generate_thesis = _missing_generator("new_thesis")
 
+try:
+    from new_class_sthdf_dashboard import generate as generate_class_sthdf_dashboard  # type: ignore
+except ImportError:  # pragma: no cover
+    generate_class_sthdf_dashboard = _missing_generator("new_class_sthdf_dashboard")
+
 
 TYPE_HANDLERS = {
     "knife": generate_knife,
@@ -74,6 +79,7 @@ TYPE_HANDLERS = {
     "q12": generate_q12,
     "sdlc": generate_sdlc,
     "thesis": generate_thesis,
+    "class_sthdf_dashboard": generate_class_sthdf_dashboard,
 }
 
 
@@ -82,14 +88,14 @@ TYPE_HANDLERS = {
 
 def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Vytvorí novú inštanciu položky (KNIFE / STHDF / 7DS / Q12 / SDLC / Thesis) "
-                    "podľa konfiguračného YAML a FM-Core."
+        description="Vytvorí novú inštanciu položky (KNIFE / STHDF / 7DS / Q12 / SDLC / Thesis / class_sthdf_dashboard) "
     )
 
     parser.add_argument(
         "--type",
         required=True,
-        help="Typ položky: knife | sthdf | 7ds | q12 | sdlc | thesis",
+        choices=["knife", "sthdf", "7ds", "q12", "sdlc", "thesis", "class_sthdf_dashboard"],
+        help="Typ položky: knife | sthdf | 7ds | q12 | sdlc | thesis | class_sthdf_dashboard",
     )
     parser.add_argument(
         "--config",
@@ -210,6 +216,8 @@ def main(argv: list[str] | None = None) -> None:
     config_path = args.config
 
     if item_type not in TYPE_HANDLERS:
+        if item_type == "class_sthdf_dasboard":
+            raise SystemExit("Unsupported type 'class_sthdf_dasboard'. Myslíš 'class_sthdf_dashboard'?")
         raise SystemExit(f"Unsupported type '{item_type}'. Nie je ešte implementované.")
 
     handler = TYPE_HANDLERS[item_type]

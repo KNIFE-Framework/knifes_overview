@@ -47,4 +47,5 @@ Toto je hlavná stránka slovenskej dokumentácie.
 - 🧱 [SDLC – Framework](./sdlc/index.md)
 - 🎯 [Q12 – Framework](./q12/index.md)
 - 🏫 [STHDF – Framework](./sthdf/index.md)
+- 🏫 [STHDF – class dashboard](./class_sthdf_dashboard/index.md)
 - 🧭 [Späť na Hub](../index.md)

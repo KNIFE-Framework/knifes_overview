@@ -39,7 +39,8 @@ const config: Config = {
           //homePageId: 'sk/index',
           // aktivujeme tag stránky pre dokumentáciu a presunieme ich z default /tags na /doc-tags,
           // aby nebol konflikt s blogom (ak by sa neskôr zapol)
-          // dočasne vypínam pre warning v builde 21.11.2025,//tagsBasePath: 'doc-tags',
+          // Aktivujeme tag stránky pre dokumentáciu (presunuté z default /tags na /doc-tags, aby nebol konflikt s blogom)
+          tagsBasePath: 'doc-tags',
         },
         // Blog nepoužívame – vypneme, aby nevznikal duplicitný /tags
         blog: false,
@@ -49,7 +50,21 @@ const config: Config = {
   ],
 
   // (Optional) Plugins — buildInfoPlugin disabled (file not present)
-  plugins: [],
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        // vygeneruje lokálny (Lunr) index priamo do buildu, bez Algolie
+        hashed: true,
+        // Lunr nepodporuje 'sk' ako jazykový modul, použijeme default 'en' (funguje aj pre SK texty bez špeciálneho stemmingu)
+        language: ['en'],
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: true,
+        docsRouteBasePath: '/',
+      },
+    ],
+  ],
 
   themeConfig: {
     docs: {
@@ -71,6 +86,7 @@ const config: Config = {
         { type: 'localeDropdown', position: 'left' },
         { to: '/sk/about', label: 'About', position: 'right' },
         { to: '/sk/help',  label: 'Help',  position: 'right' },
+        { to: '/doc-tags', label: 'Tags', position: 'right' },
         {
           href: commitLink || '#',
           label: `Release ${RELEASE_TAG} • ${COMMIT_SHA}`,

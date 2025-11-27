@@ -42,10 +42,14 @@ sidebar_position: 1
 <!-- fm-visible: end -->
 Toto je hlavná stránka slovenskej dokumentácie.
 
+# Stručný prhľad o Projekte
+- 🔪 [KNIFE príspevky](./about.md)
+
 - 🔪 [KNIFE príspevky](./knifes/index.md)
 - ⚙️ [7Ds rámec](./7Ds/index.md)
 - 🧱 [SDLC – Framework](./sdlc/index.md)
 - 🎯 [Q12 – Framework](./q12/index.md)
 - 🏫 [STHDF – Framework](./sthdf/index.md)
-- 🏫 [STHDF – class dashboard](./class_sthdf_dashboard/index.md)
+- 🏫 [STHDF – Dashboard](./class_sthdf_dashboard/index.md)
+- 🏫 [HELP](./help/index.md)
 - 🧭 [Späť na Hub](../index.md)

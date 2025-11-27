@@ -6,7 +6,7 @@ set -e
 python3 core/scripts/tools/new_item_instance.py \
   --type knife \
   --config config/knifes/knifes_config.yml \
-  --id K1000999 \
-  --name "K1000999" \
-  --title "KNIFE – Test script-created instance" \
+  --id K000101 \
+  --name "K000101" \
+  --title "CKO-Onboarding " \
   --exists error

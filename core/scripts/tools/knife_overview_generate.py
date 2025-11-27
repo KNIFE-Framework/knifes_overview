@@ -32,6 +32,23 @@ from typing import Dict, List, Optional
 from typing import Tuple
 
 
+# ---------- helpers: doc route ----------
+def _href_to_doc_route(href: str) -> str:
+    """
+    Convert a markdown file reference (e.g. '../K000101–CKO-Onboarding/index.md')
+    to a Docusaurus doc route (e.g. '../K000101–CKO-Onboarding/').
+    This ensures that overview links point to the generated doc routes
+    rather than to the raw `.md` files (which would cause 404s in Docusaurus).
+    """
+    if href.endswith("/index.md"):
+        # keep the trailing slash, drop 'index.md'
+        return href[: -len("index.md")]
+    if href.endswith(".md"):
+        # drop generic `.md` suffix
+        return href[: -len(".md")]
+    return href
+
+
 # ---------- helpers: fs ----------
  # ---------- helpers: paths ----------
 
@@ -230,7 +247,8 @@ def render_blog(items: List[Dict[str, object]], *, docs_root: str, overview_out_
         title = it['title'] or cid
         created = it['created'] or ''
         path = rel_link_from_overview(it['path'], docs_root, overview_out_dir)
-        lines.append(f"- **{cid}** — {created} — [{title}]({path})")
+        href = _href_to_doc_route(path)
+        lines.append(f"- **{cid}** — {created} — [{title}]({href})")
     return "\n".join(lines) + ("\n" if lines else "")
 
 
@@ -239,10 +257,11 @@ def render_list(items: List[Dict[str, object]], *, docs_root: str, overview_out_
     for it in items:
         title = it['title'] or it['id']
         path = rel_link_from_overview(it['path'], docs_root, overview_out_dir)
+        href = _href_to_doc_route(path)
         status = it['status'] or ''
         prio = it['priority'] or ''
         cid = it['id']
-        lines.append(f"- **{cid}** · [{title}]({path}) · _{status or '-'}_ · {prio or '-'}")
+        lines.append(f"- **{cid}** · [{title}]({href}) · _{status or '-'}_ · {prio or '-'}")
     return "\n".join(lines) + ("\n" if lines else "")
 
 
@@ -253,10 +272,11 @@ def render_details(items: List[Dict[str, object]], *, docs_root: str, overview_o
         cid = it['id']
         title = it['title'] or cid
         path = rel_link_from_overview(it['path'], docs_root, overview_out_dir)
+        href = _href_to_doc_route(path)
         created = it['created'] or ''
         status = it['status'] or ''
         prio = it['priority'] or ''
-        rows.append(f"| {cid} | [{title}]({path}) | {created} | {status} | {prio} |")
+        rows.append(f"| {cid} | [{title}]({href}) | {created} | {status} | {prio} |")
     return header + "\n".join(rows) + ("\n" if rows else "")
 
 # ---------- FM scaffolding for overview pages ----------

@@ -26,13 +26,12 @@ copyright: "© 2025 Roman Kazička / SystemThinking"
 origin_repo: ""
 origin_repo_url: ""
 origin_commit: ""
-origin_system: ""
+origin_system: "knifes_overview"
 author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
-slug: /sk/
-sidebar_position: 1
+
 ---
 
 # KNIFE – Prehľad (SK)

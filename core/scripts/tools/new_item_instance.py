@@ -67,6 +67,11 @@ except ImportError:  # pragma: no cover
     generate_thesis = _missing_generator("new_thesis")
 
 try:
+    from new_know_myself import generate as generate_know_myself  # type: ignore
+except ImportError:  # pragma: no cover
+    generate_know_myself = _missing_generator("new_know_myself")
+
+try:
     from new_class_sthdf_dashboard import generate as generate_class_sthdf_dashboard  # type: ignore
 except ImportError:  # pragma: no cover
     generate_class_sthdf_dashboard = _missing_generator("new_class_sthdf_dashboard")
@@ -80,6 +85,7 @@ TYPE_HANDLERS = {
     "sdlc": generate_sdlc,
     "thesis": generate_thesis,
     "class_sthdf_dashboard": generate_class_sthdf_dashboard,
+    "know_myself": generate_know_myself,
 }
 
 
@@ -88,14 +94,14 @@ TYPE_HANDLERS = {
 
 def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Vytvorí novú inštanciu položky (KNIFE / STHDF / 7DS / Q12 / SDLC / Thesis / class_sthdf_dashboard) "
+        description="Vytvorí novú inštanciu položky (KNIFE / STHDF / 7DS / Q12 / SDLC / Thesis / class_sthdf_dashboard / know_myself) "
     )
 
     parser.add_argument(
         "--type",
         required=True,
-        choices=["knife", "sthdf", "7ds", "q12", "sdlc", "thesis", "class_sthdf_dashboard"],
-        help="Typ položky: knife | sthdf | 7ds | q12 | sdlc | thesis | class_sthdf_dashboard",
+        choices=["knife", "sthdf", "7ds", "q12", "sdlc", "thesis", "class_sthdf_dashboard", "know_myself"],
+        help="Typ položky: knife | sthdf | 7ds | q12 | sdlc | thesis | class_sthdf_dashboard | know_myself",
     )
     parser.add_argument(
         "--config",
@@ -190,6 +196,7 @@ def _build_ctx(cfg: Dict[str, Any], args: argparse.Namespace, fm_core_lines: lis
         "config": cfg,  # celé YAML, nech new_*.py má všetko k dispozícii
         "content_dir": content_dir,
         "instance_name": args.name,
+        "raw_name": args.name,
         "cli_title": cli_title,
         "fm_core_lines": fm_core_lines,
         "explicit_id": args.id,

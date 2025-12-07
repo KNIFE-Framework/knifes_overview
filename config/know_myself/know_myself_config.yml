@@ -1,0 +1,11 @@
+# 🔪 KNIFE-SPECIFIC CONFIG
+dao: "know_myself"
+content_dir: "content/docs/sk/know_myself"
+template_fm: "core/templates/system/FM-Core.md"
+template_header_path: "core/templates/content/know_myself/header/know_myself-user-header.md"
+template_body_root: "core/templates/content/know_myself/body"
+id_prefix: "KnowMyself"
+locale: "sk"
+defaults:
+  author: "Roman Kazicka"
+  status: "backlog"

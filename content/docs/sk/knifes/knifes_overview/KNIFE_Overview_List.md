@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "1e99c8fc-d02a-41c7-b9d2-7b7e6a57bd4b"
+guid: "db51d52e-a34c-4f98-bacd-82e348ae69f0"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `1e99c8fc-d02a-41c7-b9d2-7b7e6a57bd4b`
+> **GUID:** `db51d52e-a34c-4f98-bacd-82e348ae69f0`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -145,7 +145,7 @@ fm_reserved2: ""
 - **REF-UAT-001** · [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) · _inprogress_ · top
 - **K1000999** · [K1000999 – KNIFE – Test script-created instance](../K1000999/) · _backlog_ · -
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/) · _backlog_ · -
-- **K000101** · [K000101 – Cynefin Framework - introduction](../K000101-CYNEFIN_Framework/) · _backlog_ · -
+- **K000101** · [K000101 – Cynefin Framework - introduction](../K000101-CYNEFIN_Framework/) · _draft_ · -
 - **K000100** · [K000100 – titul-Ako komunikovať s porozumením](../K000100-Ako-komunikova-s-porozumen-mE/) · _backlog_ · -
 - **K000092** · [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/) · _backlog_ · -
 - **K000091** · [K000091 – Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/) · _backlog_ · -

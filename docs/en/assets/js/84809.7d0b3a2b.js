@@ -14,7 +14,7 @@
 /* unused harmony export searchResultLimits */
 /* harmony import */ var _Users_romankazicka_Documents_800_CAS_ContextAwareApproach_03_KNIFE_Framework_knifes_overview_03_publishing_docusaurus_node_modules_lunr_lunr_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(58291);
 /* harmony import */ var _Users_romankazicka_Documents_800_CAS_ContextAwareApproach_03_KNIFE_Framework_knifes_overview_03_publishing_docusaurus_node_modules_lunr_lunr_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_romankazicka_Documents_800_CAS_ContextAwareApproach_03_KNIFE_Framework_knifes_overview_03_publishing_docusaurus_node_modules_lunr_lunr_js__WEBPACK_IMPORTED_MODULE_0__);
-const removeDefaultStopWordFilter=[];const language=["en"];const searchIndexUrl="search-index{dir}.json?_=64d820c4";const searchResultLimits=8;const fuzzyMatchingDistance=1;
+const removeDefaultStopWordFilter=[];const language=["en"];const searchIndexUrl="search-index{dir}.json?_=889b6f5b";const searchResultLimits=8;const fuzzyMatchingDistance=1;
 
 /***/ })
 
@@ -151,7 +151,7 @@ const removeDefaultStopWordFilter=[];const language=["en"];const searchIndexUrl=
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "/en/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/ChunkAssetRuntimeModule */

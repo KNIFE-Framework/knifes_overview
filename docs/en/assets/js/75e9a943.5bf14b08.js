@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-index-md-75e.json
-const site_docs_sk_index_md_75e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/SK_KNIFE_HOME","title":"KNIFE – Prehľad (SK)","description":"Slovenská domovská stránka dokumentácie KNIFE.","source":"@site/docs/sk/index.md","sourceDirName":"sk","slug":"/sk/","permalink":"/sk/","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"fm_version":"1.0.1","fm_build":"2025-10-28T00:00:00Z","fm_version_comment":"Stabilné ID/slug pre navigáciu (hub + SK + EN)","id":"SK_KNIFE_HOME","guid":"7afa4bdc-bb40-490b-8697-c9bf7c3ba848","dao":"knife","title":"KNIFE – Prehľad (SK)","description":"Slovenská domovská stránka dokumentácie KNIFE.","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"no","tags":[],"locale":"sk","created":"2025-10-28","modified":"YYYY-MM-DDTHH:MM:SSZ","status":"draft","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"Roman Kazička (CAA/KNIFE/LetItGrow)","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička / SystemThinking","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_system":"","author_id":"","author_did":"","fm_reserved1":"","fm_reserved2":"","slug":"/sk/","sidebar_position":1}}');
+const site_docs_sk_index_md_75e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/SK_KNIFE_HOME","title":"KNIFE – Prehľad (SK)","description":"Slovenská domovská stránka dokumentácie KNIFE.","source":"@site/docs/sk/index.md","sourceDirName":"sk","slug":"/sk/","permalink":"/en/sk/","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2025-10-28T00:00:00Z","fm_version_comment":"Stabilné ID/slug pre navigáciu (hub + SK + EN)","id":"SK_KNIFE_HOME","guid":"7afa4bdc-bb40-490b-8697-c9bf7c3ba848","dao":"knife","title":"KNIFE – Prehľad (SK)","description":"Slovenská domovská stránka dokumentácie KNIFE.","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"no","tags":[],"locale":"sk","created":"2025-10-28","modified":"YYYY-MM-DDTHH:MM:SSZ","status":"draft","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"Roman Kazička (CAA/KNIFE/LetItGrow)","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička / SystemThinking","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_system":"knifes_overview","author_id":"","author_did":"","fm_reserved1":"","fm_reserved2":""}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -56,13 +56,11 @@ const frontMatter = {
 	origin_repo: '',
 	origin_repo_url: '',
 	origin_commit: '',
-	origin_system: '',
+	origin_system: 'knifes_overview',
 	author_id: '',
 	author_did: '',
 	fm_reserved1: '',
-	fm_reserved2: '',
-	slug: '/sk/',
-	sidebar_position: 1
+	fm_reserved2: ''
 };
 const contentTitle = 'KNIFE – Prehľad (SK)';
 
@@ -118,63 +116,63 @@ function _createMdxContent(props) {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["🔪 ", (0,jsx_runtime.jsx)(_components.a, {
-            href: "/sk/about",
+            href: "/en/sk/about",
             children: "KNIFE príspevky"
           })]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["🔪 ", (0,jsx_runtime.jsx)(_components.a, {
-            href: "/sk/knifes/",
+            href: "/en/sk/knifes/",
             children: "KNIFE príspevky"
           })]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["⚙️ ", (0,jsx_runtime.jsx)(_components.a, {
-            href: "/sk/7Ds/",
+            href: "/en/sk/7Ds/",
             children: "7Ds rámec"
           })]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["🧱 ", (0,jsx_runtime.jsx)(_components.a, {
-            href: "/sk/sdlc/",
+            href: "/en/sk/sdlc/",
             children: "SDLC – Framework"
           })]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["🎯 ", (0,jsx_runtime.jsx)(_components.a, {
-            href: "/sk/q12/",
+            href: "/en/sk/q12/",
             children: "Q12 – Framework"
           })]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["🏫 ", (0,jsx_runtime.jsx)(_components.a, {
-            href: "/sk/sthdf/",
+            href: "/en/sk/sthdf/",
             children: "STHDF – Framework"
           })]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["🏫 ", (0,jsx_runtime.jsx)(_components.a, {
-            href: "/sk/class_sthdf_dashboard/",
+            href: "/en/sk/class_sthdf_dashboard/",
             children: "STHDF – Dashboard"
           })]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["🏫 ", (0,jsx_runtime.jsx)(_components.a, {
-            href: "/sk/help/",
+            href: "/en/sk/help/",
             children: "HELP"
           })]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["🧭 ", (0,jsx_runtime.jsx)(_components.a, {
-            href: "/",
+            href: "/en/",
             children: "Späť na Hub"
           })]
         }), "\n"]

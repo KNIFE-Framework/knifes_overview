@@ -1,5 +1,5 @@
 "use strict";
-(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[30506],{
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[18184],{
 
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -96,7 +96,7 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 39640:
+/***/ 88064:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -108,27 +108,27 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_sk_knifes_k_000999_index_md_c9b_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_sk_knifes_k_000101_cynefin_framework_index_md_368_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-k-000999-index-md-c9b.json
-const site_docs_sk_knifes_k_000999_index_md_c9b_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/K000999/K000999","title":"K000999 – KNIFE – Test script-created instance","description":"{{DESCRIPTION}}","source":"@site/docs/sk/knifes/K000999/index.md","sourceDirName":"sk/knifes/K000999","slug":"/sk/knifes/K000999/","permalink":"/sk/knifes/K000999/","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2025-11-22T21:22:19.403409+00:00","fm_version_comment":"","id":"K000999","guid":"67a8a4cb-6ddf-4e30-9abb-4780361067dc","dao":"knife","title":"K000999 – KNIFE – Test script-created instance","description":"{{DESCRIPTION}}","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2025-11-22 22:22","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000100 – titul-Ako komunikovať s porozumením","permalink":"/sk/knifes/K000100-Ako-komunikova-s-porozumen-mE/"},"next":{"title":"K1000999 – KNIFE – Test script-created instance","permalink":"/sk/knifes/K1000999/"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-k-000101-cynefin-framework-index-md-368.json
+const site_docs_sk_knifes_k_000101_cynefin_framework_index_md_368_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/K000101-CYNEFIN_Framework/K000101","title":"K000101 – Cynefin Framework - introduction","description":"{{DESCRIPTION}}","source":"@site/docs/sk/knifes/K000101-CYNEFIN_Framework/index.md","sourceDirName":"sk/knifes/K000101-CYNEFIN_Framework","slug":"/sk/knifes/K000101-CYNEFIN_Framework/","permalink":"/sk/knifes/K000101-CYNEFIN_Framework/","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-03-29T18:25:10.343105+00:00","fm_version_comment":"","id":"K000101","guid":"d218a4fd-dca8-422c-b42e-387d6992bf1b","dao":"knife","title":"K000101 – Cynefin Framework - introduction","description":"{{DESCRIPTION}}","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2026-03-29 20:25","modified":"2026-03-29 20:25","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000100 – titul-Ako komunikovať s porozumením","permalink":"/sk/knifes/K000100-Ako-komunikova-s-porozumen-mE/"},"next":{"title":"K000999 – KNIFE – Test script-created instance","permalink":"/sk/knifes/K000999/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-;// ./docs/sk/knifes/K000999/index.md
+;// ./docs/sk/knifes/K000101-CYNEFIN_Framework/index.md
 
 
 const frontMatter = {
 	fm_version: '1.0.1',
-	fm_build: '2025-11-22T21:22:19.403409+00:00',
+	fm_build: '2026-03-29T18:25:10.343105+00:00',
 	fm_version_comment: '',
-	id: 'K000999',
-	guid: '67a8a4cb-6ddf-4e30-9abb-4780361067dc',
+	id: 'K000101',
+	guid: 'd218a4fd-dca8-422c-b42e-387d6992bf1b',
 	dao: 'knife',
-	title: 'K000999 – KNIFE – Test script-created instance',
+	title: 'K000101 – Cynefin Framework - introduction',
 	description: '{{DESCRIPTION}}',
 	author: 'Roman Kazicka',
 	authors: [
@@ -139,8 +139,8 @@ const frontMatter = {
 	priority: '',
 	tags: [],
 	locale: 'sk',
-	created: '2025-11-22 22:22',
-	modified: '',
+	created: '2026-03-29 20:25',
+	modified: '2026-03-29 20:25',
 	status: 'backlog',
 	privacy: 'public',
 	rights_holder_content: 'Roman Kazicka',

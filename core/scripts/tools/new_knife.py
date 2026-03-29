@@ -172,9 +172,13 @@ def generate(ctx: Dict[str, Any]) -> None:
     dry_run: bool = ctx.get("dry_run", False)
     raw_name: Optional[str] = ctx.get("raw_name")
 
-    # Názvy a cesty
-    base_name = explicit_id or raw_name or instance_name or "knife_instance"
-    folder_name = _safe_name(base_name, fallback="knife_instance")
+    # Názvy a cesty – konvencia: K000123-CYNEFIN_Framework
+    if explicit_id and (raw_name or instance_name):
+        slug = _safe_name(raw_name or instance_name, fallback="knife_instance")
+        folder_name = f"{explicit_id}-{slug}"
+    else:
+        base_name = explicit_id or raw_name or instance_name or "knife_instance"
+        folder_name = _safe_name(base_name, fallback="knife_instance")
     target_root = content_dir / folder_name
 
     debug_print(debug, f"[KNIFE] instance_name={instance_name}, explicit_id={explicit_id}")

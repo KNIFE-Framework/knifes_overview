@@ -487,11 +487,11 @@ knifes-new: ## Vytvorí novú KNIFE (ID=K000123 name="..." title="...")
 	fi
 	@mkdir -p "content/docs/$(LOCALE)/knifes"
 	python3 core/scripts/tools/new_item_instance.py \
-	  --type knifes \
+	  --type knife \
 	  --name "$(name)" \
 	  --title "$(title)" \
 	  $(if $(id),--id "$(id)",) \
-	  --output "content/docs/$(LOCALE)/knifes" \
+	  --config config/knifes/knifes_config.yml \
 	  --exists "$(EXISTS)"
 	@echo "✅ Hotovo: content/docs/$(LOCALE)/knifes/$(if $(id),$(id)-,knife_)$(name)/index.md"
 
@@ -700,6 +700,3 @@ Q11-q12-dry: ## 🚧 Q12 scaffold (DRY) – zatiaľ neimplementované
 
 Q12-q12-apply: ## 🚧 Q12 scaffold (APPLY) – zatiaľ neimplementované
 	@echo "🚧 Q12 scaffold (APPLY) – zatiaľ neimplementované"
-
-
- 

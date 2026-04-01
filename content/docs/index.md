@@ -38,5 +38,8 @@ sidebar_position: "1"
 
 Vitaj v KNIFE dokumentácii. Vyber si jazyk:
 
-- 🇸🇰 **Slovensky** → [/sk/](./sk/index.md)
-- 🇬🇧 **English** → [/en/](./en/index.md)
+<head>
+  <meta http-equiv="refresh" content="0; url=/sk/" />
+</head>
+
+Presmerovanie na [slovenskú verziu](/sk/)…

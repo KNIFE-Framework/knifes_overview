@@ -42,7 +42,7 @@ fm_reserved2: ""
 Toto je hlavná stránka slovenskej dokumentácie.
 
 # Stručný prhľad o Projekte
-- 🔪 [KNIFE príspevky](./about.md)
+- 🔪 [O projekte KNIFE ](./about.md)
 
 - 🔪 [KNIFE príspevky](./knifes/index.md)
 - ⚙️ [7Ds rámec](./7Ds/index.md)

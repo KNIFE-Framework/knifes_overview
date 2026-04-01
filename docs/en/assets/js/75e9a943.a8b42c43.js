@@ -117,7 +117,7 @@ function _createMdxContent(props) {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: ["🔪 ", (0,jsx_runtime.jsx)(_components.a, {
             href: "/en/sk/about",
-            children: "KNIFE príspevky"
+            children: "O projekte KNIFE "
           })]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {

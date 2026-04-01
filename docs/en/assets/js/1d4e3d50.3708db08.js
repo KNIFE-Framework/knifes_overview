@@ -113,7 +113,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-knifes-overview-knife-overview-list-md-1d4.json
-const site_docs_sk_knifes_knifes_overview_knife_overview_list_md_1d4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","title":"🗂 KNIFE Overview – List","description":"{{DESCRIPTION}}","source":"@site/docs/sk/knifes/knifes_overview/KNIFE_Overview_List.md","sourceDirName":"sk/knifes/knifes_overview","slug":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","permalink":"/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_LIST","guid":"db51d52e-a34c-4f98-bacd-82e348ae69f0","dao":"{{DAO}}","title":"🗂 KNIFE Overview – List","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2026-03-29","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"📊 KNIFE Overview – Details","permalink":"/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS"},"next":{"title":"01-7ds_PlatobnyPortal – 01-7Ds – Platobný portál","permalink":"/en/sk/7Ds/01-7ds_PlatobnyPortal/"}}');
+const site_docs_sk_knifes_knifes_overview_knife_overview_list_md_1d4_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","title":"🗂 KNIFE Overview – List","description":"{{DESCRIPTION}}","source":"@site/docs/sk/knifes/knifes_overview/KNIFE_Overview_List.md","sourceDirName":"sk/knifes/knifes_overview","slug":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","permalink":"/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_LIST","guid":"ad4f3fd7-4fe4-4dea-b1b4-0dea03243459","dao":"{{DAO}}","title":"🗂 KNIFE Overview – List","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2026-04-01","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"📊 KNIFE Overview – Details","permalink":"/en/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS"},"next":{"title":"01-7ds_PlatobnyPortal – 01-7Ds – Platobný portál","permalink":"/en/sk/7Ds/01-7ds_PlatobnyPortal/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -126,7 +126,7 @@ const frontMatter = {
 	fm_build: '{{FM_BUILD}}',
 	fm_version_comment: '',
 	id: 'KNIFE_OVERVIEW_LIST',
-	guid: 'db51d52e-a34c-4f98-bacd-82e348ae69f0',
+	guid: 'ad4f3fd7-4fe4-4dea-b1b4-0dea03243459',
 	dao: '{{DAO}}',
 	title: '🗂 KNIFE Overview – List',
 	description: '{{DESCRIPTION}}',
@@ -139,7 +139,7 @@ const frontMatter = {
 	priority: '',
 	tags: [],
 	locale: 'sk',
-	created: '2026-03-29',
+	created: '2026-04-01',
 	modified: '',
 	status: 'backlog',
 	privacy: 'public',
@@ -194,7 +194,7 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "GUID:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "db51d52e-a34c-4f98-bacd-82e348ae69f0"
+          children: "ad4f3fd7-4fe4-4dea-b1b4-0dea03243459"
         }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Status:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {

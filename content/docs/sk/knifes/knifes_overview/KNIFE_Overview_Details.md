@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS"
 
 # Unikátne UUID – generuje skript
-guid: "32fe218b-ba26-4fa2-81b8-22f75e8bbb80"
+guid: "75596fb8-90cc-4201-b408-2462e9a8307d"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-04-01"
+created: "2026-04-24"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `32fe218b-ba26-4fa2-81b8-22f75e8bbb80`
+> **GUID:** `75596fb8-90cc-4201-b408-2462e9a8307d`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -147,7 +147,7 @@ fm_reserved2: ""
 | REF-UAT-001 | [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) | 2025-10-05 | inprogress | top |
 | K1000999 | [K1000999 – KNIFE – Test script-created instance](../K1000999/) | 2025-11-23 16:35 | backlog |  |
 | K000999 | [K000999 – KNIFE – Test script-created instance](../K000999/) | 2025-11-22 22:22 | backlog |  |
-| K000101 | [K000101 – Cynefin Framework - introduction](../K000101-CYNEFIN_Framework/) | 2026-03-29 20:25 | draft |  |
+| K000101 | [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) | 2026-04-23 23:03 | backlog |  |
 | K000100 | [K000100 – titul-Ako komunikovať s porozumením](../K000100-Ako-komunikova-s-porozumen-mE/) | 2025-11-20 10:44 | backlog |  |
 | K000092 | [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/) | 2025-11-17 23:03 | backlog |  |
 | K000091 | [K000091 – Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/) | 2025-11-11 | backlog |  |

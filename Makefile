@@ -3,6 +3,17 @@
 # Čistý základ pre: build, deploy (worktree), KNIFE, FM, 7Ds
 # ─────────────────────────────────────────────────────────
 
+# 20260423-2056 – doplnené LOCALE pre všetky targets (claude -Sonet 4.6. adaptive)
+# knifes-new  pridané --locale "$(LOCALE)"
+# S21-sdlc-new #--output → --locale, pridané --id "$(SDLC_NAME)", opravený --config path
+# Q21-q12-new  --output → --locale, pridané --id "$(Q12_NAME)", opravený --config path
+# S31-sthdf-new. --output → --locale, pridané --id "$(STHDF_NAME)", opravený --config path
+# new-item-instance  --output → --locale, pridané --id "$(NAME)"
+# help-examples  aktualizované príklady pre LOCALE=en
+
+#knifes-new
+
+
 .DEFAULT_GOAL := help
 SHELL := /bin/bash
 NODE  := node
@@ -370,11 +381,12 @@ new-item-instance: ## Vytvorí novú inštanciu frameworku (TYPE, NAME, TITLE)
 	fi
 	@python3 core/scripts/tools/new_item_instance.py \
 		--type "$(TYPE)" \
+		--id "$(NAME)" \
 		--name "$(NAME)" \
 		--title "$(TITLE)" \
-		--output "content/docs/$(LOCALE)" \
+		--locale "$(LOCALE)" \
 		--exists "$(EXISTS)"
-	@echo "✅ Instance created: $(TYPE)_$(NAME)"
+	@echo "✅ Instance created: $(TYPE)_$(NAME) (locale=$(LOCALE))"
 
 # ─────────────────────────────────────────────────────────
 # 7Ds – scaffold + FM-Core merge
@@ -491,6 +503,7 @@ knifes-new: ## Vytvorí novú KNIFE (ID=K000123 name="..." title="...")
 	  --name "$(name)" \
 	  --title "$(title)" \
 	  $(if $(id),--id "$(id)",) \
+	  --locale "$(LOCALE)" \
 	  --config config/knifes/knifes_config.yml \
 	  --exists "$(EXISTS)"
 	@echo "✅ Hotovo: content/docs/$(LOCALE)/knifes/$(if $(id),$(id)-,knife_)$(name)/index.md"
@@ -575,7 +588,8 @@ help-examples:
 	@printf " %-40s | %s\n" "SITE_URL=http://localhost:3000 BASE_URL=/ make dev" "Spustí dev s lokálnym URL a \"/\" baseUrl (funguje aj na GH po zmene BASE_URL)"
 	@printf " %-40s | %s\n" "make build" "Production build (minify by default)"
 	@printf " %-40s | %s\n" "make build SYNC_CONTENT=0" "Build bez overview/rsync (rovnaké správanie ako ručný CLI build)"
-	@printf " %-40s | %s\n" "make build DS_LOCALE=sk" "Build len pre SK lokalizáciu"
+	@printf " %-40s | %s\n" "make build DS_LOCALE=sk" "Build iba SK lokalizáciu"
+	@printf " %-40s | %s\n" "make build DS_LOCALE=en" "Build iba EN lokalizáciu"
 	@printf " %-40s | %s\n" "make build-fast" "Rýchly build bez minifikácie"
 	@printf " %-40s | %s\n" "make build-core" "Build bez rsync/sync (len Docusaurus)"
 	@printf " %-40s | %s\n" "make SY00-clean-pubdocs" "Vyprázdni publishing/docusaurus/docs (hard clean)"
@@ -595,14 +609,20 @@ help-examples:
 	@printf " %-40s | %s\n" "make S31-sthdf-new STHDF_NAME=sthdf_2025 STHDF_TITLE='STHDF 2025/2026' LOCALE=sk [EXISTS=skip|replace|error]" "Vytvorí alebo re‑vygeneruje STHDF inštanciu cez generátor"
 	@printf " %-40s | %s\n" "make D12-7ds-apply INSTANCE=7ds_sthdf_2025 LOCALE=sk" "Scaffold 7Ds (APPLY) do /sk/7ds_sthdf_2025"
 	@printf " %-40s | %s\n" "make validate-instance INSTANCE=7ds_sthdf_2025" "Overí konvenciu INSTANCE (<typ>_<meno>)"
-	@printf " %-40s | %s\n" "make knifes-new ID=K000123 name=... title=... [EXISTS=skip|replace|error]" "Vytvorí kostru nového KNIFE (index.md + FM)"
-	@printf " %-40s | %s\n" "make knifes-new ID=K000123 name=... title=... EXISTS=replace" "Znovu vygeneruje KNIFE aj keď priečinok už existuje"
-	@printf " %-40s | %s\n" "make knifes-overview" "Zregeneruje prehľady (Blog/List/Details)"
+	@printf " %-40s | %s\n" "make knifes-new ID=K000123 name=... title=... LOCALE=sk" "Vytvorí kostru nového KNIFE – SK"
+	@printf " %-40s | %s\n" "make knifes-new ID=K000123 name=... title=... LOCALE=en" "Vytvorí kostru nového KNIFE – EN"
+	@printf " %-40s | %s\n" "make knifes-new ID=K000123 name=... title=... LOCALE=sk EXISTS=replace" "Znovu vygeneruje KNIFE (SK) aj keď priečinok existuje"
+	@printf " %-40s | %s\n" "make knifes-overview" "Zregeneruje prehľady SK (default)"
+	@printf " %-40s | %s\n" "make knifes-overview LOCALE=en" "Zregeneruje prehľady EN"
 	@printf " %-40s | %s\n" "make knifes-overview KNIFE_DEBUG=1" "Spustí prehľady s --debug (diagnostika zberu položiek)"
 	@printf " %-40s | %s\n" "make knifes-build-dry" "CSV → MD build (DRY) podľa configu"
 	@printf " %-40s | %s\n" "make knifes-build-apply" "CSV → MD build (APPLY) podľa configu"
-	@printf " %-40s | %s\n" "make S21-sdlc-new SDLC_NAME=integration SDLC_TITLE='Integration Project' LOCALE=sk" "Vytvorí novú SDLC inštanciu cez generátor"
-	@printf " %-40s | %s\n" "make Q21-q12-new Q12_NAME=mgmt Q12_TITLE='Q12 Management Layer' LOCALE=sk" "Vytvorí novú Q12 inštanciu cez generátor"
+	@printf " %-40s | %s\n" "make S21-sdlc-new SDLC_NAME=integration SDLC_TITLE='Integration Project' LOCALE=sk" "Vytvorí novú SDLC inštanciu – SK"
+	@printf " %-40s | %s\n" "make S21-sdlc-new SDLC_NAME=integration SDLC_TITLE='Integration Project' LOCALE=en" "Vytvorí novú SDLC inštanciu – EN"
+	@printf " %-40s | %s\n" "make Q21-q12-new Q12_NAME=mgmt Q12_TITLE='Q12 Management Layer' LOCALE=sk" "Vytvorí novú Q12 inštanciu – SK"
+	@printf " %-40s | %s\n" "make Q21-q12-new Q12_NAME=mgmt Q12_TITLE='Q12 Management Layer' LOCALE=en" "Vytvorí novú Q12 inštanciu – EN"
+	@printf " %-40s | %s\n" "make S31-sthdf-new STHDF_NAME=sthdf_2025 STHDF_TITLE='STHDF 2025/2026' LOCALE=sk" "Vytvorí novú STHDF inštanciu – SK"
+	@printf " %-40s | %s\n" "make S31-sthdf-new STHDF_NAME=sthdf_2025 STHDF_TITLE='STHDF 2025/2026' LOCALE=en" "Vytvorí novú STHDF inštanciu – EN"
 	@printf "\n"
 	@printf " %-40s | %s\n" "make doctor" "Rýchla diagnostika prostredia"
 	@printf " %-40s | %s\n" "make print-vars" "Vypíše dôležité premenné"
@@ -626,9 +646,11 @@ S21-sdlc-new: ## SDLC: vytvor novú SDLC inštanciu (SDLC_NAME=..., SDLC_TITLE=.
 	@mkdir -p "$(SDLC_DIR)"
 	@python3 core/scripts/tools/new_item_instance.py \
 		--type sdlc \
+		--id "$(SDLC_NAME)" \
 		--name "$(SDLC_NAME)" \
 		--title "$(SDLC_TITLE)" \
-		--output "$(SDLC_DIR)" \
+		--locale "$(LOCALE)" \
+		--config config/sdlc/sdlc_config.yml \
 		--exists "$(EXISTS)"
 	@echo "✅ SDLC created: $(SDLC_DIR)/sdlc_$(SDLC_NAME)"
 
@@ -640,9 +662,11 @@ Q21-q12-new: ## Q12: vytvor novú Q12 inštanciu (Q12_NAME=..., Q12_TITLE=...)
 	@mkdir -p "$(Q12_DIR)"
 	@python3 core/scripts/tools/new_item_instance.py \
 		--type q12 \
+		--id "$(Q12_NAME)" \
 		--name "$(Q12_NAME)" \
 		--title "$(Q12_TITLE)" \
-		--output "$(Q12_DIR)" \
+		--locale "$(LOCALE)" \
+		--config config/q12/q12_config.yml \
 		--exists "$(EXISTS)"
 	@echo "✅ Q12 created under: $(Q12_DIR)"
 # ─────────────────────────────────────────────────────────
@@ -656,9 +680,11 @@ S31-sthdf-new: ## STHDF: vytvor novú STHDF inštanciu (STHDF_NAME=..., STHDF_TI
 	@mkdir -p "$(STHDF_DIR)"
 	@python3 core/scripts/tools/new_item_instance.py \
 		--type sthdf \
+		--id "$(STHDF_NAME)" \
 		--name "$(STHDF_NAME)" \
 		--title "$(STHDF_TITLE)" \
-		--output "$(STHDF_DIR)" \
+		--locale "$(LOCALE)" \
+		--config config/sthdf/sthdf_config.yml \
 		--exists "$(EXISTS)"
 	@echo "✅ STHDF created: $(STHDF_DIR)/sthdf_$(STHDF_NAME)"
 # ─────────────────────────────────────────────────────────

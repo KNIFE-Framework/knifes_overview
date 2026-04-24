@@ -20,10 +20,9 @@ const config: Config = {
   deploymentBranch: 'gh-pages',
   favicon: 'img/favicon.ico',
 
-  i18n: {
-    defaultLocale: 'sk',
-    locales: ['sk', 'en'],
-  },
+  // i18n vypnuté – SK/EN riešené cez adresárovú štruktúru docs/sk/ + docs/en/
+  // Bez tohto bloku Docusaurus nerobí locale prefix logiku (/en/sk/... problém)
+  // Ak bude potrebné, vrátime sa k i18n refaktoru s Hugo-style štruktúrou.
 
   presets: [
     [
@@ -35,28 +34,19 @@ const config: Config = {
           sidebarPath: require.resolve('./sidebars.ts'),
           includeCurrentVersion: true,
           editCurrentVersion: false,
-          // zobrazíme konkrétny dokument ako homepage, aby sa hneď ukázal sidebar
-          //homePageId: 'sk/index',
-          // aktivujeme tag stránky pre dokumentáciu a presunieme ich z default /tags na /doc-tags,
-          // aby nebol konflikt s blogom (ak by sa neskôr zapol)
-          // Aktivujeme tag stránky pre dokumentáciu (presunuté z default /tags na /doc-tags, aby nebol konflikt s blogom)
           tagsBasePath: 'doc-tags',
         },
-        // Blog nepoužívame – vypneme, aby nevznikal duplicitný /tags
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },
       },
     ],
   ],
 
-  // (Optional) Plugins — buildInfoPlugin disabled (file not present)
   plugins: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
-        // vygeneruje lokálny (Lunr) index priamo do buildu, bez Algolie
         hashed: true,
-        // Lunr nepodporuje 'sk' ako jazykový modul, použijeme default 'en' (funguje aj pre SK texty bez špeciálneho stemmingu)
         language: ['en'],
         indexDocs: true,
         indexBlog: false,
@@ -69,8 +59,8 @@ const config: Config = {
   themeConfig: {
     docs: {
       sidebar: {
-        hideable: true,              // umožní používateľovi zložiť/rozbaliť sidebar
-        autoCollapseCategories: false, // nechávame sekcie otvorené (Home uvidí celý strom)
+        hideable: true,
+        autoCollapseCategories: false,
       },
     },
     navbar: {
@@ -79,14 +69,15 @@ const config: Config = {
         alt: 'KNIFE',
         src: 'img/logo.png',
         srcDark: 'img/logo-dark.png',
-        target: '_self', // alebo '_blank' ak chceš nové okno
-        href: '/', // ← sem vložíš svoj cieľový link
+        target: '_self',
+        href: '/',
       },
       items: [
-        { type: 'localeDropdown', position: 'left' },
-        { to: '/sk/about', label: 'About', position: 'right' },
-        { to: '/sk/help',  label: 'Help',  position: 'right' },
-        { to: '/doc-tags', label: 'Tags', position: 'right' },
+        { href: '/sk/about', label: '🇸🇰 About', position: 'right' },
+        { href: '/sk/help',  label: '🇸🇰 Help',  position: 'right' },
+        { href: '/en/about', label: '🇬🇧 About', position: 'right' },
+        { href: '/en/help',  label: '🇬🇧 Help',  position: 'right' },
+        { href: '/doc-tags', label: 'Tags',       position: 'right' },
         {
           href: commitLink || '#',
           label: `Release ${RELEASE_TAG} • ${COMMIT_SHA}`,
@@ -95,14 +86,13 @@ const config: Config = {
       ],
     },
 
-    // Announcement bar hore (možno kedykoľvek vypnúť/komentovať)
    // announcementBar: {
-    //  id: 'build_info',
-    //  content: commitLink
-    //    ? `🔖 <strong>Release:</strong> ${RELEASE_TAG} &nbsp;•&nbsp; <strong>Commit:</strong> <a href="${commitLink}" target="_blank" rel="noopener noreferrer">${COMMIT_SHA}</a> &nbsp;•&nbsp; <strong>Build:</strong> ${BUILD_DATE}`
-    //    : `🔖 <strong>Release:</strong> ${RELEASE_TAG} &nbsp;•&nbsp; <strong>Commit:</strong> ${COMMIT_SHA} &nbsp;•&nbsp; <strong>Build:</strong> ${BUILD_DATE}`,
+   //   id: 'build_info',
+   //   content: commitLink
+   //     ? `🔖 <strong>Release:</strong> ${RELEASE_TAG} &nbsp;•&nbsp; <strong>Commit:</strong> <a href="${commitLink}" target="_blank" rel="noopener noreferrer">${COMMIT_SHA}</a> &nbsp;•&nbsp; <strong>Build:</strong> ${BUILD_DATE}`
+   //     : `🔖 <strong>Release:</strong> ${RELEASE_TAG} &nbsp;•&nbsp; <strong>Commit:</strong> ${COMMIT_SHA} &nbsp;•&nbsp; <strong>Build:</strong> ${BUILD_DATE}`,
    //   backgroundColor: '#f7f70aff',
-    //  textColor: '#091E42',
+   //   textColor: '#091E42',
    //   isCloseable: true,
    // },
 
@@ -125,7 +115,7 @@ const config: Config = {
   },
 
   future: {
-    experimental_faster: false, // disables experimental minifier causing build crashes
+    experimental_faster: false,
   },
 };
 

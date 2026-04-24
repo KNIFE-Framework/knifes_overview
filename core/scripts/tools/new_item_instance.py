@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
 new_item_instance.py
-
+20260423-2056 - doplnené LOCALE pre všetky contributions (claude -Sonet 4.6. adaptive)
+_parse_args() — pridaný --locale
+_validate_config() — upresnený debug print text
+_build_ctx() — locale override logika + locale pridaný do ctx
+main() — pridaný debug print pre locale
 Orchestrátor pre generovanie nových inštancií rôznych typov:
 - knife
 - sthdf
@@ -50,7 +54,6 @@ try:
 except ImportError:  # pragma: no cover
     generate_7ds = _missing_generator("new_7ds")
 
-# Q12 / SDLC / Thesis – zatiaľ môžu byť len placeholdery, neskôr nahradíš
 try:
     from new_q12 import generate as generate_q12  # type: ignore
 except ImportError:  # pragma: no cover
@@ -142,6 +145,15 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         action="store_true",
         help="Len ukáže, čo by sa spravilo (bez zápisu na disk).",
     )
+    parser.add_argument(
+        "--locale",
+        default=None,
+        help=(
+            "Locale override (napr. sk, en). "
+            "Prepíše locale segment v content_dir z configu. "
+            "Predpokladaná štruktúra cesty: .../docs/{locale}/..."
+        ),
+    )
 
     return parser.parse_args(argv)
 
@@ -154,16 +166,13 @@ def _validate_config(config_path: str, cfg: Dict[str, Any]) -> None:
         if key not in cfg:
             raise SystemExit(f"Config '{config_path}' chýba povinný kľúč '{key}'")
 
-    # FM-Core musí existovať – je SSOT
     fm_path = Path(cfg["template_fm"])
     if not fm_path.is_file():
         raise SystemExit(f"template_fm neexistuje: {fm_path}")
 
-    # content_dir nemusí fyzicky existovať (môžeme ho vytvoriť), ale necháme info
     content_dir = Path(cfg["content_dir"])
-    debug_print(True, f"[CFG] content_dir (nemusí ešte existovať): {content_dir}")
+    debug_print(True, f"[CFG] content_dir (z configu, pred locale overridom): {content_dir}")
 
-    # Voliteľné template_root (pre 7ds / q12 / sdlc / thesis)
     template_root = cfg.get("template_root")
     if template_root:
         t_root = Path(template_root)
@@ -177,7 +186,6 @@ def _load_fm_core(fm_core_path: Path) -> list[str]:
     Nezasahujeme do obsahu – vrátane `---` delimitrov.
     """
     text = fm_core_path.read_text(encoding="utf-8")
-    # vraciame list bez `\n`, new_* si s tým vie poradiť
     return text.splitlines()
 
 
@@ -189,11 +197,24 @@ def _build_ctx(cfg: Dict[str, Any], args: argparse.Namespace, fm_core_lines: lis
 
     content_dir = Path(cfg["content_dir"])
 
+    # Locale override: nahradí locale segment v content_dir
+    # Predpokladaná štruktúra: .../docs/{locale}/...
+    # Bezpečné cez parts – nevytvorí falošné zhody v názvoch.
+    locale_override = getattr(args, "locale", None)
+    if locale_override:
+        parts = list(content_dir.parts)
+        for i, part in enumerate(parts):
+            if part == "docs" and i + 1 < len(parts):
+                parts[i + 1] = locale_override
+                break
+        content_dir = Path(*parts)
+        debug_print(True, f"[CFG] content_dir (po locale override '{locale_override}'): {content_dir}")
+
     cli_title = args.title or args.name
 
     ctx: Dict[str, Any] = {
         "dao": cfg.get("dao"),
-        "config": cfg,  # celé YAML, nech new_*.py má všetko k dispozícii
+        "config": cfg,
         "content_dir": content_dir,
         "instance_name": args.name,
         "raw_name": args.name,
@@ -204,9 +225,9 @@ def _build_ctx(cfg: Dict[str, Any], args: argparse.Namespace, fm_core_lines: lis
         "debug": args.debug,
         "dry_run": args.dry_run,
         "defaults": cfg.get("defaults", {}),
+        "locale": locale_override,
     }
 
-    # Propagate template_root if present
     if "template_root" in cfg:
         ctx["template_root"] = cfg["template_root"]
 
@@ -229,17 +250,12 @@ def main(argv: list[str] | None = None) -> None:
 
     handler = TYPE_HANDLERS[item_type]
 
-    # 1) Načítaj config YAML
     cfg = parse_simple_yaml(config_path)
-
-    # 2) Validácia základných kľúčov + ciest
     _validate_config(config_path, cfg)
 
-    # 3) Načítaj FM-Core
     fm_core_path = Path(cfg["template_fm"])
     fm_core_lines = _load_fm_core(fm_core_path)
 
-    # 4) Postav kontext
     ctx = _build_ctx(cfg, args, fm_core_lines)
 
     debug_print(args.debug, f"[ORCH] Typ: {item_type}")
@@ -248,13 +264,12 @@ def main(argv: list[str] | None = None) -> None:
     debug_print(args.debug, f"[ORCH] Instance: {ctx['instance_name']}")
     debug_print(args.debug, f"[ORCH] ID: {ctx['explicit_id']}")
     debug_print(args.debug, f"[ORCH] Title: {ctx['cli_title']}")
+    debug_print(args.debug, f"[ORCH] Locale: {ctx['locale']}")
 
-    # 5) Dry-run – iba informácia, že handler by bežal
     if args.dry_run:
         print(f"[DRY-RUN][ORCH] Spustil by som handler pre typ '{item_type}' s ctx.instance='{ctx['instance_name']}'")
         return
 
-    # 6) Zavolaj konkrétny generátor
     handler(ctx)
 
 

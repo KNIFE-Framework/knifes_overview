@@ -113,7 +113,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-knifes-overview-knife-overview-blog-md-916.json
-const site_docs_sk_knifes_knifes_overview_knife_overview_blog_md_916_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","source":"@site/docs/sk/knifes/knifes_overview/KNIFE_Overview_Blog.md","sourceDirName":"sk/knifes/knifes_overview","slug":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_BLOG","guid":"e457c20f-cd47-4178-ba73-098933c16cbc","dao":"{{DAO}}","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2026-04-24","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K1000999 – KNIFE – Test script-created instance","permalink":"/sk/knifes/K1000999/"},"next":{"title":"📊 KNIFE Overview – Details","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS"}}');
+const site_docs_sk_knifes_knifes_overview_knife_overview_blog_md_916_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","source":"@site/docs/sk/knifes/knifes_overview/KNIFE_Overview_Blog.md","sourceDirName":"sk/knifes/knifes_overview","slug":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_BLOG","guid":"3322ab26-b95b-4650-8d86-f124621d7e49","dao":"{{DAO}}","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2026-04-26","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"[KNIFE] Claude ako kolaboračný priestor pre SDLC v bankovom prostredí","permalink":"/sk/knifes/KNIFE_Claude_SDLC_Collaboration"},"next":{"title":"📊 KNIFE Overview – Details","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -126,7 +126,7 @@ const frontMatter = {
 	fm_build: '{{FM_BUILD}}',
 	fm_version_comment: '',
 	id: 'KNIFE_OVERVIEW_BLOG',
-	guid: 'e457c20f-cd47-4178-ba73-098933c16cbc',
+	guid: '3322ab26-b95b-4650-8d86-f124621d7e49',
 	dao: '{{DAO}}',
 	title: '📰 KNIFE Overview – Blog',
 	description: '{{DESCRIPTION}}',
@@ -139,7 +139,7 @@ const frontMatter = {
 	priority: '',
 	tags: [],
 	locale: 'sk',
-	created: '2026-04-24',
+	created: '2026-04-26',
 	modified: '',
 	status: 'backlog',
 	privacy: 'public',
@@ -193,7 +193,7 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "GUID:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "e457c20f-cd47-4178-ba73-098933c16cbc"
+          children: "3322ab26-b95b-4650-8d86-f124621d7e49"
         }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Status:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
@@ -864,6 +864,13 @@ function _createMdxContent(props) {
         }), " — 2026-04-23 23:03 — ", (0,jsx_runtime.jsx)(_components.a, {
           href: "../K000101-CYNEFIN_Framework/",
           children: "K000101 – CYNEFIN Framework"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "K000102"
+        }), " — 2026-04-26 09:32 — ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "../K000102-KNIFE_Claude_SDLC_Collaboration/",
+          children: "K000102 – AI podpora spolupráce knowlwdge workerov v rámci SDLC.md"
         })]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {

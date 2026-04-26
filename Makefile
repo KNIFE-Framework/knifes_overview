@@ -4,6 +4,7 @@
 # ─────────────────────────────────────────────────────────
 
 # 20260423-2056 – doplnené LOCALE pre všetky targets (claude -Sonet 4.6. adaptive)
+# 20260426-0919 – opravený help-examples: DS_LOCALE odstránené, build SK+EN súčasne
 # knifes-new  pridané --locale "$(LOCALE)"
 # S21-sdlc-new #--output → --locale, pridané --id "$(SDLC_NAME)", opravený --config path
 # Q21-q12-new  --output → --locale, pridané --id "$(Q12_NAME)", opravený --config path
@@ -27,7 +28,8 @@ PUB_BUILD_DIR    := $(PUB_DOCUS_DIR)/build
 CONTENT_ASSETS_DIR := $(CONTENT_DOCS_DIR)/assets
 PUB_STATIC_DIR     := $(PUB_DOCUS_DIR)/static
 
-# i18n (voliteľne: DS_LOCALE=sk|en)
+# i18n – DS_LOCALE je rezervované pre budúcnosť (i18n vypnuté v docusaurus.config.ts)
+# make build vždy generuje SK aj EN súčasne (jeden build, jeden docs/ strom)
 DS_LOCALE ?=
 BUILD_LOCALE_OPT :=
 ifneq ($(strip $(DS_LOCALE)),)
@@ -586,11 +588,9 @@ help-examples:
 	@printf "%-40s-+-%s\n" "----------------------------------------" "----------------------------------------------"
 	@printf " %-40s | %s\n" "make dev" "Spustí Docusaurus dev server"
 	@printf " %-40s | %s\n" "SITE_URL=http://localhost:3000 BASE_URL=/ make dev" "Spustí dev s lokálnym URL a \"/\" baseUrl (funguje aj na GH po zmene BASE_URL)"
-	@printf " %-40s | %s\n" "make build" "Production build (minify by default)"
-	@printf " %-40s | %s\n" "make build SYNC_CONTENT=0" "Build bez overview/rsync (rovnaké správanie ako ručný CLI build)"
-	@printf " %-40s | %s\n" "make build DS_LOCALE=sk" "Build iba SK lokalizáciu"
-	@printf " %-40s | %s\n" "make build DS_LOCALE=en" "Build iba EN lokalizáciu"
-	@printf " %-40s | %s\n" "make build-fast" "Rýchly build bez minifikácie"
+	@printf " %-40s | %s\n" "make build" "Production build – SK + EN súčasne (minify default)"
+	@printf " %-40s | %s\n" "make build SYNC_CONTENT=0" "Build bez overview/rsync (rýchlejší, len Docusaurus)"
+	@printf " %-40s | %s\n" "make build-fast" "Rýchly build bez minifikácie – SK + EN"
 	@printf " %-40s | %s\n" "make build-core" "Build bez rsync/sync (len Docusaurus)"
 	@printf " %-40s | %s\n" "make SY00-clean-pubdocs" "Vyprázdni publishing/docusaurus/docs (hard clean)"
 	@printf " %-40s | %s\n" "make build-clean" "Hard clean + sync + production build"

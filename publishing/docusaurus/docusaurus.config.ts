@@ -72,19 +72,15 @@ const config: Config = {
         target: '_self',
         href: '/',
       },
-      items: [
-        { href: '/sk/about', label: '🇸🇰 About', position: 'right' },
-        { href: '/sk/help',  label: '🇸🇰 Help',  position: 'right' },
-        { href: '/en/about', label: '🇬🇧 About', position: 'right' },
-        { href: '/en/help',  label: '🇬🇧 Help',  position: 'right' },
-        { href: '/doc-tags', label: 'Tags',       position: 'right' },
-        {
-          href: commitLink || '#',
-          label: `Release ${RELEASE_TAG} • ${COMMIT_SHA}`,
-          position: 'right',
-        },
-      ],
-    },
+        items: [
+          { href: '/doc-tags', label: 'Tags', position: 'right' },
+          {
+            href: commitLink || '#',
+            label: `Release ${RELEASE_TAG} • ${COMMIT_SHA}`,
+            position: 'right',
+          },
+        ],
+      },
 
    // announcementBar: {
    //   id: 'build_info',

@@ -124,3 +124,23 @@
 html[data-theme='dark'] {
   --ifm-background-color: #ffa20044 !important;
 }
+
+
+/* Fix: navbar z-index a nepriehľadné pozadie */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #c94a0b !important;
+  opacity: 1;
+}
+
+/* Fix: hlavné pozadie bez priehľadnosti */
+html[data-theme='dark'] {
+  --ifm-background-color: #ffa20044 !important;
+
+  --ifm-background-surface-color: #4a2210 !important;
+}

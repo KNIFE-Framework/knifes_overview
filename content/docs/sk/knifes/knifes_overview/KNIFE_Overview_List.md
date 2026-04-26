@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "94d1e0c6-6bee-4d2a-97e5-5ce8798480c7"
+guid: "3a3b34b2-1a7a-4d38-a8be-f9d9d17e5e4e"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-04-24"
+created: "2026-04-26"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `94d1e0c6-6bee-4d2a-97e5-5ce8798480c7`
+> **GUID:** `3a3b34b2-1a7a-4d38-a8be-f9d9d17e5e4e`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -145,6 +145,7 @@ fm_reserved2: ""
 - **REF-UAT-001** · [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) · _inprogress_ · top
 - **K1000999** · [K1000999 – KNIFE – Test script-created instance](../K1000999/) · _backlog_ · -
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/) · _backlog_ · -
+- **K000102** · [K000102 – AI podpora spolupráce knowlwdge workerov v rámci SDLC.md](../K000102-KNIFE_Claude_SDLC_Collaboration/) · _backlog_ · -
 - **K000101** · [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) · _backlog_ · -
 - **K000100** · [K000100 – titul-Ako komunikovať s porozumením](../K000100-Ako-komunikova-s-porozumen-mE/) · _backlog_ · -
 - **K000092** · [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/) · _backlog_ · -

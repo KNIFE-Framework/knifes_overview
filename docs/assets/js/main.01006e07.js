@@ -378,8 +378,8 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
           "position": "right"
         },
         {
-          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/f3a6ed136",
-          "label": "Release v0.4.1-13-gf3a6ed136 • f3a6ed136",
+          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/a4bb7d325",
+          "label": "Release v0.4.1-14-ga4bb7d325 • a4bb7d325",
           "position": "right"
         }
       ],
@@ -387,7 +387,7 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
     },
     "footer": {
       "style": "dark",
-      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>v0.4.1-13-gf3a6ed136</strong><br/>\n    💡 Commit: <code>f3a6ed136</code><br/>\n    🕒 Build: 2026-04-26 07:52:45 UTC\n  </div>\n",
+      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>v0.4.1-14-ga4bb7d325</strong><br/>\n    💡 Commit: <code>a4bb7d325</code><br/>\n    🕒 Build: 2026-04-26 08:12:36 UTC\n  </div>\n",
       "links": []
     },
     "prism": {
@@ -611,7 +611,7 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
     }
   },
   "future": {
-    "experimental_faster": {
+    "faster": {
       "swcJsLoader": false,
       "swcJsMinimizer": false,
       "swcHtmlMinimizer": false,
@@ -619,16 +619,17 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
       "mdxCrossCompilerCache": false,
       "rspackBundler": false,
       "rspackPersistentCache": false,
-      "ssgWorkerThreads": false
+      "ssgWorkerThreads": false,
+      "gitEagerVcs": false
     },
     "v4": {
       "removeLegacyPostBuildHeadAttribute": false,
-      "useCssCascadeLayers": false
+      "useCssCascadeLayers": false,
+      "siteStorageNamespacing": false,
+      "fasterByDefault": false,
+      "mdx1CompatDisabledByDefault": false
     },
-    "experimental_storage": {
-      "type": "localStorage",
-      "namespace": false
-    },
+    "experimental_vcs": {},
     "experimental_router": "browser"
   },
   "baseUrlIssueBanner": true,
@@ -639,6 +640,10 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
       "en"
     ],
     "localeConfigs": {}
+  },
+  "storage": {
+    "type": "localStorage",
+    "namespace": false
   },
   "onBrokenLinks": "throw",
   "onBrokenAnchors": "warn",
@@ -1436,41 +1441,6 @@ const shouldNotApply=pathname==='/'||pathname===baseUrl;const newPathname=should
 
 /***/ }),
 
-/***/ 14090:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  w: () => (/* binding */ keyboardFocusedClassName),
-  J: () => (/* binding */ useKeyboardNavigation)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(96540);
-;// ./node_modules/@docusaurus/theme-common/lib/hooks/styles.css
-// extracted by mini-css-extract-plugin
-
-;// ./node_modules/@docusaurus/theme-common/lib/hooks/useKeyboardNavigation.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const keyboardFocusedClassName='navigation-with-keyboard';/**
- * Side-effect that adds the `keyboardFocusedClassName` to the body element when
- * the keyboard has been pressed, or removes it when the mouse is clicked.
- *
- * The presence of this class name signals that the user may be using keyboard
- * for navigation, and the theme **must** add focus outline when this class name
- * is present. (And optionally not if it's absent, for design purposes)
- *
- * Inspired by https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2
- */function useKeyboardNavigation(){(0,react.useEffect)(()=>{function handleOutlineStyles(e){if(e.type==='keydown'&&e.key==='Tab'){document.body.classList.add(keyboardFocusedClassName);}if(e.type==='mousedown'){document.body.classList.remove(keyboardFocusedClassName);}}document.addEventListener('keydown',handleOutlineStyles);document.addEventListener('mousedown',handleOutlineStyles);return()=>{document.body.classList.remove(keyboardFocusedClassName);document.removeEventListener('keydown',handleOutlineStyles);document.removeEventListener('mousedown',handleOutlineStyles);};},[]);}
-
-/***/ }),
-
 /***/ 14563:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1545,7 +1515,10 @@ exports.useTransition=function(){return U.current.useTransition()};exports.versi
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function hasProtocol(url){return /^(?:\w*:|\/\/)/.test(url);}function isInternalUrl(url){return typeof url!=='undefined'&&!hasProtocol(url);}
+ */// Poor man's protocol detection
+// Spec: https://datatracker.ietf.org/doc/html/rfc3986#section-3.1
+// In particular: scheme = ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
+function hasProtocol(url){return /^(?:[A-Za-z][A-Za-z\d+.-]*:|\/\/)/.test(url);}function isInternalUrl(url){return typeof url!=='undefined'&&!hasProtocol(url);}
 
 /***/ }),
 
@@ -1590,8 +1563,8 @@ wrapper:{main:'main-wrapper',// replaced by theme-layout-main
 // we already add plugin name/id class on <html>: that's enough
 blogPages:'blog-wrapper',docsPages:'docs-wrapper',mdxPages:'mdx-wrapper'},common:{editThisPage:'theme-edit-this-page',lastUpdated:'theme-last-updated',backToTopButton:'theme-back-to-top-button',codeBlock:'theme-code-block',admonition:'theme-admonition',unlistedBanner:'theme-unlisted-banner',draftBanner:'theme-draft-banner',admonitionType:type=>`theme-admonition-${type}`},announcementBar:{container:'theme-announcement-bar'},tabs:{container:'theme-tabs-container'},layout:{navbar:{container:'theme-layout-navbar',containerLeft:'theme-layout-navbar-left',containerRight:'theme-layout-navbar-right',mobileSidebar:{container:'theme-layout-navbar-sidebar',panel:'theme-layout-navbar-sidebar-panel'}},main:{container:'theme-layout-main'},footer:{container:'theme-layout-footer',column:'theme-layout-footer-column'}},/**
      * Follows the naming convention "theme-{blog,doc,version,page}?-<suffix>"
-     */docs:{docVersionBanner:'theme-doc-version-banner',docVersionBadge:'theme-doc-version-badge',docBreadcrumbs:'theme-doc-breadcrumbs',docMarkdown:'theme-doc-markdown',docTocMobile:'theme-doc-toc-mobile',docTocDesktop:'theme-doc-toc-desktop',docFooter:'theme-doc-footer',docFooterTagsRow:'theme-doc-footer-tags-row',docFooterEditMetaRow:'theme-doc-footer-edit-meta-row',docSidebarContainer:'theme-doc-sidebar-container',docSidebarMenu:'theme-doc-sidebar-menu',docSidebarItemCategory:'theme-doc-sidebar-item-category',docSidebarItemLink:'theme-doc-sidebar-item-link',docSidebarItemCategoryLevel:level=>`theme-doc-sidebar-item-category-level-${level}`,docSidebarItemLinkLevel:level=>`theme-doc-sidebar-item-link-level-${level}`// TODO add other stable classNames here
-},blog:{// TODO add other stable classNames here
+     */docs:{docVersionBanner:'theme-doc-version-banner',docVersionBadge:'theme-doc-version-badge',docBreadcrumbs:'theme-doc-breadcrumbs',docMarkdown:'theme-doc-markdown',docTocMobile:'theme-doc-toc-mobile',docTocDesktop:'theme-doc-toc-desktop',docFooter:'theme-doc-footer',docFooterTagsRow:'theme-doc-footer-tags-row',docFooterEditMetaRow:'theme-doc-footer-edit-meta-row',docSidebarContainer:'theme-doc-sidebar-container',docSidebarMenu:'theme-doc-sidebar-menu',docSidebarItemCategory:'theme-doc-sidebar-item-category',docSidebarItemLink:'theme-doc-sidebar-item-link',docSidebarItemCategoryLevel:level=>`theme-doc-sidebar-item-category-level-${level}`,docSidebarItemLinkLevel:level=>`theme-doc-sidebar-item-link-level-${level}`,// TODO add other stable classNames here
+docCard:{container:'theme-doc-card-container',heading:'theme-doc-card-heading',icon:'theme-doc-card-icon',title:'theme-doc-card-title',description:'theme-doc-card-description'}},blog:{// TODO add other stable classNames here
 blogFooterTagsRow:'theme-blog-footer-tags-row',blogFooterEditMetaRow:'theme-blog-footer-edit-meta-row'},pages:{pageFooterEditMetaRow:'theme-pages-footer-edit-meta-row'}};
 
 /***/ }),
@@ -2575,8 +2548,6 @@ document.getElementById(SkipToContentFallbackId));}function programmaticFocus(el
 href:`#${SkipToContentFallbackId}`,onClick:onClick,children:linkLabel})});}
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
 var ThemeClassNames = __webpack_require__(17559);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/hooks/useKeyboardNavigation.js + 1 modules
-var useKeyboardNavigation = __webpack_require__(14090);
 ;// ./node_modules/@docusaurus/theme-classic/lib/theme/SkipToContent/styles.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const styles_module = ({"skipToContent":"skipToContent_fXgn"});
@@ -2681,7 +2652,8 @@ var navbarSecondaryMenu_content = __webpack_require__(75600);
  */// TODO Docusaurus v4: remove temporary inert workaround
 //  See https://github.com/facebook/react/issues/17157
 //  See https://github.com/radix-ui/themes/pull/509
-function inertProps(inert){const isBeforeReact19=parseInt(react.version.split('.')[0],10)<19;if(isBeforeReact19){return{inert:inert?'':undefined};}return{inert};}function NavbarMobileSidebarPanel({children,inert}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.mobileSidebar.panel,'navbar-sidebar__item menu'),...inertProps(inert),children:children});}function NavbarMobileSidebarLayout({header,primaryMenu,secondaryMenu}){const{shown:secondaryMenuShown}=useNavbarSecondaryMenu();return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.mobileSidebar.container,'navbar-sidebar'),children:[header,/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('navbar-sidebar__items',{'navbar-sidebar__items--show-secondary':secondaryMenuShown}),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarPanel,{inert:secondaryMenuShown,children:primaryMenu}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarPanel,{inert:!secondaryMenuShown,children:secondaryMenu})]})]});}
+function inertProps(inert){const isBeforeReact19=parseInt(react.version.split('.')[0],10)<19;if(isBeforeReact19){// TODO Docusaurus v4: remove temporary inert workaround
+return{inert:inert?'':undefined};}return{inert};}function NavbarMobileSidebarPanel({children,inert}){return/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.mobileSidebar.panel,'navbar-sidebar__item menu'),...inertProps(inert),children:children});}function NavbarMobileSidebarLayout({header,primaryMenu,secondaryMenu}){const{shown:secondaryMenuShown}=useNavbarSecondaryMenu();return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.navbar.mobileSidebar.container,'navbar-sidebar'),children:[header,/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:(0,clsx/* default */.A)('navbar-sidebar__items',{'navbar-sidebar__items--show-secondary':secondaryMenuShown}),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarPanel,{inert:secondaryMenuShown,children:primaryMenu}),/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarMobileSidebarPanel,{inert:!secondaryMenuShown,children:secondaryMenu})]})]});}
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/colorMode.js
 var colorMode = __webpack_require__(95293);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useIsBrowser.js
@@ -2844,7 +2816,7 @@ toggleCollapsed();},children:props.children??props.label}),/*#__PURE__*/(0,jsx_r
  */function DropdownNavbarItemDesktop({items,position,className,onClick,...props}){const dropdownRef=(0,react.useRef)(null);const[showDropdown,setShowDropdown]=(0,react.useState)(false);(0,react.useEffect)(()=>{const handleClickOutside=event=>{if(!dropdownRef.current||dropdownRef.current.contains(event.target)){return;}setShowDropdown(false);};document.addEventListener('mousedown',handleClickOutside);document.addEventListener('touchstart',handleClickOutside);document.addEventListener('focusin',handleClickOutside);return()=>{document.removeEventListener('mousedown',handleClickOutside);document.removeEventListener('touchstart',handleClickOutside);document.removeEventListener('focusin',handleClickOutside);};},[dropdownRef]);return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{ref:dropdownRef,className:(0,clsx/* default */.A)('navbar__item','dropdown','dropdown--hoverable',{'dropdown--right':position==='right','dropdown--show':showDropdown}),children:[/*#__PURE__*/(0,jsx_runtime.jsx)(NavbarNavLink,{"aria-haspopup":"true","aria-expanded":showDropdown,role:"button"// # hash permits to make the <a> tag focusable in case no link target
 // See https://github.com/facebook/docusaurus/pull/6003
 // There's probably a better solution though...
-,href:props.to?undefined:'#',className:(0,clsx/* default */.A)('navbar__link',className),...props,onClick:props.to?undefined:e=>e.preventDefault(),onKeyDown:e=>{if(e.key==='Enter'){e.preventDefault();setShowDropdown(!showDropdown);}},children:props.children??props.label}),/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:"dropdown__menu",children:items.map((childItemProps,i)=>/*#__PURE__*/(0,react.createElement)(NavbarItem,{isDropdownItem:true,activeClassName:"dropdown__link--active",...childItemProps,key:i}))})]});}
+,href:props.to?undefined:'#',className:(0,clsx/* default */.A)('navbar__link',className),...props,onClick:props.to?undefined:e=>e.preventDefault(),onKeyDown:e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();setShowDropdown(!showDropdown);}},children:props.children??props.label}),/*#__PURE__*/(0,jsx_runtime.jsx)("ul",{className:"dropdown__menu",children:items.map((childItemProps,i)=>/*#__PURE__*/(0,react.createElement)(NavbarItem,{isDropdownItem:true,activeClassName:"dropdown__link--active",...childItemProps,key:i}))})]});}
 ;// ./node_modules/@docusaurus/theme-classic/lib/theme/NavbarItem/DropdownNavbarItem/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -2939,7 +2911,7 @@ var normalizeContextByPath = __webpack_require__(43385);
 // EXTERNAL MODULE: ./node_modules/lunr/lunr.js
 var lunr = __webpack_require__(58291);
 ;// ./.docusaurus/@easyops-cn/docusaurus-search-local/default/generated-constants.js
-const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=bef446a5";const searchResultLimits=8;const fuzzyMatchingDistance=1;
+const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=9639bdc2";const searchResultLimits=8;const fuzzyMatchingDistance=1;
 ;// ./node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/utils/proxiedGeneratedConstants.js
 // This file is auto generated while building.
 
@@ -3282,7 +3254,7 @@ var Heading = __webpack_require__(51107);
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */function Layout(props){const{children,noFooter,wrapperClassName,// Not really layout-related, but kept for convenience/retro-compatibility
-title,description}=props;(0,useKeyboardNavigation/* useKeyboardNavigation */.J)();return/*#__PURE__*/(0,jsx_runtime.jsxs)(LayoutProvider,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{title:title,description:description}),/*#__PURE__*/(0,jsx_runtime.jsx)(SkipToContent,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AnnouncementBar,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(Navbar,{}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{id:SkipToContentFallbackId,className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.main.container,ThemeClassNames/* ThemeClassNames */.G.wrapper.main,theme_Layout_styles_module.mainWrapper,wrapperClassName),children:/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundary/* default */.A,{fallback:params=>/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorPageContent,{...params}),children:children})}),!noFooter&&/*#__PURE__*/(0,jsx_runtime.jsx)(theme_Footer,{})]});}
+title,description}=props;return/*#__PURE__*/(0,jsx_runtime.jsxs)(LayoutProvider,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{title:title,description:description}),/*#__PURE__*/(0,jsx_runtime.jsx)(SkipToContent,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AnnouncementBar,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(Navbar,{}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{id:SkipToContentFallbackId,className:(0,clsx/* default */.A)(ThemeClassNames/* ThemeClassNames */.G.layout.main.container,ThemeClassNames/* ThemeClassNames */.G.wrapper.main,theme_Layout_styles_module.mainWrapper,wrapperClassName),children:/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorBoundary/* default */.A,{fallback:params=>/*#__PURE__*/(0,jsx_runtime.jsx)(ErrorPageContent,{...params}),children:children})}),!noFooter&&/*#__PURE__*/(0,jsx_runtime.jsx)(theme_Footer,{})]});}
 
 /***/ }),
 
@@ -3376,7 +3348,7 @@ const i18n_namespaceObject = /*#__PURE__*/JSON.parse('{"defaultLocale":"en","loc
 // EXTERNAL MODULE: ./.docusaurus/codeTranslations.json
 var codeTranslations = __webpack_require__(22654);
 ;// ./.docusaurus/site-metadata.json
-const site_metadata_namespaceObject = /*#__PURE__*/JSON.parse('{"docusaurusVersion":"3.9.2","siteVersion":"1.1.0","pluginVersions":{"docusaurus-plugin-content-docs":{"type":"package","name":"@docusaurus/plugin-content-docs","version":"3.9.2"},"docusaurus-plugin-content-pages":{"type":"package","name":"@docusaurus/plugin-content-pages","version":"3.9.2"},"docusaurus-plugin-sitemap":{"type":"package","name":"@docusaurus/plugin-sitemap","version":"3.9.2"},"docusaurus-plugin-svgr":{"type":"package","name":"@docusaurus/plugin-svgr","version":"3.9.2"},"docusaurus-theme-classic":{"type":"package","name":"@docusaurus/theme-classic","version":"3.9.2"},"@easyops-cn/docusaurus-search-local":{"type":"package","name":"@easyops-cn/docusaurus-search-local","version":"0.52.1"}}}');
+const site_metadata_namespaceObject = /*#__PURE__*/JSON.parse('{"docusaurusVersion":"3.10.0","siteVersion":"1.1.0","pluginVersions":{"docusaurus-plugin-content-docs":{"type":"package","name":"@docusaurus/plugin-content-docs","version":"3.10.0"},"docusaurus-plugin-content-pages":{"type":"package","name":"@docusaurus/plugin-content-pages","version":"3.10.0"},"docusaurus-plugin-sitemap":{"type":"package","name":"@docusaurus/plugin-sitemap","version":"3.10.0"},"docusaurus-plugin-svgr":{"type":"package","name":"@docusaurus/plugin-svgr","version":"3.10.0"},"docusaurus-theme-classic":{"type":"package","name":"@docusaurus/theme-classic","version":"3.10.0"},"@easyops-cn/docusaurus-search-local":{"type":"package","name":"@easyops-cn/docusaurus-search-local","version":"0.52.1"}}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 ;// ./node_modules/@docusaurus/core/lib/client/docusaurusContext.js
@@ -3447,7 +3419,7 @@ let targetLink=typeof targetLinkWithoutPathnameProtocol!=='undefined'?maybeAddBa
 // "./" is useful for images and other resources
 // But we don't need it for <Link>
 // unfortunately we can't really make the difference :/
-if(router==='hash'&&targetLink?.startsWith('./')){targetLink=targetLink?.slice(1);}if(targetLink&&isInternal){targetLink=(0,_docusaurus_utils_common__WEBPACK_IMPORTED_MODULE_2__/* .applyTrailingSlash */ .Ks)(targetLink,{trailingSlash,baseUrl});}const preloaded=(0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(false);const LinkComponent=isNavLink?react_router_dom__WEBPACK_IMPORTED_MODULE_1__/* .NavLink */ .k2:react_router_dom__WEBPACK_IMPORTED_MODULE_1__/* .Link */ .N_;const IOSupported=_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A.canUseIntersectionObserver;const ioRef=(0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();const handleRef=el=>{innerRef.current=el;if(IOSupported&&el&&isInternal){// If IO supported and element reference found, set up Observer.
+if(router==='hash'&&targetLink?.startsWith('./')){targetLink=targetLink?.slice(1);}if(targetLink&&isInternal){targetLink=(0,_docusaurus_utils_common__WEBPACK_IMPORTED_MODULE_2__/* .applyTrailingSlash */ .Ks)(targetLink,{trailingSlash,baseUrl});}const preloaded=(0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(false);const LinkComponent=isNavLink?react_router_dom__WEBPACK_IMPORTED_MODULE_1__/* .NavLink */ .k2:react_router_dom__WEBPACK_IMPORTED_MODULE_1__/* .Link */ .N_;const IOSupported=_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A.canUseIntersectionObserver;const ioRef=(0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(undefined);const handleRef=el=>{innerRef.current=el;if(IOSupported&&el&&isInternal){// If IO supported and element reference found, set up Observer.
 ioRef.current=new window.IntersectionObserver(entries=>{entries.forEach(entry=>{if(el===entry.target){// If element is in viewport, stop observing and run callback.
 // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 if(entry.isIntersecting||entry.intersectionRatio>0){ioRef.current.unobserve(el);ioRef.current.disconnect();if(targetLink!=null){window.docusaurus.prefetch(targetLink);}}}});});// Add element to the observer.
@@ -6103,7 +6075,9 @@ return undefined;}/**
 return!item.unlisted||isActiveSidebarItem(item,activePath);default:return true;}}function useVisibleSidebarItems(items,activePath){return (0,react.useMemo)(()=>items.filter(item=>isVisibleSidebarItem(item,activePath)),[items,activePath]);}/**
  * Get the sidebar the breadcrumbs for a given pathname
  * Ordered from top to bottom
- */function getSidebarBreadcrumbs({sidebarItems,pathname,onlyCategories=false}){const breadcrumbs=[];function extract(items){for(const item of items){if(item.type==='category'&&((0,routesUtils/* isSamePath */.ys)(item.href,pathname)||extract(item.items))||item.type==='link'&&(0,routesUtils/* isSamePath */.ys)(item.href,pathname)){const filtered=onlyCategories&&item.type!=='category';if(!filtered){breadcrumbs.unshift(item);}return true;}}return false;}extract(sidebarItems);return breadcrumbs;}/**
+ */function getSidebarBreadcrumbs({sidebarItems,pathname,onlyCategories=false}){const breadcrumbs=[];function extract(items){for(const item of items){// Extract category item
+if(item.type==='category'){if((0,routesUtils/* isSamePath */.ys)(item.href,pathname)||extract(item.items)){breadcrumbs.unshift(item);return true;}}// Extract doc item
+else if(item.type==='link'&&item.docId&&(0,routesUtils/* isSamePath */.ys)(item.href,pathname)){if(!onlyCategories){breadcrumbs.unshift(item);}return true;}}return false;}extract(sidebarItems);return breadcrumbs;}/**
  * Gets the breadcrumbs of the current doc page, based on its sidebar location.
  * Returns `null` if there's no sidebar or breadcrumbs are disabled.
  */function useSidebarBreadcrumbs(){const sidebar=(0,docsSidebar/* useDocsSidebar */.t)();const{pathname}=(0,react_router/* useLocation */.zy)();const breadcrumbsOption=(0,client/* useActivePlugin */.vT)()?.pluginData.breadcrumbs;if(breadcrumbsOption===false||!sidebar){return null;}return getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname});}/**
@@ -12059,9 +12033,7 @@ Please only call storage APIs in effects and event handlers.`);}return{get:throw
  * this API can be a no-op. See also https://github.com/facebook/docusaurus/issues/6036
  */function createStorageSlot(keyInput,options){const key=applyNamespace(keyInput);if(typeof window==='undefined'){return createServerStorageSlot(key);}const storage=getBrowserStorage(options?.persistence);if(storage===null){return NoopStorageSlot;}return{get:()=>{try{return storage.getItem(key);}catch(err){console.error(`Docusaurus storage error, can't get key=${key}`,err);return null;}},set:newValue=>{try{const oldValue=storage.getItem(key);storage.setItem(key,newValue);dispatchChangeEvent({key,oldValue,newValue,storage});}catch(err){console.error(`Docusaurus storage error, can't set ${key}=${newValue}`,err);}},del:()=>{try{const oldValue=storage.getItem(key);storage.removeItem(key);dispatchChangeEvent({key,oldValue,newValue:null,storage});}catch(err){console.error(`Docusaurus storage error, can't delete key=${key}`,err);}},listen:onChange=>{try{const listener=event=>{if(event.storageArea===storage&&event.key===key){onChange(event);}};window.addEventListener('storage',listener);return()=>window.removeEventListener('storage',listener);}catch(err){console.error(`Docusaurus storage error, can't listen for changes of key=${key}`,err);return()=>{};}}};}function useStorageSlot(key,options){// Not ideal but good enough: assumes storage slot config is constant
 const[storageSlot]=useState(()=>{if(key===null){return NoopStorageSlot;}return createStorageSlot(key,options);});const listen=useCallback(onChange=>{// Do not try to add a listener during SSR
-if(typeof window==='undefined'){return()=>{};}return storageSlot.listen(onChange);},[storageSlot]);const currentValue=useSyncExternalStore(listen,()=>{// react-test-renderer (deprecated) never call getServerSnapshot() :/
-if(false)// removed by dead control flow
-{}return storageSlot.get();},()=>null);return[currentValue,storageSlot];}/**
+if(typeof window==='undefined'){return()=>{};}return storageSlot.listen(onChange);},[storageSlot]);const currentValue=useSyncExternalStore(listen,()=>{return storageSlot.get();},()=>null);return[currentValue,storageSlot];}/**
  * Returns a list of all the keys currently stored in browser storage,
  * or an empty list if browser storage can't be accessed.
  */function listStorageKeys(storageType=DefaultStorageType){const browserStorage=getBrowserStorage(storageType);if(!browserStorage){return[];}const keys=[];for(let i=0;i<browserStorage.length;i+=1){const key=browserStorage.key(i);if(key!==null){keys.push(key);}}return keys;}
@@ -15415,8 +15387,6 @@ var useThemeConfig = __webpack_require__(6342);
 var metadataUtils = __webpack_require__(45500);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/useAlternatePageUtils.js
 var useAlternatePageUtils = __webpack_require__(32131);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/hooks/useKeyboardNavigation.js + 1 modules
-var useKeyboardNavigation = __webpack_require__(14090);
 ;// ./node_modules/@docusaurus/theme-common/lib/utils/searchUtils.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -15450,7 +15420,7 @@ function useDefaultCanonicalUrl(){const{siteConfig:{url:siteUrl,baseUrl,trailing
 const{pathname}=(0,react_router/* useLocation */.zy)();const canonicalPathname=(0,lib/* applyTrailingSlash */.Ks)((0,useBaseUrl/* default */.Ay)(pathname),{trailingSlash,baseUrl});return siteUrl+canonicalPathname;}// TODO move to SiteMetadataDefaults or theme-common ?
 function CanonicalUrlHeaders({permalink}){const{siteConfig:{url:siteUrl}}=(0,useDocusaurusContext/* default */.A)();const defaultCanonicalUrl=useDefaultCanonicalUrl();const canonicalUrl=permalink?`${siteUrl}${permalink}`:defaultCanonicalUrl;return/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{property:"og:url",content:canonicalUrl}),/*#__PURE__*/(0,jsx_runtime.jsx)("link",{rel:"canonical",href:canonicalUrl})]});}function SiteMetadata(){const{i18n:{currentLocale}}=(0,useDocusaurusContext/* default */.A)();// TODO maybe move these 2 themeConfig to siteConfig?
 // These seems useful for other themes as well
-const{metadata,image:defaultImage}=(0,useThemeConfig/* useThemeConfig */.p)();return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"twitter:card",content:"summary_large_image"}),/*#__PURE__*/(0,jsx_runtime.jsx)("body",{className:useKeyboardNavigation/* keyboardFocusedClassName */.w})]}),defaultImage&&/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{image:defaultImage}),/*#__PURE__*/(0,jsx_runtime.jsx)(CanonicalUrlHeaders,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AlternateLangHeaders,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(SearchMetadata/* default */.A,{tag:DEFAULT_SEARCH_TAG,locale:currentLocale}),/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:metadata.map((metadatum,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{...metadatum},i))})]});}
+const{metadata,image:defaultImage}=(0,useThemeConfig/* useThemeConfig */.p)();return/*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment,{children:[/*#__PURE__*/(0,jsx_runtime.jsxs)(Head/* default */.A,{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{name:"twitter:card",content:"summary_large_image"}),/*#__PURE__*/(0,jsx_runtime.jsx)("body",{})]}),defaultImage&&/*#__PURE__*/(0,jsx_runtime.jsx)(metadataUtils/* PageMetadata */.be,{image:defaultImage}),/*#__PURE__*/(0,jsx_runtime.jsx)(CanonicalUrlHeaders,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(AlternateLangHeaders,{}),/*#__PURE__*/(0,jsx_runtime.jsx)(SearchMetadata/* default */.A,{tag:DEFAULT_SEARCH_TAG,locale:currentLocale}),/*#__PURE__*/(0,jsx_runtime.jsx)(Head/* default */.A,{children:metadata.map((metadatum,i)=>/*#__PURE__*/(0,jsx_runtime.jsx)("meta",{...metadatum},i))})]});}
 ;// ./node_modules/@docusaurus/core/lib/client/normalizeLocation.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -15823,7 +15793,7 @@ const shouldAddBaseUrl=!url.startsWith(baseUrl);const basePath=shouldAddBaseUrl?
 // but good enough for our use
 return (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)((...args)=>ref.current(...args),[]);}/**
  * Gets `value` from the last render.
- */function usePrevious(value){const ref=(0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();(0,_docusaurus_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(()=>{ref.current=value;});// TODO need to fix this React Compiler lint error
+ */function usePrevious(value){const ref=(0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(undefined);(0,_docusaurus_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(()=>{ref.current=value;});// TODO need to fix this React Compiler lint error
 //  probably requires changing the API though
 // eslint-disable-next-line react-compiler/react-compiler
 return ref.current;}/**

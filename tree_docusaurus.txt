@@ -1,0 +1,94 @@
+publishing/docusaurus/static/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC
+├── 01-Intoduction
+│   └── img
+├── 02-Configuration
+│   ├── CLAUDE-Preparation
+│   │   └── 01-Config
+│   │       ├── 01-Claude-paltform-config.png
+│   │       ├── 02-Claude-paltform-config.png
+│   │       ├── 03-Claude-paltform-config.png
+│   │       ├── 04-Claude-paltform-config.png
+│   │       ├── 05-Claude-paltform-config.png
+│   │       ├── 06-Claude-paltform-config.png
+│   │       ├── 07-Claude-paltform-config.png
+│   │       ├── 08-Claude-paltform-config.png
+│   │       ├── 09-Claude-paltform-config.png
+│   │       ├── 1-Claude-paltform-config.png
+│   │       ├── 10-Claude-paltform-config.png
+│   │       ├── 11-Claude-paltform-config.png
+│   │       ├── 12-Claude-paltform-config.png
+│   │       ├── 13-Claude-paltform-config.png
+│   │       ├── 14-Claude-paltform-config.png
+│   │       ├── 15-Claude-paltform-config.png
+│   │       └── 16-Claude-paltform-config.png
+│   ├── img
+│   │   ├── CLAUDE-Preparation
+│   │   ├── KERNARO-Installation
+│   │   ├── KERNARO-Settings
+│   │   └── Python
+│   │       ├── A2-python-312-installed.png
+│   │       ├── A2-python-install-manager.png
+│   │       ├── A2-python-installing-312.png
+│   │       ├── A4-chat-agent-settings.png
+│   │       ├── A5-python-execution-empty.png
+│   │       ├── A5-python-execution-empty2.png
+│   │       └── A5-python-verified.png
+│   ├── KERNARO-AGENTS
+│   │   ├── 01CFG_KERNARO_AGENT.png
+│   │   ├── 02-CFG_KERNARO_AGENT.png
+│   │   ├── 03-CFG_KERNARO_AGENT.png
+│   │   ├── 04-CFG_KERNARO_AGENT.png
+│   │   └── 05-CFG_KERNARO_AGENT.png
+│   ├── KERNARO-Installation
+│   │   ├── 01-INSTALL_KERNARO.png
+│   │   ├── 02-INSTALL_KERNARO.png
+│   │   ├── 03-INSTALL_KERNARO.png
+│   │   ├── 04-INSTALL_KERNARO.png
+│   │   ├── 05-INSTALL_KERNARO.png
+│   │   ├── 06-INSTALL_KERNARO.png
+│   │   ├── 07-INSTALL_KERNARO.png
+│   │   ├── 08-INSTALL_KERNARO.png
+│   │   ├── 09-INSTALL_KERNARO.png
+│   │   ├── 10-INSTALL_KERNARO.png
+│   │   ├── 11-INSTALL_KERNARO.png
+│   │   ├── 12-INSTALL_KERNARO.png
+│   │   └── 13-INSTALL_KERNARO.png
+│   ├── KERNARO-Settings
+│   │   ├── 01-KERNARO-Settings.png
+│   │   ├── 02-KERNARO-Settings.png
+│   │   ├── 03-KERNARO-Settings.png
+│   │   ├── 04-KERNARO-Settings.png
+│   │   ├── 05-KERNARO-Settings.png
+│   │   ├── 06-KERNARO-Settings.png
+│   │   └── 07-KERNARO-Settings.png
+│   ├── KERNARO-Settings-Admin-Console
+│   │   ├── 01-KERNARO-Settings-ChatAgent.png
+│   │   ├── 02-KERNARO-Settings-Workspace.png
+│   │   ├── 03-KERNARO-Settings-Python.png
+│   │   └── 04-KERNARO-Settings-Logging.png
+│   └── Python
+│       ├── A2-python-312-installed.png
+│       ├── A2-python-install-manager.png
+│       ├── A2-python-installing-312.png
+│       ├── A4-chat-agent-settings.png
+│       ├── A5-python-execution-empty.png
+│       ├── A5-python-execution-empty2.png
+│       └── A5-python-verified.png
+├── 03-Testing_Strategy
+│   └── img
+├── 04-KERNARO-Chat
+│   └── img
+├── 05-KERNARO-AI_Agent
+│   └── img
+├── 06-KERNARO-JavaScripts
+│   └── img
+├── 07-KERNARO-Test-Findings
+│   └── img
+├── 08-Claude-Console-Dashboards
+│   └── img
+├── 09-Sparxsystems-Ecosystem
+│   └── img
+└── 10-KERNARO-TEST-Conclusion
+    └── img
+
+32 directories, 60 files

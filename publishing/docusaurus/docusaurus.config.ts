@@ -110,6 +110,12 @@ const config: Config = {
     },
   },
 
+  markdown: {
+    hooks: {
+      onBrokenMarkdownImages: 'ignore',
+    },
+  },
+
   future: {
     
     faster: false,

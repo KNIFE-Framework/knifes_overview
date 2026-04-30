@@ -1,6 +1,16 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[34812],{
 
+/***/ 5192:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/01-DigitalMappingOdReality-05da05f842a0ae5c6aebe9489b88df57.png");
+
+/***/ }),
+
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -96,6 +106,26 @@ function MDXProvider(properties) {
 
 /***/ }),
 
+/***/ 54417:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/04-Tools-Focus_AI-e58a2119a62b0dd80f0ffea583f7491e.png");
+
+/***/ }),
+
+/***/ 55649:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/05-All_in_One-283ece8a8b8a0b8840ce635cd40812f8.png");
+
+/***/ }),
+
 /***/ 65043:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -113,7 +143,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000103-caa-in-sdlc-index-md-48e.json
-const site_docs_en_knifes_k_000103_caa_in_sdlc_index_md_48e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000103-CAA_IN_SDLC/K000103","title":"K000103 – Context Aware Approach in SDLC","description":"","source":"@site/docs/en/knifes/K000103-CAA_IN_SDLC/index.md","sourceDirName":"en/knifes/K000103-CAA_IN_SDLC","slug":"/en/knifes/K000103-CAA_IN_SDLC/","permalink":"/en/knifes/K000103-CAA_IN_SDLC/","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-04-29T06:56:28.587132+00:00","fm_version_comment":"","id":"K000103","guid":"b0a589dc-ccab-43a3-a07e-30acf9eb6be5","dao":"knife","title":"K000103 – Context Aware Approach in SDLC","description":"","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":[],"locale":"en","created":"2026-04-29 08:56","modified":"2026-04-29 08:56","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000101 – CYNEFIN Framework","permalink":"/en/knifes/K000101-CYNEFIN_Framework/"},"next":{"title":"K000104 – SPARX-AI KERNARO in context of SDLC support","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/"}}');
+const site_docs_en_knifes_k_000103_caa_in_sdlc_index_md_48e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000103-CAA_IN_SDLC/K000103","title":"K000103 – Context Aware Approach in SDLC","description":"Context Aware Approach (CAA) applied to Solution Development Life Cycle — why context must be understood before any tool or technology decision is made.","source":"@site/docs/en/knifes/K000103-CAA_IN_SDLC/index.md","sourceDirName":"en/knifes/K000103-CAA_IN_SDLC","slug":"/en/knifes/K000103-CAA_IN_SDLC/","permalink":"/en/knifes/K000103-CAA_IN_SDLC/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"CAA","permalink":"/doc-tags/caa"},{"inline":true,"label":"EnterpriseArchitecture","permalink":"/doc-tags/enterprise-architecture"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-04-29T06:56:28.587132+00:00","fm_version_comment":"","id":"K000103","guid":"b0a589dc-ccab-43a3-a07e-30acf9eb6be5","dao":"knife","title":"K000103 – Context Aware Approach in SDLC","description":"Context Aware Approach (CAA) applied to Solution Development Life Cycle — why context must be understood before any tool or technology decision is made.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":["SDLC","CAA","EnterpriseArchitecture"],"locale":"en","created":"2026-04-29 08:56","modified":"2026-04-29 08:56","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000101 – CYNEFIN Framework","permalink":"/en/knifes/K000101-CYNEFIN_Framework/"},"next":{"title":"K000104 – SPARX-AI KERNARO in context of SDLC support","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -129,7 +159,7 @@ const frontMatter = {
 	guid: 'b0a589dc-ccab-43a3-a07e-30acf9eb6be5',
 	dao: 'knife',
 	title: 'K000103 – Context Aware Approach in SDLC',
-	description: '',
+	description: 'Context Aware Approach (CAA) applied to Solution Development Life Cycle — why context must be understood before any tool or technology decision is made.',
 	author: 'Roman Kazicka',
 	authors: [
 		'Roman Kazicka'
@@ -137,7 +167,11 @@ const frontMatter = {
 	category: '',
 	type: '',
 	priority: '',
-	tags: [],
+	tags: [
+		'SDLC',
+		'CAA',
+		'EnterpriseArchitecture'
+	],
 	locale: 'en',
 	created: '2026-04-29 08:56',
 	modified: '2026-04-29 08:56',
@@ -231,15 +265,13 @@ function _createMdxContent(props) {
       children: "🎯 What it solves (purpose, goal)"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "No solution in any domain exists in isolation — it lives within a specific context that fundamentally shapes what is being built.\nIt follows naturally that every solution must begin with understanding that context.\nThis spans a wide range of topics: people, processes, technology, politics, market conditions, and more.\nIn this article we focus on describing context for delivering IT solutions, but the principles apply broadly."
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)("img", {
-        src: "/knifes/K000103-CAA_IN_SDLC/01-Intoduction/AI_ThreadOrOpportunity.md/CAA-Approach-In-SDLC.png",
-        alt: "AI_ThreadOrOpportunity.md/CAA-Approach-In-SDLC.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      }), "\\n\\n"]
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(96786)/* ["default"] */ .A),
+      alt: "CAA – Context Aware Approach in SDLC",
+      style: {
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-how-it-solves-it-principle",
       children: "🧩 How it solves it (principle)"
@@ -409,8 +441,12 @@ function _createMdxContent(props) {
         children: "https://iasaglobal.org/Services/Public/News/Articles/Establishing-Digital-Transformation-and-Smart-Factory-Blueprint-with-EA.aspx"
       })]
     }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: "/knifes/K000103-CAA_IN_SDLC/img/01-DigitalMappingOdReality.png",
-      alt: "01 – Mapping the Real World to the Digital World"
+      src: (__webpack_require__(5192)/* ["default"] */ .A),
+      alt: "01 – Mapping the Real World to the Digital World",
+      style: {
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Why do we put so much effort into mapping reality to the digital world?\nI believe it is because:"
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
@@ -424,17 +460,33 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: "/knifes/K000103-CAA_IN_SDLC/img/02-Market-SDLC.png",
-      alt: "02 – Relationship Between Supplier and Customer in the SDLC Context"
+      src: (__webpack_require__(66237)/* ["default"] */ .A),
+      alt: "02 – Relationship Between Supplier and Customer in the SDLC Context",
+      style: {
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: "/knifes/K000103-CAA_IN_SDLC/img/03-SDLC-Deliverables.png",
-      alt: "03 – SDLC and Deliverables Between SDLC Phases"
+      src: (__webpack_require__(68422)/* ["default"] */ .A),
+      alt: "03 – SDLC and Deliverables Between SDLC Phases",
+      style: {
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: "/knifes/K000103-CAA_IN_SDLC/img/04-Tools-Focus_AI.png",
-      alt: "04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)"
+      src: (__webpack_require__(54417)/* ["default"] */ .A),
+      alt: "04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)",
+      style: {
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: "/knifes/K000103-CAA_IN_SDLC/img/05-All_in_One.png",
-      alt: "05 – Everything in One Picture"
+      src: (__webpack_require__(55649)/* ["default"] */ .A),
+      alt: "05 – Everything in One Picture",
+      style: {
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-tips-and-notes",
       children: "💡 Tips and Notes"
@@ -489,6 +541,36 @@ function MDXContent(props = {}) {
 }
 
 
+
+/***/ }),
+
+/***/ 66237:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/02-Market-SDLC-76e23b5658b3ad1de2b3f1d57a7d4485.png");
+
+/***/ }),
+
+/***/ 68422:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/03-SDLC-Deliverables-a921ec8fd29b6db6c70f83fcd946daeb.png");
+
+/***/ }),
+
+/***/ 96786:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/CAA-Approach-In-SDLC-7accf2bc14eafc1191ccf1e6998ce14a.png");
 
 /***/ })
 

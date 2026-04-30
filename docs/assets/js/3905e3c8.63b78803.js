@@ -1,5 +1,5 @@
 "use strict";
-(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[92940],{
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[33203],{
 
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -96,7 +96,7 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 46683:
+/***/ 91229:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -108,28 +108,28 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_sk_knifes_ako_komunikova_s_porozumen_m_e_index_md_c76_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_sk_knifes_k_000092_knife_user_guide_index_md_390_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-ako-komunikova-s-porozumen-m-e-index-md-c76.json
-const site_docs_sk_knifes_ako_komunikova_s_porozumen_m_e_index_md_c76_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/Ako-komunikova-s-porozumen-mE/Ako komunikovať s porozumenímE_index","title":"titul-Ako komunikovať s porozumením","description":"{{DESCRIPTION}}","source":"@site/docs/sk/knifes/Ako-komunikova-s-porozumen-mE/index.md","sourceDirName":"sk/knifes/Ako-komunikova-s-porozumen-mE","slug":"/sk/knifes/Ako-komunikova-s-porozumen-mE/","permalink":"/sk/knifes/Ako-komunikova-s-porozumen-mE/","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2025-11-20T09:28:53.973528+00:00","fm_version_comment":"","id":"Ako komunikovať s porozumenímE_index","guid":"465b4a65-625e-4de9-8ec9-1e29ddc5f753","dao":"knife","title":"titul-Ako komunikovať s porozumením","description":"{{DESCRIPTION}}","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2025-11-20 10:28","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"KNIFE – K000084_01","permalink":"/sk/knifes/K000084-ako-aktivovat-na-githube-edu-benefity/K000084_01"},"next":{"title":"REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT","permalink":"/sk/knifes/K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-k-000092-knife-user-guide-index-md-390.json
+const site_docs_sk_knifes_k_000092_knife_user_guide_index_md_390_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/K000092-KNIFE-User-Guide/K000092","title":"K000092 – KNIFE User Guide v2","description":"Používateľská príručka KNIFE frameworku v2 – prehľad štruktúry, konvencií, nástrojov a procesov pre tvorbu a správu KNIFE knowledge items.","source":"@site/docs/sk/knifes/K000092-KNIFE-User-Guide/index.md","sourceDirName":"sk/knifes/K000092-KNIFE-User-Guide","slug":"/sk/knifes/K000092-KNIFE-User-Guide/","permalink":"/sk/knifes/K000092-KNIFE-User-Guide/","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2025-11-17T22:03:21.923493+00:00","fm_version_comment":"","id":"K000092","guid":"accf306c-827e-4f02-b343-a4081e931e30","dao":"knife","title":"K000092 – KNIFE User Guide v2","description":"Používateľská príručka KNIFE frameworku v2 – prehľad štruktúry, konvencií, nástrojov a procesov pre tvorbu a správu KNIFE knowledge items.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2025-11-17 23:03","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":"","sidebar_label":"KNIFE User Guide v2"},"sidebar":"tutorialSidebar","previous":{"title":"K000091 – Krátka história Git – Linus Torvalds","permalink":"/sk/knifes/K000091-Zrodenie-git-sveta/"},"next":{"title":"K000100 – titul-Ako komunikovať s porozumením","permalink":"/sk/knifes/K000100-Ako-komunikova-s-porozumen-mE/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-;// ./docs/sk/knifes/Ako-komunikova-s-porozumen-mE/index.md
+;// ./docs/sk/knifes/K000092-KNIFE-User-Guide/index.md
 
 
 const frontMatter = {
 	fm_version: '1.0.1',
-	fm_build: '2025-11-20T09:28:53.973528+00:00',
+	fm_build: '2025-11-17T22:03:21.923493+00:00',
 	fm_version_comment: '',
-	id: 'Ako komunikovať s porozumenímE_index',
-	guid: '465b4a65-625e-4de9-8ec9-1e29ddc5f753',
+	id: 'K000092',
+	guid: 'accf306c-827e-4f02-b343-a4081e931e30',
 	dao: 'knife',
-	title: 'titul-Ako komunikovať s porozumením',
-	description: '{{DESCRIPTION}}',
+	title: 'K000092 – KNIFE User Guide v2',
+	description: 'Používateľská príručka KNIFE frameworku v2 – prehľad štruktúry, konvencií, nástrojov a procesov pre tvorbu a správu KNIFE knowledge items.',
 	author: 'Roman Kazicka',
 	authors: [
 		'Roman Kazicka'
@@ -139,7 +139,7 @@ const frontMatter = {
 	priority: '',
 	tags: [],
 	locale: 'sk',
-	created: '2025-11-20 10:28',
+	created: '2025-11-17 23:03',
 	modified: '',
 	status: 'backlog',
 	privacy: 'public',
@@ -157,7 +157,8 @@ const frontMatter = {
 	origin_imported_from: '',
 	origin_import_date: '',
 	fm_reserved1: '',
-	fm_reserved2: ''
+	fm_reserved2: '',
+	sidebar_label: 'KNIFE User Guide v2'
 };
 const contentTitle = undefined;
 
@@ -224,14 +225,14 @@ function _createMdxContent(props) {
         })]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h1, {
-      id: "titul-ako-komunikovať-s-porozumením",
-      children: "titul-Ako komunikovať s porozumením"
+      id: "knife-user-guide-v2",
+      children: "KNIFE User Guide v2"
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "GUID:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "465b4a65-625e-4de9-8ec9-1e29ddc5f753"
+          children: "accf306c-827e-4f02-b343-a4081e931e30"
         }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Status:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {

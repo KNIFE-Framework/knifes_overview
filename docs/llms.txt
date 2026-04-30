@@ -1,0 +1,89 @@
+# KNIFE Framework – Knowledge Index For Enterprise
+
+> A structured, public knowledge base documenting methods, frameworks, and approaches
+> for enterprise architecture, SDLC, and AI-supported knowledge management.
+>
+> Site: https://knifes.systemthinking.sk
+> Author: Roman Kazicka | roman.kazicka@systemthinking.xyz
+> Organization: SystemThinking spol. s r.o., Bratislava, Slovakia
+> License: CC-BY-NC-SA-4.0
+> Last updated: 2026-04-30
+
+## About KNIFE
+
+KNIFE (Knowledge Index For Enterprise) is a living knowledge base — articles ("knifes")
+are published as they are created, often in-progress. Each article has a unique ID
+(K000XXX), author, lifecycle status (backlog / inProgress / done / published),
+and license. Content exists in two languages: English (EN) and Slovak (SK).
+
+The full article index is available at:
+- EN overview: https://knifes.systemthinking.sk/en/knifes/
+- SK overview: https://knifes.systemthinking.sk/sk/knifes/
+- Sitemap: https://knifes.systemthinking.sk/sitemap.xml
+
+---
+
+## English Articles (EN)
+
+3 published articles:
+
+- [K000101 – CYNEFIN Framework](https://knifes.systemthinking.sk/en/knifes/K000101-CYNEFIN_Framework/): Introduction to the Cynefin sense-making framework for enterprise decision-making and complexity management.
+
+- [K000103 – Context Aware Approach in SDLC](https://knifes.systemthinking.sk/en/knifes/K000103-CAA_IN_SDLC/): How context-aware thinking (CAA) improves software development lifecycle practices — from requirements to delivery.
+
+- [K000104 – SPARX-AI KERNARO in SDLC](https://knifes.systemthinking.sk/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/): Hands-on evaluation of Kernaro AI Beta — an Enterprise Architect add-in by Sparx Systems integrating AI agents, chat, and JavaScript generation into SDLC modeling workflows. Includes configuration, test findings, and conclusions.
+
+---
+
+## Slovak Articles (SK) — ~100 articles
+
+Most articles are in Slovak. Topics covered:
+
+**Enterprise Architecture & SDLC**
+K000001 (EA modeling), K000002 (Git workflow for EA), K000013 (EA Workflow Add-In),
+K000032 (Enterprise Document-integrated SDLC), K000070 (EA Fundamentals),
+K000074 (SDLC – Solution Development Life Cycle)
+
+**Context Aware Approach (CAA)**
+K000028, K000035, K000037, K000076 – Context Aware Systems, ontology, paradigm and solutions
+
+**AI & Automation**
+K000010 (OpenAI client), K000017 (AI-powered planner), K000043 (AI student response check),
+K000048 (AI Agent in OpenGPT), K000057–K000058 (AI cost monitoring agents),
+K000078 (Language as a Bridge – AI between languages), K000102 (AI collaboration in SDLC)
+
+**Git & GitHub**
+K000027 (Git fundamentals), K000041 (GitHub Education), K000052 (GitHub LMS),
+K000053 (Project Management in GitHub), K000056 (Central Git panel / Makefile),
+K000067 (GitHub deployment strategies), K000087 (GitHub Create Release),
+K000089 (SSH vs HTTPS), K000091 (History of Git – Linus Torvalds)
+
+**Docusaurus & Publishing**
+K000054 (Advanced Deployment Pipeline), K000062 (Slugs and routing),
+K000080 (Docusaurus vs GitHub Pages), K000082 (Markdown styling),
+K000083 (Component updates), K000086 (ID usage in Docusaurus)
+
+**KNIFE Framework itself**
+K000063 (Auto-generation of KNIFE articles), K000065 (KNIFE Makefile ecosystem),
+K000092 (KNIFE User Guide v2)
+
+**LibreOffice & Python**
+K000003, K000011, K000014, K000015, K000016, K000020, K000029
+
+**Analytics & Infrastructure**
+K000051 (Google Analytics fundamentals), K000064 (GA4, GTM, UTM),
+K000081 (Transparent infrastructure for Sites)
+
+**Other topics**
+K000005 (BaZi), K000022 (TERNO learning), K000071 (7Ds framework),
+K000073 (Q12 quadrants), K000075 (Lean Canvas), K000077 (7S Knowledge Cycle)
+
+Full SK article list: https://knifes.systemthinking.sk/sk/knifes/knifes_overview/KNIFE_Overview_List
+
+---
+
+## Licensing & Attribution
+
+All content: CC-BY-NC-SA-4.0
+Attribution: Roman Kazicka / SystemThinking / https://knifes.systemthinking.sk
+Commercial use requires written permission from the author.

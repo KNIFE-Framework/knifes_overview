@@ -1,4 +1,54 @@
+---
+fm_version: "1.0.1"
+fm_build: "2026-04-29T06:56:28.587132+00:00"
+fm_version_comment: ""
+
+id: "K000104-07-test-findings"
+guid: "7fa50667-6988-469e-a1cb-397c8c8fe126"
+
+dao: "knife"
+title: "E – Findings & Recommendations"
+description: "Key findings from the Kernaro Beta test: hallucination patterns, read-only tool constraints, and practical recommendations for production use."
+
+author: "Roman Kazicka"
+authors:
+  - "Roman Kazicka"
+
+category: "KNIFE"
+type: ""
+priority: ""
+tags: [SDLC, AI, KERNARO]
+
+locale: "en"
+
+created: "2026-04-29 08:56"
+modified: "2026-04-29 08:56"
+status: "inProgress"
+privacy: "public"
+
+rights_holder_content: "Roman Kazicka"
+rights_holder_system: "CAA / KNIFE / LetItGrow"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazicka"
+
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_branch: ""
+origin_system: "CAA"
+origin_author: "Roman Kazicka"
+origin_imported_from: ""
+origin_import_date: ""
+
+fm_reserved1: ""
+fm_reserved2: ""
+---
 # E – Findings & Recommendations
+
+:::caution In Progress
+This article is being actively worked on. Content may be incomplete or subject to change.
+:::
 
 ← [Back to index](../index.md)
 

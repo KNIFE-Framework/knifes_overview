@@ -144,3 +144,14 @@ html[data-theme='dark'] {
 
   --ifm-background-surface-color: #4a2210 !important;
 }
+
+/* Caution admonition – výraznejšie v dark theme */
+[data-theme='dark'] .alert--warning {
+  background-color: rgba(255, 193, 7, 0.08);
+  border-left: 4px solid #ffd166;
+  border-color: #ffd166;
+}
+[data-theme='dark'] .alert--warning .alert__heading,
+[data-theme='dark'] .alert--warning [class*='admonitionHeading'] {
+  color: #ffd166;
+}

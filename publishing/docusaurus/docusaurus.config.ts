@@ -44,6 +44,13 @@ const config: Config = {
 
   plugins: [
     [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-LV31TWZZK6',
+        anonymizeIP: true,
+      },
+    ],
+    [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
@@ -57,6 +64,14 @@ const config: Config = {
   ],
 
   themeConfig: {
+    metadata: [
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'KNIFE Framework' },
+      { property: 'og:image', content: 'https://knifes.systemthinking.sk/img/logo.png' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@systemthinking' },
+      { name: 'author', content: 'Roman Kazicka' },
+    ],
     docs: {
       sidebar: {
         hideable: true,

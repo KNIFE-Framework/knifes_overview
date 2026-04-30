@@ -3,12 +3,12 @@ fm_version: "1.0.1"
 fm_build: "2026-04-29T06:56:28.587132+00:00"
 fm_version_comment: ""
 
-id: "K000104-08-claude-dashboards"
-guid: "2e606321-02ee-4ed2-844b-3a7bc056267c"
+id: "K000104-01-ai-threat"
+guid: "2dbdb0a3-a004-4f58-8fb4-e51a6f7ffd73"
 
 dao: "knife"
-title: "Claude Console Dashboards"
-description: "Overview of Claude Console monitoring dashboards used during the Kernaro Beta test: token usage, cost tracking, and team collaboration views."
+title: "AI: Threat or Opportunity?"
+description: "A framing perspective on artificial intelligence in enterprise architecture — is it a risk or a catalyst for better SDLC practices?"
 
 author: "Roman Kazicka"
 authors:
@@ -48,3 +48,14 @@ fm_reserved2: ""
 :::caution In Progress
 This article is being actively worked on. Content may be incomplete or subject to change.
 :::
+
+<!-- IMAGES:BEGIN -->
+
+---
+
+## Images
+
+[IMG-01]
+<img src={require('./CAA-Approach-In-SDLC.png').default} alt="CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<!-- IMAGES:END -->

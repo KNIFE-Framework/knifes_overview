@@ -27,7 +27,7 @@ dao: "knife"
 title: "K000104 – SPARX-AI KERNARO in context of SDLC support"
 
 # Short description – filled in by user (optional)
-description: "{{DESCRIPTION}}"
+description: "Hands-on evaluation of Kernaro AI Beta – an Enterprise Architect add-in that integrates AI into SDLC modeling workflows. Covers configuration, chat, agent automation, JavaScript generation, and test findings."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -57,13 +57,13 @@ priority: ""
 #   - purpose: tutorial, guide, pattern, case-study
 #   - topic: git, backup, ai, communication
 #   - level: beginner, intermediate, advanced
-tags: []
+tags: [SDLC, AI, KERNARO]
 
 
 # 🌍 LOCALIZATION -----------------------------------------------------
 
 # Document language – populated by script based on structure
-locale: "sk"
+locale: "en"
 
 
 # 🕒 LIFECYCLE --------------------------------------------------------
@@ -75,7 +75,7 @@ created: "2026-04-29 11:59"
 modified: "2026-04-29 11:59"
 
 # Document status – default "backlog"
-status: "backlog"
+status: "inProgress"
 
 # Visibility – default "public"
 privacy: "public"
@@ -133,6 +133,10 @@ fm_reserved2: ""
 ---
 # Kernaro AI Beta – Test Report
 ### AI-Driven Modeling in Enterprise Architect – First Contact
+
+:::caution In Progress
+This article is being actively worked on. Content may be incomplete or subject to change.
+:::
 
 > **Author:** Roman Kazička, Knowledge Management Enterprise Architect KMEA  
 > **Company:** SystemThinking spol. s r.o., Bratislava  
@@ -231,6 +235,10 @@ This report is part of a broader knowledge framework. Related topics:
 ---
 
 
+
+
+
+
 <!-- IMAGES:BEGIN -->
 
 ---
@@ -238,215 +246,168 @@ This report is part of a broader knowledge framework. Related topics:
 ## Images
 
 [IMG-01]
-![02-Configuration/CLAUDE-Preparation/01-Config/01-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/01-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/01-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/01-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./01-Intoduction/AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png').default} alt="01-Intoduction/AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-02]
-![02-Configuration/CLAUDE-Preparation/01-Config/02-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/02-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/02-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/02-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./01-Intoduction/CAA_In_SDLC/CAA-Approach-In-SDLC.png').default} alt="01-Intoduction/CAA_In_SDLC/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-03]
-![02-Configuration/CLAUDE-Preparation/01-Config/03-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/03-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/03-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/03-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/01-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/01-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-04]
-![02-Configuration/CLAUDE-Preparation/01-Config/04-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/04-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/04-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/04-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/02-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/02-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-05]
-![02-Configuration/CLAUDE-Preparation/01-Config/05-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/05-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/05-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/05-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/03-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/03-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-06]
-![02-Configuration/CLAUDE-Preparation/01-Config/06-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/06-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/06-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/06-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/04-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/04-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-07]
-![02-Configuration/CLAUDE-Preparation/01-Config/07-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/07-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/07-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/07-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/05-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/05-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-08]
-![02-Configuration/CLAUDE-Preparation/01-Config/08-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/08-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/08-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/08-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/06-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/06-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-09]
-![02-Configuration/CLAUDE-Preparation/01-Config/09-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/09-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/09-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/09-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/07-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/07-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-10]
-![02-Configuration/CLAUDE-Preparation/01-Config/1-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/1-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/1-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/1-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/08-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/08-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-11]
-![02-Configuration/CLAUDE-Preparation/01-Config/10-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/10-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/10-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/10-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/09-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/09-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-12]
-![02-Configuration/CLAUDE-Preparation/01-Config/11-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/11-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/11-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/11-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/1-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/1-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-13]
-![02-Configuration/CLAUDE-Preparation/01-Config/12-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/12-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/12-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/12-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/10-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/10-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-14]
-![02-Configuration/CLAUDE-Preparation/01-Config/13-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/13-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/13-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/13-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/11-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/11-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-15]
-![02-Configuration/CLAUDE-Preparation/01-Config/14-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/14-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/14-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/14-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/12-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/12-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-16]
-![02-Configuration/CLAUDE-Preparation/01-Config/15-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/15-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/15-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/15-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/13-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/13-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-17]
-![02-Configuration/CLAUDE-Preparation/01-Config/16-Claude-paltform-config.png](./02-Configuration/CLAUDE-Preparation/01-Config/16-Claude-paltform-config.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/CLAUDE-Preparation/01-Config/16-Claude-paltform-config.png" alt="02-Configuration/CLAUDE-Preparation/01-Config/16-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/14-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/14-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-18]
-![02-Configuration/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png](./02-Configuration/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png" alt="02-Configuration/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/15-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/15-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-19]
-![02-Configuration/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png](./02-Configuration/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png" alt="02-Configuration/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/16-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/16-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-20]
-![02-Configuration/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png](./02-Configuration/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png" alt="02-Configuration/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-21]
-![02-Configuration/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png](./02-Configuration/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png" alt="02-Configuration/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-22]
-![02-Configuration/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png](./02-Configuration/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png" alt="02-Configuration/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-23]
-![02-Configuration/KERNARO-Installation/01-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/01-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/01-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/01-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-24]
-![02-Configuration/KERNARO-Installation/02-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/02-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/02-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/02-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-25]
-![02-Configuration/KERNARO-Installation/03-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/03-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/03-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/03-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/01-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/01-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-26]
-![02-Configuration/KERNARO-Installation/04-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/04-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/04-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/04-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/02-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/02-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-27]
-![02-Configuration/KERNARO-Installation/05-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/05-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/05-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/05-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/03-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/03-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-28]
-![02-Configuration/KERNARO-Installation/06-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/06-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/06-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/06-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/04-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/04-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-29]
-![02-Configuration/KERNARO-Installation/07-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/07-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/07-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/07-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/05-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/05-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-30]
-![02-Configuration/KERNARO-Installation/08-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/08-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/08-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/08-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/06-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/06-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-31]
-![02-Configuration/KERNARO-Installation/09-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/09-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/09-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/09-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/07-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/07-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-32]
-![02-Configuration/KERNARO-Installation/10-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/10-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/10-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/10-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/08-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/08-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-33]
-![02-Configuration/KERNARO-Installation/11-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/11-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/11-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/11-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/09-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/09-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-34]
-![02-Configuration/KERNARO-Installation/12-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/12-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/12-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/12-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/10-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/10-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-35]
-![02-Configuration/KERNARO-Installation/13-INSTALL_KERNARO.png](./02-Configuration/KERNARO-Installation/13-INSTALL_KERNARO.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Installation/13-INSTALL_KERNARO.png" alt="02-Configuration/KERNARO-Installation/13-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/11-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/11-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-36]
-![02-Configuration/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png](./02-Configuration/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png" alt="02-Configuration/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/12-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/12-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-37]
-![02-Configuration/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png](./02-Configuration/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png" alt="02-Configuration/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Installation/13-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/13-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-38]
-![02-Configuration/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png](./02-Configuration/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png" alt="02-Configuration/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png').default} alt="02-Configuration/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-39]
-![02-Configuration/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png](./02-Configuration/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png" alt="02-Configuration/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png').default} alt="02-Configuration/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-40]
-![02-Configuration/KERNARO-Settings/01-KERNARO-Settings.png](./02-Configuration/KERNARO-Settings/01-KERNARO-Settings.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings/01-KERNARO-Settings.png" alt="02-Configuration/KERNARO-Settings/01-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png').default} alt="02-Configuration/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-41]
-![02-Configuration/KERNARO-Settings/02-KERNARO-Settings.png](./02-Configuration/KERNARO-Settings/02-KERNARO-Settings.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings/02-KERNARO-Settings.png" alt="02-Configuration/KERNARO-Settings/02-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png').default} alt="02-Configuration/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-42]
-![02-Configuration/KERNARO-Settings/03-KERNARO-Settings.png](./02-Configuration/KERNARO-Settings/03-KERNARO-Settings.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings/03-KERNARO-Settings.png" alt="02-Configuration/KERNARO-Settings/03-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings/01-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/01-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-43]
-![02-Configuration/KERNARO-Settings/04-KERNARO-Settings.png](./02-Configuration/KERNARO-Settings/04-KERNARO-Settings.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings/04-KERNARO-Settings.png" alt="02-Configuration/KERNARO-Settings/04-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings/02-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/02-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-44]
-![02-Configuration/KERNARO-Settings/05-KERNARO-Settings.png](./02-Configuration/KERNARO-Settings/05-KERNARO-Settings.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings/05-KERNARO-Settings.png" alt="02-Configuration/KERNARO-Settings/05-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings/03-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/03-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-45]
-![02-Configuration/KERNARO-Settings/06-KERNARO-Settings.png](./02-Configuration/KERNARO-Settings/06-KERNARO-Settings.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings/06-KERNARO-Settings.png" alt="02-Configuration/KERNARO-Settings/06-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings/04-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/04-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-46]
-![02-Configuration/KERNARO-Settings/07-KERNARO-Settings.png](./02-Configuration/KERNARO-Settings/07-KERNARO-Settings.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/KERNARO-Settings/07-KERNARO-Settings.png" alt="02-Configuration/KERNARO-Settings/07-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings/05-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/05-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-47]
-![02-Configuration/Python/A2-python-312-installed.png](./02-Configuration/Python/A2-python-312-installed.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/Python/A2-python-312-installed.png" alt="02-Configuration/Python/A2-python-312-installed.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings/06-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/06-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-48]
-![02-Configuration/Python/A2-python-install-manager.png](./02-Configuration/Python/A2-python-install-manager.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/Python/A2-python-install-manager.png" alt="02-Configuration/Python/A2-python-install-manager.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/KERNARO-Settings/07-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/07-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-49]
-![02-Configuration/Python/A2-python-installing-312.png](./02-Configuration/Python/A2-python-installing-312.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/Python/A2-python-installing-312.png" alt="02-Configuration/Python/A2-python-installing-312.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/Python/A2-python-312-installed.png').default} alt="02-Configuration/Python/A2-python-312-installed.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-50]
-![02-Configuration/Python/A4-chat-agent-settings.png](./02-Configuration/Python/A4-chat-agent-settings.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/Python/A4-chat-agent-settings.png" alt="02-Configuration/Python/A4-chat-agent-settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/Python/A2-python-install-manager.png').default} alt="02-Configuration/Python/A2-python-install-manager.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-51]
-![02-Configuration/Python/A5-python-execution-empty.png](./02-Configuration/Python/A5-python-execution-empty.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/Python/A5-python-execution-empty.png" alt="02-Configuration/Python/A5-python-execution-empty.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/Python/A2-python-installing-312.png').default} alt="02-Configuration/Python/A2-python-installing-312.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-52]
-![02-Configuration/Python/A5-python-execution-empty2.png](./02-Configuration/Python/A5-python-execution-empty2.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/Python/A5-python-execution-empty2.png" alt="02-Configuration/Python/A5-python-execution-empty2.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/Python/A4-chat-agent-settings.png').default} alt="02-Configuration/Python/A4-chat-agent-settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
 [IMG-53]
-![02-Configuration/Python/A5-python-verified.png](./02-Configuration/Python/A5-python-verified.png)
-<img src="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC//Users/romankazicka/Documents/800-CAS-ContextAwareApproach/03-KNIFE-Framework/knifes_overview-03/content/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/02-Configuration/Python/A5-python-verified.png" alt="02-Configuration/Python/A5-python-verified.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/Python/A5-python-execution-empty.png').default} alt="02-Configuration/Python/A5-python-execution-empty.png" style={{maxWidth: '800px', width: '100%'}} />
+
+[IMG-54]
+<img src={require('./02-Configuration/Python/A5-python-execution-empty2.png').default} alt="02-Configuration/Python/A5-python-execution-empty2.png" style={{maxWidth: '800px', width: '100%'}} />
+
+[IMG-55]
+<img src={require('./02-Configuration/Python/A5-python-verified.png').default} alt="02-Configuration/Python/A5-python-verified.png" style={{maxWidth: '800px', width: '100%'}} />
 
 <!-- IMAGES:END -->

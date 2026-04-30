@@ -1,4 +1,54 @@
+---
+fm_version: "1.0.1"
+fm_build: "2026-04-29T06:56:28.587132+00:00"
+fm_version_comment: ""
+
+id: "K000104-09-sparx-ecosystem"
+guid: "be146d58-1899-4c58-8e6c-f9953f339129"
+
+dao: "knife"
+title: "F – Sparx AI Ecosystem"
+description: "Context for Kernaro's position within the broader Sparx Systems AI ecosystem, including EA Native AI Assist and third-party integrations."
+
+author: "Roman Kazicka"
+authors:
+  - "Roman Kazicka"
+
+category: "KNIFE"
+type: ""
+priority: ""
+tags: [SDLC, AI, KERNARO]
+
+locale: "en"
+
+created: "2026-04-29 08:56"
+modified: "2026-04-29 08:56"
+status: "inProgress"
+privacy: "public"
+
+rights_holder_content: "Roman Kazicka"
+rights_holder_system: "CAA / KNIFE / LetItGrow"
+license: "CC-BY-NC-SA-4.0"
+disclaimer: "Use at your own risk. Methods provided as-is; participation is voluntary and context-aware."
+copyright: "© 2025 Roman Kazicka"
+
+origin_repo: ""
+origin_repo_url: ""
+origin_commit: ""
+origin_branch: ""
+origin_system: "CAA"
+origin_author: "Roman Kazicka"
+origin_imported_from: ""
+origin_import_date: ""
+
+fm_reserved1: ""
+fm_reserved2: ""
+---
 # F – Sparx AI Ecosystem
+
+:::caution In Progress
+This article is being actively worked on. Content may be incomplete or subject to change.
+:::
 
 ← [Back to index](../index.md)
 

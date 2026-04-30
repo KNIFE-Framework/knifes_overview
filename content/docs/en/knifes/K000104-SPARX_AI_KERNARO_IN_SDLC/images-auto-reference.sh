@@ -4,11 +4,9 @@
 # Pri opätovnom spustení nahradí sekciu medzi IMAGES:BEGIN a IMAGES:END
 
 KNIFE_ROOT="$(pwd)"
-STATIC_BASE="/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC"
 
 find "$KNIFE_ROOT" -name "*.md" | while read mdfile; do
   md_dir="$(dirname "$mdfile")"
-  rel_to_root="${md_dir#$KNIFE_ROOT/}"
 
   # Nájdi všetky obrázky v tom istom adresári a podadresároch
   images=$(find "$md_dir" -name "*.png" -o -name "*.jpg" | sort)
@@ -26,12 +24,10 @@ find "$KNIFE_ROOT" -name "*.md" | while read mdfile; do
   counter=1
   while IFS= read -r imgpath; do
     imgrel="${imgpath#$md_dir/}"
-    static_path="${STATIC_BASE}/${rel_to_root}/${imgrel}"
     label="IMG-$(printf '%02d' $counter)"
 
-    new_section+="[${label}]\n"
-    new_section+="![${imgrel}](./${imgrel})\n"
-    new_section+="<img src=\"${static_path}\" alt=\"${imgrel}\" style={{maxWidth: '800px', width: '100%'}} />\n\n"
+    new_section+="[${label}]"$'\n'
+    new_section+="<img src={require('./${imgrel}').default} alt=\"${imgrel}\" style={{maxWidth: '800px', width: '100%'}} />"$'\n\n'
 
     counter=$((counter + 1))
   done <<< "$images"

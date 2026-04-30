@@ -56,6 +56,12 @@ It follows naturally that every solution must begin with understanding that cont
 This spans a wide range of topics: people, processes, technology, politics, market conditions, and more.
 In this article we focus on describing context for delivering IT solutions, but the principles apply broadly.
 
+
+<img src="/knifes/K000103-CAA_IN_SDLC/01-Intoduction/AI_ThreadOrOpportunity.md/CAA-Approach-In-SDLC.png" alt="AI_ThreadOrOpportunity.md/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />\n\n
+
+
+
+
 ## 🧩 How it solves it (principle)
 
 Visualizing context greatly helps with understanding it — which in practice means mapping the real world into a digital form.
@@ -144,8 +150,6 @@ Aaron Tan Dani, FSCS — Chief Architect, Digital Enterprise Architecture Office
 Mtech (NUS), CITA-F, CITA-A, TOGAF, ArchiMate, COBIT, PMP
 https://iasaglobal.org/Services/Public/News/Articles/Establishing-Digital-Transformation-and-Smart-Factory-Blueprint-with-EA.aspx
 
-![01 – Mapping the Real World to the Digital World](./img/01-DigitalMappingOdReality.png)
-
 
 <img src="/knifes/K000103-CAA_IN_SDLC/img/01-DigitalMappingOdReality.png" alt="01 – Mapping the Real World to the Digital World" />
 
@@ -157,16 +161,16 @@ I believe it is because:
 - It supports decision-makers.
   - 3Rs: Right Information – for the Right Role – at the Right Time
 
-![02 – Relationship Between Supplier and Customer in the SDLC Context](./img/02-Market-SDLC.png)
+
 <img src="/knifes/K000103-CAA_IN_SDLC/img/02-Market-SDLC.png" alt="02 – Relationship Between Supplier and Customer in the SDLC Context" />
 
-![03 – SDLC and Deliverables Between SDLC Phases](./img/03-SDLC-Deliverables.png)
+
 <img src="/knifes/K000103-CAA_IN_SDLC/img/03-SDLC-Deliverables.png" alt="03 – SDLC and Deliverables Between SDLC Phases" />
 
-![04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)](./img/04-Tools-Focus_AI.png)
+
 <img src="/knifes/K000103-CAA_IN_SDLC/img/04-Tools-Focus_AI.png" alt="04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)" />
 
-![05 – Everything in One Picture](./img/05-All_in_One.png)
+
 <img src="/knifes/K000103-CAA_IN_SDLC/img/05-All_in_One.png" alt="05 – Everything in One Picture" />
 
 ## 💡 Tips and Notes

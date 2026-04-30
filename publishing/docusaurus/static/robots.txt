@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# AI crawlers — allowed, see /llms.txt for structured content index
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://knifes.systemthinking.sk/sitemap.xml

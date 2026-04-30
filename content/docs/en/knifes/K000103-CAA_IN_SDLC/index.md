@@ -8,7 +8,7 @@ guid: "b0a589dc-ccab-43a3-a07e-30acf9eb6be5"
 
 dao: "knife"
 title: "K000103 – Context Aware Approach in SDLC"
-description: ""
+description: "Context Aware Approach (CAA) applied to Solution Development Life Cycle — why context must be understood before any tool or technology decision is made."
 
 author: "Roman Kazicka"
 authors:
@@ -17,7 +17,7 @@ authors:
 category: ""
 type: ""
 priority: ""
-tags: []
+tags: [SDLC, CAA, EnterpriseArchitecture]
 
 locale: "en"
 
@@ -57,7 +57,7 @@ This spans a wide range of topics: people, processes, technology, politics, mark
 In this article we focus on describing context for delivering IT solutions, but the principles apply broadly.
 
 
-<img src="/knifes/K000103-CAA_IN_SDLC/01-Intoduction/AI_ThreadOrOpportunity.md/CAA-Approach-In-SDLC.png" alt="AI_ThreadOrOpportunity.md/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />\n\n
+<img src={require('./img/CAA-Approach-In-SDLC.png').default} alt="CAA – Context Aware Approach in SDLC" style={{maxWidth: '800px', width: '100%'}} />
 
 
 
@@ -151,7 +151,7 @@ Mtech (NUS), CITA-F, CITA-A, TOGAF, ArchiMate, COBIT, PMP
 https://iasaglobal.org/Services/Public/News/Articles/Establishing-Digital-Transformation-and-Smart-Factory-Blueprint-with-EA.aspx
 
 
-<img src="/knifes/K000103-CAA_IN_SDLC/img/01-DigitalMappingOdReality.png" alt="01 – Mapping the Real World to the Digital World" />
+<img src={require('./img/01-DigitalMappingOdReality.png').default} alt="01 – Mapping the Real World to the Digital World" style={{maxWidth: '800px', width: '100%'}} />
 
 ---
 
@@ -162,16 +162,16 @@ I believe it is because:
   - 3Rs: Right Information – for the Right Role – at the Right Time
 
 
-<img src="/knifes/K000103-CAA_IN_SDLC/img/02-Market-SDLC.png" alt="02 – Relationship Between Supplier and Customer in the SDLC Context" />
+<img src={require('./img/02-Market-SDLC.png').default} alt="02 – Relationship Between Supplier and Customer in the SDLC Context" style={{maxWidth: '800px', width: '100%'}} />
 
 
-<img src="/knifes/K000103-CAA_IN_SDLC/img/03-SDLC-Deliverables.png" alt="03 – SDLC and Deliverables Between SDLC Phases" />
+<img src={require('./img/03-SDLC-Deliverables.png').default} alt="03 – SDLC and Deliverables Between SDLC Phases" style={{maxWidth: '800px', width: '100%'}} />
 
 
-<img src="/knifes/K000103-CAA_IN_SDLC/img/04-Tools-Focus_AI.png" alt="04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)" />
+<img src={require('./img/04-Tools-Focus_AI.png').default} alt="04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)" style={{maxWidth: '800px', width: '100%'}} />
 
 
-<img src="/knifes/K000103-CAA_IN_SDLC/img/05-All_in_One.png" alt="05 – Everything in One Picture" />
+<img src={require('./img/05-All_in_One.png').default} alt="05 – Everything in One Picture" style={{maxWidth: '800px', width: '100%'}} />
 
 ## 💡 Tips and Notes
 

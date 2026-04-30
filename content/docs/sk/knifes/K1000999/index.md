@@ -27,7 +27,7 @@ dao: "knife"
 title: "K1000999 – KNIFE – Test script-created instance"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "{{DESCRIPTION}}"
+description: "Testovacia inštancia KNIFE vytvorená skriptom – slúži na overenie funkčnosti generátora nových KNIFE items."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------

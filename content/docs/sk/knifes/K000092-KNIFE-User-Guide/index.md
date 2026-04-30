@@ -27,7 +27,7 @@ dao: "knife"
 title: "K000092 – KNIFE User Guide v2"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "{{DESCRIPTION}}"
+description: "Používateľská príručka KNIFE frameworku v2 – prehľad štruktúry, konvencií, nástrojov a procesov pre tvorbu a správu KNIFE knowledge items."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------

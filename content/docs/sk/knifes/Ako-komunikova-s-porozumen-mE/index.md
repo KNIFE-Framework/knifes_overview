@@ -27,7 +27,7 @@ dao: "knife"
 title: "titul-Ako komunikovať s porozumením"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "{{DESCRIPTION}}"
+description: "Princípy efektívnej komunikácie s porozumením – ako zdieľať myšlienky, budovať spoločné chápanie a viesť zmysluplný dialóg medzi rolami v organizácii aj mimo nej."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------

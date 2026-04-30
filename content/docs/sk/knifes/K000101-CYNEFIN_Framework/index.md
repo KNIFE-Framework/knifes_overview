@@ -27,7 +27,7 @@ dao: "knife"
 title: "K000101 – CYNEFIN Framework"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "{{DESCRIPTION}}"
+description: "Cynefin – sense-making framework pre rozhodovanie v komplexných doménach. Pomáha rozlíšiť, či je situácia jednoduchá, komplikovaná, komplexná alebo chaotická, a zvoliť adekvátny postup."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -154,12 +154,6 @@ fm_reserved2: ""
 
 <!-- nav:knifes -->
 > [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
----
-
-<!-- body:start -->
-
-<!-- nav:knifes -->
-> [⬅ KNIFES – Prehľad](../knifes_overview/KNIFE_Overview_Blog.md) • [Zoznam](../knifes_overview/KNIFE_Overview_List.md) • [Detaily](../knifes_overview/KNIFE_Overview_Details.md)
 
 ---
 
@@ -185,9 +179,7 @@ v doméne, kde vzorce vznikajú až za behu.
 
 ## 🧩 Ako to rieši (princíp)
 
-<figure><img src="/knifes/K101-Cynefin/cynefin_overview.svg" alt="Cynefin – prehľad 5 domén" /></figure><br/>
-
-![Cynefin – prehľad 5 domén](./img/cynefin_overview.svg)
+<figure><img src={require('./img/cynefin_overview.svg').default} alt="Cynefin – prehľad 5 domén" style={{maxWidth: '800px', width: '100%'}} /></figure>
 
 Cynefin definuje päť domén podľa povahy príčinno-následkových vzťahov [1]:
 
@@ -338,9 +330,7 @@ biznis tlakom – a tým sa systém postupne presúva smerom ku Chaotic.
 
 ## 📜 Detailný článok
 
-<figure><img src="/knifes/K101-Cynefin/cynefin_detail.svg" alt="Cynefin – detailné postupy a dynamika" /></figure><br/>
-
-![Cynefin – detailné postupy a dynamika](./img/cynefin_detail.svg)
+<figure><img src={require('./img/cynefin_detail.svg').default} alt="Cynefin – detailné postupy a dynamika" style={{maxWidth: '800px', width: '100%'}} /></figure>
 
 ### Pôvod a kontext
 

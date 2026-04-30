@@ -27,7 +27,7 @@ dao: "knife"
 title: "K000102 – AI podpora spolupráce knowlwdge workerov v rámci SDLC.md"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "{{DESCRIPTION}}"
+description: "Ako AI nástroje (Claude, ChatGPT) menia spoluprácu knowledge workerov v SDLC kontexte – praktické skúsenosti, vzory spolupráce a odporúčania pre tímy."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------

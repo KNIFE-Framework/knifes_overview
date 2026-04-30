@@ -265,13 +265,23 @@ function _createMdxContent(props) {
       children: "🎯 What it solves (purpose, goal)"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "No solution in any domain exists in isolation — it lives within a specific context that fundamentally shapes what is being built.\nIt follows naturally that every solution must begin with understanding that context.\nThis spans a wide range of topics: people, processes, technology, politics, market conditions, and more.\nIn this article we focus on describing context for delivering IT solutions, but the principles apply broadly."
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(96786)/* ["default"] */ .A),
-      alt: "CAA – Context Aware Approach in SDLC",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(96786)/* ["default"] */ .A),
+        alt: "CAA – Context Aware Approach in SDLC",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-how-it-solves-it-principle",
       children: "🧩 How it solves it (principle)"

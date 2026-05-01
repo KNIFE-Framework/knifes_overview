@@ -99,7 +99,9 @@ Pri synchronizácií obsahov, vzniká niekoľko typických scenárov, ale výsle
 - Na obrázku sú niektoré základné komponenty GitHub riešenia.
 - Pre poípsanie všetkých vlasností, pre rôzne prípady použitia doplníme priebežne.
 - #TODO 20250925-1948-treba vysvetliť komponenty na obrázku.
-![Koncept Github s využitím Sites](./img/GitHub-Sites-Concepts.png)
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/GitHub-Sites-Concepts.png').default} alt="Koncept Github s využitím Sites" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 ## 💡 Tipy a poznámky
 
 ## ✅ Hodnota / Zhrnutie

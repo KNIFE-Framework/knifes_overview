@@ -56,6 +56,8 @@ This article is being actively worked on. Content may be incomplete or subject t
 ## Images
 
 [IMG-01]
-<img src={require('./CAA-Approach-In-SDLC.png').default} alt="CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./CAA-Approach-In-SDLC.png').default} alt="CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <!-- IMAGES:END -->

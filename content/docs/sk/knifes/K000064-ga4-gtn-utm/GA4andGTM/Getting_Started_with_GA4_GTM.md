@@ -132,7 +132,9 @@ User action (klik, scroll, form)
 ## 6. Draw.io Diagram
 ---
 [ga4_gtm_hierarchy_links.drawio](./ga4_gtm_hierarchy_links.drawio)
-![ga4_gtm_hierarchy_links.png](./ga4_gtm_hierarchy_links.png)
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./ga4_gtm_hierarchy_links.png').default} alt="GA4 GTM – hierarchy links diagram" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 ## 🎯 Odporúčanie pre teba
 

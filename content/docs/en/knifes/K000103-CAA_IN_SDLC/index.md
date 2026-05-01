@@ -57,7 +57,9 @@ This spans a wide range of topics: people, processes, technology, politics, mark
 In this article we focus on describing context for delivering IT solutions, but the principles apply broadly.
 
 
-<img src={require('./img/CAA-Approach-In-SDLC.png').default} alt="CAA – Context Aware Approach in SDLC" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/CAA-Approach-In-SDLC.png').default} alt="CAA – Context Aware Approach in SDLC" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 
 
@@ -151,7 +153,9 @@ Mtech (NUS), CITA-F, CITA-A, TOGAF, ArchiMate, COBIT, PMP
 https://iasaglobal.org/Services/Public/News/Articles/Establishing-Digital-Transformation-and-Smart-Factory-Blueprint-with-EA.aspx
 
 
-<img src={require('./img/01-DigitalMappingOdReality.png').default} alt="01 – Mapping the Real World to the Digital World" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/01-DigitalMappingOdReality.png').default} alt="01 – Mapping the Real World to the Digital World" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 ---
 
@@ -162,16 +166,24 @@ I believe it is because:
   - 3Rs: Right Information – for the Right Role – at the Right Time
 
 
-<img src={require('./img/02-Market-SDLC.png').default} alt="02 – Relationship Between Supplier and Customer in the SDLC Context" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/02-Market-SDLC.png').default} alt="02 – Relationship Between Supplier and Customer in the SDLC Context" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 
-<img src={require('./img/03-SDLC-Deliverables.png').default} alt="03 – SDLC and Deliverables Between SDLC Phases" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/03-SDLC-Deliverables.png').default} alt="03 – SDLC and Deliverables Between SDLC Phases" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 
-<img src={require('./img/04-Tools-Focus_AI.png').default} alt="04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/04-Tools-Focus_AI.png').default} alt="04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 
-<img src={require('./img/05-All_in_One.png').default} alt="05 – Everything in One Picture" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/05-All_in_One.png').default} alt="05 – Everything in One Picture" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 ## 💡 Tips and Notes
 

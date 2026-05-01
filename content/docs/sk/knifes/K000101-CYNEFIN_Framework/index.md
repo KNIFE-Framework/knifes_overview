@@ -179,7 +179,9 @@ v doméne, kde vzorce vznikajú až za behu.
 
 ## 🧩 Ako to rieši (princíp)
 
-<figure><img src={require('./img/cynefin_overview.svg').default} alt="Cynefin – prehľad 5 domén" style={{maxWidth: '800px', width: '100%'}} /></figure>
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/cynefin_overview.svg').default} alt="Cynefin – prehľad 5 domén" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 Cynefin definuje päť domén podľa povahy príčinno-následkových vzťahov [1]:
 
@@ -330,7 +332,9 @@ biznis tlakom – a tým sa systém postupne presúva smerom ku Chaotic.
 
 ## 📜 Detailný článok
 
-<figure><img src={require('./img/cynefin_detail.svg').default} alt="Cynefin – detailné postupy a dynamika" style={{maxWidth: '800px', width: '100%'}} /></figure>
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/cynefin_detail.svg').default} alt="Cynefin – detailné postupy a dynamika" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 ### Pôvod a kontext
 

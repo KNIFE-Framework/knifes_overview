@@ -165,9 +165,9 @@ in a domain where patterns only emerge as work progresses.
 
 ## 🧩 How it solves it (principle)
 
-<figure><img src="/knifes/K101-Cynefin/cynefin_overview.svg" alt="Cynefin – overview of 5 domains" /></figure><br/>
-
-![Cynefin – overview of 5 domains](./img/cynefin_overview.svg)
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/cynefin_overview.svg').default} alt="Cynefin – overview of 5 domains" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 Cynefin defines five domains based on the nature of cause-and-effect relationships [1]:
 
@@ -318,9 +318,9 @@ business pressure – and in doing so the system gradually shifts towards Chaoti
 
 ## 📜 Detailed article
 
-<figure><img src="/knifes/K101-Cynefin/cynefin_detail.svg" alt="Cynefin – detailed procedures and dynamics" /></figure><br/>
-
-![Cynefin – detailed procedures and dynamics](./img/cynefin_detail.svg)
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/cynefin_detail.svg').default} alt="Cynefin – detailed procedures and dynamics" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 ### Origin and context
 

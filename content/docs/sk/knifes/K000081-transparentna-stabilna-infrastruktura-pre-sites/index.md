@@ -75,7 +75,9 @@ Základná architektúra je popísaná v KNIFE_027 [KNIFE_027-K000027-git-for-du
 - v danom operačnom systéme by som si nainštaloval systém s označením 301 pre Windows, 302 pre Mac, 303 pre Linux.
 - Detaily viď obrázok
 
-![OS system agnostic riešenie](./img/GitHub-Sites-Concepts-clientSolution.png)
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/GitHub-Sites-Concepts-clientSolution.png').default} alt="OS system agnostic riešenie" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 ## 🧪 Ako to použiť (aplikácia)
 - Existuje jednoduché transparentné riešenie?

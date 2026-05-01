@@ -1,16 +1,6 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[96460],{
 
-/***/ 24570:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GitHub-Sites-Concepts-e0bddb9f48a9c20237e8fc83b2ffb299.png");
-
-/***/ }),
-
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -103,6 +93,16 @@ function MDXProvider(properties) {
   )
 }
 
+
+/***/ }),
+
+/***/ 35708:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GitHub-Sites-Concepts-e0bddb9f48a9c20237e8fc83b2ffb299.png");
 
 /***/ }),
 
@@ -219,7 +219,6 @@ function _createMdxContent(props) {
     h1: "h1",
     h2: "h2",
     hr: "hr",
-    img: "img",
     li: "li",
     p: "p",
     strong: "strong",
@@ -343,14 +342,26 @@ function _createMdxContent(props) {
         children: "Na obrázku sú niektoré základné komponenty GitHub riešenia."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Pre poípsanie všetkých vlasností, pre rôzne prípady použitia doplníme priebežne."
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["#TODO 20250925-1948-treba vysvetliť komponenty na obrázku.\n", (0,jsx_runtime.jsx)(_components.img, {
-          alt: "Koncept Github s využitím Sites",
-          src: (__webpack_require__(24570)/* ["default"] */ .A) + "",
-          width: "814",
-          height: "1243"
-        })]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "#TODO 20250925-1948-treba vysvetliť komponenty na obrázku."
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)("div", {
+      style: {
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(35708)/* ["default"] */ .A),
+        alt: "Koncept Github s využitím Sites",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-tipy-a-poznámky",
       children: "💡 Tipy a poznámky"

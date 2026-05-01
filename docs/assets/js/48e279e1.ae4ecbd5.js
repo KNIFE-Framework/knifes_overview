@@ -450,13 +450,23 @@ function _createMdxContent(props) {
         href: "https://iasaglobal.org/Services/Public/News/Articles/Establishing-Digital-Transformation-and-Smart-Factory-Blueprint-with-EA.aspx",
         children: "https://iasaglobal.org/Services/Public/News/Articles/Establishing-Digital-Transformation-and-Smart-Factory-Blueprint-with-EA.aspx"
       })]
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(5192)/* ["default"] */ .A),
-      alt: "01 – Mapping the Real World to the Digital World",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(5192)/* ["default"] */ .A),
+        alt: "01 – Mapping the Real World to the Digital World",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Why do we put so much effort into mapping reality to the digital world?\nI believe it is because:"
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
@@ -469,34 +479,74 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n"]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(66237)/* ["default"] */ .A),
-      alt: "02 – Relationship Between Supplier and Customer in the SDLC Context",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(68422)/* ["default"] */ .A),
-      alt: "03 – SDLC and Deliverables Between SDLC Phases",
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(66237)/* ["default"] */ .A),
+        alt: "02 – Relationship Between Supplier and Customer in the SDLC Context",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(54417)/* ["default"] */ .A),
-      alt: "04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)",
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(68422)/* ["default"] */ .A),
+        alt: "03 – SDLC and Deliverables Between SDLC Phases",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(55649)/* ["default"] */ .A),
-      alt: "05 – Everything in One Picture",
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(54417)/* ["default"] */ .A),
+        alt: "04 – Areas for Tool Assessment from Multiple Perspectives (incomplete)",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(55649)/* ["default"] */ .A),
+        alt: "05 – Everything in One Picture",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-tips-and-notes",
       children: "💡 Tips and Notes"

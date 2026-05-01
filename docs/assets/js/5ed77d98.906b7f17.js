@@ -1,5 +1,5 @@
 "use strict";
-(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[27345],{
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[9536],{
 
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -96,7 +96,7 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 59007:
+/***/ 67309:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -108,28 +108,28 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_en_knifes_k_000104_sparx_ai_kernaro_in_sdlc_01_intoduction_ai_thread_or_opportunity_ai_thread_or_opportunity_md_9c9_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_en_knifes_k_000104_sparx_ai_kernaro_in_sdlc_01_intoduction_ai_supported_sdlc_md_5ed_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000104-sparx-ai-kernaro-in-sdlc-01-intoduction-ai-thread-or-opportunity-ai-thread-or-opportunity-md-9c9.json
-const site_docs_en_knifes_k_000104_sparx_ai_kernaro_in_sdlc_01_intoduction_ai_thread_or_opportunity_ai_thread_or_opportunity_md_9c9_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/AI_ThreadOrOpportunity/K000104-01-ai-threat","title":"AI: Threat or Opportunity?","description":"A framing perspective on artificial intelligence in enterprise architecture — is it a risk or a catalyst for better SDLC practices?","source":"@site/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/01-Intoduction/AI_ThreadOrOpportunity/AI_ThreadOrOpportunity.md","sourceDirName":"en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/01-Intoduction/AI_ThreadOrOpportunity","slug":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/AI_ThreadOrOpportunity/","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/AI_ThreadOrOpportunity/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"AI","permalink":"/doc-tags/ai"},{"inline":true,"label":"KERNARO","permalink":"/doc-tags/kernaro"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-04-29T06:56:28.587132+00:00","fm_version_comment":"","id":"K000104-01-ai-threat","guid":"2dbdb0a3-a004-4f58-8fb4-e51a6f7ffd73","dao":"knife","title":"AI: Threat or Opportunity?","description":"A framing perspective on artificial intelligence in enterprise architecture — is it a risk or a catalyst for better SDLC practices?","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"KNIFE","type":"","priority":"","tags":["SDLC","AI","KERNARO"],"locale":"en","created":"2026-04-29 08:56","modified":"2026-04-29 08:56","status":"inProgress","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"AI-Supported SDLC","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/K000104-01-ai-sdlc"},"next":{"title":"CLAUDE Platform Preparation","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Configuration/K000104-02-claude-prep"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000104-sparx-ai-kernaro-in-sdlc-01-intoduction-ai-supported-sdlc-md-5ed.json
+const site_docs_en_knifes_k_000104_sparx_ai_kernaro_in_sdlc_01_intoduction_ai_supported_sdlc_md_5ed_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/K000104-01-ai-sdlc","title":"AI-Supported SDLC","description":"Introduction to AI-supported Software Development Lifecycle in the context of KERNARO and the CAA approach.","source":"@site/docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/01-Intoduction/AI-Supported_SDLC.md","sourceDirName":"en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/01-Intoduction","slug":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/K000104-01-ai-sdlc","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/K000104-01-ai-sdlc","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"AI","permalink":"/doc-tags/ai"},{"inline":true,"label":"KERNARO","permalink":"/doc-tags/kernaro"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-04-29T06:56:28.587132+00:00","fm_version_comment":"","id":"K000104-01-ai-sdlc","guid":"a5f9f55b-0fec-4e28-b87f-aec7603d2037","dao":"knife","title":"AI-Supported SDLC","description":"Introduction to AI-supported Software Development Lifecycle in the context of KERNARO and the CAA approach.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"KNIFE","type":"","priority":"","tags":["SDLC","AI","KERNARO"],"locale":"en","created":"2026-04-29 08:56","modified":"2026-04-29 08:56","status":"inProgress","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000104 – SPARX-AI KERNARO in context of SDLC support","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/"},"next":{"title":"AI: Threat or Opportunity?","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/AI_ThreadOrOpportunity/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-;// ./docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/01-Intoduction/AI_ThreadOrOpportunity/AI_ThreadOrOpportunity.md
+;// ./docs/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/01-Intoduction/AI-Supported_SDLC.md
 
 
 const frontMatter = {
 	fm_version: '1.0.1',
 	fm_build: '2026-04-29T06:56:28.587132+00:00',
 	fm_version_comment: '',
-	id: 'K000104-01-ai-threat',
-	guid: '2dbdb0a3-a004-4f58-8fb4-e51a6f7ffd73',
+	id: 'K000104-01-ai-sdlc',
+	guid: 'a5f9f55b-0fec-4e28-b87f-aec7603d2037',
 	dao: 'knife',
-	title: 'AI: Threat or Opportunity?',
-	description: 'A framing perspective on artificial intelligence in enterprise architecture — is it a risk or a catalyst for better SDLC practices?',
+	title: 'AI-Supported SDLC',
+	description: 'Introduction to AI-supported Software Development Lifecycle in the context of KERNARO and the CAA approach.',
 	author: 'Roman Kazicka',
 	authors: [
 		'Roman Kazicka'
@@ -197,13 +197,42 @@ function _createMdxContent(props) {
       children: "Images"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-01]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(98383)/* ["default"] */ .A),
-      alt: "CAA-Approach-In-SDLC.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(98383)/* ["default"] */ .A),
+        alt: "AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "[IMG-02]"
+    }), "\n", (0,jsx_runtime.jsx)("div", {
+      style: {
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(81912)/* ["default"] */ .A),
+        alt: "CAA_In_SDLC/CAA-Approach-In-SDLC.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     })]
   });
 }
@@ -221,6 +250,16 @@ function MDXContent(props = {}) {
 }
 
 
+
+/***/ }),
+
+/***/ 81912:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/CAA-Approach-In-SDLC-7accf2bc14eafc1191ccf1e6998ce14a.png");
 
 /***/ }),
 

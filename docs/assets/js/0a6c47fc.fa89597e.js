@@ -222,7 +222,6 @@ function _createMdxContent(props) {
     h2: "h2",
     header: "header",
     hr: "hr",
-    img: "img",
     li: "li",
     ol: "ol",
     p: "p",
@@ -462,18 +461,30 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "6-drawio-diagram",
       children: "6. Draw.io Diagram"
-    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.a, {
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.a, {
         target: "_blank",
         "data-noBrokenLinkCheck": true,
         href: (__webpack_require__(32186)/* ["default"] */ .A) + "",
         children: "ga4_gtm_hierarchy_links.drawio"
-      }), "\n", (0,jsx_runtime.jsx)(_components.img, {
-        alt: "ga4_gtm_hierarchy_links.png",
-        src: (__webpack_require__(65424)/* ["default"] */ .A) + "",
-        width: "825",
-        height: "623"
-      })]
+      })
+    }), "\n", (0,jsx_runtime.jsx)("div", {
+      style: {
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(49218)/* ["default"] */ .A),
+        alt: "GA4 GTM – hierarchy links diagram",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-odporúčanie-pre-teba",
       children: "🎯 Odporúčanie pre teba"
@@ -521,7 +532,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 65424:
+/***/ 49218:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {

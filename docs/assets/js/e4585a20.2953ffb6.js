@@ -1,16 +1,6 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[8543],{
 
-/***/ 7815:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GitHub-Sites-Concepts-clientSolution-3773de34c9e068c783e38cd16201cb51.png");
-
-/***/ }),
-
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -232,7 +222,6 @@ function _createMdxContent(props) {
     h1: "h1",
     h2: "h2",
     hr: "hr",
-    img: "img",
     li: "li",
     p: "p",
     strong: "strong",
@@ -332,12 +321,22 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Detaily viď obrázok"
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.img, {
+    }), "\n", (0,jsx_runtime.jsx)("div", {
+      style: {
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(76977)/* ["default"] */ .A),
         alt: "OS system agnostic riešenie",
-        src: (__webpack_require__(7815)/* ["default"] */ .A) + "",
-        width: "814",
-        height: "1583"
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-ako-to-použiť-aplikácia",
@@ -572,6 +571,16 @@ function MDXContent(props = {}) {
 }
 
 
+
+/***/ }),
+
+/***/ 76977:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GitHub-Sites-Concepts-clientSolution-3773de34c9e068c783e38cd16201cb51.png");
 
 /***/ })
 

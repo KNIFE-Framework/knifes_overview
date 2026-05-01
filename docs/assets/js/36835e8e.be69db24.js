@@ -2352,7 +2352,15 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-ako-to-rieši-princíp-1",
       children: "🧩 Ako to rieši (princíp)"
-    }), "\n", (0,jsx_runtime.jsx)("figure", {
+    }), "\n", (0,jsx_runtime.jsx)("div", {
+      style: {
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
       children: (0,jsx_runtime.jsx)("img", {
         src: (__webpack_require__(73771)/* ["default"] */ .A),
         alt: "Cynefin – prehľad 5 domén",
@@ -2758,7 +2766,15 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-detailný-článok-1",
       children: "📜 Detailný článok"
-    }), "\n", (0,jsx_runtime.jsx)("figure", {
+    }), "\n", (0,jsx_runtime.jsx)("div", {
+      style: {
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
       children: (0,jsx_runtime.jsx)("img", {
         src: (__webpack_require__(40545)/* ["default"] */ .A),
         alt: "Cynefin – detailné postupy a dynamika",

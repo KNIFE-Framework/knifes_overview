@@ -199,13 +199,23 @@ function _createMdxContent(props) {
       id: "img-01"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-01]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(98383)/* ["default"] */ .A),
-      alt: "CAA-Approach-In-SDLC.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(98383)/* ["default"] */ .A),
+        alt: "CAA-Approach-In-SDLC.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     })]
   });
 }

@@ -424,112 +424,212 @@ function _createMdxContent(props) {
       id: "img-01"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-01]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(21479)/* ["default"] */ .A),
-      alt: "img/01-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(21479)/* ["default"] */ .A),
+        alt: "img/01-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-02"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-02]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(45574)/* ["default"] */ .A),
-      alt: "img/02-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(45574)/* ["default"] */ .A),
+        alt: "img/02-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-03"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-03]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(39501)/* ["default"] */ .A),
-      alt: "img/03-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(39501)/* ["default"] */ .A),
+        alt: "img/03-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-04"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-04]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(88684)/* ["default"] */ .A),
-      alt: "img/04-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(88684)/* ["default"] */ .A),
+        alt: "img/04-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-05"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-05]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(45099)/* ["default"] */ .A),
-      alt: "img/05-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(45099)/* ["default"] */ .A),
+        alt: "img/05-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-06"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-06]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(38762)/* ["default"] */ .A),
-      alt: "img/06-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(38762)/* ["default"] */ .A),
+        alt: "img/06-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-07"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-07]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(11473)/* ["default"] */ .A),
-      alt: "img/07-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(11473)/* ["default"] */ .A),
+        alt: "img/07-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-08"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-08]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(35264)/* ["default"] */ .A),
-      alt: "img/08-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(35264)/* ["default"] */ .A),
+        alt: "img/08-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-09"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-09]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(60351)/* ["default"] */ .A),
-      alt: "img/09-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(60351)/* ["default"] */ .A),
+        alt: "img/09-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-10"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-10]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(10621)/* ["default"] */ .A),
-      alt: "img/10-KERNARO-Chat.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(10621)/* ["default"] */ .A),
+        alt: "img/10-KERNARO-Chat.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     })]
   });
 }

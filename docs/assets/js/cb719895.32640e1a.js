@@ -544,310 +544,590 @@ function _createMdxContent(props) {
       id: "img-01"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-01]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(54142)/* ["default"] */ .A),
-      alt: "img/01-Coffee-Machine.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(54142)/* ["default"] */ .A),
+        alt: "img/01-Coffee-Machine.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-02"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-02]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(15315)/* ["default"] */ .A),
-      alt: "img/02-Coffee-Machine.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(15315)/* ["default"] */ .A),
+        alt: "img/02-Coffee-Machine.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-03"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-03]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(63144)/* ["default"] */ .A),
-      alt: "img/03-Coffee-Machine.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(63144)/* ["default"] */ .A),
+        alt: "img/03-Coffee-Machine.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-04"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-04]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(3205)/* ["default"] */ .A),
-      alt: "img/04-Coffee-Machine.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(3205)/* ["default"] */ .A),
+        alt: "img/04-Coffee-Machine.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-05"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-05]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(30370)/* ["default"] */ .A),
-      alt: "img/05-Coffee-Machine.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(30370)/* ["default"] */ .A),
+        alt: "img/05-Coffee-Machine.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-06"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-06]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(69318)/* ["default"] */ .A),
-      alt: "img/06-Claude-Dashboard.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(69318)/* ["default"] */ .A),
+        alt: "img/06-Claude-Dashboard.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-07"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-07]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(77596)/* ["default"] */ .A),
-      alt: "img/07-Coffee-Machine.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(77596)/* ["default"] */ .A),
+        alt: "img/07-Coffee-Machine.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-08"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-08]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(88716)/* ["default"] */ .A),
-      alt: "img/08-Claude-Dashboard.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(88716)/* ["default"] */ .A),
+        alt: "img/08-Claude-Dashboard.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-09"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-09]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(2662)/* ["default"] */ .A),
-      alt: "img/09-Coffee-Machine.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(2662)/* ["default"] */ .A),
+        alt: "img/09-Coffee-Machine.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-10"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-10]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(8245)/* ["default"] */ .A),
-      alt: "img/10-Claude-Dashboard.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(8245)/* ["default"] */ .A),
+        alt: "img/10-Claude-Dashboard.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-11"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-11]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(48046)/* ["default"] */ .A),
-      alt: "img/11-Claude-Dashboard.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(48046)/* ["default"] */ .A),
+        alt: "img/11-Claude-Dashboard.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-12"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-12]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(81898)/* ["default"] */ .A),
-      alt: "img/12-Coffee-Machine.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(81898)/* ["default"] */ .A),
+        alt: "img/12-Coffee-Machine.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-13"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-13]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(7727)/* ["default"] */ .A),
-      alt: "img/13-Claude-Dashboard-Limits.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(7727)/* ["default"] */ .A),
+        alt: "img/13-Claude-Dashboard-Limits.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-14"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-14]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(21028)/* ["default"] */ .A),
-      alt: "img/14-Claude-Dashboard-costs.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(21028)/* ["default"] */ .A),
+        alt: "img/14-Claude-Dashboard-costs.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-15"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-15]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(38053)/* ["default"] */ .A),
-      alt: "img/15-Coffee-Machine-activity-diag.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(38053)/* ["default"] */ .A),
+        alt: "img/15-Coffee-Machine-activity-diag.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-16"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-16]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(90543)/* ["default"] */ .A),
-      alt: "img/16-Coffee-Machine-status-diag.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(90543)/* ["default"] */ .A),
+        alt: "img/16-Coffee-Machine-status-diag.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-17"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-17]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(7434)/* ["default"] */ .A),
-      alt: "img2-gen/01-generateElements-chats-setingSkills.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(7434)/* ["default"] */ .A),
+        alt: "img2-gen/01-generateElements-chats-setingSkills.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-18"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-18]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(35164)/* ["default"] */ .A),
-      alt: "img2-gen/02-generateElements-chats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(35164)/* ["default"] */ .A),
+        alt: "img2-gen/02-generateElements-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-19"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-19]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(78567)/* ["default"] */ .A),
-      alt: "img2-gen/03-generateElements-chats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(78567)/* ["default"] */ .A),
+        alt: "img2-gen/03-generateElements-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-20"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-20]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(21658)/* ["default"] */ .A),
-      alt: "img2-gen/04-generateElements-chats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(21658)/* ["default"] */ .A),
+        alt: "img2-gen/04-generateElements-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-21"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-21]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(60301)/* ["default"] */ .A),
-      alt: "img2-gen/05-generateElements-chats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(60301)/* ["default"] */ .A),
+        alt: "img2-gen/05-generateElements-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-22"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-22]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(10800)/* ["default"] */ .A),
-      alt: "img2-gen/06-generateElements-chats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(10800)/* ["default"] */ .A),
+        alt: "img2-gen/06-generateElements-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-23"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-23]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(40891)/* ["default"] */ .A),
-      alt: "img2-gen/07-generateElements-chats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(40891)/* ["default"] */ .A),
+        alt: "img2-gen/07-generateElements-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-24"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-24]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(11150)/* ["default"] */ .A),
-      alt: "img2-gen/08-generateElements-chats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(11150)/* ["default"] */ .A),
+        alt: "img2-gen/08-generateElements-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-25"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-25]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(74699)/* ["default"] */ .A),
-      alt: "img2-gen/09-generateElements-OPERATIONSchats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(74699)/* ["default"] */ .A),
+        alt: "img2-gen/09-generateElements-OPERATIONSchats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-26"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-26]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(17037)/* ["default"] */ .A),
-      alt: "img2-gen/10-generateElements-OPERATIONSchats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(17037)/* ["default"] */ .A),
+        alt: "img2-gen/10-generateElements-OPERATIONSchats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-27"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-27]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(20364)/* ["default"] */ .A),
-      alt: "img2-gen/11-generateElements-chats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(20364)/* ["default"] */ .A),
+        alt: "img2-gen/11-generateElements-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-28"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-28]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(39803)/* ["default"] */ .A),
-      alt: "img2-gen/12-generateElements-structuredScenario-chats.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(39803)/* ["default"] */ .A),
+        alt: "img2-gen/12-generateElements-structuredScenario-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     })]
   });
 }

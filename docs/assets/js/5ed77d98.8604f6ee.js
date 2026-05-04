@@ -229,24 +229,44 @@ function _createMdxContent(props) {
       id: "img-01"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-01]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(98383)/* ["default"] */ .A),
-      alt: "AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(98383)/* ["default"] */ .A),
+        alt: "AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-02"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-02]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(81912)/* ["default"] */ .A),
-      alt: "CAA_In_SDLC/CAA-Approach-In-SDLC.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(81912)/* ["default"] */ .A),
+        alt: "CAA_In_SDLC/CAA-Approach-In-SDLC.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["← ", (0,jsx_runtime.jsx)(_components.a, {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/",

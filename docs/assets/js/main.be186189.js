@@ -411,8 +411,8 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
           "position": "right"
         },
         {
-          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/a7e91b234",
-          "label": "Release v0.4.1-19-ga7e91b234 • a7e91b234",
+          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/af8f02668",
+          "label": "Release v0.4.1-20-gaf8f02668 • af8f02668",
           "position": "right"
         }
       ],
@@ -420,7 +420,7 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
     },
     "footer": {
       "style": "dark",
-      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>v0.4.1-19-ga7e91b234</strong><br/>\n    💡 Commit: <code>a7e91b234</code><br/>\n    🕒 Build: 2026-05-04 21:20:43 UTC\n  </div>\n",
+      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>v0.4.1-20-gaf8f02668</strong><br/>\n    💡 Commit: <code>af8f02668</code><br/>\n    🕒 Build: 2026-05-04 21:44:59 UTC\n  </div>\n",
       "links": []
     },
     "prism": {
@@ -2943,7 +2943,7 @@ var normalizeContextByPath = __webpack_require__(43385);
 // EXTERNAL MODULE: ./node_modules/lunr/lunr.js
 var lunr = __webpack_require__(58291);
 ;// ./.docusaurus/@easyops-cn/docusaurus-search-local/default/generated-constants.js
-const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=d0806276";const searchResultLimits=8;const fuzzyMatchingDistance=1;
+const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=81ebb79c";const searchResultLimits=8;const fuzzyMatchingDistance=1;
 ;// ./node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/utils/proxiedGeneratedConstants.js
 // This file is auto generated while building.
 

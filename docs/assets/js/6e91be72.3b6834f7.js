@@ -784,398 +784,758 @@ function _createMdxContent(props) {
       id: "img-01"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-01]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(51567)/* ["default"] */ .A),
-      alt: "img/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(51567)/* ["default"] */ .A),
+        alt: "img/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-02"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-02]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(9033)/* ["default"] */ .A),
-      alt: "img/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(9033)/* ["default"] */ .A),
+        alt: "img/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-03"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-03]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(10880)/* ["default"] */ .A),
-      alt: "img/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(10880)/* ["default"] */ .A),
+        alt: "img/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-04"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-04]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(41683)/* ["default"] */ .A),
-      alt: "img/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(41683)/* ["default"] */ .A),
+        alt: "img/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-05"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-05]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(2754)/* ["default"] */ .A),
-      alt: "img/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(2754)/* ["default"] */ .A),
+        alt: "img/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-06"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-06]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(87841)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/01-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(87841)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/01-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-07"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-07]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(49154)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/02-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(49154)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/02-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-08"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-08]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(68903)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/03-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(68903)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/03-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-09"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-09]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(43656)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/04-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(43656)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/04-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-10"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-10]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(97205)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/05-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(97205)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/05-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-11"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-11]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(16774)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/06-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(16774)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/06-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-12"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-12]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(68955)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/07-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(68955)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/07-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-13"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-13]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(39996)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/08-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(39996)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/08-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-14"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-14]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(50809)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/09-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(50809)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/09-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-15"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-15]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(29111)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/10-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(29111)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/10-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-16"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-16]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(45234)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/11-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(45234)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/11-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-17"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-17]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(32593)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/12-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(32593)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/12-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-18"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-18]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(88820)/* ["default"] */ .A),
-      alt: "img/KERNARO-Installation/13-INSTALL_KERNARO.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(88820)/* ["default"] */ .A),
+        alt: "img/KERNARO-Installation/13-INSTALL_KERNARO.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-19"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-19]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(33468)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(33468)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-20"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-20]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(30207)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(30207)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-21"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-21]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(12125)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(12125)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-22"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-22]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(12145)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(12145)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-23"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-23]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(55300)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings/01-KERNARO-Settings.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(55300)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings/01-KERNARO-Settings.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-24"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-24]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(69953)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings/02-KERNARO-Settings.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(69953)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings/02-KERNARO-Settings.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-25"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-25]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(73042)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings/03-KERNARO-Settings.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(73042)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings/03-KERNARO-Settings.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-26"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-26]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(50295)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings/04-KERNARO-Settings.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(50295)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings/04-KERNARO-Settings.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-27"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-27]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(8144)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings/05-KERNARO-Settings.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(8144)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings/05-KERNARO-Settings.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-28"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-28]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(10285)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings/06-KERNARO-Settings.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(10285)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings/06-KERNARO-Settings.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-29"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-29]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(62814)/* ["default"] */ .A),
-      alt: "img/KERNARO-Settings/07-KERNARO-Settings.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(62814)/* ["default"] */ .A),
+        alt: "img/KERNARO-Settings/07-KERNARO-Settings.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-30"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-30]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(32196)/* ["default"] */ .A),
-      alt: "img/Python/A2-python-312-installed.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(32196)/* ["default"] */ .A),
+        alt: "img/Python/A2-python-312-installed.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-31"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-31]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(99464)/* ["default"] */ .A),
-      alt: "img/Python/A2-python-install-manager.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(99464)/* ["default"] */ .A),
+        alt: "img/Python/A2-python-install-manager.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-32"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-32]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(42145)/* ["default"] */ .A),
-      alt: "img/Python/A2-python-installing-312.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(42145)/* ["default"] */ .A),
+        alt: "img/Python/A2-python-installing-312.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-33"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-33]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(49614)/* ["default"] */ .A),
-      alt: "img/Python/A4-chat-agent-settings.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(49614)/* ["default"] */ .A),
+        alt: "img/Python/A4-chat-agent-settings.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-34"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-34]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(82820)/* ["default"] */ .A),
-      alt: "img/Python/A5-python-execution-empty.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(82820)/* ["default"] */ .A),
+        alt: "img/Python/A5-python-execution-empty.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-35"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-35]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(37708)/* ["default"] */ .A),
-      alt: "img/Python/A5-python-execution-empty2.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(37708)/* ["default"] */ .A),
+        alt: "img/Python/A5-python-execution-empty2.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-36"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-36]"
-    }), "\n", (0,jsx_runtime.jsx)("img", {
-      src: (__webpack_require__(76816)/* ["default"] */ .A),
-      alt: "img/Python/A5-python-verified.png",
+    }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
-        maxWidth: '800px',
-        width: '100%'
-      }
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(76816)/* ["default"] */ .A),
+        alt: "img/Python/A5-python-verified.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
     })]
   });
 }

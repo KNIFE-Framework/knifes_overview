@@ -49,15 +49,33 @@ fm_reserved2: ""
 This article is being actively worked on. Content may be incomplete or subject to change.
 :::
 
+
+
+
+
+
 <!-- IMAGES:BEGIN -->
 
 ---
 
 ## Images
 
+<!-- COPY-PASTE REFERENCE
+  Inline image (no caption):
+    <img src={require('./img/...').default} style={{maxWidth:'800px',width:'100%'}} />
+
+  Endnote image with caption (replace [IMG-xx] with #### heading):
+    <a id="img-07"></a>
+    #### IMG-07 · Short descriptive title
+    <img src={require('./img/...').default} style={{maxWidth:'800px',width:'100%'}} />
+
+  Reference from text:
+    [[IMG-07]](#img-07)
+    → see [[IMG-07]](#img-07)
+-->
+
+<a id="img-01"></a>
 [IMG-01]
-<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('./CAA-Approach-In-SDLC.png').default} alt="CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
-</div>
+<img src={require('./CAA-Approach-In-SDLC.png').default} alt="CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
 
 <!-- IMAGES:END -->

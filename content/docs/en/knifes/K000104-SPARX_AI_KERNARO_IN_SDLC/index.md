@@ -137,20 +137,40 @@ fm_reserved2: ""
 :::caution In Progress
 This article is being actively worked on. Content may be incomplete or subject to change.
 :::
-
+<!-- TODO:review -->
 > **Author:** Roman Kazička, Knowledge Management Enterprise Architect KMEA  
 > **Company:** SystemThinking spol. s r.o., Bratislava  
 > **Period:** April 8–30, 2026  
 > **Environment:** EA 17.1 Build 1716 (64-bit, ULTIMATE) · MariaDB (~800 MB) + QEA (SQLite) · Claude Sonnet 4.6
 
 ---
+## Purpose of this KNIFE
 
+<!--TODO: Translate
+AI je fenomén tejto doby. Sparxsystems sleduje tieto trendy a ponúka niekoľko spôsobov, ako použiť AI pri práci s modelom.
+Účelom tohoto dokumentu je na jednoduchých príkladoch overiť podporu AI - KERNARO pri typických aktivitách roly funkčného analytika.
+AI-Kernáro je nástroj, ktorý je scopný podporiť všetky roli v rámci SDLC.
+
+Ja som sa v tomto príspevku zameral na test beta verzie KERNARO. Doplnok do modelera Enterprise Architect.
+Každé riešenie, každý príspevok existuje v nejakom konkrétnom kontexte. 
+Môj kontext je posúdenie AI-Kernáro z pohľadu podpory životného cyklu IT riešení.
+Vymyslel som si modelovú situáciu s niekoľkými praktickými prípadmi použitia:
+  A. Oboznámenie sa s nezmámym modelom väčšieho rozsahu
+    - Generovanie diagramov z neznámeho modelu
+    - Základné štatistiky z modelu
+- B. Práca s modelom pri definovaní funkčnej špecifikácii - Tréningový prípad Kávovar
+  - Vytvorenie UC modelu
+  - Popis scenárov
+  - Vytvorenie Aktivity diagramu
+  - Vygenerovanie špecifikácie na úrovni UC modelu - popisu scenárov použitia a rolí
+- 
+-->
 ## Contents
 
 | Section | Topic |
 |---|---|
 | [01 - Introduction](./01-Intoduction/AI-Supported_SDLC.md) | Genral ideas about AI in SDLC |
-| [02 - Configuration](./02-Configuration/kernaro-A-configuration.md) | Installation, API setup, Python Execution |
+| [02 - Configuration](./02-Configuration/02-configuration.md) | Installation, API setup, Python Execution |
 | [03 – Testing Strategy](./03-Testing_Strategy/kernaro-testing_strategy.md) | Testing straegy in SDLC context |
 | [04 – KERNARO-Chat](./04-KERNARO-Chat/kernaro-chat.md) | Model exploration, token cost, document generation |
 | [05 - KERNARO-AI-Agents](./05-KERNARO-AI_Agent/kernaro-AI-agents.md) | Missing Notes agent, APV integrity check (UC-01) |
@@ -176,17 +196,32 @@ Empty SQLite (`.qea`) file, created for agent and JavaScript testing. Populated 
 
 ## Key Observation
 
-> AI has the ability to communicate in natural language, but draws data from what is available.  
+> AI has the ability to communicate in natural language, but draws data from what is available. 
+>
 > Poor-quality inputs produce poor-quality outputs.  
 > Understanding requires **TAXONOMY** (shared vocabulary) and **ONTOLOGY** (role-based perspective).  
 > Only when these two layers exist can the system provide meaningful **VIEWS** – with or without AI.
 
+ <!--TODO: Translate>
+> AI je partner kolega, ktorý je ochotný a často aj schopný vykonať obrovskú rutinnú prácu za mňa, to mi umožňuje neunaviť sa rutinou, ale zostať nad vecou.
+> AI je partner, ktorý dokáže odpovedač na všetko. Musím sa ale naučiť verifikovať každý výstup. Dôveruj, ale preveruj, ale to platí aj pri ľudských partneroch.
+> Test Kernaro v tomto príspevku zachytil "len" niekoľko elementárnych príkladov, ale spracovoť množstvo informácií bez AI ( Claude Sonet 4.6 v IDE VSC) by bolo nerealizovateľné
+> KNIFE framework  v GitHube, kde je publikovaný tento príspevok by bez Open GPT a Clade nikdy nevznikol.  
+> AI je nesmierne silný nástroj a pokiaľ je v rukách pripraveného človeka, tímu, je to strategický nástroj.
+> AI ma mení, mení spôsob mojej práce, spôsob mojeho učenia sa, spôsobm zdieľania mojich znalostí v tíme a komunite
+> AI zásadným spôsobom zmení manažment v organizáciách, spôsob spolupráce nielen medzi ľudmni ale aj v hybridnom tíme
+>  -->
 **AI is not a shortcut. It is a catalyst – for those who are prepared.**
 
 ---
 
 ## Cost Overview
 
+> Note: This report covers only Claude Console API token costs. Kernaro product licensing costs were not evaluated in this test – Beta access was provided free of charge. From a superficial comparison, the cost of the Sparx ecosystem relative to competing products (e.g. Bizzdesign [2]) is a fraction of the price while supporting the entire SDLC lifecycle.
+
+
+<!-- TODO: Doplniť do tabuľky dole ceny do 30.4.2026 z portálu claude
+-->
 | Period | Activity | Cost |
 |---|---|---|
 | Apr 15–17 | Initial chat + document generation | ~$5.50 |
@@ -196,14 +231,16 @@ Empty SQLite (`.qea`) file, created for agent and JavaScript testing. Populated 
 
 Remaining API credits: **$12.47 USD**
 
-> Note: This report covers only Claude Console API token costs. Kernaro product licensing costs were not evaluated in this test – Beta access was provided free of charge. From a superficial comparison, the cost of the Sparx ecosystem relative to competing products (e.g. Bizzdesign [2]) is a fraction of the price while supporting the entire SDLC lifecycle.
 
 ---
 
 ## Related KNIFE Articles
 
 This report is part of a broader knowledge framework. Related topics:
+<!-- TODO: doplniť linku na 105 v SK časti, prípadne preložiž do EN . To vzniká koncepčná otázka číslovania príspevkov pre rôzne jazykové mutácie, Jeden spoločný counter, alebo rovnaký index ajazyková mutácia. Asi to druhé...
+Jeden index a EN, CZ, CH, preklady by boli asi najintuitívnejšie 
 
+-->
 | KNIFE (planned) | Topic |
 |---|---|
 | **[1]Reality mapping into digital world – Why and how | [KNIFE_103](../K000103-CAA_IN_SDLC/)Why we digitise reality, SDLC context, role-based understanding, CAA approach, tooling landscape. The Coffee Machine model used in this test is a practical example. |
@@ -239,175 +276,481 @@ This report is part of a broader knowledge framework. Related topics:
 
 
 
+
+
+
+
+
 <!-- IMAGES:BEGIN -->
 
 ---
 
 ## Images
 
+<!-- COPY-PASTE REFERENCE
+  Inline image (no caption):
+    <img src={require('./img/...').default} style={{maxWidth:'800px',width:'100%'}} />
+
+  Endnote image with caption (replace [IMG-xx] with #### heading):
+    <a id="img-07"></a>
+    #### IMG-07 · Short descriptive title
+    <img src={require('./img/...').default} style={{maxWidth:'800px',width:'100%'}} />
+
+  Reference from text:
+    [[IMG-07]](#img-07)
+    → see [[IMG-07]](#img-07)
+-->
+
+<a id="img-01"></a>
 [IMG-01]
 <img src={require('./01-Intoduction/AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png').default} alt="01-Intoduction/AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-02"></a>
 [IMG-02]
 <img src={require('./01-Intoduction/CAA_In_SDLC/CAA-Approach-In-SDLC.png').default} alt="01-Intoduction/CAA_In_SDLC/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-03"></a>
 [IMG-03]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/01-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/01-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-04"></a>
 [IMG-04]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/02-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/02-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-05"></a>
 [IMG-05]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/03-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/03-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-06"></a>
 [IMG-06]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/04-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/04-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-07"></a>
 [IMG-07]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/05-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/05-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-08"></a>
 [IMG-08]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/06-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/06-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/01-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/01-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-09"></a>
 [IMG-09]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/07-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/07-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/02-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/02-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-10"></a>
 [IMG-10]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/08-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/08-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/03-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/03-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-11"></a>
 [IMG-11]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/09-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/09-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/04-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/04-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-12"></a>
 [IMG-12]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/1-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/1-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/05-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/05-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-13"></a>
 [IMG-13]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/10-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/10-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/06-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/06-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-14"></a>
 [IMG-14]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/11-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/11-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/07-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/07-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-15"></a>
 [IMG-15]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/12-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/12-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/08-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/08-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-16"></a>
 [IMG-16]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/13-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/13-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/09-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/09-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-17"></a>
 [IMG-17]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/14-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/14-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/10-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/10-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-18"></a>
 [IMG-18]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/15-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/15-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/11-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/11-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-19"></a>
 [IMG-19]
-<img src={require('./02-Configuration/CLAUDE-Preparation/01-Config/16-Claude-paltform-config.png').default} alt="02-Configuration/CLAUDE-Preparation/01-Config/16-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/12-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/12-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-20"></a>
 [IMG-20]
-<img src={require('./02-Configuration/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Installation/13-INSTALL_KERNARO.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Installation/13-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-21"></a>
 [IMG-21]
-<img src={require('./02-Configuration/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-22"></a>
 [IMG-22]
-<img src={require('./02-Configuration/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-23"></a>
 [IMG-23]
-<img src={require('./02-Configuration/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-24"></a>
 [IMG-24]
-<img src={require('./02-Configuration/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png').default} alt="02-Configuration/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-25"></a>
 [IMG-25]
-<img src={require('./02-Configuration/KERNARO-Installation/01-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/01-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings/01-KERNARO-Settings.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings/01-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-26"></a>
 [IMG-26]
-<img src={require('./02-Configuration/KERNARO-Installation/02-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/02-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings/02-KERNARO-Settings.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings/02-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-27"></a>
 [IMG-27]
-<img src={require('./02-Configuration/KERNARO-Installation/03-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/03-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings/03-KERNARO-Settings.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings/03-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-28"></a>
 [IMG-28]
-<img src={require('./02-Configuration/KERNARO-Installation/04-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/04-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings/04-KERNARO-Settings.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings/04-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-29"></a>
 [IMG-29]
-<img src={require('./02-Configuration/KERNARO-Installation/05-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/05-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings/05-KERNARO-Settings.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings/05-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-30"></a>
 [IMG-30]
-<img src={require('./02-Configuration/KERNARO-Installation/06-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/06-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings/06-KERNARO-Settings.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings/06-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-31"></a>
 [IMG-31]
-<img src={require('./02-Configuration/KERNARO-Installation/07-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/07-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/KERNARO-Settings/07-KERNARO-Settings.png').default} alt="02-Configuration/A1-kernaro/img/KERNARO-Settings/07-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-32"></a>
 [IMG-32]
-<img src={require('./02-Configuration/KERNARO-Installation/08-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/08-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/Python/A2-python-312-installed.png').default} alt="02-Configuration/A1-kernaro/img/Python/A2-python-312-installed.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-33"></a>
 [IMG-33]
-<img src={require('./02-Configuration/KERNARO-Installation/09-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/09-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/Python/A2-python-install-manager.png').default} alt="02-Configuration/A1-kernaro/img/Python/A2-python-install-manager.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-34"></a>
 [IMG-34]
-<img src={require('./02-Configuration/KERNARO-Installation/10-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/10-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/Python/A2-python-installing-312.png').default} alt="02-Configuration/A1-kernaro/img/Python/A2-python-installing-312.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-35"></a>
 [IMG-35]
-<img src={require('./02-Configuration/KERNARO-Installation/11-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/11-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/Python/A4-chat-agent-settings.png').default} alt="02-Configuration/A1-kernaro/img/Python/A4-chat-agent-settings.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-36"></a>
 [IMG-36]
-<img src={require('./02-Configuration/KERNARO-Installation/12-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/12-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/Python/A5-python-execution-empty.png').default} alt="02-Configuration/A1-kernaro/img/Python/A5-python-execution-empty.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-37"></a>
 [IMG-37]
-<img src={require('./02-Configuration/KERNARO-Installation/13-INSTALL_KERNARO.png').default} alt="02-Configuration/KERNARO-Installation/13-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/Python/A5-python-execution-empty2.png').default} alt="02-Configuration/A1-kernaro/img/Python/A5-python-execution-empty2.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-38"></a>
 [IMG-38]
-<img src={require('./02-Configuration/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png').default} alt="02-Configuration/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A1-kernaro/img/Python/A5-python-verified.png').default} alt="02-Configuration/A1-kernaro/img/Python/A5-python-verified.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-39"></a>
 [IMG-39]
-<img src={require('./02-Configuration/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png').default} alt="02-Configuration/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/01-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/01-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-40"></a>
 [IMG-40]
-<img src={require('./02-Configuration/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png').default} alt="02-Configuration/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/02-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/02-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-41"></a>
 [IMG-41]
-<img src={require('./02-Configuration/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png').default} alt="02-Configuration/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/03-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/03-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-42"></a>
 [IMG-42]
-<img src={require('./02-Configuration/KERNARO-Settings/01-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/01-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/04-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/04-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-43"></a>
 [IMG-43]
-<img src={require('./02-Configuration/KERNARO-Settings/02-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/02-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/05-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/05-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-44"></a>
 [IMG-44]
-<img src={require('./02-Configuration/KERNARO-Settings/03-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/03-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/06-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/06-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-45"></a>
 [IMG-45]
-<img src={require('./02-Configuration/KERNARO-Settings/04-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/04-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/07-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/07-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-46"></a>
 [IMG-46]
-<img src={require('./02-Configuration/KERNARO-Settings/05-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/05-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/08-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/08-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-47"></a>
 [IMG-47]
-<img src={require('./02-Configuration/KERNARO-Settings/06-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/06-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/09-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/09-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-48"></a>
 [IMG-48]
-<img src={require('./02-Configuration/KERNARO-Settings/07-KERNARO-Settings.png').default} alt="02-Configuration/KERNARO-Settings/07-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/1-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/1-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-49"></a>
 [IMG-49]
-<img src={require('./02-Configuration/Python/A2-python-312-installed.png').default} alt="02-Configuration/Python/A2-python-312-installed.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/10-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/10-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-50"></a>
 [IMG-50]
-<img src={require('./02-Configuration/Python/A2-python-install-manager.png').default} alt="02-Configuration/Python/A2-python-install-manager.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/11-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/11-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-51"></a>
 [IMG-51]
-<img src={require('./02-Configuration/Python/A2-python-installing-312.png').default} alt="02-Configuration/Python/A2-python-installing-312.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/12-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/12-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-52"></a>
 [IMG-52]
-<img src={require('./02-Configuration/Python/A4-chat-agent-settings.png').default} alt="02-Configuration/Python/A4-chat-agent-settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/13-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/13-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-53"></a>
 [IMG-53]
-<img src={require('./02-Configuration/Python/A5-python-execution-empty.png').default} alt="02-Configuration/Python/A5-python-execution-empty.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/14-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/14-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-54"></a>
 [IMG-54]
-<img src={require('./02-Configuration/Python/A5-python-execution-empty2.png').default} alt="02-Configuration/Python/A5-python-execution-empty2.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/15-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/15-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
 
+<a id="img-55"></a>
 [IMG-55]
-<img src={require('./02-Configuration/Python/A5-python-verified.png').default} alt="02-Configuration/Python/A5-python-verified.png" style={{maxWidth: '800px', width: '100%'}} />
+<img src={require('./02-Configuration/A2-claude/img/01-Config/16-Claude-paltform-config.png').default} alt="02-Configuration/A2-claude/img/01-Config/16-Claude-paltform-config.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-56"></a>
+[IMG-56]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/01-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/01-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-57"></a>
+[IMG-57]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/02-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/02-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-58"></a>
+[IMG-58]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/03-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/03-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-59"></a>
+[IMG-59]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/04-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/04-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-60"></a>
+[IMG-60]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/05-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/05-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-61"></a>
+[IMG-61]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/06-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/06-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-62"></a>
+[IMG-62]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/07-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/07-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-63"></a>
+[IMG-63]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/08-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/08-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-64"></a>
+[IMG-64]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/09-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/09-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-65"></a>
+[IMG-65]
+<img src={require('./04-KERNARO-Chat/B1-model-statistics/img/10-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B1-model-statistics/img/10-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-66"></a>
+[IMG-66]
+<img src={require('./04-KERNARO-Chat/B2-document-generation/img/11-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B2-document-generation/img/11-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-67"></a>
+[IMG-67]
+<img src={require('./04-KERNARO-Chat/B2-document-generation/img/12-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B2-document-generation/img/12-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-68"></a>
+[IMG-68]
+<img src={require('./04-KERNARO-Chat/B2-document-generation/img/13-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B2-document-generation/img/13-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-69"></a>
+[IMG-69]
+<img src={require('./04-KERNARO-Chat/B2-document-generation/img/14-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B2-document-generation/img/14-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-70"></a>
+[IMG-70]
+<img src={require('./04-KERNARO-Chat/B2-document-generation/img/15-CLAUDE-Tokens-Chat.png').default} alt="04-KERNARO-Chat/B2-document-generation/img/15-CLAUDE-Tokens-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-71"></a>
+[IMG-71]
+<img src={require('./04-KERNARO-Chat/B2-document-generation/img/16-STOP-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B2-document-generation/img/16-STOP-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-72"></a>
+[IMG-72]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/17-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/17-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-73"></a>
+[IMG-73]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/18-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/18-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-74"></a>
+[IMG-74]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/19-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/19-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-75"></a>
+[IMG-75]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/20-KERNARO-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/20-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-76"></a>
+[IMG-76]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/21-CLAUDE-DASHBOARD.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/21-CLAUDE-DASHBOARD.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-77"></a>
+[IMG-77]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/22-KERNARO-TOC-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/22-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-78"></a>
+[IMG-78]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/23-KERNARO-TOC-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/23-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-79"></a>
+[IMG-79]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/24-KERNARO-TOC-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/24-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-80"></a>
+[IMG-80]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/25-KERNARO-TOC-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/25-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-81"></a>
+[IMG-81]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/26-KERNARO-TOC-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/26-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-82"></a>
+[IMG-82]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/27-KERNARO-TOC-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/27-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-83"></a>
+[IMG-83]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/28-KERNARO-TOC-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/28-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-84"></a>
+[IMG-84]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/29-KERNARO-TOC-Chat.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/29-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-85"></a>
+[IMG-85]
+<img src={require('./04-KERNARO-Chat/B3-toc-generation/img/30-CLAUDE-Dashboard.png').default} alt="04-KERNARO-Chat/B3-toc-generation/img/30-CLAUDE-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-86"></a>
+[IMG-86]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/01-Coffee-Machine.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/01-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-87"></a>
+[IMG-87]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/02-Coffee-Machine.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/02-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-88"></a>
+[IMG-88]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/03-Coffee-Machine.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/03-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-89"></a>
+[IMG-89]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/04-Coffee-Machine.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/04-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-90"></a>
+[IMG-90]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/05-Coffee-Machine.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/05-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-91"></a>
+[IMG-91]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/06-Claude-Dashboard.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/06-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-92"></a>
+[IMG-92]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/07-Coffee-Machine.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/07-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-93"></a>
+[IMG-93]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/08-Claude-Dashboard.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/08-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-94"></a>
+[IMG-94]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/09-Coffee-Machine.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/09-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-95"></a>
+[IMG-95]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/10-Claude-Dashboard.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/10-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-96"></a>
+[IMG-96]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/11-Claude-Dashboard.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/11-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-97"></a>
+[IMG-97]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/12-Coffee-Machine.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/12-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-98"></a>
+[IMG-98]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/13-Claude-Dashboard-Limits.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/13-Claude-Dashboard-Limits.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-99"></a>
+[IMG-99]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/14-Claude-Dashboard-costs.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/14-Claude-Dashboard-costs.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-100"></a>
+[IMG-100]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/15-Coffee-Machine-activity-diag.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/15-Coffee-Machine-activity-diag.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-101"></a>
+[IMG-101]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img/16-Coffee-Machine-status-diag.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img/16-Coffee-Machine-status-diag.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-102"></a>
+[IMG-102]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/01-generateElements-chats-setingSkills.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/01-generateElements-chats-setingSkills.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-103"></a>
+[IMG-103]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/02-generateElements-chats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/02-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-104"></a>
+[IMG-104]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/03-generateElements-chats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/03-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-105"></a>
+[IMG-105]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/04-generateElements-chats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/04-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-106"></a>
+[IMG-106]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/05-generateElements-chats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/05-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-107"></a>
+[IMG-107]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/06-generateElements-chats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/06-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-108"></a>
+[IMG-108]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/07-generateElements-chats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/07-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-109"></a>
+[IMG-109]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/08-generateElements-chats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/08-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-110"></a>
+[IMG-110]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/09-generateElements-OPERATIONSchats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/09-generateElements-OPERATIONSchats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-111"></a>
+[IMG-111]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/10-generateElements-OPERATIONSchats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/10-generateElements-OPERATIONSchats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-112"></a>
+[IMG-112]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/11-generateElements-chats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/11-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+
+<a id="img-113"></a>
+[IMG-113]
+<img src={require('./04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/12-generateElements-structuredScenario-chats.png').default} alt="04-KERNARO-Chat/B4-coffee-machine-spec/img2-gen/12-generateElements-structuredScenario-chats.png" style={{maxWidth: '800px', width: '100%'}} />
 
 <!-- IMAGES:END -->

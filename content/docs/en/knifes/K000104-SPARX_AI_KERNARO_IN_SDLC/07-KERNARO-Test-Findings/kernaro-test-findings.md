@@ -213,4 +213,4 @@ This capability significantly reduces the trial-and-error cycle during initial s
 
 ---
 
-← [Back to index](../index.md) | → [F – Ecosystem](../09-Sparxsystems-Ecosystem/sparxsystems-ecosystem.md)
+← [Back to index](../index.md) | → [Claude Console Dashboards](../08-Claude-Console-Dashboards/claude-console-dashboards.md)

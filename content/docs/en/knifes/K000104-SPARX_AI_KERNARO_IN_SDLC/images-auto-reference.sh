@@ -8,6 +8,12 @@ KNIFE_ROOT="$(pwd)"
 find "$KNIFE_ROOT" -name "*.md" | while read mdfile; do
   md_dir="$(dirname "$mdfile")"
 
+  # Preskočiť súbory označené ako IMAGES:SKIP
+  if grep -q "<!-- IMAGES:SKIP -->" "$mdfile"; then
+    echo "⊘ Skipped: $mdfile"
+    continue
+  fi
+
   # Nájdi všetky obrázky v tom istom adresári a podadresároch
   images=$(find "$md_dir" -name "*.png" -o -name "*.jpg" | sort)
 
@@ -20,12 +26,27 @@ find "$KNIFE_ROOT" -name "*.md" | while read mdfile; do
   new_section+=$'\n<!-- IMAGES:BEGIN -->\n'
   new_section+=$'\n---\n'
   new_section+=$'\n## Images\n\n'
+  new_section+=$'<!-- COPY-PASTE REFERENCE\n'
+  new_section+=$'  Inline image (no caption):\n'
+  new_section+=$'    <img src={require(\'./img/...\').default} style={{maxWidth:\'800px\',width:\'100%\'}} />\n'
+  new_section+=$'\n'
+  new_section+=$'  Endnote image with caption (replace [IMG-xx] with #### heading):\n'
+  new_section+=$'    <a id="img-07"></a>\n'
+  new_section+=$'    #### IMG-07 · Short descriptive title\n'
+  new_section+=$'    <img src={require(\'./img/...\').default} style={{maxWidth:\'800px\',width:\'100%\'}} />\n'
+  new_section+=$'\n'
+  new_section+=$'  Reference from text:\n'
+  new_section+=$'    [[IMG-07]](#img-07)\n'
+  new_section+=$'    → see [[IMG-07]](#img-07)\n'
+  new_section+=$'-->\n\n'
 
   counter=1
   while IFS= read -r imgpath; do
     imgrel="${imgpath#$md_dir/}"
     label="IMG-$(printf '%02d' $counter)"
+    anchor="img-$(printf '%02d' $counter)"
 
+    new_section+="<a id=\"${anchor}\"></a>"$'\n'
     new_section+="[${label}]"$'\n'
     new_section+="<img src={require('./${imgrel}').default} alt=\"${imgrel}\" style={{maxWidth: '800px', width: '100%'}} />"$'\n\n'
 

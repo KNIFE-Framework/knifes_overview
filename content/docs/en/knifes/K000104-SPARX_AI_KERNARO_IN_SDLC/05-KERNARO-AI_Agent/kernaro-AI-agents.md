@@ -53,6 +53,12 @@ This article is being actively worked on. Content may be incomplete or subject t
 
 ← [Back to index](../index.md)
 
+| Agent | Topic |
+|---|---|
+| [C1 – Missing Notes](#c1--agent-missing-notes-in-element) | Detect empty Notes, apply QA tags via EA_OnPostCloseDiagram |
+| [C2 – APV Integrity Check](#c2--agent-apv-methodology-integrity-check-uc-01) | Validate REF linkage in Instance diagrams |
+| [C3 – Python Execution](./kernaro-python-execution.md) | Python vs. built-in tools — 3 attempts, 2 side effects |
+
 ---
 
 ## C1 · Agent: Missing Notes in element

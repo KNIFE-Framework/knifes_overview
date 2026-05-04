@@ -12,10 +12,10 @@ fm_version_comment: ""
 # 🆔 IDENTITY --------------------------------------------------------
 
 # ID generuje CLI / skript
-id: "KNIFE_OVERVIEW_DETAILS"
+id: "KNIFE_OVERVIEW_DETAILS_EN"
 
 # Unikátne UUID – generuje skript
-guid: "e0f5e41a-634c-461c-922e-4125309af558"
+guid: "47767288-4070-4c8a-8835-112013980ecf"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "en"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-04-23"
+created: "2026-05-01"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `e0f5e41a-634c-461c-922e-4125309af558`
+> **GUID:** `47767288-4070-4c8a-8835-112013980ecf`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -144,3 +144,6 @@ fm_reserved2: ""
 
 | ID | Title | Created | Status | Priority |
 |---|---|---|---|---|
+| K000104 | [K000104 – SPARX-AI KERNARO in context of SDLC support](../K000104-SPARX_AI_KERNARO_IN_SDLC/) | 2026-04-29 11:59 | inProgress |  |
+| K000103 | [K000103 – Context Aware Approach in SDLC](../K000103-CAA_IN_SDLC/) | 2026-04-29 08:56 | backlog |  |
+| K000101 | [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) | 2026-04-23 23:03 | draft |  |

@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "44f685ff-9c22-44a0-8336-d7acfd44decf"
+guid: "ce30970d-4a7b-4132-a364-4bae79f8d428"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-05-01"
+created: "2026-05-04"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `44f685ff-9c22-44a0-8336-d7acfd44decf`
+> **GUID:** `ce30970d-4a7b-4132-a364-4bae79f8d428`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -145,6 +145,7 @@ fm_reserved2: ""
 - **REF-UAT-001** · [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) · _inprogress_ · top
 - **K1000999** · [K1000999 – KNIFE – Test script-created instance](../K1000999/) · _backlog_ · -
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/) · _backlog_ · -
+- **K000105** · [K000105 – Zlaté zrnko: Ako riešiť 'neriešiteľné' situácie](../K000105-Zlate-zrnko-ako-riesit-neriesitelne/) · _inprogress_ · high
 - **K000102** · [K000102 – AI podpora spolupráce knowlwdge workerov v rámci SDLC.md](../K000102-KNIFE_Claude_SDLC_Collaboration/) · _backlog_ · -
 - **K000101** · [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) · _backlog_ · -
 - **K000100** · [K000100 – titul-Ako komunikovať s porozumením](../K000100-Ako-komunikova-s-porozumen-mE/) · _backlog_ · -

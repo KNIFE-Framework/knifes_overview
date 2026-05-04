@@ -423,11 +423,15 @@ def main():
 
     fm_core_text = read_text(args.fm_core)
 
+    # Locale suffix ensures globally unique doc IDs across SK/EN (Docusaurus requires unique IDs).
+    # SK is the primary locale — no suffix for backward compatibility.
+    _id_suffix = f'_{args.locale.upper()}' if args.locale.lower() != 'sk' else ''
+
     # Prepare three pages
     pages = [
         {
             'file': os.path.join(args.out_dir, 'KNIFE_Overview_Blog.md'),
-            'id': 'KNIFE_OVERVIEW_BLOG',
+            'id': f'KNIFE_OVERVIEW_BLOG{_id_suffix}',
             'title': '📰 KNIFE Overview – Blog',
             'priority': 'middle',
             'nav_key': 'blog',
@@ -435,7 +439,7 @@ def main():
         },
         {
             'file': os.path.join(args.out_dir, 'KNIFE_Overview_List.md'),
-            'id': 'KNIFE_OVERVIEW_LIST',
+            'id': f'KNIFE_OVERVIEW_LIST{_id_suffix}',
             'title': '🗂 KNIFE Overview – List',
             'priority': 'top',
             'nav_key': 'list',
@@ -443,7 +447,7 @@ def main():
         },
         {
             'file': os.path.join(args.out_dir, 'KNIFE_Overview_Details.md'),
-            'id': 'KNIFE_OVERVIEW_DETAILS',
+            'id': f'KNIFE_OVERVIEW_DETAILS{_id_suffix}',
             'title': '📊 KNIFE Overview – Details',
             'priority': 'top',
             'nav_key': 'details',

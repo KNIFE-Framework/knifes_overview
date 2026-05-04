@@ -12,7 +12,7 @@ authors: ["Roman Kazička",""]
 category: "deliverable"
 type: "knife"
 priority: "no"
-tags: ["-"]
+tags: []
 locale: "sk"
 created: "2025-09-26"
 modified: "2025-09-26"

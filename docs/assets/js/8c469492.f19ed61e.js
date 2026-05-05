@@ -107,7 +107,7 @@ function _createMdxContent(props) {
         children: "This article is being actively worked on. Content may be incomplete or subject to change."
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["← ", (0,jsx_runtime.jsx)(_components.a, {
+      children: ["In this article I cover only the configuration of the AI LLM and the AI-Kernaro tool itself in BETA version. Details for each component are in the documents below.\n← ", (0,jsx_runtime.jsx)(_components.a, {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/",
         children: "Back to index"
       })]

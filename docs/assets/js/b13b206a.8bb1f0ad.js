@@ -136,6 +136,8 @@ function _createMdxContent(props) {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Configuration/",
         children: "A – Configuration"
       })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "This section contains screenshots taken during the Claude Console configuration process. The sequence is shown below."
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "images",
       children: "Images"

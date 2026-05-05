@@ -1735,6 +1735,7 @@ function _createMdxContent(props) {
     h3: "h3",
     header: "header",
     hr: "hr",
+    li: "li",
     p: "p",
     strong: "strong",
     table: "table",
@@ -1743,6 +1744,7 @@ function _createMdxContent(props) {
     th: "th",
     thead: "thead",
     tr: "tr",
+    ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
   };
@@ -1776,6 +1778,38 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "purpose-of-this-knife",
       children: "Purpose of this KNIFE"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AI is a phenomenon of our time. Sparx Systems monitors these trends and offers several ways to use AI when working with models."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The purpose of this document is to verify AI – KERNARO support through simple, practically relevant use cases, focusing on the typical activities of a functional analyst role. AI-Kernaro is a tool capable of supporting all roles across the SDLC."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "In this article I focused on testing the Beta version of KERNARO – an add-in for the Enterprise Architect modeler. Every solution, every article exists in a specific context. My context is the assessment of AI-Kernaro from the perspective of supporting the IT solution lifecycle."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "I designed a model scenario with several practical use cases:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "A. Exploring an unfamiliar large-scale model"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Generating diagrams from an unknown model"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Basic model statistics"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "B. Working with the model to define a functional specification – Coffee Machine training case"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Creating a UC model"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Describing scenarios"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Creating an Activity diagram"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Generating a specification at the UC model level – use case scenario and role descriptions"
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "contents",
       children: "Contents"
@@ -1919,6 +1953,22 @@ function _createMdxContent(props) {
         }), " (role-based perspective).", (0,jsx_runtime.jsx)(_components.br, {}), "\n", "Only when these two layers exist can the system provide meaningful ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "VIEWS"
         }), " – with or without AI."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "AI is a colleague-partner – willing and often capable of handling an enormous amount of routine work on my behalf. This allows me to avoid being worn down by routine and to stay focused on what matters."
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "AI is a partner that can answer anything. But I must learn to verify every output. Trust, but verify – and that applies to human partners too."
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "This Kernaro test captured \"only\" a few elementary examples, yet processing this volume of information without AI (Claude Sonnet 4.6 in VSCode) would have been infeasible."
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "The KNIFE framework on GitHub, where this article is published, would never have existed without OpenGPT and Claude."
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "AI is an immensely powerful tool – in the hands of a prepared person or team, it is a strategic asset."
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "AI is changing me: the way I work, the way I learn, the way I share knowledge within a team and community."
+      }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        children: "AI will fundamentally change management in organisations – the way people collaborate, not only among humans but in hybrid human-AI teams."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {

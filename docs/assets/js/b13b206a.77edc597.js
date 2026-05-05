@@ -143,359 +143,189 @@ function _createMdxContent(props) {
       id: "img-01"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-01]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(8430)/* ["default"] */ .A),
+      alt: "img/01-Config/01-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(8430)/* ["default"] */ .A),
-        alt: "img/01-Config/01-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-02"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-02]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(31299)/* ["default"] */ .A),
+      alt: "img/01-Config/02-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(31299)/* ["default"] */ .A),
-        alt: "img/01-Config/02-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-03"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-03]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(1076)/* ["default"] */ .A),
+      alt: "img/01-Config/03-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(1076)/* ["default"] */ .A),
-        alt: "img/01-Config/03-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-04"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-04]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(64769)/* ["default"] */ .A),
+      alt: "img/01-Config/04-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(64769)/* ["default"] */ .A),
-        alt: "img/01-Config/04-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-05"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-05]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(30282)/* ["default"] */ .A),
+      alt: "img/01-Config/05-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(30282)/* ["default"] */ .A),
-        alt: "img/01-Config/05-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-06"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-06]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(60447)/* ["default"] */ .A),
+      alt: "img/01-Config/06-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(60447)/* ["default"] */ .A),
-        alt: "img/01-Config/06-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-07"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-07]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(48928)/* ["default"] */ .A),
+      alt: "img/01-Config/07-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(48928)/* ["default"] */ .A),
-        alt: "img/01-Config/07-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-08"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-08]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(31421)/* ["default"] */ .A),
+      alt: "img/01-Config/08-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(31421)/* ["default"] */ .A),
-        alt: "img/01-Config/08-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-09"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-09]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(6070)/* ["default"] */ .A),
+      alt: "img/01-Config/09-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(6070)/* ["default"] */ .A),
-        alt: "img/01-Config/09-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-10"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-10]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(15814)/* ["default"] */ .A),
+      alt: "img/01-Config/1-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(15814)/* ["default"] */ .A),
-        alt: "img/01-Config/1-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-11"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-11]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(97476)/* ["default"] */ .A),
+      alt: "img/01-Config/10-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(97476)/* ["default"] */ .A),
-        alt: "img/01-Config/10-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-12"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-12]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(27859)/* ["default"] */ .A),
+      alt: "img/01-Config/11-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(27859)/* ["default"] */ .A),
-        alt: "img/01-Config/11-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-13"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-13]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(12222)/* ["default"] */ .A),
+      alt: "img/01-Config/12-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(12222)/* ["default"] */ .A),
-        alt: "img/01-Config/12-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-14"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-14]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(12869)/* ["default"] */ .A),
+      alt: "img/01-Config/13-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(12869)/* ["default"] */ .A),
-        alt: "img/01-Config/13-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-15"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-15]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(92240)/* ["default"] */ .A),
+      alt: "img/01-Config/14-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(92240)/* ["default"] */ .A),
-        alt: "img/01-Config/14-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-16"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-16]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(25871)/* ["default"] */ .A),
+      alt: "img/01-Config/15-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(25871)/* ["default"] */ .A),
-        alt: "img/01-Config/15-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     }), "\n", (0,jsx_runtime.jsx)("a", {
       id: "img-17"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "[IMG-17]"
-    }), "\n", (0,jsx_runtime.jsx)("div", {
+    }), "\n", (0,jsx_runtime.jsx)("img", {
+      src: (__webpack_require__(90874)/* ["default"] */ .A),
+      alt: "img/01-Config/16-Claude-paltform-config.png",
       style: {
-        backgroundColor: '#ffffff',
-        padding: '16px',
-        borderRadius: '8px',
-        display: 'inline-block',
-        width: '100%',
-        boxSizing: 'border-box'
-      },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(90874)/* ["default"] */ .A),
-        alt: "img/01-Config/16-Claude-paltform-config.png",
-        style: {
-          maxWidth: '800px',
-          width: '100%'
-        }
-      })
+        maxWidth: '800px',
+        width: '100%'
+      }
     })]
   });
 }

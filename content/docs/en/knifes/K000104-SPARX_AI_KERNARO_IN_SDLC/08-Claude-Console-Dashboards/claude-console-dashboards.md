@@ -22,8 +22,8 @@ tags: [SDLC, AI, KERNARO]
 locale: "en"
 
 created: "2026-04-29 08:56"
-modified: "2026-04-29 08:56"
-status: "inProgress"
+modified: "2026-05-06 00:00"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -45,10 +45,90 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
-
 ← [Back to index](../index.md)
 
 ← [Back to index](../index.md) | → [F – Ecosystem](../09-Sparxsystems-Ecosystem/sparxsystems-ecosystem.md)
+
+
+
+<!-- IMAGES:BEGIN -->
+
+---
+
+## Images
+
+<!-- COPY-PASTE REFERENCE
+  Inline image (no caption):
+    <img src={require('./img/...').default} style={{maxWidth:'800px',width:'100%'}} />
+
+  Endnote image with caption (replace [IMG-xx] with #### heading):
+    <a id="img-07"></a>
+    #### IMG-07 · Short descriptive title
+    <img src={require('./img/...').default} style={{maxWidth:'800px',width:'100%'}} />
+
+  Reference from text:
+    [[IMG-07]](#img-07)
+    → see [[IMG-07]](#img-07)
+-->
+
+<a id="img-01"></a>
+[IMG-01]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/01-Claude-Dashboard.png').default} alt="img/01-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-02"></a>
+[IMG-02]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/02-Claude-Dashboard.png').default} alt="img/02-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-03"></a>
+[IMG-03]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/03-Claude-Dashboard.png').default} alt="img/03-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-04"></a>
+[IMG-04]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/04-Claude-Dashboard.png').default} alt="img/04-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-05"></a>
+[IMG-05]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/05-Claude-Dashboard.png').default} alt="img/05-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-06"></a>
+[IMG-06]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/06-Claude-Dashboard.png').default} alt="img/06-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-07"></a>
+[IMG-07]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/07-Claude-Dashboard.png').default} alt="img/07-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-08"></a>
+[IMG-08]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/08-Claude-Dashboard.png').default} alt="img/08-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-09"></a>
+[IMG-09]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/09-Claude-Dashboard.png').default} alt="img/09-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-10"></a>
+[IMG-10]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/10-Claude-Dashboard.png').default} alt="img/10-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<!-- IMAGES:END -->

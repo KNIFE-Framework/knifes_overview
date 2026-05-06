@@ -48,7 +48,9 @@ find "$KNIFE_ROOT" -name "*.md" | while read mdfile; do
 
     new_section+="<a id=\"${anchor}\"></a>"$'\n'
     new_section+="[${label}]"$'\n'
-    new_section+="<img src={require('./${imgrel}').default} alt=\"${imgrel}\" style={{maxWidth: '800px', width: '100%'}} />"$'\n\n'
+    new_section+=$'<div style={{backgroundColor: \'#ffffff\', padding: \'16px\', borderRadius: \'8px\', display: \'inline-block\', width: \'100%\', boxSizing: \'border-box\'}}>\n'
+    new_section+="  <img src={require('./${imgrel}').default} alt=\"${imgrel}\" style={{maxWidth: '800px', width: '100%'}} />"$'\n'
+    new_section+=$'</div>\n\n'
 
     counter=$((counter + 1))
   done <<< "$images"

@@ -23,7 +23,7 @@ locale: "en"
 
 created: "2026-04-29 08:56"
 modified: "2026-04-29 08:56"
-status: "inProgress"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -45,10 +45,6 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 # A – Configuration
-
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
 
 ← [Back to index](../../index.md) | ← [A – Configuration](../02-configuration.md)
 
@@ -101,9 +97,8 @@ After installation, EA must be restarted. Kernaro appears in `Add-Ins` ribbon.
 
 The key is stored encrypted locally. No server-side setup required on Kernaro side.
 
-<figure><img src="/knifes/kernaro-beta/img/A3-model-configured.png" width="600" alt="Kernaro Models – Claude Sonnet 4.6 active" /></figure>
 
-![Kernaro Models – Claude Sonnet 4.6 active](./img/A3-model-configured.png)
+
 
 > **Cost model:** Pay-as-you-go, prepaid credits. Real-time usage visible in Anthropic Console dashboard. Set a spend limit to prevent surprises on large repositories.
 
@@ -176,6 +171,8 @@ This is a one-time setup. Re-run if modelling standards change significantly.
 
 ← [Back to index](../../index.md) | ← [A – Configuration](../02-configuration.md) | → [B – Chat](../../04-KERNARO-Chat/kernaro-chat.md)
 
+
+
 <!-- IMAGES:BEGIN -->
 
 ---
@@ -198,146 +195,218 @@ This is a one-time setup. Re-run if modelling standards change significantly.
 
 <a id="img-01"></a>
 [IMG-01]
-<img src={require('./img/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/01CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-02"></a>
 [IMG-02]
-<img src={require('./img/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/02-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-03"></a>
 [IMG-03]
-<img src={require('./img/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/03-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-04"></a>
 [IMG-04]
-<img src={require('./img/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/04-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-05"></a>
 [IMG-05]
-<img src={require('./img/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png').default} alt="img/KERNARO-AGENTS/05-CFG_KERNARO_AGENT.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-06"></a>
 [IMG-06]
-<img src={require('./img/KERNARO-Installation/01-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/01-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/01-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/01-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-07"></a>
 [IMG-07]
-<img src={require('./img/KERNARO-Installation/02-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/02-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/02-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/02-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-08"></a>
 [IMG-08]
-<img src={require('./img/KERNARO-Installation/03-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/03-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/03-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/03-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-09"></a>
 [IMG-09]
-<img src={require('./img/KERNARO-Installation/04-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/04-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/04-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/04-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-10"></a>
 [IMG-10]
-<img src={require('./img/KERNARO-Installation/05-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/05-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/05-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/05-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-11"></a>
 [IMG-11]
-<img src={require('./img/KERNARO-Installation/06-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/06-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/06-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/06-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-12"></a>
 [IMG-12]
-<img src={require('./img/KERNARO-Installation/07-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/07-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/07-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/07-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-13"></a>
 [IMG-13]
-<img src={require('./img/KERNARO-Installation/08-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/08-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/08-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/08-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-14"></a>
 [IMG-14]
-<img src={require('./img/KERNARO-Installation/09-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/09-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/09-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/09-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-15"></a>
 [IMG-15]
-<img src={require('./img/KERNARO-Installation/10-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/10-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/10-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/10-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-16"></a>
 [IMG-16]
-<img src={require('./img/KERNARO-Installation/11-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/11-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/11-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/11-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-17"></a>
 [IMG-17]
-<img src={require('./img/KERNARO-Installation/12-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/12-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/12-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/12-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-18"></a>
 [IMG-18]
-<img src={require('./img/KERNARO-Installation/13-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/13-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Installation/13-INSTALL_KERNARO.png').default} alt="img/KERNARO-Installation/13-INSTALL_KERNARO.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-19"></a>
 [IMG-19]
-<img src={require('./img/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png').default} alt="img/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png').default} alt="img/KERNARO-Settings-Admin-Console/01-KERNARO-Settings-ChatAgent.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-20"></a>
 [IMG-20]
-<img src={require('./img/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png').default} alt="img/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png').default} alt="img/KERNARO-Settings-Admin-Console/02-KERNARO-Settings-Workspace.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-21"></a>
 [IMG-21]
-<img src={require('./img/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png').default} alt="img/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png').default} alt="img/KERNARO-Settings-Admin-Console/03-KERNARO-Settings-Python.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-22"></a>
 [IMG-22]
-<img src={require('./img/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png').default} alt="img/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png').default} alt="img/KERNARO-Settings-Admin-Console/04-KERNARO-Settings-Logging.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-23"></a>
 [IMG-23]
-<img src={require('./img/KERNARO-Settings/01-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/01-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings/01-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/01-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-24"></a>
 [IMG-24]
-<img src={require('./img/KERNARO-Settings/02-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/02-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings/02-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/02-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-25"></a>
 [IMG-25]
-<img src={require('./img/KERNARO-Settings/03-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/03-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings/03-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/03-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-26"></a>
 [IMG-26]
-<img src={require('./img/KERNARO-Settings/04-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/04-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings/04-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/04-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-27"></a>
 [IMG-27]
-<img src={require('./img/KERNARO-Settings/05-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/05-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings/05-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/05-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-28"></a>
 [IMG-28]
-<img src={require('./img/KERNARO-Settings/06-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/06-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings/06-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/06-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-29"></a>
 [IMG-29]
-<img src={require('./img/KERNARO-Settings/07-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/07-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/KERNARO-Settings/07-KERNARO-Settings.png').default} alt="img/KERNARO-Settings/07-KERNARO-Settings.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-30"></a>
 [IMG-30]
-<img src={require('./img/Python/A2-python-312-installed.png').default} alt="img/Python/A2-python-312-installed.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/Python/A2-python-312-installed.png').default} alt="img/Python/A2-python-312-installed.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-31"></a>
 [IMG-31]
-<img src={require('./img/Python/A2-python-install-manager.png').default} alt="img/Python/A2-python-install-manager.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/Python/A2-python-install-manager.png').default} alt="img/Python/A2-python-install-manager.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-32"></a>
 [IMG-32]
-<img src={require('./img/Python/A2-python-installing-312.png').default} alt="img/Python/A2-python-installing-312.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/Python/A2-python-installing-312.png').default} alt="img/Python/A2-python-installing-312.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-33"></a>
 [IMG-33]
-<img src={require('./img/Python/A4-chat-agent-settings.png').default} alt="img/Python/A4-chat-agent-settings.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/Python/A4-chat-agent-settings.png').default} alt="img/Python/A4-chat-agent-settings.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-34"></a>
 [IMG-34]
-<img src={require('./img/Python/A5-python-execution-empty.png').default} alt="img/Python/A5-python-execution-empty.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/Python/A5-python-execution-empty.png').default} alt="img/Python/A5-python-execution-empty.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-35"></a>
 [IMG-35]
-<img src={require('./img/Python/A5-python-execution-empty2.png').default} alt="img/Python/A5-python-execution-empty2.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/Python/A5-python-execution-empty2.png').default} alt="img/Python/A5-python-execution-empty2.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-36"></a>
 [IMG-36]
-<img src={require('./img/Python/A5-python-verified.png').default} alt="img/Python/A5-python-verified.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/Python/A5-python-verified.png').default} alt="img/Python/A5-python-verified.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <!-- IMAGES:END -->

@@ -23,7 +23,7 @@ locale: "en"
 
 created: "2026-04-29 08:56"
 modified: "2026-04-29 08:56"
-status: "inProgress"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -45,10 +45,6 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 # E – Findings & Recommendations
-
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
 
 ← [Back to index](../index.md)
 
@@ -140,8 +136,8 @@ After approval, tags were written correctly to the element.
 | D2-1 | Script Agent | Medium | Python instruction produced JavaScript instead |
 | D3-1 | Script Agent | High | `new Enumerator()` hallucination – incompatible EA syntax, persists after correction |
 | D1-2 | Script Agent | Medium | Generated script not auto-executed in EA Script Manager |
-| B3-1 | Chat | Medium | Screenshot paste via clipboard returns Error 400 (empty base64 image) |
-| B3-2 | Chat | Low | Session state corruption after image error – requires full session reset |
+| B3-1 | Chat | Medium | Screenshot paste via clipboard returns Error 400 (empty base64 image) · see [B5](../04-KERNARO-Chat/kernaro-chat.md#b5--chat-limitations-observed) |
+| B3-2 | Chat | Low | Session state corruption after image error – requires full session reset · see [B5](../04-KERNARO-Chat/kernaro-chat.md#b5--chat-limitations-observed) |
 
 ---
 

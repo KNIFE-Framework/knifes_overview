@@ -22,8 +22,8 @@ tags: [SDLC, AI, KERNARO]
 locale: "en"
 
 created: "2026-05-04 00:00"
-modified: "2026-05-04 00:00"
-status: "inProgress"
+modified: "2026-05-06 00:00"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -47,23 +47,30 @@ fm_reserved2: ""
 
 # B3 – TOC Generation
 
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
-
 ← [Back to index](../../index.md) | ← [B – Chat](../kernaro-chat.md) | ← [B2 – Document Generation](../B2-document-generation/kernaro-chat-B2-document-generation.md) | → [B4 – Coffee Machine Spec](../B4-coffee-machine-spec/kernaro-chat-B4-coffee-machine-spec.md)
 
 ---
 
 ## B3 · TOC from model – up to L2 level
 
-<!-- TODO: content – describe the TOC generation use case, prompt used, and result -->
-[Generated and manual added TOC](./docs/EA_Repository_TOC.docx)
+
+Generating a full Diagram Report from a model with 4,000+ diagrams is not a practical choice — not even with a local model.
+Processing the entire model is extremely time-consuming, and with LLM-based models it also results in high token consumption.
+However, generating a list of diagrams is a good starting point.
+
+In the following section, we asked the AI agent to generate a list of diagrams up to Level 2 of the package hierarchy.
+Below is the generated file along with screenshots from the testing session.
+
+
+
 **Scenario:** Generate a Table of Contents from the EA model, limited to package hierarchy up to Level 2.
 
+[Generated and manual added TOC](./docs/EA_Repository_TOC.docx)
 ---
 
 ← [Back to index](../../index.md) | ← [B – Chat](../kernaro-chat.md) | ← [B2 – Document Generation](../B2-document-generation/kernaro-chat-B2-document-generation.md) | → [B4 – Coffee Machine Spec](../B4-coffee-machine-spec/kernaro-chat-B4-coffee-machine-spec.md)
+
+
 
 <!-- IMAGES:BEGIN -->
 
@@ -87,58 +94,98 @@ This article is being actively worked on. Content may be incomplete or subject t
 
 <a id="img-01"></a>
 [IMG-01]
-<img src={require('./img/17-KERNARO-Chat.png').default} alt="img/17-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/17-KERNARO-Chat.png').default} alt="img/17-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-02"></a>
 [IMG-02]
-<img src={require('./img/18-KERNARO-Chat.png').default} alt="img/18-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/18-KERNARO-Chat.png').default} alt="img/18-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-03"></a>
 [IMG-03]
-<img src={require('./img/19-KERNARO-Chat.png').default} alt="img/19-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/19-KERNARO-Chat.png').default} alt="img/19-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-04"></a>
 [IMG-04]
-<img src={require('./img/20-KERNARO-Chat.png').default} alt="img/20-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/20-KERNARO-Chat.png').default} alt="img/20-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-05"></a>
 [IMG-05]
-<img src={require('./img/21-CLAUDE-DASHBOARD.png').default} alt="img/21-CLAUDE-DASHBOARD.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/21-CLAUDE-DASHBOARD.png').default} alt="img/21-CLAUDE-DASHBOARD.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-06"></a>
 [IMG-06]
-<img src={require('./img/22-KERNARO-TOC-Chat.png').default} alt="img/22-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/22-KERNARO-TOC-Chat.png').default} alt="img/22-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-07"></a>
 [IMG-07]
-<img src={require('./img/23-KERNARO-TOC-Chat.png').default} alt="img/23-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/23-KERNARO-TOC-Chat.png').default} alt="img/23-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-08"></a>
 [IMG-08]
-<img src={require('./img/24-KERNARO-TOC-Chat.png').default} alt="img/24-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/24-KERNARO-TOC-Chat.png').default} alt="img/24-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-09"></a>
 [IMG-09]
-<img src={require('./img/25-KERNARO-TOC-Chat.png').default} alt="img/25-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/25-KERNARO-TOC-Chat.png').default} alt="img/25-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-10"></a>
 [IMG-10]
-<img src={require('./img/26-KERNARO-TOC-Chat.png').default} alt="img/26-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/26-KERNARO-TOC-Chat.png').default} alt="img/26-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-11"></a>
 [IMG-11]
-<img src={require('./img/27-KERNARO-TOC-Chat.png').default} alt="img/27-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/27-KERNARO-TOC-Chat.png').default} alt="img/27-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-12"></a>
 [IMG-12]
-<img src={require('./img/28-KERNARO-TOC-Chat.png').default} alt="img/28-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/28-KERNARO-TOC-Chat.png').default} alt="img/28-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-13"></a>
 [IMG-13]
-<img src={require('./img/29-KERNARO-TOC-Chat.png').default} alt="img/29-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/29-KERNARO-TOC-Chat.png').default} alt="img/29-KERNARO-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-14"></a>
 [IMG-14]
-<img src={require('./img/30-CLAUDE-Dashboard.png').default} alt="img/30-CLAUDE-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/30-CLAUDE-Dashboard.png').default} alt="img/30-CLAUDE-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-15"></a>
+[IMG-15]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/01-KERNARO-DOCX-TOC-Chat.png').default} alt="img/01-KERNARO-DOCX-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-16"></a>
+[IMG-16]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/02-KERNARO-DOCX-TOC-Chat.png').default} alt="img/02-KERNARO-DOCX-TOC-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <!-- IMAGES:END -->

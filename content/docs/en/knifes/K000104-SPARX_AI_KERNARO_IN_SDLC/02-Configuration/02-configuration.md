@@ -23,7 +23,7 @@ locale: "en"
 
 created: "2026-05-04 00:00"
 modified: "2026-05-04 00:00"
-status: "inProgress"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -47,13 +47,7 @@ fm_reserved2: ""
 
 # A – Configuration
 
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
-<!-- TODO: Translate to SK
-V príspevku sa venujem len konfigurácii AI LLM a samotného nástroja AI-Kernáro vo verzii BETA.
-Detaily pre jednotlivé systémy sú v dokumentoch nižšie
--->
+In this article I cover only the configuration of the AI LLM and the AI-Kernaro tool itself in BETA version. Details for each component are in the documents below.
 ← [Back to index](../index.md)
 
 ---

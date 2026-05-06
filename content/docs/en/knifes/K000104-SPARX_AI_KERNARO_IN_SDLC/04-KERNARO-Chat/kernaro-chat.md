@@ -22,8 +22,8 @@ tags: [SDLC, AI, KERNARO]
 locale: "en"
 
 created: "2026-04-29 08:56"
-modified: "2026-05-04 00:00"
-status: "inProgress"
+modified: "2026-05-06 00:00"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -47,10 +47,6 @@ fm_reserved2: ""
 
 # B – Chat
 
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
-
 ← [Back to index](../index.md)
 
 ---
@@ -68,6 +64,10 @@ Natural language queries against the open EA model via Kernaro Chat — model ex
 
 ## B5 · Chat limitations observed
 
+<!-- FINDING: B5 · Chat limitations observed
+Zdroj: 04-KERNARO-Chat/kernaro-chat.md, sekcia B5
+Zaznamenané v: E – Findings, E2 (B3-1, B3-2, D1-2) + E4 (#3, #5, #6)
+-->
 | Limitation | Description |
 |---|---|
 | Screenshot paste | Clipboard image paste returns Error 400 (empty base64). Workaround: describe the error in text. |

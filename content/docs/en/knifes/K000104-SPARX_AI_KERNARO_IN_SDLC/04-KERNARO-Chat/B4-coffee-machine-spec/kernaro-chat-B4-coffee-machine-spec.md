@@ -22,8 +22,8 @@ tags: [SDLC, AI, KERNARO]
 locale: "en"
 
 created: "2026-05-04 00:00"
-modified: "2026-05-04 00:00"
-status: "inProgress"
+modified: "2026-05-06 00:00"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -47,9 +47,13 @@ fm_reserved2: ""
 
 # B4 – Coffee Machine Functional Specification
 
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
+
+
+
+
+[generated UC document in MS Word](./docs/UseCases_Report.docx)
+
+
 
 ← [Back to index](../../index.md) | ← [B – Chat](../kernaro-chat.md) | ← [B3 – TOC Generation](../B3-toc-generation/kernaro-chat-B3-toc.md) | → [C – Agents](../../05-KERNARO-AI_Agent/kernaro-AI-agents.md)
 
@@ -121,6 +125,8 @@ Default behaviour for Use Case modelling should prefer Structured Scenarios over
 
 ← [Back to index](../../index.md) | ← [B – Chat](../kernaro-chat.md) | ← [B3 – TOC Generation](../B3-toc-generation/kernaro-chat-B3-toc.md) | → [C – Agents](../../05-KERNARO-AI_Agent/kernaro-AI-agents.md)
 
+
+
 <!-- IMAGES:BEGIN -->
 
 ---
@@ -143,114 +149,170 @@ Default behaviour for Use Case modelling should prefer Structured Scenarios over
 
 <a id="img-01"></a>
 [IMG-01]
-<img src={require('./img/01-Coffee-Machine.png').default} alt="img/01-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/01-Coffee-Machine.png').default} alt="img/01-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-02"></a>
 [IMG-02]
-<img src={require('./img/02-Coffee-Machine.png').default} alt="img/02-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/02-Coffee-Machine.png').default} alt="img/02-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-03"></a>
 [IMG-03]
-<img src={require('./img/03-Coffee-Machine.png').default} alt="img/03-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/03-Coffee-Machine.png').default} alt="img/03-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-04"></a>
 [IMG-04]
-<img src={require('./img/04-Coffee-Machine.png').default} alt="img/04-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/04-Coffee-Machine.png').default} alt="img/04-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-05"></a>
 [IMG-05]
-<img src={require('./img/05-Coffee-Machine.png').default} alt="img/05-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/05-Coffee-Machine.png').default} alt="img/05-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-06"></a>
 [IMG-06]
-<img src={require('./img/06-Claude-Dashboard.png').default} alt="img/06-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/06-Claude-Dashboard.png').default} alt="img/06-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-07"></a>
 [IMG-07]
-<img src={require('./img/07-Coffee-Machine.png').default} alt="img/07-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/07-Coffee-Machine.png').default} alt="img/07-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-08"></a>
 [IMG-08]
-<img src={require('./img/08-Claude-Dashboard.png').default} alt="img/08-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/08-Claude-Dashboard.png').default} alt="img/08-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-09"></a>
 [IMG-09]
-<img src={require('./img/09-Coffee-Machine.png').default} alt="img/09-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/09-Coffee-Machine.png').default} alt="img/09-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-10"></a>
 [IMG-10]
-<img src={require('./img/10-Claude-Dashboard.png').default} alt="img/10-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/10-Claude-Dashboard.png').default} alt="img/10-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-11"></a>
 [IMG-11]
-<img src={require('./img/11-Claude-Dashboard.png').default} alt="img/11-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/11-Claude-Dashboard.png').default} alt="img/11-Claude-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-12"></a>
 [IMG-12]
-<img src={require('./img/12-Coffee-Machine.png').default} alt="img/12-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/12-Coffee-Machine.png').default} alt="img/12-Coffee-Machine.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-13"></a>
 [IMG-13]
-<img src={require('./img/13-Claude-Dashboard-Limits.png').default} alt="img/13-Claude-Dashboard-Limits.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/13-Claude-Dashboard-Limits.png').default} alt="img/13-Claude-Dashboard-Limits.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-14"></a>
 [IMG-14]
-<img src={require('./img/14-Claude-Dashboard-costs.png').default} alt="img/14-Claude-Dashboard-costs.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/14-Claude-Dashboard-costs.png').default} alt="img/14-Claude-Dashboard-costs.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-15"></a>
 [IMG-15]
-<img src={require('./img/15-Coffee-Machine-activity-diag.png').default} alt="img/15-Coffee-Machine-activity-diag.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/15-Coffee-Machine-activity-diag.png').default} alt="img/15-Coffee-Machine-activity-diag.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-16"></a>
 [IMG-16]
-<img src={require('./img/16-Coffee-Machine-status-diag.png').default} alt="img/16-Coffee-Machine-status-diag.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/16-Coffee-Machine-status-diag.png').default} alt="img/16-Coffee-Machine-status-diag.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-17"></a>
 [IMG-17]
-<img src={require('./img2-gen/01-generateElements-chats-setingSkills.png').default} alt="img2-gen/01-generateElements-chats-setingSkills.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/01-generateElements-chats-setingSkills.png').default} alt="img2-gen/01-generateElements-chats-setingSkills.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-18"></a>
 [IMG-18]
-<img src={require('./img2-gen/02-generateElements-chats.png').default} alt="img2-gen/02-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/02-generateElements-chats.png').default} alt="img2-gen/02-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-19"></a>
 [IMG-19]
-<img src={require('./img2-gen/03-generateElements-chats.png').default} alt="img2-gen/03-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/03-generateElements-chats.png').default} alt="img2-gen/03-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-20"></a>
 [IMG-20]
-<img src={require('./img2-gen/04-generateElements-chats.png').default} alt="img2-gen/04-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/04-generateElements-chats.png').default} alt="img2-gen/04-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-21"></a>
 [IMG-21]
-<img src={require('./img2-gen/05-generateElements-chats.png').default} alt="img2-gen/05-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/05-generateElements-chats.png').default} alt="img2-gen/05-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-22"></a>
 [IMG-22]
-<img src={require('./img2-gen/06-generateElements-chats.png').default} alt="img2-gen/06-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/06-generateElements-chats.png').default} alt="img2-gen/06-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-23"></a>
 [IMG-23]
-<img src={require('./img2-gen/07-generateElements-chats.png').default} alt="img2-gen/07-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/07-generateElements-chats.png').default} alt="img2-gen/07-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-24"></a>
 [IMG-24]
-<img src={require('./img2-gen/08-generateElements-chats.png').default} alt="img2-gen/08-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/08-generateElements-chats.png').default} alt="img2-gen/08-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-25"></a>
 [IMG-25]
-<img src={require('./img2-gen/09-generateElements-OPERATIONSchats.png').default} alt="img2-gen/09-generateElements-OPERATIONSchats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/09-generateElements-OPERATIONSchats.png').default} alt="img2-gen/09-generateElements-OPERATIONSchats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-26"></a>
 [IMG-26]
-<img src={require('./img2-gen/10-generateElements-OPERATIONSchats.png').default} alt="img2-gen/10-generateElements-OPERATIONSchats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/10-generateElements-OPERATIONSchats.png').default} alt="img2-gen/10-generateElements-OPERATIONSchats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-27"></a>
 [IMG-27]
-<img src={require('./img2-gen/11-generateElements-chats.png').default} alt="img2-gen/11-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/11-generateElements-chats.png').default} alt="img2-gen/11-generateElements-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-28"></a>
 [IMG-28]
-<img src={require('./img2-gen/12-generateElements-structuredScenario-chats.png').default} alt="img2-gen/12-generateElements-structuredScenario-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img2-gen/12-generateElements-structuredScenario-chats.png').default} alt="img2-gen/12-generateElements-structuredScenario-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <!-- IMAGES:END -->

@@ -141,6 +141,8 @@ fm_reserved2: ""
 
 [📰 Blog](./KNIFE_Overview_Blog.md) | **[🗂 List](./KNIFE_Overview_List.md)** | [📊 Details](./KNIFE_Overview_Details.md) | [↩️ KNIFES](../index.md)
 
+> **Status:** `done` ✓ · `inProgress` ⟳ · `draft` ✎ · `backlog` ○
+
 
 - **K000104** · [K000104 – SPARX-AI KERNARO in context of SDLC support](../K000104-SPARX_AI_KERNARO_IN_SDLC/) · _inProgress_ · -
 - **K000103** · [K000103 – Context Aware Approach in SDLC](../K000103-CAA_IN_SDLC/) · _backlog_ · -

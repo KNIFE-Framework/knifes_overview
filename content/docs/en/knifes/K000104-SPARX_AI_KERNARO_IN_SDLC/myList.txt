@@ -1,0 +1,17 @@
+total 6744
+  688786 drwxr-xr-x@ 16 romankazicka  staff      512 Sep 26  2024 .
+  686830 drwxr-xr-x@  5 romankazicka  staff      160 Feb 10  2025 ..
+ 2755823 -rw-r--r--@  1 romankazicka  staff    20484 May  5 19:08 .DS_Store
+56256248 -rw-r--r--   1 romankazicka  staff  3422770 Sep 26  2024 .sync.ffs_db
+  688787 drwxr-xr-x@  7 romankazicka  staff      224 Dec 30 19:04 00.Melissa
+  688788 drwxr-xr-x@ 17 romankazicka  staff      544 Feb 10  2025 01.Agnicoli
+  688789 drwxr-xr-x@  3 romankazicka  staff       96 May 14  2023 010.Screenshots
+  688790 drwxr-xr-x@ 23 romankazicka  staff      736 Mar  3 08:08 02.SystemThinking
+  688791 drwxr-xr-x@ 36 romankazicka  staff     1152 May  5 16:47 03.Private
+  688792 drwxr-xr-x@ 87 romankazicka  staff     2784 Feb 17 13:42 09.km
+  688793 drwxr-xr-x@  7 romankazicka  staff      224 Apr 23  2024 11.TidyUp
+  688794 drwxr-xr-x@ 11 romankazicka  staff      352 Sep 19  2025 12.MyDownloads
+  688795 drwxr-xr-x@  7 romankazicka  staff      224 Apr 23  2024 13.BenchMarks
+  688796 drwxr-xr-x@ 18 romankazicka  staff      576 Jul 27  2025 77.BackupsAndRestore
+14666148 drwxr-xr-x@  4 romankazicka  staff      128 Oct  3  2023 GitRepos
+ 9925924 -rw-r--r--@  1 romankazicka  staff       40 Aug 13  2023 text.txt

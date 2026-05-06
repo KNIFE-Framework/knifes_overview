@@ -23,7 +23,7 @@ locale: "en"
 
 created: "2026-05-04 00:00"
 modified: "2026-05-04 00:00"
-status: "inProgress"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -46,10 +46,6 @@ fm_reserved2: ""
 ---
 
 # B2 – Document Generation
-
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
 
 ← [Back to index](../../index.md) | ← [B – Chat](../kernaro-chat.md) | ← [B1 – Model Statistics](../B1-model-statistics/kernaro-chat-B1-statistics.md) | → [B3 – TOC Generation](../B3-toc-generation/kernaro-chat-B3-toc.md)
 
@@ -83,6 +79,8 @@ Kernaro's planned approach (presented before execution):
 
 ← [Back to index](../../index.md) | ← [B – Chat](../kernaro-chat.md) | ← [B1 – Model Statistics](../B1-model-statistics/kernaro-chat-B1-statistics.md) | → [B3 – TOC Generation](../B3-toc-generation/kernaro-chat-B3-toc.md)
 
+
+
 <!-- IMAGES:BEGIN -->
 
 ---
@@ -105,26 +103,38 @@ Kernaro's planned approach (presented before execution):
 
 <a id="img-01"></a>
 [IMG-01]
-<img src={require('./img/11-KERNARO-Chat.png').default} alt="img/11-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/11-KERNARO-Chat.png').default} alt="img/11-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-02"></a>
 [IMG-02]
-<img src={require('./img/12-KERNARO-Chat.png').default} alt="img/12-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/12-KERNARO-Chat.png').default} alt="img/12-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-03"></a>
 [IMG-03]
-<img src={require('./img/13-KERNARO-Chat.png').default} alt="img/13-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/13-KERNARO-Chat.png').default} alt="img/13-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-04"></a>
 [IMG-04]
-<img src={require('./img/14-KERNARO-Chat.png').default} alt="img/14-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/14-KERNARO-Chat.png').default} alt="img/14-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-05"></a>
 [IMG-05]
-<img src={require('./img/15-CLAUDE-Tokens-Chat.png').default} alt="img/15-CLAUDE-Tokens-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/15-CLAUDE-Tokens-Chat.png').default} alt="img/15-CLAUDE-Tokens-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-06"></a>
 [IMG-06]
-<img src={require('./img/16-STOP-KERNARO-Chat.png').default} alt="img/16-STOP-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/16-STOP-KERNARO-Chat.png').default} alt="img/16-STOP-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <!-- IMAGES:END -->

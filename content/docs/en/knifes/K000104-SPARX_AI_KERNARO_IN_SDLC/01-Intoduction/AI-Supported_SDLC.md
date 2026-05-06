@@ -23,7 +23,7 @@ locale: "en"
 
 created: "2026-04-29 08:56"
 modified: "2026-05-04 00:00"
-status: "inProgress"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -45,10 +45,6 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
-
 ← [Back to index](../index.md)
 
 From practice, I have come to understand that a large part of my creative activities can be generally described using the principles defined in the V-model. In practice, the term Software Development Life Cycle (SDLC) is now commonly used.
@@ -68,6 +64,8 @@ The image highlights the context-aware approach, the division of SDLC into indiv
 This perspective also defined my testing strategy for AI-Kernaro, described in the next chapter.
 
 <!-- TODO: Nájsť vhodný zdroj na webe wiki ako V-Modeli, alebo odkaz do KNIFE, neviem či to tam už mám, ak tak len v stave backlog -->
+
+
 
 <!-- IMAGES:BEGIN -->
 
@@ -91,11 +89,11 @@ This perspective also defined my testing strategy for AI-Kernaro, described in t
 
 <a id="img-01"></a>
 [IMG-01]
-<img src={require('./AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png').default} alt="AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png').default} alt="AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
-<a id="img-02"></a>
-[IMG-02]
-<img src={require('./CAA_In_SDLC/CAA-Approach-In-SDLC.png').default} alt="CAA_In_SDLC/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
+
 
 <!-- IMAGES:END -->
 

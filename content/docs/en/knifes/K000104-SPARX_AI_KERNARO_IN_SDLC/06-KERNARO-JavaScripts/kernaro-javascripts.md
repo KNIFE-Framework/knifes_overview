@@ -23,7 +23,7 @@ locale: "en"
 
 created: "2026-04-29 08:56"
 modified: "2026-04-29 08:56"
-status: "inProgress"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -46,10 +46,6 @@ fm_reserved2: ""
 ---
 # D – JavaScript in EA Script Manager
 
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
-
 ← [Back to index](../index.md)
 
 > **Note:** EA Script Manager supports JavaScript (not to be confused with Java). In this test, Kernaro's Script Agent generated JavaScript code – Python was not executed.
@@ -57,6 +53,17 @@ This article is being actively worked on. Content may be incomplete or subject t
 ---
 
 ## D1 · What was tested
+
+<!-- TODO: Translate
+
+Včera som vytvoril a modifikoval UC pre coffe machine. Dopĺňam diagram o elementy, ktorým nedopĺňam popis.
+Mojim cieľom te teraz validovať diagram, a zistiť, ktorým elementom chýna komentár.
+Dotknutým elementom je potrebné nastaviť TAG value pre reportovanie a n ásledné napravenie nedostatku.
+
+Treba zdôrazniť, že AI rešpektuje nastavenia a. V nastavení sa dá vybrať, akú mieru autonémnosti a na kotré akcie (TOOLS) dostane oprávnenie.
+
+
+-->
 
 **Scenario:** List all elements in a given package that have an empty Notes field.
 
@@ -170,3 +177,111 @@ Scripts saved to Script Library are **independent** from Kernaro Agents. They se
 ---
 
 ← [Back to index](../index.md) | → [E – Findings](../07-KERNARO-Test-Findings/kernaro-test-findings.md)
+
+
+
+<!-- IMAGES:BEGIN -->
+
+---
+
+## Images
+
+<!-- COPY-PASTE REFERENCE
+  Inline image (no caption):
+    <img src={require('./img/...').default} style={{maxWidth:'800px',width:'100%'}} />
+
+  Endnote image with caption (replace [IMG-xx] with #### heading):
+    <a id="img-07"></a>
+    #### IMG-07 · Short descriptive title
+    <img src={require('./img/...').default} style={{maxWidth:'800px',width:'100%'}} />
+
+  Reference from text:
+    [[IMG-07]](#img-07)
+    → see [[IMG-07]](#img-07)
+-->
+
+<a id="img-01"></a>
+[IMG-01]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/01-javascripts.png').default} alt="img/01-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-02"></a>
+[IMG-02]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/02-javascripts.png').default} alt="img/02-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-03"></a>
+[IMG-03]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/03-javascripts.png').default} alt="img/03-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-04"></a>
+[IMG-04]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/04-javascripts.png').default} alt="img/04-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-05"></a>
+[IMG-05]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/05-javascripts.png').default} alt="img/05-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-06"></a>
+[IMG-06]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/06-javascripts.png').default} alt="img/06-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-07"></a>
+[IMG-07]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/07-javascripts.png').default} alt="img/07-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-08"></a>
+[IMG-08]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/08-javascripts.png').default} alt="img/08-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-09"></a>
+[IMG-09]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/09-javascripts.png').default} alt="img/09-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-10"></a>
+[IMG-10]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/10-javascripts.png').default} alt="img/10-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-11"></a>
+[IMG-11]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/11-javascripts.png').default} alt="img/11-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-12"></a>
+[IMG-12]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/12-CLAUDE-Dashboard.png').default} alt="img/12-CLAUDE-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-13"></a>
+[IMG-13]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/13-CLAUDE-Dashboard.png').default} alt="img/13-CLAUDE-Dashboard.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-14"></a>
+[IMG-14]
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/14-javascripts.png').default} alt="img/14-javascripts.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<!-- IMAGES:END -->

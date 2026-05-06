@@ -23,7 +23,7 @@ locale: "en"
 
 created: "2026-05-04 00:00"
 modified: "2026-05-04 00:00"
-status: "inProgress"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -46,10 +46,6 @@ fm_reserved2: ""
 ---
 
 # B1 – Model Statistics
-
-:::caution In Progress
-This article is being actively worked on. Content may be incomplete or subject to change.
-:::
 
 ← [Back to index](../../index.md) | ← [B – Chat](../kernaro-chat.md) | → [B2 – Document Generation](../B2-document-generation/kernaro-chat-B2-document-generation.md)
 
@@ -103,6 +99,8 @@ Show element name and type.
 
 ← [Back to index](../../index.md) | ← [B – Chat](../kernaro-chat.md) | → [B2 – Document Generation](../B2-document-generation/kernaro-chat-B2-document-generation.md)
 
+
+
 <!-- IMAGES:BEGIN -->
 
 ---
@@ -125,42 +123,62 @@ Show element name and type.
 
 <a id="img-01"></a>
 [IMG-01]
-<img src={require('./img/01-KERNARO-Chat.png').default} alt="img/01-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/01-KERNARO-Chat.png').default} alt="img/01-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-02"></a>
 [IMG-02]
-<img src={require('./img/02-KERNARO-Chat.png').default} alt="img/02-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/02-KERNARO-Chat.png').default} alt="img/02-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-03"></a>
 [IMG-03]
-<img src={require('./img/03-KERNARO-Chat.png').default} alt="img/03-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/03-KERNARO-Chat.png').default} alt="img/03-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-04"></a>
 [IMG-04]
-<img src={require('./img/04-KERNARO-Chat.png').default} alt="img/04-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/04-KERNARO-Chat.png').default} alt="img/04-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-05"></a>
 [IMG-05]
-<img src={require('./img/05-KERNARO-Chat.png').default} alt="img/05-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/05-KERNARO-Chat.png').default} alt="img/05-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-06"></a>
 [IMG-06]
-<img src={require('./img/06-KERNARO-Chat.png').default} alt="img/06-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/06-KERNARO-Chat.png').default} alt="img/06-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-07"></a>
 [IMG-07]
-<img src={require('./img/07-KERNARO-Chat.png').default} alt="img/07-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/07-KERNARO-Chat.png').default} alt="img/07-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-08"></a>
 [IMG-08]
-<img src={require('./img/08-KERNARO-Chat.png').default} alt="img/08-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/08-KERNARO-Chat.png').default} alt="img/08-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-09"></a>
 [IMG-09]
-<img src={require('./img/09-KERNARO-Chat.png').default} alt="img/09-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/09-KERNARO-Chat.png').default} alt="img/09-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <a id="img-10"></a>
 [IMG-10]
-<img src={require('./img/10-KERNARO-Chat.png').default} alt="img/10-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/10-KERNARO-Chat.png').default} alt="img/10-KERNARO-Chat.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 <!-- IMAGES:END -->

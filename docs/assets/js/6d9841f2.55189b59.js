@@ -360,7 +360,19 @@ function _createMdxContent(props) {
         fill: "none",
         opacity: "0.35"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        d: "M 360 342 C 386 342 386 342 412 342",
+        d: "M 360 342 C 386 342 386 326 412 326",
+        stroke: "#AA4400",
+        strokeWidth: "1",
+        fill: "none",
+        opacity: "0.35"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+        d: "M 360 342 C 386 342 386 350 412 350",
+        stroke: "#AA4400",
+        strokeWidth: "1",
+        fill: "none",
+        opacity: "0.35"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+        d: "M 360 342 C 386 342 386 374 412 374",
         stroke: "#AA4400",
         strokeWidth: "1",
         fill: "none",
@@ -607,22 +619,58 @@ function _createMdxContent(props) {
           children: "C – Agents"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/K000104-05-python-execution",
+        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/kernaro-agent-c1-missing-notes/K000104-05-agent-c1",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
           x: "412",
-          y: "330",
+          y: "316",
           width: "140",
-          height: "24",
+          height: "20",
           rx: "4",
           fill: "#E87020"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("text", {
           x: "482",
-          y: "346",
+          y: "330",
           textAnchor: "middle",
           fill: "white",
           fontSize: "10",
           fontWeight: "bold",
-          children: "C3 – Python Executio…"
+          children: "C1 – Missing Notes"
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/kernaro-agent-c2-apv-check/K000104-05-agent-c2",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
+          x: "412",
+          y: "340",
+          width: "140",
+          height: "20",
+          rx: "4",
+          fill: "#E87020"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("text", {
+          x: "482",
+          y: "354",
+          textAnchor: "middle",
+          fill: "white",
+          fontSize: "10",
+          fontWeight: "bold",
+          children: "C2 – APV Integrity C…"
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/kernaro-c3-python-execution/K000104-05-python-execution",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
+          x: "412",
+          y: "364",
+          width: "140",
+          height: "20",
+          rx: "4",
+          fill: "#E87020"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("text", {
+          x: "482",
+          y: "378",
+          textAnchor: "middle",
+          fill: "white",
+          fontSize: "10",
+          fontWeight: "bold",
+          children: "C3 – Python Execut…"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-JavaScripts/K000104-06-javascripts",

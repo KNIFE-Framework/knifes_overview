@@ -1,5 +1,5 @@
 "use strict";
-(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[89490],{
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[12336],{
 
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -96,7 +96,7 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 34300:
+/***/ 41024:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -108,17 +108,688 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_en_knifes_k_000101_cynefin_framework_index_md_192_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_en_knifes_k_000101_cynefin_framework_index_mdx_ae3_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000101-cynefin-framework-index-md-192.json
-const site_docs_en_knifes_k_000101_cynefin_framework_index_md_192_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000101-CYNEFIN_Framework/K000101","title":"K000101 – CYNEFIN Framework","description":"Sense-making framework for decision-making in complex domains. Cynefin helps classify a situation according to the nature of cause-and-effect relationships and choose the appropriate course of action.","source":"@site/docs/en/knifes/K000101-CYNEFIN_Framework/index.md","sourceDirName":"en/knifes/K000101-CYNEFIN_Framework","slug":"/en/knifes/K000101-CYNEFIN_Framework/","permalink":"/en/knifes/K000101-CYNEFIN_Framework/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"cynefin","permalink":"/doc-tags/cynefin"},{"inline":true,"label":"sense-making","permalink":"/doc-tags/sense-making"},{"inline":true,"label":"complexity","permalink":"/doc-tags/complexity"},{"inline":true,"label":"decision-making","permalink":"/doc-tags/decision-making"},{"inline":true,"label":"agile","permalink":"/doc-tags/agile"},{"inline":true,"label":"systems-thinking","permalink":"/doc-tags/systems-thinking"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-04-23T21:03:29.254689+00:00","fm_version_comment":"","id":"K000101","guid":"ba6374cd-3f7d-4451-95e3-2312ef23a25a","dao":"knife","title":"K000101 – CYNEFIN Framework","description":"Sense-making framework for decision-making in complex domains. Cynefin helps classify a situation according to the nature of cause-and-effect relationships and choose the appropriate course of action.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"guide","priority":"","tags":["cynefin","sense-making","complexity","decision-making","agile","systems-thinking"],"locale":"en","created":"2026-04-23 23:03","modified":"2026-04-23 23:03","status":"draft","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"Release Notes","permalink":"/en/help/release-notes"},"next":{"title":"K000103 – Context Aware Approach in SDLC","permalink":"/en/knifes/K000103-CAA_IN_SDLC/"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000101-cynefin-framework-index-mdx-ae3.json
+const site_docs_en_knifes_k_000101_cynefin_framework_index_mdx_ae3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000101-CYNEFIN_Framework/K000101","title":"K000101 – CYNEFIN Framework","description":"Sense-making framework for decision-making in complex domains. Cynefin helps classify a situation according to the nature of cause-and-effect relationships and choose the appropriate course of action.","source":"@site/docs/en/knifes/K000101-CYNEFIN_Framework/index.mdx","sourceDirName":"en/knifes/K000101-CYNEFIN_Framework","slug":"/en/knifes/K000101-CYNEFIN_Framework/","permalink":"/en/knifes/K000101-CYNEFIN_Framework/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"cynefin","permalink":"/doc-tags/cynefin"},{"inline":true,"label":"sense-making","permalink":"/doc-tags/sense-making"},{"inline":true,"label":"complexity","permalink":"/doc-tags/complexity"},{"inline":true,"label":"decision-making","permalink":"/doc-tags/decision-making"},{"inline":true,"label":"agile","permalink":"/doc-tags/agile"},{"inline":true,"label":"systems-thinking","permalink":"/doc-tags/systems-thinking"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-04-23T21:03:29.254689+00:00","fm_version_comment":"","id":"K000101","guid":"ba6374cd-3f7d-4451-95e3-2312ef23a25a","dao":"knife","title":"K000101 – CYNEFIN Framework","description":"Sense-making framework for decision-making in complex domains. Cynefin helps classify a situation according to the nature of cause-and-effect relationships and choose the appropriate course of action.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"guide","priority":"","tags":["cynefin","sense-making","complexity","decision-making","agile","systems-thinking"],"locale":"en","created":"2026-04-23 23:03","modified":"2026-04-23 23:03","status":"draft","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"Release Notes","permalink":"/en/help/release-notes"},"next":{"title":"K000103 – Context Aware Approach in SDLC","permalink":"/en/knifes/K000103-CAA_IN_SDLC/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-;// ./docs/en/knifes/K000101-CYNEFIN_Framework/index.md
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(96540);
+;// ./docs/en/knifes/K000101-CYNEFIN_Framework/img/cynefin_overview.svg
+var _defs, _rect, _text, _text2, _text3, _text4, _text5, _rect2, _text6, _text7, _text8, _text9, _text0, _rect3, _text1, _text10, _text11, _text12, _text13, _rect4, _text14, _text15, _text16, _text17, _text18, _rect5, _text19, _path, _path2, _path3, _text20;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+
+const SvgCynefinOverview = ({
+  title,
+  titleId,
+  ...props
+}) => /*#__PURE__*/react.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 760 500",
+  "aria-labelledby": titleId
+}, props), title ? /*#__PURE__*/react.createElement("title", {
+  id: titleId
+}, title) : null, _defs || (_defs = /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("marker", {
+  id: "a",
+  markerHeight: 7,
+  markerWidth: 7,
+  orient: "auto-start-reverse",
+  refX: 8,
+  refY: 5,
+  viewBox: "0 0 10 10"
+}, /*#__PURE__*/react.createElement("path", {
+  fill: "none",
+  stroke: "#736e6c",
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "m2 1 6 4-6 4"
+})))), _rect || (_rect = /*#__PURE__*/react.createElement("rect", {
+  width: 260,
+  height: 170,
+  x: 20,
+  y: 20,
+  fill: "#f1efe8",
+  stroke: "#5f5e5a",
+  strokeWidth: 0.5,
+  rx: 12
+})), _text || (_text = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 55,
+  fill: "#444441",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Clear (obvious)")), _text2 || (_text2 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 88,
+  fill: "#5f5e5a",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Cause-effect is clear")), _text3 || (_text3 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 110,
+  fill: "#5f5e5a",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Best practices apply")), _text4 || (_text4 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 140,
+  fill: "#5f5e5a",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Sense \u2192 Categorize \u2192 Respond")), _text5 || (_text5 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 163,
+  fill: "#5f5e5a",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Example: routine support ticket")), _rect2 || (_rect2 = /*#__PURE__*/react.createElement("rect", {
+  width: 260,
+  height: 170,
+  x: 480,
+  y: 20,
+  fill: "#e1f5ee",
+  stroke: "#0f6e56",
+  strokeWidth: 0.5,
+  rx: 12
+})), _text6 || (_text6 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 55,
+  fill: "#085041",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Complicated")), _text7 || (_text7 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 88,
+  fill: "#0f6e56",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Expertise required")), _text8 || (_text8 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 110,
+  fill: "#0f6e56",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Good practices, multiple solutions")), _text9 || (_text9 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 140,
+  fill: "#0f6e56",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Sense \u2192 Analyze \u2192 Respond")), _text0 || (_text0 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 163,
+  fill: "#0f6e56",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Example: jet engine")), _rect3 || (_rect3 = /*#__PURE__*/react.createElement("rect", {
+  width: 260,
+  height: 170,
+  x: 20,
+  y: 310,
+  fill: "#eeedfe",
+  stroke: "#534ab7",
+  strokeWidth: 0.5,
+  rx: 12
+})), _text1 || (_text1 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 345,
+  fill: "#3c3489",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Complex")), _text10 || (_text10 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 378,
+  fill: "#534ab7",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Patterns emerge over time")), _text11 || (_text11 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 400,
+  fill: "#534ab7",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Emergent behaviour")), _text12 || (_text12 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 430,
+  fill: "#534ab7",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Probe \u2192 Sense \u2192 Respond")), _text13 || (_text13 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 453,
+  fill: "#534ab7",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Example: startup, software")), _rect4 || (_rect4 = /*#__PURE__*/react.createElement("rect", {
+  width: 260,
+  height: 170,
+  x: 480,
+  y: 310,
+  fill: "#faece7",
+  stroke: "#993c1d",
+  strokeWidth: 0.5,
+  rx: 12
+})), _text14 || (_text14 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 345,
+  fill: "#712b13",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Chaotic")), _text15 || (_text15 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 378,
+  fill: "#993c1d",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "No patterns, urgency")), _text16 || (_text16 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 400,
+  fill: "#993c1d",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Immediate action required")), _text17 || (_text17 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 430,
+  fill: "#993c1d",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Act \u2192 Sense \u2192 Respond")), _text18 || (_text18 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 453,
+  fill: "#993c1d",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Example: system outage")), _rect5 || (_rect5 = /*#__PURE__*/react.createElement("rect", {
+  width: 140,
+  height: 52,
+  x: 310,
+  y: 224,
+  fill: "#faeeda",
+  stroke: "#854f0b",
+  strokeWidth: 0.8,
+  rx: 26
+})), _text19 || (_text19 = /*#__PURE__*/react.createElement("text", {
+  x: 380,
+  y: 250,
+  fill: "#633806",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Disorder")), _path || (_path = /*#__PURE__*/react.createElement("path", {
+  fill: "none",
+  stroke: "#736e6c",
+  strokeDasharray: "5 3",
+  strokeWidth: 1.5,
+  markerEnd: "url(#a)",
+  d: "M355 248h-72"
+})), _path2 || (_path2 = /*#__PURE__*/react.createElement("path", {
+  fill: "none",
+  stroke: "#736e6c",
+  strokeDasharray: "5 3",
+  strokeWidth: 1.5,
+  markerEnd: "url(#a)",
+  d: "m405 240 72-30"
+})), _path3 || (_path3 = /*#__PURE__*/react.createElement("path", {
+  fill: "none",
+  stroke: "#736e6c",
+  strokeDasharray: "5 3",
+  strokeWidth: 1.5,
+  markerEnd: "url(#a)",
+  d: "m345 265-62 42"
+})), _text20 || (_text20 = /*#__PURE__*/react.createElement("text", {
+  x: 380,
+  y: 494,
+  fill: "#3d3d3a",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Cynefin Framework \u2013 5 domains for sense-making")));
+/* harmony default export */ const cynefin_overview = (SvgCynefinOverview);
+;// ./docs/en/knifes/K000101-CYNEFIN_Framework/img/cynefin_detail.svg
+var cynefin_detail_defs, cynefin_detail_rect, cynefin_detail_text, cynefin_detail_text2, cynefin_detail_rect2, cynefin_detail_text3, cynefin_detail_rect3, cynefin_detail_text4, cynefin_detail_rect4, cynefin_detail_text5, cynefin_detail_text6, cynefin_detail_rect5, cynefin_detail_text7, cynefin_detail_text8, _rect6, cynefin_detail_text9, _rect7, cynefin_detail_text0, _rect8, cynefin_detail_text1, cynefin_detail_text10, cynefin_detail_path, cynefin_detail_text11, _rect9, cynefin_detail_text12, cynefin_detail_text13, _rect0, cynefin_detail_text14, _rect1, cynefin_detail_text15, _rect10, cynefin_detail_text16, cynefin_detail_text17, _rect11, cynefin_detail_text18, cynefin_detail_text19, _rect12, cynefin_detail_text20, _rect13, _text21, _rect14, _text22, _text23, cynefin_detail_path2, _text24;
+function cynefin_detail_extends() { return cynefin_detail_extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, cynefin_detail_extends.apply(null, arguments); }
+
+const SvgCynefinDetail = ({
+  title,
+  titleId,
+  ...props
+}) => /*#__PURE__*/react.createElement("svg", cynefin_detail_extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 760 620",
+  "aria-labelledby": titleId
+}, props), title ? /*#__PURE__*/react.createElement("title", {
+  id: titleId
+}, title) : null, cynefin_detail_defs || (cynefin_detail_defs = /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("marker", {
+  id: "a",
+  markerHeight: 7,
+  markerWidth: 7,
+  orient: "auto-start-reverse",
+  refX: 8,
+  refY: 5,
+  viewBox: "0 0 10 10"
+}, /*#__PURE__*/react.createElement("path", {
+  fill: "none",
+  stroke: "#736e6c",
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "m2 1 6 4-6 4"
+})))), cynefin_detail_rect || (cynefin_detail_rect = /*#__PURE__*/react.createElement("rect", {
+  width: 260,
+  height: 200,
+  x: 20,
+  y: 20,
+  fill: "#f1efe8",
+  stroke: "#5f5e5a",
+  strokeWidth: 0.5,
+  rx: 12
+})), cynefin_detail_text || (cynefin_detail_text = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 50,
+  fill: "#444441",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Clear")), cynefin_detail_text2 || (cynefin_detail_text2 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 76,
+  fill: "#5f5e5a",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Sense \u2192 Categorize \u2192 Respond")), cynefin_detail_rect2 || (cynefin_detail_rect2 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 45,
+  y: 92,
+  fill: "#f1efe8",
+  stroke: "#5f5e5a",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text3 || (cynefin_detail_text3 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 105,
+  fill: "#5f5e5a",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Best practices")), cynefin_detail_rect3 || (cynefin_detail_rect3 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 45,
+  y: 126,
+  fill: "#f1efe8",
+  stroke: "#5f5e5a",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text4 || (cynefin_detail_text4 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 139,
+  fill: "#5f5e5a",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Routine processes, SOP")), cynefin_detail_rect4 || (cynefin_detail_rect4 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 45,
+  y: 160,
+  fill: "#f1efe8",
+  stroke: "#5f5e5a",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text5 || (cynefin_detail_text5 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 173,
+  fill: "#5f5e5a",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Risk: complacency \u2192 cliff edge")), cynefin_detail_text6 || (cynefin_detail_text6 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 208,
+  fill: "#5f5e5a",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "\u26A0 Overconfidence \u2192 jump to Chaotic")), cynefin_detail_rect5 || (cynefin_detail_rect5 = /*#__PURE__*/react.createElement("rect", {
+  width: 260,
+  height: 200,
+  x: 480,
+  y: 20,
+  fill: "#e1f5ee",
+  stroke: "#0f6e56",
+  strokeWidth: 0.5,
+  rx: 12
+})), cynefin_detail_text7 || (cynefin_detail_text7 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 50,
+  fill: "#085041",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Complicated")), cynefin_detail_text8 || (cynefin_detail_text8 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 76,
+  fill: "#0f6e56",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Sense \u2192 Analyze \u2192 Respond")), _rect6 || (_rect6 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 505,
+  y: 92,
+  fill: "#e1f5ee",
+  stroke: "#0f6e56",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text9 || (cynefin_detail_text9 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 105,
+  fill: "#0f6e56",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Good practices (multiple solutions)")), _rect7 || (_rect7 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 505,
+  y: 126,
+  fill: "#e1f5ee",
+  stroke: "#0f6e56",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text0 || (cynefin_detail_text0 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 139,
+  fill: "#0f6e56",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Expert needed")), _rect8 || (_rect8 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 505,
+  y: 160,
+  fill: "#e1f5ee",
+  stroke: "#0f6e56",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text1 || (cynefin_detail_text1 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 173,
+  fill: "#0f6e56",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Analysis reveals solution")), cynefin_detail_text10 || (cynefin_detail_text10 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 208,
+  fill: "#0f6e56",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Jet engine, infrastructure")), cynefin_detail_path || (cynefin_detail_path = /*#__PURE__*/react.createElement("path", {
+  fill: "none",
+  stroke: "rgba(31,30,29,0.45)",
+  strokeDasharray: "5 4",
+  strokeWidth: 1.5,
+  markerEnd: "url(#a)",
+  d: "M320 278q60 32 120 0"
+})), cynefin_detail_text11 || (cynefin_detail_text11 = /*#__PURE__*/react.createElement("text", {
+  x: 380,
+  y: 322,
+  fill: "#5a4a1a",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 13,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Disorder")), _rect9 || (_rect9 = /*#__PURE__*/react.createElement("rect", {
+  width: 260,
+  height: 200,
+  x: 20,
+  y: 380,
+  fill: "#eeedfe",
+  stroke: "#534ab7",
+  strokeWidth: 0.5,
+  rx: 12
+})), cynefin_detail_text12 || (cynefin_detail_text12 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 410,
+  fill: "#3c3489",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Complex")), cynefin_detail_text13 || (cynefin_detail_text13 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 436,
+  fill: "#534ab7",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Probe \u2192 Sense \u2192 Respond")), _rect0 || (_rect0 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 45,
+  y: 452,
+  fill: "#eeedfe",
+  stroke: "#534ab7",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text14 || (cynefin_detail_text14 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 465,
+  fill: "#534ab7",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Probe = MVP, spike, prototype")), _rect1 || (_rect1 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 45,
+  y: 486,
+  fill: "#eeedfe",
+  stroke: "#534ab7",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text15 || (cynefin_detail_text15 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 499,
+  fill: "#534ab7",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Sense = retro, GAP review")), _rect10 || (_rect10 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 45,
+  y: 520,
+  fill: "#eeedfe",
+  stroke: "#534ab7",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text16 || (cynefin_detail_text16 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 533,
+  fill: "#534ab7",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Respond = refactoring")), cynefin_detail_text17 || (cynefin_detail_text17 = /*#__PURE__*/react.createElement("text", {
+  x: 150,
+  y: 566,
+  fill: "#534ab7",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Skipping Respond = tech. debt \u2192 Chaotic")), _rect11 || (_rect11 = /*#__PURE__*/react.createElement("rect", {
+  width: 260,
+  height: 200,
+  x: 480,
+  y: 380,
+  fill: "#faece7",
+  stroke: "#993c1d",
+  strokeWidth: 0.5,
+  rx: 12
+})), cynefin_detail_text18 || (cynefin_detail_text18 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 410,
+  fill: "#712b13",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
+  textAnchor: "middle"
+}, "Chaotic")), cynefin_detail_text19 || (cynefin_detail_text19 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 436,
+  fill: "#993c1d",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Act \u2192 Sense \u2192 Respond")), _rect12 || (_rect12 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 505,
+  y: 452,
+  fill: "#faece7",
+  stroke: "#993c1d",
+  strokeWidth: 0.3,
+  rx: 5
+})), cynefin_detail_text20 || (cynefin_detail_text20 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 465,
+  fill: "#993c1d",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Act: stop the bleeding")), _rect13 || (_rect13 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 505,
+  y: 486,
+  fill: "#faece7",
+  stroke: "#993c1d",
+  strokeWidth: 0.3,
+  rx: 5
+})), _text21 || (_text21 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 499,
+  fill: "#993c1d",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Sense: what is happening?")), _rect14 || (_rect14 = /*#__PURE__*/react.createElement("rect", {
+  width: 210,
+  height: 26,
+  x: 505,
+  y: 520,
+  fill: "#faece7",
+  stroke: "#993c1d",
+  strokeWidth: 0.3,
+  rx: 5
+})), _text22 || (_text22 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 533,
+  fill: "#993c1d",
+  dominantBaseline: "central",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Respond: stabilize \u2192 Complex")), _text23 || (_text23 = /*#__PURE__*/react.createElement("text", {
+  x: 610,
+  y: 566,
+  fill: "#993c1d",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 12,
+  textAnchor: "middle"
+}, "Goal: move to Complex or Complicated")), cynefin_detail_path2 || (cynefin_detail_path2 = /*#__PURE__*/react.createElement("path", {
+  fill: "none",
+  stroke: "rgba(31,30,29,0.4)",
+  strokeDasharray: "4 3",
+  strokeWidth: 1.5,
+  markerEnd: "url(#a)",
+  d: "M610 588q-230 20-460 0"
+})), _text24 || (_text24 = /*#__PURE__*/react.createElement("text", {
+  x: 380,
+  y: 617,
+  fill: "#3d3d3a",
+  fontFamily: "-apple-system,'Segoe UI',sans-serif",
+  fontSize: 11,
+  textAnchor: "middle"
+}, "Stabilization: Chaotic \u2192 Complex \u2192 Complicated")));
+/* harmony default export */ const cynefin_detail = (SvgCynefinDetail);
+;// ./docs/en/knifes/K000101-CYNEFIN_Framework/index.mdx
 
 
 const frontMatter = {
@@ -171,6 +842,8 @@ const contentTitle = undefined;
 const assets = {
 
 };
+
+
 
 
 
@@ -347,9 +1020,7 @@ function _createMdxContent(props) {
         width: '100%',
         boxSizing: 'border-box'
       },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: "/knifes/K101-Cynefin/cynefin_overview.svg",
-        alt: "Cynefin – overview of 5 domains",
+      children: (0,jsx_runtime.jsx)(cynefin_overview, {
         style: {
           maxWidth: '800px',
           width: '100%'
@@ -761,9 +1432,7 @@ function _createMdxContent(props) {
         width: '100%',
         boxSizing: 'border-box'
       },
-      children: (0,jsx_runtime.jsx)("img", {
-        src: "/knifes/K101-Cynefin/cynefin_detail.svg",
-        alt: "Cynefin – detailed procedures and dynamics",
+      children: (0,jsx_runtime.jsx)(cynefin_detail, {
         style: {
           maxWidth: '800px',
           width: '100%'

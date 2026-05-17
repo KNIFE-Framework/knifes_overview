@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS"
 
 # Unikátne UUID – generuje skript
-guid: "0e97be73-999f-4f37-9313-412dfb0f86d4"
+guid: "2abcf112-ce0e-435f-9578-e16071ab5961"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-05-06"
+created: "2026-05-17"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `0e97be73-999f-4f37-9313-412dfb0f86d4`
+> **GUID:** `2abcf112-ce0e-435f-9578-e16071ab5961`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

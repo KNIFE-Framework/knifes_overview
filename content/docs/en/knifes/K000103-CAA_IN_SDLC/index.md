@@ -64,6 +64,7 @@ In this article we focus on describing context for delivering IT solutions, but 
 
 
 
+
 ## 🧩 How it solves it (principle)
 
 Visualizing context greatly helps with understanding it — which in practice means mapping the real world into a digital form.

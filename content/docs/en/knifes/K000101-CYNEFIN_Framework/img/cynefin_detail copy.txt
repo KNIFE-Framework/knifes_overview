@@ -68,7 +68,7 @@
 <text x="610" y="566" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#993c1d">Goal: move to Complex or Complicated</text>
 </g>
 
-<!-- Stabilization arc: starts from Chaotic (right, x=610), ends at Complex (left, x=150) -->
-<path d="M 610 588 Q 380 608 150 588" fill="none" stroke="rgba(31,30,29,0.4)" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-gray)"/>
+<!-- Stabilization arc below bottom boxes (y=580..610) -->
+<path d="M 150 588 Q 380 608 610 588" fill="none" stroke="rgba(31,30,29,0.4)" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-gray)"/>
 <text x="380" y="617" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#3d3d3a">Stabilization: Chaotic → Complex → Complicated</text>
 </svg>

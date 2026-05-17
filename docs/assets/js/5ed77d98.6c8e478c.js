@@ -1,6 +1,16 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[9536],{
 
+/***/ 4451:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/CAA-Approach-In-SDLC-Types-b62798e12694ddf497151789e2bf6e4d.png");
+
+/***/ }),
+
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -232,7 +242,7 @@ function _createMdxContent(props) {
         boxSizing: 'border-box'
       },
       children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(98383)/* ["default"] */ .A),
+        src: (__webpack_require__(4451)/* ["default"] */ .A),
         alt: "AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png",
         style: {
           maxWidth: '800px',
@@ -264,16 +274,6 @@ function MDXContent(props = {}) {
 }
 
 
-
-/***/ }),
-
-/***/ 98383:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/CAA-Approach-In-SDLC-e553ad4595c142c7091999a42215aa30.png");
 
 /***/ })
 

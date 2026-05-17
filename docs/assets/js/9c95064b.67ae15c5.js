@@ -276,7 +276,7 @@ function _createMdxContent(props) {
       },
       children: (0,jsx_runtime.jsx)("img", {
         src: (__webpack_require__(98383)/* ["default"] */ .A),
-        alt: "CAA-Approach-In-SDLC.png",
+        alt: "CAA-Approach-In-SDLC-Types.png",
         style: {
           maxWidth: '800px',
           width: '100%'

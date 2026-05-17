@@ -164,7 +164,7 @@ V sérii troch príspevkov ukážem: → čo KERNARO vie (a čo nie) → prečo 
 <a id="img-01"></a>
 [IMG-01]
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('./CAA-Approach-In-SDLC.png').default} alt="CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./CAA-Approach-In-SDLC.png').default} alt="CAA-Approach-In-SDLC-Types.png" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 <!-- IMAGES:END -->

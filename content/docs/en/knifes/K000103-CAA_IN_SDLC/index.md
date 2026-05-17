@@ -58,7 +58,7 @@ In this article we focus on describing context for delivering IT solutions, but 
 
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('./img/CAA-Approach-In-SDLC.png').default} alt="CAA – Context Aware Approach in SDLC" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/CAA-Approach-In-SDLC-Types.png').default} alt="CAA – Context Aware Approach in SDLC" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 

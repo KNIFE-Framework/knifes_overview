@@ -90,7 +90,7 @@ This perspective also defined my testing strategy for AI-Kernaro, described in t
 <a id="img-01"></a>
 [IMG-01]
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('./AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png').default} alt="AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./AI_ThreadOrOpportunity/CAA-Approach-In-SDLC-Types.png').default} alt="AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 

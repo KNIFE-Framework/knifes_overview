@@ -106,16 +106,6 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 35106:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/CAA-Approach-In-SDLC-Types-5ee8deaebfe97caa4ee6e9830923ca04.png");
-
-/***/ }),
-
 /***/ 54417:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -153,7 +143,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000103-caa-in-sdlc-index-md-48e.json
-const site_docs_en_knifes_k_000103_caa_in_sdlc_index_md_48e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000103-CAA_IN_SDLC/K000103","title":"K000103 – Context Aware Approach in SDLC","description":"Context Aware Approach (CAA) applied to Solution Development Life Cycle — why context must be understood before any tool or technology decision is made.","source":"@site/docs/en/knifes/K000103-CAA_IN_SDLC/index.md","sourceDirName":"en/knifes/K000103-CAA_IN_SDLC","slug":"/en/knifes/K000103-CAA_IN_SDLC/","permalink":"/en/knifes/K000103-CAA_IN_SDLC/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"CAA","permalink":"/doc-tags/caa"},{"inline":true,"label":"EnterpriseArchitecture","permalink":"/doc-tags/enterprise-architecture"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-04-29T06:56:28.587132+00:00","fm_version_comment":"","id":"K000103","guid":"b0a589dc-ccab-43a3-a07e-30acf9eb6be5","dao":"knife","title":"K000103 – Context Aware Approach in SDLC","description":"Context Aware Approach (CAA) applied to Solution Development Life Cycle — why context must be understood before any tool or technology decision is made.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":["SDLC","CAA","EnterpriseArchitecture"],"locale":"en","created":"2026-04-29 08:56","modified":"2026-04-29 08:56","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000101 – CYNEFIN Framework","permalink":"/en/knifes/K000101-CYNEFIN_Framework/"},"next":{"title":"K000104 – SPARX-AI KERNARO in context of SDLC support","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/"}}');
+const site_docs_en_knifes_k_000103_caa_in_sdlc_index_md_48e_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000103-CAA_IN_SDLC/K000103","title":"K000103 – Context Aware Approach in SDLC","description":"Context Aware Approach (CAA) applied to Solution Development Life Cycle — why context must be understood before any tool or technology decision is made.","source":"@site/docs/en/knifes/K000103-CAA_IN_SDLC/index.md","sourceDirName":"en/knifes/K000103-CAA_IN_SDLC","slug":"/en/knifes/K000103-CAA_IN_SDLC/","permalink":"/en/knifes/K000103-CAA_IN_SDLC/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"CAA","permalink":"/doc-tags/caa"},{"inline":true,"label":"EnterpriseArchitecture","permalink":"/doc-tags/enterprise-architecture"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-04-29T06:56:28.587132+00:00","fm_version_comment":"","id":"K000103","guid":"b0a589dc-ccab-43a3-a07e-30acf9eb6be5","dao":"knife","title":"K000103 – Context Aware Approach in SDLC","description":"Context Aware Approach (CAA) applied to Solution Development Life Cycle — why context must be understood before any tool or technology decision is made.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":["SDLC","CAA","EnterpriseArchitecture"],"locale":"en","created":"2026-04-29 08:56","modified":"2026-05-18 09:00","status":"published","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000101 – CYNEFIN Framework","permalink":"/en/knifes/K000101-CYNEFIN_Framework/"},"next":{"title":"K000104 – SPARX-AI KERNARO in context of SDLC support","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -184,8 +174,8 @@ const frontMatter = {
 	],
 	locale: 'en',
 	created: '2026-04-29 08:56',
-	modified: '2026-04-29 08:56',
-	status: 'backlog',
+	modified: '2026-05-18 09:00',
+	status: 'published',
 	privacy: 'public',
 	rights_holder_content: 'Roman Kazicka',
 	rights_holder_system: 'CAA / KNIFE / LetItGrow',
@@ -216,6 +206,18 @@ const toc = [{
   "id": "-what-it-solves-purpose-goal",
   "level": 2
 }, {
+  "value": "V-Model – Verification and Validation Model – Historical Foundation of SDLC",
+  "id": "v-model--verification-and-validation-model--historical-foundation-of-sdlc",
+  "level": 2
+}, {
+  "value": "Origin",
+  "id": "origin",
+  "level": 3
+}, {
+  "value": "Why few people know it today",
+  "id": "why-few-people-know-it-today",
+  "level": 3
+}, {
   "value": "🧩 How it solves it (principle)",
   "id": "-how-it-solves-it-principle",
   "level": 2
@@ -240,14 +242,22 @@ const toc = [{
   "id": "-tips-and-notes",
   "level": 2
 }, {
-  "value": "✅ Value / Summary",
-  "id": "-value--summary",
+  "value": "✅ Value / Summary – from Context and Approach point of view",
+  "id": "-value--summary--from-context-and-approach-point-of-view",
   "level": 2
+}, {
+  "value": "Context view",
+  "id": "context-view",
+  "level": 3
+}, {
+  "value": "Approach view",
+  "id": "approach-view",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
-    blockquote: "blockquote",
+    admonition: "admonition",
     em: "em",
     h1: "h1",
     h2: "h2",
@@ -275,6 +285,73 @@ function _createMdxContent(props) {
       children: "🎯 What it solves (purpose, goal)"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "No solution in any domain exists in isolation — it lives within a specific context that fundamentally shapes what is being built.\nIt follows naturally that every solution must begin with understanding that context.\nThis spans a wide range of topics: people, processes, technology, politics, market conditions, and more.\nIn this article we focus on describing context for delivering IT solutions, but the principles apply broadly."
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "v-model--verification-and-validation-model--historical-foundation-of-sdlc",
+      children: "V-Model – Verification and Validation Model – Historical Foundation of SDLC"
+    }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+      title: "V-Model definition",
+      type: "info",
+      children: (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "V-model is a graphical representation of a Systems Development Lifecycle"
+        }), " in which activities such as requirements analysis, system design, and implementation are directly connected to validation activities like acceptance testing, system testing, and integration testing. This creates a \"V\" shape, where the left side represents specification and design, the bottom represents implementation, and the right side represents testing and validation."]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Although modern Agile and DevOps approaches introduced more iterative workflows, many core principles of the V-Model still survive inside contemporary SDLC practices — especially the strong linkage between requirements, implementation, and verification."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "It is used to produce rigorous development lifecycle models and project management models.\nThe V-model falls into three broad categories:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "the German V-Modell,"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "a general testing model,"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "and the US government standard."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Reference: ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "https://en.wikipedia.org/wiki/V-model",
+        children: "https://en.wikipedia.org/wiki/V-model"
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "origin",
+      children: "Origin"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The V-Model has two parallel origins that developed independently:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Barry Boehm (USA, 1979)"
+      }), " – American software engineer who first described\nthe V-shaped lifecycle with emphasis on verification and validation at each\ndevelopment phase."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "US variant"
+      }), " – Kevin Forsberg and Hal Mooz developed it in parallel, drawing\nfrom systems engineering for defense and aerospace projects. The V-model first\nappeared at Hughes Aircraft around 1982 for an FAA programme, later spreading\nthrough NASA and US defense procurement."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "German variant (V-Modell)"
+      }), " – Developed by IABG in Ottobrunn near Munich in\ncooperation with the Federal Office for Defense Technology, originally for the\nGerman armed forces. In 1992 the German Ministry of the Interior adopted it for\ncivilian public administration. In 2005 an updated version was released:\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "V-Modell XT"
+      }), " (eXtended)."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "why-few-people-know-it-today",
+      children: "Why few people know it today"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Agile pushed the V-Model to the sidelines from the early 2000s. In corporate\nand banking environments, however, the V-Model never disappeared – it was\nrenamed or absorbed into other frameworks: PRINCE2, regulatory methodologies,\nFDA validation, automotive SPICE."
+    }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+      title: "Regulated environments",
+      type: "caution",
+      children: (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["For regulated environments (banking, healthcare, defense) the V-Model remains\na ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "de facto standard"
+        }), " – because regulators require full traceability between\nrequirement and test. Ignoring this foundation does not make it disappear; it\nmakes the gap invisible until audit time."]
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+      type: "tip",
+      children: (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.em, {
+          children: "The model did not die. It changed its name."
+        })
+      })
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -285,16 +362,18 @@ function _createMdxContent(props) {
         boxSizing: 'border-box'
       },
       children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(35106)/* ["default"] */ .A),
-        alt: "CAA – Context Aware Approach in SDLC",
+        src: (__webpack_require__(84850)/* ["default"] */ .A),
+        alt: "V-Model – Verification and Validation Model",
         style: {
           maxWidth: '800px',
           width: '100%'
         }
       })
-    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-how-it-solves-it-principle",
       children: "🧩 How it solves it (principle)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The V-Model provides the structural backbone — but the context in which it is applied defines everything."
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Visualizing context greatly helps with understanding it — which in practice means mapping the real world into a digital form.\nA wide spectrum of tools and applications is available for this purpose. Which one to choose, and what criteria to apply?"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -302,6 +381,22 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.strong, {
         children: "1. Principles"
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+      title: "CAA core principle",
+      type: "info",
+      children: (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Without Communication — there is no Understanding"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Without Understanding — there is no Trust"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Without Trust — there is no good Collaboration"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Without good Collaboration — there is no Synergy"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "Without Synergy — there is no Success"
+        }), "\n"]
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
@@ -318,18 +413,6 @@ function _createMdxContent(props) {
                 children: "what \"picture / diagram\" means"
               }), "\n"]
             }), "\n"]
-          }), "\n"]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["The following principles help deliver better solutions (where \"better\" also needs to be defined):", "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-            children: "Without Communication — there is no Understanding"
-          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-            children: "Without Understanding — there is no Trust"
-          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-            children: "Without Trust — there is no good Collaboration"
-          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-            children: "Without good Collaboration — there is no Success"
           }), "\n"]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -437,7 +520,7 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n"]
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-how-to-use-it-application",
       children: "🧪 How to use it (application)"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -446,8 +529,25 @@ function _createMdxContent(props) {
       id: "-quick-guide-top",
       children: "⚡ Quick Guide (Top)"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "The following images support the visualization of my context when selecting and evaluating tools suitable for solution delivery."
-    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      children: "The following diagrams map the SDLC context from multiple perspectives — from the relationship between supplier and customer, through deliverables between phases, to tool assessment criteria."
+    }), "\n", (0,jsx_runtime.jsx)("div", {
+      style: {
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(84850)/* ["default"] */ .A),
+        alt: "CAA – Context Aware Approach in SDLC",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-detailed-article",
       children: "📜 Detailed Article"
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
@@ -557,7 +657,7 @@ function _createMdxContent(props) {
           width: '100%'
         }
       })
-    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-tips-and-notes",
       children: "💡 Tips and Notes"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -565,17 +665,24 @@ function _createMdxContent(props) {
         href: "../K000101-CYNEFIN_Framework/",
         children: "Cynefin"
       }), "."]
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "The core idea for addressing complex questions follows this pattern:"
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Probe → Sense → Respond"
-      })
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Try → Observe first experiences → Consciously react and refine your original understanding."
-    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-value--summary",
-      children: "✅ Value / Summary"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
+      title: "Cynefin approach for complex problems",
+      type: "tip",
+      children: [(0,jsx_runtime.jsx)(_components.p, {
+        children: "The core idea for addressing complex questions follows this pattern:"
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Probe → Sense → Respond"
+        })
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "Try → Observe first experiences → Consciously react and refine your original understanding."
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "-value--summary--from-context-and-approach-point-of-view",
+      children: "✅ Value / Summary – from Context and Approach point of view"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "context-view",
+      children: "Context view"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "What is better?\nA Bentley or a ŠKODA?\nMac or Windows?"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
@@ -588,12 +695,33 @@ function _createMdxContent(props) {
       }), " for the question, problem, or challenge is not defined — there is no point in continuing the discussion or the solution."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Once we at least attempt to understand the solution context to a sufficient depth, we gain constraints and boundaries that fundamentally help us understand the solution, find the right answers — and to do so constructively.\nWithout unnecessary arguing, quarreling, and wasting precious time."
-    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "approach-view",
+      children: "Approach view"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Which approach is better?"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "V-Model (Waterfall)"
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Iteration model (Agile, ...)"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Which phase in the V-Model can we ignore? When? In which context?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Instead of fighting over which approach is better, I would suggest:"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Adopt the approach to the context of your solution."
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+      title: "Key takeaway",
+      type: "info",
+      children: (0,jsx_runtime.jsxs)(_components.p, {
         children: ["No tool, no technology will ever be perfect for all contexts.\nOur task is to understand the context and choose a ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "good enough"
         }), " solution for that specific context."]
-      }), "\n"]
+      })
     })]
   });
 }
@@ -631,6 +759,16 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/03-SDLC-Deliverables-a921ec8fd29b6db6c70f83fcd946daeb.png");
+
+/***/ }),
+
+/***/ 84850:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/00-V-Model-4d8af3c50fb02e28e7bfd60919212015.png");
 
 /***/ })
 

@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-knifes-overview-knife-overview-details-md-fb5.json
-const site_docs_en_knifes_knifes_overview_knife_overview_details_md_fb5_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN","title":"📊 KNIFE Overview – Details","description":"{{DESCRIPTION}}","source":"@site/docs/en/knifes/knifes_overview/KNIFE_Overview_Details.md","sourceDirName":"en/knifes/knifes_overview","slug":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_DETAILS_EN","guid":"47767288-4070-4c8a-8835-112013980ecf","dao":"{{DAO}}","title":"📊 KNIFE Overview – Details","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"en","created":"2026-05-01","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"📰 KNIFE Overview – Blog","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN"},"next":{"title":"🗂 KNIFE Overview – List","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN"}}');
+const site_docs_en_knifes_knifes_overview_knife_overview_details_md_fb5_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN","title":"📊 KNIFE Overview – Details","description":"{{DESCRIPTION}}","source":"@site/docs/en/knifes/knifes_overview/KNIFE_Overview_Details.md","sourceDirName":"en/knifes/knifes_overview","slug":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_DETAILS_EN","guid":"5c66a8f8-cf0d-40f8-8bfe-053934cfe426","dao":"{{DAO}}","title":"📊 KNIFE Overview – Details","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"en","created":"2026-05-25","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"📰 KNIFE Overview – Blog","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN"},"next":{"title":"🗂 KNIFE Overview – List","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -31,7 +31,7 @@ const frontMatter = {
 	fm_build: '{{FM_BUILD}}',
 	fm_version_comment: '',
 	id: 'KNIFE_OVERVIEW_DETAILS_EN',
-	guid: '47767288-4070-4c8a-8835-112013980ecf',
+	guid: '5c66a8f8-cf0d-40f8-8bfe-053934cfe426',
 	dao: '{{DAO}}',
 	title: '📊 KNIFE Overview – Details',
 	description: '{{DESCRIPTION}}',
@@ -44,7 +44,7 @@ const frontMatter = {
 	priority: '',
 	tags: [],
 	locale: 'en',
-	created: '2026-05-01',
+	created: '2026-05-25',
 	modified: '',
 	status: 'backlog',
 	privacy: 'public',
@@ -102,7 +102,7 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "GUID:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "47767288-4070-4c8a-8835-112013980ecf"
+          children: "5c66a8f8-cf0d-40f8-8bfe-053934cfe426"
         }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Status:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
@@ -147,6 +147,19 @@ function _createMdxContent(props) {
       }), (0,jsx_runtime.jsxs)(_components.tbody, {
         children: [(0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "K000106_EN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              href: "../K000106-SSOTnadTSSOT/",
+              children: "K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "2026-05-25 09:00"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "published"
+          }), (0,jsx_runtime.jsx)(_components.td, {})]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "K000104"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.a, {
@@ -156,7 +169,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "2026-04-29 11:59"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "inProgress"
+            children: "published"
           }), (0,jsx_runtime.jsx)(_components.td, {})]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -169,7 +182,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "2026-04-29 08:56"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "backlog"
+            children: "published"
           }), (0,jsx_runtime.jsx)(_components.td, {})]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -182,7 +195,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "2026-04-23 23:03"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "draft"
+            children: "published"
           }), (0,jsx_runtime.jsx)(_components.td, {})]
         })]
       })]

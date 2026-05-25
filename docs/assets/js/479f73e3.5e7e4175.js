@@ -4522,6 +4522,19 @@ function _createMdxContent(props) {
           width: '100%'
         }
       })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.a, {
+          href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN",
+          children: "⬅ KNIFES – Overview"
+        }), " • ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN",
+          children: "List"
+        }), " • ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN",
+          children: "Details"
+        })]
+      }), "\n"]
     })]
   });
 }

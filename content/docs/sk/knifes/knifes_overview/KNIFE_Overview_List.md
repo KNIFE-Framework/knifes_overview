@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "3f35c317-2ef0-4f4c-91cd-c2b180810504"
+guid: "829b66b7-e49c-4d7c-a274-d701a494d1ea"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-05-18"
+created: "2026-05-25"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `3f35c317-2ef0-4f4c-91cd-c2b180810504`
+> **GUID:** `829b66b7-e49c-4d7c-a274-d701a494d1ea`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -147,7 +147,7 @@ fm_reserved2: ""
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/) · _backlog_ · -
 - **K000105** · [K000105 – Zlaté zrnko: Ako riešiť 'neriešiteľné' situácie](../K000105-Zlate-zrnko-ako-riesit-neriesitelne/) · _inprogress_ · high
 - **K000102** · [K000102 – AI podpora spolupráce knowlwdge workerov v rámci SDLC.md](../K000102-KNIFE_Claude_SDLC_Collaboration/) · _backlog_ · -
-- **K000101** · [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) · _backlog_ · -
+- **K000101_sk** · [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) · _backlog_ · -
 - **K000100** · [K000100 – titul-Ako komunikovať s porozumením](../K000100-Ako-komunikova-s-porozumen-mE/) · _backlog_ · -
 - **K000092** · [K000092 – KNIFE User Guide v2](../K000092-KNIFE-User-Guide/) · _backlog_ · -
 - **K000091** · [K000091 – Krátka história Git – Linus Torvalds](../K000091-Zrodenie-git-sveta/) · _backlog_ · -

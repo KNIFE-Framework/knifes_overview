@@ -302,3 +302,5 @@ Our task is to understand the context and choose a **good enough** solution for 
 <!-- body:start -->
 
 <!-- nav:knifes -->
+<!-- nav:knifes -->
+> [⬅ KNIFES – Overview](../knifes_overview/KNIFE_Overview_Blog.md) • [List](../knifes_overview/KNIFE_Overview_List.md) • [Details](../knifes_overview/KNIFE_Overview_Details.md)

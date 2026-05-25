@@ -212,7 +212,8 @@ build-clean: ## Hard clean + sync + production build (istý reset publish/docs)
 	$(MAKE) build
 SY01-sync-content: ## Sync SSOT content → publishing/docusaurus/docs (hard, delete)
 	@if [ ! -d "$(CONTENT_DOCS_DIR)" ]; then echo "❌ Missing $(CONTENT_DOCS_DIR)"; exit 1; fi
-	@$(MAKE) --no-print-directory knifes-overview
+	@$(MAKE) --no-print-directory knifes-overview LOCALE=sk
+	@$(MAKE) --no-print-directory knifes-overview LOCALE=en
 	@mkdir -p "$(PUB_DOCS_DIR)"
 	rsync -av --delete --checksum \
 	  --exclude 'assets/' \
@@ -500,11 +501,19 @@ knifes-new: ## Vytvorí novú KNIFE (ID=K000123 name="..." title="...")
 	  exit 1; \
 	fi
 	@mkdir -p "content/docs/$(LOCALE)/knifes"
+	@_RAW_ID="$(id)"; \
+	if [ -n "$$_RAW_ID" ] && [ "$(LOCALE)" = "en" ]; then \
+	  _FINAL_ID="$${_RAW_ID}_EN"; \
+	  echo "ℹ️  EN locale: id → $$_FINAL_ID (suffix _EN pridaný automaticky)"; \
+	else \
+	  _FINAL_ID="$$_RAW_ID"; \
+	fi; \
+	_ID_ARG=$$([ -n "$$_FINAL_ID" ] && echo "--id $$_FINAL_ID" || echo ""); \
 	python3 core/scripts/tools/new_item_instance.py \
 	  --type knife \
 	  --name "$(name)" \
 	  --title "$(title)" \
-	  $(if $(id),--id "$(id)",) \
+	  $$_ID_ARG \
 	  --locale "$(LOCALE)" \
 	  --config config/knifes/knifes_config.yml \
 	  --exists "$(EXISTS)"

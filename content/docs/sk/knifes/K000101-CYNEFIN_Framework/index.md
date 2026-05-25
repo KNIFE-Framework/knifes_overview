@@ -12,7 +12,7 @@ fm_version_comment: ""
 # 🆔 IDENTITY --------------------------------------------------------
 
 # ID generuje CLI / skript
-id: "K000101"
+id: "K000101_sk"
 
 # Unikátne UUID – generuje skript
 guid: "ba6374cd-3f7d-4451-95e3-2312ef23a25a"

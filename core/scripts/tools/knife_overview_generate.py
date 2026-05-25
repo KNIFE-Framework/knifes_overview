@@ -41,11 +41,13 @@ def _href_to_doc_route(href: str) -> str:
     rather than to the raw `.md` files (which would cause 404s in Docusaurus).
     """
     if href.endswith("/index.md"):
-        # keep the trailing slash, drop 'index.md'
         return href[: -len("index.md")]
+    if href.endswith("/index.mdx"):
+        return href[: -len("index.mdx")]
     if href.endswith(".md"):
-        # drop generic `.md` suffix
         return href[: -len(".md")]
+    if href.endswith(".mdx"):
+        return href[: -len(".mdx")]
     return href
 
 
@@ -58,7 +60,10 @@ def rel_link_from_overview(item_dir_path: str, docs_root: str, overview_out_dir:
     - docs_root: root docs directory like 'content/docs'
     - overview_out_dir: output dir like 'content/docs/sk/knifes/knifes_overview'
     """
-    target = Path(docs_root) / item_dir_path.lstrip('/') / 'index.md'
+    # detect whether the item uses index.mdx or index.md
+    _md_path = Path(docs_root) / item_dir_path.lstrip('/') / 'index.md'
+    _mdx_path = Path(docs_root) / item_dir_path.lstrip('/') / 'index.mdx'
+    target = _mdx_path if _mdx_path.exists() and not _md_path.exists() else _md_path
     rel = Path(os.path.relpath(target, Path(overview_out_dir)))
     return rel.as_posix()
 
@@ -172,7 +177,8 @@ def collect_knifes(root: str, locale: str, *, include_drafts: bool, include_nonp
     def _dbg(msg: str):
         if debug:
             print(f"[knife_overview] {msg}")
-    for p in base.rglob('index.md'):
+    _index_files = sorted(set(base.rglob('index.md')) | set(base.rglob('index.mdx')))
+    for p in _index_files:
         # skip KNIFES home (content/docs/<locale>/knifes/index.md)
         if p.parent == base:
             _dbg(f"skip home: {p}")

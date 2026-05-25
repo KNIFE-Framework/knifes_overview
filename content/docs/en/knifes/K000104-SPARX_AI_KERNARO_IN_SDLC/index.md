@@ -985,3 +985,5 @@ Jeden index a EN, CZ, CH, preklady by boli asi najintuitívnejšie
 </div>
 
 <!-- IMAGES:END -->
+<!-- nav:knifes -->
+> [⬅ KNIFES – Overview](../knifes_overview/KNIFE_Overview_Blog.md) • [List](../knifes_overview/KNIFE_Overview_List.md) • [Details](../knifes_overview/KNIFE_Overview_Details.md)

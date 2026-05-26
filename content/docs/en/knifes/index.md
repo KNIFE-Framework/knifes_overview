@@ -67,7 +67,7 @@ If you are new here, start with the foundations:
 - **[K000101 – Cynefin Framework](./K000101-CYNEFIN_Framework/)** — how to classify problems before choosing solutions
 - **[K000103 – Context Aware Approach in SDLC](./K000103-CAA_IN_SDLC/)** — why context must be understood before any technology decision
 - **[K000104 – SPARX AI KERNARO in SDLC](./K000104-SPARX_AI_KERNARO_IN_SDLC/)** — AI as a quality catalyst, not a shortcut
-- **[K000106 – SSOT and TSSOT](./K000106-SSOTnadTSSOT/)** — Single Source of Truth and Trusted Single Source Of Truth
+- **[K000106 – SSOT and TSSOT](./K000106-SSOTandTSSOT/)** — Single Source of Truth and Trusted Single Source Of Truth
 
 ---
 

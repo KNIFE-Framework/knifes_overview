@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS_EN"
 
 # Unikátne UUID – generuje skript
-guid: "cb9dbe78-269e-4184-8a59-fd8983f5c82d"
+guid: "6d5d43a2-0cfa-40a6-98de-efd0e34a6213"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "en"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-05-25"
+created: "2026-05-26"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `cb9dbe78-269e-4184-8a59-fd8983f5c82d`
+> **GUID:** `6d5d43a2-0cfa-40a6-98de-efd0e34a6213`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -144,7 +144,7 @@ fm_reserved2: ""
 
 | ID | Title | Created | Status | Priority |
 |---|---|---|---|---|
-| K000106_EN | [K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?](../K000106-SSOTnadTSSOT/) | 2026-05-25 09:00 | published |  |
+| K000106_EN | [K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?](../K000106-SSOTandTSSOT/) | 2026-05-25 09:00 | published |  |
 | K000104 | [K000104 – SPARX-AI KERNARO in context of SDLC support](../K000104-SPARX_AI_KERNARO_IN_SDLC/) | 2026-04-29 11:59 | published |  |
 | K000103 | [K000103 – Context Aware Approach in SDLC](../K000103-CAA_IN_SDLC/) | 2026-04-29 08:56 | published |  |
 | K000101 | [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) | 2026-04-23 23:03 | published |  |

@@ -1,5 +1,5 @@
 "use strict";
-(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[85752],{
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[60032],{
 
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -96,7 +96,7 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 99986:
+/***/ 78654:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -108,27 +108,27 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_en_knifes_knifes_overview_knife_overview_blog_md_132_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_en_knifes_knifes_overview_knife_overview_list_md_9b9_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-knifes-overview-knife-overview-blog-md-132.json
-const site_docs_en_knifes_knifes_overview_knife_overview_blog_md_132_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","source":"@site/docs/en/knifes/knifes_overview/KNIFE_Overview_Blog.md","sourceDirName":"en/knifes/knifes_overview","slug":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_BLOG_EN","guid":"96148881-aa48-4a87-af1c-9aad874151ed","dao":"{{DAO}}","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"en","created":"2026-05-25","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"},"next":{"title":"📊 KNIFE Overview – Details","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-knifes-overview-knife-overview-list-md-9b9.json
+const site_docs_en_knifes_knifes_overview_knife_overview_list_md_9b9_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN","title":"🗂 KNIFE Overview – List","description":"{{DESCRIPTION}}","source":"@site/docs/en/knifes/knifes_overview/KNIFE_Overview_List.md","sourceDirName":"en/knifes/knifes_overview","slug":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_LIST_EN","guid":"2f4b73a7-be9e-4cc6-966b-60c9d4ccd742","dao":"{{DAO}}","title":"🗂 KNIFE Overview – List","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"en","created":"2026-05-26","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"📊 KNIFE Overview – Details","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-;// ./docs/en/knifes/knifes_overview/KNIFE_Overview_Blog.md
+;// ./docs/en/knifes/knifes_overview/KNIFE_Overview_List.md
 
 
 const frontMatter = {
 	fm_version: '1.0.1',
 	fm_build: '{{FM_BUILD}}',
 	fm_version_comment: '',
-	id: 'KNIFE_OVERVIEW_BLOG_EN',
-	guid: '96148881-aa48-4a87-af1c-9aad874151ed',
+	id: 'KNIFE_OVERVIEW_LIST_EN',
+	guid: '2f4b73a7-be9e-4cc6-966b-60c9d4ccd742',
 	dao: '{{DAO}}',
-	title: '📰 KNIFE Overview – Blog',
+	title: '🗂 KNIFE Overview – List',
 	description: '{{DESCRIPTION}}',
 	author: 'Roman Kazička',
 	authors: [
@@ -139,7 +139,7 @@ const frontMatter = {
 	priority: '',
 	tags: [],
 	locale: 'en',
-	created: '2026-05-25',
+	created: '2026-05-26',
 	modified: '',
 	status: 'backlog',
 	privacy: 'public',
@@ -159,7 +159,7 @@ const frontMatter = {
 	fm_reserved1: '',
 	fm_reserved2: ''
 };
-const contentTitle = '📰 KNIFE Overview – Blog';
+const contentTitle = '🗂 KNIFE Overview – List';
 
 const assets = {
 
@@ -173,6 +173,7 @@ function _createMdxContent(props) {
     a: "a",
     blockquote: "blockquote",
     code: "code",
+    em: "em",
     h1: "h1",
     header: "header",
     li: "li",
@@ -185,15 +186,15 @@ function _createMdxContent(props) {
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.header, {
       children: (0,jsx_runtime.jsx)(_components.h1, {
-        id: "-knife-overview--blog",
-        children: "📰 KNIFE Overview – Blog"
+        id: "-knife-overview--list",
+        children: "🗂 KNIFE Overview – List"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "GUID:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "96148881-aa48-4a87-af1c-9aad874151ed"
+          children: "2f4b73a7-be9e-4cc6-966b-60c9d4ccd742"
         }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Status:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
@@ -205,14 +206,14 @@ function _createMdxContent(props) {
         }), " CC-BY-NC-SA-4.0"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.strong, {
+      children: [(0,jsx_runtime.jsx)(_components.a, {
+        href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN",
+        children: "📰 Blog"
+      }), " | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: (0,jsx_runtime.jsx)(_components.a, {
-          href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN",
-          children: "📰 Blog"
+          href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN",
+          children: "🗂 List"
         })
-      }), " | ", (0,jsx_runtime.jsx)(_components.a, {
-        href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN",
-        children: "🗂 List"
       }), " | ", (0,jsx_runtime.jsx)(_components.a, {
         href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN",
         children: "📊 Details"
@@ -223,32 +224,40 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "K000101"
-        }), " — 2026-04-23 23:03 — ", (0,jsx_runtime.jsx)(_components.a, {
-          href: "../K000101-CYNEFIN_Framework/",
-          children: "K000101 – CYNEFIN Framework"
-        })]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "K000103"
-        }), " — 2026-04-29 08:56 — ", (0,jsx_runtime.jsx)(_components.a, {
-          href: "../K000103-CAA_IN_SDLC/",
-          children: "K000103 – Context Aware Approach in SDLC"
-        })]
+          children: "K000106_EN"
+        }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "../K000106-SSOTandTSSOT/",
+          children: "K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?"
+        }), " · ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "published"
+        }), " · -"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "K000104"
-        }), " — 2026-04-29 11:59 — ", (0,jsx_runtime.jsx)(_components.a, {
+        }), " · ", (0,jsx_runtime.jsx)(_components.a, {
           href: "../K000104-SPARX_AI_KERNARO_IN_SDLC/",
           children: "K000104 – SPARX-AI KERNARO in context of SDLC support"
-        })]
+        }), " · ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "published"
+        }), " · -"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "K000106_EN"
-        }), " — 2026-05-25 09:00 — ", (0,jsx_runtime.jsx)(_components.a, {
-          href: "../K000106-SSOTnadTSSOT/",
-          children: "K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?"
-        })]
+          children: "K000103"
+        }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "../K000103-CAA_IN_SDLC/",
+          children: "K000103 – Context Aware Approach in SDLC"
+        }), " · ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "published"
+        }), " · -"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "K000101"
+        }), " · ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "../K000101-CYNEFIN_Framework/",
+          children: "K000101 – CYNEFIN Framework"
+        }), " · ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "published"
+        }), " · -"]
       }), "\n"]
     })]
   });

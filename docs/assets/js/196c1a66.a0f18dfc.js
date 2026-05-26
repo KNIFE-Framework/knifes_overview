@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-index-md-196.json
-const site_docs_en_knifes_index_md_196_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/knifes-en","title":"KNIFE – Knowledge In Friendly Examples","description":"Practical knowledge base for solution delivery, enterprise architecture and system thinking – rooted in real experience across the full SDLC.","source":"@site/docs/en/knifes/index.md","sourceDirName":"en/knifes","slug":"/en/knifes/","permalink":"/en/knifes/","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"id":"knifes-en","title":"KNIFE – Knowledge In Friendly Examples","description":"Practical knowledge base for solution delivery, enterprise architecture and system thinking – rooted in real experience across the full SDLC.","locale":"en","status":"published","author":"Roman Kazicka","created":"2026-05-25","modified":"2026-05-25","license":"CC-BY-NC-SA-4.0","copyright":"© 2026 Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow"},"sidebar":"tutorialSidebar","previous":{"title":"K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?","permalink":"/en/knifes/K000106-SSOTnadTSSOT/"},"next":{"title":"📰 KNIFE Overview – Blog","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN"}}');
+const site_docs_en_knifes_index_md_196_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/knifes-en","title":"KNIFE – Knowledge In Friendly Examples","description":"Practical knowledge base for solution delivery, enterprise architecture and system thinking – rooted in real experience across the full SDLC.","source":"@site/docs/en/knifes/index.md","sourceDirName":"en/knifes","slug":"/en/knifes/","permalink":"/en/knifes/","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"id":"knifes-en","title":"KNIFE – Knowledge In Friendly Examples","description":"Practical knowledge base for solution delivery, enterprise architecture and system thinking – rooted in real experience across the full SDLC.","locale":"en","status":"published","author":"Roman Kazicka","created":"2026-05-25","modified":"2026-05-25","license":"CC-BY-NC-SA-4.0","copyright":"© 2026 Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow"},"sidebar":"tutorialSidebar","previous":{"title":"K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?","permalink":"/en/knifes/K000106-SSOTandTSSOT/"},"next":{"title":"📰 KNIFE Overview – Blog","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -253,7 +253,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: (0,jsx_runtime.jsx)(_components.a, {
-            href: "./K000106-SSOTnadTSSOT/",
+            href: "./K000106-SSOTandTSSOT/",
             children: "K000106 – SSOT and TSSOT"
           })
         }), " — Single Source of Truth and Trusted Single Source Of Truth"]

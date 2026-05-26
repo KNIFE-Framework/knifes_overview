@@ -1,7 +1,122 @@
 "use strict";
-(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[97311],{
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[87323],{
 
-/***/ 2317:
+/***/ 4299:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/02-babylon-4b9a651f2ed87e7501c9c982d02e82d4.png");
+
+/***/ }),
+
+/***/ 23785:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/05-ants-53f7f76a034017ce513b12277406a1e7.png");
+
+/***/ }),
+
+/***/ 28453:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }),
+
+/***/ 32509:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -13,17 +128,17 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_en_knifes_k_000106_sso_tnad_tssot_index_md_b91_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_en_knifes_k_000106_sso_tand_tssot_index_md_547_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000106-sso-tnad-tssot-index-md-b91.json
-const site_docs_en_knifes_k_000106_sso_tnad_tssot_index_md_b91_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000106-SSOTnadTSSOT/K000106_EN","title":"K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?","description":"Single Source of Truth and Trusted Single Source of Truth — why consistent, verified data is the prerequisite for successful solutions, effective AI, and shared understanding across SDLC phases.","source":"@site/docs/en/knifes/K000106-SSOTnadTSSOT/index.md","sourceDirName":"en/knifes/K000106-SSOTnadTSSOT","slug":"/en/knifes/K000106-SSOTnadTSSOT/","permalink":"/en/knifes/K000106-SSOTnadTSSOT/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"SSOT","permalink":"/doc-tags/ssot"},{"inline":true,"label":"TSSOT","permalink":"/doc-tags/tssot"},{"inline":true,"label":"DataQuality","permalink":"/doc-tags/data-quality"},{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"CAA","permalink":"/doc-tags/caa"},{"inline":true,"label":"EnterpriseArchitecture","permalink":"/doc-tags/enterprise-architecture"},{"inline":true,"label":"AI","permalink":"/doc-tags/ai"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-05-25T09:00:00.000000+00:00","fm_version_comment":"","id":"K000106_EN","guid":"","dao":"knife","title":"K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?","description":"Single Source of Truth and Trusted Single Source of Truth — why consistent, verified data is the prerequisite for successful solutions, effective AI, and shared understanding across SDLC phases.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":["SSOT","TSSOT","DataQuality","SDLC","CAA","EnterpriseArchitecture","AI"],"locale":"en","created":"2026-05-25 09:00","modified":"2026-05-25 09:00","status":"published","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2026 Roman Kazicka","origin_system":"CAA","origin_author":"Roman Kazicka"},"sidebar":"tutorialSidebar","previous":{"title":"K000104 – Article Map","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/K000104-map"},"next":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000106-sso-tand-tssot-index-md-547.json
+const site_docs_en_knifes_k_000106_sso_tand_tssot_index_md_547_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000106-SSOTandTSSOT/K000106_EN","title":"K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?","description":"Single Source of Truth and Trusted Single Source of Truth — why consistent, verified data is the prerequisite for successful solutions, effective AI, and shared understanding across SDLC phases.","source":"@site/docs/en/knifes/K000106-SSOTandTSSOT/index.md","sourceDirName":"en/knifes/K000106-SSOTandTSSOT","slug":"/en/knifes/K000106-SSOTandTSSOT/","permalink":"/en/knifes/K000106-SSOTandTSSOT/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"SSOT","permalink":"/doc-tags/ssot"},{"inline":true,"label":"TSSOT","permalink":"/doc-tags/tssot"},{"inline":true,"label":"DataQuality","permalink":"/doc-tags/data-quality"},{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"CAA","permalink":"/doc-tags/caa"},{"inline":true,"label":"EnterpriseArchitecture","permalink":"/doc-tags/enterprise-architecture"},{"inline":true,"label":"AI","permalink":"/doc-tags/ai"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-05-25T09:00:00.000000+00:00","fm_version_comment":"","id":"K000106_EN","guid":"","dao":"knife","title":"K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?","description":"Single Source of Truth and Trusted Single Source of Truth — why consistent, verified data is the prerequisite for successful solutions, effective AI, and shared understanding across SDLC phases.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":["SSOT","TSSOT","DataQuality","SDLC","CAA","EnterpriseArchitecture","AI"],"locale":"en","created":"2026-05-25 09:00","modified":"2026-05-25 09:00","status":"published","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2026 Roman Kazicka","origin_system":"CAA","origin_author":"Roman Kazicka"},"sidebar":"tutorialSidebar","previous":{"title":"K000104 – Article Map","permalink":"/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/K000104-map"},"next":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-;// ./docs/en/knifes/K000106-SSOTnadTSSOT/index.md
+;// ./docs/en/knifes/K000106-SSOTandTSSOT/index.md
 
 
 const frontMatter = {
@@ -222,7 +337,7 @@ function _createMdxContent(props) {
         boxSizing: 'border-box'
       },
       children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(99546)/* ["default"] */ .A),
+        src: (__webpack_require__(46600)/* ["default"] */ .A),
         alt: "00 – Islands of Knowledge: fragmented enterprise systems with no shared source",
         style: {
           maxWidth: '800px',
@@ -260,7 +375,7 @@ function _createMdxContent(props) {
         boxSizing: 'border-box'
       },
       children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(5467)/* ["default"] */ .A),
+        src: (__webpack_require__(23785)/* ["default"] */ .A),
         alt: "05 – Ants: Communication → Understanding → Trust → Collaboration → Success – the CAA chain",
         style: {
           maxWidth: '800px',
@@ -300,7 +415,7 @@ function _createMdxContent(props) {
         boxSizing: 'border-box'
       },
       children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(93425)/* ["default"] */ .A),
+        src: (__webpack_require__(53359)/* ["default"] */ .A),
         alt: "01 – Multiple wells in the desert: every department has its own source of truth",
         style: {
           maxWidth: '800px',
@@ -331,7 +446,7 @@ function _createMdxContent(props) {
         boxSizing: 'border-box'
       },
       children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(49193)/* ["default"] */ .A),
+        src: (__webpack_require__(39787)/* ["default"] */ .A),
         alt: "04 – SDLC iceberg: 10% visible product, 90% hidden lifecycle below the surface",
         style: {
           maxWidth: '800px',
@@ -358,7 +473,7 @@ function _createMdxContent(props) {
         boxSizing: 'border-box'
       },
       children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(81605)/* ["default"] */ .A),
+        src: (__webpack_require__(4299)/* ["default"] */ .A),
         alt: "02 – The Tower of Babel: consequence of different vocabularies and no shared foundation",
         style: {
           maxWidth: '800px',
@@ -377,7 +492,7 @@ function _createMdxContent(props) {
         boxSizing: 'border-box'
       },
       children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(49965)/* ["default"] */ .A),
+        src: (__webpack_require__(86371)/* ["default"] */ .A),
         alt: "03 – Solid building with deep foundations: TSSOT as the trusted, verified base",
         style: {
           maxWidth: '800px',
@@ -748,112 +863,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 5467:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/05-ants-53f7f76a034017ce513b12277406a1e7.png");
-
-/***/ }),
-
-/***/ 28453:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   R: () => (/* binding */ useMDXComponents),
-/* harmony export */   x: () => (/* binding */ MDXProvider)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
-/**
- * @import {MDXComponents} from 'mdx/types.js'
- * @import {Component, ReactElement, ReactNode} from 'react'
- */
-
-/**
- * @callback MergeComponents
- *   Custom merge function.
- * @param {Readonly<MDXComponents>} currentComponents
- *   Current components from the context.
- * @returns {MDXComponents}
- *   Additional components.
- *
- * @typedef Props
- *   Configuration for `MDXProvider`.
- * @property {ReactNode | null | undefined} [children]
- *   Children (optional).
- * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
- *   Additional components to use or a function that creates them (optional).
- * @property {boolean | null | undefined} [disableParentContext=false]
- *   Turn off outer component context (default: `false`).
- */
-
-
-
-/** @type {Readonly<MDXComponents>} */
-const emptyComponents = {}
-
-const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
-
-/**
- * Get current components from the MDX Context.
- *
- * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
- *   Additional components to use or a function that creates them (optional).
- * @returns {MDXComponents}
- *   Current components.
- */
-function useMDXComponents(components) {
-  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
-
-  // Memoize to avoid unnecessary top-level context changes
-  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    function () {
-      // Custom merge via a function prop
-      if (typeof components === 'function') {
-        return components(contextComponents)
-      }
-
-      return {...contextComponents, ...components}
-    },
-    [contextComponents, components]
-  )
-}
-
-/**
- * Provider for MDX context.
- *
- * @param {Readonly<Props>} properties
- *   Properties.
- * @returns {ReactElement}
- *   Element.
- * @satisfies {Component}
- */
-function MDXProvider(properties) {
-  /** @type {Readonly<MDXComponents>} */
-  let allComponents
-
-  if (properties.disableParentContext) {
-    allComponents =
-      typeof properties.components === 'function'
-        ? properties.components(emptyComponents)
-        : properties.components || emptyComponents
-  } else {
-    allComponents = useMDXComponents(properties.components)
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    MDXContext.Provider,
-    {value: allComponents},
-    properties.children
-  )
-}
-
-
-/***/ }),
-
-/***/ 49193:
+/***/ 39787:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -863,27 +873,17 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 49965:
+/***/ 46600:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/03-Solid-Building-b059ee469c8aa123391720f513a6fc1a.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/00-Islands-3dd1d3b961f5d91f5f3b0cdcd1399561.png");
 
 /***/ }),
 
-/***/ 81605:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/02-babylon-4b9a651f2ed87e7501c9c982d02e82d4.png");
-
-/***/ }),
-
-/***/ 93425:
+/***/ 53359:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -893,13 +893,13 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 99546:
+/***/ 86371:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/00-Islands-3dd1d3b961f5d91f5f3b0cdcd1399561.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/03-Solid-Building-b059ee469c8aa123391720f513a6fc1a.png");
 
 /***/ })
 

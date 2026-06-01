@@ -1,46 +1,29 @@
 <svg width="100%" viewBox="0 0 680 385" role="img" xmlns="http://www.w3.org/2000/svg">
 <title>MCT – calendar time vs. actual work needed</title>
-<desc>Three horizontal bars comparing: current state (1 week with only 5% actual work), work needed (just 2 hours), and QRM target (1 day). Shows the gap QRM closes.</desc>
-<style>
-.t { font: 400 14px "Anthropic Sans", sans-serif; fill: #3d3d3a; }
-.ts { font: 400 12px "Anthropic Sans", sans-serif; fill: #73726c; }
-.th { font: 500 14px "Anthropic Sans", sans-serif; fill: #3d3d3a; }
-.c-gray rect { fill: #F1EFE8; stroke: #5F5E5A; }
-.c-gray text { fill: #444441; }
-.c-teal rect { fill: #E1F5EE; stroke: #0F6E56; }
-.c-teal text { fill: #085041; }
-.c-amber rect { fill: #FAEEDA; stroke: #854F0B; }
-.c-amber text { fill: #633806; }
-</style>
+<desc>Three horizontal bars comparing current state (1 week), work needed (2 hours), and QRM target (1 day).</desc>
 <defs>
 <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
 <path d="M2 1L8 5L2 9" fill="none" stroke="#73726c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </marker>
 </defs>
 
-<text class="th" x="340" y="30" text-anchor="middle">MCT: calendar time vs. actual work</text>
+<text font-family="sans-serif" font-size="14" font-weight="500" fill="#3d3d3a" x="340" y="30" text-anchor="middle">MCT: calendar time vs. actual work</text>
 
-<text class="ts" x="120" y="76" text-anchor="end">Without</text>
-<text class="ts" x="120" y="90" text-anchor="end">QRM</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="120" y="76" text-anchor="end">Without</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="120" y="90" text-anchor="end">QRM</text>
 
-<g class="c-gray">
-<rect x="130" y="60" width="200" height="44" rx="4" stroke-width="0.5"/>
-<text class="ts" x="230" y="78" text-anchor="middle">In queue</text>
-<text class="ts" x="230" y="94" text-anchor="middle">Mon – Tue</text>
-</g>
+<rect x="130" y="60" width="200" height="44" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text font-family="sans-serif" font-size="12" fill="#444441" x="230" y="78" text-anchor="middle">In queue</text>
+<text font-family="sans-serif" font-size="12" fill="#444441" x="230" y="94" text-anchor="middle">Mon – Tue</text>
 
-<g class="c-teal">
-<rect x="330" y="56" width="24" height="52" rx="4" stroke-width="0.5"/>
-</g>
+<rect x="330" y="56" width="24" height="52" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
 
-<g class="c-amber">
-<rect x="354" y="60" width="276" height="44" rx="4" stroke-width="0.5"/>
-<text class="ts" x="492" y="78" text-anchor="middle">Awaiting approval</text>
-<text class="ts" x="492" y="94" text-anchor="middle">Wed – Fri</text>
-</g>
+<rect x="354" y="60" width="276" height="44" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text font-family="sans-serif" font-size="12" fill="#633806" x="492" y="78" text-anchor="middle">Awaiting approval</text>
+<text font-family="sans-serif" font-size="12" fill="#633806" x="492" y="94" text-anchor="middle">Wed – Fri</text>
 
 <path d="M330 114 L330 120 L354 120 L354 114" fill="none" stroke="#B4B2A9" stroke-width="1"/>
-<text class="ts" x="342" y="133" text-anchor="middle">~2h · 5%</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="342" y="133" text-anchor="middle">~2h · 5%</text>
 
 <line x1="130" y1="144" x2="130" y2="148" stroke="#B4B2A9" stroke-width="1"/>
 <line x1="230" y1="144" x2="230" y2="148" stroke="#B4B2A9" stroke-width="1"/>
@@ -48,50 +31,42 @@
 <line x1="430" y1="144" x2="430" y2="148" stroke="#B4B2A9" stroke-width="1"/>
 <line x1="530" y1="144" x2="530" y2="148" stroke="#B4B2A9" stroke-width="1"/>
 <line x1="630" y1="144" x2="630" y2="148" stroke="#B4B2A9" stroke-width="1"/>
-<text class="ts" x="130" y="160" text-anchor="middle">Mon</text>
-<text class="ts" x="230" y="160" text-anchor="middle">Tue</text>
-<text class="ts" x="330" y="160" text-anchor="middle">Wed</text>
-<text class="ts" x="430" y="160" text-anchor="middle">Thu</text>
-<text class="ts" x="530" y="160" text-anchor="middle">Fri</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="130" y="160" text-anchor="middle">Mon</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="230" y="160" text-anchor="middle">Tue</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="330" y="160" text-anchor="middle">Wed</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="430" y="160" text-anchor="middle">Thu</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="530" y="160" text-anchor="middle">Fri</text>
 
-<text class="ts" x="120" y="192" text-anchor="end">Work</text>
-<text class="ts" x="120" y="206" text-anchor="end">needed</text>
-<g class="c-teal">
-<rect x="130" y="178" width="24" height="44" rx="4" stroke-width="0.5"/>
-</g>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="120" y="192" text-anchor="end">Work</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="120" y="206" text-anchor="end">needed</text>
+<rect x="130" y="178" width="24" height="44" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
 <rect x="154" y="178" width="476" height="44" rx="4" fill="none" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="6 3"/>
-<text class="ts" x="392" y="200" text-anchor="middle">95% queue and waiting time</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="392" y="200" text-anchor="middle">95% queue and waiting time</text>
 
-<text class="ts" x="120" y="271" text-anchor="end">With</text>
-<text class="ts" x="120" y="285" text-anchor="end">QRM</text>
-<g class="c-gray">
-<rect x="130" y="258" width="18" height="44" rx="4" stroke-width="0.5"/>
-</g>
-<g class="c-teal">
-<rect x="148" y="258" width="24" height="44" rx="4" stroke-width="0.5"/>
-</g>
-<g class="c-amber">
-<rect x="172" y="258" width="56" height="44" rx="4" stroke-width="0.5"/>
-<text class="ts" x="200" y="276" text-anchor="middle">Fast sign-off</text>
-<text class="ts" x="200" y="290" text-anchor="middle"> </text>
-</g>
-<text class="ts" x="240" y="275" fill="#3d3d3a">~1 day</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="120" y="271" text-anchor="end">With</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="120" y="285" text-anchor="end">QRM</text>
+<rect x="130" y="258" width="18" height="44" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<rect x="148" y="258" width="24" height="44" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<rect x="172" y="258" width="56" height="44" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text font-family="sans-serif" font-size="12" fill="#633806" x="200" y="276" text-anchor="middle">Fast</text>
+<text font-family="sans-serif" font-size="12" fill="#633806" x="200" y="290" text-anchor="middle">sign-off</text>
+<text font-family="sans-serif" font-size="12" fill="#3d3d3a" x="240" y="275">~1 day</text>
 
 <line x1="240" y1="314" x2="628" y2="314" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="4 3"/>
-<text class="ts" x="434" y="310" text-anchor="middle">original 1-week boundary</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="434" y="310" text-anchor="middle">original 1-week boundary</text>
 <line x1="240" y1="308" x2="240" y2="320" stroke="#B4B2A9" stroke-width="1"/>
 <line x1="630" y1="308" x2="630" y2="320" stroke="#B4B2A9" stroke-width="1"/>
 
 <line x1="130" y1="337" x2="240" y2="337" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
-<text class="ts" x="185" y="352" text-anchor="middle">lead time</text>
-<text class="ts" x="185" y="364" text-anchor="middle">–80–90%</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="185" y="352" text-anchor="middle">lead time</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="185" y="364" text-anchor="middle">–80–90%</text>
 
 <rect x="310" y="330" width="10" height="10" rx="2" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text class="ts" x="326" y="340">Queue</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="326" y="340">Queue</text>
 <rect x="390" y="330" width="10" height="10" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text class="ts" x="406" y="340">Active work</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="406" y="340">Active work</text>
 <rect x="490" y="330" width="10" height="10" rx="2" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text class="ts" x="506" y="340">Approval</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="506" y="340">Approval</text>
 
-<text class="ts" x="340" y="375" text-anchor="middle">Touch time = 1–5% of total lead time · Rajan Suri, Quick Response Manufacturing</text>
+<text font-family="sans-serif" font-size="12" fill="#73726c" x="340" y="375" text-anchor="middle">Touch time = 1–5% of total lead time · Rajan Suri, Quick Response Manufacturing</text>
 </svg>

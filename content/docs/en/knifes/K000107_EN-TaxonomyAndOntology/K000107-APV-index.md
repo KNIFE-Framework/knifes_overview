@@ -3,7 +3,7 @@ fm_version: "1.0.1"
 fm_build: "2026-06-01T00:00:00.000000+00:00"
 fm_version_comment: ""
 
-id: "K000107-APV_EN"
+id: "K000107-APV-index"
 guid: ""
 
 dao: "knife"
@@ -38,7 +38,7 @@ origin_author: "Roman Kazicka"
 
 # APV – Assets, Perspectives, Views
 
-> Part of [K000107 – Taxonomy and Ontology in SDLC](./index)
+> Part of [K000107 – Taxonomy and Ontology in SDLC](./)
 
 ---
 
@@ -157,7 +157,7 @@ Start with the vocabulary that crosses the most boundaries in your organisation.
 
 ---
 
-> ← [Back to K000107 overview](./index) · [TBM – Technology Business Management →](./K000107-TBM-index)
+> ← [Back to K000107 overview](./) · [TBM – Technology Business Management →](./K000107-TBM-index)
 
 <!-- body:start -->
 <!-- nav:knifes -->

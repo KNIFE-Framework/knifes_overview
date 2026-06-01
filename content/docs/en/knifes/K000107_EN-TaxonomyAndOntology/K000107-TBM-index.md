@@ -3,7 +3,7 @@ fm_version: "1.0.1"
 fm_build: "2026-06-01T00:00:00.000000+00:00"
 fm_version_comment: ""
 
-id: "K000107-TBM_EN"
+id: "K000107-TBM-index"
 guid: ""
 
 dao: "knife"
@@ -38,7 +38,7 @@ origin_author: "Roman Kazicka"
 
 # TBM – Technology Business Management
 
-> Part of [K000107 – Taxonomy and Ontology in SDLC](./index)
+> Part of [K000107 – Taxonomy and Ontology in SDLC](./)
 
 ---
 
@@ -135,7 +135,7 @@ Taxonomy is a governance decision first. A process decision second. A technology
 
 ---
 
-> ← [APV – Assets, Perspectives, Views](./K000107-APV-index) · [Back to K000107 overview](./index)
+> ← [APV – Assets, Perspectives, Views](./K000107-APV-index) · [Back to K000107 overview](./)
 
 <!-- body:start -->
 <!-- nav:knifes -->

@@ -1,0 +1,11 @@
+"use strict";
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[25586],{
+
+/***/ 82344:
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"tag":{"label":"EnterpriseArchitecture","permalink":"/doc-tags/enterprise-architecture","allTagsPath":"/doc-tags","count":5,"items":[{"id":"en/knifes/K000103-CAA_IN_SDLC/K000103","title":"K000103 – Context Aware Approach in SDLC","description":"Context Aware Approach (CAA) applied to Solution Development Life Cycle — why context must be understood before any tool or technology decision is made.","permalink":"/en/knifes/K000103-CAA_IN_SDLC/"},{"id":"en/knifes/K000106-SSOTandTSSOT/K000106_EN","title":"K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?","description":"Single Source of Truth and Trusted Single Source of Truth — why consistent, verified data is the prerequisite for successful solutions, effective AI, and shared understanding across SDLC phases.","permalink":"/en/knifes/K000106-SSOTandTSSOT/"},{"id":"en/knifes/K000107_EN-TaxonomyAndOntology/K000107-APV-index","title":"K000107 – APV: Assets, Perspectives, Views","description":"APV emerged from production lines, not academic research. How a framework built on Technical Cybernetics, Six Sigma, and manufacturing quality principles solves the vocabulary gap in IT and SDLC.","permalink":"/en/knifes/K000107_EN-TaxonomyAndOntology/K000107-APV-index"},{"id":"en/knifes/K000107_EN-TaxonomyAndOntology/K000107_EN_01","title":"K000107 – Taxonomy and Ontology in SDLC","description":"Why every science that wants to call itself a science builds a conceptual vocabulary — and why computer science is still catching up. Practical frameworks: APV, SFIA, TBM, and their application across SDLC.","permalink":"/en/knifes/K000107_EN-TaxonomyAndOntology/"},{"id":"en/knifes/K000107_EN-TaxonomyAndOntology/K000107-TBM-index","title":"K000107 – TBM: Technology Business Management","description":"TBM Taxonomy connects technology spending to business value. How TBM Council formalised the vocabulary of IT costs — and how platforms like Yärken implement it at scale.","permalink":"/en/knifes/K000107_EN-TaxonomyAndOntology/K000107-TBM-index"}],"unlisted":false}}');
+
+/***/ })
+
+}]);

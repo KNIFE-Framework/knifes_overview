@@ -179,6 +179,10 @@ const toc = [{
   "id": "-what-it-solves",
   "level": 2
 }, {
+  "value": "Customer vs IT-Service Provider – without communication there is no understanding, without understanding there is no trust",
+  "id": "customer-vs-it-service-provider--without-communication-there-is-no-understanding-without-understanding-there-is-no-trust",
+  "level": 3
+}, {
   "value": "🧩 Frameworks covered in this article",
   "id": "-frameworks-covered-in-this-article",
   "level": 2
@@ -246,6 +250,9 @@ function _createMdxContent(props) {
       }), (0,jsx_runtime.jsx)(_components.p, {
         children: "This is not a technology problem. It is a vocabulary problem."
       })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "customer-vs-it-service-provider--without-communication-there-is-no-understanding-without-understanding-there-is-no-trust",
+      children: "Customer vs IT-Service Provider – without communication there is no understanding, without understanding there is no trust"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',

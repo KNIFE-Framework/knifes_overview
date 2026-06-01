@@ -236,6 +236,14 @@ const toc = [{
   "id": "tbm-taxonomy-50",
   "level": 2
 }, {
+  "value": "TBM Taxonomy 5.0 Summary View – Technology Consumers, Solutions, Resource Towers, Cost Pools",
+  "id": "tbm-taxonomy-50-summary-view--technology-consumers-solutions-resource-towers-cost-pools",
+  "level": 3
+}, {
+  "value": "TBM Conceptual Model – how the taxonomy layers connect",
+  "id": "tbm-conceptual-model--how-the-taxonomy-layers-connect",
+  "level": 3
+}, {
   "value": "Technology Resource Towers",
   "id": "technology-resource-towers",
   "level": 2
@@ -252,9 +260,21 @@ const toc = [{
   "id": "technology-consumers",
   "level": 2
 }, {
+  "value": "TBM Technology Consumers – Business Functions, Value Streams, Partners, External",
+  "id": "tbm-technology-consumers--business-functions-value-streams-partners-external",
+  "level": 3
+}, {
   "value": "Yärken – TBM in practice",
   "id": "yärken--tbm-in-practice",
   "level": 2
+}, {
+  "value": "Yärken – Sankey diagram of IT cost flows",
+  "id": "yärken--sankey-diagram-of-it-cost-flows",
+  "level": 3
+}, {
+  "value": "Yärken – Dashboard detail view",
+  "id": "yärken--dashboard-detail-view",
+  "level": 3
 }, {
   "value": "TBM in practice",
   "id": "tbm-in-practice",
@@ -267,6 +287,7 @@ function _createMdxContent(props) {
     blockquote: "blockquote",
     h1: "h1",
     h2: "h2",
+    h3: "h3",
     header: "header",
     hr: "hr",
     p: "p",
@@ -301,6 +322,9 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "tbm-taxonomy-50",
       children: "TBM Taxonomy 5.0"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "tbm-taxonomy-50-summary-view--technology-consumers-solutions-resource-towers-cost-pools",
+      children: "TBM Taxonomy 5.0 Summary View – Technology Consumers, Solutions, Resource Towers, Cost Pools"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -318,6 +342,9 @@ function _createMdxContent(props) {
           width: '100%'
         }
       })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "tbm-conceptual-model--how-the-taxonomy-layers-connect",
+      children: "TBM Conceptual Model – how the taxonomy layers connect"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -395,6 +422,8 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "solutions",
       children: "Solutions"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "###TBM Solutions – Type and Category View"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -412,6 +441,8 @@ function _createMdxContent(props) {
           width: '100%'
         }
       })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "###TBM Solutions Hierarchy – practical example"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -432,6 +463,9 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "technology-consumers",
       children: "Technology Consumers"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "tbm-technology-consumers--business-functions-value-streams-partners-external",
+      children: "TBM Technology Consumers – Business Functions, Value Streams, Partners, External"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -456,6 +490,9 @@ function _createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Yärken"
       }), " is a FinOps and TBM platform that implements TBM Taxonomy as a working product — helping enterprises manage cloud, SaaS, and IT costs with AI-driven insights. It is a concrete example of taxonomy enabling business value at scale."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "yärken--sankey-diagram-of-it-cost-flows",
+      children: "Yärken – Sankey diagram of IT cost flows"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -473,6 +510,8 @@ function _createMdxContent(props) {
           width: '100%'
         }
       })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "###Yärken – Dashboard: FinOps and TBM cost visibility overview"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -490,6 +529,9 @@ function _createMdxContent(props) {
           width: '100%'
         }
       })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "yärken--dashboard-detail-view",
+      children: "Yärken – Dashboard detail view"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',

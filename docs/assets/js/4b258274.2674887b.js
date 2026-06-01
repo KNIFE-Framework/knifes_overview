@@ -1,102 +1,7 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[79445],{
 
-/***/ 28453:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   R: () => (/* binding */ useMDXComponents),
-/* harmony export */   x: () => (/* binding */ MDXProvider)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
-/**
- * @import {MDXComponents} from 'mdx/types.js'
- * @import {Component, ReactElement, ReactNode} from 'react'
- */
-
-/**
- * @callback MergeComponents
- *   Custom merge function.
- * @param {Readonly<MDXComponents>} currentComponents
- *   Current components from the context.
- * @returns {MDXComponents}
- *   Additional components.
- *
- * @typedef Props
- *   Configuration for `MDXProvider`.
- * @property {ReactNode | null | undefined} [children]
- *   Children (optional).
- * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
- *   Additional components to use or a function that creates them (optional).
- * @property {boolean | null | undefined} [disableParentContext=false]
- *   Turn off outer component context (default: `false`).
- */
-
-
-
-/** @type {Readonly<MDXComponents>} */
-const emptyComponents = {}
-
-const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
-
-/**
- * Get current components from the MDX Context.
- *
- * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
- *   Additional components to use or a function that creates them (optional).
- * @returns {MDXComponents}
- *   Current components.
- */
-function useMDXComponents(components) {
-  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
-
-  // Memoize to avoid unnecessary top-level context changes
-  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
-    function () {
-      // Custom merge via a function prop
-      if (typeof components === 'function') {
-        return components(contextComponents)
-      }
-
-      return {...contextComponents, ...components}
-    },
-    [contextComponents, components]
-  )
-}
-
-/**
- * Provider for MDX context.
- *
- * @param {Readonly<Props>} properties
- *   Properties.
- * @returns {ReactElement}
- *   Element.
- * @satisfies {Component}
- */
-function MDXProvider(properties) {
-  /** @type {Readonly<MDXComponents>} */
-  let allComponents
-
-  if (properties.disableParentContext) {
-    allComponents =
-      typeof properties.components === 'function'
-        ? properties.components(emptyComponents)
-        : properties.components || emptyComponents
-  } else {
-    allComponents = useMDXComponents(properties.components)
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-    MDXContext.Provider,
-    {value: allComponents},
-    properties.children
-  )
-}
-
-
-/***/ }),
-
-/***/ 36798:
+/***/ 25094:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -113,358 +18,11 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000108-qrm-index-md-4b2.json
-const site_docs_en_knifes_k_000108_qrm_index_md_4b2_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000108-QRM/K000108_EN","title":"K000108 – Quick Response Manufacturing (QRM)","description":"QRM is a company-wide strategy for reducing lead times — invented by Rajan Suri in the 1990s. Originally designed for manufacturing, QRM explicitly extends to office and knowledge work processes, making it directly relevant to SDLC and IT delivery.","source":"@site/docs/en/knifes/K000108-QRM/index.md","sourceDirName":"en/knifes/K000108-QRM","slug":"/en/knifes/K000108-QRM/","permalink":"/en/knifes/K000108-QRM/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"QRM","permalink":"/doc-tags/qrm"},{"inline":true,"label":"LeadTime","permalink":"/doc-tags/lead-time"},{"inline":true,"label":"Manufacturing","permalink":"/doc-tags/manufacturing"},{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"KnowledgeWork","permalink":"/doc-tags/knowledge-work"},{"inline":true,"label":"Lean","permalink":"/doc-tags/lean"},{"inline":true,"label":"SixSigma","permalink":"/doc-tags/six-sigma"},{"inline":true,"label":"MCT","permalink":"/doc-tags/mct"},{"inline":true,"label":"QROC","permalink":"/doc-tags/qroc"},{"inline":true,"label":"CAA","permalink":"/doc-tags/caa"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-06-01T00:00:00.000000+00:00","fm_version_comment":"","id":"K000108_EN","guid":"","dao":"knife","title":"K000108 – Quick Response Manufacturing (QRM)","description":"QRM is a company-wide strategy for reducing lead times — invented by Rajan Suri in the 1990s. Originally designed for manufacturing, QRM explicitly extends to office and knowledge work processes, making it directly relevant to SDLC and IT delivery.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":["QRM","LeadTime","Manufacturing","SDLC","KnowledgeWork","Lean","SixSigma","MCT","QROC","CAA"],"locale":"en","created":"2026-06-01 00:00","modified":"2026-06-01 00:00","status":"draft","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2026 Roman Kazicka","origin_system":"CAA","origin_author":"Roman Kazicka"},"sidebar":"tutorialSidebar","previous":{"title":"K000107 – TBM: Technology Business Management","permalink":"/en/knifes/K000107_EN-TaxonomyAndOntology/K000107-TBM-index"},"next":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"}}');
+const site_docs_en_knifes_k_000108_qrm_index_md_4b2_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000108-QRM/K000108_EN","title":"K000108 – Quick Response Manufacturing (QRM)","description":"QRM is a company-wide strategy for reducing lead times — invented by Rajan Suri in the 1990s. Originally designed for manufacturing, QRM explicitly extends to office and knowledge work processes, making it directly relevant to SDLC and IT delivery.","source":"@site/docs/en/knifes/K000108-QRM/index.md","sourceDirName":"en/knifes/K000108-QRM","slug":"/en/knifes/K000108-QRM/","permalink":"/en/knifes/K000108-QRM/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"QRM","permalink":"/doc-tags/qrm"},{"inline":true,"label":"LeadTime","permalink":"/doc-tags/lead-time"},{"inline":true,"label":"Manufacturing","permalink":"/doc-tags/manufacturing"},{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"KnowledgeWork","permalink":"/doc-tags/knowledge-work"},{"inline":true,"label":"Lean","permalink":"/doc-tags/lean"},{"inline":true,"label":"SixSigma","permalink":"/doc-tags/six-sigma"},{"inline":true,"label":"MCT","permalink":"/doc-tags/mct"},{"inline":true,"label":"QROC","permalink":"/doc-tags/qroc"},{"inline":true,"label":"CAA","permalink":"/doc-tags/caa"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-06-01T00:00:00.000000+00:00","fm_version_comment":"","id":"K000108_EN","guid":"","dao":"knife","title":"K000108 – Quick Response Manufacturing (QRM)","description":"QRM is a company-wide strategy for reducing lead times — invented by Rajan Suri in the 1990s. Originally designed for manufacturing, QRM explicitly extends to office and knowledge work processes, making it directly relevant to SDLC and IT delivery.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"","priority":"","tags":["QRM","LeadTime","Manufacturing","SDLC","KnowledgeWork","Lean","SixSigma","MCT","QROC","CAA"],"locale":"en","created":"2026-06-01 00:00","modified":"2026-06-01 00:00","status":"published","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2026 Roman Kazicka","origin_system":"CAA","origin_author":"Roman Kazicka"},"sidebar":"tutorialSidebar","previous":{"title":"K000107 – TBM: Technology Business Management","permalink":"/en/knifes/K000107_EN-TaxonomyAndOntology/K000107-TBM-index"},"next":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(96540);
-;// ./docs/en/knifes/K000108-QRM/img/00-mct-timeline.svg
-var _desc, _defs, _text, _text2, _text3, _rect, _text4, _text5, _rect2, _rect3, _text6, _text7, _path, _text8, _path2, _text9, _text0, _text1, _text10, _text11, _text12, _text13, _rect4, _rect5, _text14, _text15, _text16, _rect6, _rect7, _rect8, _text17, _text18, _text19, _path3, _text20, _path4, _path5, _text21, _text22, _rect9, _text23, _rect0, _text24, _rect1, _text25, _text26;
-function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-
-const Svg00MctTimeline = ({
-  title,
-  titleId,
-  ...props
-}) => /*#__PURE__*/react.createElement("svg", _extends({
-  xmlns: "http://www.w3.org/2000/svg",
-  viewBox: "0 0 680 385",
-  "aria-labelledby": titleId
-}, props), title === undefined ? /*#__PURE__*/react.createElement("title", {
-  id: titleId
-}, "MCT \u2013 calendar time vs. actual work needed") : title ? /*#__PURE__*/react.createElement("title", {
-  id: titleId
-}, title) : null, _desc || (_desc = /*#__PURE__*/react.createElement("desc", null, "Three horizontal bars comparing current state (1 week), work needed (2 hours), and QRM target (1 day).")), _defs || (_defs = /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("marker", {
-  id: "a",
-  markerHeight: 6,
-  markerWidth: 6,
-  orient: "auto-start-reverse",
-  refX: 8,
-  refY: 5,
-  viewBox: "0 0 10 10"
-}, /*#__PURE__*/react.createElement("path", {
-  fill: "none",
-  stroke: "#73726c",
-  strokeLinecap: "round",
-  strokeLinejoin: "round",
-  strokeWidth: 1.5,
-  d: "m2 1 6 4-6 4"
-})))), _text || (_text = /*#__PURE__*/react.createElement("text", {
-  x: 340,
-  y: 30,
-  fill: "#3d3d3a",
-  fontFamily: "sans-serif",
-  fontSize: 14,
-  fontWeight: 500,
-  textAnchor: "middle"
-}, "MCT: calendar time vs. actual work")), _text2 || (_text2 = /*#__PURE__*/react.createElement("text", {
-  x: 120,
-  y: 76,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "end"
-}, "Without")), _text3 || (_text3 = /*#__PURE__*/react.createElement("text", {
-  x: 120,
-  y: 90,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "end"
-}, "QRM")), _rect || (_rect = /*#__PURE__*/react.createElement("rect", {
-  width: 200,
-  height: 44,
-  x: 130,
-  y: 60,
-  fill: "#F1EFE8",
-  stroke: "#5F5E5A",
-  strokeWidth: 0.5,
-  rx: 4
-})), _text4 || (_text4 = /*#__PURE__*/react.createElement("text", {
-  x: 230,
-  y: 78,
-  fill: "#444441",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "In queue")), _text5 || (_text5 = /*#__PURE__*/react.createElement("text", {
-  x: 230,
-  y: 94,
-  fill: "#444441",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Mon \u2013 Tue")), _rect2 || (_rect2 = /*#__PURE__*/react.createElement("rect", {
-  width: 24,
-  height: 52,
-  x: 330,
-  y: 56,
-  fill: "#E1F5EE",
-  stroke: "#0F6E56",
-  strokeWidth: 0.5,
-  rx: 4
-})), _rect3 || (_rect3 = /*#__PURE__*/react.createElement("rect", {
-  width: 276,
-  height: 44,
-  x: 354,
-  y: 60,
-  fill: "#FAEEDA",
-  stroke: "#854F0B",
-  strokeWidth: 0.5,
-  rx: 4
-})), _text6 || (_text6 = /*#__PURE__*/react.createElement("text", {
-  x: 492,
-  y: 78,
-  fill: "#633806",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Awaiting approval")), _text7 || (_text7 = /*#__PURE__*/react.createElement("text", {
-  x: 492,
-  y: 94,
-  fill: "#633806",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Wed \u2013 Fri")), _path || (_path = /*#__PURE__*/react.createElement("path", {
-  fill: "none",
-  stroke: "#B4B2A9",
-  d: "M330 114v6h24v-6"
-})), _text8 || (_text8 = /*#__PURE__*/react.createElement("text", {
-  x: 342,
-  y: 133,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "~2h \xB7 5%")), _path2 || (_path2 = /*#__PURE__*/react.createElement("path", {
-  stroke: "#B4B2A9",
-  d: "M130 144v4M230 144v4M330 144v4M430 144v4M530 144v4M630 144v4"
-})), _text9 || (_text9 = /*#__PURE__*/react.createElement("text", {
-  x: 130,
-  y: 160,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Mon")), _text0 || (_text0 = /*#__PURE__*/react.createElement("text", {
-  x: 230,
-  y: 160,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Tue")), _text1 || (_text1 = /*#__PURE__*/react.createElement("text", {
-  x: 330,
-  y: 160,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Wed")), _text10 || (_text10 = /*#__PURE__*/react.createElement("text", {
-  x: 430,
-  y: 160,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Thu")), _text11 || (_text11 = /*#__PURE__*/react.createElement("text", {
-  x: 530,
-  y: 160,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Fri")), _text12 || (_text12 = /*#__PURE__*/react.createElement("text", {
-  x: 120,
-  y: 192,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "end"
-}, "Work")), _text13 || (_text13 = /*#__PURE__*/react.createElement("text", {
-  x: 120,
-  y: 206,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "end"
-}, "needed")), _rect4 || (_rect4 = /*#__PURE__*/react.createElement("rect", {
-  width: 24,
-  height: 44,
-  x: 130,
-  y: 178,
-  fill: "#E1F5EE",
-  stroke: "#0F6E56",
-  strokeWidth: 0.5,
-  rx: 4
-})), _rect5 || (_rect5 = /*#__PURE__*/react.createElement("rect", {
-  width: 476,
-  height: 44,
-  x: 154,
-  y: 178,
-  fill: "none",
-  stroke: "#B4B2A9",
-  strokeDasharray: "6 3",
-  rx: 4
-})), _text14 || (_text14 = /*#__PURE__*/react.createElement("text", {
-  x: 392,
-  y: 200,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "95% queue and waiting time")), _text15 || (_text15 = /*#__PURE__*/react.createElement("text", {
-  x: 120,
-  y: 271,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "end"
-}, "With")), _text16 || (_text16 = /*#__PURE__*/react.createElement("text", {
-  x: 120,
-  y: 285,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "end"
-}, "QRM")), _rect6 || (_rect6 = /*#__PURE__*/react.createElement("rect", {
-  width: 18,
-  height: 44,
-  x: 130,
-  y: 258,
-  fill: "#F1EFE8",
-  stroke: "#5F5E5A",
-  strokeWidth: 0.5,
-  rx: 4
-})), _rect7 || (_rect7 = /*#__PURE__*/react.createElement("rect", {
-  width: 24,
-  height: 44,
-  x: 148,
-  y: 258,
-  fill: "#E1F5EE",
-  stroke: "#0F6E56",
-  strokeWidth: 0.5,
-  rx: 4
-})), _rect8 || (_rect8 = /*#__PURE__*/react.createElement("rect", {
-  width: 56,
-  height: 44,
-  x: 172,
-  y: 258,
-  fill: "#FAEEDA",
-  stroke: "#854F0B",
-  strokeWidth: 0.5,
-  rx: 4
-})), _text17 || (_text17 = /*#__PURE__*/react.createElement("text", {
-  x: 200,
-  y: 276,
-  fill: "#633806",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Fast")), _text18 || (_text18 = /*#__PURE__*/react.createElement("text", {
-  x: 200,
-  y: 290,
-  fill: "#633806",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "sign-off")), _text19 || (_text19 = /*#__PURE__*/react.createElement("text", {
-  x: 240,
-  y: 275,
-  fill: "#3d3d3a",
-  fontFamily: "sans-serif",
-  fontSize: 12
-}, "~1 day")), _path3 || (_path3 = /*#__PURE__*/react.createElement("path", {
-  stroke: "#B4B2A9",
-  strokeDasharray: "4 3",
-  d: "M240 314h388"
-})), _text20 || (_text20 = /*#__PURE__*/react.createElement("text", {
-  x: 434,
-  y: 310,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "original 1-week boundary")), _path4 || (_path4 = /*#__PURE__*/react.createElement("path", {
-  stroke: "#B4B2A9",
-  d: "M240 308v12M630 308v12"
-})), _path5 || (_path5 = /*#__PURE__*/react.createElement("path", {
-  stroke: "#73726c",
-  strokeWidth: 1.5,
-  markerEnd: "url(#a)",
-  markerStart: "url(#a)",
-  d: "M130 337h110"
-})), _text21 || (_text21 = /*#__PURE__*/react.createElement("text", {
-  x: 185,
-  y: 352,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "lead time")), _text22 || (_text22 = /*#__PURE__*/react.createElement("text", {
-  x: 185,
-  y: 364,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "\u201380\u201390%")), _rect9 || (_rect9 = /*#__PURE__*/react.createElement("rect", {
-  width: 10,
-  height: 10,
-  x: 310,
-  y: 330,
-  fill: "#F1EFE8",
-  stroke: "#5F5E5A",
-  strokeWidth: 0.5,
-  rx: 2
-})), _text23 || (_text23 = /*#__PURE__*/react.createElement("text", {
-  x: 326,
-  y: 340,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12
-}, "Queue")), _rect0 || (_rect0 = /*#__PURE__*/react.createElement("rect", {
-  width: 10,
-  height: 10,
-  x: 390,
-  y: 330,
-  fill: "#E1F5EE",
-  stroke: "#0F6E56",
-  strokeWidth: 0.5,
-  rx: 2
-})), _text24 || (_text24 = /*#__PURE__*/react.createElement("text", {
-  x: 406,
-  y: 340,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12
-}, "Active work")), _rect1 || (_rect1 = /*#__PURE__*/react.createElement("rect", {
-  width: 10,
-  height: 10,
-  x: 490,
-  y: 330,
-  fill: "#FAEEDA",
-  stroke: "#854F0B",
-  strokeWidth: 0.5,
-  rx: 2
-})), _text25 || (_text25 = /*#__PURE__*/react.createElement("text", {
-  x: 506,
-  y: 340,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12
-}, "Approval")), _text26 || (_text26 = /*#__PURE__*/react.createElement("text", {
-  x: 340,
-  y: 375,
-  fill: "#73726c",
-  fontFamily: "sans-serif",
-  fontSize: 12,
-  textAnchor: "middle"
-}, "Touch time = 1\u20135% of total lead time \xB7 Rajan Suri, Quick Response Manufacturing")));
-/* harmony default export */ const _00_mct_timeline = (Svg00MctTimeline);
 ;// ./docs/en/knifes/K000108-QRM/index.md
 
 
@@ -499,7 +57,7 @@ const frontMatter = {
 	locale: 'en',
 	created: '2026-06-01 00:00',
 	modified: '2026-06-01 00:00',
-	status: 'draft',
+	status: 'published',
 	privacy: 'public',
 	rights_holder_content: 'Roman Kazicka',
 	rights_holder_system: 'CAA / KNIFE / LetItGrow',
@@ -514,7 +72,6 @@ const contentTitle = 'KNIFE – Quick Response Manufacturing (QRM)';
 const assets = {
 
 };
-
 
 
 
@@ -533,6 +90,10 @@ const toc = [{
 }, {
   "value": "Core principle: one metric to rule them all",
   "id": "core-principle-one-metric-to-rule-them-all",
+  "level": 3
+}, {
+  "value": "MCT diagram – calendar time (1 week) vs actual work needed (2 hours) and QRM target (1 day)",
+  "id": "mct-diagram--calendar-time-1-week-vs-actual-work-needed-2-hours-and-qrm-target-1-day",
   "level": 3
 }, {
   "value": "Four core QRM concepts",
@@ -674,6 +235,9 @@ function _createMdxContent(props) {
       children: (0,jsx_runtime.jsx)(_components.p, {
         children: "On average, actual touch time represents only 1–5% of total MCT.\nThe remaining 95–99% is waiting, queuing, handoffs, and rework.\nThis applies equally to software development phases, document reviews, and approval chains."
       })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "mct-diagram--calendar-time-1-week-vs-actual-work-needed-2-hours-and-qrm-target-1-day",
+      children: "MCT diagram – calendar time (1 week) vs actual work needed (2 hours) and QRM target (1 day)"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -683,7 +247,9 @@ function _createMdxContent(props) {
         width: '100%',
         boxSizing: 'border-box'
       },
-      children: (0,jsx_runtime.jsx)(_00_mct_timeline, {
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(99865)/* ["default"] */ .A),
+        alt: "MCT diagram – calendar time (1 week) vs actual work needed (2 hours) and QRM target (1 day)",
         style: {
           maxWidth: '800px',
           width: '100%'
@@ -1001,6 +567,111 @@ function MDXContent(props = {}) {
 }
 
 
+
+/***/ }),
+
+/***/ 28453:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @import {MDXComponents} from 'mdx/types.js'
+ * @import {Component, ReactElement, ReactNode} from 'react'
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {ReactElement}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ }),
+
+/***/ 99865:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/00-mct-timeline-26da92725f11b56166676594edb88036.png");
 
 /***/ })
 

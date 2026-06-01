@@ -86,6 +86,10 @@ const toc = [{
   "id": "-what-problem-does-sfia-solve",
   "level": 2
 }, {
+  "value": "SFIA 9 – framework overview",
+  "id": "sfia-9--framework-overview",
+  "level": 3
+}, {
   "value": "📜 A brief history",
   "id": "-a-brief-history",
   "level": 2
@@ -97,6 +101,10 @@ const toc = [{
   "value": "🧩 How SFIA is structured",
   "id": "-how-sfia-is-structured",
   "level": 2
+}, {
+  "value": "SFIA 9 – all skills A-Z with categories",
+  "id": "sfia-9--all-skills-a-z-with-categories",
+  "level": 3
 }, {
   "value": "🧪 Practical use cases in SDLC",
   "id": "-practical-use-cases-in-sdlc",
@@ -110,6 +118,10 @@ const toc = [{
   "id": "2-skill-gap-analysis",
   "level": 3
 }, {
+  "value": "SFIA 9 – skills profiles for role families and job titles",
+  "id": "sfia-9--skills-profiles-for-role-families-and-job-titles",
+  "level": 3
+}, {
   "value": "3. Cross-team communication",
   "id": "3-cross-team-communication",
   "level": 3
@@ -121,6 +133,10 @@ const toc = [{
   "value": "⚡ Quick start",
   "id": "-quick-start",
   "level": 2
+}, {
+  "value": "SFIA 9 – summary chart with roles across skill categories and levels",
+  "id": "sfia-9--summary-chart-with-roles-across-skill-categories-and-levels",
+  "level": 3
 }, {
   "value": "Resources",
   "id": "resources",
@@ -173,6 +189,9 @@ function _createMdxContent(props) {
       children: "The result: projects underestimate capability gaps, overpay for mismatched skills, and fail quietly at the boundaries between roles."
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "SFIA is the framework that addresses this. It provides a shared vocabulary for describing and measuring what people in IT actually do — and at what level."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sfia-9--framework-overview",
+      children: "SFIA 9 – framework overview"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -301,6 +320,9 @@ function _createMdxContent(props) {
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sfia-9--all-skills-a-z-with-categories",
+      children: "SFIA 9 – all skills A-Z with categories"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -419,6 +441,9 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Evaluating whether internal staff can take over from a vendor"
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sfia-9--skills-profiles-for-role-families-and-job-titles",
+      children: "SFIA 9 – skills profiles for role families and job titles"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',
@@ -451,6 +476,9 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-quick-start",
       children: "⚡ Quick start"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "sfia-9--summary-chart-with-roles-across-skill-categories-and-levels",
+      children: "SFIA 9 – summary chart with roles across skill categories and levels"
     }), "\n", (0,jsx_runtime.jsx)("div", {
       style: {
         backgroundColor: '#ffffff',

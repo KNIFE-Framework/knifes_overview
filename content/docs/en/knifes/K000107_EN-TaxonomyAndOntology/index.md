@@ -154,13 +154,13 @@ KERNARO shows you how AI can navigate that vocabulary in practice — see [K0001
 
 ### Sources
 
-[1] https://www.britannica.com/biography/Carolus-Linnaeus
-[2] https://www.visionlearning.com/en/library/Biology/2/Taxonomy-I/70/
-[3] https://sfia-online.org
-[4] https://www.tbmcouncil.org
-[5] https://quality-one.com/8d/
-[6] https://rajansuri.com
-[7] https://www.yarken.com/home
+1. https://www.britannica.com/biography/Carolus-Linnaeus
+2. https://www.visionlearning.com/en/library/Biology/2/Taxonomy-I/70/
+3. https://sfia-online.org
+4. https://www.tbmcouncil.org
+5. https://quality-one.com/8d/
+6. https://rajansuri.com
+7. https://www.yarken.com/home
 
 ---
 

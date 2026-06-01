@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG_EN"
 
 # Unikátne UUID – generuje skript
-guid: "b7c19242-9714-4510-b6c4-a051dcf7041c"
+guid: "4ce6e3ee-2dd0-4ae1-a3f0-e328210d0fbd"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "en"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-05-26"
+created: "2026-06-01"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `b7c19242-9714-4510-b6c4-a051dcf7041c`
+> **GUID:** `4ce6e3ee-2dd0-4ae1-a3f0-e328210d0fbd`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -146,3 +146,5 @@ fm_reserved2: ""
 - **K000103** — 2026-04-29 08:56 — [K000103 – Context Aware Approach in SDLC](../K000103-CAA_IN_SDLC/)
 - **K000104** — 2026-04-29 11:59 — [K000104 – SPARX-AI KERNARO in context of SDLC support](../K000104-SPARX_AI_KERNARO_IN_SDLC/)
 - **K000106_EN** — 2026-05-25 09:00 — [K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?](../K000106-SSOTandTSSOT/)
+- **K000107_EN** — 2026-06-01 00:00 — [K000107 – Taxonomy and Ontology in SDLC](../K000107-TaxonomyAndOntologyInSDLC/)
+- **K000107_EN** — 2026-06-01 12:34 — [K000107_EN – Taxonomy and Onthology in SDLC](../K000107_EN-TaxonomyAndOntology/)

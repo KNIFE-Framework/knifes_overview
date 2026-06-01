@@ -36,6 +36,8 @@ origin_system: "CAA"
 origin_author: "Roman Kazicka"
 ---
 
+import MCTDiagram from './img/00-mct-timeline.svg';
+
 # KNIFE – Quick Response Manufacturing (QRM)
 
 ## Is your SDLC suffering from the same problem that nearly killed high-mix manufacturing?
@@ -71,6 +73,10 @@ On average, actual touch time represents only 1–5% of total MCT.
 The remaining 95–99% is waiting, queuing, handoffs, and rework.
 This applies equally to software development phases, document reviews, and approval chains.
 :::
+
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <MCTDiagram style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 ### Four core QRM concepts
 

@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST_EN"
 
 # Unikátne UUID – generuje skript
-guid: "b3fc4fd0-a4ae-4a87-80fb-f062ce76d065"
+guid: "b28bbb93-fc5d-4882-9168-2ab12e2183c0"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `b3fc4fd0-a4ae-4a87-80fb-f062ce76d065`
+> **GUID:** `b28bbb93-fc5d-4882-9168-2ab12e2183c0`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -143,7 +143,7 @@ fm_reserved2: ""
 
 
 - **K000108_EN** · [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/) · _draft_ · -
-- **K000107_EN_01** · [K000107 – Taxonomy and Ontology in SDLC](../K000107_EN-TaxonomyAndOntology/) · _draft_ · -
+- **K000107_EN_01** · [K000107 – Taxonomy and Ontology in SDLC](../K000107_EN-TaxonomyAndOntology/) · _published_ · -
 - **K000106_EN** · [K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?](../K000106-SSOTandTSSOT/) · _published_ · -
 - **K000104** · [K000104 – SPARX-AI KERNARO in context of SDLC support](../K000104-SPARX_AI_KERNARO_IN_SDLC/) · _published_ · -
 - **K000103** · [K000103 – Context Aware Approach in SDLC](../K000103-CAA_IN_SDLC/) · _published_ · -

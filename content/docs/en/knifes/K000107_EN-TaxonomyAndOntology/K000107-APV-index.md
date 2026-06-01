@@ -23,7 +23,7 @@ locale: "en"
 
 created: "2026-06-01 00:00"
 modified: "2026-06-01 00:00"
-status: "draft"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"

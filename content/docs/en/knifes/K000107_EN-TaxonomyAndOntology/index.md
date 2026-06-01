@@ -145,10 +145,13 @@ Taxonomy is the infrastructure of Communication.
 
 ---
 
-### Bridge to next topic
+### Bridge to next topics
 
 A taxonomy tells you what the words mean.
 KERNARO shows you how AI can navigate that vocabulary in practice — see [K000104](../K000104-SPARX_AI_KERNARO_IN_SDLC/).
+
+Without a shared vocabulary, you cannot measure lead time.
+QRM shows you how to use that measurement to drive delivery speed — see [K000108 – Quick Response Manufacturing](../K000108-QRM/).
 
 ---
 

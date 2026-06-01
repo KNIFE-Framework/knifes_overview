@@ -113,7 +113,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-knifes-overview-knife-overview-blog-md-132.json
-const site_docs_en_knifes_knifes_overview_knife_overview_blog_md_132_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","source":"@site/docs/en/knifes/knifes_overview/KNIFE_Overview_Blog.md","sourceDirName":"en/knifes/knifes_overview","slug":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_BLOG_EN","guid":"8c747a1d-6ed9-4555-9805-7a52e81bed51","dao":"{{DAO}}","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"en","created":"2026-06-01","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"},"next":{"title":"📊 KNIFE Overview – Details","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN"}}');
+const site_docs_en_knifes_knifes_overview_knife_overview_blog_md_132_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","source":"@site/docs/en/knifes/knifes_overview/KNIFE_Overview_Blog.md","sourceDirName":"en/knifes/knifes_overview","slug":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_BLOG_EN","guid":"e450711c-a99f-4b56-8eb5-2d76def4dd96","dao":"{{DAO}}","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"en","created":"2026-06-01","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"},"next":{"title":"📊 KNIFE Overview – Details","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -126,7 +126,7 @@ const frontMatter = {
 	fm_build: '{{FM_BUILD}}',
 	fm_version_comment: '',
 	id: 'KNIFE_OVERVIEW_BLOG_EN',
-	guid: '8c747a1d-6ed9-4555-9805-7a52e81bed51',
+	guid: 'e450711c-a99f-4b56-8eb5-2d76def4dd96',
 	dao: '{{DAO}}',
 	title: '📰 KNIFE Overview – Blog',
 	description: '{{DESCRIPTION}}',
@@ -193,7 +193,7 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "GUID:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "8c747a1d-6ed9-4555-9805-7a52e81bed51"
+          children: "e450711c-a99f-4b56-8eb5-2d76def4dd96"
         }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Status:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {

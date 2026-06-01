@@ -121,7 +121,7 @@ var lib = __webpack_require__(28453);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(96540);
 ;// ./docs/en/knifes/K000108-QRM/img/00-mct-timeline.svg
-var _desc, _style, _defs, _text, _text2, _g, _rect, _g2, _path, _text3, _path2, _text4, _text5, _text6, _text7, _text8, _text9, _text0, _rect2, _rect3, _text1, _text10, _text11, _rect4, _rect5, _g3, _text12, _path3, _text13, _path4, _path5, _text14, _text15, _rect6, _text16, _rect7, _text17, _rect8, _text18, _text19;
+var _desc, _defs, _text, _text2, _text3, _rect, _text4, _text5, _rect2, _rect3, _text6, _text7, _path, _text8, _path2, _text9, _text0, _text1, _text10, _text11, _text12, _text13, _rect4, _rect5, _text14, _text15, _text16, _rect6, _rect7, _rect8, _text17, _text18, _text19, _path3, _text20, _path4, _path5, _text21, _text22, _rect9, _text23, _rect0, _text24, _rect1, _text25, _text26;
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 
 const Svg00MctTimeline = ({
@@ -136,8 +136,8 @@ const Svg00MctTimeline = ({
   id: titleId
 }, "MCT \u2013 calendar time vs. actual work needed") : title ? /*#__PURE__*/react.createElement("title", {
   id: titleId
-}, title) : null, _desc || (_desc = /*#__PURE__*/react.createElement("desc", null, "Three horizontal bars comparing: current state (1 week with only 5% actual work), work needed (just 2 hours), and QRM target (1 day). Shows the gap QRM closes.")), _style || (_style = /*#__PURE__*/react.createElement("style", null, ".ts{font:400 12px\"Anthropic Sans\",sans-serif;fill:#73726c}.c-gray rect{fill:#f1efe8;stroke:#5f5e5a}.c-gray text{fill:#444441}.c-teal rect{fill:#e1f5ee;stroke:#0f6e56}.c-teal text{fill:#085041}.c-amber rect{fill:#faeeda;stroke:#854f0b}.c-amber text{fill:#633806}")), _defs || (_defs = /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("marker", {
-  id: "arrow",
+}, title) : null, _desc || (_desc = /*#__PURE__*/react.createElement("desc", null, "Three horizontal bars comparing current state (1 week), work needed (2 hours), and QRM target (1 day).")), _defs || (_defs = /*#__PURE__*/react.createElement("defs", null, /*#__PURE__*/react.createElement("marker", {
+  id: "a",
   markerHeight: 6,
   markerWidth: 6,
   orient: "auto-start-reverse",
@@ -151,126 +151,156 @@ const Svg00MctTimeline = ({
   strokeLinejoin: "round",
   strokeWidth: 1.5,
   d: "m2 1 6 4-6 4"
-})))), /*#__PURE__*/react.createElement("text", {
+})))), _text || (_text = /*#__PURE__*/react.createElement("text", {
   x: 340,
   y: 30,
-  style: {
-    font: "500 14px&quot",
-    fill: "#3d3d3a"
-  },
+  fill: "#3d3d3a",
+  fontFamily: "sans-serif",
+  fontSize: 14,
+  fontWeight: 500,
   textAnchor: "middle"
-}, "MCT: calendar time vs. actual work"), _text || (_text = /*#__PURE__*/react.createElement("text", {
+}, "MCT: calendar time vs. actual work")), _text2 || (_text2 = /*#__PURE__*/react.createElement("text", {
   x: 120,
   y: 76,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "end"
-}, "Without")), _text2 || (_text2 = /*#__PURE__*/react.createElement("text", {
+}, "Without")), _text3 || (_text3 = /*#__PURE__*/react.createElement("text", {
   x: 120,
   y: 90,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "end"
-}, "QRM")), _g || (_g = /*#__PURE__*/react.createElement("g", {
-  className: "c-gray"
-}, /*#__PURE__*/react.createElement("rect", {
+}, "QRM")), _rect || (_rect = /*#__PURE__*/react.createElement("rect", {
   width: 200,
   height: 44,
   x: 130,
   y: 60,
+  fill: "#F1EFE8",
+  stroke: "#5F5E5A",
   strokeWidth: 0.5,
   rx: 4
-}), /*#__PURE__*/react.createElement("text", {
+})), _text4 || (_text4 = /*#__PURE__*/react.createElement("text", {
   x: 230,
   y: 78,
-  className: "ts",
+  fill: "#444441",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "In queue"), /*#__PURE__*/react.createElement("text", {
+}, "In queue")), _text5 || (_text5 = /*#__PURE__*/react.createElement("text", {
   x: 230,
   y: 94,
-  className: "ts",
+  fill: "#444441",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "Mon \u2013 Tue"))), _rect || (_rect = /*#__PURE__*/react.createElement("rect", {
+}, "Mon \u2013 Tue")), _rect2 || (_rect2 = /*#__PURE__*/react.createElement("rect", {
   width: 24,
   height: 52,
   x: 330,
   y: 56,
+  fill: "#E1F5EE",
+  stroke: "#0F6E56",
   strokeWidth: 0.5,
-  className: "c-teal",
   rx: 4
-})), _g2 || (_g2 = /*#__PURE__*/react.createElement("g", {
-  className: "c-amber"
-}, /*#__PURE__*/react.createElement("rect", {
+})), _rect3 || (_rect3 = /*#__PURE__*/react.createElement("rect", {
   width: 276,
   height: 44,
   x: 354,
   y: 60,
+  fill: "#FAEEDA",
+  stroke: "#854F0B",
   strokeWidth: 0.5,
   rx: 4
-}), /*#__PURE__*/react.createElement("text", {
+})), _text6 || (_text6 = /*#__PURE__*/react.createElement("text", {
   x: 492,
   y: 78,
-  className: "ts",
+  fill: "#633806",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "Awaiting approval"), /*#__PURE__*/react.createElement("text", {
+}, "Awaiting approval")), _text7 || (_text7 = /*#__PURE__*/react.createElement("text", {
   x: 492,
   y: 94,
-  className: "ts",
+  fill: "#633806",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "Wed \u2013 Fri"))), _path || (_path = /*#__PURE__*/react.createElement("path", {
+}, "Wed \u2013 Fri")), _path || (_path = /*#__PURE__*/react.createElement("path", {
   fill: "none",
   stroke: "#B4B2A9",
   d: "M330 114v6h24v-6"
-})), _text3 || (_text3 = /*#__PURE__*/react.createElement("text", {
+})), _text8 || (_text8 = /*#__PURE__*/react.createElement("text", {
   x: 342,
   y: 133,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
 }, "~2h \xB7 5%")), _path2 || (_path2 = /*#__PURE__*/react.createElement("path", {
   stroke: "#B4B2A9",
   d: "M130 144v4M230 144v4M330 144v4M430 144v4M530 144v4M630 144v4"
-})), _text4 || (_text4 = /*#__PURE__*/react.createElement("text", {
+})), _text9 || (_text9 = /*#__PURE__*/react.createElement("text", {
   x: 130,
   y: 160,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "Mon")), _text5 || (_text5 = /*#__PURE__*/react.createElement("text", {
+}, "Mon")), _text0 || (_text0 = /*#__PURE__*/react.createElement("text", {
   x: 230,
   y: 160,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "Tue")), _text6 || (_text6 = /*#__PURE__*/react.createElement("text", {
+}, "Tue")), _text1 || (_text1 = /*#__PURE__*/react.createElement("text", {
   x: 330,
   y: 160,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "Wed")), _text7 || (_text7 = /*#__PURE__*/react.createElement("text", {
+}, "Wed")), _text10 || (_text10 = /*#__PURE__*/react.createElement("text", {
   x: 430,
   y: 160,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "Thu")), _text8 || (_text8 = /*#__PURE__*/react.createElement("text", {
+}, "Thu")), _text11 || (_text11 = /*#__PURE__*/react.createElement("text", {
   x: 530,
   y: 160,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "Fri")), _text9 || (_text9 = /*#__PURE__*/react.createElement("text", {
+}, "Fri")), _text12 || (_text12 = /*#__PURE__*/react.createElement("text", {
   x: 120,
   y: 192,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "end"
-}, "Work")), _text0 || (_text0 = /*#__PURE__*/react.createElement("text", {
+}, "Work")), _text13 || (_text13 = /*#__PURE__*/react.createElement("text", {
   x: 120,
   y: 206,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "end"
-}, "needed")), _rect2 || (_rect2 = /*#__PURE__*/react.createElement("rect", {
+}, "needed")), _rect4 || (_rect4 = /*#__PURE__*/react.createElement("rect", {
   width: 24,
   height: 44,
   x: 130,
   y: 178,
+  fill: "#E1F5EE",
+  stroke: "#0F6E56",
   strokeWidth: 0.5,
-  className: "c-teal",
   rx: 4
-})), _rect3 || (_rect3 = /*#__PURE__*/react.createElement("rect", {
+})), _rect5 || (_rect5 = /*#__PURE__*/react.createElement("rect", {
   width: 476,
   height: 44,
   x: 154,
@@ -279,69 +309,84 @@ const Svg00MctTimeline = ({
   stroke: "#B4B2A9",
   strokeDasharray: "6 3",
   rx: 4
-})), _text1 || (_text1 = /*#__PURE__*/react.createElement("text", {
+})), _text14 || (_text14 = /*#__PURE__*/react.createElement("text", {
   x: 392,
   y: 200,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "95% queue and waiting time")), _text10 || (_text10 = /*#__PURE__*/react.createElement("text", {
+}, "95% queue and waiting time")), _text15 || (_text15 = /*#__PURE__*/react.createElement("text", {
   x: 120,
   y: 271,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "end"
-}, "With")), _text11 || (_text11 = /*#__PURE__*/react.createElement("text", {
+}, "With")), _text16 || (_text16 = /*#__PURE__*/react.createElement("text", {
   x: 120,
   y: 285,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "end"
-}, "QRM")), _rect4 || (_rect4 = /*#__PURE__*/react.createElement("rect", {
+}, "QRM")), _rect6 || (_rect6 = /*#__PURE__*/react.createElement("rect", {
   width: 18,
   height: 44,
   x: 130,
   y: 258,
+  fill: "#F1EFE8",
+  stroke: "#5F5E5A",
   strokeWidth: 0.5,
-  className: "c-gray",
   rx: 4
-})), _rect5 || (_rect5 = /*#__PURE__*/react.createElement("rect", {
+})), _rect7 || (_rect7 = /*#__PURE__*/react.createElement("rect", {
   width: 24,
   height: 44,
   x: 148,
   y: 258,
+  fill: "#E1F5EE",
+  stroke: "#0F6E56",
   strokeWidth: 0.5,
-  className: "c-teal",
   rx: 4
-})), _g3 || (_g3 = /*#__PURE__*/react.createElement("g", {
-  className: "c-amber"
-}, /*#__PURE__*/react.createElement("rect", {
+})), _rect8 || (_rect8 = /*#__PURE__*/react.createElement("rect", {
   width: 56,
   height: 44,
   x: 172,
   y: 258,
+  fill: "#FAEEDA",
+  stroke: "#854F0B",
   strokeWidth: 0.5,
   rx: 4
-}), /*#__PURE__*/react.createElement("text", {
+})), _text17 || (_text17 = /*#__PURE__*/react.createElement("text", {
   x: 200,
   y: 276,
-  className: "ts",
+  fill: "#633806",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "Fast sign-off"), /*#__PURE__*/react.createElement("text", {
+}, "Fast")), _text18 || (_text18 = /*#__PURE__*/react.createElement("text", {
   x: 200,
   y: 290,
-  className: "ts",
+  fill: "#633806",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}))), _text12 || (_text12 = /*#__PURE__*/react.createElement("text", {
+}, "sign-off")), _text19 || (_text19 = /*#__PURE__*/react.createElement("text", {
   x: 240,
   y: 275,
   fill: "#3d3d3a",
-  className: "ts"
+  fontFamily: "sans-serif",
+  fontSize: 12
 }, "~1 day")), _path3 || (_path3 = /*#__PURE__*/react.createElement("path", {
   stroke: "#B4B2A9",
   strokeDasharray: "4 3",
   d: "M240 314h388"
-})), _text13 || (_text13 = /*#__PURE__*/react.createElement("text", {
+})), _text20 || (_text20 = /*#__PURE__*/react.createElement("text", {
   x: 434,
   y: 310,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
 }, "original 1-week boundary")), _path4 || (_path4 = /*#__PURE__*/react.createElement("path", {
   stroke: "#B4B2A9",
@@ -349,20 +394,24 @@ const Svg00MctTimeline = ({
 })), _path5 || (_path5 = /*#__PURE__*/react.createElement("path", {
   stroke: "#73726c",
   strokeWidth: 1.5,
-  markerEnd: "url(#arrow)",
-  markerStart: "url(#arrow)",
+  markerEnd: "url(#a)",
+  markerStart: "url(#a)",
   d: "M130 337h110"
-})), _text14 || (_text14 = /*#__PURE__*/react.createElement("text", {
+})), _text21 || (_text21 = /*#__PURE__*/react.createElement("text", {
   x: 185,
   y: 352,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "lead time")), _text15 || (_text15 = /*#__PURE__*/react.createElement("text", {
+}, "lead time")), _text22 || (_text22 = /*#__PURE__*/react.createElement("text", {
   x: 185,
   y: 364,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
-}, "\u201380\u201390%")), _rect6 || (_rect6 = /*#__PURE__*/react.createElement("rect", {
+}, "\u201380\u201390%")), _rect9 || (_rect9 = /*#__PURE__*/react.createElement("rect", {
   width: 10,
   height: 10,
   x: 310,
@@ -371,11 +420,13 @@ const Svg00MctTimeline = ({
   stroke: "#5F5E5A",
   strokeWidth: 0.5,
   rx: 2
-})), _text16 || (_text16 = /*#__PURE__*/react.createElement("text", {
+})), _text23 || (_text23 = /*#__PURE__*/react.createElement("text", {
   x: 326,
   y: 340,
-  className: "ts"
-}, "Queue")), _rect7 || (_rect7 = /*#__PURE__*/react.createElement("rect", {
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12
+}, "Queue")), _rect0 || (_rect0 = /*#__PURE__*/react.createElement("rect", {
   width: 10,
   height: 10,
   x: 390,
@@ -384,11 +435,13 @@ const Svg00MctTimeline = ({
   stroke: "#0F6E56",
   strokeWidth: 0.5,
   rx: 2
-})), _text17 || (_text17 = /*#__PURE__*/react.createElement("text", {
+})), _text24 || (_text24 = /*#__PURE__*/react.createElement("text", {
   x: 406,
   y: 340,
-  className: "ts"
-}, "Active work")), _rect8 || (_rect8 = /*#__PURE__*/react.createElement("rect", {
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12
+}, "Active work")), _rect1 || (_rect1 = /*#__PURE__*/react.createElement("rect", {
   width: 10,
   height: 10,
   x: 490,
@@ -397,14 +450,18 @@ const Svg00MctTimeline = ({
   stroke: "#854F0B",
   strokeWidth: 0.5,
   rx: 2
-})), _text18 || (_text18 = /*#__PURE__*/react.createElement("text", {
+})), _text25 || (_text25 = /*#__PURE__*/react.createElement("text", {
   x: 506,
   y: 340,
-  className: "ts"
-}, "Approval")), _text19 || (_text19 = /*#__PURE__*/react.createElement("text", {
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12
+}, "Approval")), _text26 || (_text26 = /*#__PURE__*/react.createElement("text", {
   x: 340,
   y: 375,
-  className: "ts",
+  fill: "#73726c",
+  fontFamily: "sans-serif",
+  fontSize: 12,
   textAnchor: "middle"
 }, "Touch time = 1\u20135% of total lead time \xB7 Rajan Suri, Quick Response Manufacturing")));
 /* harmony default export */ const _00_mct_timeline = (Svg00MctTimeline);

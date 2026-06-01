@@ -3,7 +3,7 @@ fm_version: "1.0.1"
 fm_build: "2026-06-01T00:00:00.000000+00:00"
 fm_version_comment: ""
 
-id: "K000107_EN"
+id: "K000107_EN_01"
 guid: "cd047284-e28d-4670-b808-16bb308bf395"
 
 dao: "knife"
@@ -80,7 +80,7 @@ This article is split into focused sections:
 | Framework | What it addresses | Details |
 |---|---|---|
 | **APV** | Vocabulary of solution assets — what exists, from whose perspective, what they see | [K000107 – APV](./K000107-APV-index) |
-| **SFIA** | Vocabulary of people and skills across IT roles | [K000107 – APV](./K000107-APV-index) |
+| **SFIA** | Vocabulary of people and skills across IT roles | [K000107 – SFIA](./K000107-SFIA-index) |
 | **TBM** | Vocabulary of IT costs connecting technology to business value | [K000107 – TBM](./K000107-TBM-index) |
 
 :::tip[APV in three questions]

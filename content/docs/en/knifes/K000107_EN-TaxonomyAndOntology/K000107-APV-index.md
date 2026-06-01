@@ -109,6 +109,11 @@ The goal: keep your solution's assets in order, across all roles, across all SDL
   <img src={require('./img/06-APV-Example.png').default} alt="APV practical example – applying Assets, Perspectives, Views in a real project context" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/08-APV-DailyProcess.png').default} alt="APV process in daily live. From conceptual element to vocabulary" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+
 :::tip[APV in three questions]
 Before building any model or document in your SDLC:
 1. What **asset** are we describing?
@@ -132,20 +137,10 @@ Before building any model or document in your SDLC:
 
 If APV addresses the vocabulary of solution assets, SFIA addresses the vocabulary of the people who deliver them.
 
-SFIA is an internationally recognised standard for describing and measuring the skills of IT and digital technology professionals. It classifies 102 professional skills across 7 levels of responsibility and is used in nearly 200 countries.
+Where APV keeps your solution assets in order, SFIA keeps your team's capabilities in order.
+Both frameworks solve the same root problem from different angles: without shared vocabulary, you cannot measure, and without measurement, you cannot manage.
 
-For SDLC teams, SFIA provides a common language for:
-- Defining roles and responsibilities across phases
-- Identifying skill gaps before a project begins
-- Communicating capability expectations with stakeholders
-
-Without a framework like SFIA, every organisation reinvents its own role descriptions — and they are never compatible across team boundaries.
-
-### SFIA in SDLC context
-
-Use SFIA to define role profiles at the start of each project phase.
-Map required skills to SFIA categories and levels.
-This makes capability gaps visible before they become delivery risks.
+→ See the dedicated page: [K000107 – SFIA](./K000107-SFIA-index)
 
 ---
 

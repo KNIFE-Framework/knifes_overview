@@ -54,6 +54,10 @@ The result: projects underestimate capability gaps, overpay for mismatched skill
 
 SFIA is the framework that addresses this. It provides a shared vocabulary for describing and measuring what people in IT actually do — and at what level.
 
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/SFIA-01.png').default} alt="SFIA 9 – framework overview" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
 ---
 
 ## 📜 A brief history
@@ -104,6 +108,10 @@ SFIA classifies skills along two axes:
 | Technology | Emerging technology monitoring, Cloud services |
 | Procurement and management support | Contract management, Financial management |
 
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/SFIA-02.png').default} alt="SFIA 9 – all skills A-Z with categories" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
 **Levels** — 7 levels of responsibility (not seniority per se):
 
 | Level | Description |
@@ -143,6 +151,10 @@ This is especially useful when:
 - Scaling a team for a new phase
 - Evaluating whether internal staff can take over from a vendor
 
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/SFIA-03.png').default} alt="SFIA 9 – skills profiles for role families and job titles" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
 ### 3. Cross-team communication
 
 When you reference SFIA in contracts, statements of work, or handover documents, both sides are talking about the same thing.
@@ -157,6 +169,10 @@ AI can process SFIA's taxonomy reliably. It cannot reliably interpret "Senior De
 ---
 
 ## ⚡ Quick start
+
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./img/SFIA-04.png').default} alt="SFIA 9 – summary chart with roles across skill categories and levels" style={{maxWidth: '800px', width: '100%'}} />
+</div>
 
 You don't need to implement all 102 skills. Start with the skills that cross the most role boundaries in your current project.
 
@@ -173,6 +189,15 @@ The value of SFIA is not in the certificate.
 It is in having a document — a job profile, a statement of work, a capability review — where both sides agree on what the words mean.
 That is the same principle as APV, TBM, and the CAA communication chain: shared vocabulary enables communication, communication enables trust.
 :::
+
+---
+
+### Resources
+
+- [SFIA 9 – Framework overview](https://sfia-online.org/en/sfia-9)
+- [SFIA 9 – All skills A-Z](https://sfia-online.org/en/sfia-9/skills/all-skills-a-z)
+- [SFIA 9 – Skills profiles for role families and job titles](https://sfia-online.org/en/tools-and-resources/standard-industry-skills-profiles/sfia-9-skills-for-role-families-job-titles)
+- [SFIA 9 – Summary chart with roles](https://sfia-online.org/en/sfia-9/sfia-views/sfia-9-multi-view/sfia-9-en-summary-chart-with-roles)
 
 ---
 

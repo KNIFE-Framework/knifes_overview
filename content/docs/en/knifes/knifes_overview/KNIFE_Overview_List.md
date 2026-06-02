@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST_EN"
 
 # Unikátne UUID – generuje skript
-guid: "e5872dbf-f221-46ba-be69-d00cbf58f36a"
+guid: "fbe4a267-3a46-4e26-8421-58542e53495a"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,14 +135,14 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `e5872dbf-f221-46ba-be69-d00cbf58f36a`
+> **GUID:** `fbe4a267-3a46-4e26-8421-58542e53495a`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
 [📰 Blog](./KNIFE_Overview_Blog.md) | **[🗂 List](./KNIFE_Overview_List.md)** | [📊 Details](./KNIFE_Overview_Details.md) | [↩️ KNIFES](../index.md)
 
 
-- **K000109_EN** · [K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations](../K000109-ESCO-SFIA-CAA/) · _draft_ · -
+- **K000109_EN** · [K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations](../K000109-ESCO-SFIA-CAA/) · _published_ · -
 - **K000108_EN** · [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/) · _published_ · -
 - **K000107_EN** · [K000107 – Taxonomy and Ontology in SDLC](../K000107_TaxonomyAndOntology/) · _published_ · -
 - **K000106_EN** · [K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?](../K000106-SSOTandTSSOT/) · _published_ · -

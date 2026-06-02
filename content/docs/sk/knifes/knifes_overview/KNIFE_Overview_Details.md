@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS"
 
 # Unikátne UUID – generuje skript
-guid: "e31b83d1-c21e-4c8f-8b29-b8052549c43a"
+guid: "5fbcc73a-121c-4a6f-b95f-a3df522b1d71"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `e31b83d1-c21e-4c8f-8b29-b8052549c43a`
+> **GUID:** `5fbcc73a-121c-4a6f-b95f-a3df522b1d71`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -147,7 +147,7 @@ fm_reserved2: ""
 | REF-UAT-001 | [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) | 2025-10-05 | inprogress | top |
 | K1000999 | [K1000999 – KNIFE – Test script-created instance](../K1000999/) | 2025-11-23 16:35 | backlog |  |
 | K000999 | [K000999 – KNIFE – Test script-created instance](../K000999/) | 2025-11-22 22:22 | backlog |  |
-| K000109_SK | [K000109 – ESCO, SFIA a CAA: Tri vrstvy správy zručností v IT organizáciách](../K000109-ESCO-SFIA-CAA/) | 2026-06-02 00:00 | draft |  |
+| K000109_SK | [K000109 – ESCO, SFIA a CAA: Tri vrstvy správy zručností v IT organizáciách](../K000109-ESCO-SFIA-CAA/) | 2026-06-02 00:00 | published |  |
 | K000108_SK | [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/) | 2026-06-02 00:00 | published |  |
 | K000107_SK | [K000107 – Taxonómia a ontológia v SDLC](../K000107_TaxonomyAndOntology/) | 2026-06-02 00:00 | draft |  |
 | K000106_SK | [K000106 – SSOT a TSSOT: Koľko právd treba na úspešné riešenie?](../K000106-SSOTandTSSOT/) | 2026-06-02 00:00 | published |  |

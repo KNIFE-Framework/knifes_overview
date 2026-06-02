@@ -79,7 +79,7 @@ Tento článok je rozdelený do samostatných sekcií:
 
 | Rámec | Čo rieši | Detaily |
 |---|---|---|
-| **APV** | Slovník pre aktíva riešenia — čo existuje, z čej perspektívy, čo vidia | [K000107 – APV](./K000107-APV-index) |
+| **APV** | Slovník pre aktíva riešenia — čo existuje, z čej perspektívy, čo vidia | [K000107 – APV](./K000107-APV-index.md) |
 | **SFIA** | Slovník pre ľudí a zručnosti naprieč IT rolami | [K000107 – SFIA](./K000107-SFIA-index) |
 | **TBM** | Slovník IT nákladov prepájajúci technológiu s obchodnou hodnotou | [K000107 – TBM](./K000107-TBM-index) |
 

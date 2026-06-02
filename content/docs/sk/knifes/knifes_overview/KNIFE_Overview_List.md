@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "a441513b-79b4-4dc9-9834-f3d17577bb40"
+guid: "771a76a5-5f50-4a0f-b6aa-65bede60c166"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `a441513b-79b4-4dc9-9834-f3d17577bb40`
+> **GUID:** `771a76a5-5f50-4a0f-b6aa-65bede60c166`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -145,6 +145,9 @@ fm_reserved2: ""
 - **REF-UAT-001** · [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) · _inprogress_ · top
 - **K1000999** · [K1000999 – KNIFE – Test script-created instance](../K1000999/) · _backlog_ · -
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/) · _backlog_ · -
+- **K000108_SK** · [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/) · _published_ · -
+- **K000107_SK** · [K000107 – Taxonómia a ontológia v SDLC](../K000107_EN-TaxonomyAndOntology/) · _draft_ · -
+- **K000106_SK** · [K000106 – SSOT a TSSOT: Koľko právd treba na úspešné riešenie?](../K000106-SSOTandTSSOT/) · _published_ · -
 - **K000105** · [K000105 – Zlaté zrnko: Ako riešiť 'neriešiteľné' situácie](../K000105-Zlate-zrnko-ako-riesit-neriesitelne/) · _inprogress_ · high
 - **K000103_SK** · [K000103 – Context Aware Approach v SDLC](../K000103-CAA_IN_SDLC/) · _published_ · -
 - **K000102** · [K000102 – AI podpora spolupráce knowlwdge workerov v rámci SDLC.md](../K000102-KNIFE_Claude_SDLC_Collaboration/) · _backlog_ · -

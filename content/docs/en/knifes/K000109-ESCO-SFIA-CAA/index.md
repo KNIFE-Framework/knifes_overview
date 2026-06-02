@@ -123,7 +123,7 @@ SFIA defines what skills exist, what they mean, and at what level of proficiency
 - Designing learning and development paths
 - Supporting workforce planning and organization design
 
-SFIA is widely adopted by governments, enterprises, and professional bodies globally [5]. See [K000107 – SFIA](../K000107_EN-TaxonomyAndOntology/K000107-SFIA-index) for a practical guide to using SFIA in SDLC teams.
+SFIA is widely adopted by governments, enterprises, and professional bodies globally [5]. See [K000107 – SFIA](../K000107_TaxonomyAndOntology/K000107-SFIA-index) for a practical guide to using SFIA in SDLC teams.
 
 ---
 
@@ -212,8 +212,8 @@ Organizations that intend to use AI for workforce planning, skills matching, or 
 
 ## 8. Related KNIFE Articles
 
-- [K000107 – Taxonomy and Ontology in SDLC](../K000107_EN-TaxonomyAndOntology/) — how taxonomy is implemented in organizations: examples, methodologies, tools
-- [K000107 – SFIA deep-dive](../K000107_EN-TaxonomyAndOntology/K000107-SFIA-index) — practical guide to SFIA in SDLC teams
+- [K000107 – Taxonomy and Ontology in SDLC](../K000107_TaxonomyAndOntology/) — how taxonomy is implemented in organizations: examples, methodologies, tools
+- [K000107 – SFIA deep-dive](../K000107_TaxonomyAndOntology/K000107-SFIA-index) — practical guide to SFIA in SDLC teams
 - [K000103 – CAA in SDLC](../K000103-CAA_IN_SDLC/) — the CAA communication chain and context-aware approach
 
 ---

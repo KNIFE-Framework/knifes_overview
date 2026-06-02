@@ -85,29 +85,43 @@ Projects failed not because of missing technology, but because of missing shared
 
 The goal: keep your solution's assets in order, across all roles, across all SDLC phases.
 
+### Physical Map of Enterprise vs Digital Map – the two realities that APV bridges
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/01-Digital-Reality.png').default} alt="Physical Map of Enterprise vs Digital Map – the two realities that APV bridges" style={{maxWidth: '800px', width: '100%'}} />
 </div>
+
+### Reference Model vs Instance Model – how APV separates the blueprint from the reality
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/02-Ref_Inst.png').default} alt="Reference Model vs Instance Model – how APV separates the blueprint from the reality" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
+### APV Framework layers – Business, Systems, Technologiers in structural context
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/03-APV-Layers.png').default} alt="APV Framework layers – Assets, Perspectives, Views in structural context" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
+### APV pillars – Assets from Perspectives of specific Stakeholder visualised on Views
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('./img/04-APV-Pillars.png').default} alt="APV pillars – the four supporting dimensions of the framework" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/04-APV-Pillars.png').default} alt="APV pillars – Assets from Perspectives of specific Stakeholder visualised on Views" style={{maxWidth: '800px', width: '100%'}} />
 </div>
+
+### APV relationship between Reference and Instance model – how the blueprint connects to deployed reality
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/05-APV-Relationship-REF-INST.png').default} alt="APV relationship between Reference and Instance model – how the blueprint connects to deployed reality" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
+### APV practical example – applying Assets, Perspectives, Views in a real project context
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/06-APV-Example.png').default} alt="APV practical example – applying Assets, Perspectives, Views in a real project context" style={{maxWidth: '800px', width: '100%'}} />
 </div>
+
+### APV process in daily live. From conceptual element to vocabulary
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/08-APV-DailyProcess.png').default} alt="APV process in daily live. From conceptual element to vocabulary" style={{maxWidth: '800px', width: '100%'}} />

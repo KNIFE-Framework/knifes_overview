@@ -54,6 +54,8 @@ The result: projects underestimate capability gaps, overpay for mismatched skill
 
 SFIA is the framework that addresses this. It provides a shared vocabulary for describing and measuring what people in IT actually do — and at what level.
 
+### SFIA 9 – framework overview
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/SFIA-01.png').default} alt="SFIA 9 – framework overview" style={{maxWidth: '800px', width: '100%'}} />
 </div>
@@ -108,6 +110,8 @@ SFIA classifies skills along two axes:
 | Technology | Emerging technology monitoring, Cloud services |
 | Procurement and management support | Contract management, Financial management |
 
+### SFIA 9 – all skills A-Z with categories
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/SFIA-02.png').default} alt="SFIA 9 – all skills A-Z with categories" style={{maxWidth: '800px', width: '100%'}} />
 </div>
@@ -150,6 +154,8 @@ This is especially useful when:
 - Onboarding vendors or contractors (do they meet the level you need?)
 - Scaling a team for a new phase
 - Evaluating whether internal staff can take over from a vendor
+  
+### SFIA 9 – skills profiles for role families and job titles
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/SFIA-03.png').default} alt="SFIA 9 – skills profiles for role families and job titles" style={{maxWidth: '800px', width: '100%'}} />
@@ -169,6 +175,8 @@ AI can process SFIA's taxonomy reliably. It cannot reliably interpret "Senior De
 ---
 
 ## ⚡ Quick start
+
+### SFIA 9 – summary chart with roles across skill categories and levels
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/SFIA-04.png').default} alt="SFIA 9 – summary chart with roles across skill categories and levels" style={{maxWidth: '800px', width: '100%'}} />

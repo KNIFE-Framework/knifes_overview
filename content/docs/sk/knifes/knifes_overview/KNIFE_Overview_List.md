@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "771a76a5-5f50-4a0f-b6aa-65bede60c166"
+guid: "fb86c887-819b-4c0d-9496-c2cfba4cc41b"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `771a76a5-5f50-4a0f-b6aa-65bede60c166`
+> **GUID:** `fb86c887-819b-4c0d-9496-c2cfba4cc41b`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -146,9 +146,10 @@ fm_reserved2: ""
 - **K1000999** · [K1000999 – KNIFE – Test script-created instance](../K1000999/) · _backlog_ · -
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/) · _backlog_ · -
 - **K000108_SK** · [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/) · _published_ · -
-- **K000107_SK** · [K000107 – Taxonómia a ontológia v SDLC](../K000107_EN-TaxonomyAndOntology/) · _draft_ · -
+- **K000107_SK** · [K000107 – Taxonómia a ontológia v SDLC](../K000107_TaxonomyAndOntology/) · _draft_ · -
 - **K000106_SK** · [K000106 – SSOT a TSSOT: Koľko právd treba na úspešné riešenie?](../K000106-SSOTandTSSOT/) · _published_ · -
 - **K000105** · [K000105 – Zlaté zrnko: Ako riešiť 'neriešiteľné' situácie](../K000105-Zlate-zrnko-ako-riesit-neriesitelne/) · _inprogress_ · high
+- **K000104_SK** · [AI KERNARO](../K000104-SPARX_AI_KERNARO_IN_SDLC/) · _published_ · -
 - **K000103_SK** · [K000103 – Context Aware Approach v SDLC](../K000103-CAA_IN_SDLC/) · _published_ · -
 - **K000102** · [K000102 – AI podpora spolupráce knowlwdge workerov v rámci SDLC.md](../K000102-KNIFE_Claude_SDLC_Collaboration/) · _backlog_ · -
 - **K000101_sk** · [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) · _backlog_ · -

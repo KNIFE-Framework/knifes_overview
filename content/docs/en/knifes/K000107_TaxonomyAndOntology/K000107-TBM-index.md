@@ -54,9 +54,13 @@ Key principle: **if you cannot name it consistently, you cannot measure it. If y
 
 ## TBM Taxonomy 5.0
 
+### TBM Taxonomy 5.0 Summary View – Technology Consumers, Solutions, Resource Towers, Cost Pools
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/TBM-01-Taxonomy_5_0_Summary_View.png').default} alt="TBM Taxonomy 5.0 Summary View – Technology Consumers, Solutions, Resource Towers, Cost Pools" style={{maxWidth: '800px', width: '100%'}} />
 </div>
+
+### TBM Conceptual Model – how the taxonomy layers connect
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/TBM-02-Conceptual_TBM_Model.png').default} alt="TBM Conceptual Model – how the taxonomy layers connect" style={{maxWidth: '800px', width: '100%'}} />
@@ -66,9 +70,13 @@ Key principle: **if you cannot name it consistently, you cannot measure it. If y
 
 ## Technology Resource Towers
 
+### TBM Technology Resource Towers and Sub-Towers
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/TBM-03-Taxonomy_Tower_and_Sub-Towers.png').default} alt="TBM Technology Resource Towers and Sub-Towers" style={{maxWidth: '800px', width: '100%'}} />
 </div>
+
+### TBM Towers Hierarchy – Domain, Tower, Sub-Tower, Sub-Tower Element, Tags
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/TBM-05-Taxonomy_Towers_Hierarchy.png').default} alt="TBM Towers Hierarchy – Domain, Tower, Sub-Tower, Sub-Tower Element, Tags" style={{maxWidth: '800px', width: '100%'}} />
@@ -78,6 +86,8 @@ Key principle: **if you cannot name it consistently, you cannot measure it. If y
 
 ## Cost Pools
 
+### TBM Cost Pools and Sub-Pools – from financial source data to technology allocation
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/TBM-04-Taxonomy_Cost_Pools_and_Sub-Pools.png').default} alt="TBM Cost Pools and Sub-Pools – from financial source data to technology allocation" style={{maxWidth: '800px', width: '100%'}} />
 </div>
@@ -86,9 +96,13 @@ Key principle: **if you cannot name it consistently, you cannot measure it. If y
 
 ## Solutions
 
+### TBM Solutions – Type and Category View
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/TBM-06-Taxonomy_Solutions-Type-Category_View.png').default} alt="TBM Solutions – Type and Category View" style={{maxWidth: '800px', width: '100%'}} />
 </div>
+
+### TBM Solutions Hierarchy – practical example
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/TBM-07-Taxonomy_Solutions_Hierarchy_exam.png').default} alt="TBM Solutions Hierarchy – practical example" style={{maxWidth: '800px', width: '100%'}} />
@@ -97,6 +111,8 @@ Key principle: **if you cannot name it consistently, you cannot measure it. If y
 ---
 
 ## Technology Consumers
+
+### TBM Technology Consumers – Business Functions, Value Streams, Partners, External
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/TBM-08-Taxonomy_Solution_Consumers.png').default} alt="TBM Technology Consumers – Business Functions, Value Streams, Partners, External" style={{maxWidth: '800px', width: '100%'}} />
@@ -108,13 +124,20 @@ Key principle: **if you cannot name it consistently, you cannot measure it. If y
 
 **Yärken** is a FinOps and TBM platform that implements TBM Taxonomy as a working product — helping enterprises manage cloud, SaaS, and IT costs with AI-driven insights. It is a concrete example of taxonomy enabling business value at scale.
 
+### Yärken – Sankey diagram of IT cost flows
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/Yarken_01-Sankey.png').default} alt="Yärken – Sankey diagram of IT cost flows" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
+### Yärken – Dashboard: FinOps and TBM cost visibility overview
+
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/Yarken_02-Dashboard.png').default} alt="Yärken – Dashboard: FinOps and TBM cost visibility overview" style={{maxWidth: '800px', width: '100%'}} />
 </div>
+
+### Yärken – Dashboard detail view
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/Yarken_03-Dashboard.png').default} alt="Yärken – Dashboard detail view" style={{maxWidth: '800px', width: '100%'}} />

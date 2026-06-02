@@ -224,7 +224,7 @@ Pre SDLC praktikov: QRM poskytuje časovú šošovku, ktorá dopĺňa Lean, Six 
 Model Q-ROC pre kancelárske a znalostné práce je priamy most od výroby k IT dodávke.
 
 :::info[Súvisiace KNIFE články]
-- [K000107 – Taxonómia a ontológia v SDLC](../K000107_EN-TaxonomyAndOntology/) — slovníkový základ, ktorý umožňuje meranie QRM
+- [K000107 – Taxonómia a ontológia v SDLC](../K000107_TaxonomyAndOntology/) — slovníkový základ, ktorý umožňuje meranie QRM
 - [K000103 – Context Aware Approach v SDLC](../K000103-CAA_IN_SDLC/) — CAA poskytuje kontextuálnu vrstvu pre implementáciu QRM
 :::
 

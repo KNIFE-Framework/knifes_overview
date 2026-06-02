@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG"
 
 # Unikátne UUID – generuje skript
-guid: "2f81406d-306b-4014-a504-24de822c75f0"
+guid: "93829711-cfe4-47a5-9f72-a3eabc841464"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `2f81406d-306b-4014-a504-24de822c75f0`
+> **GUID:** `93829711-cfe4-47a5-9f72-a3eabc841464`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -236,9 +236,10 @@ fm_reserved2: ""
 - **K000101_sk** — 2026-04-23 23:03 — [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/)
 - **K000102** — 2026-04-26 09:32 — [K000102 – AI podpora spolupráce knowlwdge workerov v rámci SDLC.md](../K000102-KNIFE_Claude_SDLC_Collaboration/)
 - **K000103_SK** — 2026-06-02 00:00 — [K000103 – Context Aware Approach v SDLC](../K000103-CAA_IN_SDLC/)
+- **K000104_SK** — 2026-06-02 00:00 — [AI KERNARO](../K000104-SPARX_AI_KERNARO_IN_SDLC/)
 - **K000105** — 2026-05-01 — [K000105 – Zlaté zrnko: Ako riešiť 'neriešiteľné' situácie](../K000105-Zlate-zrnko-ako-riesit-neriesitelne/)
 - **K000106_SK** — 2026-06-02 00:00 — [K000106 – SSOT a TSSOT: Koľko právd treba na úspešné riešenie?](../K000106-SSOTandTSSOT/)
-- **K000107_SK** — 2026-06-02 00:00 — [K000107 – Taxonómia a ontológia v SDLC](../K000107_EN-TaxonomyAndOntology/)
+- **K000107_SK** — 2026-06-02 00:00 — [K000107 – Taxonómia a ontológia v SDLC](../K000107_TaxonomyAndOntology/)
 - **K000108_SK** — 2026-06-02 00:00 — [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/)
 - **K000999** — 2025-11-22 22:22 — [K000999 – KNIFE – Test script-created instance](../K000999/)
 - **K1000999** — 2025-11-23 16:35 — [K1000999 – KNIFE – Test script-created instance](../K1000999/)

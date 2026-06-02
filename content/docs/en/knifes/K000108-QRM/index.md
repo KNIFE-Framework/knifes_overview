@@ -23,7 +23,7 @@ locale: "en"
 
 created: "2026-06-01 00:00"
 modified: "2026-06-01 00:00"
-status: "draft"
+status: "published"
 privacy: "public"
 
 rights_holder_content: "Roman Kazicka"
@@ -36,11 +36,19 @@ origin_system: "CAA"
 origin_author: "Roman Kazicka"
 ---
 
-import MCTDiagram from './img/00-mct-timeline.svg';
-
 # KNIFE – Quick Response Manufacturing (QRM)
 
 ## Is your SDLC suffering from the same problem that nearly killed high-mix manufacturing?
+:::note[Before you read on — four questions worth sitting with]
+- Is software development just manufacturing without the machines?
+
+- Why does a car factory know its lead time to the hour — and your IT project does not?
+
+- Your factory solved quality problems in the 80s. Why is your IT team still having the same meetings?
+
+- Manufacturing had 8D, Lean, Six Sigma, QRM. What does your SDLC have?
+:::
+
 
 ---
 
@@ -74,9 +82,13 @@ The remaining 95–99% is waiting, queuing, handoffs, and rework.
 This applies equally to software development phases, document reviews, and approval chains.
 :::
 
+### MCT diagram – calendar time (1 week) vs actual work needed (2 hours) and QRM target (1 day)
+
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <MCTDiagram style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/00-mct-timeline.png').default} alt="MCT diagram – calendar time (1 week) vs actual work needed (2 hours) and QRM target (1 day)" style={{maxWidth: '800px', width: '100%'}} />
 </div>
+
+
 
 ### Four core QRM concepts
 
@@ -214,7 +226,7 @@ For SDLC practitioners: QRM provides a time-based lens that complements Lean, Si
 The Q-ROC model for office and knowledge work is the direct bridge from manufacturing to IT delivery.
 
 :::info[Related KNIFE articles]
-- [K000107 – Taxonomy and Ontology in SDLC](../K000107_EN-TaxonomyAndOntology/) — the vocabulary foundation that enables QRM measurement
+- [K000107 – Taxonomy and Ontology in SDLC](../K000107_TaxonomyAndOntology/) — the vocabulary foundation that enables QRM measurement
 - [K000103 – Context Aware Approach in SDLC](../K000103-CAA_IN_SDLC/) — CAA provides the contextual layer for QRM implementation
 :::
 

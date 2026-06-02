@@ -3,12 +3,16 @@ fm_version: "1.0.1"
 fm_build: "2026-06-01T00:00:00.000000+00:00"
 fm_version_comment: ""
 
-id: "K000107_EN_01"
+id: "K000107_EN"
 guid: "cd047284-e28d-4670-b808-16bb308bf395"
 
 dao: "knife"
 title: "K000107 – Taxonomy and Ontology in SDLC"
-description: "Why every science that wants to call itself a science builds a conceptual vocabulary — and why computer science is still catching up. Practical frameworks: APV, SFIA, TBM, and their application across SDLC."
+description: "When will IT finally use the full power of taxonomy and ontology?
+ITSM, Cybersecurity, TBM — taxonomy already exists in IT. 
+So why does every project still start a new vocabulary from scratch? 
+Practical frameworks: APV, SFIA, TBM, and how to finally put them to work across SDLC."
+
 
 author: "Roman Kazicka"
 authors:
@@ -38,7 +42,7 @@ origin_author: "Roman Kazicka"
 
 # KNIFE – Taxonomy and Ontology in SDLC
 
-## When will computer science catch up with the natural sciences?
+## When will IT finally use the full power of taxonomy and ontology?
 
 ---
 
@@ -59,6 +63,8 @@ Five interpretations. One failing project.
 
 This is not a technology problem. It is a vocabulary problem.
 :::
+
+### Customer vs IT-Service Provider – without communication there is no understanding, without understanding there is no trust
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img/07-People-ProfitsFromAPV.png').default} alt="Customer vs IT-Service Provider – without communication there is no understanding, without understanding there is no trust" style={{maxWidth: '800px', width: '100%'}} />

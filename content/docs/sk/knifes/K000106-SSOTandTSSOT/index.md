@@ -305,7 +305,7 @@ Ale ani dôveryhodný zdroj nezaručuje zdieľané porozumenie.
 > *Rozumie každý vo vašej organizácii slovu „zákazník" rovnako?*
 > *Znamená „riziko" to isté pre business analytika a security architekta?*
 
-Toto je doménou **taxonómie, ontológie a metodológie APV** — pozri [K000107](../K000107_EN-TaxonomyAndOntology/).
+Toto je doménou **taxonómie, ontológie a metodológie APV** — pozri [K000107](../K000107_TaxonomyAndOntology/).
 
 ---
 <!-- body:start -->

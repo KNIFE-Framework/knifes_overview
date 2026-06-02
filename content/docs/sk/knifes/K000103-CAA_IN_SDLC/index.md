@@ -4,7 +4,7 @@ fm_build: "2026-06-02T00:00:00.000000+00:00"
 fm_version_comment: ""
 
 id: "K000103_SK"
-guid: ""
+guid: "9f26e4d2-8178-410f-858f-08c1ce1a154c"
 
 dao: "knife"
 title: "K000103 – Context Aware Approach v SDLC"
@@ -88,7 +88,7 @@ V regulovaných prostrediach (bankovníctvo, zdravotníctvo, obrana) zostáva V-
 :::
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('../../../en/knifes/K000103-CAA_IN_SDLC/img/00-V-Model.png').default} alt="V-Model – Verification and Validation Model" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/00-V-Model.png').default} alt="V-Model – Verification and Validation Model" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 ---
@@ -178,7 +178,7 @@ Pri porovnávaní musia byť stanovené porovnateľné kritériá a porovnateľn
 Nasledujúce diagramy mapujú SDLC kontext z viacerých perspektív — od vzťahu dodávateľa a zákazníka, cez výstupy medzi fázami, až po kritériá hodnotenia nástrojov.
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('../../../en/knifes/K000103-CAA_IN_SDLC/img/00-V-Model.png').default} alt="CAA – Context Aware Approach v SDLC" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/00-V-Model.png').default} alt="CAA – Context Aware Approach v SDLC" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 ---
@@ -195,7 +195,7 @@ Mtech (NUS), CITA-F, CITA-A, TOGAF, ArchiMate, COBIT, PMP
 https://iasaglobal.org/Services/Public/News/Articles/Establishing-Digital-Transformation-and-Smart-Factory-Blueprint-with-EA.aspx
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('../../../en/knifes/K000103-CAA_IN_SDLC/img/01-DigitalMappingOdReality.png').default} alt="01 – Mapovanie reálneho sveta do digitálneho sveta" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/01-DigitalMappingOdReality.png').default} alt="01 – Mapovanie reálneho sveta do digitálneho sveta" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 ---
@@ -207,19 +207,19 @@ Verím, že je to preto, lebo:
   - 3P: Správna Informácia – pre Správnu Rolu – v Správnom Čase
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('../../../en/knifes/K000103-CAA_IN_SDLC/img/02-Market-SDLC.png').default} alt="02 – Vzťah dodávateľa a zákazníka v kontexte SDLC" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/02-Market-SDLC.png').default} alt="02 – Vzťah dodávateľa a zákazníka v kontexte SDLC" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('../../../en/knifes/K000103-CAA_IN_SDLC/img/03-SDLC-Deliverables.png').default} alt="03 – SDLC a výstupy medzi fázami SDLC" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/03-SDLC-Deliverables.png').default} alt="03 – SDLC a výstupy medzi fázami SDLC" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('../../../en/knifes/K000103-CAA_IN_SDLC/img/04-Tools-Focus_AI.png').default} alt="04 – Oblasti hodnotenia nástrojov z viacerých perspektív (neúplné)" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/04-Tools-Focus_AI.png').default} alt="04 – Oblasti hodnotenia nástrojov z viacerých perspektív (neúplné)" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
-  <img src={require('../../../en/knifes/K000103-CAA_IN_SDLC/img/05-All_in_One.png').default} alt="05 – Všetko na jednom obrázku" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('./img/05-All_in_One.png').default} alt="05 – Všetko na jednom obrázku" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 ---

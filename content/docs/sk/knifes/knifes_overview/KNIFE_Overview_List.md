@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "f5901603-16cf-4502-b115-1dfdc1378ace"
+guid: "a441513b-79b4-4dc9-9834-f3d17577bb40"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-06-01"
+created: "2026-06-02"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `f5901603-16cf-4502-b115-1dfdc1378ace`
+> **GUID:** `a441513b-79b4-4dc9-9834-f3d17577bb40`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -146,6 +146,7 @@ fm_reserved2: ""
 - **K1000999** · [K1000999 – KNIFE – Test script-created instance](../K1000999/) · _backlog_ · -
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/) · _backlog_ · -
 - **K000105** · [K000105 – Zlaté zrnko: Ako riešiť 'neriešiteľné' situácie](../K000105-Zlate-zrnko-ako-riesit-neriesitelne/) · _inprogress_ · high
+- **K000103_SK** · [K000103 – Context Aware Approach v SDLC](../K000103-CAA_IN_SDLC/) · _published_ · -
 - **K000102** · [K000102 – AI podpora spolupráce knowlwdge workerov v rámci SDLC.md](../K000102-KNIFE_Claude_SDLC_Collaboration/) · _backlog_ · -
 - **K000101_sk** · [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) · _backlog_ · -
 - **K000100** · [K000100 – titul-Ako komunikovať s porozumením](../K000100-Ako-komunikova-s-porozumen-mE/) · _backlog_ · -

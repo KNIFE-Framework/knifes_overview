@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS_EN"
 
 # Unikátne UUID – generuje skript
-guid: "9d21ac15-9e76-455a-97a1-76bbd9323208"
+guid: "b3568386-0978-4977-ad6a-577a40126b90"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `9d21ac15-9e76-455a-97a1-76bbd9323208`
+> **GUID:** `b3568386-0978-4977-ad6a-577a40126b90`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -144,6 +144,7 @@ fm_reserved2: ""
 
 | ID | Title | Created | Status | Priority |
 |---|---|---|---|---|
+| K000109_EN | [K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations](../K000109-ESCO-SFIA-CAA/) | 2026-06-02 00:00 | draft |  |
 | K000108_EN | [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/) | 2026-06-01 00:00 | published |  |
 | K000107_EN | [K000107 – Taxonomy and Ontology in SDLC](../K000107_TaxonomyAndOntology/) | 2026-06-01 00:00 | published |  |
 | K000106_EN | [K000106 – SSOT and TSSOT: How Many Truths Does It Take to Deliver a Successful Solution?](../K000106-SSOTandTSSOT/) | 2026-05-25 09:00 | published |  |

@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG"
 
 # Unikátne UUID – generuje skript
-guid: "93829711-cfe4-47a5-9f72-a3eabc841464"
+guid: "624c0b0e-55f4-4896-85b8-3c6ecf893c80"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `93829711-cfe4-47a5-9f72-a3eabc841464`
+> **GUID:** `624c0b0e-55f4-4896-85b8-3c6ecf893c80`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -241,6 +241,7 @@ fm_reserved2: ""
 - **K000106_SK** — 2026-06-02 00:00 — [K000106 – SSOT a TSSOT: Koľko právd treba na úspešné riešenie?](../K000106-SSOTandTSSOT/)
 - **K000107_SK** — 2026-06-02 00:00 — [K000107 – Taxonómia a ontológia v SDLC](../K000107_TaxonomyAndOntology/)
 - **K000108_SK** — 2026-06-02 00:00 — [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/)
+- **K000109_SK** — 2026-06-02 00:00 — [K000109 – ESCO, SFIA a CAA: Tri vrstvy správy zručností v IT organizáciách](../K000109-ESCO-SFIA-CAA/)
 - **K000999** — 2025-11-22 22:22 — [K000999 – KNIFE – Test script-created instance](../K000999/)
 - **K1000999** — 2025-11-23 16:35 — [K1000999 – KNIFE – Test script-created instance](../K1000999/)
 - **REF-UAT-001** — 2025-10-05 — [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/)

@@ -394,9 +394,9 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "Agent / Trigger"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Medium"
+            children: "Low"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Trigger changes require EA restart to activate"
+            children: "Initial test required EA restart; subsequent agent changes activated after Kernaro window refresh only — likely initial user error"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -574,8 +574,8 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "Trigger hot-reload"
-          }), " – agent trigger changes should activate without EA client restart."]
+            children: "Trigger activation"
+          }), " – the initial test required an EA full restart to activate a new trigger. However, all subsequent agent changes activated correctly after a Kernaro window refresh only. The full restart was likely an initial user error. No product change required; confirm in documentation whether refresh is the correct activation step."]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {

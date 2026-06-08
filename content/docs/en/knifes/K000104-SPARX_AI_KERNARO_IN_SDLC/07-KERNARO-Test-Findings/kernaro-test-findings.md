@@ -131,7 +131,7 @@ After approval, tags were written correctly to the element.
 
 | ID | Area | Severity | Description |
 |---|---|---|---|
-| C1-1 | Agent / Trigger | Medium | Trigger changes require EA restart to activate |
+| C1-1 | Agent / Trigger | Low | Initial test required EA restart; subsequent agent changes activated after Kernaro window refresh only — likely initial user error |
 | C1-2 | Agent / Output | High | Without output constraints, agent hallucinated write confirmation |
 | D2-1 | Script Agent | Medium | Python instruction produced JavaScript instead |
 | D3-1 | Script Agent | High | `new Enumerator()` hallucination – incompatible EA syntax, persists after correction |
@@ -195,7 +195,7 @@ This capability significantly reduces the trial-and-error cycle during initial s
 
 3. **Auto-execute generated scripts** – or provide a one-click "Run in EA" button in chat.
 
-4. **Trigger hot-reload** – agent trigger changes should activate without EA client restart.
+4. **Trigger activation** – the initial test required an EA full restart to activate a new trigger. However, all subsequent agent changes activated correctly after a Kernaro window refresh only. The full restart was likely an initial user error. No product change required; confirm in documentation whether refresh is the correct activation step.
 
 5. **Fix clipboard image handling** – clipboard screenshots return `Error 400: image cannot be empty`. Describe error is valid, image is not empty on user side.
 

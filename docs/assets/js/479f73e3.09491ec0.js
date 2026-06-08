@@ -41,6 +41,16 @@
 
 /***/ }),
 
+/***/ 4451:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/CAA-Approach-In-SDLC-Types-5ee8deaebfe97caa4ee6e9830923ca04.png");
+
+/***/ }),
+
 /***/ 6070:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -2184,7 +2194,7 @@ function _createMdxContent(props) {
         boxSizing: 'border-box'
       },
       children: (0,jsx_runtime.jsx)("img", {
-        src: (__webpack_require__(98383)/* ["default"] */ .A),
+        src: (__webpack_require__(4451)/* ["default"] */ .A),
         alt: "01-Intoduction/AI_ThreadOrOpportunity/CAA-Approach-In-SDLC.png",
         style: {
           maxWidth: '800px',
@@ -4662,16 +4672,6 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/10-Claude-paltform-config-9cfee559e542b96aa62599309f6c7893.png");
-
-/***/ }),
-
-/***/ 98383:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/CAA-Approach-In-SDLC-e553ad4595c142c7091999a42215aa30.png");
 
 /***/ }),
 

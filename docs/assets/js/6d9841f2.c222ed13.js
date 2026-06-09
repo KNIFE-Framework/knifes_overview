@@ -421,7 +421,7 @@ function _createMdxContent(props) {
           children: "AI-Supported SDLC"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/AI_ThreadOrOpportunity/K000104-01-ai-threat",
+        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Intoduction/AI_ThreadOrOpportunity",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
           x: "412",
           y: "30",
@@ -436,10 +436,10 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "10",
           fontWeight: "bold",
-          children: "AI: Threat or Opport…"
+          children: "AI: Threat or Opport."
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Configuration/K000104-02-configuration",
+        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Configuration",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
           x: "218",
           y: "85",
@@ -472,7 +472,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "10",
           fontWeight: "bold",
-          children: "A – Configuration"
+          children: "A1 – KERNARO Setup"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Configuration/A2-claude/K000104-02-claude-prep",
@@ -490,7 +490,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "10",
           fontWeight: "bold",
-          children: "CLAUDE Platform Prep…"
+          children: "CLAUDE Platform Prep"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Testing_Strategy/K000104-03-testing-strategy",
@@ -544,7 +544,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "10",
           fontWeight: "bold",
-          children: "B1 – Model Statistic…"
+          children: "B1 – Model Statistics"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-Chat/B2-document-generation/K000104-04-chat-b2",
@@ -562,7 +562,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "10",
           fontWeight: "bold",
-          children: "B2 – Document Genera…"
+          children: "B2 – Document Genera."
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-Chat/B3-toc-generation/K000104-04-chat-b3",
@@ -598,7 +598,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "10",
           fontWeight: "bold",
-          children: "B4 – Coffee Machine …"
+          children: "B4 – Coffee Machine"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/K000104-05-ai-agents",
@@ -619,7 +619,7 @@ function _createMdxContent(props) {
           children: "C – Agents"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/kernaro-agent-c1-missing-notes/K000104-05-agent-c1",
+        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/kernaro-agent-c1-missing-notes",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
           x: "412",
           y: "316",
@@ -637,7 +637,7 @@ function _createMdxContent(props) {
           children: "C1 – Missing Notes"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/kernaro-agent-c2-apv-check/K000104-05-agent-c2",
+        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/kernaro-agent-c2-apv-check",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
           x: "412",
           y: "340",
@@ -652,10 +652,10 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "10",
           fontWeight: "bold",
-          children: "C2 – APV Integrity C…"
+          children: "C2 – APV Integrity Chk"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/kernaro-c3-python-execution/K000104-05-python-execution",
+        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/kernaro-c3-python-execution",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
           x: "412",
           y: "364",
@@ -670,7 +670,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "10",
           fontWeight: "bold",
-          children: "C3 – Python Execut…"
+          children: "C3 – Python Execution"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-JavaScripts/K000104-06-javascripts",
@@ -688,7 +688,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "11",
           fontWeight: "bold",
-          children: "D – JavaScript in EA…"
+          children: "D – JavaScript in EA"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-Test-Findings/K000104-07-test-findings",
@@ -706,7 +706,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "11",
           fontWeight: "bold",
-          children: "E – Findings & Recom…"
+          children: "E – Findings & Recomm."
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Claude-Console-Dashboards/K000104-08-claude-dashboards",
@@ -724,7 +724,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "11",
           fontWeight: "bold",
-          children: "Claude Console Dashb…"
+          children: "Claude Console Dashb."
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/Sparxsystems-Ecosystem/K000104-09-sparx-ecosystem",
@@ -742,7 +742,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "11",
           fontWeight: "bold",
-          children: "F – Sparx AI Ecosyst…"
+          children: "F – Sparx AI Ecosystem"
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-TEST-Conclusion/K000104-10-conclusion",
@@ -760,7 +760,7 @@ function _createMdxContent(props) {
           fill: "white",
           fontSize: "11",
           fontWeight: "bold",
-          children: "G – Conclusions & Ho…"
+          children: "G – Conclusions & How"
         })]
       })]
     })]

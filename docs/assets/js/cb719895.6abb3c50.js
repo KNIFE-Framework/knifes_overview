@@ -21,6 +21,16 @@
 
 /***/ }),
 
+/***/ 6038:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/USECASE_REPORT-aba1491e759c98a81f82ebd4bccb81b0.png");
+
+/***/ }),
+
 /***/ 7434:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -337,6 +347,10 @@ const toc = [{
   "value": "Images",
   "id": "images",
   "level": 2
+}, {
+  "value": "IMG-29 · Generated Use Case Report – Coffee Machine specification",
+  "id": "img-29--generated-use-case-report--coffee-machine-specification",
+  "level": 4
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -347,6 +361,7 @@ function _createMdxContent(props) {
     h1: "h1",
     h2: "h2",
     h3: "h3",
+    h4: "h4",
     header: "header",
     hr: "hr",
     p: "p",
@@ -388,7 +403,18 @@ function _createMdxContent(props) {
         href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/KERNARO-AI_Agent/K000104-05-ai-agents",
         children: "C – Agents"
       })]
-    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The Coffee Machine model was built entirely from natural language prompts on an empty QEA file.\nNo manual EA modelling — Kernaro created the package structure, Use Case diagram, actors, Activity diagram, and State diagram through a sequence of chat instructions."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Output:"
+      }), " a structured Word document covering Use Case scenarios, actor descriptions, and activity flows — ready for stakeholder review or as a contract basis."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["→ ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "#img-29",
+        children: "[IMG-29]"
+      }), " · Generated Use Case Report"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "b4--finding--structured-scenarios-not-utilised-operations-used-instead",
       children: "B4 · Finding – Structured Scenarios not utilised (Operations used instead)"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -1123,6 +1149,28 @@ function _createMdxContent(props) {
       children: (0,jsx_runtime.jsx)("img", {
         src: (__webpack_require__(39803)/* ["default"] */ .A),
         alt: "img2-gen/12-generateElements-structuredScenario-chats.png",
+        style: {
+          maxWidth: '800px',
+          width: '100%'
+        }
+      })
+    }), "\n", (0,jsx_runtime.jsx)("a", {
+      id: "img-29"
+    }), "\n", (0,jsx_runtime.jsx)(_components.h4, {
+      id: "img-29--generated-use-case-report--coffee-machine-specification",
+      children: "IMG-29 · Generated Use Case Report – Coffee Machine specification"
+    }), "\n", (0,jsx_runtime.jsx)("div", {
+      style: {
+        backgroundColor: '#ffffff',
+        padding: '16px',
+        borderRadius: '8px',
+        display: 'inline-block',
+        width: '100%',
+        boxSizing: 'border-box'
+      },
+      children: (0,jsx_runtime.jsx)("img", {
+        src: (__webpack_require__(6038)/* ["default"] */ .A),
+        alt: "Generated Use Case Report – Coffee Machine",
         style: {
           maxWidth: '800px',
           width: '100%'

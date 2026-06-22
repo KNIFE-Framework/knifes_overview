@@ -1,6 +1,36 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[44103],{
 
+/***/ 3647:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/02-SDLC-GIT-fa9f686fe5413651a119cc7cd24ad355.png");
+
+/***/ }),
+
+/***/ 5167:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/03-GIT-std-workflow-09cffc5fc5bda60401a70926cdc3036b.png");
+
+/***/ }),
+
+/***/ 16566:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/04-GIT-release-workflow-43b49dafbf0a9c0a8384a448cce1d559.png");
+
+/***/ }),
+
 /***/ 19899:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -116,6 +146,16 @@ function MDXProvider(properties) {
 
 /***/ }),
 
+/***/ 28862:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/08-EA-LT-02-ca6786bbf1066ed2a5d549f7f82e9f72.png");
+
+/***/ }),
+
 /***/ 39960:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -126,6 +166,16 @@ function MDXProvider(properties) {
 
 /***/ }),
 
+/***/ 55804:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/07-EA-LT-01-df4939decc364af18c32d21fce1f5ebb.png");
+
+/***/ }),
+
 /***/ 59059:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -133,6 +183,36 @@ function MDXProvider(properties) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/05-Lemontree-c1630919a612bcc064797aaa2a850257.png");
+
+/***/ }),
+
+/***/ 59892:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/01-sparx-ecosystem-92ff88a55fbd2fa9e0c74b2d868d3e3d.png");
+
+/***/ }),
+
+/***/ 60330:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/05-Lemontree-c1630919a612bcc064797aaa2a850257.png");
+
+/***/ }),
+
+/***/ 69493:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/08-EA-LT-02-ca6786bbf1066ed2a5d549f7f82e9f72.png");
 
 /***/ }),
 
@@ -269,6 +349,10 @@ const toc = [{
   "id": "related-knife-articles",
   "level": 2
 }, {
+  "value": "List of Figures",
+  "id": "list-of-figures",
+  "level": 2
+}, {
   "value": "Sources",
   "id": "sources",
   "level": 2
@@ -378,16 +462,16 @@ function _createMdxContent(props) {
       }), " by LieberLieber."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "Sparx Systems ekosystém – SDLC supported by AI",
-        src: (__webpack_require__(84553)/* ["default"] */ .A) + "",
-        width: "1360",
-        height: "1360"
+        alt: "SDLC – Git workflow kontext",
+        src: (__webpack_require__(93700)/* ["default"] */ .A) + "",
+        width: "2738",
+        height: "2406"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Figure 5:"
-        }), " SDLC supported by AI – Sparx Systems ecosystem overview.\nEnterprise Architect as the core modelling platform spans all SDLC phases\n(Business → Arch. → Analysis → Design → Impl. → Testing → Ops).\nLemonTree (LieberLieber) provides Git workflow: Clone–Branch–Commit–Merge, 3-way diff.\nKERNARO AI for EA adds Chat, Agents, JavaScript/Python, MCP client capabilities.\nPROLABORATE + Genie provides web access for stakeholders in natural language.\nLLM backends: Claude, OpenAI/GPT, Gemini, Azure OpenAI, Ollama (on-prem)."]
+          children: "Figure 01:"
+        }), " Solution Lifecycle Management – Git versioning in SDLC context.\nDiagram by Roman Kazicka (EA model, created 2023).\nShows Vendor–Customer value delivery across 7 SDLC phases.\nBottom layer: Versioning Systems – AS-IS (git, single repo) vs TO-BE\n(git across DEV / TEST / UAT / PROD environments).\nPurpose: demonstrate where Git workflow applies today and where it can be extended."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "how--how-does-it-work",
@@ -430,16 +514,16 @@ function _createMdxContent(props) {
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "SDLC – Git workflow kontext",
-        src: (__webpack_require__(93700)/* ["default"] */ .A) + "",
-        width: "2738",
-        height: "2406"
+        alt: "Sparx Systems ekosystém – SDLC supported by AI",
+        src: (__webpack_require__(84553)/* ["default"] */ .A) + "",
+        width: "1360",
+        height: "1360"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Figure 6:"
-        }), " Solution Lifecycle Management – Git versioning in SDLC context.\nDiagram by Roman Kazicka (EA model, created 2023).\nShows Vendor–Customer value delivery across 7 SDLC phases.\nBottom layer: Versioning Systems – AS-IS (git, single repo) vs TO-BE\n(git across DEV / TEST / UAT / PROD environments).\nPurpose: demonstrate where Git workflow applies today and where it can be extended."]
+          children: "Figure 02:"
+        }), " SDLC supported by AI – Sparx Systems ecosystem overview.\nEnterprise Architect as the core modelling platform spans all SDLC phases\n(Business → Arch. → Analysis → Design → Impl. → Testing → Ops).\nLemonTree (LieberLieber) provides Git workflow: Clone–Branch–Commit–Merge, 3-way diff.\nKERNARO AI for EA adds Chat, Agents, JavaScript/Python, MCP client capabilities.\nPROLABORATE + Genie provides web access for stakeholders in natural language.\nLLM backends: Claude, OpenAI/GPT, Gemini, Azure OpenAI, Ollama (on-prem)."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -499,7 +583,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Figure 7:"
+          children: "Figure 03:"
         }), " Standard Git branching model – based on Vincent Driessen's Flow-Based\nVersioning (FBV). Source: ", (0,jsx_runtime.jsx)(_components.a, {
           href: "https://nvie.com/posts/a-successful-git-branching-model/",
           children: "https://nvie.com/posts/a-successful-git-branching-model/"
@@ -515,7 +599,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Figure 8:"
+          children: "Figure 04:"
         }), " Git Based Single Source Of Truth – parallel modelling workflow\nfor EA models. Diagram by Roman Kazicka (EA model PCG_2096, created 2025).\nArchitecture: MS SQL (READ ONLY, PROLABORATE Ready) → GitEA server →\nBRANCH-MAIN=PRODUCTION → Release branches (", (0,jsx_runtime.jsx)(_components.code, {
           children: "RYYYY<MM+1>"
         }), ", ", (0,jsx_runtime.jsx)(_components.code, {
@@ -555,7 +639,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Figure 1:"
+          children: "Figure 05:"
         }), " LemonTree merge session – three-way comparison of two parallel EA model\nbranches (A.eapx vs B.eapx). Top panel: element tree with conflict markers (#Conflicted).\nMiddle panel: diagram visual diff (PWC", ":CompositeStructureDiagram", ") – orange border marks\nthe active/changed diagram. Bottom panel: GraphEdges diff showing renamed connector\n", (0,jsx_runtime.jsx)(_components.code, {
           children: "mainBusCAN → cBus:CAN Bus"
         }), ". Conflicts are resolved at element level, not line level."]
@@ -588,7 +672,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Figure 3:"
+          children: "Figure 06:"
         }), " Enterprise Architect – LemonTree Add-In integrated directly in the ribbon\n(Specialize tab). Active Git branch is visible in the status bar: ", (0,jsx_runtime.jsx)(_components.code, {
           children: "feature/CR-21422"
         }), ".\nThe modeller works in the context of a change request without leaving EA.\nVisible menu: Dashboard / Components / Model / Git / License."]
@@ -680,13 +764,15 @@ function _createMdxContent(props) {
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        src: "img/07-EA-LT-02.png",
-        alt: "LemonTree History panel v EA"
+        alt: "LemonTree History panel v EA",
+        src: (__webpack_require__(69493)/* ["default"] */ .A) + "",
+        width: "1512",
+        height: "803"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Figure 4:"
+          children: "Figure 07:"
         }), " LemonTree History panel inside Enterprise Architect – complete Git history\nof model file ", (0,jsx_runtime.jsx)(_components.code, {
           children: "ADAM7-20250327.qea"
         }), ". Each record includes author, date, and change\ndescription linked to a change request or system (CR-21479, APV LCS, AML model).\nMultiple authors visible: Juraj Munka, Roman Kocian, PABK\\szabo3, Roman Kazicka,\nbachan, PABK\\suchovska, PABK\\matejovic2.\nCommit ", (0,jsx_runtime.jsx)(_components.code, {
@@ -724,7 +810,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Figure 2:"
+          children: "Figure 08:"
         }), " SmartGit – production Git history of Enterprise Architect model repository\nat 365.bank. Multiple authors working in parallel branches (R202604, RKA-20260402).\nEach commit message references a specific change request (CR-28401, CR-20574, APV Trask).\nChanged file: ", (0,jsx_runtime.jsx)(_components.code, {
           children: "ADAM7-20260203.qea"
         }), " — the EA model binary tracked directly in Git.\nNotable: commit ", (0,jsx_runtime.jsx)(_components.code, {
@@ -813,6 +899,149 @@ function _createMdxContent(props) {
         }), " – KERNARO/GENIE AI layer that LemonTree's versioned model feeds into"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "list-of-figures",
+      children: "List of Figures"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Figure"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Section"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Description"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Image"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Figure 01"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WHAT"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Solution Lifecycle Management – Git versioning in SDLC context"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              target: "_blank",
+              "data-noBrokenLinkCheck": true,
+              href: (__webpack_require__(3647)/* ["default"] */ .A) + "",
+              children: "02-SDLC-GIT.png"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Figure 02"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HOW – The Git + LemonTree approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Sparx Systems AI ecosystem overview"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              target: "_blank",
+              "data-noBrokenLinkCheck": true,
+              href: (__webpack_require__(59892)/* ["default"] */ .A) + "",
+              children: "01-sparx-ecosystem.png"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Figure 03"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HOW – The Git + LemonTree approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Standard Git branching model (Vincent Driessen FBV)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              target: "_blank",
+              "data-noBrokenLinkCheck": true,
+              href: (__webpack_require__(5167)/* ["default"] */ .A) + "",
+              children: "03-GIT-std-workflow.png"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Figure 04"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HOW – The Git + LemonTree approach"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Git Based Single Source of Truth – parallel modelling blueprint"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              target: "_blank",
+              "data-noBrokenLinkCheck": true,
+              href: (__webpack_require__(16566)/* ["default"] */ .A) + "",
+              children: "04-GIT-release-workflow.png"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Figure 05"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HOW – What makes LemonTree different"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LemonTree 3-way diff merge session"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              target: "_blank",
+              "data-noBrokenLinkCheck": true,
+              href: (__webpack_require__(60330)/* ["default"] */ .A) + "",
+              children: "05-Lemontree.png"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Figure 06"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "HOW – Recommended Git client"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LemonTree Add-In in the EA ribbon"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              target: "_blank",
+              "data-noBrokenLinkCheck": true,
+              href: (__webpack_require__(55804)/* ["default"] */ .A) + "",
+              children: "07-EA-LT-01.png"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Figure 07"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WHAT CAN YOU GAIN"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "LemonTree History panel inside EA"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              target: "_blank",
+              "data-noBrokenLinkCheck": true,
+              href: (__webpack_require__(28862)/* ["default"] */ .A) + "",
+              children: "08-EA-LT-02.png"
+            })
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "Figure 08"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "WHAT CAN YOU GAIN – Real-world reference"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "SmartGit – production Git history"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.a, {
+              target: "_blank",
+              "data-noBrokenLinkCheck": true,
+              href: (__webpack_require__(86851)/* ["default"] */ .A) + "",
+              children: "06-Smartgit.png"
+            })
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.em, {
+        children: "Pending: a QRM/business framing image (see \"Why this matters before you even touch Git\" section) is not yet placed. Once added it will slot in as Figure 08 between the current Figure 07 and Figure 08, shifting SmartGit to Figure 09 — update this table when that happens."
+      })
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "sources",
       children: "Sources"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -872,6 +1101,16 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/01-sparx-ecosystem-92ff88a55fbd2fa9e0c74b2d868d3e3d.png");
+
+/***/ }),
+
+/***/ 86851:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/06-Smartgit-e9bfb32520d6f178eade67f2e32c422d.png");
 
 /***/ }),
 

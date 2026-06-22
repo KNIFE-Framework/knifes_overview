@@ -233,7 +233,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000110-time-travel-sdlc-index-md-663.json
-const site_docs_en_knifes_k_000110_time_travel_sdlc_index_md_663_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000110-Time-Travel-SDLC/K000110_EN","title":"K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect","description":"Git workflow for Enterprise Architect models via LemonTree by LieberLieber — branch, merge, audit trail, and the corporate-latency problem it eliminates.","source":"@site/docs/en/knifes/K000110-Time-Travel-SDLC/index.md","sourceDirName":"en/knifes/K000110-Time-Travel-SDLC","slug":"/en/knifes/K000110-Time-Travel-SDLC/","permalink":"/en/knifes/K000110-Time-Travel-SDLC/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"EnterpriseArchitect","permalink":"/doc-tags/enterprise-architect"},{"inline":true,"label":"LemonTree","permalink":"/doc-tags/lemon-tree"},{"inline":true,"label":"Git","permalink":"/doc-tags/git"},{"inline":true,"label":"VersionControl","permalink":"/doc-tags/version-control"},{"inline":true,"label":"ParallelModelling","permalink":"/doc-tags/parallel-modelling"},{"inline":true,"label":"EAM","permalink":"/doc-tags/eam"},{"inline":true,"label":"MBSE","permalink":"/doc-tags/mbse"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-06-21T00:00:00.000000+00:00","fm_version_comment":"","id":"K000110_EN","guid":"39297006-0bd4-4dcf-a690-29e6bdcb4d68","dao":"knife","title":"K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect","description":"Git workflow for Enterprise Architect models via LemonTree by LieberLieber — branch, merge, audit trail, and the corporate-latency problem it eliminates.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"KNIFE","type":"","priority":"","tags":["SDLC","EnterpriseArchitect","LemonTree","Git","VersionControl","ParallelModelling","EAM","MBSE"],"locale":"en","created":"2026-06-21 00:00","modified":"2026-06-21 00:00","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2026 Roman Kazicka","origin_system":"CAA","origin_author":"Roman Kazicka"},"sidebar":"tutorialSidebar","previous":{"title":"K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations","permalink":"/en/knifes/K000109-ESCO-SFIA-CAA/"},"next":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"}}');
+const site_docs_en_knifes_k_000110_time_travel_sdlc_index_md_663_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000110-Time-Travel-SDLC/K000110_EN","title":"K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect","description":"Git workflow for Enterprise Architect models via LemonTree by LieberLieber — branch, merge, audit trail, and the corporate-latency problem it eliminates.","source":"@site/docs/en/knifes/K000110-Time-Travel-SDLC/index.md","sourceDirName":"en/knifes/K000110-Time-Travel-SDLC","slug":"/en/knifes/K000110-Time-Travel-SDLC/","permalink":"/en/knifes/K000110-Time-Travel-SDLC/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"SDLC","permalink":"/doc-tags/sdlc"},{"inline":true,"label":"EnterpriseArchitect","permalink":"/doc-tags/enterprise-architect"},{"inline":true,"label":"LemonTree","permalink":"/doc-tags/lemon-tree"},{"inline":true,"label":"Git","permalink":"/doc-tags/git"},{"inline":true,"label":"VersionControl","permalink":"/doc-tags/version-control"},{"inline":true,"label":"ParallelModelling","permalink":"/doc-tags/parallel-modelling"},{"inline":true,"label":"EAM","permalink":"/doc-tags/eam"},{"inline":true,"label":"MBSE","permalink":"/doc-tags/mbse"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-06-21T00:00:00.000000+00:00","fm_version_comment":"","id":"K000110_EN","guid":"39297006-0bd4-4dcf-a690-29e6bdcb4d68","dao":"knife","title":"K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect","description":"Git workflow for Enterprise Architect models via LemonTree by LieberLieber — branch, merge, audit trail, and the corporate-latency problem it eliminates.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"KNIFE","type":"","priority":"","tags":["SDLC","EnterpriseArchitect","LemonTree","Git","VersionControl","ParallelModelling","EAM","MBSE"],"locale":"en","created":"2026-06-21 00:00","modified":"2026-06-22 00:00","status":"published","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2026 Roman Kazicka","origin_system":"CAA","origin_author":"Roman Kazicka"},"sidebar":"tutorialSidebar","previous":{"title":"K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations","permalink":"/en/knifes/K000109-ESCO-SFIA-CAA/"},"next":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -269,8 +269,8 @@ const frontMatter = {
 	],
 	locale: 'en',
 	created: '2026-06-21 00:00',
-	modified: '2026-06-21 00:00',
-	status: 'backlog',
+	modified: '2026-06-22 00:00',
+	status: 'published',
 	privacy: 'public',
 	rights_holder_content: 'Roman Kazicka',
 	rights_holder_system: 'CAA / KNIFE / LetItGrow',
@@ -360,7 +360,6 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     a: "a",
-    admonition: "admonition",
     blockquote: "blockquote",
     code: "code",
     em: "em",
@@ -386,13 +385,7 @@ function _createMdxContent(props) {
     ...props.components
   };
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(_components.admonition, {
-      title: "In Progress",
-      type: "caution",
-      children: (0,jsx_runtime.jsx)(_components.p, {
-        children: "This KNIFE is being drafted. Content and structure may still change."
-      })
-    }), "\n", (0,jsx_runtime.jsx)(_components.header, {
+    children: [(0,jsx_runtime.jsx)(_components.header, {
       children: (0,jsx_runtime.jsx)(_components.h1, {
         id: "k000110--time-travel-in-sdlc-parallel-modelling-and-version-control-for-enterprise-architect",
         children: "K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect"
@@ -504,10 +497,8 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "the-git--lemontree-approach",
       children: "The Git + LemonTree approach"
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["LemonTree replaces the central database workflow with a ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "local file + Git"
-      }), " approach:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "LemonTree implements the whole Git workflow during parallel modelling:"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         children: "Clone → Branch → Commit → Push → Pull Request → Merge\n"
@@ -655,6 +646,10 @@ function _createMdxContent(props) {
       }), " – it happens when the modeller chooses to push, not on every click."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Result: no latency, no false security alerts, no blocked creativity."
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.em, {
+        children: "Note: the latency elimination above is specific to local-file mode. LemonTree's compare and merge engine is not limited to local files — it also supports comparing and merging directly against database-based EA repositories. Local file + Git is the configuration that removes the corporate-network bottleneck described earlier; it is not the only way LemonTree's diff/merge can be used."
+      })
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "recommended-git-client",
       children: "Recommended Git client"

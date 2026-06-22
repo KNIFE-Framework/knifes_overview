@@ -192,7 +192,7 @@ function MDXProvider(properties) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/01-sparx-ecosystem-92ff88a55fbd2fa9e0c74b2d868d3e3d.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/01-sparx-ecosystem-07c9098db8ef4bd087f5041bd1582e4c.png");
 
 /***/ }),
 
@@ -514,7 +514,7 @@ function _createMdxContent(props) {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Figure 02:"
-        }), " SDLC supported by AI – Sparx Systems ecosystem overview.\nEnterprise Architect as the core modelling platform spans all SDLC phases\n(Business → Arch. → Analysis → Design → Impl. → Testing → Ops).\nLemonTree (LieberLieber) provides Git workflow: Clone–Branch–Commit–Merge, 3-way diff.\nKERNARO AI for EA adds Chat, Agents, JavaScript/Python, MCP client capabilities.\nPROLABORATE + Genie provides web access for stakeholders in natural language.\nLLM backends: Claude, OpenAI/GPT, Gemini, Azure OpenAI, Ollama (on-prem)."]
+        }), " SDLC supported by AI – Sparx Systems ecosystem overview.\nEnterprise Architect as the core modelling platform spans all SDLC phases\n(Business → Arch. → Analysis → Design → Impl. → Testing → Ops).\nLemonTree (LieberLieber) provides Git workflow: Clone–Branch–Commit–Merge, 3-way diff.\nKERNARO AI for EA adds Chat, Agents, JavaScript/Python, MCP client capabilities.\nPROLABORATE + Genie provides web access for stakeholders in natural language.\nTrerado (EAM SaaS platform) and Trechoro (SysMLv2/MBSE modelling) sit alongside Prolaborate in the broader Sparx product suite.\nLLM backends: Claude, OpenAI/GPT, Gemini, Azure OpenAI, Ollama (on-prem)."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -1095,7 +1095,7 @@ function MDXContent(props = {}) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/01-sparx-ecosystem-92ff88a55fbd2fa9e0c74b2d868d3e3d.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/01-sparx-ecosystem-07c9098db8ef4bd087f5041bd1582e4c.png");
 
 /***/ }),
 

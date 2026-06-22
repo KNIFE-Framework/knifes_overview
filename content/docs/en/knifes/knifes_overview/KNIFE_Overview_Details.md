@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS_EN"
 
 # Unikátne UUID – generuje skript
-guid: "c78b79cf-5d19-4132-8139-83388f843956"
+guid: "7af7a2d6-d705-44c5-8bd9-19f74501b8b1"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "en"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-06-09"
+created: "2026-06-22"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `c78b79cf-5d19-4132-8139-83388f843956`
+> **GUID:** `7af7a2d6-d705-44c5-8bd9-19f74501b8b1`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -144,6 +144,7 @@ fm_reserved2: ""
 
 | ID | Title | Created | Status | Priority |
 |---|---|---|---|---|
+| K000110_EN | [K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect](../K000110-Time-Travel-SDLC/) | 2026-06-21 00:00 | published |  |
 | K000109_EN | [K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations](../K000109-ESCO-SFIA-CAA/) | 2026-06-02 00:00 | published |  |
 | K000108_EN | [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/) | 2026-06-01 00:00 | published |  |
 | K000107_EN | [K000107 – Taxonomy and Ontology in SDLC](../K000107_TaxonomyAndOntology/) | 2026-06-01 00:00 | published |  |

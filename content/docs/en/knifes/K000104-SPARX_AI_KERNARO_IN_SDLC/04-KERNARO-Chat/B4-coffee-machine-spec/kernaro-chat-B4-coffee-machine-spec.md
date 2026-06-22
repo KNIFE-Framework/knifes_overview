@@ -59,7 +59,12 @@ fm_reserved2: ""
 
 ---
 
-<!-- TODO: content – describe the Coffee Machine functional specification use case -->
+The Coffee Machine model was built entirely from natural language prompts on an empty QEA file.
+No manual EA modelling — Kernaro created the package structure, Use Case diagram, actors, Activity diagram, and State diagram through a sequence of chat instructions.
+
+**Output:** a structured Word document covering Use Case scenarios, actor descriptions, and activity flows — ready for stakeholder review or as a contract basis.
+
+→ [[IMG-29]](#img-29) · Generated Use Case Report
 
 ---
 
@@ -313,6 +318,12 @@ Default behaviour for Use Case modelling should prefer Structured Scenarios over
 [IMG-28]
 <div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
   <img src={require('./img2-gen/12-generateElements-structuredScenario-chats.png').default} alt="img2-gen/12-generateElements-structuredScenario-chats.png" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+
+<a id="img-29"></a>
+#### IMG-29 · Generated Use Case Report – Coffee Machine specification
+<div style={{backgroundColor: '#ffffff', padding: '16px', borderRadius: '8px', display: 'inline-block', width: '100%', boxSizing: 'border-box'}}>
+  <img src={require('./docs/USECASE_REPORT.png').default} alt="Generated Use Case Report – Coffee Machine" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 <!-- IMAGES:END -->

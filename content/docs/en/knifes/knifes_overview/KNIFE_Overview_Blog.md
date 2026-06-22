@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG_EN"
 
 # Unikátne UUID – generuje skript
-guid: "0b8138b7-80c4-4525-b26a-cb0a6caa8f7b"
+guid: "c22d39b5-c4d8-4663-8a72-9119e0d39db0"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "en"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-06-09"
+created: "2026-06-22"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `0b8138b7-80c4-4525-b26a-cb0a6caa8f7b`
+> **GUID:** `c22d39b5-c4d8-4663-8a72-9119e0d39db0`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -149,3 +149,4 @@ fm_reserved2: ""
 - **K000107_EN** — 2026-06-01 00:00 — [K000107 – Taxonomy and Ontology in SDLC](../K000107_TaxonomyAndOntology/)
 - **K000108_EN** — 2026-06-01 00:00 — [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/)
 - **K000109_EN** — 2026-06-02 00:00 — [K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations](../K000109-ESCO-SFIA-CAA/)
+- **K000110_EN** — 2026-06-21 00:00 — [K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect](../K000110-Time-Travel-SDLC/)

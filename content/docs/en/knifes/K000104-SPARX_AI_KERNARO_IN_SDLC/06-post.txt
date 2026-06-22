@@ -1,0 +1,70 @@
+Pripravil som LI post, ale presiahol limit o 56 znakov.
+Mohol by si to skrátiť?
+
+„🤖 AKO AI môže pomôcť počas celého SDLC? – KERNARO v praxi (#6/6)"
+ 
+⚡ Pre tých, čo sa nedostanú nižšie 😄
+AI v modeleri je výborná správa.
+Ale ak nemáte Taxonómiu, Ontológiu a SSOT – AI len rýchlejšie zosilní vaše problémy.
+☝️ Nie je to kritika AI. Je to podmienka pre jej skutočnú hodnotu.
+( detaily nižšie 👇)
+ 
+🤖 AI priamo v modeleri. Čo to znamená v praxi?
+Sparx Systems uvádza na trh KERNARO – AI doplnok pre Enterprise Architect.
+Nie generický chatbot. AI, ktorá pozná tvoj model, tvoj repozitár, tvoj kontext.
+ 
+⏱️ 25 rokov s EA. Prečo ma KERNARO zaujalo?
+Sparx technológiám sa venujem od roku 2000.
+Komplexná technológia pre komplexné témy.
+Raz sa naučíš, spoľahneš sa na stabilitu, rozširuješ use cases.
+Dnes pokrýva Sparx ekosystém celý SDLC
+    – od biznis architektúry, cez analýzu, návrh, implementáciu až po testovanie a prevádzku.
+Desiatky rolí, niekedy stovky ľudí naprieč organizáciou a jej dodávateľmi.
+Zavedením AI priamo do portfólia sa výrazne zjednoduší komunikácia s modelmi – aj pre nešpecialistov.
+ 
+👍 A to podporí (môže podporiť ak,...) porozumenie medzi rolami v celom SDLC reťazci.
+ 
+🧪 KERNARO Beta – moje testy
+Prostredie: Windows 11 (VMware Fusion na Macu), EA 17.1.1716, KERNARO Beta
+KERNARO podporuje spoluprácu s modelom cez LLM (Claude, GPT, Gemini).
+Vo videu a hlavne v článku (https://bit.ly/4uZEmyi ) nižšie ukazujem:
+→ Konfiguráciu (Chat + Agent)
+→ Chatovanie s modelom – štatistiky, generovanie dokumentov
+→ Vytváranie modelu z prirodzeného jazyka (coffee machine)
+→ Automatické akcie Digital Agenta
+ 
+Praktické postrehy:
+ 
+→ Väčšie modely = väčšia spotreba tokenov
+→ Claude Console: prehľadné dashboardy – tokeny, náklady, užívateľsky definované limity
+→ Bezpečnosť: priame prepojenie s LLM providerom alebo cez MS Azure pre regulované prostredia
+ 
+✅ Zhodnotenie – KERNARO naplnilo moje očakávania
+ 
+→ Jednoduchšie dopytovanie obsahu modelu prirodzeným jazykom
+→ Štatistiky a impact analýza
+→ Vytváranie obsahu modelu zo zadania
+→ Automatizácia validácie modelov
+ 
+⚠️ A teraz to dôležité upozornenie:
+Jednoduchosť prístupu môže zvádzať k ilúzii: „AI vyrieši všetky problémy pri modelovaní."
+Nevyrieši.
+AI komunikuje prirodzeným jazykom – ale čerpá z toho, čo je k dispozícii.
+🧨 Nekvalitné vstupy = nekvalitné výstupy.
+Rýchlosť AI tento problém nezakryje.
+🌋 Zosilní ho. ⚡
+ 
+🎯 Čo musí byť na mieste skôr, ako AI prinesie skutočnú hodnotu:
+→ Taxonómia – spoločný slovník pojmov a ich hierarchia naprieč rolami
+→ Ontológia – každá rola vníma rovnaké aktíva inak; to musí byť zachytené
+→ SSOT/TSSOT – jeden dôveryhodný zdroj pravdy o realite riešenia
+Až keď sú tieto vrstvy spracované,
+môže systém – aj bez AI – poskytovať štandardné aj neštandardné pohľady nad repozitárom.
+ 
+🎓AI to urýchli. Nezastúpi.
+ 
+📌 Záver a Q&A Takeaway: https://bit.ly/43woTcW
+ 
+ 
+📌  Detaily v K000104-SPARX_AI_KERNARO_IN_SDLC/👇 [https://bit.ly/4uZEmyi]
+#KERNARO #SparxSystems #EnterpriseArchitecture #SDLC #AI #Taxonomy #Ontology #SSOT #ContextAwareApproach

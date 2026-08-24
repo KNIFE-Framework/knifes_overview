@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS"
 
 # Unikátne UUID – generuje skript
-guid: "afd443d7-0cf5-4844-ad34-6269080e8548"
+guid: "bff3f4b5-0f63-4e03-a998-11ac05889610"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-06-22"
+created: "2026-08-24"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `afd443d7-0cf5-4844-ad34-6269080e8548`
+> **GUID:** `bff3f4b5-0f63-4e03-a998-11ac05889610`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -147,6 +147,7 @@ fm_reserved2: ""
 | REF-UAT-001 | [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) | 2025-10-05 | inprogress | top |
 | K1000999 | [K1000999 – KNIFE – Test script-created instance](../K1000999/) | 2025-11-23 16:35 | backlog |  |
 | K000999 | [K000999 – KNIFE – Test script-created instance](../K000999/) | 2025-11-22 22:22 | backlog |  |
+| K000111 | [K000111 – Vzor plánovaného agenta](../K000111-Vzor-Planovaneho-Agenta/) | 2026-08-24 11:10 | published | medium |
 | K000109_SK | [K000109 – ESCO, SFIA a CAA: Tri vrstvy správy zručností v IT organizáciách](../K000109-ESCO-SFIA-CAA/) | 2026-06-02 00:00 | published |  |
 | K000108_SK | [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/) | 2026-06-02 00:00 | published |  |
 | K000107_SK | [K000107 – Taxonómia a ontológia v SDLC](../K000107_TaxonomyAndOntology/) | 2026-06-02 00:00 | draft |  |

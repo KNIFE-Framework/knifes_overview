@@ -1,0 +1,263 @@
+<title>Obecný vzor agenta</title>
+<style>
+  :root{
+    --bg:#f4f6f9; --surface:#ffffff; --surface-2:#eceff4; --surface-3:#e3e7ee;
+    --ink:#191c23; --muted:#5a616f; --faint:#868d9c;
+    --line:#d6dae2; --line-strong:#c2c8d3;
+    --accent:#3350c9; --accent-soft:#e5e9fb;
+    --fin:#1f875a; --fin-soft:#e2f1ea;
+    --cas:#b9740f; --cas-soft:#f6ecda;
+    --shadow:0 1px 2px rgba(20,25,40,.05),0 6px 18px rgba(20,25,40,.06);
+  }
+  :root:not([data-theme="light"]){}
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0f1217; --surface:#171b22; --surface-2:#1d222b; --surface-3:#242b35;
+      --ink:#e9ecf3; --muted:#9aa2b1; --faint:#727b8b;
+      --line:#2a313c; --line-strong:#3a424f;
+      --accent:#8098f5; --accent-soft:#20263c;
+      --fin:#4cc088; --fin-soft:#16281f;
+      --cas:#e3a84e; --cas-soft:#2a2213;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f1217; --surface:#171b22; --surface-2:#1d222b; --surface-3:#242b35;
+    --ink:#e9ecf3; --muted:#9aa2b1; --faint:#727b8b;
+    --line:#2a313c; --line-strong:#3a424f;
+    --accent:#8098f5; --accent-soft:#20263c;
+    --fin:#4cc088; --fin-soft:#16281f;
+    --cas:#e3a84e; --cas-soft:#2a2213;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:56px 24px 72px}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+  h1{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;font-size:2.5rem;
+    line-height:1.08;margin:0 0 12px;text-wrap:balance;letter-spacing:-.01em}
+  .lede{font-size:1.06rem;color:var(--muted);max-width:60ch;margin:0}
+  h2{font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:1.28rem;
+    margin:0 0 4px;letter-spacing:-.01em}
+  .section{margin-top:52px}
+  .section > .sub{color:var(--muted);font-size:.95rem;margin:0 0 22px;max-width:62ch}
+  .rule{height:1px;background:var(--line);border:0;margin:0}
+
+  /* flow */
+  .flowScroll{overflow-x:auto;padding-bottom:6px}
+  .flow{display:flex;align-items:stretch;gap:0;min-width:860px}
+  .stage{flex:1;background:var(--surface);border:1px solid var(--line);
+    border-radius:14px;padding:18px 16px 16px;box-shadow:var(--shadow);position:relative}
+  .stage.agent{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),var(--shadow)}
+  .stage .n{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--faint);
+    letter-spacing:.1em}
+  .stage h3{font-size:1rem;margin:6px 0 6px;font-weight:600}
+  .stage p{margin:0;color:var(--muted);font-size:.85rem}
+  .stage .tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--muted);
+    background:var(--surface-2);border:1px solid var(--line);border-radius:999px;
+    padding:2px 8px;white-space:nowrap}
+  .chips{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+  .chip{border-radius:10px;padding:9px 10px;border:1px solid var(--line);background:var(--surface-2)}
+  .chip b{display:block;font-size:.82rem}
+  .chip span{font-size:.72rem;color:var(--muted)}
+  .arrow{flex:0 0 34px;display:flex;align-items:center;justify-content:center;color:var(--line-strong)}
+  .arrow svg{width:22px;height:22px}
+  .loop{margin-top:14px;border:1px dashed var(--line-strong);border-radius:12px;
+    padding:12px 16px;display:flex;gap:12px;align-items:flex-start;background:var(--surface)}
+  .loop .ic{color:var(--accent);flex:0 0 auto;margin-top:2px}
+  .loop p{margin:0;font-size:.86rem;color:var(--muted)}
+  .loop b{color:var(--ink)}
+
+  /* matrix */
+  .matrixScroll{overflow-x:auto}
+  table.matrix{border-collapse:separate;border-spacing:0;width:100%;min-width:820px;
+    background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    box-shadow:var(--shadow)}
+  table.matrix th,table.matrix td{padding:13px 14px;text-align:left;vertical-align:top;
+    border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+  table.matrix thead th{background:var(--surface-3);font-family:"IBM Plex Mono",monospace;
+    font-weight:500;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  table.matrix tbody th{font-weight:600;font-size:.88rem;background:var(--surface-2);white-space:nowrap}
+  table.matrix td{font-size:.82rem;color:var(--muted)}
+  table.matrix tr:last-child th,table.matrix tr:last-child td{border-bottom:0}
+  table.matrix th:last-child,table.matrix td:last-child{border-right:0}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;vertical-align:middle;margin-right:3px}
+  .dot.g{background:var(--fin)} .dot.y{background:var(--cas)}
+
+  /* two-up */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:720px){.cols{grid-template-columns:1fr}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    padding:18px 18px 16px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 10px;font-size:1rem}
+  .kv{display:flex;gap:8px;font-size:.85rem;padding:5px 0;border-top:1px solid var(--line)}
+  .kv:first-of-type{border-top:0}
+  .kv .k{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--faint);
+    text-transform:uppercase;letter-spacing:.05em;flex:0 0 66px;padding-top:2px}
+  .kv .v{color:var(--muted)}
+
+  /* rules panel */
+  .rules{display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center}
+  @media(max-width:720px){.rules{grid-template-columns:1fr}}
+  .quad{width:100%;max-width:280px;height:auto}
+  .rules .txt p{margin:0 0 10px;font-size:.9rem;color:var(--muted)}
+  .rules .txt b{color:var(--ink)}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:4px;font-size:.78rem;color:var(--muted)}
+  .legend span{display:flex;align-items:center;gap:6px}
+  .sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--faint)}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:wght@500;600&display=swap">
+
+<div class="wrap">
+  <p class="eyebrow">Systémový vzor · KNIFE</p>
+  <h1>Vzor plánovaného agenta</h1>
+  <p class="lede">Jeden opakovateľný skelet pre osobnú automatizáciu. Tému vymeníš, kostra ostáva: zdroj → most → agent (pravidlá + pamäť) → výstup → človek.</p>
+
+  <div class="section">
+    <h2>Kostra</h2>
+    <p class="sub">Keď novú úlohu vieš opísať v týchto piatich krokoch, vieš ju postaviť. Ak nie, chýba ti jasný zdroj alebo jasné pravidlá.</p>
+    <div class="flowScroll">
+      <div class="flow">
+        <div class="stage">
+          <div class="n">01</div><h3>Zdroj</h3>
+          <p>Odkiaľ tečú dáta.</p>
+          <div class="tags"><span class="tag">API</span><span class="tag">DB</span><span class="tag">e-mail</span><span class="tag">web</span></div>
+        </div>
+        <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="stage">
+          <div class="n">02</div><h3>Most / konektor</h3>
+          <p>Ako sa zdroj dostane k agentovi.</p>
+          <div class="tags"><span class="tag">MCP</span><span class="tag">e-mail forward</span><span class="tag">adaptér</span></div>
+        </div>
+        <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="stage agent">
+          <div class="n">03 · jadro</div><h3>Plánovaný agent</h3>
+          <p>Beh na rozvrhu (cron / scheduled task).</p>
+          <div class="chips">
+            <div class="chip"><b>Pravidlá</b><span>„mozog" — jedno miesto pravdy</span></div>
+            <div class="chip"><b>Pamäť</b><span>trvalý stav medzi behmi</span></div>
+          </div>
+        </div>
+        <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="stage">
+          <div class="n">04</div><h3>Výstup</h3>
+          <p>Čo agent doručí.</p>
+          <div class="tags"><span class="tag">digest</span><span class="tag">zoznam</span><span class="tag">návrh akcie</span></div>
+        </div>
+        <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="stage">
+          <div class="n">05</div><h3>Človek</h3>
+          <p>Schvaľuje, odosiela, rozhoduje.</p>
+          <div class="tags"><span class="tag">kontrola</span><span class="tag">bezpečnosť</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="loop">
+      <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5 4 10l5 5M4 10h10a6 6 0 0 1 6 6v1" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <p><b>Spätná väzba (ľudská slučka):</b> človek výstup schváli a svojimi rozhodnutiami ladí Pravidlá. Nie je to slabina vzoru — drží kvalitu aj bezpečnosť: limity platforiem, správy tretím stranám, nevratné akcie.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Vzor v akcii — dve inštancie</h2>
+    <p class="sub">Tie isté stĺpce, iná téma. Vľavo dnešný job-hunt, vpravo pripravovaná automatizácia pre KnowMyself.academy.</p>
+    <div class="matrixScroll">
+      <table class="matrix">
+        <thead>
+          <tr><th>Inštancia</th><th>01 Zdroj</th><th>02 Most</th><th>03 Agent</th><th>04 Výstup</th><th>05 Človek</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Job Scout<br><span style="font-weight:400;color:var(--faint);font-size:.75rem">práca</span></th>
+            <td>LinkedIn Jobs + sieť, EPSO</td>
+            <td>e-mail forward (systemthinking.sk → gmail) + Gmail MCP</td>
+            <td>Job Scout (Po–Pia 7:35) · rubrik FIN/ČAS · project memory</td>
+            <td><span class="dot g"></span><span class="dot y"></span>push + e-mail digest · tracker</td>
+            <td>Roman posiela connecty ručne (1–2/deň), rozhodnutia ladia rubrik</td>
+          </tr>
+          <tr>
+            <th>License Watcher<br><span style="font-weight:400;color:var(--faint);font-size:.75rem">KnowMyself</span></th>
+            <td>DB licencií · zákazníci · dátumy expirácie</td>
+            <td>konektor e-shop / DB (Sheets, API) + e-mail</td>
+            <td>scheduled task · pravidlá (expiruje o 30/7 dní, typ licencie) · project memory</td>
+            <td>zoznam expirujúcich · návrh e-mailu na obnovu · FAQ odpovede</td>
+            <td>Roman schváli / odošle obnovu a odpovede</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Vrstva pravidiel — dvojosé rozhodovanie</h2>
+    <p class="sub">Ak agent triedi príležitosti, pravidlá držte ako dve osi 0–10, nie binárne áno/nie. Použiteľné na akékoľvek „oplatí sa mi to vziať?".</p>
+    <div class="rules">
+      <svg class="quad" viewBox="0 0 280 210" role="img" aria-label="Kvadrant FIN verzus ČAS">
+        <defs></defs>
+        <!-- zones -->
+        <rect x="40" y="20" width="105" height="80" fill="var(--fin-soft)"/>
+        <rect x="145" y="20" width="95" height="80" fill="var(--cas-soft)"/>
+        <!-- axes -->
+        <line x1="40" y1="20" x2="40" y2="170" stroke="var(--line-strong)" stroke-width="1.4"/>
+        <line x1="40" y1="170" x2="240" y2="170" stroke="var(--line-strong)" stroke-width="1.4"/>
+        <!-- axis labels -->
+        <text x="34" y="16" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="9" fill="var(--fin)">FIN ↑</text>
+        <text x="240" y="185" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="9" fill="var(--cas)">ČAS →</text>
+        <text x="36" y="205" text-anchor="start" font-family="IBM Plex Mono,monospace" font-size="8" fill="var(--faint)">nízke nároky</text>
+        <text x="240" y="205" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="8" fill="var(--faint)">zožerie hlavu</text>
+        <!-- zone labels -->
+        <text x="92" y="58" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="11" font-weight="600" fill="var(--fin)">ideál</text>
+        <text x="92" y="72" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="8.5" fill="var(--muted)">plať + voľná hlava</text>
+        <text x="192" y="58" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="11" font-weight="600" fill="var(--cas)">pasca</text>
+        <text x="192" y="72" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="8.5" fill="var(--muted)">peniaze, nula času</text>
+        <!-- point -->
+        <circle cx="86" cy="52" r="4.5" fill="var(--accent)"/>
+      </svg>
+      <div class="txt">
+        <p><b>Prínos (↑ lepšie)</b> — koľko mi to dá. Musí prejsť minimálny floor.</p>
+        <p><b>Záťaž na hlavu (↓ lepšie)</b> — koľko mi to zoberie z kapacity na skutočný cieľ (čas + mentálna námaha).</p>
+        <p><b>Záťaž je brzda:</b> vysoká záťaž zhora zastropuje verdikt aj pri vysokom prínose — „veľa peňazí + nula času = zle".</p>
+        <div class="legend">
+          <span><i class="sw" style="background:var(--fin-soft);border:1px solid var(--fin)"></i>zóna ideál</span>
+          <span><i class="sw" style="background:var(--cas-soft);border:1px solid var(--cas)"></i>zóna pasca</span>
+          <span><i class="sw" style="background:var(--accent);border-radius:50%"></i>túto stopu ber</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Kde agent beží</h2>
+    <p class="sub">Vzor sa nemení — len sa presunie, kde má bežať.</p>
+    <div class="cols">
+      <div class="card">
+        <h3>Cowork · scheduled task</h3>
+        <div class="kv"><span class="k">Kedy</span><span class="v">Default. Hneď, bez infraštruktúry.</span></div>
+        <div class="kv"><span class="k">Plus</span><span class="v">Cloud, hotové konektory, human-in-loop cez telefón.</span></div>
+        <div class="kv"><span class="k">Limit</span><span class="v">Bez konektora nedosiahne lokálnu DB.</span></div>
+      </div>
+      <div class="card">
+        <h3>Konzola · Claude Code / SDK</h3>
+        <div class="kv"><span class="k">Kedy</span><span class="v">Keď treba priamy prístup k lokálnej DB / serveru.</span></div>
+        <div class="kv"><span class="k">Plus</span><span class="v">Beh na vlastnom stroji, headless / CI, vlastné nástroje.</span></div>
+        <div class="kv"><span class="k">Limit</span><span class="v">Musíš hostiť a strážiť sám.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span>KNIFE · knife-planovany-agent · draft</span>
+    <span>páruje sa s → knife-dvojose-rozhodovanie-fin-cas</span>
+  </footer>
+</div>

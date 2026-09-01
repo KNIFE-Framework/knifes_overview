@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS"
 
 # Unikátne UUID – generuje skript
-guid: "e5948f66-d9d9-484a-b959-445ae9d99f9c"
+guid: "433cbb6d-23bd-417f-9304-5b0232d17464"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-08-29"
+created: "2026-09-01"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `e5948f66-d9d9-484a-b959-445ae9d99f9c`
+> **GUID:** `433cbb6d-23bd-417f-9304-5b0232d17464`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -147,6 +147,7 @@ fm_reserved2: ""
 | REF-UAT-001 | [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) | 2025-10-05 | inprogress | top |
 | K1000999 | [K1000999 – KNIFE – Test script-created instance](../K1000999/) | 2025-11-23 16:35 | backlog |  |
 | K000999 | [K000999 – KNIFE – Test script-created instance](../K000999/) | 2025-11-22 22:22 | backlog |  |
+| K000113 | [K000113 – Claude Code (CC) — platformy a orchestrácia agentov](../K000113-CC-Platformy-Orchestracia/) | 2026-09-01 12:38 | published | medium |
 | K000112 | [K000112 – PUSH vs. PULL marketing — dve filozofie, jedna mapa](../K000112-push-vs-pull-marketing/) | 2026-08-29 21:40 | published | medium |
 | K000111 | [K000111 – Vzor plánovaného agenta](../K000111-Vzor-Planovaneho-Agenta/) | 2026-08-24 11:10 | published | medium |
 | K000109_SK | [K000109 – ESCO, SFIA a CAA: Tri vrstvy správy zručností v IT organizáciách](../K000109-ESCO-SFIA-CAA/) | 2026-06-02 00:00 | published |  |

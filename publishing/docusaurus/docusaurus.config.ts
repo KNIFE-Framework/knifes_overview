@@ -42,6 +42,8 @@ const config: Config = {
     ],
   ],
 
+  themes: ['@docusaurus/theme-mermaid'],
+
   plugins: [
     [
       '@docusaurus/plugin-google-gtag',
@@ -126,6 +128,7 @@ const config: Config = {
   },
 
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownImages: 'ignore',
     },

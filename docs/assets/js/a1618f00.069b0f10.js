@@ -172,7 +172,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Miesto pre žiadosť o akceptovanie",
-        src: (__webpack_require__(13770)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(93262)/* ["default"] */ .A) + "",
         width: "2566",
         height: "1800"
       })
@@ -186,7 +186,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Miesto pre aktiváciu bebefitov ",
-        src: (__webpack_require__(87423)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(9035)/* ["default"] */ .A) + "",
         width: "2564",
         height: "1886"
       })
@@ -237,13 +237,13 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 13770:
+/***/ 9035:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/RKA-EDU-Benefits-e5bc004bdfa9c10e51b3065ffb2a0900.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/RKA-Dashboard-4409d6c6a682267e634e04f0d9d11356.png");
 
 /***/ }),
 
@@ -342,13 +342,13 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 87423:
+/***/ 93262:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/RKA-Dashboard-4409d6c6a682267e634e04f0d9d11356.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/RKA-EDU-Benefits-e5bc004bdfa9c10e51b3065ffb2a0900.png");
 
 /***/ })
 

@@ -1,16 +1,6 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[76721],{
 
-/***/ 2925:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/04-stroke-selection-line-cd5b85af7649c9e885ed2e864ead812a.png");
-
-/***/ }),
-
 /***/ 12991:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -219,7 +209,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Nastavenie transparentnosti",
-        src: (__webpack_require__(43972)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(17008)/* ["default"] */ .A) + "",
         width: "1126",
         height: "924"
       })
@@ -247,7 +237,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Vyber &#39;Invert&#39;",
-        src: (__webpack_require__(52181)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(74737)/* ["default"] */ .A) + "",
         width: "840",
         height: "336"
       })
@@ -258,7 +248,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Vybranie kruhu",
-        src: (__webpack_require__(26049)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(74557)/* ["default"] */ .A) + "",
         width: "850",
         height: "1238"
       })
@@ -295,7 +285,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Pridanie tieňa",
-        src: (__webpack_require__(18902)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(66850)/* ["default"] */ .A) + "",
         width: "780",
         height: "786"
       })
@@ -317,7 +307,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Pridanie farebného rámiku",
-        src: (__webpack_require__(2925)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(99745)/* ["default"] */ .A) + "",
         width: "820",
         height: "1234"
       })
@@ -332,7 +322,7 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["Transparentnosť sa zachová, ak má obrázok alpha channel a pozadie je vymazané.", (0,jsx_runtime.jsx)(_components.br, {}), "\n", (0,jsx_runtime.jsx)(_components.img, {
           alt: "Menu Export",
-          src: (__webpack_require__(85279)/* ["default"] */ .A) + "",
+          src: (__webpack_require__(60899)/* ["default"] */ .A) + "",
           width: "796",
           height: "1220"
         })]
@@ -341,7 +331,7 @@ function _createMdxContent(props) {
       id: "export-vo-formáte-png",
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Export vo formáte PNG",
-        src: (__webpack_require__(74280)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(38340)/* ["default"] */ .A) + "",
         width: "918",
         height: "728"
       })
@@ -378,7 +368,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Roman Kazička – Portrait",
-        src: (__webpack_require__(64921)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(27573)/* ["default"] */ .A) + "",
         width: "400",
         height: "400"
       })
@@ -402,23 +392,23 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 18902:
+/***/ 17008:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/03-drop-shadow-284371e3c0b5e0274c5fd1b852681f27.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/02-see-transparency-alpha-ad435b9f6b004406c38a0005ee1832c3.png");
 
 /***/ }),
 
-/***/ 26049:
+/***/ 27573:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/01-menu-Select-elipse-05a4da94a2428a256b8a406f3e5cde6b.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/rka-portret-circle-04-3a5aaf49a7baff997649e2a5b07ec14a.png");
 
 /***/ }),
 
@@ -517,37 +507,7 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 43972:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/02-see-transparency-alpha-ad435b9f6b004406c38a0005ee1832c3.png");
-
-/***/ }),
-
-/***/ 52181:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/05-select-invert-61a1867bdde307197d139e58387b49f4.png");
-
-/***/ }),
-
-/***/ 64921:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/rka-portret-circle-04-3a5aaf49a7baff997649e2a5b07ec14a.png");
-
-/***/ }),
-
-/***/ 74280:
+/***/ 38340:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -557,13 +517,53 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 85279:
+/***/ 60899:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/06-menu-export-9801af1c92709ad97760a7351ebb4213.png");
+
+/***/ }),
+
+/***/ 66850:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/03-drop-shadow-284371e3c0b5e0274c5fd1b852681f27.png");
+
+/***/ }),
+
+/***/ 74557:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/01-menu-Select-elipse-05a4da94a2428a256b8a406f3e5cde6b.png");
+
+/***/ }),
+
+/***/ 74737:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/05-select-invert-61a1867bdde307197d139e58387b49f4.png");
+
+/***/ }),
+
+/***/ 99745:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/04-stroke-selection-line-cd5b85af7649c9e885ed2e864ead812a.png");
 
 /***/ })
 

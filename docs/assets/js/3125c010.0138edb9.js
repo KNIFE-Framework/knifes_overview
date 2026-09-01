@@ -1,7 +1,17 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[50066],{
 
-/***/ 25048:
+/***/ 4236:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GHEDU-HomePage-b249656f67d3285059f445d4e0094004.png");
+
+/***/ }),
+
+/***/ 23132:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -103,26 +113,6 @@ function MDXProvider(properties) {
   )
 }
 
-
-/***/ }),
-
-/***/ 40598:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Link-GHE-Dashboard-a162867253d05c4e3059360ee8838b5d.png");
-
-/***/ }),
-
-/***/ 47221:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/WelcomePage-GHB-45d5584e1da0b4f9008343eb2ce322f4.png");
 
 /***/ }),
 
@@ -284,7 +274,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Step 1 - GitHub Education homepage",
-        src: (__webpack_require__(71560)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(4236)/* ["default"] */ .A) + "",
         width: "2570",
         height: "1734"
       })
@@ -355,7 +345,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Step 5 – Upgrade org plan",
-        src: (__webpack_require__(40598)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(69362)/* ["default"] */ .A) + "",
         width: "2548",
         height: "1732"
       })
@@ -378,7 +368,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Step 6 – Welcome paged",
-        src: (__webpack_require__(47221)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(79409)/* ["default"] */ .A) + "",
         width: "2580",
         height: "2538"
       })
@@ -388,7 +378,7 @@ function _createMdxContent(props) {
       id: "alt-text",
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "alt text",
-        src: (__webpack_require__(25048)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(23132)/* ["default"] */ .A) + "",
         width: "1008",
         height: "694"
       })
@@ -427,13 +417,23 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 71560:
+/***/ 69362:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GHEDU-HomePage-b249656f67d3285059f445d4e0094004.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Link-GHE-Dashboard-a162867253d05c4e3059360ee8838b5d.png");
+
+/***/ }),
+
+/***/ 79409:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/WelcomePage-GHB-45d5584e1da0b4f9008343eb2ce322f4.png");
 
 /***/ })
 

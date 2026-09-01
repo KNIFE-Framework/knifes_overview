@@ -1,13 +1,13 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[45733],{
 
-/***/ 11946:
+/***/ 11914:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GH-Benefits-Details-3469f675f56179ff89147bc559fc15a5.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Check_bill-02-d00d91862c2e0028f1ba8454efdf63b9.png");
 
 /***/ }),
 
@@ -106,23 +106,13 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 28658:
+/***/ 38444:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GH-UpgradeToGHTEAM-101fa174bcff82618f8312c74baf0d5c.png");
-
-/***/ }),
-
-/***/ 37402:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-05-IDE-2c44353dc8fa63f0f45b482161982cb1.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-04-adf0d5e6312500cf36fb88d2dafb117e.png");
 
 /***/ }),
 
@@ -330,7 +320,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Upgrade to GitHubH Team",
-        src: (__webpack_require__(28658)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(65294)/* ["default"] */ .A) + "",
         width: "2584",
         height: "1970"
       })
@@ -344,7 +334,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Step 2 - Kontrola aktivácie",
-        src: (__webpack_require__(59493)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(60897)/* ["default"] */ .A) + "",
         width: "2568",
         height: "1842"
       })
@@ -355,7 +345,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Step 3 - Kontrola aktivácie 2",
-        src: (__webpack_require__(57070)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(11914)/* ["default"] */ .A) + "",
         width: "1718",
         height: "762"
       })
@@ -381,7 +371,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Vráť sa a nájdi linku na Copilot coupon ",
-        src: (__webpack_require__(11946)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(64814)/* ["default"] */ .A) + "",
         width: "2556",
         height: "1718"
       })
@@ -393,7 +383,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Upgrade to Copilot",
-        src: (__webpack_require__(28658)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(65294)/* ["default"] */ .A) + "",
         width: "2584",
         height: "1970"
       })
@@ -405,7 +395,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Copilot-01",
-        src: (__webpack_require__(93373)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(71697)/* ["default"] */ .A) + "",
         width: "2552",
         height: "1620"
       })
@@ -417,7 +407,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Copilot-02",
-        src: (__webpack_require__(52134)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(50586)/* ["default"] */ .A) + "",
         width: "2570",
         height: "1948"
       })
@@ -429,7 +419,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Copilot-03",
-        src: (__webpack_require__(91151)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(98339)/* ["default"] */ .A) + "",
         width: "1778",
         height: "1762"
       })
@@ -441,7 +431,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Copilot-04",
-        src: (__webpack_require__(48304)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(38444)/* ["default"] */ .A) + "",
         width: "1362",
         height: "490"
       })
@@ -453,7 +443,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Copilot-05",
-        src: (__webpack_require__(45209)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(74357)/* ["default"] */ .A) + "",
         width: "1430",
         height: "2596"
       })
@@ -465,7 +455,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Copilot-06",
-        src: (__webpack_require__(37402)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(56638)/* ["default"] */ .A) + "",
         width: "2570",
         height: "2530"
       })
@@ -477,7 +467,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Copilot-07",
-        src: (__webpack_require__(53648)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(68316)/* ["default"] */ .A) + "",
         width: "2564",
         height: "1960"
       })
@@ -525,7 +515,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Copilot-08-Documentation",
-        src: (__webpack_require__(70309)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(70625)/* ["default"] */ .A) + "",
         width: "2588",
         height: "1726"
       })
@@ -549,27 +539,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 45209:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-05-0f3cf5f838007183b974b421f218710d.png");
-
-/***/ }),
-
-/***/ 48304:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-04-adf0d5e6312500cf36fb88d2dafb117e.png");
-
-/***/ }),
-
-/***/ 52134:
+/***/ 50586:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -579,27 +549,17 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 53648:
+/***/ 56638:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-07-VSC-1e5be76c3550745dd98ef59b22880f4a.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-05-IDE-2c44353dc8fa63f0f45b482161982cb1.png");
 
 /***/ }),
 
-/***/ 57070:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Check_bill-02-d00d91862c2e0028f1ba8454efdf63b9.png");
-
-/***/ }),
-
-/***/ 59493:
+/***/ 60897:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -609,7 +569,37 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 70309:
+/***/ 64814:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GH-Benefits-Details-3469f675f56179ff89147bc559fc15a5.png");
+
+/***/ }),
+
+/***/ 65294:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/GH-UpgradeToGHTEAM-101fa174bcff82618f8312c74baf0d5c.png");
+
+/***/ }),
+
+/***/ 68316:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-07-VSC-1e5be76c3550745dd98ef59b22880f4a.png");
+
+/***/ }),
+
+/***/ 70625:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -619,23 +609,33 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 91151:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-03-ea368ca0f69cbb0925c01e23257effac.png");
-
-/***/ }),
-
-/***/ 93373:
+/***/ 71697:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-01-73b9251af8111b6b6c58a0ee9a8755be.png");
+
+/***/ }),
+
+/***/ 74357:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-05-0f3cf5f838007183b974b421f218710d.png");
+
+/***/ }),
+
+/***/ 98339:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/Copilot-03-ea368ca0f69cbb0925c01e23257effac.png");
 
 /***/ })
 

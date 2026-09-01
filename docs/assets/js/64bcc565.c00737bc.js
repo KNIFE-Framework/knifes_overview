@@ -1,16 +1,6 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[77663],{
 
-/***/ 12628:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/vzor-agenta-light-568ec5f052db7fe0a387d0b8cc1a2ed3.png");
-
-/***/ }),
-
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -103,6 +93,16 @@ function MDXProvider(properties) {
   )
 }
 
+
+/***/ }),
+
+/***/ 46360:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/vzor-agenta-light-568ec5f052db7fe0a387d0b8cc1a2ed3.png");
 
 /***/ }),
 
@@ -289,7 +289,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Obecný vzor agenta — kostra, dve inštancie, FIN/ČAS a deployment",
-        src: (__webpack_require__(12628)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(46360)/* ["default"] */ .A) + "",
         width: "2240",
         height: "3952"
       })

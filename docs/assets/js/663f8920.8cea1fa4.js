@@ -1,6 +1,16 @@
 "use strict";
 (globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[44103],{
 
+/***/ 489:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/08-EA-LT-02-ca6786bbf1066ed2a5d549f7f82e9f72.png");
+
+/***/ }),
+
 /***/ 3647:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -21,17 +31,17 @@
 
 /***/ }),
 
-/***/ 16566:
+/***/ 7108:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/04-GIT-release-workflow-43b49dafbf0a9c0a8384a448cce1d559.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/03-GIT-std-workflow-09cffc5fc5bda60401a70926cdc3036b.png");
 
 /***/ }),
 
-/***/ 19899:
+/***/ 13191:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -41,13 +51,13 @@
 
 /***/ }),
 
-/***/ 26232:
+/***/ 16566:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/06-Smartgit-e9bfb32520d6f178eade67f2e32c422d.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/04-GIT-release-workflow-43b49dafbf0a9c0a8384a448cce1d559.png");
 
 /***/ }),
 
@@ -156,13 +166,23 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 39960:
+/***/ 55197:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/03-GIT-std-workflow-09cffc5fc5bda60401a70926cdc3036b.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/01-sparx-ecosystem-07c9098db8ef4bd087f5041bd1582e4c.png");
+
+/***/ }),
+
+/***/ 55567:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/05-Lemontree-c1630919a612bcc064797aaa2a850257.png");
 
 /***/ }),
 
@@ -176,13 +196,13 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 59059:
+/***/ 59372:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/05-Lemontree-c1630919a612bcc064797aaa2a850257.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/06-Smartgit-e9bfb32520d6f178eade67f2e32c422d.png");
 
 /***/ }),
 
@@ -203,16 +223,6 @@ function MDXProvider(properties) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/files/05-Lemontree-c1630919a612bcc064797aaa2a850257.png");
-
-/***/ }),
-
-/***/ 69493:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/08-EA-LT-02-ca6786bbf1066ed2a5d549f7f82e9f72.png");
 
 /***/ }),
 
@@ -456,7 +466,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "SDLC – Git workflow kontext",
-        src: (__webpack_require__(93700)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(94632)/* ["default"] */ .A) + "",
         width: "2738",
         height: "2406"
       })
@@ -506,7 +516,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Sparx Systems ekosystém – SDLC supported by AI",
-        src: (__webpack_require__(84553)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(55197)/* ["default"] */ .A) + "",
         width: "1360",
         height: "1360"
       })
@@ -567,7 +577,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Git štandardný workflow – Vincent Driessen FBV",
-        src: (__webpack_require__(39960)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(7108)/* ["default"] */ .A) + "",
         width: "2132",
         height: "2366"
       })
@@ -583,7 +593,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Git Based Single Source Of Truth – paralelné modelovanie",
-        src: (__webpack_require__(83397)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(78137)/* ["default"] */ .A) + "",
         width: "2262",
         height: "2622"
       })
@@ -623,7 +633,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "LemonTree 3-way diff",
-        src: (__webpack_require__(59059)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(55567)/* ["default"] */ .A) + "",
         width: "1510",
         height: "812"
       })
@@ -660,7 +670,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "LemonTree Add-In v EA ribbon",
-        src: (__webpack_require__(19899)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(13191)/* ["default"] */ .A) + "",
         width: "1459",
         height: "292"
       })
@@ -760,7 +770,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "LemonTree History panel v EA",
-        src: (__webpack_require__(69493)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(489)/* ["default"] */ .A) + "",
         width: "1512",
         height: "803"
       })
@@ -798,7 +808,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "SmartGit – production Git history",
-        src: (__webpack_require__(26232)/* ["default"] */ .A) + "",
+        src: (__webpack_require__(59372)/* ["default"] */ .A) + "",
         width: "1568",
         height: "723"
       })
@@ -1079,23 +1089,13 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 83397:
+/***/ 78137:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/04-GIT-release-workflow-43b49dafbf0a9c0a8384a448cce1d559.png");
-
-/***/ }),
-
-/***/ 84553:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/01-sparx-ecosystem-07c9098db8ef4bd087f5041bd1582e4c.png");
 
 /***/ }),
 
@@ -1109,7 +1109,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 93700:
+/***/ 94632:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {

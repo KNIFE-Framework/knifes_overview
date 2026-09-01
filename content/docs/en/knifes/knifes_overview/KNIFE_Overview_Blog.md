@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG_EN"
 
 # Unikátne UUID – generuje skript
-guid: "3842002d-d382-43a6-92fc-1a822426c3ed"
+guid: "e3eab454-5a35-4862-9985-8b90e56aeedc"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `3842002d-d382-43a6-92fc-1a822426c3ed`
+> **GUID:** `e3eab454-5a35-4862-9985-8b90e56aeedc`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 

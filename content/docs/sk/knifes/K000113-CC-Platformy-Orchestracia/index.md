@@ -72,7 +72,7 @@ locale: "sk"
 created: "2026-09-01 12:38"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-09-01 13:10"
+modified: "2026-09-01 13:45"
 
 # Stav dokumentu – default "backlog"
 status: "published"
@@ -153,7 +153,7 @@ Claude Code beží na spoločnom **"engine"** naprieč všetkými povrchmi — k
 
 ```mermaid
 flowchart TB
-    ENGINE["Claude Code Engine\n(zdieľané jadro: nástroje, kontext, CLAUDE.md, MCP)"]
+    ENGINE["Claude Code Engine<br/>(zdieľané jadro: nástroje, kontext, CLAUDE.md, MCP)"]
 
     subgraph LOKAL["Lokálne surfaces (bežia na vlastnom stroji)"]
         CLI["CLI / Terminál"]
@@ -177,12 +177,21 @@ flowchart TB
     MOB --> ENGINE
     ROUT --> ENGINE
 
-    CLI -->|"-p / headless"| SDK["Agent SDK\n(Python / TypeScript)"]
-    SDK --> CICD["CI/CD\nGitHub Actions, GitLab CI"]
+    SDK["Agent SDK<br/>(Python / TypeScript)"]
+    CICD["CI/CD<br/>GitHub Actions, GitLab CI"]
+    ANTHROPIC["Anthropic-hosted infra"]
+    SELFHOST["Self-hosted environment<br/>(Runner vo vašej sieti)"]
+
+    CLI -->|"-p / headless"| SDK
+    SDK --> CICD
     CLI --> CICD
 
-    CLOUDSURF -->|"predvolene beží na"| ANTHROPIC["Anthropic-hosted infra"]
-    CLOUDSURF -.->|"voliteľne presmerované na"| SELFHOST["Self-hosted environment\n(Runner vo vašej sieti)"]
+    WEB -->|"predvolene beží na"| ANTHROPIC
+    MOB -->|"predvolene beží na"| ANTHROPIC
+    ROUT -->|"predvolene beží na"| ANTHROPIC
+    WEB -.->|"voliteľne presmerované na"| SELFHOST
+    MOB -.->|"voliteľne presmerované na"| SELFHOST
+    ROUT -.->|"voliteľne presmerované na"| SELFHOST
 
     DESK -->|"Remote Control / Dispatch"| MOB
 ```

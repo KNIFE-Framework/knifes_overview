@@ -4,23 +4,24 @@ title: O projekte KNIFE Overview
 
 # O projekte KNIFE Overview
 
-Tento repozitár slúži ako **centrálny prehľad** (overview) všetkých KNIFE príspevkov a súvisiacich rámcov (7Ds, SDLC, STHDF).
+**Dokumentácia sa nerobí na konci projektu.** Znalosti vznikajú priebežne — ako vedľajší produkt bežnej práce, nie ako samostatná úloha na záver. KNIFE (Knowledge Index For Enterprise) je spôsob, ako tento vedľajší produkt zachytiť skôr, než sa stratí: krátky, štruktúrovaný záznam ("knife") napísaný v momente, keď je poznanie čerstvé.
 
-## Čo je jeho úlohou
+Namiesto "napíšem to, až budem mať čas" → zapíšeš to hneď, v štruktúre, ktorá sa dá znovu použiť, prehľadávať a zdieľať. S AI asistentom po ruke (Claude, ChatGPT a podobne) je tento krok prakticky bezbolestný — AI pomôže sformulovať, doplniť kontext, prepojiť s ďalšími knifes. Znalosť, ktorá by inak zostala len v hlave alebo v jednom chatovom vlákne, je o pár minút neskôr verejne dostupná, prehľadateľná a čitateľná aj pre AI (`llms.txt`).
 
-- byť **stabilným rozcestníkom** k jednotlivým KNIFE témam,
-- obsahovať **návody a postupy**, ktoré platia dlhodobo (nie len pre jednu triedu),
-- slúžiť ako **platforma** pre:
-  - predmet *System Thinking in IT & Digital Fabrication (STHDF)*,
-  - ďalšie kurzy a projekty, ktoré využívajú KNIFE rámec.
+## Pre koho je to
 
-## Pre koho je určený
+**Pre kohokoľvek** — nie je to viazané na jeden predmet ani jeden tím:
 
-- študentom, ktorí chcú:
-  - pochopiť štruktúru KNIFE,
-  - vedieť, ako si vytvoriť vlastný príspevok,
-- učiteľov a mentorov,
-- kohokoľvek, kto chce **transparentne zaznamenávať svoje poznanie**.
+- pre jednotlivca, ktorý si chce priebežne zaznamenávať vlastné poznanie,
+- pre tím, ktorý nechce, aby znalosť zmizla s odchodom človeka,
+- pre kurzy a projekty (napr. *System Thinking in IT & Digital Fabrication* — STHDF), ktoré KNIFE rámec využívajú ako jednu z platforiem,
+- pre kohokoľvek, kto chce **transparentne zaznamenávať poznanie priebežne, nie spätne**.
+
+## Čo tu nájdeš
+
+- **stabilný rozcestník** k jednotlivým KNIFE témam,
+- **návody a postupy**, ktoré platia dlhodobo (nie len pre jeden kurz či tím),
+- príspevky v rôznom stupni rozpracovanosti (`backlog` → `inProgress` → `done` → `published`) — knife sa publikuje, aj keď ešte nie je hotový, lebo hodnotu má aj rozpracovaná znalosť.
 
 ## Ako pokračovať
 

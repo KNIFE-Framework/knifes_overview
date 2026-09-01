@@ -4,23 +4,24 @@ title: About KNIFE Overview
 
 # About KNIFE Overview
 
-This repository serves as the **central overview** of all KNIFE contributions and related frameworks (7Ds, SDLC, STHDF).
+**Documentation doesn't happen at the end of a project.** Knowledge is created continuously — as a byproduct of everyday work, not as a separate task tacked on at the end. KNIFE (Knowledge Index For Enterprise) is a way to capture that byproduct before it's lost: a short, structured record (a "knife") written the moment the knowledge is fresh.
 
-## Purpose
+Instead of "I'll write it up once I have time" → you write it down right away, in a structure that's reusable, searchable, and shareable. With an AI assistant at hand (Claude, ChatGPT, and similar), this step is practically effortless — AI helps phrase it, fill in context, link it to other knifes. Knowledge that would otherwise stay stuck in your head or in a single chat thread is, minutes later, publicly available, searchable, and machine-readable too (`llms.txt`).
 
-- to be a **stable entry point** to individual KNIFE topics,
-- to contain **guides and procedures** that remain valid long-term (not just for a single class),
-- to serve as a **platform** for:
-  - the course *System Thinking in IT & Digital Fabrication (STHDF)*,
-  - other courses and projects that use the KNIFE framework.
+## Who it's for
 
-## Who it is for
+**Anyone** — it isn't tied to a single course or a single team:
 
-- students who want to:
-  - understand the structure of KNIFE,
-  - learn how to create their own contribution,
-- teachers and mentors,
-- anyone who wants to **transparently document their knowledge**.
+- individuals who want to record their own knowledge as they go,
+- teams that don't want knowledge to disappear when someone leaves,
+- courses and projects (e.g. *System Thinking in IT & Digital Fabrication* — STHDF) that use the KNIFE framework as one of their platforms,
+- anyone who wants to **document knowledge transparently as it happens, not in hindsight**.
+
+## What you'll find here
+
+- a **stable entry point** to individual KNIFE topics,
+- **guides and procedures** that remain valid long-term (not just for one course or team),
+- contributions at various stages of completion (`backlog` → `inProgress` → `done` → `published`) — a knife gets published even before it's finished, because work-in-progress knowledge still has value.
 
 ## How to continue
 

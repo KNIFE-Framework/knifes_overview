@@ -66,6 +66,9 @@ const config: Config = {
   ],
 
   themeConfig: {
+    mermaid: {
+      theme: { light: 'neutral', dark: 'neutral' },
+    },
     metadata: [
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'KNIFE Framework' },

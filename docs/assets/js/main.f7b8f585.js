@@ -365,6 +365,13 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
     ]
   ],
   "themeConfig": {
+    "mermaid": {
+      "theme": {
+        "light": "neutral",
+        "dark": "neutral"
+      },
+      "options": {}
+    },
     "metadata": [
       {
         "property": "og:type",
@@ -414,8 +421,8 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
           "position": "right"
         },
         {
-          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/26c9d4c",
-          "label": "Release 26c9d4c • 26c9d4c",
+          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/4d77e45",
+          "label": "Release 4d77e45 • 4d77e45",
           "position": "right"
         }
       ],
@@ -423,7 +430,7 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
     },
     "footer": {
       "style": "dark",
-      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>26c9d4c</strong><br/>\n    💡 Commit: <code>26c9d4c</code><br/>\n    🕒 Build: 2026-09-01 11:47:48 UTC\n  </div>\n",
+      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>4d77e45</strong><br/>\n    💡 Commit: <code>4d77e45</code><br/>\n    🕒 Build: 2026-09-01 11:59:37 UTC\n  </div>\n",
       "links": []
     },
     "prism": {
@@ -643,13 +650,6 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
     "tableOfContents": {
       "minHeadingLevel": 2,
       "maxHeadingLevel": 3
-    },
-    "mermaid": {
-      "theme": {
-        "dark": "dark",
-        "light": "default"
-      },
-      "options": {}
     }
   },
   "markdown": {
@@ -1941,7 +1941,7 @@ var normalizeContextByPath = __webpack_require__(43385);
 // EXTERNAL MODULE: ./node_modules/lunr/lunr.js
 var lunr = __webpack_require__(58291);
 ;// ./.docusaurus/@easyops-cn/docusaurus-search-local/default/generated-constants.js
-const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=43527048";const searchResultLimits=8;const fuzzyMatchingDistance=1;
+const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=07f40de2";const searchResultLimits=8;const fuzzyMatchingDistance=1;
 ;// ./node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/utils/proxiedGeneratedConstants.js
 // This file is auto generated while building.
 

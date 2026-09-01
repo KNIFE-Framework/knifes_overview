@@ -14,7 +14,7 @@
 /* unused harmony export searchResultLimits */
 /* harmony import */ var _home_runner_work_knifes_overview_knifes_overview_publishing_docusaurus_node_modules_lunr_lunr_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(58291);
 /* harmony import */ var _home_runner_work_knifes_overview_knifes_overview_publishing_docusaurus_node_modules_lunr_lunr_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_home_runner_work_knifes_overview_knifes_overview_publishing_docusaurus_node_modules_lunr_lunr_js__WEBPACK_IMPORTED_MODULE_0__);
-const removeDefaultStopWordFilter=[];const language=["en"];const searchIndexUrl="search-index{dir}.json?_=43527048";const searchResultLimits=8;const fuzzyMatchingDistance=1;
+const removeDefaultStopWordFilter=[];const language=["en"];const searchIndexUrl="search-index{dir}.json?_=07f40de2";const searchResultLimits=8;const fuzzyMatchingDistance=1;
 
 /***/ })
 

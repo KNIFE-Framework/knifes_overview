@@ -12,7 +12,7 @@ fm_version_comment: ""
 # 🆔 IDENTITY --------------------------------------------------------
 
 # ID generuje CLI / skript
-id: "K000115"
+id: "K000116"
 
 # Unikátne UUID – generuje skript
 guid: "9fe6fcd3-e37d-4232-b7bf-32d622f70015"
@@ -24,7 +24,7 @@ guid: "9fe6fcd3-e37d-4232-b7bf-32d622f70015"
 dao: "knife"
 
 # Názov zápisu – dopĺňa používateľ
-title: "K000115 – Dual-stack AI compliance ako enterprise architektonická požiadavka"
+title: "K000116 – Dual-stack AI compliance ako enterprise architektonická požiadavka"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
 description: "Prečo si globálna firma pôsobiaca v Číne aj mimo nej nemôže vystačiť s jedným AI hardvérovo-softvérovým stackom — export controls a geopolitika menia 'jeden stack pre všetky trhy' na architektonické riziko. Vzor: dual-stack ako explicitná návrhová požiadavka, nie neskoré záplatovanie. Ilustrované na Lenovo a kolapse podielu Nvidia na čínskom AI čipovom trhu."
@@ -132,7 +132,7 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# K000115 – Dual-stack AI compliance ako enterprise architektonická požiadavka
+# K000116 – Dual-stack AI compliance ako enterprise architektonická požiadavka
 
 > **KNIFE** – Knowledge In Friendly Examples
 > **Séria:** Systemic Thinking in IT & Digital Fabrication
@@ -213,7 +213,7 @@ Otázky pred rozhodnutím "potrebujeme dual-stack?":
 
 ### Prečo ide o architektonickú, nie len obchodnú otázku
 
-Je lákavé vidieť dual-stack ako čisto obchodné/procurement rozhodnutie ("kúpime aj čínsky hardvér"). Problém nastáva, keď sa táto voľba nepremietne do architektúry vopred — vtedy sa región stáva skrytou závislosťou rozliatou naprieč kódom, konfiguráciou aj procesmi, namiesto jedného explicitného rozhodovacieho bodu. To isté riziko sa objavuje aj pri voľbe AI modelu/vrstvy v rámci jedného regiónu — pozri všeobecnejší vzor v [[K000114-Hybrid-AI-Architektonicky-Vzor|K000114 – Hybrid AI ako architektonický vzor]]; dual-stack compliance je jeho špecializovaný prípad pre os "región/export control", nie os "use-case".
+Je lákavé vidieť dual-stack ako čisto obchodné/procurement rozhodnutie ("kúpime aj čínsky hardvér"). Problém nastáva, keď sa táto voľba nepremietne do architektúry vopred — vtedy sa región stáva skrytou závislosťou rozliatou naprieč kódom, konfiguráciou aj procesmi, namiesto jedného explicitného rozhodovacieho bodu. To isté riziko sa objavuje aj pri voľbe AI modelu/vrstvy v rámci jedného regiónu — pozri všeobecnejší vzor v [[K000115-Hybrid-AI-Architektonicky-Vzor|K000115 – Hybrid AI ako architektonický vzor]]; dual-stack compliance je jeho špecializovaný prípad pre os "región/export control", nie os "use-case".
 
 ### Governance gap ako vstupný bod pre rolu BA & AI Orchestrator
 
@@ -228,7 +228,7 @@ Dual-stack architektúra nerieši rozdiely v **jazykovom tóne, compliance posto
 - Dual-stack nie je len "2× ten istý stack" — čínsky a nečínsky stack majú typicky odlišné silné stránky (cena/výkon v coding vs. compliance/tooling), čo treba zohľadniť pri návrhu swap pointu, nie ho len mechanicky duplikovať.
 - Náklady na údržbu dvoch stackov rastú s hĺbkou, do akej región preniká do architektúry — čím vyššie (bližšie ku governance vrstve) je swap point umiestnený, tým lacnejšia je dlhodobá údržba.
 - Geopolitické prognózy (napr. 40 %→8 % podiel Nvidia v Číne) sa menia rýchlo — architektúra postavená na dual-stacku má byť odolná voči zmene pomeru, nie voči konkrétnemu číslu.
-- Pozri aj všeobecnejší vzor [[K000114-Hybrid-AI-Architektonicky-Vzor|K000114]] pre orchestráciu naprieč vrstvami (personálna/firemná/verejná) — dual-stack rieši ortogonálnu os (región/export control), obe osi sa dajú kombinovať.
+- Pozri aj všeobecnejší vzor [[K000115-Hybrid-AI-Architektonicky-Vzor|K000115]] pre orchestráciu naprieč vrstvami (personálna/firemná/verejná) — dual-stack rieši ortogonálnu os (región/export control), obe osi sa dajú kombinovať.
 
 ## ✅ Hodnota / Zhrnutie
 

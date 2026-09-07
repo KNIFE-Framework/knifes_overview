@@ -12,7 +12,7 @@ fm_version_comment: ""
 # 🆔 IDENTITY --------------------------------------------------------
 
 # ID generuje CLI / skript
-id: "K000114"
+id: "K000115"
 
 # Unikátne UUID – generuje skript
 guid: "c6628d37-dd8e-4297-a9ef-b46e87cdd68d"
@@ -24,7 +24,7 @@ guid: "c6628d37-dd8e-4297-a9ef-b46e87cdd68d"
 dao: "knife"
 
 # Názov zápisu – dopĺňa používateľ
-title: "K000114 – Hybrid AI ako architektonický vzor"
+title: "K000115 – Hybrid AI ako architektonický vzor"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
 description: "Prečo jeden model/jedna platforma na celý podnik nestačí — architektonický vzor, ktorý delí AI stack na personálnu, firemnú a verejnú vrstvu a explicitne rieši, kto (AI Orchestrator) a podľa akých kritérií rozhoduje, ktorá vrstva sa použije kde. Ilustrované na Lenovo (Qira/DeepSeek vs. enterprise infraštruktúra)."
@@ -132,7 +132,7 @@ fm_reserved1: ""
 fm_reserved2: ""
 ---
 
-# K000114 – Hybrid AI ako architektonický vzor
+# K000115 – Hybrid AI ako architektonický vzor
 
 > **KNIFE** – Knowledge In Friendly Examples
 > **Séria:** Systemic Thinking in IT & Digital Fabrication
@@ -238,7 +238,7 @@ Rovnaký princíp — jedno jadro/rozhodovacia vrstva navrchu, viacero vstupnýc
 - Trojvrstvový model nie je statický — hranice medzi personálnou/firemnou/verejnou vrstvou sa menia (napr. keď sa dnes verejné API stane zajtra súčasťou vlastnej infraštruktúry po enterprise dohode).
 - Riziko vendor lock-inu sa neznižuje "výberom jedného vendora", ale explicitnou orchestračnou vrstvou, ktorá dovolí meniť poskytovateľa per use-case bez prerábania celej architektúry.
 - Pozor na náklady na komplexitu: udržiavanie troch vrstiev naraz má vlastnú prevádzkovú cenu (integrácie, testovanie, governance na každú vrstvu zvlášť) — vzor sa oplatí až od určitej veľkosti organizácie/portfólia use-case.
-- Súvisiaci vzor pre regionálne/regulatórne rozdelenie (nie len "kde", ale "pre koho podľa akých pravidiel") je rozpracovaný samostatne — pozri [[K000115-Dual-Stack-AI-Compliance|K000115 – Dual-stack AI compliance ako enterprise architektonická požiadavka]].
+- Súvisiaci vzor pre regionálne/regulatórne rozdelenie (nie len "kde", ale "pre koho podľa akých pravidiel") je rozpracovaný samostatne — pozri [[K000116-Dual-Stack-AI-Compliance|K000116 – Dual-stack AI compliance ako enterprise architektonická požiadavka]].
 
 ## ✅ Hodnota / Zhrnutie
 

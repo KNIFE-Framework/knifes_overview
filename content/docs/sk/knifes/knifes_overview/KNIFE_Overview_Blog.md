@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG"
 
 # Unikátne UUID – generuje skript
-guid: "dac36ade-cd19-46cc-91c9-b69162840435"
+guid: "754d3f03-1bea-42fe-be19-a5447a520b0b"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `dac36ade-cd19-46cc-91c9-b69162840435`
+> **GUID:** `754d3f03-1bea-42fe-be19-a5447a520b0b`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -245,8 +245,9 @@ fm_reserved2: ""
 - **K000111** — 2026-08-24 11:10 — [K000111 – Vzor plánovaného agenta](../K000111-Vzor-Planovaneho-Agenta/)
 - **K000112** — 2026-08-29 21:40 — [K000112 – PUSH vs. PULL marketing — dve filozofie, jedna mapa](../K000112-push-vs-pull-marketing/)
 - **K000113** — 2026-09-01 12:38 — [K000113 – Claude Code (CC) — platformy a orchestrácia agentov](../K000113-CC-Platformy-Orchestracia/)
-- **K000114** — 2026-09-07 11:41 — [K000114 – Hybrid AI ako architektonický vzor](../K000114-Hybrid-AI-Architektonicky-Vzor/)
-- **K000115** — 2026-09-07 11:41 — [K000115 – Dual-stack AI compliance ako enterprise architektonická požiadavka](../K000115-Dual-Stack-AI-Compliance/)
+- **K000114** — 2026-09-07 12:36 — [K000114 – AI trh 2026 — Client vs Enterprise segmenty (Lenovo)](../K000114-AI-Trh-2026-Client-vs-Enterprise/)
+- **K000115** — 2026-09-07 11:41 — [K000115 – Hybrid AI ako architektonický vzor](../K000115-Hybrid-AI-Architektonicky-Vzor/)
+- **K000116** — 2026-09-07 11:41 — [K000116 – Dual-stack AI compliance ako enterprise architektonická požiadavka](../K000116-Dual-Stack-AI-Compliance/)
 - **K000999** — 2025-11-22 22:22 — [K000999 – KNIFE – Test script-created instance](../K000999/)
 - **K1000999** — 2025-11-23 16:35 — [K1000999 – KNIFE – Test script-created instance](../K1000999/)
 - **REF-UAT-001** — 2025-10-05 — [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/)

@@ -9,6 +9,8 @@ last_updated: 2026-09-07
 
 # AI trh 2026: Client vs Enterprise segmenty — podklady pre Lenovo (BA & AI Orchestrator)
 
+> Formálne spracované ako [K000114 – AI trh 2026 — Client vs Enterprise segmenty (Lenovo)](../K000114-AI-Trh-2026-Client-vs-Enterprise/index.md). Tento súbor zostáva ako pôvodný research podklad (raw zdroje, Preconditions, overovacia poznámka).
+
 ## Preconditions
 
 - Segmenty chápem ako: **Client** = spotrebiteľská/on-device AI (AI PC, telefóny, osobní asistenti) a **Enterprise** = firemné AI platformy a agent orchestration (cloud, on-prem, edge).
@@ -27,7 +29,7 @@ Tvoj predpoklad sa potvrdzuje **len na strane spotrebiteľského/personálneho A
 - Na strane **personálneho/spotrebiteľského AI (Lenovo Qira globálne, Xiaotian v Číne)** Lenovo naopak **plne integrovalo DeepSeek-R1** (plnú „online" verziu modelu) do notebookov aj Motorola smartfónov — ide o jednu z najhlbších spoluprác čínskeho LLM lídra s hardvérovým výrobcom [3][4].
 - Interpretácia (moje zhrnutie, nie citovaný fakt): Lenovo beží **duálnu/hybridnú stratégiu podľa trhu** — čínske modely pre personálny AI a čínsky trh, západný stack (Intel/NVIDIA/AMD/pravdepodobne aj OpenAI/Microsoft pre Copilot+ PC) pre globálny enterprise biznis. To je presne priestor, kde by mal fungovať **AI Orchestrator** — rozhodovanie, ktorý model/stack nasadiť podľa regiónu, compliance a nákladov.
 - Governance gap ako rámec pre celú rolu: 96 % firiem zvyšuje investície do AI, no len 27 % má komplexný governance rámec [2] — presne priestor, kde by mala fungovať pozícia BA & AI Orchestrator.
-- **[KNIFE kandidat rozpracovaný → [K000114 – Hybrid AI ako architektonický vzor](../K000114-Hybrid-AI-Architektonicky-Vzor/index.md)]**
+- **[KNIFE kandidat rozpracovaný → [K000115 – Hybrid AI ako architektonický vzor](../K000115-Hybrid-AI-Architektonicky-Vzor/index.md)]**
 
 ---
 
@@ -128,7 +130,7 @@ Zaujímavé číslo: podiel čínskych poskytovateľov na tokenoch cez OpenRoute
 
 - Nvidia podiel na čínskom AI čipovom trhu sa má podľa prognóz prepadnúť **zo 40 % na približne 8 %**, keďže Huawei (Ascend čipy) rýchlo naberá podiel pod tlakom amerických exportných obmedzení [13]. Toto je priamy dôvod, prečo čínske enterprise nasadenia (najmä štátom vlastnené firmy) čoraz viac bežia na Huawei/domácom stacku namiesto Nvidia/západných GPU [6][13].
 - Pre Lenovo (globálna firma s čínskymi koreňmi) to znamená nutnosť **dvoch paralelných hardvérovo-softvérových stackov** — jeden pre čínsky trh (Ascend/domáce modely), jeden pre zvyšok sveta (Nvidia/Intel/AMD + OpenAI/Microsoft/Anthropic podľa zákazníka).
-- **[KNIFE kandidat rozpracovaný → [K000115 – Dual-stack AI compliance ako enterprise architektonická požiadavka](../K000115-Dual-Stack-AI-Compliance/index.md)]**
+- **[KNIFE kandidat rozpracovaný → [K000116 – Dual-stack AI compliance ako enterprise architektonická požiadavka](../K000116-Dual-Stack-AI-Compliance/index.md)]**
 
 ---
 

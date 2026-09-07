@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "75865c63-e3a6-4e4c-96f3-07dd192fa898"
+guid: "cb2e5adc-b64c-4602-8714-1b4665919871"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `75865c63-e3a6-4e4c-96f3-07dd192fa898`
+> **GUID:** `cb2e5adc-b64c-4602-8714-1b4665919871`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -145,8 +145,9 @@ fm_reserved2: ""
 - **REF-UAT-001** · [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) · _inprogress_ · top
 - **K1000999** · [K1000999 – KNIFE – Test script-created instance](../K1000999/) · _backlog_ · -
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/) · _backlog_ · -
-- **K000115** · [K000115 – Dual-stack AI compliance ako enterprise architektonická požiadavka](../K000115-Dual-Stack-AI-Compliance/) · _inProgress_ · medium
-- **K000114** · [K000114 – Hybrid AI ako architektonický vzor](../K000114-Hybrid-AI-Architektonicky-Vzor/) · _inProgress_ · medium
+- **K000116** · [K000116 – Dual-stack AI compliance ako enterprise architektonická požiadavka](../K000116-Dual-Stack-AI-Compliance/) · _inProgress_ · medium
+- **K000115** · [K000115 – Hybrid AI ako architektonický vzor](../K000115-Hybrid-AI-Architektonicky-Vzor/) · _inProgress_ · medium
+- **K000114** · [K000114 – AI trh 2026 — Client vs Enterprise segmenty (Lenovo)](../K000114-AI-Trh-2026-Client-vs-Enterprise/) · _inProgress_ · medium
 - **K000113** · [K000113 – Claude Code (CC) — platformy a orchestrácia agentov](../K000113-CC-Platformy-Orchestracia/) · _published_ · medium
 - **K000112** · [K000112 – PUSH vs. PULL marketing — dve filozofie, jedna mapa](../K000112-push-vs-pull-marketing/) · _published_ · medium
 - **K000111** · [K000111 – Vzor plánovaného agenta](../K000111-Vzor-Planovaneho-Agenta/) · _published_ · medium

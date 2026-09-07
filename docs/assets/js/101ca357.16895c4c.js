@@ -1,0 +1,11 @@
+"use strict";
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[45764],{
+
+/***/ 76145:
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"tag":{"label":"enterprise","permalink":"/doc-tags/enterprise","allTagsPath":"/doc-tags","count":3,"items":[{"id":"sk/knifes/K000114-AI-Trh-2026-Client-vs-Enterprise/K000114","title":"K000114 – AI trh 2026 — Client vs Enterprise segmenty (Lenovo)","description":"Mapa AI trhu 2026 rozdelená na Client (spotrebiteľský/on-device) a Enterprise (firemné platformy, agent orchestration) segment — s takmer disjunktnými rebríčkami hráčov, dynamikou aj metrikami. Ilustrované na Lenovo (duálna stratégia: DeepSeek na strane personálneho AI, NVIDIA/Intel/AMD na strane enterprise infraštruktúry), 13 sourced referencií.","permalink":"/sk/knifes/K000114-AI-Trh-2026-Client-vs-Enterprise/"},{"id":"sk/knifes/K000115-Hybrid-AI-Architektonicky-Vzor/K000115","title":"K000115 – Hybrid AI ako architektonický vzor","description":"Prečo jeden model/jedna platforma na celý podnik nestačí — architektonický vzor, ktorý delí AI stack na personálnu, firemnú a verejnú vrstvu a explicitne rieši, kto (AI Orchestrator) a podľa akých kritérií rozhoduje, ktorá vrstva sa použije kde. Ilustrované na Lenovo (Qira/DeepSeek vs. enterprise infraštruktúra).","permalink":"/sk/knifes/K000115-Hybrid-AI-Architektonicky-Vzor/"},{"id":"sk/knifes/K000116-Dual-Stack-AI-Compliance/K000116","title":"K000116 – Dual-stack AI compliance ako enterprise architektonická požiadavka","description":"Prečo si globálna firma pôsobiaca v Číne aj mimo nej nemôže vystačiť s jedným AI hardvérovo-softvérovým stackom — export controls a geopolitika menia \'jeden stack pre všetky trhy\' na architektonické riziko. Vzor: dual-stack ako explicitná návrhová požiadavka, nie neskoré záplatovanie. Ilustrované na Lenovo a kolapse podielu Nvidia na čínskom AI čipovom trhu.","permalink":"/sk/knifes/K000116-Dual-Stack-AI-Compliance/"}],"unlisted":false}}');
+
+/***/ })
+
+}]);

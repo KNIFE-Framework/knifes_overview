@@ -1,0 +1,287 @@
+<title>Cesta Jednej Platby</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#faf6ec;
+  --paper-2:#fffdf7;
+  --ink:#2b2416;
+  --ink-dim:#6b5f47;
+  --ink-faint:#9c8f74;
+  --gold:#b6852f;
+  --gold-soft:#d9a94e;
+  --line:rgba(90,70,30,0.18);
+  --shop:#3a7d8c;
+  --shop-bg:rgba(58,125,140,0.08);
+  --gate:#b6852f;
+  --gate-bg:rgba(182,133,47,0.10);
+  --rail:#6a5a9c;
+  --rail-bg:rgba(106,90,156,0.08);
+  --ok:#4c8c5c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#1c1810;
+    --paper-2:#252017;
+    --ink:#f2ead9;
+    --ink-dim:#c9bc9e;
+    --ink-faint:#8d8267;
+    --gold:#e0b258;
+    --gold-soft:#e8c479;
+    --line:rgba(224,178,88,0.22);
+    --shop:#6fb8c9;
+    --shop-bg:rgba(111,184,201,0.12);
+    --gate:#e0b258;
+    --gate-bg:rgba(224,178,88,0.14);
+    --rail:#a79bd6;
+    --rail-bg:rgba(167,155,214,0.12);
+    --ok:#7bc48d;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#1c1810;
+  --paper-2:#252017;
+  --ink:#f2ead9;
+  --ink-dim:#c9bc9e;
+  --ink-faint:#8d8267;
+  --gold:#e0b258;
+  --gold-soft:#e8c479;
+  --line:rgba(224,178,88,0.22);
+  --shop:#6fb8c9;
+  --shop-bg:rgba(111,184,201,0.12);
+  --gate:#e0b258;
+  --gate-bg:rgba(224,178,88,0.14);
+  --rail:#a79bd6;
+  --rail-bg:rgba(167,155,214,0.12);
+  --ok:#7bc48d;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Work Sans',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.display{font-family:'Fraunces',Georgia,serif;font-weight:600;text-wrap:balance;}
+em{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;color:var(--gold);}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+
+header{padding:56px 0 20px;text-align:center;}
+.eyebrow{
+  font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--gold);margin:0 0 14px;
+}
+h1{font-size:clamp(2rem,4.5vw,3rem);margin:0 0 16px;line-height:1.15;}
+.lede{
+  max-width:60ch;margin:0 auto;color:var(--ink-dim);
+  font-size:1.05rem;line-height:1.65;
+}
+
+/* flow */
+.flow{padding:50px 0 20px;}
+.flow-row{
+  display:grid;grid-template-columns:1fr auto 1fr auto 1fr;
+  align-items:stretch;gap:0;
+}
+@media (max-width:860px){
+  .flow-row{grid-template-columns:1fr;gap:14px;}
+  .flow-arrow{transform:rotate(90deg);margin:0 auto;}
+}
+.stage{
+  border-radius:20px;padding:26px 22px;border:1.5px solid var(--line);
+  display:flex;flex-direction:column;gap:10px;
+}
+.stage-1{background:var(--shop-bg);}
+.stage-2{background:var(--gate-bg);border-color:var(--gold);}
+.stage-3{background:var(--rail-bg);}
+.stage-glyph{font-size:2.1rem;}
+.stage-num{
+  font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--ink-faint);
+}
+.stage h3{margin:0;font-size:1.25rem;}
+.stage .role{
+  font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.02rem;
+  color:var(--ink-dim);margin:0;
+}
+.stage ul{margin:6px 0 0;padding-left:18px;color:var(--ink-dim);font-size:0.92rem;line-height:1.6;}
+.stage ul li{margin-bottom:2px;}
+.flow-arrow{
+  display:flex;align-items:center;justify-content:center;
+  color:var(--ink-faint);font-size:1.6rem;padding:0 6px;
+}
+
+.return-note{
+  max-width:640px;margin:26px auto 0;text-align:center;
+  padding:14px 20px;border-radius:14px;border:1px dashed var(--line);
+  color:var(--ink-dim);font-size:0.92rem;line-height:1.55;
+}
+.return-note b{color:var(--ok);}
+
+/* wallet callout */
+.callout{
+  max-width:760px;margin:46px auto 0;padding:26px 28px;
+  border-radius:18px;background:var(--paper-2);border:1px solid var(--line);
+}
+.callout h3{margin:0 0 10px;font-size:1.2rem;}
+.callout p{margin:0 0 10px;color:var(--ink-dim);line-height:1.65;}
+.callout p:last-child{margin-bottom:0;}
+.wallet-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
+.wallet-pill{
+  display:inline-flex;align-items:center;gap:6px;
+  border:1px solid var(--line);border-radius:999px;padding:6px 14px;
+  font-size:0.85rem;color:var(--ink-dim);background:var(--paper);
+}
+
+/* glossary */
+.glossary{padding:56px 0 20px;}
+.section-head{max-width:640px;margin:0 auto 30px;text-align:center;}
+.section-head h2{font-size:clamp(1.5rem,2.8vw,2rem);margin:0 0 10px;}
+.section-head p{color:var(--ink-dim);margin:0;line-height:1.6;}
+.gloss-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:880px;margin:0 auto;
+}
+@media (max-width:720px){.gloss-grid{grid-template-columns:1fr;}}
+.gloss-item{
+  padding:18px 20px;border-radius:14px;background:var(--paper-2);border:1px solid var(--line);
+}
+.gloss-item dt{font-weight:600;color:var(--gold);margin-bottom:4px;}
+.gloss-item dd{margin:0;color:var(--ink-dim);font-size:0.92rem;line-height:1.6;}
+
+/* mapping table */
+.mapping{padding:50px 0 30px;}
+.map-table{width:100%;max-width:760px;margin:0 auto;border-collapse:collapse;}
+.map-table th,.map-table td{
+  text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);font-size:0.94rem;
+}
+.map-table thead th{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--gold);
+  border-bottom:1px solid var(--gold);
+}
+.map-table td:first-child{font-weight:600;white-space:nowrap;}
+.map-table td{color:var(--ink-dim);}
+.tag{
+  display:inline-block;font-size:0.72rem;padding:2px 9px;border-radius:999px;
+  border:1px solid var(--line);
+}
+.tag-1{color:var(--shop);border-color:var(--shop);}
+.tag-2{color:var(--gate);border-color:var(--gold);}
+.tag-3{color:var(--rail);border-color:var(--rail);}
+
+footer{
+  padding:40px 0 60px;text-align:center;color:var(--ink-faint);font-size:0.82rem;
+  border-top:1px solid var(--line);margin-top:20px;
+}
+</style>
+
+<header>
+  <p class="eyebrow">Prvý pokus na pochopenie princípu</p>
+  <h1>Cesta <em>jednej</em> platby</h1>
+  <p class="lede">Keď niekto na stránke klikne "Kúpiť", peniaze neprejdú jedným
+    systémom — prejdú tromi, a každý z nich robí presne jednu vec.
+    Toto je mapa, kde presne v tej ceste sedí WordPress, kde Payout,
+    a kde karta či Google Pay.</p>
+</header>
+
+<div class="wrap flow">
+  <div class="flow-row">
+    <div class="stage stage-1">
+      <span class="stage-glyph">🏬</span>
+      <span class="stage-num">1 · Obchod</span>
+      <h3>WordPress + WooCommerce</h3>
+      <p class="role">"Kde si vyberáš"</p>
+      <ul>
+        <li>katalóg produktov, ceny</li>
+        <li>košík</li>
+        <li>tlačidlo "Kúpiť"</li>
+        <li>záznam objednávky</li>
+      </ul>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="stage stage-2">
+      <span class="stage-glyph">🔐</span>
+      <span class="stage-num">2 · Platobná brána</span>
+      <h3>Payout</h3>
+      <p class="role">"Kde zadávaš platbu"</p>
+      <ul>
+        <li>bezpečný formulár</li>
+        <li>karta / Google Pay / prevod</li>
+        <li>šifruje/tokenizuje číslo karty</li>
+        <li>licencovaná NBS</li>
+      </ul>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="stage stage-3">
+      <span class="stage-glyph">🏦</span>
+      <span class="stage-num">3 · Bankové potrubie</span>
+      <h3>Visa/Mastercard + banky</h3>
+      <p class="role">"Kde sa peniaze skutočne pohnú"</p>
+      <ul>
+        <li>kartová sieť smeruje požiadavku</li>
+        <li>tvoja banka (acquiring)</li>
+        <li>banka zákazníka (issuing)</li>
+        <li>neviditeľné, pár sekúnd</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="return-note"><b>Späť:</b> Payout pošle WooCommerce jednoduchú
+    správu "zaplatené / nezaplatené" — WordPress si peniaze ani na
+    sekundu nedrží, len si poznačí výsledok a odomkne objednávku.</p>
+</div>
+
+<div class="wrap">
+  <div class="callout">
+    <h3>Kde presne je karta / Google Pay / Apple Pay?</h3>
+    <p>Nie sú to samostatné, konkurenčné cesty popri Payout — sú to
+      len <em>spôsoby platby</em>, ktoré ti Payout ponúkne VNÚTRI
+      kroku 2. Google Pay/Apple Pay len bezpečne odovzdajú tvoju
+      uloženú kartu tej istej platobnej bráne — namiesto písania
+      čísla ju len potvrdíš odtlačkom prsta/tvárou.</p>
+    <div class="wallet-row">
+      <span class="wallet-pill">💳 Karta — zadaná ručne</span>
+      <span class="wallet-pill">📱 Google Pay — uložená karta, rýchlejšie</span>
+      <span class="wallet-pill">🍎 Apple Pay — uložená karta, rýchlejšie</span>
+      <span class="wallet-pill">🏛️ Bankový prevod — presmeruje do tvojho internet bankingu</span>
+    </div>
+  </div>
+</div>
+
+<section class="glossary">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Slovník — 7 pojmov, ktoré to celé vysvetlia</h2>
+      <p>Bez nich znie každý článok o platbách ako iný jazyk.</p>
+    </div>
+    <dl class="gloss-grid">
+      <div class="gloss-item"><dt>Obchodník (Merchant)</dt><dd>Ty — ten, kto predáva. V tomto prípade KnowMyself Academy.</dd></div>
+      <div class="gloss-item"><dt>Platobná brána (Gateway)</dt><dd>Softvér/služba, čo bezpečne prevezme platobné údaje od zákazníka a pošle ich ďalej. Payout je tento krok.</dd></div>
+      <div class="gloss-item"><dt>Acquiring banka</dt><dd>Banka NA STRANE OBCHODNÍKA — prijíma platbu v jeho mene. Menšie brány ako Payout túto rolu bežne robia sami, "v jednom".</dd></div>
+      <div class="gloss-item"><dt>Vydavateľská (issuing) banka</dt><dd>Banka zákazníka — tá, čo vydala jeho kartu a skutočne schváli/zamietne platbu.</dd></div>
+      <div class="gloss-item"><dt>Kartová sieť</dt><dd>Visa, Mastercard — "cesty", po ktorých správa o platbe cestuje medzi oboma bankami. Samé peniaze nemajú, len smerujú prevod.</dd></div>
+      <div class="gloss-item"><dt>Tokenizácia</dt><dd>Číslo karty sa nahradí náhodným "tokenom" — aj keby niekto tento token ukradol, bez brány je nepoužiteľný.</dd></div>
+      <div class="gloss-item"><dt>PCI-DSS</dt><dd>Bezpečnostný štandard pre prácu s kartami — presný dôvod, prečo WordPress nemá (a nesmie mať) k číslam kariet vôbec prístup.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="mapping">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Kto je kto — rýchla tabuľka</h2>
+    </div>
+    <table class="map-table">
+      <thead><tr><th>Produkt/pojem</th><th>Krok v ceste</th><th>Úloha</th></tr></thead>
+      <tbody>
+        <tr><td>WordPress</td><td><span class="tag tag-1">1 · Obchod</span></td><td>CMS — stránky, obsah, vzhľad</td></tr>
+        <tr><td>WooCommerce</td><td><span class="tag tag-1">1 · Obchod</span></td><td>plugin — produkty, košík, objednávky</td></tr>
+        <tr><td>Payout</td><td><span class="tag tag-2">2 · Brána</span></td><td>bezpečný checkout, aj acquiring "v jednom"</td></tr>
+        <tr><td>Karta / Google Pay / Apple Pay</td><td><span class="tag tag-2">2 · Brána</span></td><td>spôsoby platby VNÚTRI Payout checkoutu</td></tr>
+        <tr><td>Visa / Mastercard</td><td><span class="tag tag-3">3 · Potrubie</span></td><td>kartová sieť, smerovanie správy</td></tr>
+        <tr><td>Banka zákazníka</td><td><span class="tag tag-3">3 · Potrubie</span></td><td>schváli/zamietne, drží jeho peniaze</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  Cesta jednej platby · pracovný náčrt na pochopenie princípu, 2026-09-10
+</footer>

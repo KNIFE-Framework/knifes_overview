@@ -198,19 +198,13 @@ internet bankingu.
 
 ## ⚡ Rýchly návod (Top)
 
-<a href="./img/cesta-platby.html">
-  <img src="./img/cesta-platby-light.png" alt="Cesta jednej platby — 3 kroky, slovník pojmov, mapovacia tabuľka" width="420" />
-</a>
+![Cesta jednej platby — 3 kroky, slovník pojmov, mapovacia tabuľka](./img/cesta-platby-light.png)
 
-*(náhľad vyššie je klikateľný odkaz na `img/cesta-platby.html` — stiahni/otvor
-súbor priamo v prehliadači pre plnú interaktívnu verziu vrátane tmavého režimu.)*
-
-<iframe src="./img/cesta-platby.html" width="100%" height="900" style={{border: '1px solid #ddd', borderRadius: '12px'}} title="Cesta jednej platby — živý náhľad"></iframe>
-
-*(živý náhľad vyššie funguje len na vybudovanej Docusaurus stránke — pri
-surovom prezeraní repozitára na GitHube sa nezobrazí, GitHub `<iframe>`
-z bezpečnostných dôvodov vystrihuje. Preto zostáva aj statický náhľad
-s odkazom vyššie ako univerzálny fallback.)*
+*(interaktívny zdroj diagramu: `img/cesta-platby.html` — stiahni súbor
+z repozitára a otvor priamo v prehliadači pre plnú interaktívnu verziu
+vrátane tmavého režimu; raw HTML `<iframe>`/`<a>` odkazy Docusaurus
+build nespracúva, preto tu zostáva len ako cesta k súboru, nie ako
+klikateľný odkaz — rovnaký vzor ako v K000111.)*
 
 Otázky pred rozhodnutím, akú platobnú bránu zvoliť:
 1. Rieši brána len krok 2 (checkout), alebo aj krok 3 (acquiring) "v jednom"?

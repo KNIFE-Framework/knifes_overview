@@ -205,16 +205,12 @@ internet bankingu.
 *(náhľad vyššie je klikateľný odkaz na `img/cesta-platby.html` — stiahni/otvor
 súbor priamo v prehliadači pre plnú interaktívnu verziu vrátane tmavého režimu.)*
 
-<iframe src="./img/cesta-platby.html" width="100%" height="900" style="border:1px solid #ddd;border-radius:12px;" title="Cesta jednej platby — živý náhľad"></iframe>
+<iframe src="./img/cesta-platby.html" width="100%" height="900" style={{border: '1px solid #ddd', borderRadius: '12px'}} title="Cesta jednej platby — živý náhľad"></iframe>
 
 *(živý náhľad vyššie funguje len na vybudovanej Docusaurus stránke — pri
 surovom prezeraní repozitára na GitHube sa nezobrazí, GitHub `<iframe>`
 z bezpečnostných dôvodov vystrihuje. Preto zostáva aj statický náhľad
-s odkazom vyššie ako univerzálny fallback. **Neoverené naživo** — nespúšťal
-som Docusaurus build v tejto session, over si prosím vizuálne po
-najbližšom builde, či sa `<iframe>` v MDX naozaj vykreslí tak, ako
-očakávame — ak nie, dá sa jednoducho odstrániť a nechať len statický
-náhľad.)*
+s odkazom vyššie ako univerzálny fallback.)*
 
 Otázky pred rozhodnutím, akú platobnú bránu zvoliť:
 1. Rieši brána len krok 2 (checkout), alebo aj krok 3 (acquiring) "v jednom"?

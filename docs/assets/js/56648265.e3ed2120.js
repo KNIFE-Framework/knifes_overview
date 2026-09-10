@@ -96,6 +96,16 @@ function MDXProvider(properties) {
 
 /***/ }),
 
+/***/ 33418:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/cesta-platby-light-5e16d3847e7919e71661fc7806d8a0de.png");
+
+/***/ }),
+
 /***/ 52528:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -237,6 +247,7 @@ function _createMdxContent(props) {
     h3: "h3",
     header: "header",
     hr: "hr",
+    img: "img",
     li: "li",
     mermaid: "mermaid",
     ol: "ol",
@@ -366,33 +377,22 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-rýchly-návod-top",
       children: "⚡ Rýchly návod (Top)"
-    }), "\n", (0,jsx_runtime.jsx)("a", {
-      href: "./img/cesta-platby.html",
-      children: (0,jsx_runtime.jsx)("img", {
-        src: "./img/cesta-platby-light.png",
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "Cesta jednej platby — 3 kroky, slovník pojmov, mapovacia tabuľka",
-        width: "420"
+        src: (__webpack_require__(33418)/* ["default"] */ .A) + "",
+        width: "1200",
+        height: "2280"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsxs)(_components.em, {
-        children: ["(náhľad vyššie je klikateľný odkaz na ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ["(interaktívny zdroj diagramu: ", (0,jsx_runtime.jsx)(_components.code, {
           children: "img/cesta-platby.html"
-        }), " — stiahni/otvor\nsúbor priamo v prehliadači pre plnú interaktívnu verziu vrátane tmavého režimu.)"]
-      })
-    }), "\n", (0,jsx_runtime.jsx)("iframe", {
-      src: "./img/cesta-platby.html",
-      width: "100%",
-      height: "900",
-      style: {
-        border: '1px solid #ddd',
-        borderRadius: '12px'
-      },
-      title: "Cesta jednej platby — živý náhľad"
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsxs)(_components.em, {
-        children: ["(živý náhľad vyššie funguje len na vybudovanej Docusaurus stránke — pri\nsurovom prezeraní repozitára na GitHube sa nezobrazí, GitHub ", (0,jsx_runtime.jsx)(_components.code, {
+        }), " — stiahni súbor\nz repozitára a otvor priamo v prehliadači pre plnú interaktívnu verziu\nvrátane tmavého režimu; raw HTML ", (0,jsx_runtime.jsx)(_components.code, {
           children: "<iframe>"
-        }), "\nz bezpečnostných dôvodov vystrihuje. Preto zostáva aj statický náhľad\ns odkazom vyššie ako univerzálny fallback.)"]
+        }), "/", (0,jsx_runtime.jsx)(_components.code, {
+          children: "<a>"
+        }), " odkazy Docusaurus\nbuild nespracúva, preto tu zostáva len ako cesta k súboru, nie ako\nklikateľný odkaz — rovnaký vzor ako v K000111.)"]
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Otázky pred rozhodnutím, akú platobnú bránu zvoliť:"

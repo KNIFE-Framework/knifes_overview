@@ -93,6 +93,10 @@ const config: Config = {
         href: '/',
       },
         items: [
+          { href: '/sk/knifes/', label: '🔪 KNIFE', position: 'left' },
+          { href: '/sk/7Ds/', label: '🧭 7Ds', position: 'left' },
+          { href: '/sk/sdlc/', label: '⚙️ SDLC', position: 'left' },
+          { href: '/sk/q12/', label: '📐 Q12', position: 'left' },
           { href: '/doc-tags', label: 'Tags', position: 'right' },
           {
             href: commitLink || '#',

@@ -441,8 +441,8 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
           "position": "right"
         },
         {
-          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/523729c",
-          "label": "Release 523729c • 523729c",
+          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/78d2e80",
+          "label": "Release 78d2e80 • 78d2e80",
           "position": "right"
         }
       ],
@@ -450,7 +450,7 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
     },
     "footer": {
       "style": "dark",
-      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>523729c</strong><br/>\n    💡 Commit: <code>523729c</code><br/>\n    🕒 Build: 2026-09-16 09:55:12 UTC\n  </div>\n",
+      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>78d2e80</strong><br/>\n    💡 Commit: <code>78d2e80</code><br/>\n    🕒 Build: 2026-09-16 10:20:55 UTC\n  </div>\n",
       "links": []
     },
     "prism": {
@@ -1961,7 +1961,7 @@ var normalizeContextByPath = __webpack_require__(43385);
 // EXTERNAL MODULE: ./node_modules/lunr/lunr.js
 var lunr = __webpack_require__(58291);
 ;// ./.docusaurus/@easyops-cn/docusaurus-search-local/default/generated-constants.js
-const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=9fdda334";const searchResultLimits=8;const fuzzyMatchingDistance=1;
+const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=1f7cbc29";const searchResultLimits=8;const fuzzyMatchingDistance=1;
 ;// ./node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/utils/proxiedGeneratedConstants.js
 // This file is auto generated while building.
 

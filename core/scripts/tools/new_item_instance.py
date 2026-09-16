@@ -154,6 +154,24 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
             "Predpokladaná štruktúra cesty: .../docs/{locale}/..."
         ),
     )
+    parser.add_argument(
+        "--students",
+        type=int,
+        default=None,
+        help=(
+            "Len pre --type class_sthdf_dashboard: počet študentov ST001..STNNN "
+            "(namiesto kopírovania presne toľkých priečinkov, koľko ich má šablóna)."
+        ),
+    )
+    parser.add_argument(
+        "--projects",
+        type=int,
+        default=None,
+        help=(
+            "Len pre --type class_sthdf_dashboard: počet projektov PRJ001..PRJNNN "
+            "(namiesto kopírovania presne toľkých priečinkov, koľko ich má šablóna)."
+        ),
+    )
 
     return parser.parse_args(argv)
 
@@ -226,6 +244,8 @@ def _build_ctx(cfg: Dict[str, Any], args: argparse.Namespace, fm_core_lines: lis
         "dry_run": args.dry_run,
         "defaults": cfg.get("defaults", {}),
         "locale": locale_override,
+        "students_count": getattr(args, "students", None),
+        "projects_count": getattr(args, "projects", None),
     }
 
     if "template_root" in cfg:

@@ -72,7 +72,7 @@ locale: "sk"
 created: "2026-09-16 09:04"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-09-16 09:04"
+modified: "2026-09-16 11:59"
 
 # Stav dokumentu – default "backlog"
 status: "published"
@@ -152,6 +152,17 @@ git commit -m "Initial commit"
 
 Výsledok: `<moj-priecinok>/` je nový, samostatný git repozitár s jedným
 commitom — celý obsah šablóny, žiadna jej história.
+
+**S reálnymi hodnotami** (šablóna je skutočná, priečinok je vymyslený príklad podľa konvencie z krok 2 nižšie):
+
+```bash
+git clone --depth 1 https://github.com/06-STH-Projects/2026_sthdf_class_template.git ST-099-Priklad
+cd ST-099-Priklad
+rm -rf .git
+git init
+git add -A
+git commit -m "Initial commit"
+```
 
 ## 🎯 Čo rieši (účel, cieľ)
 

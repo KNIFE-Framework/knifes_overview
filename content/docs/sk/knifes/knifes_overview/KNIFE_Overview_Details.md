@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS"
 
 # Unikátne UUID – generuje skript
-guid: "e9c8c293-f55e-49e6-8c4e-86468ebbab33"
+guid: "7c5f1f1a-2a50-459d-ac44-4443bc65c281"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-09-07"
+created: "2026-09-16"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `e9c8c293-f55e-49e6-8c4e-86468ebbab33`
+> **GUID:** `7c5f1f1a-2a50-459d-ac44-4443bc65c281`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -147,6 +147,9 @@ fm_reserved2: ""
 | REF-UAT-001 | [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) | 2025-10-05 | inprogress | top |
 | K1000999 | [K1000999 – KNIFE – Test script-created instance](../K1000999/) | 2025-11-23 16:35 | backlog |  |
 | K000999 | [K000999 – KNIFE – Test script-created instance](../K000999/) | 2025-11-22 22:22 | backlog |  |
+| K000119 | [K000119 – Ako si vytvoriť čistý klon triedneho repozitára](../K000119-klon-triedneho-repozitara/) | 2026-09-16 09:04 | published | medium |
+| K000118 | [K000118 – Centrálny publish repozitár: SSOT pre viacero zdrojových tém](../K000118-Centralny-Publish-Repozitar-SSOT/) | 2026-09-15 10:36 | published | medium |
+| K000117 | [K000117 – Ako funguje platba online (Payment Gateway základy)](../K000117-Platba-Online-Payment-Gateway-Zaklady/) | 2026-09-10 22:15 | backlog | low |
 | K000116 | [K000116 – Dual-stack AI compliance ako enterprise architektonická požiadavka](../K000116-Dual-Stack-AI-Compliance/) | 2026-09-07 11:41 | inProgress | medium |
 | K000115 | [K000115 – Hybrid AI ako architektonický vzor](../K000115-Hybrid-AI-Architektonicky-Vzor/) | 2026-09-07 11:41 | inProgress | medium |
 | K000114 | [K000114 – AI trh 2026 — Client vs Enterprise segmenty (Lenovo)](../K000114-AI-Trh-2026-Client-vs-Enterprise/) | 2026-09-07 12:36 | inProgress | medium |

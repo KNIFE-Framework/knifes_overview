@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG"
 
 # Unikátne UUID – generuje skript
-guid: "754d3f03-1bea-42fe-be19-a5447a520b0b"
+guid: "565f03a0-b65c-4c8a-8c14-1c9a6cd57154"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-09-07"
+created: "2026-09-16"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `754d3f03-1bea-42fe-be19-a5447a520b0b`
+> **GUID:** `565f03a0-b65c-4c8a-8c14-1c9a6cd57154`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -248,6 +248,9 @@ fm_reserved2: ""
 - **K000114** — 2026-09-07 12:36 — [K000114 – AI trh 2026 — Client vs Enterprise segmenty (Lenovo)](../K000114-AI-Trh-2026-Client-vs-Enterprise/)
 - **K000115** — 2026-09-07 11:41 — [K000115 – Hybrid AI ako architektonický vzor](../K000115-Hybrid-AI-Architektonicky-Vzor/)
 - **K000116** — 2026-09-07 11:41 — [K000116 – Dual-stack AI compliance ako enterprise architektonická požiadavka](../K000116-Dual-Stack-AI-Compliance/)
+- **K000117** — 2026-09-10 22:15 — [K000117 – Ako funguje platba online (Payment Gateway základy)](../K000117-Platba-Online-Payment-Gateway-Zaklady/)
+- **K000118** — 2026-09-15 10:36 — [K000118 – Centrálny publish repozitár: SSOT pre viacero zdrojových tém](../K000118-Centralny-Publish-Repozitar-SSOT/)
+- **K000119** — 2026-09-16 09:04 — [K000119 – Ako si vytvoriť čistý klon triedneho repozitára](../K000119-klon-triedneho-repozitara/)
 - **K000999** — 2025-11-22 22:22 — [K000999 – KNIFE – Test script-created instance](../K000999/)
 - **K1000999** — 2025-11-23 16:35 — [K1000999 – KNIFE – Test script-created instance](../K1000999/)
 - **REF-UAT-001** — 2025-10-05 — [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/)

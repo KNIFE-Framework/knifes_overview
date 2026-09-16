@@ -15,8 +15,8 @@ Toto je hlavná stránka pre slovenskú časť kurzu **Systémové myslenie v IT
 ## 🔗 Rýchla navigácia
 - 📘 [O predmete](class-sthdf/about/index.md)
 - 🧭 [Zadania & Míľniky](class-sthdf/conditions/index.md)
-- 👩‍🎓 [Študenti](../students/README.md)
-- 🛠️ [Projekty](../projects/README.md)
+- 👩‍🎓 [Študenti](students/index.md)
+- 🛠️ [Projekty](projects/index.md)
 - ✨ [Showcase](class-sthdf/showcase/index.md)
 
 ---

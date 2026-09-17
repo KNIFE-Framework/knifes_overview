@@ -414,36 +414,15 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
       start: "6",
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "Neskôr, keď je výstup hotový — publikuj ho do triedneho\nrepozitára."
-          }), " Tvoj repozitár z krokov 1–5 je úplne nezávislý (vlastná\nhistória, vlastný remote), takže sa do triedneho repozitára\nnedostane sám od seba. Do triedneho repa ide ", (0,jsx_runtime.jsx)(_components.strong, {
-            children: "len prehľad"
-          }), " (About\nMe, Knowledge Contribution, Project Summary, Project Outcomes, Pitch,\nFinal Presentation, Reflexia) s odkazmi späť na tvoj plný repozitár —\n", (0,jsx_runtime.jsx)(_components.strong, {
-            children: "nie celý repozitár samotný."
-          })]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["Triedny repozitár má pre teba ", (0,jsx_runtime.jsx)(_components.strong, {
-            children: "vopred pripravený priečinok"
-          }), "\n", (0,jsx_runtime.jsx)(_components.code, {
-            children: "students/ST0XX/"
-          }), " (a ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "projects/PRJ0YY/"
-          }), " pri tímovom projekte) —\npridelené číslo ti oznámi vyučujúci (roster). Postup:"]
-        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
-          children: (0,jsx_runtime.jsx)(_components.code, {
-            className: "language-bash",
-            children: "# a) na GitHube forkni triedny repozitár (tlačidlo \"Fork\")\n#    -> vznikne tvoj-ucet/class_sthdf_2026-2027\n\n# b) forknutý repo naklonuj (toto UŽ je normálny git clone,\n#    lebo tu chceš históriu triedneho repozitára zachovať)\ngit clone https://github.com/<tvoj-ucet>/class_sthdf_2026-2027.git\ncd class_sthdf_2026-2027\ngit checkout -b submit/ST025\n\n# c) uprav SVOJ pridelený priečinok (ST025 = príklad, použi číslo\n#    z rosteru), nie celý repozitár skopírovaný odinakiaľ:\n#    content/docs/sk/class_sthdf_dashboard/.../students/ST025/\n#    doplň about-me/, knowledge-contribution/, project-summary/,\n#    project-outcomes/, pitch-presentation/, final-presentation/,\n#    reflexia/ — s odkazmi na tvoj plný GitHub repozitár\n\ngit add content/docs/sk/class_sthdf_dashboard/*/students/ST025\ngit commit -m \"submit: ST025 deliverables\"\ngit push -u origin submit/ST025\n"
-          })
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["Potom na GitHube otvor ", (0,jsx_runtime.jsx)(_components.strong, {
-            children: "Pull Request"
-          }), " z ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "submit/ST025"
-          }), " do ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "main"
-          }), "\ntriedneho repozitára. Tvoj vlastný repozitár (s celou vývojovou\nhistóriou a kódom) tým nezaniká — do triedneho repa ide len prehľad,\ns odkazmi naň."]
-        }), "\n"]
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Neskôr, keď je výstup hotový — nemusíš robiť nič so samotným\ntriednym repozitárom."
+        }), " Tvoj repozitár z krokov 1–5 je úplne\nnezávislý a taký aj zostáva. Do triedneho dashboardu (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "students/ST0XX/"
+        }), ")\nho premieta vyučujúci — tvoja jediná úloha je mať pridelené číslo\n", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ST0XX"
+        }), " (roster) a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "zdieľať odkaz na svoj hotový repozitár"
+        }), " tam, kde\nti povie vyučujúci. Prenos do triedneho repa je jeho proces, nie tvoj."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {

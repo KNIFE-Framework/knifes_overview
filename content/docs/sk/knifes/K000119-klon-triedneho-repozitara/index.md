@@ -141,6 +141,10 @@ fm_reserved2: ""
 
 ## ⚡ Rýchly návod (Top)
 
+Postav sa v termináli do priečinka, **v ktorom** má vzniknúť tvoj nový
+projekt (napr. `~/Skola/STHDF/`) — nie do priečinka, ktorý ešte len
+vznikne. Klon si `<moj-priecinok>` vytvorí sám ako podpriečinok:
+
 ```bash
 git clone --depth 1 <URL-sablony> <moj-priecinok>
 cd <moj-priecinok>
@@ -227,6 +231,41 @@ Tri kroky, každý s jasným dôvodom:
    ```
 
 5. **Over si, že `git remote -v` ukazuje TVOJ repozitár**, nie šablónu.
+
+> **Žiadny "školský server" neexistuje.** Vlastný repozitár z kroku 4 je
+> obyčajný osobný GitHub účet — nič viac netreba zakladať ani nikde sa
+> registrovať. Ak GitHub účet ešte nemáš, založ si ho na
+> [github.com/join](https://github.com/join) (zadarmo).
+
+6. **Neskôr, keď je výstup hotový — publikuj ho do triedneho
+   repozitára.** Tvoj repozitár z krokov 1–5 je úplne nezávislý (vlastná
+   história, vlastný remote), takže sa do triedneho repozitára
+   nedostane sám od seba. Postup:
+
+   ```bash
+   # a) na GitHube forkni triedny repozitár (tlačidlo "Fork")
+   #    -> vznikne tvoj-ucet/class_sthdf_2026-2027
+
+   # b) forknutý repo naklonuj (toto UŽ je normálny git clone,
+   #    lebo tu chceš históriu triedneho repozitára zachovať)
+   git clone https://github.com/<tvoj-ucet>/class_sthdf_2026-2027.git
+   cd class_sthdf_2026-2027
+   git checkout -b submit/ST-042-MojeMeno
+
+   # c) svoj výstup skopíruj (nie premiestni) do priečinka pomenovaného
+   #    podľa konvencie z kroku 2 — ST-XXX pre individuálnu prácu,
+   #    PRJ-YYY pre tímový projekt
+   cp -r ../ST-042-MojeMeno submissions/ST-042-MojeMeno
+
+   git add submissions/ST-042-MojeMeno
+   git commit -m "submit: ST-042-MojeMeno"
+   git push -u origin submit/ST-042-MojeMeno
+   ```
+
+   Potom na GitHube otvor **Pull Request** z `submit/ST-042-MojeMeno` do
+   `main` triedneho repozitára. Tvoj vlastný repozitár (s celou vývojovou
+   históriou) tým nezaniká — do triedneho repa ide len hotový výstup,
+   s jedným submission commitom.
 
 **Konkrétny príklad z praxe:** presne týmto postupom vznikol štart
 repozitára pre nový ročník predmetu — `2026_sthdf_class_template` →

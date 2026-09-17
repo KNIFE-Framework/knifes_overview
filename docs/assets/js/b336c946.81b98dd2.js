@@ -256,6 +256,14 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-rýchly-návod-top",
       children: "⚡ Rýchly návod (Top)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Postav sa v termináli do priečinka, ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "v ktorom"
+      }), " má vzniknúť tvoj nový\nprojekt (napr. ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "~/Skola/STHDF/"
+      }), ") — nie do priečinka, ktorý ešte len\nvznikne. Klon si ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "<moj-priecinok>"
+      }), " vytvorí sám ako podpriečinok:"]
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-bash",
@@ -392,6 +400,37 @@ function _createMdxContent(props) {
               children: "git remote -v"
             }), " ukazuje TVOJ repozitár"]
           }), ", nie šablónu."]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Žiadny \"školský server\" neexistuje."
+        }), " Vlastný repozitár z kroku 4 je\nobyčajný osobný GitHub účet — nič viac netreba zakladať ani nikde sa\nregistrovať. Ak GitHub účet ešte nemáš, založ si ho na\n", (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/join",
+          children: "github.com/join"
+        }), " (zadarmo)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "6",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(_components.strong, {
+            children: "Neskôr, keď je výstup hotový — publikuj ho do triedneho\nrepozitára."
+          }), " Tvoj repozitár z krokov 1–5 je úplne nezávislý (vlastná\nhistória, vlastný remote), takže sa do triedneho repozitára\nnedostane sám od seba. Postup:"]
+        }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            className: "language-bash",
+            children: "# a) na GitHube forkni triedny repozitár (tlačidlo \"Fork\")\n#    -> vznikne tvoj-ucet/class_sthdf_2026-2027\n\n# b) forknutý repo naklonuj (toto UŽ je normálny git clone,\n#    lebo tu chceš históriu triedneho repozitára zachovať)\ngit clone https://github.com/<tvoj-ucet>/class_sthdf_2026-2027.git\ncd class_sthdf_2026-2027\ngit checkout -b submit/ST-042-MojeMeno\n\n# c) svoj výstup skopíruj (nie premiestni) do priečinka pomenovaného\n#    podľa konvencie z kroku 2 — ST-XXX pre individuálnu prácu,\n#    PRJ-YYY pre tímový projekt\ncp -r ../ST-042-MojeMeno submissions/ST-042-MojeMeno\n\ngit add submissions/ST-042-MojeMeno\ngit commit -m \"submit: ST-042-MojeMeno\"\ngit push -u origin submit/ST-042-MojeMeno\n"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Potom na GitHube otvor ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: "Pull Request"
+          }), " z ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "submit/ST-042-MojeMeno"
+          }), " do\n", (0,jsx_runtime.jsx)(_components.code, {
+            children: "main"
+          }), " triedneho repozitára. Tvoj vlastný repozitár (s celou vývojovou\nhistóriou) tým nezaniká — do triedneho repa ide len hotový výstup,\ns jedným submission commitom."]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {

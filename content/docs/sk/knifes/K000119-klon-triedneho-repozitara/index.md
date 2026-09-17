@@ -240,7 +240,14 @@ Tri kroky, každý s jasným dôvodom:
 6. **Neskôr, keď je výstup hotový — publikuj ho do triedneho
    repozitára.** Tvoj repozitár z krokov 1–5 je úplne nezávislý (vlastná
    história, vlastný remote), takže sa do triedneho repozitára
-   nedostane sám od seba. Postup:
+   nedostane sám od seba. Do triedneho repa ide **len prehľad** (About
+   Me, Knowledge Contribution, Project Summary, Project Outcomes, Pitch,
+   Final Presentation, Reflexia) s odkazmi späť na tvoj plný repozitár —
+   **nie celý repozitár samotný.**
+
+   Triedny repozitár má pre teba **vopred pripravený priečinok**
+   `students/ST0XX/` (a `projects/PRJ0YY/` pri tímovom projekte) —
+   pridelené číslo ti oznámi vyučujúci (roster). Postup:
 
    ```bash
    # a) na GitHube forkni triedny repozitár (tlačidlo "Fork")
@@ -250,22 +257,24 @@ Tri kroky, každý s jasným dôvodom:
    #    lebo tu chceš históriu triedneho repozitára zachovať)
    git clone https://github.com/<tvoj-ucet>/class_sthdf_2026-2027.git
    cd class_sthdf_2026-2027
-   git checkout -b submit/ST-042-MojeMeno
+   git checkout -b submit/ST025
 
-   # c) svoj výstup skopíruj (nie premiestni) do priečinka pomenovaného
-   #    podľa konvencie z kroku 2 — ST-XXX pre individuálnu prácu,
-   #    PRJ-YYY pre tímový projekt
-   cp -r ../ST-042-MojeMeno submissions/ST-042-MojeMeno
+   # c) uprav SVOJ pridelený priečinok (ST025 = príklad, použi číslo
+   #    z rosteru), nie celý repozitár skopírovaný odinakiaľ:
+   #    content/docs/sk/class_sthdf_dashboard/.../students/ST025/
+   #    doplň about-me/, knowledge-contribution/, project-summary/,
+   #    project-outcomes/, pitch-presentation/, final-presentation/,
+   #    reflexia/ — s odkazmi na tvoj plný GitHub repozitár
 
-   git add submissions/ST-042-MojeMeno
-   git commit -m "submit: ST-042-MojeMeno"
-   git push -u origin submit/ST-042-MojeMeno
+   git add content/docs/sk/class_sthdf_dashboard/*/students/ST025
+   git commit -m "submit: ST025 deliverables"
+   git push -u origin submit/ST025
    ```
 
-   Potom na GitHube otvor **Pull Request** z `submit/ST-042-MojeMeno` do
-   `main` triedneho repozitára. Tvoj vlastný repozitár (s celou vývojovou
-   históriou) tým nezaniká — do triedneho repa ide len hotový výstup,
-   s jedným submission commitom.
+   Potom na GitHube otvor **Pull Request** z `submit/ST025` do `main`
+   triedneho repozitára. Tvoj vlastný repozitár (s celou vývojovou
+   históriou a kódom) tým nezaniká — do triedneho repa ide len prehľad,
+   s odkazmi naň.
 
 **Konkrétny príklad z praxe:** presne týmto postupom vznikol štart
 repozitára pre nový ročník predmetu — `2026_sthdf_class_template` →

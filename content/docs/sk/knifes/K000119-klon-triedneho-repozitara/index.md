@@ -237,44 +237,12 @@ Tri kroky, každý s jasným dôvodom:
 > registrovať. Ak GitHub účet ešte nemáš, založ si ho na
 > [github.com/join](https://github.com/join) (zadarmo).
 
-6. **Neskôr, keď je výstup hotový — publikuj ho do triedneho
-   repozitára.** Tvoj repozitár z krokov 1–5 je úplne nezávislý (vlastná
-   história, vlastný remote), takže sa do triedneho repozitára
-   nedostane sám od seba. Do triedneho repa ide **len prehľad** (About
-   Me, Knowledge Contribution, Project Summary, Project Outcomes, Pitch,
-   Final Presentation, Reflexia) s odkazmi späť na tvoj plný repozitár —
-   **nie celý repozitár samotný.**
-
-   Triedny repozitár má pre teba **vopred pripravený priečinok**
-   `students/ST0XX/` (a `projects/PRJ0YY/` pri tímovom projekte) —
-   pridelené číslo ti oznámi vyučujúci (roster). Postup:
-
-   ```bash
-   # a) na GitHube forkni triedny repozitár (tlačidlo "Fork")
-   #    -> vznikne tvoj-ucet/class_sthdf_2026-2027
-
-   # b) forknutý repo naklonuj (toto UŽ je normálny git clone,
-   #    lebo tu chceš históriu triedneho repozitára zachovať)
-   git clone https://github.com/<tvoj-ucet>/class_sthdf_2026-2027.git
-   cd class_sthdf_2026-2027
-   git checkout -b submit/ST025
-
-   # c) uprav SVOJ pridelený priečinok (ST025 = príklad, použi číslo
-   #    z rosteru), nie celý repozitár skopírovaný odinakiaľ:
-   #    content/docs/sk/class_sthdf_dashboard/.../students/ST025/
-   #    doplň about-me/, knowledge-contribution/, project-summary/,
-   #    project-outcomes/, pitch-presentation/, final-presentation/,
-   #    reflexia/ — s odkazmi na tvoj plný GitHub repozitár
-
-   git add content/docs/sk/class_sthdf_dashboard/*/students/ST025
-   git commit -m "submit: ST025 deliverables"
-   git push -u origin submit/ST025
-   ```
-
-   Potom na GitHube otvor **Pull Request** z `submit/ST025` do `main`
-   triedneho repozitára. Tvoj vlastný repozitár (s celou vývojovou
-   históriou a kódom) tým nezaniká — do triedneho repa ide len prehľad,
-   s odkazmi naň.
+6. **Neskôr, keď je výstup hotový — nemusíš robiť nič so samotným
+   triednym repozitárom.** Tvoj repozitár z krokov 1–5 je úplne
+   nezávislý a taký aj zostáva. Do triedneho dashboardu (`students/ST0XX/`)
+   ho premieta vyučujúci — tvoja jediná úloha je mať pridelené číslo
+   `ST0XX` (roster) a **zdieľať odkaz na svoj hotový repozitár** tam, kde
+   ti povie vyučujúci. Prenos do triedneho repa je jeho proces, nie tvoj.
 
 **Konkrétny príklad z praxe:** presne týmto postupom vznikol štart
 repozitára pre nový ročník predmetu — `2026_sthdf_class_template` →

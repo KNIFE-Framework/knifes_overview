@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST_EN"
 
 # Unikátne UUID – generuje skript
-guid: "fb052e4c-312e-4713-9321-3e5024e3677d"
+guid: "edb7fa79-1821-4b0e-bac3-fa3b7706b732"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "en"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-09-17"
+created: "2026-09-21"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,13 +135,14 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `fb052e4c-312e-4713-9321-3e5024e3677d`
+> **GUID:** `edb7fa79-1821-4b0e-bac3-fa3b7706b732`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
 [📰 Blog](./KNIFE_Overview_Blog.md) | **[🗂 List](./KNIFE_Overview_List.md)** | [📊 Details](./KNIFE_Overview_Details.md) | [↩️ KNIFES](../index.md)
 
 
+- **K000119_EN** · [K000119 – How to create a clean clone of a class repository](../K000119-clean-clone-of-a-class-repository/) · _published_ · medium
 - **K000110_EN** · [K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect](../K000110-Time-Travel-SDLC/) · _published_ · -
 - **K000109_EN** · [K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations](../K000109-ESCO-SFIA-CAA/) · _published_ · -
 - **K000108_EN** · [K000108 – Quick Response Manufacturing (QRM)](../K000108-QRM/) · _published_ · -

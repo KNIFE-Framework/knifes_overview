@@ -421,6 +421,11 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
           "position": "left"
         },
         {
+          "href": "/en/knifes/",
+          "label": "🔪 KNIFE (EN)",
+          "position": "left"
+        },
+        {
           "href": "/sk/7Ds/",
           "label": "🧭 7Ds",
           "position": "left"
@@ -441,8 +446,8 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
           "position": "right"
         },
         {
-          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/1892797",
-          "label": "Release 1892797 • 1892797",
+          "href": "https://github.com/KNIFE-Framework/knifes_overview/commit/7393715",
+          "label": "Release 7393715 • 7393715",
           "position": "right"
         }
       ],
@@ -450,7 +455,7 @@ function concatDocumentPath(pathItems){return pathItems.join(" › ");}
     },
     "footer": {
       "style": "dark",
-      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>1892797</strong><br/>\n    💡 Commit: <code>1892797</code><br/>\n    🕒 Build: 2026-09-21 10:31:18 UTC\n  </div>\n",
+      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>7393715</strong><br/>\n    💡 Commit: <code>7393715</code><br/>\n    🕒 Build: 2026-09-24 17:49:20 UTC\n  </div>\n",
       "links": []
     },
     "prism": {
@@ -1961,7 +1966,7 @@ var normalizeContextByPath = __webpack_require__(43385);
 // EXTERNAL MODULE: ./node_modules/lunr/lunr.js
 var lunr = __webpack_require__(58291);
 ;// ./.docusaurus/@easyops-cn/docusaurus-search-local/default/generated-constants.js
-const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=e7d51ef2";const searchResultLimits=8;const fuzzyMatchingDistance=1;
+const removeDefaultStopWordFilter=(/* unused pure expression or super */ null && ([]));const language=(/* unused pure expression or super */ null && (["en"]));const searchIndexUrl="search-index{dir}.json?_=6ef805e7";const searchResultLimits=8;const fuzzyMatchingDistance=1;
 ;// ./node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/utils/proxiedGeneratedConstants.js
 // This file is auto generated while building.
 

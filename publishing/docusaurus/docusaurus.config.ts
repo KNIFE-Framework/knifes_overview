@@ -94,6 +94,7 @@ const config: Config = {
       },
         items: [
           { href: '/sk/knifes/', label: '🔪 KNIFE', position: 'left' },
+          { href: '/en/knifes/', label: '🔪 KNIFE (EN)', position: 'left' },
           { href: '/sk/7Ds/', label: '🧭 7Ds', position: 'left' },
           { href: '/sk/sdlc/', label: '⚙️ SDLC', position: 'left' },
           { href: '/sk/q12/', label: '📐 Q12', position: 'left' },

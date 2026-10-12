@@ -113,7 +113,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-k-000002-git-workflow-pre-ea-modely-index-md-72b.json
-const site_docs_sk_knifes_k_000002_git_workflow_pre_ea_modely_index_md_72b_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/K000002-git-workflow-pre-ea-modely/K000002","title":"K000002 – Git workflow pre EA modely","description":"Multirelease stratégie, LemonTree, merge politiky","source":"@site/docs/sk/knifes/K000002-git-workflow-pre-ea-modely/index.md","sourceDirName":"sk/knifes/K000002-git-workflow-pre-ea-modely","slug":"/sk/knifes/K000002-git-workflow-pre-ea-modely/","permalink":"/sk/knifes/K000002-git-workflow-pre-ea-modely/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"KNIFE","permalink":"/doc-tags/knife"}],"version":"current","sidebarPosition":2,"frontMatter":{"fm_version":"1.0.1","fm_build":"2025-10-12T10:35:00Z","fm_version_comment":"Added field fm_version_comment to document reasons for FM updates","id":"K000002","guid":"6cf87ac0-1644-4134-8c67-8e61da2dca78","dao":"knife","title":"K000002 – Git workflow pre EA modely","description":"Multirelease stratégie, LemonTree, merge politiky","author":"Roman Kazicka","authors":["Roman Kazička",""],"category":"","type":"","priority":"no","tags":["KNIFE"],"locale":"sk","created":"2025-09-17","modified":"2025-09-17","status":"inprogress","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"Roman Kazička (CAA/KNIFE/LetItGrow)","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička / SystemThinking","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_system":"","author_id":"","author_did":"","fm_reserved1":"","fm_reserved2":"","date":"2025-09-17","sidebar_position":2,"sidebar_label":"K000002 – Git workflow pre EA modely"},"sidebar":"tutorialSidebar","previous":{"title":"SK_KNIFES_HOME – KNIFES (SK)","permalink":"/sk/knifes/"},"next":{"title":"K000003 – LibreOffice + Python integrácia","permalink":"/sk/knifes/K000003-libreoffice-python-integracia/"}}');
+const site_docs_sk_knifes_k_000002_git_workflow_pre_ea_modely_index_md_72b_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/K000002-git-workflow-pre-ea-modely/K000002","title":"K000002 – Git workflow pre EA modely","description":"Multirelease stratégie, LemonTree, merge politiky","source":"@site/docs/sk/knifes/K000002-git-workflow-pre-ea-modely/index.md","sourceDirName":"sk/knifes/K000002-git-workflow-pre-ea-modely","slug":"/sk/knifes/K000002-git-workflow-pre-ea-modely/","permalink":"/sk/knifes/K000002-git-workflow-pre-ea-modely/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"KNIFE","permalink":"/doc-tags/knife"},{"inline":true,"label":"git","permalink":"/doc-tags/git"},{"inline":true,"label":"ea","permalink":"/doc-tags/ea"},{"inline":true,"label":"lemontree","permalink":"/doc-tags/lemontree"}],"version":"current","sidebarPosition":2,"frontMatter":{"fm_version":"1.0.1","fm_build":"2025-10-12T10:35:00Z","fm_version_comment":"Added field fm_version_comment to document reasons for FM updates","id":"K000002","guid":"6cf87ac0-1644-4134-8c67-8e61da2dca78","dao":"knife","title":"K000002 – Git workflow pre EA modely","description":"Multirelease stratégie, LemonTree, merge politiky","author":"Roman Kazicka","authors":["Roman Kazička",""],"category":"","type":"","priority":"no","tags":["KNIFE","git","ea","lemontree"],"locale":"sk","created":"2025-09-17","modified":"2025-09-17","status":"inprogress","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"Roman Kazička (CAA/KNIFE/LetItGrow)","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička / SystemThinking","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_system":"","author_id":"","author_did":"","fm_reserved1":"","fm_reserved2":"","date":"2025-09-17","sidebar_position":2,"sidebar_label":"K000002 – Git workflow pre EA modely"},"sidebar":"tutorialSidebar","previous":{"title":"SK_KNIFES_HOME – KNIFES (SK)","permalink":"/sk/knifes/"},"next":{"title":"K000003 – LibreOffice + Python integrácia","permalink":"/sk/knifes/K000003-libreoffice-python-integracia/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -139,7 +139,10 @@ const frontMatter = {
 	type: '',
 	priority: 'no',
 	tags: [
-		'KNIFE'
+		'KNIFE',
+		'git',
+		'ea',
+		'lemontree'
 	],
 	locale: 'sk',
 	created: '2025-09-17',
@@ -172,32 +175,12 @@ const assets = {
 
 
 const toc = [{
-  "value": "🎯 Čo rieši (účel, cieľ)",
-  "id": "-čo-rieši-účel-cieľ",
-  "level": 2
-}, {
-  "value": "🧩 Ako to rieši (princíp)",
-  "id": "-ako-to-rieši-princíp",
-  "level": 2
-}, {
-  "value": "🧪 Ako to použiť (aplikácia)",
-  "id": "-ako-to-použiť-aplikácia",
-  "level": 2
-}, {
   "value": "⚡ Rýchly návod (Top)",
   "id": "-rýchly-návod-top",
   "level": 2
 }, {
-  "value": "📜 Detailný článok",
-  "id": "-detailný-článok",
-  "level": 2
-}, {
-  "value": "💡 Tipy a poznámky",
-  "id": "-tipy-a-poznámky",
-  "level": 2
-}, {
-  "value": "✅ Hodnota / Zhrnutie",
-  "id": "-hodnota--zhrnutie",
+  "value": "🎯 Čo tu bude",
+  "id": "-čo-tu-bude",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -205,9 +188,13 @@ function _createMdxContent(props) {
     a: "a",
     blockquote: "blockquote",
     code: "code",
+    em: "em",
     h1: "h1",
     h2: "h2",
     hr: "hr",
+    li: "li",
+    mermaid: "mermaid",
+    ol: "ol",
     p: "p",
     strong: "strong",
     ...(0,lib/* useMDXComponents */.R)(),
@@ -246,27 +233,71 @@ function _createMdxContent(props) {
           children: "License:"
         }), " CC-BY-NC-SA-4.0"]
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "KNIFE"
+        }), " – Knowledge In Friendly Examples\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Séria:"
+        }), " Systemic Thinking in IT & Digital Fabrication\n", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Tagy:"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "git"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "enterprise-architect"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "lemontree"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "tutorial"
+        })]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["🚧 ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Rozpracované — pracujeme na obsahu."
+        }), "\nKompletný návod vzniká popri prednáške STHDF (október 2026)."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-čo-rieši-účel-cieľ",
-      children: "🎯 Čo rieši (účel, cieľ)"
-    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-ako-to-rieši-princíp",
-      children: "🧩 Ako to rieši (princíp)"
-    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-ako-to-použiť-aplikácia",
-      children: "🧪 Ako to použiť (aplikácia)"
-    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-rýchly-návod-top",
       children: "⚡ Rýchly návod (Top)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.em, {
+        children: "Čoskoro."
+      }), " Zatiaľ sú funkčné kroky v README repozitára s modelom:\n", (0,jsx_runtime.jsx)(_components.strong, {
+        children: (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://github.com/06-STH-Projects/ea_model_sthdf_2026-2027",
+          children: "ea_model_sthdf_2026-2027"
+        })
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.mermaid, {
+      value: "flowchart LR\n  P[\"PARENT model<br/>(main)\"] --> A[\"Študent A<br/>(vetva ST0XX-a)\"]\n  P --> B[\"Študent B<br/>(vetva ST0XX-b)\"]\n  A -->|\"PR + LemonTree merge\"| P\n  B -->|\"PR + LemonTree merge\"| P"
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-detailný-článok",
-      children: "📜 Detailný článok"
-    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-tipy-a-poznámky",
-      children: "💡 Tipy a poznámky"
-    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-hodnota--zhrnutie",
-      children: "✅ Hodnota / Zhrnutie"
+      id: "-čo-tu-bude",
+      children: "🎯 Čo tu bude"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Stiahnutie ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".qea"
+        }), " modelu z GitHubu a otvorenie v Enterprise Architect."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Vlastná vetva a zmena len vo vlastnom balíku."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Commit, push a Pull Request."
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Trojcestný merge v LemonTree: ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "parent"
+        }), " (spoločný predok), ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "ours"
+        }), ", ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "theirs"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Pravidlá, ktoré držia konflikty malé, a čo robiť, keď sa niečo pokazí."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.em, {
+        children: "English version:"
+      }), " K000002 (EN)."]
     })]
   });
 }

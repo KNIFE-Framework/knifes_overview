@@ -113,7 +113,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-help-release-notes-md-762.json
-const site_docs_en_help_release_notes_md_762_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/help/release-notes","title":"Release Notes","description":"Táto stránka zhromažďuje zmeny, ktoré ovplyvňujú:","source":"@site/docs/en/help/release-notes.md","sourceDirName":"en/help","slug":"/en/help/release-notes","permalink":"/en/help/release-notes","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"title":"Release Notes"},"sidebar":"tutorialSidebar","previous":{"title":"Inštalácia na Windows (MSYS2)","permalink":"/en/help/os-install/windows-msys2"},"next":{"title":"K000101 – CYNEFIN Framework","permalink":"/en/knifes/K000101-CYNEFIN_Framework/"}}');
+const site_docs_en_help_release_notes_md_762_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/help/release-notes","title":"Release Notes","description":"Táto stránka zhromažďuje zmeny, ktoré ovplyvňujú:","source":"@site/docs/en/help/release-notes.md","sourceDirName":"en/help","slug":"/en/help/release-notes","permalink":"/en/help/release-notes","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"title":"Release Notes"},"sidebar":"tutorialSidebar","previous":{"title":"Inštalácia na Windows (MSYS2)","permalink":"/en/help/os-install/windows-msys2"},"next":{"title":"K000002 – Git workflow for EA models","permalink":"/en/knifes/K000002-git-workflow-for-ea-models/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js

@@ -12,7 +12,7 @@ authors: ["Roman Kazička",""]
 category: ""
 type: ""
 priority: "no"
-tags: ["KNIFE"]
+tags: ["KNIFE", "git", "ea", "lemontree"]
 locale: "sk"
 created: "2025-09-17"
 modified: "2025-09-17"
@@ -49,18 +49,32 @@ sidebar_label: "K000002 – Git workflow pre EA modely"
 > **Status:** `inprogress` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
-## 🎯 Čo rieši (účel, cieľ)
+> **KNIFE** – Knowledge In Friendly Examples
+> **Séria:** Systemic Thinking in IT & Digital Fabrication
+> **Tagy:** `git` `enterprise-architect` `lemontree` `tutorial`
 
-## 🧩 Ako to rieši (princíp)
-
-## 🧪 Ako to použiť (aplikácia)
-
----
+> 🚧 **Rozpracované — pracujeme na obsahu.**
+> Kompletný návod vzniká popri prednáške STHDF (október 2026).
 
 ## ⚡ Rýchly návod (Top)
 
-## 📜 Detailný článok
+*Čoskoro.* Zatiaľ sú funkčné kroky v README repozitára s modelom:
+**[ea_model_sthdf_2026-2027](https://github.com/06-STH-Projects/ea_model_sthdf_2026-2027)**.
 
-## 💡 Tipy a poznámky
+```mermaid
+flowchart LR
+  P["PARENT model<br/>(main)"] --> A["Študent A<br/>(vetva ST0XX-a)"]
+  P --> B["Študent B<br/>(vetva ST0XX-b)"]
+  A -->|"PR + LemonTree merge"| P
+  B -->|"PR + LemonTree merge"| P
+```
 
-## ✅ Hodnota / Zhrnutie
+## 🎯 Čo tu bude
+
+1. Stiahnutie `.qea` modelu z GitHubu a otvorenie v Enterprise Architect.
+2. Vlastná vetva a zmena len vo vlastnom balíku.
+3. Commit, push a Pull Request.
+4. Trojcestný merge v LemonTree: *parent* (spoločný predok), *ours*, *theirs*.
+5. Pravidlá, ktoré držia konflikty malé, a čo robiť, keď sa niečo pokazí.
+
+*English version:* K000002 (EN).

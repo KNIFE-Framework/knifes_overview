@@ -27,7 +27,7 @@ dao: "knife"
 title: "K000121 – Kernaro AI Hub: centralized AI access for teams"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "How to deploy Kernaro AI Hub as a central AI server for a team or class: architecture, prerequisites, license assignment and session monitoring. For EA environment admins, including academic deployments (65 students)."
+description: "How to build Kernaro AI Hub as a central AI server for a team or class on Windows Server: installation order, pgvector, preparing the database, license, users and what the guides do not make obvious (HTTP vs HTTPS, ports, DNS). Students can also use AI from a browser without installing anything."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -57,7 +57,7 @@ priority: ""
 #   - účel: tutorial, guide, pattern, case-study
 #   - téma: git, backup, ai, communication
 #   - úroveň: beginner, intermediate, advanced
-tags: ["kernaro", "ea", "ai-hub", "licensing", "windows-server"]
+tags: ["kernaro", "ea", "ai-hub", "licensing", "windows-server", "postgresql", "pgvector"]
 
 
 # 🌍 LOCALIZATION -----------------------------------------------------
@@ -72,7 +72,7 @@ locale: "en"
 created: "2026-10-18 14:24"
 
 # Dátum poslednej úpravy – dopĺňa človek
-modified: "2026-10-18 14:24"
+modified: "2026-10-18 20:00"
 
 # Stav dokumentu – default "backlog"
 status: "published"
@@ -137,71 +137,167 @@ fm_reserved2: ""
 > **KNIFE** – Knowledge In Friendly Examples
 > **Series:** Systemic Thinking in IT & Digital Fabrication
 > **Level:** Intermediate
-> **Tags:** `kernaro` `ea` `ai-hub` `licensing` `user-management` `windows-server`
+> **Tags:** `kernaro` `ea` `ai-hub` `licensing` `windows-server` `postgresql` `pgvector`
 
-**Version:** 1.0 | **Date:** 2026-10-18 | **Related:** [K000104 – SPARX AI Kernaro in SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
+**Version:** 1.1 | **Date:** 2026-10-18 | **Related:** [K000104 – SPARX AI Kernaro in SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
 
 ## 🎯 What it solves (purpose, goal)
 
-Kernaro AI has two deployment models:
+How to build **Kernaro AI Hub** — one central AI server for a team or class — and what the guides do not make obvious. The findings below come from a real installation (Windows Server 2019, 2026-10-18, Management v1.1.0.1).
 
-| Model | Where AI runs | For whom |
+Kernaro AI is used in two ways that can be combined:
+
+| Mode | For whom / where | What it needs |
 |---|---|---|
-| **Kernaro Assist** | Plugin on each EA client | 1 license = 1 machine |
-| **Kernaro AI Hub** | Central server | 1 server = N users |
+| **Kernaro Assist** | The student works directly inside Sparx Enterprise Architect; AI helps create and update model elements in natural language | Assist installer, Hub address, an assigned seat |
+| **Kernaro AI Hub – web** | The student uses AI in a **browser** via the Hub's central address — **no installation** on their own computer | Just the Hub URL and assigned permissions |
 
-This KNIFE covers the **Hub model** — suitable for team or academic environments. For Kernaro use in an SDLC context see K000104.
+The Hub also acts as the **Assist license manager** (License Manager): you assign seats and monitor sessions. For Kernaro in an SDLC context see K000104.
 
 ## 🧩 How it solves it (principle)
 
-AI runs on a single server; EA clients sign in through the Kernaro Assist plugin, and the Hub allocates license seats and tracks sessions.
+AI and administration run on one server; clients (Assist in EA and a web browser) connect to it over the network.
 
 ![Kernaro AI Hub – architecture](./img/kernaro-hub-architecture.svg)
 
-### Server installation prerequisites
+Components, to be installed in this order:
 
-| Component | Source |
-|---|---|
-| Windows Server 2019+ | — |
-| PostgreSQL 16 or 17 | postgresql.org |
-| pgvector | GitHub: pgvector/pgvector (build via VS C++ x64) |
-| Git | git-scm.com |
-| Visual Studio Community (C++) | visualstudio.microsoft.com |
-| EA Graphlink | install **before** Kernaro Hub |
-| KernaroAI-Setup.exe | request from Sparx Systems |
+| # | Component | Note |
+|---|---|---|
+| 1 | Windows Server 2019+ | admin rights |
+| 2 | **PostgreSQL 16 or 17** | not 18 — Sparx specifies 16/17 |
+| 3 | pgvector | built from source (Git + VS Build Tools) |
+| 4 | EA GraphLink | **before** the Hub, shipped in the Hub ZIP |
+| 5 | Kernaro AI Hub | `KernaroAI-Setup` |
+| 6 | License file | issued for the server's Machine ID |
+| 7 | Kernaro Assist | only on clients, separate installer |
 
-> ⚠️ The installer is not publicly downloadable — request it via "Request Kernaro Hub Installer" at sparxsystems.com/kernaro.
+> ℹ️ Installers are provided by Sparx Systems after approval (academic Workgroup license). Hub and GraphLink come in one ZIP, Assist in another. Ask for the **latest versions** — Hub and Assist versions should match.
 
 ## 🧪 How to use it (application)
 
-### User management
+### 1. PostgreSQL 17
+
+Installer from postgresql.org (EDB), port `5432`, default locale, Stack Builder not needed. Write down the `postgres` user's password.
+
+⚠️ **Watch the version:** the newest installer may be 18. The Hub requires 16/17, so download 17.
+
+### 2. pgvector (build on Windows)
+
+The build needs **Visual Studio Build Tools 2022** (workload *Desktop development with C++*; MSVC v143 x64/x86 and the Windows SDK are enough, about 7 GB) and Git.
+
+> ⚠️ `cl` and `nmake` are **not in PATH** in a plain PowerShell. Open **x64 Native Tools Command Prompt for VS 2022** as administrator. Check: both `cl` and `nmake /?` must print a version.
+
+```
+set "PGROOT=C:\Program Files\PostgreSQL\17"
+cd %TEMP%
+git clone --branch v0.8.7 https://github.com/pgvector/pgvector.git
+cd pgvector
+nmake /F Makefile.win
+nmake /F Makefile.win install
+```
+
+Find the current tag at github.com/pgvector/pgvector (here v0.8.7). **Do not enable the extension in the database by hand** — the Hub installer does it (see below).
+
+### 3. EA GraphLink
+
+The installer asks for a host and port. With the Hub on the same server keep `localhost` and `8090`. Check: `netstat -ano | findstr :8090` must show `LISTENING`.
+
+### 4. Preparing the database
+
+The Hub installer does **not** create the database and requires an **empty** one (errors *database does not exist* / *extension already exists in this database*):
+
+```sql
+CREATE DATABASE kernaro;
+```
+
+User: superuser (`postgres`), schema `kernaroschema`. If you enabled `CREATE EXTENSION vector` by mistake, drop the database and recreate it empty.
+
+### 5. Kernaro AI Hub (installer)
+
+Screens in order: license agreement → destination folder → *Run Schema* → PostgreSQL connection → *Service Configuration* → summary.
+
+In *Service Configuration*:
+
+| Field | Value |
+|---|---|
+| Host | the server's **DNS name**, e.g. `kernaro.example.org` (not `localhost`) |
+| AI Port / Sync Port / Management Port | `8000` / `8001` / `8002` |
+| Super admin | `admin` + strong password (min. 8 chars, upper, lower, digit, special) |
+
+Before installing, check the ports are free (note `-ano` with a hyphen, not a slash):
+
+```
+netstat -ano | findstr ":8000 :8001 :8002"
+```
+
+Empty output = free.
+
+**DNS:** if the server has no DNS record, create an A record (`kernaro` → server IP, TTL 300) and verify with `nslookup kernaro.example.org`.
+
+### 6. First start and license
+
+After installation the portal opens at `http://<host>:8002`:
+
+1. The **Create Administrator Account** page — finish it **immediately**. Until the account exists, anyone who can reach port 8002 can create it.
+2. Log in; **License Configuration** shows the server's **Machine ID**.
+3. Send the Machine ID to Sparx (the contact from the academic license). They return a license **file** for Kernaro AI and EA GraphLink.
+4. In the portal: *Upload license file → Activate License*.
+
+### 7. User management
 
 Two account types: **Admin** (full access) | **Regular** (restricted access).
-
-License assignment flow:
 
 1. `Configuration → User Management → Add User`
 2. `User & Access Control → Assist Access → Assign Users to Kernaro Assist`
 3. Set **Write Access** (Enabled = create/edit content; Disabled = read only)
 4. Hub tracks seats: **Available / Assigned / Total**
 
-Limited License displays seat counters. Unlimited License hides them; management works identically.
+Limited License shows seat counters; Unlimited License hides them; management works identically.
 
-### Session monitoring
+### 8. Session monitoring
 
 - **Real-time:** `User & Access Control → Assist Active Sessions` — User, Machine, Last Used, IP Address, Status. Admin can revoke individual or all sessions.
 - **Audit log:** `Assist Session History` — Sign-In, Sign-Out, Session Refresh, Revocation, Access Denied, Expiration.
+
+## 💡 Tips and notes — what is not obvious
+
+| Problem | Cause / solution |
+|---|---|
+| `cl`, `nmake` not found | You are in PowerShell. Use *x64 Native Tools Command Prompt for VS 2022* |
+| `database "kernaro" does not exist` | The Hub does not create it. `CREATE DATABASE kernaro;` |
+| `extension(s) already exist … 'vector'` | The database must be unused. Drop it, create an empty one, leave the extension to the installer |
+| PostgreSQL 18 | The Hub requires 16/17. Uninstall, install 17 |
+| Empty result from `netstat /ano` | The correct form is `netstat -ano`; with a slash it only prints help |
+| `https://host:8002` → `SSL_ERROR_RX_RECORD_TOO_LONG` | The Hub on 8000–8002 speaks **HTTP only**. Do not let the browser upgrade to HTTPS |
+| PostgreSQL listens on all interfaces | The Hub is local. Set `listen_addresses = 'localhost'` in `postgresql.conf` and restart the service |
+
+### Port and protocol — who is responsible for HTTPS?
+
+A port does not decide the protocol: `443` is just a convention. Whether a connection on a port is encrypted is decided by **the program listening on it**. The Hub listens on HTTP.
+
+- **A certificate for the server name is not enough.** The program on the port has to present it: either the Hub (if it supports TLS natively — *open question for Sparx*), or a **reverse proxy** in front of the Hub (IIS, nginx, Caddy) that terminates TLS and forwards to `http://localhost:8002`.
+- If 80/443 are already used by another service on the server (e.g. Pro Cloud Server, Prolaborate), the proxy has to run on another port (e.g. 8443).
+- After enabling HTTPS, update the addresses in Assist clients and check that the Hub does not hand the original `http://` URLs to clients.
+- The certificate renews (every 60–90 days); the service must be reloaded after renewal.
+
+### Security
+
+- Open ports 8000/8001 only to the target network (students, VPN), **8002 (Management) only to the administrator**.
+- Without HTTPS passwords travel readable over the network. Solve HTTPS first before exposing outside the local network.
+- Passwords (PostgreSQL, Hub admin, PFX) do not belong in scripts or documentation.
 
 ### Notes for academic deployment
 
 - 65 students = license for 65 Assist seats (Limited License)
 - Write Access recommended **enabled** — active AI interaction has educational value
-- Verify before launch: LAN or VPN? → affects firewall / port configuration
+- The Hub's web interface lowers the barrier: students need no installation, only a URL
+- Verify before launch: LAN or VPN? → firewall and ports
 - Session History = student activity log (pedagogical value)
 
 ## ✅ Value / Summary
 
-One server instead of N separate AI installations: central license management, an overview of active sessions and an audit trail. For a team or a class this is simpler than licensing each machine separately.
+One server instead of N AI installations, central license and access management, an overview of sessions and an audit trail; students can also use AI from a browser without installing anything. The costliest installation steps are pgvector and preparing an empty database — the notes above save hours of trial and error.
 
 ## Sources
 
@@ -210,6 +306,8 @@ One server instead of N separate AI installations: central license management, a
 [2] https://sparxsystems.com/kernaro/resources/kernaro-ai/kernaro-installation-guide/
 
 [3] https://sparxsystems.com/kernaro/kernaro-ai-hub/
+
+[4] https://github.com/pgvector/pgvector (Windows section)
 
 <!-- body:start -->
 

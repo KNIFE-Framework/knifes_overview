@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
   <title id="t">Kernaro AI Hub – architecture</title>
-  <desc id="d">Windows Server running Kernaro AI Hub (AI, Sync and Management ports) and PostgreSQL with pgvector; EA clients connect over the LAN.</desc>
+  <desc id="d">Windows Server running Kernaro AI Hub (AI, Sync and Management ports), PostgreSQL with pgvector and EA GraphLink; EA clients with the Assist plugin and web browsers connect over the network.</desc>
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker>
   </defs>
@@ -10,22 +10,29 @@
   <rect x="40" y="62" width="480" height="210" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
   <text x="58" y="88" font-size="15" font-weight="700" fill="#1e3a8a">Kernaro AI Hub</text>
   <rect x="58" y="102" width="444" height="48" rx="6" fill="#ffffff" stroke="#2563eb"/>
-  <text x="74" y="123" font-size="14" font-weight="600" fill="#0f172a">Kernaro AI Port</text>
+  <text x="74" y="123" font-size="14" font-weight="600" fill="#0f172a">Kernaro AI Port :8000</text>
   <text x="74" y="140" font-size="12" fill="#334155">AI engine</text>
   <rect x="58" y="160" width="444" height="48" rx="6" fill="#ffffff" stroke="#2563eb"/>
-  <text x="74" y="181" font-size="14" font-weight="600" fill="#0f172a">Kernaro Sync Port</text>
+  <text x="74" y="181" font-size="14" font-weight="600" fill="#0f172a">Kernaro Sync Port :8001</text>
   <text x="74" y="198" font-size="12" fill="#334155">sync with the EA repository</text>
   <rect x="58" y="218" width="444" height="48" rx="6" fill="#ffffff" stroke="#2563eb"/>
-  <text x="74" y="239" font-size="14" font-weight="600" fill="#0f172a">Management Port</text>
-  <text x="74" y="256" font-size="12" fill="#334155">Admin portal</text>
-  <rect x="560" y="62" width="200" height="210" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="660" y="150" font-size="15" font-weight="700" fill="#14532d" text-anchor="middle">PostgreSQL 16/17</text>
-  <text x="660" y="172" font-size="14" fill="#14532d" text-anchor="middle">+ pgvector</text>
+  <text x="74" y="239" font-size="14" font-weight="600" fill="#0f172a">Management Port :8002</text>
+  <text x="74" y="256" font-size="12" fill="#334155">admin portal</text>
+  <rect x="560" y="62" width="200" height="100" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="660" y="104" font-size="15" font-weight="700" fill="#14532d" text-anchor="middle">PostgreSQL 17</text>
+  <text x="660" y="126" font-size="14" fill="#14532d" text-anchor="middle">+ pgvector</text>
+  <rect x="560" y="176" width="200" height="96" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="660" y="218" font-size="15" font-weight="700" fill="#4c1d95" text-anchor="middle">EA GraphLink</text>
+  <text x="660" y="240" font-size="13" fill="#4c1d95" text-anchor="middle">localhost:8090</text>
   <path d="M502 126H558" stroke="#475569" stroke-width="1.5" marker-end="url(#a)"/>
-  <path d="M400 290V350" stroke="#475569" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/>
-  <text x="414" y="325" font-size="13" font-style="italic" fill="#334155">LAN / intranet</text>
-  <rect x="20" y="350" width="760" height="100" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-  <text x="40" y="378" font-size="16" font-weight="700" fill="#78350f">EA client (each student)</text>
-  <rect x="40" y="392" width="720" height="44" rx="6" fill="#ffffff" stroke="#d97706"/>
-  <text x="56" y="420" font-size="14" fill="#0f172a">Kernaro Assist plugin → sign in to Hub → AI features</text>
+  <path d="M502 190L558 220" stroke="#475569" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M200 290V350" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M600 290V350" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <text x="400" y="325" font-size="13" font-style="italic" fill="#334155" text-anchor="middle">LAN / VPN (HTTP)</text>
+  <rect x="20" y="350" width="370" height="100" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="40" y="378" font-size="15" font-weight="700" fill="#78350f">EA client – Kernaro Assist</text>
+  <text x="40" y="408" font-size="13" fill="#0f172a">plugin → sign in to Hub</text>
+  <rect x="410" y="350" width="370" height="100" rx="12" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
+  <text x="430" y="378" font-size="15" font-weight="700" fill="#831843">Web browser</text>
+  <text x="430" y="408" font-size="13" fill="#0f172a">just the Hub URL, no installation</text>
 </svg>

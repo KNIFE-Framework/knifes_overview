@@ -139,7 +139,7 @@ fm_reserved2: ""
 > **Úroveň:** Intermediate
 > **Tagy:** `kernaro` `ea` `ai-hub` `licencovanie` `windows-server` `postgresql` `pgvector`
 
-**Verzia:** 1.1 | **Dátum:** 2026-10-18 | **Súvisí s:** [K000104 – SPARX AI Kernaro v SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
+**Verzia:** 1.2 | **Dátum:** 2026-10-18 | **Súvisí s:** [K000104 – SPARX AI Kernaro v SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
 
 ## 🎯 Čo rieši (účel, cieľ)
 
@@ -280,6 +280,54 @@ Port nerozhoduje o protokole: `443` je len konvencia. To, či spojenie na porte 
 - Ak na serveri už 80/443 používa iná služba (napr. Pro Cloud Server, Prolaborate), proxy musí bežať na inom porte (napr. 8443).
 - Po zapnutí HTTPS treba prepísať adresy v Assist klientoch a overiť, či Hub neposiela klientom pôvodné `http://` URL.
 - Certifikát sa obnovuje (60–90 dní); po obnove treba službu reloadnúť.
+
+### Diagnostika: timeout, chyba TLS alebo firewall?
+
+Podľa chyby v prehliadači vieš, kde hľadať:
+
+| Chyba | Čo znamená | Kde hľadať |
+|---|---|---|
+| `ERR_CONNECTION_TIMED_OUT` / `nc` timeout | Spojenie sa **vôbec nenadviazalo** (nikto neodpovedá) | Firewall (Windows alebo sieťový), nie certifikát |
+| `ERR_CONNECTION_REFUSED` | Na porte nikto nepočúva | Služba nebeží alebo počúva inde |
+| `ERR_CERT_*`, `SSL_ERROR_*` | Spojenie je, zlyhalo šifrovanie | Certifikát, HTTP vs HTTPS |
+
+**Certifikát nikdy nespôsobí timeout.** Ak stránka „prestala fungovať“ krátko po vydaní certifikátu, ide o náhodu v čase — najprv skontroluj sieť.
+
+Postup, ktorý to rozhodne:
+
+1. Na serveri over, že služba počúva a čo ju drží: `netstat -ano | findstr ":443"` a `tasklist /fi "pid eq <PID>"`. Lokálne spojenie (`Test-NetConnection localhost -Port 443`) prejde aj keď firewall blokuje zvonku, preto nič nedokazuje.
+2. Skús zvonku z inej siete (mobil cez dáta, nie Wi-Fi) a pomocou `nc -vz -w 5 <ip> <port>`. Ak iný port (napr. RDP 3389) prejde a web porty nie, filtruje sa konkrétne port.
+3. Zapni logovanie zahodených spojení vo Windows firewalle a zopakuj pokus:
+   ```
+   netsh advfirewall set allprofiles logging droppedconnections enable
+   Select-String -Path "$env:SystemRoot\System32\LogFiles\Firewall\pfirewall.log" -Pattern "DROP.* 443 " | Select -Last 10
+   ```
+   - Riadky `DROP ... RECEIVE` s tvojou zdrojovou adresou = blokuje **Windows firewall** na serveri.
+   - Žiadne riadky = pakety na server nedorazia, zahadzuje ich firewall pred ním (škola, hosting).
+4. Po teste logovanie vypni: `netsh advfirewall set allprofiles logging droppedconnections disable`.
+
+### Firewall po reinštalácii / upgrade servera
+
+Windows firewall blokuje všetko prichádzajúce, čo nemá pravidlo. Po **upgrade alebo reinštalácii operačného systému** sa pravidlá pre služby (webové aplikácie, Pro Cloud Server a pod.) môžu stratiť, hoci služby bežia a počúvajú. Z vnútra servera všetko funguje, zvonku timeout.
+
+- Skontroluj profil siete (`Get-NetConnectionProfile`) a pravidlá viazané na programy (`Get-NetFirewallApplicationFilter | ...`). Prázdny výsledok = žiadne pravidlá.
+- Obnov pravidlá pre porty, ktoré majú byť verejné:
+  ```
+  New-NetFirewallRule -DisplayName "Web HTTPS 443" -Direction Inbound -Protocol TCP -LocalPort 443 -Action Allow -Profile Any
+  ```
+- Porty Hubu (8000–8002) pridávaj osobitne a **s obmedzeným zdrojom** (`-RemoteAddress`), kým Hub nehovorí HTTPS.
+- Po každej zmene OS si otestuj všetky služby **zvonku**, nielen lokálne.
+
+### Certifikát cez win-acme (Let's Encrypt)
+
+Ak už na serveri bežíte certifikáty cez `win-acme` (`wacs`), názov Hubu stačí pridať do zoznamu domén.
+
+- Zoznam `--host` je **jeden certifikát pre všetky domény**. Chybný názov (preklep v koncovke) zhodí celý beh: `Authorization result: invalid`, žiaden nový certifikát sa nevydá, starý ostane.
+- Overenie `selfhosting` ide cez **HTTP na port 80** servera. DNS záznam musí existovať a port 80 musí byť zvonku dosiahnuteľný (pozri firewall vyššie).
+- Vydaný certifikát **Hub nepoužije sám** — musí ho predložiť Hub (ak podporuje TLS) alebo reverzný proxy.
+- Heslo k PFX **nepatrí do skriptu** v čistom texte. Ulož ho zašifrované pre konkrétny účet (`Get-Credential | Export-Clixml`, načítať cez `Import-Clixml`) a súbor ochráň oprávneniami (`icacls`).
+- Úloha v Plánovači bežiaca „naprázdno“ býva zablokovaná príkazom `pause` v skripte, nesprávnym účtom alebo chýbajúcim *Run with highest privileges*.
+- Ak plánovač nefunguje, obnovu treba robiť ručne a mať v kalendári dátum vypršania.
 
 ### Bezpečnosť
 

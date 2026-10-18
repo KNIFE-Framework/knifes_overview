@@ -139,7 +139,7 @@ fm_reserved2: ""
 > **Level:** Intermediate
 > **Tags:** `kernaro` `ea` `ai-hub` `licensing` `windows-server` `postgresql` `pgvector`
 
-**Version:** 1.1 | **Date:** 2026-10-18 | **Related:** [K000104 – SPARX AI Kernaro in SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
+**Version:** 1.2 | **Date:** 2026-10-18 | **Related:** [K000104 – SPARX AI Kernaro in SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
 
 ## 🎯 What it solves (purpose, goal)
 
@@ -280,6 +280,54 @@ A port does not decide the protocol: `443` is just a convention. Whether a conne
 - If 80/443 are already used by another service on the server (e.g. Pro Cloud Server, Prolaborate), the proxy has to run on another port (e.g. 8443).
 - After enabling HTTPS, update the addresses in Assist clients and check that the Hub does not hand the original `http://` URLs to clients.
 - The certificate renews (every 60–90 days); the service must be reloaded after renewal.
+
+### Diagnostics: timeout, TLS error or firewall?
+
+The browser error tells you where to look:
+
+| Error | Meaning | Where to look |
+|---|---|---|
+| `ERR_CONNECTION_TIMED_OUT` / `nc` timeout | The connection was **never established** (nobody answers) | Firewall (Windows or network), not the certificate |
+| `ERR_CONNECTION_REFUSED` | Nothing is listening on the port | Service not running or listening elsewhere |
+| `ERR_CERT_*`, `SSL_ERROR_*` | The connection exists, encryption failed | Certificate, HTTP vs HTTPS |
+
+**A certificate never causes a timeout.** If a site "stopped working" shortly after a certificate was issued, the timing is a coincidence — check the network first.
+
+The procedure that settles it:
+
+1. On the server confirm the service listens and which process holds the port: `netstat -ano | findstr ":443"` and `tasklist /fi "pid eq <PID>"`. A local connection (`Test-NetConnection localhost -Port 443`) succeeds even when the firewall blocks external traffic, so it proves nothing.
+2. Try from outside from another network (mobile data, not Wi-Fi) and with `nc -vz -w 5 <ip> <port>`. If another port (e.g. RDP 3389) works and web ports do not, one specific port is being filtered.
+3. Turn on dropped-connection logging in Windows Firewall and repeat the attempt:
+   ```
+   netsh advfirewall set allprofiles logging droppedconnections enable
+   Select-String -Path "$env:SystemRoot\System32\LogFiles\Firewall\pfirewall.log" -Pattern "DROP.* 443 " | Select -Last 10
+   ```
+   - `DROP ... RECEIVE` lines with your source address = **Windows Firewall** on the server is blocking.
+   - No lines = packets never reach the server; a firewall in front of it (campus, hosting) drops them.
+4. Turn logging off afterwards: `netsh advfirewall set allprofiles logging droppedconnections disable`.
+
+### Firewall after an OS reinstall / upgrade
+
+Windows Firewall blocks everything inbound that has no rule. After an **OS upgrade or reinstall**, the rules for services (web applications, Pro Cloud Server etc.) can be lost although the services run and listen. Everything works from inside the server, but times out from outside.
+
+- Check the network profile (`Get-NetConnectionProfile`) and program-bound rules (`Get-NetFirewallApplicationFilter | ...`). An empty result = no rules.
+- Restore rules for ports that should be public:
+  ```
+  New-NetFirewallRule -DisplayName "Web HTTPS 443" -Direction Inbound -Protocol TCP -LocalPort 443 -Action Allow -Profile Any
+  ```
+- Add the Hub ports (8000–8002) separately and **restrict the source** (`-RemoteAddress`) as long as the Hub speaks plain HTTP.
+- After every OS change, test all services **from outside**, not just locally.
+
+### Certificate via win-acme (Let's Encrypt)
+
+If you already run certificates with `win-acme` (`wacs`), just add the Hub's name to the host list.
+
+- The `--host` list is **one certificate for all domains**. A wrong name (typo in the TLD) fails the whole run: `Authorization result: invalid`, no new certificate is issued, the old one stays.
+- `selfhosting` validation goes over **HTTP on the server's port 80**. The DNS record must exist and port 80 must be reachable from outside (see the firewall above).
+- The issued certificate is **not picked up by the Hub on its own** — the Hub (if it supports TLS) or a reverse proxy has to present it.
+- The PFX password does **not belong in the script** in plain text. Store it encrypted for a specific account (`Get-Credential | Export-Clixml`, read it with `Import-Clixml`) and protect the file with permissions (`icacls`).
+- A scheduled task that "runs idle" is often blocked by a `pause` in the script, the wrong account, or a missing *Run with highest privileges*.
+- If the scheduler does not work, renewal must be done by hand — keep the expiry date in a calendar.
 
 ### Security
 

@@ -238,6 +238,18 @@ const toc = [{
   "id": "port-and-protocol--who-is-responsible-for-https",
   "level": 3
 }, {
+  "value": "Diagnostics: timeout, TLS error or firewall?",
+  "id": "diagnostics-timeout-tls-error-or-firewall",
+  "level": 3
+}, {
+  "value": "Firewall after an OS reinstall / upgrade",
+  "id": "firewall-after-an-os-reinstall--upgrade",
+  "level": 3
+}, {
+  "value": "Certificate via win-acme (Let&#39;s Encrypt)",
+  "id": "certificate-via-win-acme-lets-encrypt",
+  "level": 3
+}, {
   "value": "Security",
   "id": "security",
   "level": 3
@@ -315,7 +327,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Version:"
-      }), " 1.1 | ", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 1.2 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Date:"
       }), " 2026-10-18 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Related:"
@@ -819,6 +831,179 @@ function _createMdxContent(props) {
         }), " URLs to clients."]
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "The certificate renews (every 60–90 days); the service must be reloaded after renewal."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "diagnostics-timeout-tls-error-or-firewall",
+      children: "Diagnostics: timeout, TLS error or firewall?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The browser error tells you where to look:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Error"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Meaning"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Where to look"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "ERR_CONNECTION_TIMED_OUT"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "nc"
+            }), " timeout"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["The connection was ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "never established"
+            }), " (nobody answers)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall (Windows or network), not the certificate"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "ERR_CONNECTION_REFUSED"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Nothing is listening on the port"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Service not running or listening elsewhere"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "ERR_CERT_*"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "SSL_ERROR_*"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "The connection exists, encryption failed"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Certificate, HTTP vs HTTPS"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "A certificate never causes a timeout."
+      }), " If a site \"stopped working\" shortly after a certificate was issued, the timing is a coincidence — check the network first."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "The procedure that settles it:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["On the server confirm the service listens and which process holds the port: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "netstat -ano | findstr \":443\""
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "tasklist /fi \"pid eq <PID>\""
+        }), ". A local connection (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Test-NetConnection localhost -Port 443"
+        }), ") succeeds even when the firewall blocks external traffic, so it proves nothing."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Try from outside from another network (mobile data, not Wi-Fi) and with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "nc -vz -w 5 <ip> <port>"
+        }), ". If another port (e.g. RDP 3389) works and web ports do not, one specific port is being filtered."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Turn on dropped-connection logging in Windows Firewall and repeat the attempt:", "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "netsh advfirewall set allprofiles logging droppedconnections enable\nSelect-String -Path \"$env:SystemRoot\\System32\\LogFiles\\Firewall\\pfirewall.log\" -Pattern \"DROP.* 443 \" | Select -Last 10\n"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "DROP ... RECEIVE"
+            }), " lines with your source address = ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Windows Firewall"
+            }), " on the server is blocking."]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "No lines = packets never reach the server; a firewall in front of it (campus, hosting) drops them."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Turn logging off afterwards: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "netsh advfirewall set allprofiles logging droppedconnections disable"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "firewall-after-an-os-reinstall--upgrade",
+      children: "Firewall after an OS reinstall / upgrade"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Windows Firewall blocks everything inbound that has no rule. After an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "OS upgrade or reinstall"
+      }), ", the rules for services (web applications, Pro Cloud Server etc.) can be lost although the services run and listen. Everything works from inside the server, but times out from outside."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Check the network profile (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Get-NetConnectionProfile"
+        }), ") and program-bound rules (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Get-NetFirewallApplicationFilter | ..."
+        }), "). An empty result = no rules."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Restore rules for ports that should be public:", "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "New-NetFirewallRule -DisplayName \"Web HTTPS 443\" -Direction Inbound -Protocol TCP -LocalPort 443 -Action Allow -Profile Any\n"
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Add the Hub ports (8000–8002) separately and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "restrict the source"
+        }), " (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-RemoteAddress"
+        }), ") as long as the Hub speaks plain HTTP."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["After every OS change, test all services ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "from outside"
+        }), ", not just locally."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "certificate-via-win-acme-lets-encrypt",
+      children: "Certificate via win-acme (Let's Encrypt)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If you already run certificates with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "win-acme"
+      }), " (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "wacs"
+      }), "), just add the Hub's name to the host list."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "--host"
+        }), " list is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "one certificate for all domains"
+        }), ". A wrong name (typo in the TLD) fails the whole run: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Authorization result: invalid"
+        }), ", no new certificate is issued, the old one stays."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "selfhosting"
+        }), " validation goes over ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "HTTP on the server's port 80"
+        }), ". The DNS record must exist and port 80 must be reachable from outside (see the firewall above)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The issued certificate is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "not picked up by the Hub on its own"
+        }), " — the Hub (if it supports TLS) or a reverse proxy has to present it."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["The PFX password does ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "not belong in the script"
+        }), " in plain text. Store it encrypted for a specific account (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Get-Credential | Export-Clixml"
+        }), ", read it with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Import-Clixml"
+        }), ") and protect the file with permissions (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "icacls"
+        }), ")."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["A scheduled task that \"runs idle\" is often blocked by a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pause"
+        }), " in the script, the wrong account, or a missing ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "Run with highest privileges"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "If the scheduler does not work, renewal must be done by hand — keep the expiry date in a calendar."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "security",

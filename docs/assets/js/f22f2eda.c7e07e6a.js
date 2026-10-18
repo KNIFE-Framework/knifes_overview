@@ -238,6 +238,18 @@ const toc = [{
   "id": "port-a-protokol--kto-je-zodpovedný-za-https",
   "level": 3
 }, {
+  "value": "Diagnostika: timeout, chyba TLS alebo firewall?",
+  "id": "diagnostika-timeout-chyba-tls-alebo-firewall",
+  "level": 3
+}, {
+  "value": "Firewall po reinštalácii / upgrade servera",
+  "id": "firewall-po-reinštalácii--upgrade-servera",
+  "level": 3
+}, {
+  "value": "Certifikát cez win-acme (Let&#39;s Encrypt)",
+  "id": "certifikát-cez-win-acme-lets-encrypt",
+  "level": 3
+}, {
   "value": "Bezpečnosť",
   "id": "bezpečnosť",
   "level": 3
@@ -315,7 +327,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Verzia:"
-      }), " 1.1 | ", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 1.2 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Dátum:"
       }), " 2026-10-18 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Súvisí s:"
@@ -819,6 +831,179 @@ function _createMdxContent(props) {
         }), " URL."]
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Certifikát sa obnovuje (60–90 dní); po obnove treba službu reloadnúť."
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "diagnostika-timeout-chyba-tls-alebo-firewall",
+      children: "Diagnostika: timeout, chyba TLS alebo firewall?"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Podľa chyby v prehliadači vieš, kde hľadať:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Chyba"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Čo znamená"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Kde hľadať"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "ERR_CONNECTION_TIMED_OUT"
+            }), " / ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "nc"
+            }), " timeout"]
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Spojenie sa ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "vôbec nenadviazalo"
+            }), " (nikto neodpovedá)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Firewall (Windows alebo sieťový), nie certifikát"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: "ERR_CONNECTION_REFUSED"
+            })
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Na porte nikto nepočúva"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Služba nebeží alebo počúva inde"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsxs)(_components.td, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "ERR_CERT_*"
+            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "SSL_ERROR_*"
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Spojenie je, zlyhalo šifrovanie"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Certifikát, HTTP vs HTTPS"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Certifikát nikdy nespôsobí timeout."
+      }), " Ak stránka „prestala fungovať“ krátko po vydaní certifikátu, ide o náhodu v čase — najprv skontroluj sieť."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Postup, ktorý to rozhodne:"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Na serveri over, že služba počúva a čo ju drží: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "netstat -ano | findstr \":443\""
+        }), " a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "tasklist /fi \"pid eq <PID>\""
+        }), ". Lokálne spojenie (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Test-NetConnection localhost -Port 443"
+        }), ") prejde aj keď firewall blokuje zvonku, preto nič nedokazuje."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Skús zvonku z inej siete (mobil cez dáta, nie Wi-Fi) a pomocou ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "nc -vz -w 5 <ip> <port>"
+        }), ". Ak iný port (napr. RDP 3389) prejde a web porty nie, filtruje sa konkrétne port."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Zapni logovanie zahodených spojení vo Windows firewalle a zopakuj pokus:", "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "netsh advfirewall set allprofiles logging droppedconnections enable\nSelect-String -Path \"$env:SystemRoot\\System32\\LogFiles\\Firewall\\pfirewall.log\" -Pattern \"DROP.* 443 \" | Select -Last 10\n"
+          })
+        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["Riadky ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "DROP ... RECEIVE"
+            }), " s tvojou zdrojovou adresou = blokuje ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Windows firewall"
+            }), " na serveri."]
+          }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+            children: "Žiadne riadky = pakety na server nedorazia, zahadzuje ich firewall pred ním (škola, hosting)."
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Po teste logovanie vypni: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "netsh advfirewall set allprofiles logging droppedconnections disable"
+        }), "."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "firewall-po-reinštalácii--upgrade-servera",
+      children: "Firewall po reinštalácii / upgrade servera"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Windows firewall blokuje všetko prichádzajúce, čo nemá pravidlo. Po ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "upgrade alebo reinštalácii operačného systému"
+      }), " sa pravidlá pre služby (webové aplikácie, Pro Cloud Server a pod.) môžu stratiť, hoci služby bežia a počúvajú. Z vnútra servera všetko funguje, zvonku timeout."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Skontroluj profil siete (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Get-NetConnectionProfile"
+        }), ") a pravidlá viazané na programy (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Get-NetFirewallApplicationFilter | ..."
+        }), "). Prázdny výsledok = žiadne pravidlá."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Obnov pravidlá pre porty, ktoré majú byť verejné:", "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "New-NetFirewallRule -DisplayName \"Web HTTPS 443\" -Direction Inbound -Protocol TCP -LocalPort 443 -Action Allow -Profile Any\n"
+          })
+        }), "\n"]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Porty Hubu (8000–8002) pridávaj osobitne a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "s obmedzeným zdrojom"
+        }), " (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-RemoteAddress"
+        }), "), kým Hub nehovorí HTTPS."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Po každej zmene OS si otestuj všetky služby ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "zvonku"
+        }), ", nielen lokálne."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "certifikát-cez-win-acme-lets-encrypt",
+      children: "Certifikát cez win-acme (Let's Encrypt)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Ak už na serveri bežíte certifikáty cez ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "win-acme"
+      }), " (", (0,jsx_runtime.jsx)(_components.code, {
+        children: "wacs"
+      }), "), názov Hubu stačí pridať do zoznamu domén."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Zoznam ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "--host"
+        }), " je ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "jeden certifikát pre všetky domény"
+        }), ". Chybný názov (preklep v koncovke) zhodí celý beh: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Authorization result: invalid"
+        }), ", žiaden nový certifikát sa nevydá, starý ostane."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Overenie ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "selfhosting"
+        }), " ide cez ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "HTTP na port 80"
+        }), " servera. DNS záznam musí existovať a port 80 musí byť zvonku dosiahnuteľný (pozri firewall vyššie)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Vydaný certifikát ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Hub nepoužije sám"
+        }), " — musí ho predložiť Hub (ak podporuje TLS) alebo reverzný proxy."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Heslo k PFX ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "nepatrí do skriptu"
+        }), " v čistom texte. Ulož ho zašifrované pre konkrétny účet (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Get-Credential | Export-Clixml"
+        }), ", načítať cez ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "Import-Clixml"
+        }), ") a súbor ochráň oprávneniami (", (0,jsx_runtime.jsx)(_components.code, {
+          children: "icacls"
+        }), ")."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Úloha v Plánovači bežiaca „naprázdno“ býva zablokovaná príkazom ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "pause"
+        }), " v skripte, nesprávnym účtom alebo chýbajúcim ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "Run with highest privileges"
+        }), "."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Ak plánovač nefunguje, obnovu treba robiť ručne a mať v kalendári dátum vypršania."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "bezpečnosť",

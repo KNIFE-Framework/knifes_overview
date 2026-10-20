@@ -250,6 +250,10 @@ const toc = [{
   "id": "certifikát-cez-win-acme-lets-encrypt",
   "level": 3
 }, {
+  "value": "Pro Cloud Server (PCS) cez HTTPS",
+  "id": "pro-cloud-server-pcs-cez-https",
+  "level": 3
+}, {
   "value": "Bezpečnosť",
   "id": "bezpečnosť",
   "level": 3
@@ -327,7 +331,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Verzia:"
-      }), " 1.2 | ", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 1.3 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Dátum:"
       }), " 2026-10-18 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Súvisí s:"
@@ -993,6 +997,109 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Ak plánovač nefunguje, obnovu treba robiť ručne a mať v kalendári dátum vypršania."
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pro-cloud-server-pcs-cez-https",
+      children: "Pro Cloud Server (PCS) cez HTTPS"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Ak na rovnakom serveri beží Sparx Pro Cloud Server (EA cloud pripojenie), jeho HTTPS port vyžaduje vlastný certifikát v inom formáte než Hub."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Súbory:"
+        }), " PCS číta ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), " (súkromný kľúč a certifikát) a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "cacert.pem"
+        }), " (dodaný, cesta dôvery) ", (0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["z priečinka ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Service"
+          })]
+        }), " svojej inštalácie. Port s ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "REQUIRE_SSL=1"
+        }), " v ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "SSProCloud.config"
+        }), " sa bez ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), " nespustí. Nič iné sa v konfigurácii nenastavuje."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Konverzia PFX → PEM"
+        }), " (certifikát z win-acme je PFX). Nové OpenSSL 3 odmietne starý PFX s hláškou ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "RC2-40-CBC ... unsupported"
+        }), "; pomôže ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-legacy"
+        }), ", ak je k dispozícii modul ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "legacy.dll"
+        }), ". Ten býva v balíku Git for Windows (hľadaj ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "legacy.dll"
+        }), " a ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "openssl.exe"
+        }), " v tom istom strome, napr. pod ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ucrt64"
+        }), "):", "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "set \"PFXPASS=<heslo>\"\nopenssl pkcs12 -legacy -in cert.pfx -passin env:PFXPASS -nodes -out server.pem\nset \"PFXPASS=\"\n"
+          })
+        }), "\n", (0,jsx_runtime.jsx)(_components.code, {
+          children: "env:"
+        }), " berie ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "názov premennej"
+        }), ", nie heslo samotné. Heslo nedávaj do príkazu. Vzniknutý ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), " obsahuje nešifrovaný kľúč — obmedz k nemu prístup a po skopírovaní zmaž pracovné kópie."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Reštart"
+        }), " služby PCS, potom overenie: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "netstat -ano | findstr \":<port>\""
+        }), ". PCS po reštarte začne počúvať aj na ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "všetkých ostatných HTTPS portoch"
+        }), ", ktoré má v konfigurácii."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Pozor na kolíziu so webom:"
+        }), " ak má PCS v konfigurácii aj port ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "443"
+        }), " a iná aplikácia (napr. Prolaborate) ho už používa, po pridaní ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), " sa na 443 viažu ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "obe"
+        }), ". Definícia 443 s ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MODEL_AUTHENTICATION=0"
+        }), " by navyše vystavila HTTPS bez autentifikácie modelu. Nepotrebný port z konfigurácie odstráň."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Po každej obnove certifikátu ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), " vygeneruj znova a PCS reštartuj."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Pripojenie v EA (Cloud Connection):"
+      }), " protokol musí zodpovedať portu — ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "http"
+      }), " pre HTTP porty, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "https"
+      }), " pre HTTPS port. Prepnutie protokolu v dialógu ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "automaticky prepíše port"
+      }), " (napr. na 80), preto port skontroluj po každej zmene. Server zadaj ako ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "názov z certifikátu"
+      }), ", nie IP. Názov modelu musí presne zodpovedať aliasu v ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "Database Managers"
+      }), "; inak vráti ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "There is no database manager configured for the requested repository"
+      }), ". Port s autentifikáciou ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Model"
+      }), " vyvolá po pripojení dve prihlasovacie okná (HTTP a EA)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["Chyba ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "12029"
+        })]
+      }), " (\"The attempt to connect to the server failed\") znamená, že sa spojenie neviedlo ani na TCP/TLS úrovni. Ak URL v prehliadači na serveri funguje, ale z iného počítača nie, a v logu Windows firewallu nie sú žiadne ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DROP"
+      }), ", port zahadzuje ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "sieť pred serverom"
+      }), " (školský alebo hostingový firewall) a treba požiadať jej správcu o povolenie portu. Neštandardné porty (napr. 1805) sa takto filtrujú často, 80 a 443 zvyčajne nie."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "bezpečnosť",
       children: "Bezpečnosť"

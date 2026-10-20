@@ -250,6 +250,10 @@ const toc = [{
   "id": "certificate-via-win-acme-lets-encrypt",
   "level": 3
 }, {
+  "value": "Pro Cloud Server (PCS) over HTTPS",
+  "id": "pro-cloud-server-pcs-over-https",
+  "level": 3
+}, {
   "value": "Security",
   "id": "security",
   "level": 3
@@ -327,7 +331,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Version:"
-      }), " 1.2 | ", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 1.3 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Date:"
       }), " 2026-10-18 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Related:"
@@ -993,6 +997,109 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "If the scheduler does not work, renewal must be done by hand — keep the expiry date in a calendar."
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "pro-cloud-server-pcs-over-https",
+      children: "Pro Cloud Server (PCS) over HTTPS"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "If Sparx Pro Cloud Server (EA cloud connection) runs on the same server, its HTTPS port needs its own certificate in a different format than the Hub."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Files:"
+        }), " PCS reads ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), " (private key and certificate) and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "cacert.pem"
+        }), " (shipped, trust path) ", (0,jsx_runtime.jsxs)(_components.strong, {
+          children: ["from the ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Service"
+          }), " folder"]
+        }), " of its installation. A port with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "REQUIRE_SSL=1"
+        }), " in ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "SSProCloud.config"
+        }), " does not start without ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), ". Nothing else is configured."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "PFX → PEM conversion"
+        }), " (the win-acme certificate is a PFX). Newer OpenSSL 3 rejects an old PFX with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "RC2-40-CBC ... unsupported"
+        }), "; ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "-legacy"
+        }), " helps if the ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "legacy.dll"
+        }), " module is available. It usually ships in Git for Windows (look for ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "legacy.dll"
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "openssl.exe"
+        }), " in the same tree, e.g. under ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "ucrt64"
+        }), "):", "\n", (0,jsx_runtime.jsx)(_components.pre, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "set \"PFXPASS=<password>\"\nopenssl pkcs12 -legacy -in cert.pfx -passin env:PFXPASS -nodes -out server.pem\nset \"PFXPASS=\"\n"
+          })
+        }), "\n", (0,jsx_runtime.jsx)(_components.code, {
+          children: "env:"
+        }), " takes the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "variable name"
+        }), ", not the password itself. Do not put the password on the command line. The resulting ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), " holds an unencrypted key — restrict access to it and delete working copies after copying."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Restart"
+        }), " the PCS service, then verify: ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "netstat -ano | findstr \":<port>\""
+        }), ". After the restart PCS starts listening on ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "all other HTTPS ports"
+        }), " in its configuration too."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Beware of a clash with a web app:"
+        }), " if PCS also has port ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "443"
+        }), " configured and another application (e.g. Prolaborate) already uses it, adding ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), " makes ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "both"
+        }), " bind it. A 443 definition with ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "MODEL_AUTHENTICATION=0"
+        }), " would also expose HTTPS without model authentication. Remove ports you do not need from the configuration."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["After every certificate renewal regenerate ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "server.pem"
+        }), " and restart PCS."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Connecting in EA (Cloud Connection):"
+      }), " the protocol must match the port — ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "http"
+      }), " for HTTP ports, ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "https"
+      }), " for the HTTPS port. Switching the protocol in the dialog ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "overwrites the port automatically"
+      }), " (e.g. to 80), so check the port after every change. Enter the server as the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "name from the certificate"
+      }), ", not an IP. The model name must match the alias in ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "Database Managers"
+      }), " exactly; otherwise you get ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "There is no database manager configured for the requested repository"
+      }), ". A port with ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Model"
+      }), " authentication triggers two sign-in prompts after connecting (HTTP and EA)."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsxs)(_components.strong, {
+        children: ["Error ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "12029"
+        })]
+      }), " (\"The attempt to connect to the server failed\") means the connection failed at the TCP/TLS level. If the URL works in a browser on the server but not from another computer, and Windows Firewall's log shows no ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DROP"
+      }), ", the port is being dropped by ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "the network in front of the server"
+      }), " (campus or hosting firewall) and its administrator has to open it. Non-standard ports (e.g. 1805) are often filtered this way, 80 and 443 usually are not."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "security",
       children: "Security"

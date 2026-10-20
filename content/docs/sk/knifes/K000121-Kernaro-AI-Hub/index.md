@@ -225,7 +225,7 @@ V *Service Configuration*:
 | AI Port / Sync Port / Management Port | `8000` / `8001` / `8002` |
 | Super admin | `admin` + silné heslo (min. 8 znakov, veľké, malé, číslo, špeciálny znak) |
 
-Pred inštaláciou over, že porty sú voľné (pozor, `-ano` s pomlčkou, nie s lomkou):
+Pred inštaláciou over, že porty sú voľné:
 
 ```
 netstat -ano | findstr ":8000 :8001 :8002"
@@ -268,7 +268,6 @@ Limited License zobrazuje počítadlá seats; Unlimited License ich skrýva, spr
 | `database "kernaro" does not exist` | Hub databázu nevytvára. `CREATE DATABASE kernaro;` |
 | `extension(s) already exist … 'vector'` | Databáza nesmie byť „použitá“. Zahoď ju, vytvor prázdnu, rozšírenie nechaj na inštalátor |
 | PostgreSQL 18 | Hub vyžaduje 16/17. Odinštaluj, nainštaluj 17 |
-| Prázdny výsledok `netstat /ano` | Správne je `netstat -ano`; s lomkou vypíše len nápovedu |
 | `https://host:8002` → `SSL_ERROR_RX_RECORD_TOO_LONG` | Hub na 8000–8002 hovorí **len HTTP**. Prehliadač neprepisuj na HTTPS |
 | PostgreSQL počúva na všetkých rozhraniach | Hub je lokálny. V `postgresql.conf` nastav `listen_addresses = 'localhost'` a reštartuj službu |
 

@@ -225,7 +225,7 @@ In *Service Configuration*:
 | AI Port / Sync Port / Management Port | `8000` / `8001` / `8002` |
 | Super admin | `admin` + strong password (min. 8 chars, upper, lower, digit, special) |
 
-Before installing, check the ports are free (note `-ano` with a hyphen, not a slash):
+Before installing, check the ports are free:
 
 ```
 netstat -ano | findstr ":8000 :8001 :8002"
@@ -268,7 +268,6 @@ Limited License shows seat counters; Unlimited License hides them; management wo
 | `database "kernaro" does not exist` | The Hub does not create it. `CREATE DATABASE kernaro;` |
 | `extension(s) already exist … 'vector'` | The database must be unused. Drop it, create an empty one, leave the extension to the installer |
 | PostgreSQL 18 | The Hub requires 16/17. Uninstall, install 17 |
-| Empty result from `netstat /ano` | The correct form is `netstat -ano`; with a slash it only prints help |
 | `https://host:8002` → `SSL_ERROR_RX_RECORD_TOO_LONG` | The Hub on 8000–8002 speaks **HTTP only**. Do not let the browser upgrade to HTTPS |
 | PostgreSQL listens on all interfaces | The Hub is local. Set `listen_addresses = 'localhost'` in `postgresql.conf` and restart the service |
 

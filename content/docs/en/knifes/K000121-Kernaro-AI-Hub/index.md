@@ -139,7 +139,7 @@ fm_reserved2: ""
 > **Level:** Intermediate
 > **Tags:** `kernaro` `ea` `ai-hub` `licensing` `windows-server` `postgresql` `pgvector`
 
-**Version:** 1.2 | **Date:** 2026-10-18 | **Related:** [K000104 – SPARX AI Kernaro in SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
+**Version:** 1.3 | **Date:** 2026-10-18 | **Related:** [K000104 – SPARX AI Kernaro in SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
 
 ## 🎯 What it solves (purpose, goal)
 
@@ -327,6 +327,26 @@ If you already run certificates with `win-acme` (`wacs`), just add the Hub's nam
 - The PFX password does **not belong in the script** in plain text. Store it encrypted for a specific account (`Get-Credential | Export-Clixml`, read it with `Import-Clixml`) and protect the file with permissions (`icacls`).
 - A scheduled task that "runs idle" is often blocked by a `pause` in the script, the wrong account, or a missing *Run with highest privileges*.
 - If the scheduler does not work, renewal must be done by hand — keep the expiry date in a calendar.
+
+### Pro Cloud Server (PCS) over HTTPS
+
+If Sparx Pro Cloud Server (EA cloud connection) runs on the same server, its HTTPS port needs its own certificate in a different format than the Hub.
+
+- **Files:** PCS reads `server.pem` (private key and certificate) and `cacert.pem` (shipped, trust path) **from the `Service` folder** of its installation. A port with `REQUIRE_SSL=1` in `SSProCloud.config` does not start without `server.pem`. Nothing else is configured.
+- **PFX → PEM conversion** (the win-acme certificate is a PFX). Newer OpenSSL 3 rejects an old PFX with `RC2-40-CBC ... unsupported`; `-legacy` helps if the `legacy.dll` module is available. It usually ships in Git for Windows (look for `legacy.dll` and `openssl.exe` in the same tree, e.g. under `ucrt64`):
+  ```
+  set "PFXPASS=<password>"
+  openssl pkcs12 -legacy -in cert.pfx -passin env:PFXPASS -nodes -out server.pem
+  set "PFXPASS="
+  ```
+  `env:` takes the **variable name**, not the password itself. Do not put the password on the command line. The resulting `server.pem` holds an unencrypted key — restrict access to it and delete working copies after copying.
+- **Restart** the PCS service, then verify: `netstat -ano | findstr ":<port>"`. After the restart PCS starts listening on **all other HTTPS ports** in its configuration too.
+- **Beware of a clash with a web app:** if PCS also has port `443` configured and another application (e.g. Prolaborate) already uses it, adding `server.pem` makes **both** bind it. A 443 definition with `MODEL_AUTHENTICATION=0` would also expose HTTPS without model authentication. Remove ports you do not need from the configuration.
+- After every certificate renewal regenerate `server.pem` and restart PCS.
+
+**Connecting in EA (Cloud Connection):** the protocol must match the port — `http` for HTTP ports, `https` for the HTTPS port. Switching the protocol in the dialog **overwrites the port automatically** (e.g. to 80), so check the port after every change. Enter the server as the **name from the certificate**, not an IP. The model name must match the alias in *Database Managers* exactly; otherwise you get `There is no database manager configured for the requested repository`. A port with `Model` authentication triggers two sign-in prompts after connecting (HTTP and EA).
+
+**Error `12029`** ("The attempt to connect to the server failed") means the connection failed at the TCP/TLS level. If the URL works in a browser on the server but not from another computer, and Windows Firewall's log shows no `DROP`, the port is being dropped by **the network in front of the server** (campus or hosting firewall) and its administrator has to open it. Non-standard ports (e.g. 1805) are often filtered this way, 80 and 443 usually are not.
 
 ### Security
 

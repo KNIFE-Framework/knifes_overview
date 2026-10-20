@@ -139,7 +139,7 @@ fm_reserved2: ""
 > **Úroveň:** Intermediate
 > **Tagy:** `kernaro` `ea` `ai-hub` `licencovanie` `windows-server` `postgresql` `pgvector`
 
-**Verzia:** 1.2 | **Dátum:** 2026-10-18 | **Súvisí s:** [K000104 – SPARX AI Kernaro v SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
+**Verzia:** 1.3 | **Dátum:** 2026-10-18 | **Súvisí s:** [K000104 – SPARX AI Kernaro v SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
 
 ## 🎯 Čo rieši (účel, cieľ)
 
@@ -327,6 +327,26 @@ Ak už na serveri bežíte certifikáty cez `win-acme` (`wacs`), názov Hubu sta
 - Heslo k PFX **nepatrí do skriptu** v čistom texte. Ulož ho zašifrované pre konkrétny účet (`Get-Credential | Export-Clixml`, načítať cez `Import-Clixml`) a súbor ochráň oprávneniami (`icacls`).
 - Úloha v Plánovači bežiaca „naprázdno“ býva zablokovaná príkazom `pause` v skripte, nesprávnym účtom alebo chýbajúcim *Run with highest privileges*.
 - Ak plánovač nefunguje, obnovu treba robiť ručne a mať v kalendári dátum vypršania.
+
+### Pro Cloud Server (PCS) cez HTTPS
+
+Ak na rovnakom serveri beží Sparx Pro Cloud Server (EA cloud pripojenie), jeho HTTPS port vyžaduje vlastný certifikát v inom formáte než Hub.
+
+- **Súbory:** PCS číta `server.pem` (súkromný kľúč a certifikát) a `cacert.pem` (dodaný, cesta dôvery) **z priečinka `Service`** svojej inštalácie. Port s `REQUIRE_SSL=1` v `SSProCloud.config` sa bez `server.pem` nespustí. Nič iné sa v konfigurácii nenastavuje.
+- **Konverzia PFX → PEM** (certifikát z win-acme je PFX). Nové OpenSSL 3 odmietne starý PFX s hláškou `RC2-40-CBC ... unsupported`; pomôže `-legacy`, ak je k dispozícii modul `legacy.dll`. Ten býva v balíku Git for Windows (hľadaj `legacy.dll` a `openssl.exe` v tom istom strome, napr. pod `ucrt64`):
+  ```
+  set "PFXPASS=<heslo>"
+  openssl pkcs12 -legacy -in cert.pfx -passin env:PFXPASS -nodes -out server.pem
+  set "PFXPASS="
+  ```
+  `env:` berie **názov premennej**, nie heslo samotné. Heslo nedávaj do príkazu. Vzniknutý `server.pem` obsahuje nešifrovaný kľúč — obmedz k nemu prístup a po skopírovaní zmaž pracovné kópie.
+- **Reštart** služby PCS, potom overenie: `netstat -ano | findstr ":<port>"`. PCS po reštarte začne počúvať aj na **všetkých ostatných HTTPS portoch**, ktoré má v konfigurácii.
+- **Pozor na kolíziu so webom:** ak má PCS v konfigurácii aj port `443` a iná aplikácia (napr. Prolaborate) ho už používa, po pridaní `server.pem` sa na 443 viažu **obe**. Definícia 443 s `MODEL_AUTHENTICATION=0` by navyše vystavila HTTPS bez autentifikácie modelu. Nepotrebný port z konfigurácie odstráň.
+- Po každej obnove certifikátu `server.pem` vygeneruj znova a PCS reštartuj.
+
+**Pripojenie v EA (Cloud Connection):** protokol musí zodpovedať portu — `http` pre HTTP porty, `https` pre HTTPS port. Prepnutie protokolu v dialógu **automaticky prepíše port** (napr. na 80), preto port skontroluj po každej zmene. Server zadaj ako **názov z certifikátu**, nie IP. Názov modelu musí presne zodpovedať aliasu v *Database Managers*; inak vráti `There is no database manager configured for the requested repository`. Port s autentifikáciou `Model` vyvolá po pripojení dve prihlasovacie okná (HTTP a EA).
+
+**Chyba `12029`** ("The attempt to connect to the server failed") znamená, že sa spojenie neviedlo ani na TCP/TLS úrovni. Ak URL v prehliadači na serveri funguje, ale z iného počítača nie, a v logu Windows firewallu nie sú žiadne `DROP`, port zahadzuje **sieť pred serverom** (školský alebo hostingový firewall) a treba požiadať jej správcu o povolenie portu. Neštandardné porty (napr. 1805) sa takto filtrujú často, 80 a 443 zvyčajne nie.
 
 ### Bezpečnosť
 

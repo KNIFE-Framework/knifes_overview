@@ -1,5 +1,5 @@
 "use strict";
-(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[21741],{
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[33725],{
 
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -96,17 +96,17 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 29406:
+/***/ 59979:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDcwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idCBkIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiI+CiAgPHRpdGxlIGlkPSJ0Ij5LZXJuYXJvIEFJIEh1YiDigJMgYXJjaGl0ZWt0w7pyYTwvdGl0bGU+CiAgPGRlc2MgaWQ9ImQiPldpbmRvd3MgU2VydmVyIHMgS2VybmFybyBBSSBIdWIgKEFJLCBTeW5jIGEgTWFuYWdlbWVudCBwb3J0KSwgUG9zdGdyZVNRTCBzIHBndmVjdG9yIGEgRUEgR3JhcGhMaW5rOyBFQSBrbGllbnRpIHMgcGx1Z2lub20gQXNzaXN0IGEgd2Vib3bDqSBwcmVobGlhZGHEjWUgc2EgcHJpcMOhamFqw7ogY2V6IHNpZcWlLjwvZGVzYz4KICA8ZGVmcz4KICAgIDxtYXJrZXIgaWQ9ImEiIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWD0iOCIgcmVmWT0iNSIgbWFya2VyV2lkdGg9IjciIG1hcmtlckhlaWdodD0iNyIgb3JpZW50PSJhdXRvLXN0YXJ0LXJldmVyc2UiPjxwYXRoIGQ9Ik0wIDBMMTAgNUwwIDEweiIgZmlsbD0iIzQ3NTU2OSIvPjwvbWFya2VyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ3MCIgZmlsbD0iI2ZmZmZmZiIvPgogIDxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9Ijc2MCIgaGVpZ2h0PSIyNzAiIHJ4PSIxMiIgZmlsbD0iI2YxZjVmOSIgc3Ryb2tlPSIjNDc1NTY5IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDx0ZXh0IHg9IjQwIiB5PSI0OCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzBmMTcyYSI+V2luZG93cyBTZXJ2ZXIgMjAxOSs8L3RleHQ+CiAgPHJlY3QgeD0iNDAiIHk9IjYyIiB3aWR0aD0iNDgwIiBoZWlnaHQ9IjIxMCIgcng9IjEwIiBmaWxsPSIjZGJlYWZlIiBzdHJva2U9IiMyNTYzZWIiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iNTgiIHk9Ijg4IiBmb250LXNpemU9IjE1IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMWUzYThhIj5LZXJuYXJvIEFJIEh1YjwvdGV4dD4KICA8cmVjdCB4PSI1OCIgeT0iMTAyIiB3aWR0aD0iNDQ0IiBoZWlnaHQ9IjQ4IiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMjU2M2ViIi8+CiAgPHRleHQgeD0iNzQiIHk9IjEyMyIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzBmMTcyYSI+S2VybmFybyBBSSBQb3J0IDo4MDAwPC90ZXh0PgogIDx0ZXh0IHg9Ijc0IiB5PSIxNDAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiMzMzQxNTUiPkFJIGVuZ2luZTwvdGV4dD4KICA8cmVjdCB4PSI1OCIgeT0iMTYwIiB3aWR0aD0iNDQ0IiBoZWlnaHQ9IjQ4IiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMjU2M2ViIi8+CiAgPHRleHQgeD0iNzQiIHk9IjE4MSIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzBmMTcyYSI+S2VybmFybyBTeW5jIFBvcnQgOjgwMDE8L3RleHQ+CiAgPHRleHQgeD0iNzQiIHk9IjE5OCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzMzNDE1NSI+c3luY2hyb25pesOhY2lhIHMgRUEgcmVwb3ppdMOhcm9tPC90ZXh0PgogIDxyZWN0IHg9IjU4IiB5PSIyMTgiIHdpZHRoPSI0NDQiIGhlaWdodD0iNDgiIHJ4PSI2IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMyNTYzZWIiLz4KICA8dGV4dCB4PSI3NCIgeT0iMjM5IiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMGYxNzJhIj5NYW5hZ2VtZW50IFBvcnQgOjgwMDI8L3RleHQ+CiAgPHRleHQgeD0iNzQiIHk9IjI1NiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzMzNDE1NSI+YWRtaW4gcG9ydMOhbDwvdGV4dD4KICA8cmVjdCB4PSI1NjAiIHk9IjYyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgcng9IjEwIiBmaWxsPSIjZGNmY2U3IiBzdHJva2U9IiMxNmEzNGEiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iNjYwIiB5PSIxMDQiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxNDUzMmQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBvc3RncmVTUUwgMTc8L3RleHQ+CiAgPHRleHQgeD0iNjYwIiB5PSIxMjYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiMxNDUzMmQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPisgcGd2ZWN0b3I8L3RleHQ+CiAgPHJlY3QgeD0iNTYwIiB5PSIxNzYiIHdpZHRoPSIyMDAiIGhlaWdodD0iOTYiIHJ4PSIxMCIgZmlsbD0iI2VkZTlmZSIgc3Ryb2tlPSIjN2MzYWVkIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDx0ZXh0IHg9IjY2MCIgeT0iMjE4IiBmb250LXNpemU9IjE1IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjNGMxZDk1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FQSBHcmFwaExpbms8L3RleHQ+CiAgPHRleHQgeD0iNjYwIiB5PSIyNDAiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiM0YzFkOTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmxvY2FsaG9zdDo4MDkwPC90ZXh0PgogIDxwYXRoIGQ9Ik01MDIgMTI2SDU1OCIgc3Ryb2tlPSIjNDc1NTY5IiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLWVuZD0idXJsKCNhKSIvPgogIDxwYXRoIGQ9Ik01MDIgMTkwTDU1OCAyMjAiIHN0cm9rZT0iIzQ3NTU2OSIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1lbmQ9InVybCgjYSkiLz4KICA8cGF0aCBkPSJNMjAwIDI5MFYzNTAiIHN0cm9rZT0iIzQ3NTU2OSIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+CiAgPHBhdGggZD0iTTYwMCAyOTBWMzUwIiBzdHJva2U9IiM0NzU1NjkiIHN0cm9rZS13aWR0aD0iMiIgbWFya2VyLWVuZD0idXJsKCNhKSIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMzI1IiBmb250LXNpemU9IjEzIiBmb250LXN0eWxlPSJpdGFsaWMiIGZpbGw9IiMzMzQxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxBTiAvIFZQTiAoSFRUUCk8L3RleHQ+CiAgPHJlY3QgeD0iMjAiIHk9IjM1MCIgd2lkdGg9IjM3MCIgaGVpZ2h0PSIxMDAiIHJ4PSIxMiIgZmlsbD0iI2ZlZjNjNyIgc3Ryb2tlPSIjZDk3NzA2IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDx0ZXh0IHg9IjQwIiB5PSIzNzgiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM3ODM1MGYiPkVBIGtsaWVudCDigJMgS2VybmFybyBBc3Npc3Q8L3RleHQ+CiAgPHRleHQgeD0iNDAiIHk9IjQwOCIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzBmMTcyYSI+cGx1Z2luIOKGkiBwcmlobMOhc2VuaWUgbmEgSHViPC90ZXh0PgogIDxyZWN0IHg9IjQxMCIgeT0iMzUwIiB3aWR0aD0iMzcwIiBoZWlnaHQ9IjEwMCIgcng9IjEyIiBmaWxsPSIjZmNlN2YzIiBzdHJva2U9IiNkYjI3NzciIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iNDMwIiB5PSIzNzgiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM4MzE4NDMiPldlYm92w70gcHJlaGxpYWRhxI08L3RleHQ+CiAgPHRleHQgeD0iNDMwIiB5PSI0MDgiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiMwZjE3MmEiPmxlbiBVUkwgSHVidSwgYmV6IGluxaF0YWzDoWNpZTwvdGV4dD4KPC9zdmc+Cg==");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDcwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idCBkIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiI+CiAgPHRpdGxlIGlkPSJ0Ij5LZXJuYXJvIEFJIEh1YiDigJMgYXJjaGl0ZWN0dXJlPC90aXRsZT4KICA8ZGVzYyBpZD0iZCI+V2luZG93cyBTZXJ2ZXIgcnVubmluZyBLZXJuYXJvIEFJIEh1YiAoQUksIFN5bmMgYW5kIE1hbmFnZW1lbnQgcG9ydHMpLCBQb3N0Z3JlU1FMIHdpdGggcGd2ZWN0b3IgYW5kIEVBIEdyYXBoTGluazsgRUEgY2xpZW50cyB3aXRoIHRoZSBBc3Npc3QgcGx1Z2luIGFuZCB3ZWIgYnJvd3NlcnMgY29ubmVjdCBvdmVyIHRoZSBuZXR3b3JrLjwvZGVzYz4KICA8ZGVmcz4KICAgIDxtYXJrZXIgaWQ9ImEiIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWD0iOCIgcmVmWT0iNSIgbWFya2VyV2lkdGg9IjciIG1hcmtlckhlaWdodD0iNyIgb3JpZW50PSJhdXRvLXN0YXJ0LXJldmVyc2UiPjxwYXRoIGQ9Ik0wIDBMMTAgNUwwIDEweiIgZmlsbD0iIzQ3NTU2OSIvPjwvbWFya2VyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ3MCIgZmlsbD0iI2ZmZmZmZiIvPgogIDxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9Ijc2MCIgaGVpZ2h0PSIyNzAiIHJ4PSIxMiIgZmlsbD0iI2YxZjVmOSIgc3Ryb2tlPSIjNDc1NTY5IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDx0ZXh0IHg9IjQwIiB5PSI0OCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzBmMTcyYSI+V2luZG93cyBTZXJ2ZXIgMjAxOSs8L3RleHQ+CiAgPHJlY3QgeD0iNDAiIHk9IjYyIiB3aWR0aD0iNDgwIiBoZWlnaHQ9IjIxMCIgcng9IjEwIiBmaWxsPSIjZGJlYWZlIiBzdHJva2U9IiMyNTYzZWIiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iNTgiIHk9Ijg4IiBmb250LXNpemU9IjE1IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMWUzYThhIj5LZXJuYXJvIEFJIEh1YjwvdGV4dD4KICA8cmVjdCB4PSI1OCIgeT0iMTAyIiB3aWR0aD0iNDQ0IiBoZWlnaHQ9IjQ4IiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMjU2M2ViIi8+CiAgPHRleHQgeD0iNzQiIHk9IjEyMyIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzBmMTcyYSI+S2VybmFybyBBSSBQb3J0IDo4MDAwPC90ZXh0PgogIDx0ZXh0IHg9Ijc0IiB5PSIxNDAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiMzMzQxNTUiPkFJIGVuZ2luZTwvdGV4dD4KICA8cmVjdCB4PSI1OCIgeT0iMTYwIiB3aWR0aD0iNDQ0IiBoZWlnaHQ9IjQ4IiByeD0iNiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMjU2M2ViIi8+CiAgPHRleHQgeD0iNzQiIHk9IjE4MSIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzBmMTcyYSI+S2VybmFybyBTeW5jIFBvcnQgOjgwMDE8L3RleHQ+CiAgPHRleHQgeD0iNzQiIHk9IjE5OCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzMzNDE1NSI+c3luYyB3aXRoIHRoZSBFQSByZXBvc2l0b3J5PC90ZXh0PgogIDxyZWN0IHg9IjU4IiB5PSIyMTgiIHdpZHRoPSI0NDQiIGhlaWdodD0iNDgiIHJ4PSI2IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMyNTYzZWIiLz4KICA8dGV4dCB4PSI3NCIgeT0iMjM5IiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMGYxNzJhIj5NYW5hZ2VtZW50IFBvcnQgOjgwMDI8L3RleHQ+CiAgPHRleHQgeD0iNzQiIHk9IjI1NiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzMzNDE1NSI+YWRtaW4gcG9ydGFsPC90ZXh0PgogIDxyZWN0IHg9IjU2MCIgeT0iNjIiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiByeD0iMTAiIGZpbGw9IiNkY2ZjZTciIHN0cm9rZT0iIzE2YTM0YSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSI2NjAiIHk9IjEwNCIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzE0NTMyZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UG9zdGdyZVNRTCAxNzwvdGV4dD4KICA8dGV4dCB4PSI2NjAiIHk9IjEyNiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzE0NTMyZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+KyBwZ3ZlY3RvcjwvdGV4dD4KICA8cmVjdCB4PSI1NjAiIHk9IjE3NiIgd2lkdGg9IjIwMCIgaGVpZ2h0PSI5NiIgcng9IjEwIiBmaWxsPSIjZWRlOWZlIiBzdHJva2U9IiM3YzNhZWQiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iNjYwIiB5PSIyMTgiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM0YzFkOTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkVBIEdyYXBoTGluazwvdGV4dD4KICA8dGV4dCB4PSI2NjAiIHk9IjI0MCIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzRjMWQ5NSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+bG9jYWxob3N0OjgwOTA8L3RleHQ+CiAgPHBhdGggZD0iTTUwMiAxMjZINTU4IiBzdHJva2U9IiM0NzU1NjkiIHN0cm9rZS13aWR0aD0iMS41IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+CiAgPHBhdGggZD0iTTUwMiAxOTBMNTU4IDIyMCIgc3Ryb2tlPSIjNDc1NTY5IiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLWVuZD0idXJsKCNhKSIvPgogIDxwYXRoIGQ9Ik0yMDAgMjkwVjM1MCIgc3Ryb2tlPSIjNDc1NTY5IiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYSkiLz4KICA8cGF0aCBkPSJNNjAwIDI5MFYzNTAiIHN0cm9rZT0iIzQ3NTU2OSIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+CiAgPHRleHQgeD0iNDAwIiB5PSIzMjUiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZmlsbD0iIzMzNDE1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TEFOIC8gVlBOIChIVFRQKTwvdGV4dD4KICA8cmVjdCB4PSIyMCIgeT0iMzUwIiB3aWR0aD0iMzcwIiBoZWlnaHQ9IjEwMCIgcng9IjEyIiBmaWxsPSIjZmVmM2M3IiBzdHJva2U9IiNkOTc3MDYiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iNDAiIHk9IjM3OCIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzc4MzUwZiI+RUEgY2xpZW50IOKAkyBLZXJuYXJvIEFzc2lzdDwvdGV4dD4KICA8dGV4dCB4PSI0MCIgeT0iNDA4IiBmb250LXNpemU9IjEzIiBmaWxsPSIjMGYxNzJhIj5wbHVnaW4g4oaSIHNpZ24gaW4gdG8gSHViPC90ZXh0PgogIDxyZWN0IHg9IjQxMCIgeT0iMzUwIiB3aWR0aD0iMzcwIiBoZWlnaHQ9IjEwMCIgcng9IjEyIiBmaWxsPSIjZmNlN2YzIiBzdHJva2U9IiNkYjI3NzciIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iNDMwIiB5PSIzNzgiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM4MzE4NDMiPldlYiBicm93c2VyPC90ZXh0PgogIDx0ZXh0IHg9IjQzMCIgeT0iNDA4IiBmb250LXNpemU9IjEzIiBmaWxsPSIjMGYxNzJhIj5qdXN0IHRoZSBIdWIgVVJMLCBubyBpbnN0YWxsYXRpb248L3RleHQ+Cjwvc3ZnPgo=");
 
 /***/ }),
 
-/***/ 39739:
+/***/ 65231:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -118,28 +118,28 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_sk_knifes_k_000121_kernaro_ai_hub_index_md_f22_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_en_knifes_k_000121_kernaro_ai_hub_index_md_3aa_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-k-000121-kernaro-ai-hub-index-md-f22.json
-const site_docs_sk_knifes_k_000121_kernaro_ai_hub_index_md_f22_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/K000121-Kernaro-AI-Hub/K000121","title":"K000121 – Kernaro AI Hub: centralizovaný prístup k AI pre tím","description":"Ako postaviť Kernaro AI Hub ako centrálny AI server pre tím alebo triedu na Windows Serveri: poradie inštalácie, pgvector, príprava databázy, licencia, používateľia a čo nie je zrejmé z návodov (HTTP vs HTTPS, porty, DNS). Študenti môžu AI používať aj z prehliadača bez inštalácie.","source":"@site/docs/sk/knifes/K000121-Kernaro-AI-Hub/index.md","sourceDirName":"sk/knifes/K000121-Kernaro-AI-Hub","slug":"/sk/knifes/K000121-Kernaro-AI-Hub/","permalink":"/sk/knifes/K000121-Kernaro-AI-Hub/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"kernaro","permalink":"/doc-tags/kernaro"},{"inline":true,"label":"ea","permalink":"/doc-tags/ea"},{"inline":true,"label":"ai-hub","permalink":"/doc-tags/ai-hub"},{"inline":true,"label":"licensing","permalink":"/doc-tags/licensing"},{"inline":true,"label":"windows-server","permalink":"/doc-tags/windows-server"},{"inline":true,"label":"postgresql","permalink":"/doc-tags/postgresql"},{"inline":true,"label":"pgvector","permalink":"/doc-tags/pgvector"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-10-18T12:24:05.506055+00:00","fm_version_comment":"","id":"K000121","guid":"0c6a9ff5-8fe2-40ec-8e2f-d32f9172455c","dao":"knife","title":"K000121 – Kernaro AI Hub: centralizovaný prístup k AI pre tím","description":"Ako postaviť Kernaro AI Hub ako centrálny AI server pre tím alebo triedu na Windows Serveri: poradie inštalácie, pgvector, príprava databázy, licencia, používateľia a čo nie je zrejmé z návodov (HTTP vs HTTPS, porty, DNS). Študenti môžu AI používať aj z prehliadača bez inštalácie.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"guide","priority":"","tags":["kernaro","ea","ai-hub","licensing","windows-server","postgresql","pgvector"],"locale":"sk","created":"2026-10-18 14:24","modified":"2026-10-18 20:00","status":"published","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000119 – Ako si vytvoriť čistý klon triedneho repozitára","permalink":"/sk/knifes/K000119-klon-triedneho-repozitara/"},"next":{"title":"K000999 – KNIFE – Test script-created instance","permalink":"/sk/knifes/K000999/"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-k-000121-kernaro-ai-hub-index-md-3aa.json
+const site_docs_en_knifes_k_000121_kernaro_ai_hub_index_md_3aa_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/K000121-Kernaro-AI-Hub/K000121_EN","title":"K000121 – Kernaro AI Hub: centralized AI access for teams","description":"How to build Kernaro AI Hub as a central AI server for a team or class on Windows Server: installation order, pgvector, preparing the database, license, users and what the guides do not make obvious (HTTP vs HTTPS, ports, DNS). Students can also use AI from a browser without installing anything.","source":"@site/docs/en/knifes/K000121-Kernaro-AI-Hub/index.md","sourceDirName":"en/knifes/K000121-Kernaro-AI-Hub","slug":"/en/knifes/K000121-Kernaro-AI-Hub/","permalink":"/en/knifes/K000121-Kernaro-AI-Hub/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"kernaro","permalink":"/doc-tags/kernaro"},{"inline":true,"label":"ea","permalink":"/doc-tags/ea"},{"inline":true,"label":"ai-hub","permalink":"/doc-tags/ai-hub"},{"inline":true,"label":"licensing","permalink":"/doc-tags/licensing"},{"inline":true,"label":"windows-server","permalink":"/doc-tags/windows-server"},{"inline":true,"label":"postgresql","permalink":"/doc-tags/postgresql"},{"inline":true,"label":"pgvector","permalink":"/doc-tags/pgvector"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-10-18T12:24:05.538730+00:00","fm_version_comment":"","id":"K000121_EN","guid":"9773f99f-da26-407c-8822-9150d1eb027a","dao":"knife","title":"K000121 – Kernaro AI Hub: centralized AI access for teams","description":"How to build Kernaro AI Hub as a central AI server for a team or class on Windows Server: installation order, pgvector, preparing the database, license, users and what the guides do not make obvious (HTTP vs HTTPS, ports, DNS). Students can also use AI from a browser without installing anything.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"guide","priority":"","tags":["kernaro","ea","ai-hub","licensing","windows-server","postgresql","pgvector"],"locale":"en","created":"2026-10-18 14:24","modified":"2026-10-18 20:00","status":"published","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000119 – How to create a clean clone of a class repository","permalink":"/en/knifes/K000119-clean-clone-of-a-class-repository/"},"next":{"title":"KNIFE – Knowledge In Friendly Examples","permalink":"/en/knifes/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-;// ./docs/sk/knifes/K000121-Kernaro-AI-Hub/index.md
+;// ./docs/en/knifes/K000121-Kernaro-AI-Hub/index.md
 
 
 const frontMatter = {
 	fm_version: '1.0.1',
-	fm_build: '2026-10-18T12:24:05.506055+00:00',
+	fm_build: '2026-10-18T12:24:05.538730+00:00',
 	fm_version_comment: '',
-	id: 'K000121',
-	guid: '0c6a9ff5-8fe2-40ec-8e2f-d32f9172455c',
+	id: 'K000121_EN',
+	guid: '9773f99f-da26-407c-8822-9150d1eb027a',
 	dao: 'knife',
-	title: 'K000121 – Kernaro AI Hub: centralizovaný prístup k AI pre tím',
-	description: 'Ako postaviť Kernaro AI Hub ako centrálny AI server pre tím alebo triedu na Windows Serveri: poradie inštalácie, pgvector, príprava databázy, licencia, používateľia a čo nie je zrejmé z návodov (HTTP vs HTTPS, porty, DNS). Študenti môžu AI používať aj z prehliadača bez inštalácie.',
+	title: 'K000121 – Kernaro AI Hub: centralized AI access for teams',
+	description: 'How to build Kernaro AI Hub as a central AI server for a team or class on Windows Server: installation order, pgvector, preparing the database, license, users and what the guides do not make obvious (HTTP vs HTTPS, ports, DNS). Students can also use AI from a browser without installing anything.',
 	author: 'Roman Kazicka',
 	authors: [
 		'Roman Kazicka'
@@ -156,7 +156,7 @@ const frontMatter = {
 		'postgresql',
 		'pgvector'
 	],
-	locale: 'sk',
+	locale: 'en',
 	created: '2026-10-18 14:24',
 	modified: '2026-10-18 20:00',
 	status: 'published',
@@ -177,7 +177,7 @@ const frontMatter = {
 	fm_reserved1: '',
 	fm_reserved2: ''
 };
-const contentTitle = 'K000121 – Kernaro AI Hub: centralizovaný prístup k AI pre tím';
+const contentTitle = 'K000121 – Kernaro AI Hub: centralized AI access for teams';
 
 const assets = {
 
@@ -186,84 +186,84 @@ const assets = {
 
 
 const toc = [{
-  "value": "🎯 Čo rieši (účel, cieľ)",
-  "id": "-čo-rieši-účel-cieľ",
+  "value": "🎯 What it solves (purpose, goal)",
+  "id": "-what-it-solves-purpose-goal",
   "level": 2
 }, {
-  "value": "🧩 Ako to rieši (princíp)",
-  "id": "-ako-to-rieši-princíp",
+  "value": "🧩 How it solves it (principle)",
+  "id": "-how-it-solves-it-principle",
   "level": 2
 }, {
-  "value": "🧪 Ako to použiť (aplikácia)",
-  "id": "-ako-to-použiť-aplikácia",
+  "value": "🧪 How to use it (application)",
+  "id": "-how-to-use-it-application",
   "level": 2
 }, {
   "value": "1. PostgreSQL 17",
   "id": "1-postgresql-17",
   "level": 3
 }, {
-  "value": "2. pgvector (build na Windows)",
-  "id": "2-pgvector-build-na-windows",
+  "value": "2. pgvector (build on Windows)",
+  "id": "2-pgvector-build-on-windows",
   "level": 3
 }, {
   "value": "3. EA GraphLink",
   "id": "3-ea-graphlink",
   "level": 3
 }, {
-  "value": "4. Príprava databázy",
-  "id": "4-príprava-databázy",
+  "value": "4. Preparing the database",
+  "id": "4-preparing-the-database",
   "level": 3
 }, {
-  "value": "5. Kernaro AI Hub (inštalátor)",
-  "id": "5-kernaro-ai-hub-inštalátor",
+  "value": "5. Kernaro AI Hub (installer)",
+  "id": "5-kernaro-ai-hub-installer",
   "level": 3
 }, {
-  "value": "6. Prvé spustenie a licencia",
-  "id": "6-prvé-spustenie-a-licencia",
+  "value": "6. First start and license",
+  "id": "6-first-start-and-license",
   "level": 3
 }, {
-  "value": "7. Správa používateľov",
-  "id": "7-správa-používateľov",
+  "value": "7. User management",
+  "id": "7-user-management",
   "level": 3
 }, {
-  "value": "8. Monitoring sessions",
-  "id": "8-monitoring-sessions",
+  "value": "8. Session monitoring",
+  "id": "8-session-monitoring",
   "level": 3
 }, {
-  "value": "💡 Tipy a poznámky — čo nie je zrejmé",
-  "id": "-tipy-a-poznámky--čo-nie-je-zrejmé",
+  "value": "💡 Tips and notes — what is not obvious",
+  "id": "-tips-and-notes--what-is-not-obvious",
   "level": 2
 }, {
-  "value": "Port a protokol — kto je zodpovedný za HTTPS?",
-  "id": "port-a-protokol--kto-je-zodpovedný-za-https",
+  "value": "Port and protocol — who is responsible for HTTPS?",
+  "id": "port-and-protocol--who-is-responsible-for-https",
   "level": 3
 }, {
-  "value": "Diagnostika: timeout, chyba TLS alebo firewall?",
-  "id": "diagnostika-timeout-chyba-tls-alebo-firewall",
+  "value": "Diagnostics: timeout, TLS error or firewall?",
+  "id": "diagnostics-timeout-tls-error-or-firewall",
   "level": 3
 }, {
-  "value": "Firewall po reinštalácii / upgrade servera",
-  "id": "firewall-po-reinštalácii--upgrade-servera",
+  "value": "Firewall after an OS reinstall / upgrade",
+  "id": "firewall-after-an-os-reinstall--upgrade",
   "level": 3
 }, {
-  "value": "Certifikát cez win-acme (Let&#39;s Encrypt)",
-  "id": "certifikát-cez-win-acme-lets-encrypt",
+  "value": "Certificate via win-acme (Let&#39;s Encrypt)",
+  "id": "certificate-via-win-acme-lets-encrypt",
   "level": 3
 }, {
-  "value": "Bezpečnosť",
-  "id": "bezpečnosť",
+  "value": "Security",
+  "id": "security",
   "level": 3
 }, {
-  "value": "Poznámky pre akademické nasadenie",
-  "id": "poznámky-pre-akademické-nasadenie",
+  "value": "Notes for academic deployment",
+  "id": "notes-for-academic-deployment",
   "level": 3
 }, {
-  "value": "✅ Hodnota / Zhrnutie",
-  "id": "-hodnota--zhrnutie",
+  "value": "✅ Value / Summary",
+  "id": "-value--summary",
   "level": 2
 }, {
-  "value": "Zdroje",
-  "id": "zdroje",
+  "value": "Sources",
+  "id": "sources",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -295,19 +295,19 @@ function _createMdxContent(props) {
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.header, {
       children: (0,jsx_runtime.jsx)(_components.h1, {
-        id: "k000121--kernaro-ai-hub-centralizovaný-prístup-k-ai-pre-tím",
-        children: "K000121 – Kernaro AI Hub: centralizovaný prístup k AI pre tím"
+        id: "k000121--kernaro-ai-hub-centralized-ai-access-for-teams",
+        children: "K000121 – Kernaro AI Hub: centralized AI access for teams"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "KNIFE"
         }), " – Knowledge In Friendly Examples\n", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Séria:"
+          children: "Series:"
         }), " Systemic Thinking in IT & Digital Fabrication\n", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Úroveň:"
+          children: "Level:"
         }), " Intermediate\n", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Tagy:"
+          children: "Tags:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
           children: "kernaro"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
@@ -315,7 +315,7 @@ function _createMdxContent(props) {
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
           children: "ai-hub"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "licencovanie"
+          children: "licensing"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
           children: "windows-server"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
@@ -326,33 +326,33 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
-        children: "Verzia:"
+        children: "Version:"
       }), " 1.2 | ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Dátum:"
+        children: "Date:"
       }), " 2026-10-18 | ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Súvisí s:"
+        children: "Related:"
       }), " ", (0,jsx_runtime.jsx)(_components.a, {
-        href: "/sk/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/",
-        children: "K000104 – SPARX AI Kernaro v SDLC"
+        href: "/en/knifes/K000104-SPARX_AI_KERNARO_IN_SDLC/",
+        children: "K000104 – SPARX AI Kernaro in SDLC"
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-čo-rieši-účel-cieľ",
-      children: "🎯 Čo rieši (účel, cieľ)"
+      id: "-what-it-solves-purpose-goal",
+      children: "🎯 What it solves (purpose, goal)"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Ako postaviť ", (0,jsx_runtime.jsx)(_components.strong, {
+      children: ["How to build ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Kernaro AI Hub"
-      }), " — jeden centrálny server s AI pre tím alebo triedu — a čo pri tom nie je zrejmé z návodov. Poznatky nižšie pochádzajú z reálnej inštalácie (Windows Server 2019, 2026-10-18, Management v1.1.0.1)."]
+      }), " — one central AI server for a team or class — and what the guides do not make obvious. The findings below come from a real installation (Windows Server 2019, 2026-10-18, Management v1.1.0.1)."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Kernaro AI sa používa dvoma spôsobmi, ktoré sa dajú kombinovať:"
+      children: "Kernaro AI is used in two ways that can be combined:"
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "Spôsob"
+            children: "Mode"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Pre koho / kde"
+            children: "For whom / where"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Čo potrebuje"
+            children: "What it needs"
           })]
         })
       }), (0,jsx_runtime.jsxs)(_components.tbody, {
@@ -362,9 +362,9 @@ function _createMdxContent(props) {
               children: "Kernaro Assist"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Študent pracuje priamo v Sparx Enterprise Architect; AI mu pomáha vytvárať a upravovať prvky modelu v prirodzenom jazyku"
+            children: "The student works directly inside Sparx Enterprise Architect; AI helps create and update model elements in natural language"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Inštalátor Assist, adresa Hubu, pridelený seat"
+            children: "Assist installer, Hub address, an assigned seat"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -372,43 +372,43 @@ function _createMdxContent(props) {
               children: "Kernaro AI Hub – web"
             })
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Študent používa AI v ", (0,jsx_runtime.jsx)(_components.strong, {
-              children: "prehliadači"
-            }), " cez centrálnu adresu Hubu — ", (0,jsx_runtime.jsx)(_components.strong, {
-              children: "bez inštalácie"
-            }), " na vlastnom počítači"]
+            children: ["The student uses AI in a ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "browser"
+            }), " via the Hub's central address — ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "no installation"
+            }), " on their own computer"]
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Len URL Hubu a pridelené oprávnenia"
+            children: "Just the Hub URL and assigned permissions"
           })]
         })]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Hub tiež slúži ako ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "správca licencií Assist"
-      }), " (License Manager): prideľuješ seats a sleduješ relácie. Kontext použitia Kernaro v SDLC nájdeš v K000104."]
+      children: ["The Hub also acts as the ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Assist license manager"
+      }), " (License Manager): you assign seats and monitor sessions. For Kernaro in an SDLC context see K000104."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-ako-to-rieši-princíp",
-      children: "🧩 Ako to rieši (princíp)"
+      id: "-how-it-solves-it-principle",
+      children: "🧩 How it solves it (principle)"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "AI a správa bežia na jednom serveri; klienti (Assist v EA aj webový prehliadač) sa k nemu pripájajú po sieti."
+      children: "AI and administration run on one server; clients (Assist in EA and a web browser) connect to it over the network."
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "Kernaro AI Hub – architektúra",
-        src: (__webpack_require__(29406)/* ["default"] */ .A) + "",
+        alt: "Kernaro AI Hub – architecture",
+        src: (__webpack_require__(59979)/* ["default"] */ .A) + "",
         width: "800",
         height: "470"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Komponenty, ktoré treba nainštalovať v tomto poradí:"
+      children: "Components, to be installed in this order:"
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
             children: "#"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Komponent"
+            children: "Component"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Poznámka"
+            children: "Note"
           })]
         })
       }), (0,jsx_runtime.jsxs)(_components.tbody, {
@@ -418,17 +418,17 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "Windows Server 2019+"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "admin práva"
+            children: "admin rights"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "2"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: (0,jsx_runtime.jsx)(_components.strong, {
-              children: "PostgreSQL 16 alebo 17"
+              children: "PostgreSQL 16 or 17"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "nie 18 — Sparx uvádza 16/17"
+            children: "not 18 — Sparx specifies 16/17"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -436,7 +436,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "pgvector"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "build zo zdrojov (Git + VS Build Tools)"
+            children: "built from source (Git + VS Build Tools)"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -445,8 +445,8 @@ function _createMdxContent(props) {
             children: "EA GraphLink"
           }), (0,jsx_runtime.jsxs)(_components.td, {
             children: [(0,jsx_runtime.jsx)(_components.strong, {
-              children: "pred"
-            }), " Hubom, v ZIP-e s Hubom"]
+              children: "before"
+            }), " the Hub, shipped in the Hub ZIP"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -462,9 +462,9 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "6"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Licenčný súbor"
+            children: "License file"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "podľa Machine ID servera"
+            children: "issued for the server's Machine ID"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -472,89 +472,89 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "Kernaro Assist"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "až na klientoch, samostatný inštalátor"
+            children: "only on clients, separate installer"
           })]
         })]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-        children: ["ℹ️ Inštalátory poskytuje Sparx Systems po schválení (akademická licencia Workgroup). Hub aj GraphLink sú v jednom ZIP-e, Assist v druhom. Pýtaj si ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "najnovšie verzie"
-        }), " — Hub a Assist majú mať zhodné verzie."]
+        children: ["ℹ️ Installers are provided by Sparx Systems after approval (academic Workgroup license). Hub and GraphLink come in one ZIP, Assist in another. Ask for the ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "latest versions"
+        }), " — Hub and Assist versions should match."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-ako-to-použiť-aplikácia",
-      children: "🧪 Ako to použiť (aplikácia)"
+      id: "-how-to-use-it-application",
+      children: "🧪 How to use it (application)"
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "1-postgresql-17",
       children: "1. PostgreSQL 17"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Inštalátor z postgresql.org (EDB), port ", (0,jsx_runtime.jsx)(_components.code, {
+      children: ["Installer from postgresql.org (EDB), port ", (0,jsx_runtime.jsx)(_components.code, {
         children: "5432"
-      }), ", predvolená locale, Stack Builder netreba. Zapíš si heslo používateľa ", (0,jsx_runtime.jsx)(_components.code, {
+      }), ", default locale, Stack Builder not needed. Write down the ", (0,jsx_runtime.jsx)(_components.code, {
         children: "postgres"
-      }), "."]
+      }), " user's password."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["⚠️ ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Pozor na verziu:"
-      }), " najnovší inštalátor môže byť 18. Hub vyžaduje 16/17, preto sťahuj 17."]
+        children: "Watch the version:"
+      }), " the newest installer may be 18. The Hub requires 16/17, so download 17."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "2-pgvector-build-na-windows",
-      children: "2. pgvector (build na Windows)"
+      id: "2-pgvector-build-on-windows",
+      children: "2. pgvector (build on Windows)"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Build potrebuje ", (0,jsx_runtime.jsx)(_components.strong, {
+      children: ["The build needs ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Visual Studio Build Tools 2022"
       }), " (workload ", (0,jsx_runtime.jsx)(_components.em, {
         children: "Desktop development with C++"
-      }), "; stačí MSVC v143 x64/x86 a Windows SDK, približne 7 GB) a Git."]
+      }), "; MSVC v143 x64/x86 and the Windows SDK are enough, about 7 GB) and Git."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: ["⚠️ ", (0,jsx_runtime.jsx)(_components.code, {
           children: "cl"
-        }), " a ", (0,jsx_runtime.jsx)(_components.code, {
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
           children: "nmake"
-        }), " ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "nie sú v PATH"
-        }), " v obyčajnom PowerShelli. Otvor ", (0,jsx_runtime.jsx)(_components.strong, {
+        }), " are ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "not in PATH"
+        }), " in a plain PowerShell. Open ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "x64 Native Tools Command Prompt for VS 2022"
-        }), " ako administrátor. Overenie: ", (0,jsx_runtime.jsx)(_components.code, {
+        }), " as administrator. Check: both ", (0,jsx_runtime.jsx)(_components.code, {
           children: "cl"
-        }), " aj ", (0,jsx_runtime.jsx)(_components.code, {
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
           children: "nmake /?"
-        }), " musia vypísať verziu."]
+        }), " must print a version."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         children: "set \"PGROOT=C:\\Program Files\\PostgreSQL\\17\"\ncd %TEMP%\ngit clone --branch v0.8.7 https://github.com/pgvector/pgvector.git\ncd pgvector\nnmake /F Makefile.win\nnmake /F Makefile.win install\n"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Aktuálny tag nájdeš na github.com/pgvector/pgvector (tu v0.8.7). ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "Rozšírenie v databáze nezapínaj ručne"
-      }), " — urobí to inštalátor Hubu (viď nižšie)."]
+      children: ["Find the current tag at github.com/pgvector/pgvector (here v0.8.7). ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Do not enable the extension in the database by hand"
+      }), " — the Hub installer does it (see below)."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "3-ea-graphlink",
       children: "3. EA GraphLink"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Inštalátor sa pýta na host a port. Pri Hube na tom istom serveri nechaj ", (0,jsx_runtime.jsx)(_components.code, {
+      children: ["The installer asks for a host and port. With the Hub on the same server keep ", (0,jsx_runtime.jsx)(_components.code, {
         children: "localhost"
-      }), " a ", (0,jsx_runtime.jsx)(_components.code, {
+      }), " and ", (0,jsx_runtime.jsx)(_components.code, {
         children: "8090"
-      }), ". Overenie: ", (0,jsx_runtime.jsx)(_components.code, {
+      }), ". Check: ", (0,jsx_runtime.jsx)(_components.code, {
         children: "netstat -ano | findstr :8090"
-      }), " musí ukázať ", (0,jsx_runtime.jsx)(_components.code, {
+      }), " must show ", (0,jsx_runtime.jsx)(_components.code, {
         children: "LISTENING"
       }), "."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "4-príprava-databázy",
-      children: "4. Príprava databázy"
+      id: "4-preparing-the-database",
+      children: "4. Preparing the database"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Inštalátor Hubu databázu ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "nevytvára"
-      }), " a vyžaduje ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "prázdnu"
-      }), " databázu (hlásenie ", (0,jsx_runtime.jsx)(_components.em, {
+      children: ["The Hub installer does ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "not"
+      }), " create the database and requires an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "empty"
+      }), " one (errors ", (0,jsx_runtime.jsx)(_components.em, {
         children: "database does not exist"
-      }), ", resp. ", (0,jsx_runtime.jsx)(_components.em, {
+      }), " / ", (0,jsx_runtime.jsx)(_components.em, {
         children: "extension already exists in this database"
       }), "):"]
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
@@ -563,33 +563,33 @@ function _createMdxContent(props) {
         children: "CREATE DATABASE kernaro;\n"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Používateľ: superuser (", (0,jsx_runtime.jsx)(_components.code, {
+      children: ["User: superuser (", (0,jsx_runtime.jsx)(_components.code, {
         children: "postgres"
-      }), "), schéma ", (0,jsx_runtime.jsx)(_components.code, {
+      }), "), schema ", (0,jsx_runtime.jsx)(_components.code, {
         children: "kernaroschema"
-      }), ". Ak si omylom zapol ", (0,jsx_runtime.jsx)(_components.code, {
+      }), ". If you enabled ", (0,jsx_runtime.jsx)(_components.code, {
         children: "CREATE EXTENSION vector"
-      }), ", databázu zahoď a vytvor znova prázdnu."]
+      }), " by mistake, drop the database and recreate it empty."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "5-kernaro-ai-hub-inštalátor",
-      children: "5. Kernaro AI Hub (inštalátor)"
+      id: "5-kernaro-ai-hub-installer",
+      children: "5. Kernaro AI Hub (installer)"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Obrazovky v poradí: licenčná zmluva → cieľový priečinok → ", (0,jsx_runtime.jsx)(_components.em, {
+      children: ["Screens in order: license agreement → destination folder → ", (0,jsx_runtime.jsx)(_components.em, {
         children: "Run Schema"
-      }), " → pripojenie na PostgreSQL → ", (0,jsx_runtime.jsx)(_components.em, {
+      }), " → PostgreSQL connection → ", (0,jsx_runtime.jsx)(_components.em, {
         children: "Service Configuration"
-      }), " → súhrn."]
+      }), " → summary."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["V ", (0,jsx_runtime.jsx)(_components.em, {
+      children: ["In ", (0,jsx_runtime.jsx)(_components.em, {
         children: "Service Configuration"
       }), ":"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "Pole"
+            children: "Field"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Hodnota"
+            children: "Value"
           })]
         })
       }), (0,jsx_runtime.jsxs)(_components.tbody, {
@@ -597,11 +597,11 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Host"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: [(0,jsx_runtime.jsx)(_components.strong, {
-              children: "DNS názov servera"
-            }), ", napr. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ["the server's ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "DNS name"
+            }), ", e.g. ", (0,jsx_runtime.jsx)(_components.code, {
               children: "kernaro.example.org"
-            }), " (nie ", (0,jsx_runtime.jsx)(_components.code, {
+            }), " (not ", (0,jsx_runtime.jsx)(_components.code, {
               children: "localhost"
             }), ")"]
           })]
@@ -623,66 +623,64 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsxs)(_components.td, {
             children: [(0,jsx_runtime.jsx)(_components.code, {
               children: "admin"
-            }), " + silné heslo (min. 8 znakov, veľké, malé, číslo, špeciálny znak)"]
+            }), " + strong password (min. 8 chars, upper, lower, digit, special)"]
           })]
         })]
       })]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Pred inštaláciou over, že porty sú voľné (pozor, ", (0,jsx_runtime.jsx)(_components.code, {
-        children: "-ano"
-      }), " s pomlčkou, nie s lomkou):"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Before installing, check the ports are free:"
     }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         children: "netstat -ano | findstr \":8000 :8001 :8002\"\n"
       })
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Prázdny výstup = voľné."
+      children: "Empty output = free."
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "DNS:"
-      }), " ak server nemá DNS záznam, vytvor A záznam (", (0,jsx_runtime.jsx)(_components.code, {
+      }), " if the server has no DNS record, create an A record (", (0,jsx_runtime.jsx)(_components.code, {
         children: "kernaro"
-      }), " → IP servera, TTL 300) a over ", (0,jsx_runtime.jsx)(_components.code, {
+      }), " → server IP, TTL 300) and verify with ", (0,jsx_runtime.jsx)(_components.code, {
         children: "nslookup kernaro.example.org"
       }), "."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "6-prvé-spustenie-a-licencia",
-      children: "6. Prvé spustenie a licencia"
+      id: "6-first-start-and-license",
+      children: "6. First start and license"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Po inštalácii sa otvorí portál ", (0,jsx_runtime.jsx)(_components.code, {
+      children: ["After installation the portal opens at ", (0,jsx_runtime.jsx)(_components.code, {
         children: "http://<host>:8002"
       }), ":"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Stránka ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: ["The ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Create Administrator Account"
-        }), " — dokonči ju ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "hneď"
-        }), ". Kým účet nevznikne, môže ho vytvoriť ktokoľvek, kto dosiahne port 8002."]
+        }), " page — finish it ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "immediately"
+        }), ". Until the account exists, anyone who can reach port 8002 can create it."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Prihlás sa; v ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: ["Log in; ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "License Configuration"
-        }), " nájdeš ", (0,jsx_runtime.jsx)(_components.strong, {
+        }), " shows the server's ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Machine ID"
-        }), " servera."]
+        }), "."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Pošli Machine ID Sparxu (kontakt z akademickej licencie). Vrátia licenčný ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "súbor"
-        }), " pre Kernaro AI aj EA GraphLink."]
+        children: ["Send the Machine ID to Sparx (the contact from the academic license). They return a license ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "file"
+        }), " for Kernaro AI and EA GraphLink."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["V portáli: ", (0,jsx_runtime.jsx)(_components.em, {
+        children: ["In the portal: ", (0,jsx_runtime.jsx)(_components.em, {
           children: "Upload license file → Activate License"
         }), "."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "7-správa-používateľov",
-      children: "7. Správa používateľov"
+      id: "7-user-management",
+      children: "7. User management"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Dva typy účtov: ", (0,jsx_runtime.jsx)(_components.strong, {
+      children: ["Two account types: ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Admin"
-      }), " (plný prístup) | ", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " (full access) | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Regular"
-      }), " (obmedzený prístup)."]
+      }), " (restricted access)."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
         children: (0,jsx_runtime.jsx)(_components.code, {
@@ -693,26 +691,26 @@ function _createMdxContent(props) {
           children: "User & Access Control → Assist Access → Assign Users to Kernaro Assist"
         })
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Nastav ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: ["Set ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Write Access"
-        }), " (Enabled = tvorba obsahu; Disabled = len čítanie)"]
+        }), " (Enabled = create/edit content; Disabled = read only)"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Hub sleduje počty seats: ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: ["Hub tracks seats: ", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Available / Assigned / Total"
         })]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Limited License zobrazuje počítadlá seats; Unlimited License ich skrýva, správa funguje rovnako."
+      children: "Limited License shows seat counters; Unlimited License hides them; management works identically."
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "8-monitoring-sessions",
-      children: "8. Monitoring sessions"
+      id: "8-session-monitoring",
+      children: "8. Session monitoring"
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Real-time:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
           children: "User & Access Control → Assist Active Sessions"
-        }), " — User, Machine, Last Used, IP Address, Status. Admin môže revokovať jednotlivú session alebo všetky naraz."]
+        }), " — User, Machine, Last Used, IP Address, Status. Admin can revoke individual or all sessions."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Audit log:"
@@ -721,15 +719,15 @@ function _createMdxContent(props) {
         }), " — Sign-In, Sign-Out, Session Refresh, Revocation, Access Denied, Expiration."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-tipy-a-poznámky--čo-nie-je-zrejmé",
-      children: "💡 Tipy a poznámky — čo nie je zrejmé"
+      id: "-tips-and-notes--what-is-not-obvious",
+      children: "💡 Tips and notes — what is not obvious"
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "Problém"
+            children: "Problem"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Príčina / riešenie"
+            children: "Cause / solution"
           })]
         })
       }), (0,jsx_runtime.jsxs)(_components.tbody, {
@@ -739,9 +737,9 @@ function _createMdxContent(props) {
               children: "cl"
             }), ", ", (0,jsx_runtime.jsx)(_components.code, {
               children: "nmake"
-            }), " neexistujú"]
+            }), " not found"]
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Si v PowerShelli. Použi ", (0,jsx_runtime.jsx)(_components.em, {
+            children: ["You are in PowerShell. Use ", (0,jsx_runtime.jsx)(_components.em, {
               children: "x64 Native Tools Command Prompt for VS 2022"
             })]
           })]
@@ -751,7 +749,7 @@ function _createMdxContent(props) {
               children: "database \"kernaro\" does not exist"
             })
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Hub databázu nevytvára. ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ["The Hub does not create it. ", (0,jsx_runtime.jsx)(_components.code, {
               children: "CREATE DATABASE kernaro;"
             })]
           })]
@@ -761,23 +759,13 @@ function _createMdxContent(props) {
               children: "extension(s) already exist … 'vector'"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Databáza nesmie byť „použitá“. Zahoď ju, vytvor prázdnu, rozšírenie nechaj na inštalátor"
+            children: "The database must be unused. Drop it, create an empty one, leave the extension to the installer"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "PostgreSQL 18"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Hub vyžaduje 16/17. Odinštaluj, nainštaluj 17"
-          })]
-        }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Prázdny výsledok ", (0,jsx_runtime.jsx)(_components.code, {
-              children: "netstat /ano"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Správne je ", (0,jsx_runtime.jsx)(_components.code, {
-              children: "netstat -ano"
-            }), "; s lomkou vypíše len nápovedu"]
+            children: "The Hub requires 16/17. Uninstall, install 17"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsxs)(_components.td, {
@@ -787,65 +775,65 @@ function _createMdxContent(props) {
               children: "SSL_ERROR_RX_RECORD_TOO_LONG"
             })]
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Hub na 8000–8002 hovorí ", (0,jsx_runtime.jsx)(_components.strong, {
-              children: "len HTTP"
-            }), ". Prehliadač neprepisuj na HTTPS"]
+            children: ["The Hub on 8000–8002 speaks ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "HTTP only"
+            }), ". Do not let the browser upgrade to HTTPS"]
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
-            children: "PostgreSQL počúva na všetkých rozhraniach"
+            children: "PostgreSQL listens on all interfaces"
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Hub je lokálny. V ", (0,jsx_runtime.jsx)(_components.code, {
-              children: "postgresql.conf"
-            }), " nastav ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ["The Hub is local. Set ", (0,jsx_runtime.jsx)(_components.code, {
               children: "listen_addresses = 'localhost'"
-            }), " a reštartuj službu"]
+            }), " in ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "postgresql.conf"
+            }), " and restart the service"]
           })]
         })]
       })]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "port-a-protokol--kto-je-zodpovedný-za-https",
-      children: "Port a protokol — kto je zodpovedný za HTTPS?"
+      id: "port-and-protocol--who-is-responsible-for-https",
+      children: "Port and protocol — who is responsible for HTTPS?"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Port nerozhoduje o protokole: ", (0,jsx_runtime.jsx)(_components.code, {
+      children: ["A port does not decide the protocol: ", (0,jsx_runtime.jsx)(_components.code, {
         children: "443"
-      }), " je len konvencia. To, či spojenie na porte je šifrované, určuje ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "program, ktorý na ňom počúva"
-      }), ". Hub počúva po HTTP."]
+      }), " is just a convention. Whether a connection on a port is encrypted is decided by ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "the program listening on it"
+      }), ". The Hub listens on HTTP."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
-          children: "Certifikát pre názov servera nestačí."
-        }), " Musí ho predložiť program na porte: buď Hub (ak natívne podporuje TLS — ", (0,jsx_runtime.jsx)(_components.em, {
-          children: "otvorená otázka na Sparx"
-        }), "), alebo ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "reverzný proxy"
-        }), " pred Hubom (IIS, nginx, Caddy), ktorý TLS ukončí a prepošle na ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "A certificate for the server name is not enough."
+        }), " The program on the port has to present it: either the Hub (if it supports TLS natively — ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "open question for Sparx"
+        }), "), or a ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "reverse proxy"
+        }), " in front of the Hub (IIS, nginx, Caddy) that terminates TLS and forwards to ", (0,jsx_runtime.jsx)(_components.code, {
           children: "http://localhost:8002"
         }), "."]
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "Ak na serveri už 80/443 používa iná služba (napr. Pro Cloud Server, Prolaborate), proxy musí bežať na inom porte (napr. 8443)."
+        children: "If 80/443 are already used by another service on the server (e.g. Pro Cloud Server, Prolaborate), the proxy has to run on another port (e.g. 8443)."
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Po zapnutí HTTPS treba prepísať adresy v Assist klientoch a overiť, či Hub neposiela klientom pôvodné ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ["After enabling HTTPS, update the addresses in Assist clients and check that the Hub does not hand the original ", (0,jsx_runtime.jsx)(_components.code, {
           children: "http://"
-        }), " URL."]
+        }), " URLs to clients."]
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "Certifikát sa obnovuje (60–90 dní); po obnove treba službu reloadnúť."
+        children: "The certificate renews (every 60–90 days); the service must be reloaded after renewal."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "diagnostika-timeout-chyba-tls-alebo-firewall",
-      children: "Diagnostika: timeout, chyba TLS alebo firewall?"
+      id: "diagnostics-timeout-tls-error-or-firewall",
+      children: "Diagnostics: timeout, TLS error or firewall?"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Podľa chyby v prehliadači vieš, kde hľadať:"
+      children: "The browser error tells you where to look:"
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {
-            children: "Chyba"
+            children: "Error"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Čo znamená"
+            children: "Meaning"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Kde hľadať"
+            children: "Where to look"
           })]
         })
       }), (0,jsx_runtime.jsxs)(_components.tbody, {
@@ -857,11 +845,11 @@ function _createMdxContent(props) {
               children: "nc"
             }), " timeout"]
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["Spojenie sa ", (0,jsx_runtime.jsx)(_components.strong, {
-              children: "vôbec nenadviazalo"
-            }), " (nikto neodpovedá)"]
+            children: ["The connection was ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "never established"
+            }), " (nobody answers)"]
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Firewall (Windows alebo sieťový), nie certifikát"
+            children: "Firewall (Windows or network), not the certificate"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -869,9 +857,9 @@ function _createMdxContent(props) {
               children: "ERR_CONNECTION_REFUSED"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Na porte nikto nepočúva"
+            children: "Nothing is listening on the port"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Služba nebeží alebo počúva inde"
+            children: "Service not running or listening elsewhere"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsxs)(_components.td, {
@@ -881,168 +869,168 @@ function _createMdxContent(props) {
               children: "SSL_ERROR_*"
             })]
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Spojenie je, zlyhalo šifrovanie"
+            children: "The connection exists, encryption failed"
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "Certifikát, HTTP vs HTTPS"
+            children: "Certificate, HTTP vs HTTPS"
           })]
         })]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
-        children: "Certifikát nikdy nespôsobí timeout."
-      }), " Ak stránka „prestala fungovať“ krátko po vydaní certifikátu, ide o náhodu v čase — najprv skontroluj sieť."]
+        children: "A certificate never causes a timeout."
+      }), " If a site \"stopped working\" shortly after a certificate was issued, the timing is a coincidence — check the network first."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Postup, ktorý to rozhodne:"
+      children: "The procedure that settles it:"
     }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Na serveri over, že služba počúva a čo ju drží: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ["On the server confirm the service listens and which process holds the port: ", (0,jsx_runtime.jsx)(_components.code, {
           children: "netstat -ano | findstr \":443\""
-        }), " a ", (0,jsx_runtime.jsx)(_components.code, {
+        }), " and ", (0,jsx_runtime.jsx)(_components.code, {
           children: "tasklist /fi \"pid eq <PID>\""
-        }), ". Lokálne spojenie (", (0,jsx_runtime.jsx)(_components.code, {
+        }), ". A local connection (", (0,jsx_runtime.jsx)(_components.code, {
           children: "Test-NetConnection localhost -Port 443"
-        }), ") prejde aj keď firewall blokuje zvonku, preto nič nedokazuje."]
+        }), ") succeeds even when the firewall blocks external traffic, so it proves nothing."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Skús zvonku z inej siete (mobil cez dáta, nie Wi-Fi) a pomocou ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ["Try from outside from another network (mobile data, not Wi-Fi) and with ", (0,jsx_runtime.jsx)(_components.code, {
           children: "nc -vz -w 5 <ip> <port>"
-        }), ". Ak iný port (napr. RDP 3389) prejde a web porty nie, filtruje sa konkrétne port."]
+        }), ". If another port (e.g. RDP 3389) works and web ports do not, one specific port is being filtered."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Zapni logovanie zahodených spojení vo Windows firewalle a zopakuj pokus:", "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: ["Turn on dropped-connection logging in Windows Firewall and repeat the attempt:", "\n", (0,jsx_runtime.jsx)(_components.pre, {
           children: (0,jsx_runtime.jsx)(_components.code, {
             children: "netsh advfirewall set allprofiles logging droppedconnections enable\nSelect-String -Path \"$env:SystemRoot\\System32\\LogFiles\\Firewall\\pfirewall.log\" -Pattern \"DROP.* 443 \" | Select -Last 10\n"
           })
         }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: ["Riadky ", (0,jsx_runtime.jsx)(_components.code, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
               children: "DROP ... RECEIVE"
-            }), " s tvojou zdrojovou adresou = blokuje ", (0,jsx_runtime.jsx)(_components.strong, {
-              children: "Windows firewall"
-            }), " na serveri."]
+            }), " lines with your source address = ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "Windows Firewall"
+            }), " on the server is blocking."]
           }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-            children: "Žiadne riadky = pakety na server nedorazia, zahadzuje ich firewall pred ním (škola, hosting)."
+            children: "No lines = packets never reach the server; a firewall in front of it (campus, hosting) drops them."
           }), "\n"]
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Po teste logovanie vypni: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ["Turn logging off afterwards: ", (0,jsx_runtime.jsx)(_components.code, {
           children: "netsh advfirewall set allprofiles logging droppedconnections disable"
         }), "."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "firewall-po-reinštalácii--upgrade-servera",
-      children: "Firewall po reinštalácii / upgrade servera"
+      id: "firewall-after-an-os-reinstall--upgrade",
+      children: "Firewall after an OS reinstall / upgrade"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Windows firewall blokuje všetko prichádzajúce, čo nemá pravidlo. Po ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "upgrade alebo reinštalácii operačného systému"
-      }), " sa pravidlá pre služby (webové aplikácie, Pro Cloud Server a pod.) môžu stratiť, hoci služby bežia a počúvajú. Z vnútra servera všetko funguje, zvonku timeout."]
+      children: ["Windows Firewall blocks everything inbound that has no rule. After an ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "OS upgrade or reinstall"
+      }), ", the rules for services (web applications, Pro Cloud Server etc.) can be lost although the services run and listen. Everything works from inside the server, but times out from outside."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Skontroluj profil siete (", (0,jsx_runtime.jsx)(_components.code, {
+        children: ["Check the network profile (", (0,jsx_runtime.jsx)(_components.code, {
           children: "Get-NetConnectionProfile"
-        }), ") a pravidlá viazané na programy (", (0,jsx_runtime.jsx)(_components.code, {
+        }), ") and program-bound rules (", (0,jsx_runtime.jsx)(_components.code, {
           children: "Get-NetFirewallApplicationFilter | ..."
-        }), "). Prázdny výsledok = žiadne pravidlá."]
+        }), "). An empty result = no rules."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Obnov pravidlá pre porty, ktoré majú byť verejné:", "\n", (0,jsx_runtime.jsx)(_components.pre, {
+        children: ["Restore rules for ports that should be public:", "\n", (0,jsx_runtime.jsx)(_components.pre, {
           children: (0,jsx_runtime.jsx)(_components.code, {
             children: "New-NetFirewallRule -DisplayName \"Web HTTPS 443\" -Direction Inbound -Protocol TCP -LocalPort 443 -Action Allow -Profile Any\n"
           })
         }), "\n"]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Porty Hubu (8000–8002) pridávaj osobitne a ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "s obmedzeným zdrojom"
+        children: ["Add the Hub ports (8000–8002) separately and ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "restrict the source"
         }), " (", (0,jsx_runtime.jsx)(_components.code, {
           children: "-RemoteAddress"
-        }), "), kým Hub nehovorí HTTPS."]
+        }), ") as long as the Hub speaks plain HTTP."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Po každej zmene OS si otestuj všetky služby ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "zvonku"
-        }), ", nielen lokálne."]
+        children: ["After every OS change, test all services ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "from outside"
+        }), ", not just locally."]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "certifikát-cez-win-acme-lets-encrypt",
-      children: "Certifikát cez win-acme (Let's Encrypt)"
+      id: "certificate-via-win-acme-lets-encrypt",
+      children: "Certificate via win-acme (Let's Encrypt)"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Ak už na serveri bežíte certifikáty cez ", (0,jsx_runtime.jsx)(_components.code, {
+      children: ["If you already run certificates with ", (0,jsx_runtime.jsx)(_components.code, {
         children: "win-acme"
       }), " (", (0,jsx_runtime.jsx)(_components.code, {
         children: "wacs"
-      }), "), názov Hubu stačí pridať do zoznamu domén."]
+      }), "), just add the Hub's name to the host list."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Zoznam ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ["The ", (0,jsx_runtime.jsx)(_components.code, {
           children: "--host"
-        }), " je ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "jeden certifikát pre všetky domény"
-        }), ". Chybný názov (preklep v koncovke) zhodí celý beh: ", (0,jsx_runtime.jsx)(_components.code, {
+        }), " list is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "one certificate for all domains"
+        }), ". A wrong name (typo in the TLD) fails the whole run: ", (0,jsx_runtime.jsx)(_components.code, {
           children: "Authorization result: invalid"
-        }), ", žiaden nový certifikát sa nevydá, starý ostane."]
+        }), ", no new certificate is issued, the old one stays."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Overenie ", (0,jsx_runtime.jsx)(_components.code, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
           children: "selfhosting"
-        }), " ide cez ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "HTTP na port 80"
-        }), " servera. DNS záznam musí existovať a port 80 musí byť zvonku dosiahnuteľný (pozri firewall vyššie)."]
+        }), " validation goes over ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "HTTP on the server's port 80"
+        }), ". The DNS record must exist and port 80 must be reachable from outside (see the firewall above)."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Vydaný certifikát ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "Hub nepoužije sám"
-        }), " — musí ho predložiť Hub (ak podporuje TLS) alebo reverzný proxy."]
+        children: ["The issued certificate is ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "not picked up by the Hub on its own"
+        }), " — the Hub (if it supports TLS) or a reverse proxy has to present it."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Heslo k PFX ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "nepatrí do skriptu"
-        }), " v čistom texte. Ulož ho zašifrované pre konkrétny účet (", (0,jsx_runtime.jsx)(_components.code, {
+        children: ["The PFX password does ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "not belong in the script"
+        }), " in plain text. Store it encrypted for a specific account (", (0,jsx_runtime.jsx)(_components.code, {
           children: "Get-Credential | Export-Clixml"
-        }), ", načítať cez ", (0,jsx_runtime.jsx)(_components.code, {
+        }), ", read it with ", (0,jsx_runtime.jsx)(_components.code, {
           children: "Import-Clixml"
-        }), ") a súbor ochráň oprávneniami (", (0,jsx_runtime.jsx)(_components.code, {
+        }), ") and protect the file with permissions (", (0,jsx_runtime.jsx)(_components.code, {
           children: "icacls"
         }), ")."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Úloha v Plánovači bežiaca „naprázdno“ býva zablokovaná príkazom ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ["A scheduled task that \"runs idle\" is often blocked by a ", (0,jsx_runtime.jsx)(_components.code, {
           children: "pause"
-        }), " v skripte, nesprávnym účtom alebo chýbajúcim ", (0,jsx_runtime.jsx)(_components.em, {
+        }), " in the script, the wrong account, or a missing ", (0,jsx_runtime.jsx)(_components.em, {
           children: "Run with highest privileges"
         }), "."]
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "Ak plánovač nefunguje, obnovu treba robiť ručne a mať v kalendári dátum vypršania."
+        children: "If the scheduler does not work, renewal must be done by hand — keep the expiry date in a calendar."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "bezpečnosť",
-      children: "Bezpečnosť"
+      id: "security",
+      children: "Security"
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Porty 8000/8001 povoľ len pre cieľovú sieť (študenti, VPN), ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "8002 (Management) len pre administrátora"
+        children: ["Open ports 8000/8001 only to the target network (students, VPN), ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "8002 (Management) only to the administrator"
         }), "."]
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "Bez HTTPS idú heslá po sieti čitateľne. Mimo lokálnej siete HTTPS najprv vyrieš."
+        children: "Without HTTPS passwords travel readable over the network. Solve HTTPS first before exposing outside the local network."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "Heslá (PostgreSQL, Hub admin, PFX) nepatria do skriptov ani do dokumentácie."
+        children: "Passwords (PostgreSQL, Hub admin, PFX) do not belong in scripts or documentation."
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "poznámky-pre-akademické-nasadenie",
-      children: "Poznámky pre akademické nasadenie"
+      id: "notes-for-academic-deployment",
+      children: "Notes for academic deployment"
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "65 študentov = licencia na 65 Assist seats (Limited License)"
+        children: "65 students = license for 65 Assist seats (Limited License)"
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["Odporúčam Write Access ", (0,jsx_runtime.jsx)(_components.strong, {
-          children: "zapnúť"
-        }), " — aktívna AI interakcia má vzdelávaciu hodnotu"]
+        children: ["Write Access recommended ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "enabled"
+        }), " — active AI interaction has educational value"]
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "Webové rozhranie Hubu znižuje bariéru: študent nepotrebuje inštaláciu, len URL"
+        children: "The Hub's web interface lowers the barrier: students need no installation, only a URL"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "Overiť pred spustením: LAN alebo VPN? → firewall a porty"
+        children: "Verify before launch: LAN or VPN? → firewall and ports"
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "Session History = evidencia aktivity študentov (pedagogická hodnota)"
+        children: "Session History = student activity log (pedagogical value)"
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-hodnota--zhrnutie",
-      children: "✅ Hodnota / Zhrnutie"
+      id: "-value--summary",
+      children: "✅ Value / Summary"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Jeden server namiesto N inštalácií AI, centrálna správa licencií a prístupu, prehľad relácií a auditná stopa; študenti môžu AI používať aj z prehliadača bez inštalácie. Najdrahšie kroky inštalácie sú pgvector a príprava prázdnej databázy — poznámky vyššie ušetria hodiny skúšania."
+      children: "One server instead of N AI installations, central license and access management, an overview of sessions and an audit trail; students can also use AI from a browser without installing anything. The costliest installation steps are pgvector and preparing an empty database — the notes above save hours of trial and error."
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "zdroje",
-      children: "Zdroje"
+      id: "sources",
+      children: "Sources"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["[1] ", (0,jsx_runtime.jsx)(_components.a, {
         href: "https://sparxsystems.com/kernaro/resources/kernaro-ai/kernaro-user-management-user-guide/",
@@ -1062,18 +1050,18 @@ function _createMdxContent(props) {
       children: ["[4] ", (0,jsx_runtime.jsx)(_components.a, {
         href: "https://github.com/pgvector/pgvector",
         children: "https://github.com/pgvector/pgvector"
-      }), " (sekcia Windows)"]
+      }), " (Windows section)"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.a, {
-          href: "/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG",
-          children: "⬅ KNIFES – Prehľad"
+          href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN",
+          children: "⬅ KNIFES – Overview"
         }), " • ", (0,jsx_runtime.jsx)(_components.a, {
-          href: "/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST",
-          children: "Zoznam"
+          href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN",
+          children: "List"
         }), " • ", (0,jsx_runtime.jsx)(_components.a, {
-          href: "/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS",
-          children: "Detaily"
+          href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN",
+          children: "Details"
         })]
       }), "\n"]
     })]

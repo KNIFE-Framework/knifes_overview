@@ -254,6 +254,10 @@ const toc = [{
   "id": "pro-cloud-server-pcs-cez-https",
   "level": 3
 }, {
+  "value": "Porty služieb: tabuľka a testovanie",
+  "id": "porty-služieb-tabuľka-a-testovanie",
+  "level": 3
+}, {
   "value": "Bezpečnosť",
   "id": "bezpečnosť",
   "level": 3
@@ -331,7 +335,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Verzia:"
-      }), " 1.3 | ", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 1.4 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Dátum:"
       }), " 2026-10-18 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Súvisí s:"
@@ -1099,7 +1103,221 @@ function _createMdxContent(props) {
         children: "DROP"
       }), ", port zahadzuje ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "sieť pred serverom"
-      }), " (školský alebo hostingový firewall) a treba požiadať jej správcu o povolenie portu. Neštandardné porty (napr. 1805) sa takto filtrujú často, 80 a 443 zvyčajne nie."]
+      }), " (školský alebo hostingový firewall) a treba požiadať jej správcu o povolenie portu. Neštandardné porty (napr. 1805) sa takto filtrujú často, 80 a 443 zvyčajne nie. Hosting často povoľuje len vybrané porty alebo ich rozsah (u nás 8000–10000), preto pre HTTPS PCS zvoľ port z povoleného rozsahu (napr. 8443), nie 1805."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "porty-služieb-tabuľka-a-testovanie",
+      children: "Porty služieb: tabuľka a testovanie"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Pri nasadení na serveri, ktorý hosťuje aj iné služby, si porty zapíš do jednej tabuľky (aj kvôli žiadosti správcovi siete a ako podklad na budúci rok):"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Port"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Smer"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Služba"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Účel"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Zvonku"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "80"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "príchodzí"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Pro Cloud Server (HTTP, autentifikácia ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Model"
+            }), ")"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EA cloud pripojenie, overenie certifikátu"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "áno"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "443"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "príchodzí"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "iná webová aplikácia (HTTPS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "webová aplikácia"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "áno"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3389"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "príchodzí"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "vzdialená správa"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "áno"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "príchodzí"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernaro AI Hub (AI)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AI pre študentov"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "áno"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8001"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "príchodzí"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernaro AI Hub (Sync)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "spracovanie dokumentov"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "áno"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8002"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "príchodzí"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernaro AI Hub (správa)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "administrácia Hubu"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "áno (len správca)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8443"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "príchodzí"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pro Cloud Server (HTTPS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EA cloud pripojenie šifrovane"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "áno"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5432"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "len server"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PostgreSQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "databáza Hubu"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nie"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "805"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "len server"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MariaDB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "databázy modelov"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nie"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8090"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "len server"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EA GraphLink"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "služba pre Hub"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nie"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1803"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "len server"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pro Cloud Server (konfigurácia)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "správa PCS"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "nie"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3306, 80, 443"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "odchádzajúci"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "databázy na hostingu, internet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "modely, certifikáty, aktualizácie"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "netýka sa"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Porty musia povoliť dve vrstvy:"
+      }), " Windows firewall na serveri a prípadne firewall alebo ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "security group"
+      }), " hostingu pred ním. Log Windows firewallu ukáže len to, čo zahodil on sám. Ak je v logu ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DROP"
+      }), ", vinník je Windows firewall; ak v ňom nič nie je a spojenie vyprší, port zahadzuje sieť pred serverom a správca siete ho musí povoliť. Správcovi pošli zoznam ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "skutočne potrebných"
+      }), " portov (nie celý rozsah) a široké dočasné pravidlá po testoch zruš."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Ako správne otestovať port zvonku."
+      }), " Z iného počítača: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "nc -vz -w 5 <host> <port>"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "succeeded"
+        }), " — cesta je otvorená a na porte niečo počúva."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "Operation timed out"
+        }), " — pakety nikto nepotvrdil."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Pozor: pri porte, na ktorom na serveri ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "nič nepočúva"
+      }), ", Windows často neodpovie vôbec, takže dostaneš ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Operation timed out"
+      }), " aj vtedy, keď je všetko povolené (a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Connection refused"
+      }), " neprichádza). Preto zatvorený port otestuj dočasným prijímačom na serveri:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-powershell",
+        children: "$l = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Any, 9000); $l.Start()\n# test z druhého počítača: nc -vz -w 5 <host> 9000\n$l.Stop()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Ak ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "nc"
+      }), " hlási ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "succeeded"
+      }), ", cesta je otvorená. Okno PowerShellu pri teste nezatváraj."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "bezpečnosť",
       children: "Bezpečnosť"

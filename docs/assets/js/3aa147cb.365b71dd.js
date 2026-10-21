@@ -254,6 +254,10 @@ const toc = [{
   "id": "pro-cloud-server-pcs-over-https",
   "level": 3
 }, {
+  "value": "Service ports: table and testing",
+  "id": "service-ports-table-and-testing",
+  "level": 3
+}, {
   "value": "Security",
   "id": "security",
   "level": 3
@@ -331,7 +335,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Version:"
-      }), " 1.3 | ", (0,jsx_runtime.jsx)(_components.strong, {
+      }), " 1.4 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Date:"
       }), " 2026-10-18 | ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "Related:"
@@ -1099,7 +1103,221 @@ function _createMdxContent(props) {
         children: "DROP"
       }), ", the port is being dropped by ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "the network in front of the server"
-      }), " (campus or hosting firewall) and its administrator has to open it. Non-standard ports (e.g. 1805) are often filtered this way, 80 and 443 usually are not."]
+      }), " (campus or hosting firewall) and its administrator has to open it. Non-standard ports (e.g. 1805) are often filtered this way, 80 and 443 usually are not. A hosting often allows only selected ports or a range (in our case 8000–10000), so choose the PCS HTTPS port from the allowed range (e.g. 8443), not 1805."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "service-ports-table-and-testing",
+      children: "Service ports: table and testing"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "When deploying on a server that also hosts other services, write the ports down in one table (also for the request to the network administrator and as a basis for next year):"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
+      children: [(0,jsx_runtime.jsx)(_components.thead, {
+        children: (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.th, {
+            children: "Port"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Direction"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Service"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Purpose"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "From outside"
+          })]
+        })
+      }), (0,jsx_runtime.jsxs)(_components.tbody, {
+        children: [(0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "80"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "inbound"
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["Pro Cloud Server (HTTP, ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "Model"
+            }), " authentication)"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EA cloud connection, certificate validation"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "443"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "inbound"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "another web application (HTTPS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "web application"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3389"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "inbound"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "RDP"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "remote administration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8000"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "inbound"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernaro AI Hub (AI)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "AI for students"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8001"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "inbound"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernaro AI Hub (Sync)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "document processing"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8002"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "inbound"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Kernaro AI Hub (management)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hub administration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "yes (admin only)"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8443"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "inbound"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pro Cloud Server (HTTPS)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "encrypted EA cloud connection"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "yes"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "5432"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "server only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PostgreSQL"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Hub database"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "no"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "805"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "server only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "MariaDB"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "model databases"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "no"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "8090"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "server only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "EA GraphLink"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "service for the Hub"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "no"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "1803"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "server only"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "Pro Cloud Server (configuration)"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "PCS administration"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "no"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: "3306, 80, 443"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "outbound"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "databases at the hosting, internet"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "models, certificates, updates"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "n/a"
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Two layers must allow a port:"
+      }), " Windows Firewall on the server and, possibly, a firewall or ", (0,jsx_runtime.jsx)(_components.em, {
+        children: "security group"
+      }), " of the hosting in front of it. The Windows Firewall log only shows what it dropped itself. A ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "DROP"
+      }), " in the log means Windows Firewall is the culprit; if the log is empty and the connection times out, the network in front of the server drops the port and its administrator has to allow it. Send the administrator the list of ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "ports you actually need"
+      }), " (not a whole range) and remove broad temporary rules after testing."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "How to test a port properly from outside."
+      }), " From another computer: ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "nc -vz -w 5 <host> <port>"
+      }), "."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "succeeded"
+        }), " — the path is open and something listens on the port."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: "Operation timed out"
+        }), " — nobody acknowledged the packets."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Careful: on a port where ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "nothing listens"
+      }), " on the server, Windows often does not answer at all, so you get ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Operation timed out"
+      }), " even when everything is allowed (and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "Connection refused"
+      }), " never arrives). Test a closed port with a temporary listener on the server:"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-powershell",
+        children: "$l = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Any, 9000); $l.Start()\n# test from the other computer: nc -vz -w 5 <host> 9000\n$l.Stop()\n"
+      })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["If ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "nc"
+      }), " reports ", (0,jsx_runtime.jsx)(_components.code, {
+        children: "succeeded"
+      }), ", the path is open. Do not close the PowerShell window during the test."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
       id: "security",
       children: "Security"

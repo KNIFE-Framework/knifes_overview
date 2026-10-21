@@ -139,7 +139,7 @@ fm_reserved2: ""
 > **Level:** Intermediate
 > **Tags:** `kernaro` `ea` `ai-hub` `licensing` `windows-server` `postgresql` `pgvector`
 
-**Version:** 1.3 | **Date:** 2026-10-18 | **Related:** [K000104 – SPARX AI Kernaro in SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
+**Version:** 1.4 | **Date:** 2026-10-18 | **Related:** [K000104 – SPARX AI Kernaro in SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
 
 ## 🎯 What it solves (purpose, goal)
 
@@ -346,7 +346,40 @@ If Sparx Pro Cloud Server (EA cloud connection) runs on the same server, its HTT
 
 **Connecting in EA (Cloud Connection):** the protocol must match the port — `http` for HTTP ports, `https` for the HTTPS port. Switching the protocol in the dialog **overwrites the port automatically** (e.g. to 80), so check the port after every change. Enter the server as the **name from the certificate**, not an IP. The model name must match the alias in *Database Managers* exactly; otherwise you get `There is no database manager configured for the requested repository`. A port with `Model` authentication triggers two sign-in prompts after connecting (HTTP and EA).
 
-**Error `12029`** ("The attempt to connect to the server failed") means the connection failed at the TCP/TLS level. If the URL works in a browser on the server but not from another computer, and Windows Firewall's log shows no `DROP`, the port is being dropped by **the network in front of the server** (campus or hosting firewall) and its administrator has to open it. Non-standard ports (e.g. 1805) are often filtered this way, 80 and 443 usually are not.
+**Error `12029`** ("The attempt to connect to the server failed") means the connection failed at the TCP/TLS level. If the URL works in a browser on the server but not from another computer, and Windows Firewall's log shows no `DROP`, the port is being dropped by **the network in front of the server** (campus or hosting firewall) and its administrator has to open it. Non-standard ports (e.g. 1805) are often filtered this way, 80 and 443 usually are not. A hosting often allows only selected ports or a range (in our case 8000–10000), so choose the PCS HTTPS port from the allowed range (e.g. 8443), not 1805.
+
+### Service ports: table and testing
+
+When deploying on a server that also hosts other services, write the ports down in one table (also for the request to the network administrator and as a basis for next year):
+
+| Port | Direction | Service | Purpose | From outside |
+|---|---|---|---|---|
+| 80 | inbound | Pro Cloud Server (HTTP, `Model` authentication) | EA cloud connection, certificate validation | yes |
+| 443 | inbound | another web application (HTTPS) | web application | yes |
+| 3389 | inbound | RDP | remote administration | yes |
+| 8000 | inbound | Kernaro AI Hub (AI) | AI for students | yes |
+| 8001 | inbound | Kernaro AI Hub (Sync) | document processing | yes |
+| 8002 | inbound | Kernaro AI Hub (management) | Hub administration | yes (admin only) |
+| 8443 | inbound | Pro Cloud Server (HTTPS) | encrypted EA cloud connection | yes |
+| 5432 | server only | PostgreSQL | Hub database | no |
+| 805 | server only | MariaDB | model databases | no |
+| 8090 | server only | EA GraphLink | service for the Hub | no |
+| 1803 | server only | Pro Cloud Server (configuration) | PCS administration | no |
+| 3306, 80, 443 | outbound | databases at the hosting, internet | models, certificates, updates | n/a |
+
+**Two layers must allow a port:** Windows Firewall on the server and, possibly, a firewall or *security group* of the hosting in front of it. The Windows Firewall log only shows what it dropped itself. A `DROP` in the log means Windows Firewall is the culprit; if the log is empty and the connection times out, the network in front of the server drops the port and its administrator has to allow it. Send the administrator the list of **ports you actually need** (not a whole range) and remove broad temporary rules after testing.
+
+**How to test a port properly from outside.** From another computer: `nc -vz -w 5 <host> <port>`.
+- `succeeded` — the path is open and something listens on the port.
+- `Operation timed out` — nobody acknowledged the packets.
+
+Careful: on a port where **nothing listens** on the server, Windows often does not answer at all, so you get `Operation timed out` even when everything is allowed (and `Connection refused` never arrives). Test a closed port with a temporary listener on the server:
+```powershell
+$l = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Any, 9000); $l.Start()
+# test from the other computer: nc -vz -w 5 <host> 9000
+$l.Stop()
+```
+If `nc` reports `succeeded`, the path is open. Do not close the PowerShell window during the test.
 
 ### Security
 

@@ -139,7 +139,7 @@ fm_reserved2: ""
 > **Úroveň:** Intermediate
 > **Tagy:** `kernaro` `ea` `ai-hub` `licencovanie` `windows-server` `postgresql` `pgvector`
 
-**Verzia:** 1.3 | **Dátum:** 2026-10-18 | **Súvisí s:** [K000104 – SPARX AI Kernaro v SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
+**Verzia:** 1.4 | **Dátum:** 2026-10-18 | **Súvisí s:** [K000104 – SPARX AI Kernaro v SDLC](../K000104-SPARX_AI_KERNARO_IN_SDLC/index.md)
 
 ## 🎯 Čo rieši (účel, cieľ)
 
@@ -346,7 +346,40 @@ Ak na rovnakom serveri beží Sparx Pro Cloud Server (EA cloud pripojenie), jeho
 
 **Pripojenie v EA (Cloud Connection):** protokol musí zodpovedať portu — `http` pre HTTP porty, `https` pre HTTPS port. Prepnutie protokolu v dialógu **automaticky prepíše port** (napr. na 80), preto port skontroluj po každej zmene. Server zadaj ako **názov z certifikátu**, nie IP. Názov modelu musí presne zodpovedať aliasu v *Database Managers*; inak vráti `There is no database manager configured for the requested repository`. Port s autentifikáciou `Model` vyvolá po pripojení dve prihlasovacie okná (HTTP a EA).
 
-**Chyba `12029`** ("The attempt to connect to the server failed") znamená, že sa spojenie neviedlo ani na TCP/TLS úrovni. Ak URL v prehliadači na serveri funguje, ale z iného počítača nie, a v logu Windows firewallu nie sú žiadne `DROP`, port zahadzuje **sieť pred serverom** (školský alebo hostingový firewall) a treba požiadať jej správcu o povolenie portu. Neštandardné porty (napr. 1805) sa takto filtrujú často, 80 a 443 zvyčajne nie.
+**Chyba `12029`** ("The attempt to connect to the server failed") znamená, že sa spojenie neviedlo ani na TCP/TLS úrovni. Ak URL v prehliadači na serveri funguje, ale z iného počítača nie, a v logu Windows firewallu nie sú žiadne `DROP`, port zahadzuje **sieť pred serverom** (školský alebo hostingový firewall) a treba požiadať jej správcu o povolenie portu. Neštandardné porty (napr. 1805) sa takto filtrujú často, 80 a 443 zvyčajne nie. Hosting často povoľuje len vybrané porty alebo ich rozsah (u nás 8000–10000), preto pre HTTPS PCS zvoľ port z povoleného rozsahu (napr. 8443), nie 1805.
+
+### Porty služieb: tabuľka a testovanie
+
+Pri nasadení na serveri, ktorý hosťuje aj iné služby, si porty zapíš do jednej tabuľky (aj kvôli žiadosti správcovi siete a ako podklad na budúci rok):
+
+| Port | Smer | Služba | Účel | Zvonku |
+|---|---|---|---|---|
+| 80 | príchodzí | Pro Cloud Server (HTTP, autentifikácia `Model`) | EA cloud pripojenie, overenie certifikátu | áno |
+| 443 | príchodzí | iná webová aplikácia (HTTPS) | webová aplikácia | áno |
+| 3389 | príchodzí | RDP | vzdialená správa | áno |
+| 8000 | príchodzí | Kernaro AI Hub (AI) | AI pre študentov | áno |
+| 8001 | príchodzí | Kernaro AI Hub (Sync) | spracovanie dokumentov | áno |
+| 8002 | príchodzí | Kernaro AI Hub (správa) | administrácia Hubu | áno (len správca) |
+| 8443 | príchodzí | Pro Cloud Server (HTTPS) | EA cloud pripojenie šifrovane | áno |
+| 5432 | len server | PostgreSQL | databáza Hubu | nie |
+| 805 | len server | MariaDB | databázy modelov | nie |
+| 8090 | len server | EA GraphLink | služba pre Hub | nie |
+| 1803 | len server | Pro Cloud Server (konfigurácia) | správa PCS | nie |
+| 3306, 80, 443 | odchádzajúci | databázy na hostingu, internet | modely, certifikáty, aktualizácie | netýka sa |
+
+**Porty musia povoliť dve vrstvy:** Windows firewall na serveri a prípadne firewall alebo *security group* hostingu pred ním. Log Windows firewallu ukáže len to, čo zahodil on sám. Ak je v logu `DROP`, vinník je Windows firewall; ak v ňom nič nie je a spojenie vyprší, port zahadzuje sieť pred serverom a správca siete ho musí povoliť. Správcovi pošli zoznam **skutočne potrebných** portov (nie celý rozsah) a široké dočasné pravidlá po testoch zruš.
+
+**Ako správne otestovať port zvonku.** Z iného počítača: `nc -vz -w 5 <host> <port>`.
+- `succeeded` — cesta je otvorená a na porte niečo počúva.
+- `Operation timed out` — pakety nikto nepotvrdil.
+
+Pozor: pri porte, na ktorom na serveri **nič nepočúva**, Windows často neodpovie vôbec, takže dostaneš `Operation timed out` aj vtedy, keď je všetko povolené (a `Connection refused` neprichádza). Preto zatvorený port otestuj dočasným prijímačom na serveri:
+```powershell
+$l = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Any, 9000); $l.Start()
+# test z druhého počítača: nc -vz -w 5 <host> 9000
+$l.Stop()
+```
+Ak `nc` hlási `succeeded`, cesta je otvorená. Okno PowerShellu pri teste nezatváraj.
 
 ### Bezpečnosť
 

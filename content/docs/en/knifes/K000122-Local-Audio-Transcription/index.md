@@ -161,6 +161,21 @@ Different kinds of recording (voice message, lecture, workshop, meeting, dictaph
 
 The steps are verified on an Apple Silicon (arm64) Mac. You do not need Homebrew.
 
+### Fastest: one script
+
+Download the script `tools/prepis.sh` (it sits in this KNIFE's folder) and run it. On first run it installs everything it needs.
+
+```bash
+curl -O https://raw.githubusercontent.com/KNIFE-Framework/knifes_overview/main/content/docs/en/knifes/K000122-Local-Audio-Transcription/tools/prepis.sh
+chmod +x prepis.sh
+./prepis.sh en "lecture.m4a"          # English transcript
+./prepis.sh sk "voice.opus"           # Slovak transcript
+```
+
+The result lands in a `prepis/` subfolder next to the recording. Optionally add `GLOSSARY="names, terms"` to help Whisper recognise names. To see what the script does, or to run it in parts, follow steps 1 to 4 below.
+
+> ℹ️ The `curl` link starts working once this KNIFE is published on GitHub. Until then copy `prepis.sh` from the local repository.
+
 ### 1. Get the file
 
 A WhatsApp voice message is an `.opus` file. In WhatsApp Desktop right-click and choose *Save as*. From a phone, send it to yourself by AirDrop or e-mail.
@@ -216,12 +231,37 @@ In practice accuracy was around **90 %** on Slovak voice messages with weak audi
 - **Privacy.** The internet is needed only once, to download the packages and the model. The transcription itself runs offline.
 - **Other platforms.** The `mlx-whisper` route works only on Apple Silicon Macs. On Windows or Linux use `faster-whisper` or `whisper.cpp`; the flow is the same.
 
+## 🤖 Fully automatic with a local AI (design)
+
+Transcription is only the first step. The second step lets a **local AI** turn the text into a summary, chapters with time and a list of action items, with nothing leaving the computer.
+
+![Full context: VS Code, Claude Code and the local Whisper plus AI chain](./img/local-ai-automation-flow.svg)
+
+**Who does what.** VS Code runs the Claude Code extension. The cloud Claude model helps write and run the script. The recording itself is then processed by local tools: Whisper for the transcript and a model in Ollama for the summary. Once the chain is set up, Claude is no longer needed.
+
+**What is verified and what is not.** The transcription step (`prepis.sh` without a summary) is verified. The local AI summary (`SUMMARY=1`), folder watching and the name glossary are a design. The script is ready, but I did not test a local model. Slovak quality of small models in particular must be tried.
+
+How to try it:
+
+```bash
+# 1. Install Ollama (https://ollama.com) and pull a model, a few GB
+ollama pull qwen2.5:7b
+
+# 2. Transcript and summary in one command
+SUMMARY=1 GLOSSARY="Kazicka, KNIFE, BaZi" ./prepis.sh en "lecture.m4a"
+```
+
+The summary is saved as `prepis/<name>.summary.md`. The model receives the `.srt`, so chapters and action items carry a time from the start of the recording.
+
+> ⚠️ **Privacy.** Claude Code uses a cloud model. It sees your prompts and everything Claude reads, including terminal output and files. If the recording is confidential, run the script yourself in a terminal and do not ask Claude to read the transcript. Then not even the text leaves your computer.
+
 ## ✅ Value / Summary
 
 - A recording becomes text with the exact position in the original, without the cloud.
 - One flow covers voice messages, lectures, workshops and meetings.
 - Timestamps let a KNIFE link to a specific minute of the recording.
 - The result needs a read-through, especially names and technical terms.
+- Optionally a local AI turns the recording into a summary, chapters and action items with time (design).
 
 ## Sources
 

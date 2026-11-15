@@ -161,6 +161,21 @@ Rôzne druhy nahrávok (hlasovka, prednáška, cvičenie, porada, diktafón) sú
 
 Postup je overený na Macu s Apple Silicon (arm64). Nainštalovaný Homebrew nepotrebuješ.
 
+### Najrýchlejšie: jeden skript
+
+Stiahni skript `tools/prepis.sh` (je v priečinku tohto KNIFE) a spusti ho. Pri prvom spustení si sám nainštaluje všetko, čo potrebuje.
+
+```bash
+curl -O https://raw.githubusercontent.com/KNIFE-Framework/knifes_overview/main/content/docs/sk/knifes/K000122-Local-Audio-Transcription/tools/prepis.sh
+chmod +x prepis.sh
+./prepis.sh sk "hlasovka.opus"        # slovenský prepis
+./prepis.sh en "lecture.m4a"          # anglický prepis
+```
+
+Výsledok nájdeš v podpriečinku `prepis/` vedľa nahrávky. Voliteľne pridaj `GLOSSARY="mená, pojmy"` pre lepšie rozpoznanie mien. Ak chceš vedieť, čo skript robí, alebo ho chceš spustiť po častiach, sú nižšie kroky 1 až 4.
+
+> ℹ️ Odkaz na `curl` začne fungovať po zverejnení tohto KNIFE na GitHube. Do tej doby skopíruj `prepis.sh` z lokálneho repozitára.
+
 ### 1. Získaj súbor
 
 WhatsApp hlasovka je súbor `.opus`. Vo WhatsApp Desktop použi pravý klik a *Uložiť ako*. Z mobilu si ju pošli cez AirDrop alebo e-mail.
@@ -216,12 +231,37 @@ V praxi bola presnosť zhruba **90 %** na slovenských hlasovkách so slabším 
 - **Súkromie.** Internet treba len na jednorazové stiahnutie balíkov a modelu. Samotný prepis beží offline.
 - **Iné platformy.** Postup s `mlx-whisper` platí len pre Mac s Apple Silicon. Na Windows alebo Linuxe použi `faster-whisper` alebo `whisper.cpp`, princíp toku zostáva rovnaký.
 
+## 🤖 Plne automaticky s lokálnou AI (návrh)
+
+Prepis je len prvý krok. Druhý krok je nechať **lokálnu AI** z textu urobiť zhrnutie, kapitoly s časom a zoznam úloh. Pritom nič neopustí počítač.
+
+![Celý kontext: VS Code, Claude Code a lokálny reťazec Whisper plus AI](./img/local-ai-automation-flow.svg)
+
+**Kto čo robí.** Vo VS Code beží rozšírenie Claude Code. Cloudový model Claude pomôže skript napísať a spustiť. Samotné spracovanie nahrávky potom robia lokálne nástroje: Whisper na prepis a model v Ollame na zhrnutie. Raz nastavený reťazec už Claude nepotrebuje.
+
+**Čo je overené a čo nie.** Overený je krok prepisu (`prepis.sh` bez zhrnutia). Zhrnutie lokálnou AI (`SUMMARY=1`), sledovanie priečinka a glosár mien sú návrh. Skript je pripravený, ale lokálny model som netestoval. Najmä kvalita slovenčiny malých modelov sa musí vyskúšať.
+
+Ako to skúsiť:
+
+```bash
+# 1. Nainštaluj Ollamu (https://ollama.com) a stiahni model, niekoľko GB
+ollama pull qwen2.5:7b
+
+# 2. Prepis a zhrnutie jedným príkazom
+SUMMARY=1 GLOSSARY="Kazicka, KNIFE, BaZi" ./prepis.sh sk "hlasovka.opus"
+```
+
+Zhrnutie sa uloží ako `prepis/<nazov>.summary.md`. Model dostane `.srt`, takže kapitoly a úlohy majú čas od začiatku nahrávky.
+
+> ⚠️ **Súkromie.** Claude Code používa cloudový model. Vidí pokyny a všetko, čo Claude prečíta, vrátane výpisov z terminálu a súborov. Ak je nahrávka dôverná, spusti skript sám v termináli a nenechaj Claude čítať prepis. Potom neopustí počítač ani text.
+
 ## ✅ Hodnota / Zhrnutie
 
 - Z nahrávky vznikne text aj s presným miestom v origináli, bez cloudu.
 - Jeden tok pokrýva hlasovky, prednášky, cvičenia aj porady.
 - Časové značky umožňujú v KNIFE odkazovať na konkrétnu minútu záznamu.
 - Výsledok treba po prečítaní opraviť, najmä mená a odborné pojmy.
+- Voliteľne lokálna AI urobí zo záznamu zhrnutie, kapitoly a úlohy s časom (návrh).
 
 ## Zdroje
 

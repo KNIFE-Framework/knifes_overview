@@ -210,6 +210,10 @@ const toc = [{
   "id": "-easiest-just-tell-claude-no-it-skills",
   "level": 2
 }, {
+  "value": "One-time setup (the only complication)",
+  "id": "one-time-setup-the-only-complication",
+  "level": 3
+}, {
   "value": "🧩 How it solves it (principle)",
   "id": "-how-it-solves-it-principle",
   "level": 2
@@ -320,6 +324,12 @@ function _createMdxContent(props) {
         id: "local-audio-transcription-and-ai-on-top",
         children: "Local audio transcription and AI on top"
       })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Fastest:"
+        }), " if you have VS Code and the Claude Code extension, tell Claude where the recordings are. It does the rest for you. This is way C below and it is how the transcripts in this KNIFE were made."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-what-it-solves-purpose-goal",
       children: "🎯 What it solves (purpose, goal)"
@@ -345,6 +355,8 @@ function _createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {}), (0,jsx_runtime.jsx)(_components.th, {
+            children: "C  Tell Claude"
+          }), (0,jsx_runtime.jsx)(_components.th, {
             children: "A  Transcript"
           }), (0,jsx_runtime.jsx)(_components.th, {
             children: "B  Transcript plus local AI"
@@ -355,6 +367,8 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "You want"
           }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "to say only where the files are"
+          }), (0,jsx_runtime.jsx)(_components.td, {
             children: "text and its place in the original"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "to grasp the content fast"
@@ -362,6 +376,8 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Output"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "as in A or B"
           }), (0,jsx_runtime.jsxs)(_components.td, {
             children: [(0,jsx_runtime.jsx)(_components.code, {
               children: ".txt"
@@ -377,6 +393,8 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Tools"
           }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VS Code and Claude Code"
+          }), (0,jsx_runtime.jsx)(_components.td, {
             children: "mlx-whisper"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "mlx-whisper and Ollama"
@@ -384,6 +402,8 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Effort"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "one-time Claude Code setup"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "a few minutes, about 1.5 GB"
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -393,6 +413,8 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Status"
           }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "verified, this is how it was made"
+          }), (0,jsx_runtime.jsx)(_components.td, {
             children: "verified"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "AI step is a design, unverified"
@@ -400,6 +422,8 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Fits"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "colleagues without IT skills"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "an occasional voice message"
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -449,6 +473,26 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "This is how the transcripts behind this KNIFE were made. All it took was telling Claude where the files were, and finished outputs came back. Two more voice messages that arrived later were transcribed the same way."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "one-time-setup-the-only-complication",
+      children: "One-time setup (the only complication)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "You do this once. After that you only write to Claude."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Install ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://code.visualstudio.com",
+          children: "Visual Studio Code"
+        }), " (free)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["In VS Code open the Extensions panel (the squares icon on the left bar), search for ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Claude Code"
+        }), " and install the extension from Anthropic."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Sign in with your Claude account. Claude Code needs an account with access, for example a Claude subscription or an Anthropic Console account, under Anthropic's current terms."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Open the folder with the recordings (File, Open Folder) and open the Claude Code panel."
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "What it needs."
@@ -579,7 +623,9 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.th, {
             children: "File"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Use"
+            children: "What it contains"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "What you use it for"
           })]
         })
       }), (0,jsx_runtime.jsxs)(_components.tbody, {
@@ -589,19 +635,33 @@ function _createMdxContent(props) {
               children: ".txt"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "plain text for reading and pasting"
+            children: "plain text without times"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "reading, copying into an e-mail or document"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsxs)(_components.td, {
-            children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
               children: ".srt"
-            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
-              children: ".vtt"
-            })]
+            })
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["subtitles: index, time ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ["text in segments with times, for example ", (0,jsx_runtime.jsx)(_components.code, {
               children: "00:01:04,420 --> 00:01:07,240"
-            }), ", text"]
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "find in which minute something was said, subtitles for video"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: ".vtt"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["the same as ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".srt"
+            }), ", written for the web"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "subtitles for web video"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -609,7 +669,9 @@ function _createMdxContent(props) {
               children: ".tsv"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "table: start, end (in ms), text"
+            children: "table: start and end in milliseconds, text"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "open in Excel or LibreOffice, filter and sort"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -617,10 +679,18 @@ function _createMdxContent(props) {
               children: ".json"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "text, segments and times for further processing"
+            children: "the full Whisper output: text, segments, times and technical data"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "further processing in code, for example by AI"
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Usually ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".txt"
+      }), " is enough for reading, and ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".srt"
+      }), " when you need times. All files are the same transcript in different notation and carry the same name as the recording with a different extension."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["All times are ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "from the start of the file"
@@ -643,9 +713,9 @@ function _createMdxContent(props) {
           children: "File names with dots in the time."
         }), " WhatsApp files are named like ", (0,jsx_runtime.jsx)(_components.code, {
           children: "WhatsApp Audio 2026-11-15 at 09.51.17.opus"
-        }), ". When run over several files at once, the outputs overwrote each other into one file. Run the program one file at a time and set your own ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "--output-name"
-        }), "."]
+        }), ". When run over several files at once, the outputs overwrote each other into one file. Run the program one file at a time. The ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "prepis.sh"
+        }), " script does this itself and names the outputs like the input, with a different extension."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Language."

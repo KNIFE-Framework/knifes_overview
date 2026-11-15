@@ -105,6 +105,10 @@ const toc = [{
   "id": "-najjednoduchšie-povedz-to-claudovi-bez-znalosti-it",
   "level": 2
 }, {
+  "value": "Jednorazové nastavenie (jediná komplikácia)",
+  "id": "jednorazové-nastavenie-jediná-komplikácia",
+  "level": 3
+}, {
   "value": "🧩 Ako to rieši (princíp)",
   "id": "-ako-to-rieši-princíp",
   "level": 2
@@ -215,6 +219,12 @@ function _createMdxContent(props) {
         id: "lokálny-prepis-zvuku-a-ai-nad-ním",
         children: "Lokálny prepis zvuku a AI nad ním"
       })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "Najrýchlejšie:"
+        }), " ak máš VS Code a rozšírenie Claude Code, povedz Claudovi, kde sú nahrávky. Zvyšok urobí za teba. Je to cesta C nižšie a takto vznikli aj prepisy v tomto KNIFE."]
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-čo-rieši-účel-cieľ",
       children: "🎯 Čo rieši (účel, cieľ)"
@@ -240,6 +250,8 @@ function _createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
         children: (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.th, {}), (0,jsx_runtime.jsx)(_components.th, {
+            children: "C  Povieš to Claudovi"
+          }), (0,jsx_runtime.jsx)(_components.th, {
             children: "A  Prepis"
           }), (0,jsx_runtime.jsx)(_components.th, {
             children: "B  Prepis a lokálna AI"
@@ -250,6 +262,8 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Chceš"
           }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "len povedať, kde sú súbory"
+          }), (0,jsx_runtime.jsx)(_components.td, {
             children: "text a miesto v origináli"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "pochopiť obsah rýchlo"
@@ -257,6 +271,8 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Výstup"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ako pri A alebo B"
           }), (0,jsx_runtime.jsxs)(_components.td, {
             children: [(0,jsx_runtime.jsx)(_components.code, {
               children: ".txt"
@@ -272,6 +288,8 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Nástroje"
           }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "VS Code a Claude Code"
+          }), (0,jsx_runtime.jsx)(_components.td, {
             children: "mlx-whisper"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "mlx-whisper a Ollama"
@@ -279,6 +297,8 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Náročnosť"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "jednorazové nastavenie Claude Code"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "pár minút, asi 1,5 GB"
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -288,6 +308,8 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Stav"
           }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "overené, takto to vzniklo"
+          }), (0,jsx_runtime.jsx)(_components.td, {
             children: "overené"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "AI krok je návrh, neoverený"
@@ -295,6 +317,8 @@ function _createMdxContent(props) {
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
             children: "Hodí sa"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "kolegovia bez IT"
           }), (0,jsx_runtime.jsx)(_components.td, {
             children: "občasná hlasovka"
           }), (0,jsx_runtime.jsx)(_components.td, {
@@ -344,6 +368,26 @@ function _createMdxContent(props) {
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "Takto vznikli prepisy, na ktorých tento KNIFE stojí. Stačilo povedať Claudovi, kde sú súbory, a prišli hotové výstupy. Rovnako sa potom prepísali ďalšie dve hlasovky, ktoré pribudli neskôr."
+    }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
+      id: "jednorazové-nastavenie-jediná-komplikácia",
+      children: "Jednorazové nastavenie (jediná komplikácia)"
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Toto robíš raz. Potom už len píšeš Claudovi."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Nainštaluj ", (0,jsx_runtime.jsx)(_components.a, {
+          href: "https://code.visualstudio.com",
+          children: "Visual Studio Code"
+        }), " (zadarmo)."]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Vo VS Code otvor panel Extensions (štvorček na ľavej lište), vyhľadaj ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Claude Code"
+        }), " a nainštaluj rozšírenie od Anthropic."]
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Prihlás sa účtom Claude. Claude Code vyžaduje účet s prístupom, napríklad predplatné Claude alebo účet Anthropic Console, podľa aktuálnych podmienok Anthropic."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Otvor priečinok s nahrávkami (File, Open Folder) a otvor panel Claude Code."
+      }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: "Čo to potrebuje."
@@ -474,7 +518,9 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)(_components.th, {
             children: "Súbor"
           }), (0,jsx_runtime.jsx)(_components.th, {
-            children: "Na čo je"
+            children: "Čo obsahuje"
+          }), (0,jsx_runtime.jsx)(_components.th, {
+            children: "Na čo ho použiješ"
           })]
         })
       }), (0,jsx_runtime.jsxs)(_components.tbody, {
@@ -484,19 +530,33 @@ function _createMdxContent(props) {
               children: ".txt"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "čistý text na čítanie a vkladanie"
+            children: "čistý text bez časov"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "čítanie, kopírovanie do e-mailu alebo dokumentu"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
-          children: [(0,jsx_runtime.jsxs)(_components.td, {
-            children: [(0,jsx_runtime.jsx)(_components.code, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
               children: ".srt"
-            }), ", ", (0,jsx_runtime.jsx)(_components.code, {
-              children: ".vtt"
-            })]
+            })
           }), (0,jsx_runtime.jsxs)(_components.td, {
-            children: ["titulky: číslo, čas ", (0,jsx_runtime.jsx)(_components.code, {
+            children: ["text po úsekoch s časmi, napríklad ", (0,jsx_runtime.jsx)(_components.code, {
               children: "00:01:04,420 --> 00:01:07,240"
-            }), ", text"]
+            })]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "zistíš, v ktorej minúte čo odznelo, titulky k videu"
+          })]
+        }), (0,jsx_runtime.jsxs)(_components.tr, {
+          children: [(0,jsx_runtime.jsx)(_components.td, {
+            children: (0,jsx_runtime.jsx)(_components.code, {
+              children: ".vtt"
+            })
+          }), (0,jsx_runtime.jsxs)(_components.td, {
+            children: ["to isté ako ", (0,jsx_runtime.jsx)(_components.code, {
+              children: ".srt"
+            }), ", zápis pre web"]
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "titulky videa na webe"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -504,7 +564,9 @@ function _createMdxContent(props) {
               children: ".tsv"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "tabuľka: začiatok, koniec (v ms), text"
+            children: "tabuľka: začiatok a koniec v milisekundách, text"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "otvoríš v Exceli alebo LibreOffice, filtrovanie a triedenie"
           })]
         }), (0,jsx_runtime.jsxs)(_components.tr, {
           children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -512,10 +574,18 @@ function _createMdxContent(props) {
               children: ".json"
             })
           }), (0,jsx_runtime.jsx)(_components.td, {
-            children: "text, segmenty a časy pre ďalšie spracovanie"
+            children: "úplný výstup Whisperu: text, segmenty, časy a technické údaje"
+          }), (0,jsx_runtime.jsx)(_components.td, {
+            children: "ďalšie programové spracovanie, napríklad AI"
           })]
         })]
       })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Bežne ti stačí ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".txt"
+      }), " na čítanie a ", (0,jsx_runtime.jsx)(_components.code, {
+        children: ".srt"
+      }), ", keď potrebuješ časy. Všetky súbory sú ten istý prepis v rôznom zápise a majú rovnaký názov ako nahrávka, len inú príponu."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["Všetky časy sú ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "od začiatku súboru"
@@ -538,9 +608,9 @@ function _createMdxContent(props) {
           children: "Mená súborov s bodkami v čase."
         }), " WhatsApp súbory majú názov ako ", (0,jsx_runtime.jsx)(_components.code, {
           children: "WhatsApp Audio 2026-11-15 at 09.51.17.opus"
-        }), ". Pri spustení nad viacerými súbormi naraz sa výstupy prepísali do jedného súboru. Spúšťaj program po jednom súbore a zadaj vlastný ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "--output-name"
-        }), "."]
+        }), ". Pri spustení nad viacerými súbormi naraz sa výstupy prepísali do jedného súboru. Spúšťaj program po jednom súbore. Skript ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "prepis.sh"
+        }), " to robí sám a výstupy pomenuje rovnako ako vstup, len s inou príponou."]
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "Jazyk."

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" role="img" aria-label="Two use cases over one chain on your own computer. A: a recording is transcribed by local mlx-whisper into text with times. B: a local AI in Ollama turns that same text into a summary, chapters and action items with time. B builds on A. No cloud is used.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 484" width="1000" height="484" role="img" aria-label="Two use cases over one chain on your own computer. A: a recording is transcribed by local mlx-whisper into text with times. B: a local AI in Ollama turns that same text into a summary, chapters and action items with time. B builds on A. No cloud is used.">
 <style>
 text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;font-size:13px;fill:#1c2624}
 .tb{font-weight:600}.ts{font-size:12px;fill:#5d6b67}
@@ -15,9 +15,12 @@ text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;font-size:13px;fill:
 .acc{fill:#0b6e63}
 </style>
 <defs><marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="acc"/></marker></defs>
-<rect width="1000" height="440" fill="#f8faf9"/>
+<rect width="1000" height="484" fill="#f8faf9"/>
 <rect class="gray" x="640" y="12" width="340" height="52" rx="26"/><text class="ts" x="662" y="34">Cloud AI, online transcription</text><text class="ts" x="662" y="52" style="font-size:11px">over the recording: not used</text><path class="lng" d="M944 22 L968 54 M968 22 L944 54"/>
-<rect class="fence" x="20" y="76" width="960" height="344" rx="8"/><text class="tc" x="36" y="98">Your computer: recordings and texts stay here</text>
+<rect class="stage" x="36" y="12" width="560" height="64" rx="4"/><text class="tb" x="50" y="34">C  Easiest: just tell Claude</text><text class="ts" x="50" y="52">VS Code and the Claude Code extension, no IT skills</text><text class="ts" x="50" y="68" style="font-style:italic">“Transcribe the voice notes in this folder, locally.”</text>
+<path class="lna" d="M304 76 V166" marker-end="url(#arrA)"/><text class="ts" x="314" y="116">runs A and B for you</text>
+<g transform="translate(0,44)">
+<rect class="fence" x="20" y="76" width="960" height="344" rx="8"/><text class="tc" x="964" y="98" text-anchor="end">Your computer: recordings and texts stay here</text>
 <rect class="box" x="36" y="124" width="144" height="92" rx="4"/><text class="tb" x="48" y="150">Recording</text><text class="ts" x="48" y="174">voice message, lecture,</text><text class="ts" x="48" y="192">workshop, meeting</text>
 <rect class="stage" x="232" y="124" width="144" height="92" rx="4"/><text class="tb" x="244" y="150">mlx-whisper</text><text class="ts" x="244" y="174">speech to text</text><text class="ts" x="244" y="192">runs locally</text>
 <rect class="stage" x="428" y="124" width="144" height="92" rx="4"/><text class="tb" x="440" y="150">Timed text</text><text class="ts" x="440" y="174">.txt, .srt, .json</text><text class="ts" x="440" y="192">times from zero</text>
@@ -34,4 +37,5 @@ text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;font-size:13px;fill:
 <text class="tb" x="36" y="356">B  Transcript plus local AI</text><text class="ts" x="255" y="356">you want to grasp the content fast</text>
 <text class="ts" x="36" y="374" style="fill:#0b6e63">AI step is a design, unverified, heavier</text>
 <text class="ts" x="964" y="374" text-anchor="end" style="fill:#0b6e63">B builds on A</text>
+</g>
 </svg>

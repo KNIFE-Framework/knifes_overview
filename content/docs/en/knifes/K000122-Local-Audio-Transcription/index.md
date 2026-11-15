@@ -27,7 +27,7 @@ dao: "knife"
 title: "K000122 – Local audio transcription and AI on top, private and offline"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "Two use cases for recordings (voice message, lecture, workshop, meeting): A) transcript with timestamps via mlx-whisper, B) plus a local AI (Ollama) for summary, chapters and action items. Everything runs on your own computer."
+description: "Three ways to transcribe recordings locally, the easiest through Claude Code in VS Code (voice message, lecture, workshop, meeting): A) transcript with timestamps via mlx-whisper, B) plus a local AI (Ollama) for summary, chapters and action items. Everything runs on your own computer."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -57,7 +57,7 @@ priority: ""
 #   - účel: tutorial, guide, pattern, case-study
 #   - téma: git, backup, ai, communication
 #   - úroveň: beginner, intermediate, advanced
-tags: ["transcription","whisper","ollama","local-ai","offline","privacy","audio","mac"]
+tags: ["claude-code","transcription","whisper","ollama","local-ai","offline","privacy","audio","mac"]
 
 
 # 🌍 LOCALIZATION -----------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 > **KNIFE** – Knowledge In Friendly Examples
 > **Series:** Systemic Thinking in IT & Digital Fabrication
 > **Level:** Beginner
-> **Tags:** `transcription` `whisper` `ollama` `local-ai` `offline` `privacy` `audio` `mac`
+> **Tags:** `claude-code` `transcription` `whisper` `ollama` `local-ai` `offline` `privacy` `audio` `mac`
 
 # Local audio transcription and AI on top
 
@@ -145,11 +145,11 @@ A colleague sends a ten-minute WhatsApp voice message and you need it as text. P
 
 This KNIFE shows a workflow where neither the recording nor the text leaves your computer. The output is text plus **timestamps relative to the start of the recording**, so you can jump from the text back to the exact place in the original.
 
-### Two use cases
+### Two solutions and the easiest way
 
-By purpose there are two solutions. The second builds on the first.
+By purpose there are two solutions (A and B). The second builds on the first. The third way (C) is not another technology but a way to run both A and B without IT skills.
 
-![Two use cases: A transcript, B transcript plus local AI](./img/use-cases-overview.svg)
+![Three ways: C tell Claude, A transcript, B transcript plus local AI](./img/use-cases-overview.svg)
 
 | | A  Transcript | B  Transcript plus local AI |
 |---|---|---|
@@ -161,6 +161,26 @@ By purpose there are two solutions. The second builds on the first.
 | Fits | an occasional voice message | many or long recordings |
 
 Details: **solution A** is under "How it solves it" and "How to use it", **solution B** under "Solution B" below.
+
+## ⭐ Easiest: just tell Claude (no IT skills)
+
+This way is for people who do not want to install anything or use a terminal. You only need **Visual Studio Code** with the **Claude Code** extension. Claude does the rest for you: it installs the tools, transcribes the recordings and saves the outputs.
+
+1. Put the recordings in one folder on your computer.
+2. Open that folder in VS Code and start Claude Code.
+3. Tell Claude what you want. For example:
+
+> The voice notes from WhatsApp are in this folder. Transcribe them locally into text with timestamps, in English. Save the outputs in a subfolder called `prepis`. Do not upload anything to the internet.
+
+4. On first run Claude asks for permission to run commands. Allow them. Then you find the finished files (`.txt`, `.srt` and more) in the `prepis` subfolder.
+
+This is how the transcripts behind this KNIFE were made. All it took was telling Claude where the files were, and finished outputs came back. Two more voice messages that arrived later were transcribed the same way.
+
+**What it needs.** The first run needs internet to download the tools and the model (about 1.5 GB). The transcription itself is then done by Whisper on your computer and the audio file is not uploaded anywhere. It is verified on an Apple Silicon Mac. On another computer Claude will pick a different tool, but I did not try that.
+
+> ⚠️ **What Claude sees.** Claude is a cloud model. It sees your prompts, command output and any file it reads. It does not read audio, but if you let it read the transcript, the text reaches it. If the content is confidential, say: "Do not read the transcript, just tell me where it is saved."
+
+If you also want a summary, chapters and action items (solution B), tell Claude that too. That step is still a design.
 
 ## 🧩 How it solves it (principle)
 
@@ -276,7 +296,8 @@ The summary is saved as `prepis/<name>.summary.md`. The model receives the `.srt
 
 ## ✅ Value / Summary
 
-- A recording becomes text with the exact position in the original, without the cloud.
+- A colleague without IT skills can do the transcription alone: VS Code, the Claude Code extension and one sentence are enough.
+- A recording becomes text with the exact position in the original, and the audio is not uploaded to the cloud.
 - One flow covers voice messages, lectures, workshops and meetings.
 - Timestamps let a KNIFE link to a specific minute of the recording.
 - The result needs a read-through, especially names and technical terms.

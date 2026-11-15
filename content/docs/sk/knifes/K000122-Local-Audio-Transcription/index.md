@@ -27,7 +27,7 @@ dao: "knife"
 title: "K000122 – Lokálny prepis zvuku a AI nad ním, súkromne a offline"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "Dva prípady použitia nad nahrávkami (hlasovka, prednáška, cvičenie, porada): A) prepis na text s časovými značkami cez mlx-whisper, B) k tomu lokálna AI (Ollama) na zhrnutie, kapitoly a úlohy. Všetko beží na vlastnom počítači."
+description: "Tri cesty k lokálnemu prepisu nahrávok, najjednoduchšia cez Claude Code vo VS Code (hlasovka, prednáška, cvičenie, porada): A) prepis na text s časovými značkami cez mlx-whisper, B) k tomu lokálna AI (Ollama) na zhrnutie, kapitoly a úlohy. Všetko beží na vlastnom počítači."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -57,7 +57,7 @@ priority: ""
 #   - účel: tutorial, guide, pattern, case-study
 #   - téma: git, backup, ai, communication
 #   - úroveň: beginner, intermediate, advanced
-tags: ["transcription","whisper","ollama","local-ai","offline","privacy","audio","mac"]
+tags: ["claude-code","transcription","whisper","ollama","local-ai","offline","privacy","audio","mac"]
 
 
 # 🌍 LOCALIZATION -----------------------------------------------------
@@ -135,7 +135,7 @@ fm_reserved2: ""
 > **KNIFE** – Knowledge In Friendly Examples
 > **Séria:** Systemic Thinking in IT & Digital Fabrication
 > **Úroveň:** Beginner
-> **Tagy:** `transcription` `whisper` `ollama` `local-ai` `offline` `privacy` `audio` `mac`
+> **Tagy:** `claude-code` `transcription` `whisper` `ollama` `local-ai` `offline` `privacy` `audio` `mac`
 
 # Lokálny prepis zvuku a AI nad ním
 
@@ -145,11 +145,11 @@ Kolega pošle desaťminútovú hlasovku cez WhatsApp a ty ju potrebuješ ako tex
 
 Tento KNIFE ukazuje postup, pri ktorom nahrávka ani text neopustia tvoj počítač. Výstupom je text a k nemu **časové značky relatívne od začiatku nahrávky**. Z textu sa tak dá vrátiť na presné miesto v origináli.
 
-### Dva prípady použitia
+### Dve riešenia a najjednoduchšia cesta
 
-Podľa účelu ide o dve riešenia. Druhé stavia na prvom.
+Podľa účelu ide o dve riešenia (A a B). Druhé stavia na prvom. Tretia cesta (C) nie je ďalšia technológia, ale spôsob, ako A aj B spustiť bez znalosti IT.
 
-![Dva prípady použitia: A prepis, B prepis a lokálna AI](./img/use-cases-overview.svg)
+![Tri cesty: C povieš to Claudovi, A prepis, B prepis a lokálna AI](./img/use-cases-overview.svg)
 
 | | A  Prepis | B  Prepis a lokálna AI |
 |---|---|---|
@@ -161,6 +161,26 @@ Podľa účelu ide o dve riešenia. Druhé stavia na prvom.
 | Hodí sa | občasná hlasovka | veľa alebo dlhé nahrávky |
 
 Podrobnosti: **riešenie A** je v časti „Ako to rieši“ a „Ako to použiť“, **riešenie B** v časti „Riešenie B“ nižšie.
+
+## ⭐ Najjednoduchšie: povedz to Claudovi (bez znalosti IT)
+
+Táto cesta je pre ľudí, ktorí nechcú nič inštalovať ani ovládať terminál. Potrebuješ len **Visual Studio Code** s rozšírením **Claude Code**. Všetko ostatné urobí Claude za teba: nainštaluje nástroje, prepíše nahrávky a uloží výstupy.
+
+1. Daj nahrávky do jedného priečinka v počítači.
+2. Otvor ten priečinok vo VS Code a spusti Claude Code.
+3. Napíš Claudovi, čo chceš. Napríklad:
+
+> V tomto priečinku mám hlasovky z WhatsAppu. Prepíš ich lokálne na text s časovými značkami, po slovensky. Výstupy ulož do podpriečinka `prepis`. Nič nenahrávaj na internet.
+
+4. Claude sa pri prvom spustení opýta na povolenie spúšťať príkazy. Povoľ ich. Potom nájdeš v podpriečinku `prepis` hotové súbory (`.txt`, `.srt` a ďalšie).
+
+Takto vznikli prepisy, na ktorých tento KNIFE stojí. Stačilo povedať Claudovi, kde sú súbory, a prišli hotové výstupy. Rovnako sa potom prepísali ďalšie dve hlasovky, ktoré pribudli neskôr.
+
+**Čo to potrebuje.** Pri prvom spustení treba internet na stiahnutie nástrojov a modelu (asi 1,5 GB). Samotný prepis potom robí Whisper na tvojom počítači a zvukový súbor sa nikam nenahráva. Overené je to na Macu s Apple Silicon. Na inom počítači Claude zvolí iný nástroj, ale to som neskúšal.
+
+> ⚠️ **Čo vidí Claude.** Claude je cloudový model. Vidí tvoje pokyny, výpisy z príkazov a súbory, ktoré prečíta. Zvuk nečíta, ale ak mu dovolíš čítať prepis, text sa k nemu dostane. Ak je obsah dôverný, napíš: „Nečítaj prepis, len mi povedz, kde je uložený.“
+
+Ak chceš aj zhrnutie, kapitoly a úlohy (riešenie B), povedz to Claudovi tiež. Ten krok je zatiaľ návrh.
 
 ## 🧩 Ako to rieši (princíp)
 
@@ -276,7 +296,8 @@ Zhrnutie sa uloží ako `prepis/<nazov>.summary.md`. Model dostane `.srt`, takž
 
 ## ✅ Hodnota / Zhrnutie
 
-- Z nahrávky vznikne text aj s presným miestom v origináli, bez cloudu.
+- Kolega bez znalosti IT zvládne prepis sám: stačí VS Code, rozšírenie Claude Code a jedna veta.
+- Z nahrávky vznikne text aj s presným miestom v origináli, zvuk sa nenahráva do cloudu.
 - Jeden tok pokrýva hlasovky, prednášky, cvičenia aj porady.
 - Časové značky umožňujú v KNIFE odkazovať na konkrétnu minútu záznamu.
 - Výsledok treba po prečítaní opraviť, najmä mená a odborné pojmy.

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" role="img" aria-label="Dva prípady použitia nad jedným reťazcom na vlastnom počítači. A: nahrávka sa lokálnym mlx-whisper prepíše na text s časmi. B: ten istý text spracuje lokálna AI v Ollame na zhrnutie, kapitoly a úlohy s časom. B stavia na A. Cloud sa nepoužíva.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 484" width="1000" height="484" role="img" aria-label="Dva prípady použitia nad jedným reťazcom na vlastnom počítači. A: nahrávka sa lokálnym mlx-whisper prepíše na text s časmi. B: ten istý text spracuje lokálna AI v Ollame na zhrnutie, kapitoly a úlohy s časom. B stavia na A. Cloud sa nepoužíva.">
 <style>
 text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;font-size:13px;fill:#1c2624}
 .tb{font-weight:600}.ts{font-size:12px;fill:#5d6b67}
@@ -15,9 +15,12 @@ text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;font-size:13px;fill:
 .acc{fill:#0b6e63}
 </style>
 <defs><marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="acc"/></marker></defs>
-<rect width="1000" height="440" fill="#f8faf9"/>
+<rect width="1000" height="484" fill="#f8faf9"/>
 <rect class="gray" x="640" y="12" width="340" height="52" rx="26"/><text class="ts" x="662" y="34">Cloud AI, online prepis</text><text class="ts" x="662" y="52" style="font-size:11px">nad nahrávkou: nepoužité</text><path class="lng" d="M944 22 L968 54 M968 22 L944 54"/>
-<rect class="fence" x="20" y="76" width="960" height="344" rx="8"/><text class="tc" x="36" y="98">Tvoj počítač: nahrávky a texty ostávajú tu</text>
+<rect class="stage" x="36" y="12" width="560" height="64" rx="4"/><text class="tb" x="50" y="34">C  Najjednoduchšie: povieš to Claudovi</text><text class="ts" x="50" y="52">VS Code a rozšírenie Claude Code, žiadna IT znalosť</text><text class="ts" x="50" y="68" style="font-style:italic">„Prepíš hlasovky v tomto priečinku, lokálne.“</text>
+<path class="lna" d="M304 76 V166" marker-end="url(#arrA)"/><text class="ts" x="314" y="116">spustí A aj B za teba</text>
+<g transform="translate(0,44)">
+<rect class="fence" x="20" y="76" width="960" height="344" rx="8"/><text class="tc" x="964" y="98" text-anchor="end">Tvoj počítač: nahrávky a texty ostávajú tu</text>
 <rect class="box" x="36" y="124" width="144" height="92" rx="4"/><text class="tb" x="48" y="150">Nahrávka</text><text class="ts" x="48" y="174">hlasovka, prednáška,</text><text class="ts" x="48" y="192">cvičenie, porada</text>
 <rect class="stage" x="232" y="124" width="144" height="92" rx="4"/><text class="tb" x="244" y="150">mlx-whisper</text><text class="ts" x="244" y="174">reč na text</text><text class="ts" x="244" y="192">beží lokálne</text>
 <rect class="stage" x="428" y="124" width="144" height="92" rx="4"/><text class="tb" x="440" y="150">Text s časmi</text><text class="ts" x="440" y="174">.txt, .srt, .json</text><text class="ts" x="440" y="192">časy od nuly</text>
@@ -34,4 +37,5 @@ text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;font-size:13px;fill:
 <text class="tb" x="36" y="356">B  Prepis a lokálna AI</text><text class="ts" x="220" y="356">chceš pochopiť obsah rýchlo</text>
 <text class="ts" x="36" y="374" style="fill:#0b6e63">AI krok je návrh, neoverený, náročnejší</text>
 <text class="ts" x="964" y="374" text-anchor="end" style="fill:#0b6e63">B stavia na A</text>
+</g>
 </svg>

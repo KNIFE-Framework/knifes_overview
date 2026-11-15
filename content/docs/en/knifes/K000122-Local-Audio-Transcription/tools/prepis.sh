@@ -25,18 +25,20 @@ if [ ! -x "$ENVDIR/bin/mlx_whisper" ]; then
 fi
 export PATH="$ENVDIR/bin:$PATH"
 
-# 2. Prepis každého súboru zvlášť (bodky v názvoch WhatsApp súborov robia problémy)
+# 2. Prepis každého súboru zvlášť (výstup pomenujeme presne ako vstup)
 for f in "$@"; do
   [ -f "$f" ] || { echo "Súbor neexistuje: $f" >&2; continue; }
   base="$(basename "$f")"
-  safe="$(printf '%s' "${base%.*}" | tr -c 'A-Za-z0-9_-' '_')"
+  safe="${base%.*}"   # výstupy majú rovnaký názov ako vstup (len iná prípona)
+  tmp="prepis_tmp_$$"  # Whisper by pri názvoch s bodkami ("09.51.17") odrezal koniec, preto premenujeme až potom
   outdir="$(dirname "$f")/prepis"
   mkdir -p "$outdir"
   echo ">> Prepisujem: $base  (jazyk: $LANGCODE)"
   args=(--model "$MODEL" --language "$LANGCODE" --output-format all
-        --output-dir "$outdir" --output-name "$safe")
+        --output-dir "$outdir" --output-name "$tmp")
   [ -n "${GLOSSARY:-}" ] && args+=(--initial-prompt "$GLOSSARY")
   mlx_whisper "$f" "${args[@]}" > /dev/null
+  for e in txt srt vtt tsv json; do mv -f "$outdir/$tmp.$e" "$outdir/$safe.$e"; done
   echo "   hotovo: $outdir/$safe.{txt,srt,vtt,tsv,json}"
 
   # 3. Voliteľné zhrnutie lokálnou AI cez Ollama (nič nejde von z počítača)

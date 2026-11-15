@@ -139,6 +139,8 @@ fm_reserved2: ""
 
 # Lokálny prepis zvuku a AI nad ním
 
+> **Najrýchlejšie:** ak máš VS Code a rozšírenie Claude Code, povedz Claudovi, kde sú nahrávky. Zvyšok urobí za teba. Je to cesta C nižšie a takto vznikli aj prepisy v tomto KNIFE.
+
 ## 🎯 Čo rieši (účel, cieľ)
 
 Kolega pošle desaťminútovú hlasovku cez WhatsApp a ty ju potrebuješ ako text. Rovnaký problém majú ľudia s nahratými prednáškami, cvičeniami alebo poradami. Online prepisovacie služby nahrávku posielajú na cudzí server. To je zlé pri dôverných rozhovoroch a pri osobných nahrávkach.
@@ -151,14 +153,14 @@ Podľa účelu ide o dve riešenia (A a B). Druhé stavia na prvom. Tretia cesta
 
 ![Tri cesty: C povieš to Claudovi, A prepis, B prepis a lokálna AI](./img/use-cases-overview.svg)
 
-| | A  Prepis | B  Prepis a lokálna AI |
-|---|---|---|
-| Chceš | text a miesto v origináli | pochopiť obsah rýchlo |
-| Výstup | `.txt`, `.srt`, `.json` | zhrnutie, kapitoly, úlohy s časom |
-| Nástroje | mlx-whisper | mlx-whisper a Ollama |
-| Náročnosť | pár minút, asi 1,5 GB | niekoľko GB navyše, pomalšie |
-| Stav | overené | AI krok je návrh, neoverený |
-| Hodí sa | občasná hlasovka | veľa alebo dlhé nahrávky |
+| | C  Povieš to Claudovi | A  Prepis | B  Prepis a lokálna AI |
+|---|---|---|---|
+| Chceš | len povedať, kde sú súbory | text a miesto v origináli | pochopiť obsah rýchlo |
+| Výstup | ako pri A alebo B | `.txt`, `.srt`, `.json` | zhrnutie, kapitoly, úlohy s časom |
+| Nástroje | VS Code a Claude Code | mlx-whisper | mlx-whisper a Ollama |
+| Náročnosť | jednorazové nastavenie Claude Code | pár minút, asi 1,5 GB | niekoľko GB navyše, pomalšie |
+| Stav | overené, takto to vzniklo | overené | AI krok je návrh, neoverený |
+| Hodí sa | kolegovia bez IT | občasná hlasovka | veľa alebo dlhé nahrávky |
 
 Podrobnosti: **riešenie A** je v časti „Ako to rieši“ a „Ako to použiť“, **riešenie B** v časti „Riešenie B“ nižšie.
 
@@ -175,6 +177,15 @@ Táto cesta je pre ľudí, ktorí nechcú nič inštalovať ani ovládať termin
 4. Claude sa pri prvom spustení opýta na povolenie spúšťať príkazy. Povoľ ich. Potom nájdeš v podpriečinku `prepis` hotové súbory (`.txt`, `.srt` a ďalšie).
 
 Takto vznikli prepisy, na ktorých tento KNIFE stojí. Stačilo povedať Claudovi, kde sú súbory, a prišli hotové výstupy. Rovnako sa potom prepísali ďalšie dve hlasovky, ktoré pribudli neskôr.
+
+### Jednorazové nastavenie (jediná komplikácia)
+
+Toto robíš raz. Potom už len píšeš Claudovi.
+
+1. Nainštaluj [Visual Studio Code](https://code.visualstudio.com) (zadarmo).
+2. Vo VS Code otvor panel Extensions (štvorček na ľavej lište), vyhľadaj **Claude Code** a nainštaluj rozšírenie od Anthropic.
+3. Prihlás sa účtom Claude. Claude Code vyžaduje účet s prístupom, napríklad predplatné Claude alebo účet Anthropic Console, podľa aktuálnych podmienok Anthropic.
+4. Otvor priečinok s nahrávkami (File, Open Folder) a otvor panel Claude Code.
 
 **Čo to potrebuje.** Pri prvom spustení treba internet na stiahnutie nástrojov a modelu (asi 1,5 GB). Samotný prepis potom robí Whisper na tvojom počítači a zvukový súbor sa nikam nenahráva. Overené je to na Macu s Apple Silicon. Na inom počítači Claude zvolí iný nástroj, ale to som neskúšal.
 
@@ -248,12 +259,15 @@ mlx_whisper "hlasovka.opus" \
 
 Prvé spustenie stiahne model (asi 1,5 GB). Ďalšie behy sú offline. `--output-format all` vytvorí všetky formáty naraz:
 
-| Súbor | Na čo je |
-|---|---|
-| `.txt` | čistý text na čítanie a vkladanie |
-| `.srt`, `.vtt` | titulky: číslo, čas `00:01:04,420 --> 00:01:07,240`, text |
-| `.tsv` | tabuľka: začiatok, koniec (v ms), text |
-| `.json` | text, segmenty a časy pre ďalšie spracovanie |
+| Súbor | Čo obsahuje | Na čo ho použiješ |
+|---|---|---|
+| `.txt` | čistý text bez časov | čítanie, kopírovanie do e-mailu alebo dokumentu |
+| `.srt` | text po úsekoch s časmi, napríklad `00:01:04,420 --> 00:01:07,240` | zistíš, v ktorej minúte čo odznelo, titulky k videu |
+| `.vtt` | to isté ako `.srt`, zápis pre web | titulky videa na webe |
+| `.tsv` | tabuľka: začiatok a koniec v milisekundách, text | otvoríš v Exceli alebo LibreOffice, filtrovanie a triedenie |
+| `.json` | úplný výstup Whisperu: text, segmenty, časy a technické údaje | ďalšie programové spracovanie, napríklad AI |
+
+Bežne ti stačí `.txt` na čítanie a `.srt`, keď potrebuješ časy. Všetky súbory sú ten istý prepis v rôznom zápise a majú rovnaký názov ako nahrávka, len inú príponu.
 
 Všetky časy sú **od začiatku súboru**. Značka `00:04:12` znamená 4 minúty 12 sekúnd od štartu nahrávky.
 
@@ -263,7 +277,7 @@ V praxi bola presnosť zhruba **90 %** na slovenských hlasovkách so slabším 
 
 ## 💡 Tipy a poznámky
 
-- **Mená súborov s bodkami v čase.** WhatsApp súbory majú názov ako `WhatsApp Audio 2026-11-15 at 09.51.17.opus`. Pri spustení nad viacerými súbormi naraz sa výstupy prepísali do jedného súboru. Spúšťaj program po jednom súbore a zadaj vlastný `--output-name`.
+- **Mená súborov s bodkami v čase.** WhatsApp súbory majú názov ako `WhatsApp Audio 2026-11-15 at 09.51.17.opus`. Pri spustení nad viacerými súbormi naraz sa výstupy prepísali do jedného súboru. Spúšťaj program po jednom súbore. Skript `prepis.sh` to robí sám a výstupy pomenuje rovnako ako vstup, len s inou príponou.
 - **Jazyk.** Pre češtinu daj `--language cs`. Bez `--language` si Whisper jazyk odhadne a pri krátkych nahrávkach sa môže pomýliť.
 - **Presnosť alebo rýchlosť.** `whisper-large-v3-turbo` je rýchly kompromis. Presnejší, ale pomalší je `mlx-community/whisper-large-v3-mlx`.
 - **Bez terminálu.** Aplikácia MacWhisper robí to isté cez drag and drop a tiež beží lokálne.

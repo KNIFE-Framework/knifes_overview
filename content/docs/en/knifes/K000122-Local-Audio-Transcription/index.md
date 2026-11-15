@@ -139,6 +139,8 @@ fm_reserved2: ""
 
 # Local audio transcription and AI on top
 
+> **Fastest:** if you have VS Code and the Claude Code extension, tell Claude where the recordings are. It does the rest for you. This is way C below and it is how the transcripts in this KNIFE were made.
+
 ## 🎯 What it solves (purpose, goal)
 
 A colleague sends a ten-minute WhatsApp voice message and you need it as text. People with recorded lectures, workshops or meetings have the same problem. Online transcription services upload the recording to someone else's server. That is a poor fit for confidential conversations and personal recordings.
@@ -151,14 +153,14 @@ By purpose there are two solutions (A and B). The second builds on the first. Th
 
 ![Three ways: C tell Claude, A transcript, B transcript plus local AI](./img/use-cases-overview.svg)
 
-| | A  Transcript | B  Transcript plus local AI |
-|---|---|---|
-| You want | text and its place in the original | to grasp the content fast |
-| Output | `.txt`, `.srt`, `.json` | summary, chapters, actions with time |
-| Tools | mlx-whisper | mlx-whisper and Ollama |
-| Effort | a few minutes, about 1.5 GB | a few GB more, slower |
-| Status | verified | AI step is a design, unverified |
-| Fits | an occasional voice message | many or long recordings |
+| | C  Tell Claude | A  Transcript | B  Transcript plus local AI |
+|---|---|---|---|
+| You want | to say only where the files are | text and its place in the original | to grasp the content fast |
+| Output | as in A or B | `.txt`, `.srt`, `.json` | summary, chapters, actions with time |
+| Tools | VS Code and Claude Code | mlx-whisper | mlx-whisper and Ollama |
+| Effort | one-time Claude Code setup | a few minutes, about 1.5 GB | a few GB more, slower |
+| Status | verified, this is how it was made | verified | AI step is a design, unverified |
+| Fits | colleagues without IT skills | an occasional voice message | many or long recordings |
 
 Details: **solution A** is under "How it solves it" and "How to use it", **solution B** under "Solution B" below.
 
@@ -175,6 +177,15 @@ This way is for people who do not want to install anything or use a terminal. Yo
 4. On first run Claude asks for permission to run commands. Allow them. Then you find the finished files (`.txt`, `.srt` and more) in the `prepis` subfolder.
 
 This is how the transcripts behind this KNIFE were made. All it took was telling Claude where the files were, and finished outputs came back. Two more voice messages that arrived later were transcribed the same way.
+
+### One-time setup (the only complication)
+
+You do this once. After that you only write to Claude.
+
+1. Install [Visual Studio Code](https://code.visualstudio.com) (free).
+2. In VS Code open the Extensions panel (the squares icon on the left bar), search for **Claude Code** and install the extension from Anthropic.
+3. Sign in with your Claude account. Claude Code needs an account with access, for example a Claude subscription or an Anthropic Console account, under Anthropic's current terms.
+4. Open the folder with the recordings (File, Open Folder) and open the Claude Code panel.
 
 **What it needs.** The first run needs internet to download the tools and the model (about 1.5 GB). The transcription itself is then done by Whisper on your computer and the audio file is not uploaded anywhere. It is verified on an Apple Silicon Mac. On another computer Claude will pick a different tool, but I did not try that.
 
@@ -248,12 +259,15 @@ mlx_whisper "voice.opus" \
 
 The first run downloads the model (about 1.5 GB). Later runs are offline. `--output-format all` writes every format at once:
 
-| File | Use |
-|---|---|
-| `.txt` | plain text for reading and pasting |
-| `.srt`, `.vtt` | subtitles: index, time `00:01:04,420 --> 00:01:07,240`, text |
-| `.tsv` | table: start, end (in ms), text |
-| `.json` | text, segments and times for further processing |
+| File | What it contains | What you use it for |
+|---|---|---|
+| `.txt` | plain text without times | reading, copying into an e-mail or document |
+| `.srt` | text in segments with times, for example `00:01:04,420 --> 00:01:07,240` | find in which minute something was said, subtitles for video |
+| `.vtt` | the same as `.srt`, written for the web | subtitles for web video |
+| `.tsv` | table: start and end in milliseconds, text | open in Excel or LibreOffice, filter and sort |
+| `.json` | the full Whisper output: text, segments, times and technical data | further processing in code, for example by AI |
+
+Usually `.txt` is enough for reading, and `.srt` when you need times. All files are the same transcript in different notation and carry the same name as the recording with a different extension.
 
 All times are **from the start of the file**. The mark `00:04:12` means 4 minutes 12 seconds after the recording began.
 
@@ -263,7 +277,7 @@ In practice accuracy was around **90 %** on Slovak voice messages with weak audi
 
 ## 💡 Tips and notes
 
-- **File names with dots in the time.** WhatsApp files are named like `WhatsApp Audio 2026-11-15 at 09.51.17.opus`. When run over several files at once, the outputs overwrote each other into one file. Run the program one file at a time and set your own `--output-name`.
+- **File names with dots in the time.** WhatsApp files are named like `WhatsApp Audio 2026-11-15 at 09.51.17.opus`. When run over several files at once, the outputs overwrote each other into one file. Run the program one file at a time. The `prepis.sh` script does this itself and names the outputs like the input, with a different extension.
 - **Language.** Set `--language` to the spoken language, for example `sk` or `cs`. Without it Whisper guesses, and on short recordings it can guess wrong.
 - **Accuracy or speed.** `whisper-large-v3-turbo` is the fast compromise. `mlx-community/whisper-large-v3-mlx` is more accurate but slower.
 - **No terminal.** The MacWhisper app does the same by drag and drop and also runs locally.

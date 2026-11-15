@@ -284,9 +284,9 @@ Zhrnutie sa uloží ako `prepis/<nazov>.summary.md`. Model dostane `.srt`, takž
 
 ## Zdroje
 
-- OpenAI Whisper: <https://github.com/openai/whisper>
-- MLX Whisper (Apple Silicon): <https://github.com/ml-explore/mlx-examples/tree/main/whisper>
-- imageio-ffmpeg: <https://pypi.org/project/imageio-ffmpeg/>
+- OpenAI Whisper: [https://github.com/openai/whisper](https://github.com/openai/whisper)
+- MLX Whisper (Apple Silicon): [https://github.com/ml-explore/mlx-examples/tree/main/whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper)
+- imageio-ffmpeg: [https://pypi.org/project/imageio-ffmpeg/](https://pypi.org/project/imageio-ffmpeg/)
 
 <!-- body:start -->
 

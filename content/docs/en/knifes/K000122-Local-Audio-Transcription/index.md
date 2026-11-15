@@ -24,10 +24,10 @@ guid: "5d826999-c2f4-47ba-943e-8dc6cb3d68b4"
 dao: "knife"
 
 # Názov zápisu – dopĺňa používateľ
-title: "K000122 – Local audio transcription with relative timestamps"
+title: "K000122 – Local audio transcription and AI on top, private and offline"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "How to turn a voice message, lecture or meeting recording into text with timestamps relative to the start of the recording, on your own computer with no cloud. Steps for an Apple Silicon Mac using Whisper (mlx-whisper), without Homebrew."
+description: "Two use cases for recordings (voice message, lecture, workshop, meeting): A) transcript with timestamps via mlx-whisper, B) plus a local AI (Ollama) for summary, chapters and action items. Everything runs on your own computer."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -57,7 +57,7 @@ priority: ""
 #   - účel: tutorial, guide, pattern, case-study
 #   - téma: git, backup, ai, communication
 #   - úroveň: beginner, intermediate, advanced
-tags: ["transcription","whisper","offline","privacy","audio","mac"]
+tags: ["transcription","whisper","ollama","local-ai","offline","privacy","audio","mac"]
 
 
 # 🌍 LOCALIZATION -----------------------------------------------------
@@ -135,9 +135,9 @@ fm_reserved2: ""
 > **KNIFE** – Knowledge In Friendly Examples
 > **Series:** Systemic Thinking in IT & Digital Fabrication
 > **Level:** Beginner
-> **Tags:** `transcription` `whisper` `offline` `privacy` `audio` `mac`
+> **Tags:** `transcription` `whisper` `ollama` `local-ai` `offline` `privacy` `audio` `mac`
 
-# Local audio transcription with relative timestamps
+# Local audio transcription and AI on top
 
 ## 🎯 What it solves (purpose, goal)
 
@@ -145,7 +145,26 @@ A colleague sends a ten-minute WhatsApp voice message and you need it as text. P
 
 This KNIFE shows a workflow where neither the recording nor the text leaves your computer. The output is text plus **timestamps relative to the start of the recording**, so you can jump from the text back to the exact place in the original.
 
+### Two use cases
+
+By purpose there are two solutions. The second builds on the first.
+
+![Two use cases: A transcript, B transcript plus local AI](./img/use-cases-overview.svg)
+
+| | A  Transcript | B  Transcript plus local AI |
+|---|---|---|
+| You want | text and its place in the original | to grasp the content fast |
+| Output | `.txt`, `.srt`, `.json` | summary, chapters, actions with time |
+| Tools | mlx-whisper | mlx-whisper and Ollama |
+| Effort | a few minutes, about 1.5 GB | a few GB more, slower |
+| Status | verified | AI step is a design, unverified |
+| Fits | an occasional voice message | many or long recordings |
+
+Details: **solution A** is under "How it solves it" and "How to use it", **solution B** under "Solution B" below.
+
 ## 🧩 How it solves it (principle)
+
+### Solution A – transcript to text (verified)
 
 The recording passes through three steps, all local:
 
@@ -231,7 +250,7 @@ In practice accuracy was around **90 %** on Slovak voice messages with weak audi
 - **Privacy.** The internet is needed only once, to download the packages and the model. The transcription itself runs offline.
 - **Other platforms.** The `mlx-whisper` route works only on Apple Silicon Macs. On Windows or Linux use `faster-whisper` or `whisper.cpp`; the flow is the same.
 
-## 🤖 Fully automatic with a local AI (design)
+## 🤖 Solution B – transcript plus local AI (design)
 
 Transcription is only the first step. The second step lets a **local AI** turn the text into a summary, chapters with time and a list of action items, with nothing leaving the computer.
 

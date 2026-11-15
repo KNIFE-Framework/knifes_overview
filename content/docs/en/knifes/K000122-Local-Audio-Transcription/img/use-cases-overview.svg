@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" role="img" aria-label="Two use cases over one chain on your own computer. A: a recording is transcribed by local mlx-whisper into text with times. B: a local AI in Ollama turns that same text into a summary, chapters and action items with time. B builds on A. No cloud is used.">
+<style>
+text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;font-size:13px;fill:#1c2624}
+.tb{font-weight:600}.ts{font-size:12px;fill:#5d6b67}
+.tc{font-size:11px;fill:#0b6e63;letter-spacing:.06em;text-transform:uppercase}
+.stage{fill:#d9ede9;stroke:#0b6e63;stroke-width:1.5}
+.draft{fill:#f2f7f6;stroke:#0b6e63;stroke-width:1.5;stroke-dasharray:6 4}
+.box{fill:#fff;stroke:#8a9893;stroke-width:1.3}
+.fence{fill:none;stroke:#0b6e63;stroke-width:1.4;stroke-dasharray:7 5}
+.gray{fill:#fff;stroke:#8a9893;stroke-width:1.2;stroke-dasharray:3 3}
+.lna{fill:none;stroke:#0b6e63;stroke-width:1.8}
+.br{fill:none;stroke:#0b6e63;stroke-width:2}
+.brd{fill:none;stroke:#0b6e63;stroke-width:2;stroke-dasharray:6 4}
+.lng{fill:none;stroke:#5d6b67;stroke-width:1.3}
+.acc{fill:#0b6e63}
+</style>
+<defs><marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="acc"/></marker></defs>
+<rect width="1000" height="440" fill="#f8faf9"/>
+<rect class="gray" x="640" y="12" width="340" height="52" rx="26"/><text class="ts" x="662" y="34">Cloud AI, online transcription</text><text class="ts" x="662" y="52" style="font-size:11px">over the recording: not used</text><path class="lng" d="M944 22 L968 54 M968 22 L944 54"/>
+<rect class="fence" x="20" y="76" width="960" height="344" rx="8"/><text class="tc" x="36" y="98">Your computer: recordings and texts stay here</text>
+<rect class="box" x="36" y="124" width="144" height="92" rx="4"/><text class="tb" x="48" y="150">Recording</text><text class="ts" x="48" y="174">voice message, lecture,</text><text class="ts" x="48" y="192">workshop, meeting</text>
+<rect class="stage" x="232" y="124" width="144" height="92" rx="4"/><text class="tb" x="244" y="150">mlx-whisper</text><text class="ts" x="244" y="174">speech to text</text><text class="ts" x="244" y="192">runs locally</text>
+<rect class="stage" x="428" y="124" width="144" height="92" rx="4"/><text class="tb" x="440" y="150">Timed text</text><text class="ts" x="440" y="174">.txt, .srt, .json</text><text class="ts" x="440" y="192">times from zero</text>
+<rect class="draft" x="624" y="124" width="144" height="92" rx="4"/><text class="tb" x="636" y="150">Local AI</text><text class="ts" x="636" y="174">Ollama, model</text><text class="ts" x="636" y="192">a few GB</text>
+<rect class="draft" x="820" y="124" width="144" height="92" rx="4"/><text class="tb" x="832" y="150">The gist</text><text class="ts" x="832" y="174">summary, chapters,</text><text class="ts" x="832" y="192">actions with time</text>
+<path class="lna" d="M180 170 H230" marker-end="url(#arrA)"/><text class="ts" x="206" y="162" text-anchor="middle" style="font-size:11px">audio</text>
+<path class="lna" d="M376 170 H426" marker-end="url(#arrA)"/><text class="ts" x="402" y="162" text-anchor="middle" style="font-size:11px">text</text>
+<path class="lna" d="M572 170 H622" marker-end="url(#arrA)"/><text class="ts" x="598" y="162" text-anchor="middle" style="font-size:11px">.srt</text>
+<path class="lna" d="M768 170 H818" marker-end="url(#arrA)"/><text class="ts" x="794" y="162" text-anchor="middle" style="font-size:11px">text</text>
+<path class="br" d="M36 244 V256 H572 V244"/>
+<text class="tb" x="36" y="278">A  Transcript</text><text class="ts" x="157" y="278">you want text and its place in the original</text>
+<text class="ts" x="36" y="296" style="fill:#0b6e63">verified, small, fast</text>
+<path class="brd" d="M36 322 V334 H964 V322"/>
+<text class="tb" x="36" y="356">B  Transcript plus local AI</text><text class="ts" x="255" y="356">you want to grasp the content fast</text>
+<text class="ts" x="36" y="374" style="fill:#0b6e63">AI step is a design, unverified, heavier</text>
+<text class="ts" x="964" y="374" text-anchor="end" style="fill:#0b6e63">B builds on A</text>
+</svg>

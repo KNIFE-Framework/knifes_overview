@@ -24,10 +24,10 @@ guid: "138d3a83-6dbc-4dbc-ac9b-eed2d8491c5d"
 dao: "knife"
 
 # Názov zápisu – dopĺňa používateľ
-title: "K000122 – Lokálny prepis zvuku na text s časovými značkami"
+title: "K000122 – Lokálny prepis zvuku a AI nad ním, súkromne a offline"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "Ako na vlastnom počítači, bez cloudu, previesť hlasovku, prednášku alebo záznam porady na text s časovými značkami počítanými od začiatku nahrávky. Postup pre Mac s Apple Silicon cez Whisper (mlx-whisper), bez Homebrew."
+description: "Dva prípady použitia nad nahrávkami (hlasovka, prednáška, cvičenie, porada): A) prepis na text s časovými značkami cez mlx-whisper, B) k tomu lokálna AI (Ollama) na zhrnutie, kapitoly a úlohy. Všetko beží na vlastnom počítači."
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -57,7 +57,7 @@ priority: ""
 #   - účel: tutorial, guide, pattern, case-study
 #   - téma: git, backup, ai, communication
 #   - úroveň: beginner, intermediate, advanced
-tags: ["transcription","whisper","offline","privacy","audio","mac"]
+tags: ["transcription","whisper","ollama","local-ai","offline","privacy","audio","mac"]
 
 
 # 🌍 LOCALIZATION -----------------------------------------------------
@@ -135,9 +135,9 @@ fm_reserved2: ""
 > **KNIFE** – Knowledge In Friendly Examples
 > **Séria:** Systemic Thinking in IT & Digital Fabrication
 > **Úroveň:** Beginner
-> **Tagy:** `transcription` `whisper` `offline` `privacy` `audio` `mac`
+> **Tagy:** `transcription` `whisper` `ollama` `local-ai` `offline` `privacy` `audio` `mac`
 
-# Lokálny prepis zvuku na text s časovými značkami
+# Lokálny prepis zvuku a AI nad ním
 
 ## 🎯 Čo rieši (účel, cieľ)
 
@@ -145,7 +145,26 @@ Kolega pošle desaťminútovú hlasovku cez WhatsApp a ty ju potrebuješ ako tex
 
 Tento KNIFE ukazuje postup, pri ktorom nahrávka ani text neopustia tvoj počítač. Výstupom je text a k nemu **časové značky relatívne od začiatku nahrávky**. Z textu sa tak dá vrátiť na presné miesto v origináli.
 
+### Dva prípady použitia
+
+Podľa účelu ide o dve riešenia. Druhé stavia na prvom.
+
+![Dva prípady použitia: A prepis, B prepis a lokálna AI](./img/use-cases-overview.svg)
+
+| | A  Prepis | B  Prepis a lokálna AI |
+|---|---|---|
+| Chceš | text a miesto v origináli | pochopiť obsah rýchlo |
+| Výstup | `.txt`, `.srt`, `.json` | zhrnutie, kapitoly, úlohy s časom |
+| Nástroje | mlx-whisper | mlx-whisper a Ollama |
+| Náročnosť | pár minút, asi 1,5 GB | niekoľko GB navyše, pomalšie |
+| Stav | overené | AI krok je návrh, neoverený |
+| Hodí sa | občasná hlasovka | veľa alebo dlhé nahrávky |
+
+Podrobnosti: **riešenie A** je v časti „Ako to rieši“ a „Ako to použiť“, **riešenie B** v časti „Riešenie B“ nižšie.
+
 ## 🧩 Ako to rieši (princíp)
+
+### Riešenie A – prepis na text (overené)
 
 Nahrávka prejde tromi krokmi, všetky bežia lokálne:
 
@@ -231,7 +250,7 @@ V praxi bola presnosť zhruba **90 %** na slovenských hlasovkách so slabším 
 - **Súkromie.** Internet treba len na jednorazové stiahnutie balíkov a modelu. Samotný prepis beží offline.
 - **Iné platformy.** Postup s `mlx-whisper` platí len pre Mac s Apple Silicon. Na Windows alebo Linuxe použi `faster-whisper` alebo `whisper.cpp`, princíp toku zostáva rovnaký.
 
-## 🤖 Plne automaticky s lokálnou AI (návrh)
+## 🤖 Riešenie B – prepis a lokálna AI (návrh)
 
 Prepis je len prvý krok. Druhý krok je nechať **lokálnu AI** z textu urobiť zhrnutie, kapitoly s časom a zoznam úloh. Pritom nič neopustí počítač.
 

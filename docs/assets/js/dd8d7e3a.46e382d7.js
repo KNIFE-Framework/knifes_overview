@@ -28,7 +28,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-k-000122-local-audio-transcription-index-md-dd8.json
-const site_docs_sk_knifes_k_000122_local_audio_transcription_index_md_dd8_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/K000122-Local-Audio-Transcription/K000122","title":"K000122 – Lokálny prepis zvuku a AI nad ním, súkromne a offline","description":"Dva prípady použitia nad nahrávkami (hlasovka, prednáška, cvičenie, porada): A) prepis na text s časovými značkami cez mlx-whisper, B) k tomu lokálna AI (Ollama) na zhrnutie, kapitoly a úlohy. Všetko beží na vlastnom počítači.","source":"@site/docs/sk/knifes/K000122-Local-Audio-Transcription/index.md","sourceDirName":"sk/knifes/K000122-Local-Audio-Transcription","slug":"/sk/knifes/K000122-Local-Audio-Transcription/","permalink":"/sk/knifes/K000122-Local-Audio-Transcription/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"transcription","permalink":"/doc-tags/transcription"},{"inline":true,"label":"whisper","permalink":"/doc-tags/whisper"},{"inline":true,"label":"ollama","permalink":"/doc-tags/ollama"},{"inline":true,"label":"local-ai","permalink":"/doc-tags/local-ai"},{"inline":true,"label":"offline","permalink":"/doc-tags/offline"},{"inline":true,"label":"privacy","permalink":"/doc-tags/privacy"},{"inline":true,"label":"audio","permalink":"/doc-tags/audio"},{"inline":true,"label":"mac","permalink":"/doc-tags/mac"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-11-15T10:22:03.790248+00:00","fm_version_comment":"","id":"K000122","guid":"138d3a83-6dbc-4dbc-ac9b-eed2d8491c5d","dao":"knife","title":"K000122 – Lokálny prepis zvuku a AI nad ním, súkromne a offline","description":"Dva prípady použitia nad nahrávkami (hlasovka, prednáška, cvičenie, porada): A) prepis na text s časovými značkami cez mlx-whisper, B) k tomu lokálna AI (Ollama) na zhrnutie, kapitoly a úlohy. Všetko beží na vlastnom počítači.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"guide","priority":"","tags":["transcription","whisper","ollama","local-ai","offline","privacy","audio","mac"],"locale":"sk","created":"2026-11-15 11:22","modified":"2026-11-15 11:22","status":"done","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000121 – Kernaro AI Hub: centralizovaný prístup k AI pre tím","permalink":"/sk/knifes/K000121-Kernaro-AI-Hub/"},"next":{"title":"K000999 – KNIFE – Test script-created instance","permalink":"/sk/knifes/K000999/"}}');
+const site_docs_sk_knifes_k_000122_local_audio_transcription_index_md_dd8_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/K000122-Local-Audio-Transcription/K000122","title":"K000122 – Lokálny prepis zvuku a AI nad ním, súkromne a offline","description":"Tri cesty k lokálnemu prepisu nahrávok, najjednoduchšia cez Claude Code vo VS Code (hlasovka, prednáška, cvičenie, porada): A) prepis na text s časovými značkami cez mlx-whisper, B) k tomu lokálna AI (Ollama) na zhrnutie, kapitoly a úlohy. Všetko beží na vlastnom počítači.","source":"@site/docs/sk/knifes/K000122-Local-Audio-Transcription/index.md","sourceDirName":"sk/knifes/K000122-Local-Audio-Transcription","slug":"/sk/knifes/K000122-Local-Audio-Transcription/","permalink":"/sk/knifes/K000122-Local-Audio-Transcription/","draft":false,"unlisted":false,"tags":[{"inline":true,"label":"claude-code","permalink":"/doc-tags/claude-code"},{"inline":true,"label":"transcription","permalink":"/doc-tags/transcription"},{"inline":true,"label":"whisper","permalink":"/doc-tags/whisper"},{"inline":true,"label":"ollama","permalink":"/doc-tags/ollama"},{"inline":true,"label":"local-ai","permalink":"/doc-tags/local-ai"},{"inline":true,"label":"offline","permalink":"/doc-tags/offline"},{"inline":true,"label":"privacy","permalink":"/doc-tags/privacy"},{"inline":true,"label":"audio","permalink":"/doc-tags/audio"},{"inline":true,"label":"mac","permalink":"/doc-tags/mac"}],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"2026-11-15T10:22:03.790248+00:00","fm_version_comment":"","id":"K000122","guid":"138d3a83-6dbc-4dbc-ac9b-eed2d8491c5d","dao":"knife","title":"K000122 – Lokálny prepis zvuku a AI nad ním, súkromne a offline","description":"Tri cesty k lokálnemu prepisu nahrávok, najjednoduchšia cez Claude Code vo VS Code (hlasovka, prednáška, cvičenie, porada): A) prepis na text s časovými značkami cez mlx-whisper, B) k tomu lokálna AI (Ollama) na zhrnutie, kapitoly a úlohy. Všetko beží na vlastnom počítači.","author":"Roman Kazicka","authors":["Roman Kazicka"],"category":"","type":"guide","priority":"","tags":["claude-code","transcription","whisper","ollama","local-ai","offline","privacy","audio","mac"],"locale":"sk","created":"2026-11-15 11:22","modified":"2026-11-15 11:22","status":"done","privacy":"public","rights_holder_content":"Roman Kazicka","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazicka","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazicka","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"K000121 – Kernaro AI Hub: centralizovaný prístup k AI pre tím","permalink":"/sk/knifes/K000121-Kernaro-AI-Hub/"},"next":{"title":"K000999 – KNIFE – Test script-created instance","permalink":"/sk/knifes/K000999/"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -44,7 +44,7 @@ const frontMatter = {
 	guid: '138d3a83-6dbc-4dbc-ac9b-eed2d8491c5d',
 	dao: 'knife',
 	title: 'K000122 – Lokálny prepis zvuku a AI nad ním, súkromne a offline',
-	description: 'Dva prípady použitia nad nahrávkami (hlasovka, prednáška, cvičenie, porada): A) prepis na text s časovými značkami cez mlx-whisper, B) k tomu lokálna AI (Ollama) na zhrnutie, kapitoly a úlohy. Všetko beží na vlastnom počítači.',
+	description: 'Tri cesty k lokálnemu prepisu nahrávok, najjednoduchšia cez Claude Code vo VS Code (hlasovka, prednáška, cvičenie, porada): A) prepis na text s časovými značkami cez mlx-whisper, B) k tomu lokálna AI (Ollama) na zhrnutie, kapitoly a úlohy. Všetko beží na vlastnom počítači.',
 	author: 'Roman Kazicka',
 	authors: [
 		'Roman Kazicka'
@@ -53,6 +53,7 @@ const frontMatter = {
 	type: 'guide',
 	priority: '',
 	tags: [
+		'claude-code',
 		'transcription',
 		'whisper',
 		'ollama',
@@ -96,9 +97,13 @@ const toc = [{
   "id": "-čo-rieši-účel-cieľ",
   "level": 2
 }, {
-  "value": "Dva prípady použitia",
-  "id": "dva-prípady-použitia",
+  "value": "Dve riešenia a najjednoduchšia cesta",
+  "id": "dve-riešenia-a-najjednoduchšia-cesta",
   "level": 3
+}, {
+  "value": "⭐ Najjednoduchšie: povedz to Claudovi (bez znalosti IT)",
+  "id": "-najjednoduchšie-povedz-to-claudovi-bez-znalosti-it",
+  "level": 2
 }, {
   "value": "🧩 Ako to rieši (princíp)",
   "id": "-ako-to-rieši-princíp",
@@ -186,6 +191,8 @@ function _createMdxContent(props) {
         }), " Beginner\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Tagy:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "claude-code"
+        }), " ", (0,jsx_runtime.jsx)(_components.code, {
           children: "transcription"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
           children: "whisper"
@@ -218,16 +225,16 @@ function _createMdxContent(props) {
         children: "časové značky relatívne od začiatku nahrávky"
       }), ". Z textu sa tak dá vrátiť na presné miesto v origináli."]
     }), "\n", (0,jsx_runtime.jsx)(_components.h3, {
-      id: "dva-prípady-použitia",
-      children: "Dva prípady použitia"
+      id: "dve-riešenia-a-najjednoduchšia-cesta",
+      children: "Dve riešenia a najjednoduchšia cesta"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Podľa účelu ide o dve riešenia. Druhé stavia na prvom."
+      children: "Podľa účelu ide o dve riešenia (A a B). Druhé stavia na prvom. Tretia cesta (C) nie je ďalšia technológia, ale spôsob, ako A aj B spustiť bez znalosti IT."
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "Dva prípady použitia: A prepis, B prepis a lokálna AI",
+        alt: "Tri cesty: C povieš to Claudovi, A prepis, B prepis a lokálna AI",
         src: (__webpack_require__(86736)/* ["default"] */ .A) + "",
         width: "1000",
-        height: "440"
+        height: "484"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.table, {
       children: [(0,jsx_runtime.jsx)(_components.thead, {
@@ -301,6 +308,54 @@ function _createMdxContent(props) {
       }), " je v časti „Ako to rieši“ a „Ako to použiť“, ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "riešenie B"
       }), " v časti „Riešenie B“ nižšie."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
+      id: "-najjednoduchšie-povedz-to-claudovi-bez-znalosti-it",
+      children: "⭐ Najjednoduchšie: povedz to Claudovi (bez znalosti IT)"
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: ["Táto cesta je pre ľudí, ktorí nechcú nič inštalovať ani ovládať terminál. Potrebuješ len ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Visual Studio Code"
+      }), " s rozšírením ", (0,jsx_runtime.jsx)(_components.strong, {
+        children: "Claude Code"
+      }), ". Všetko ostatné urobí Claude za teba: nainštaluje nástroje, prepíše nahrávky a uloží výstupy."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Daj nahrávky do jedného priečinka v počítači."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Otvor ten priečinok vo VS Code a spusti Claude Code."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Napíš Claudovi, čo chceš. Napríklad:"
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["V tomto priečinku mám hlasovky z WhatsAppu. Prepíš ich lokálne na text s časovými značkami, po slovensky. Výstupy ulož do podpriečinka ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "prepis"
+        }), ". Nič nenahrávaj na internet."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.ol, {
+      start: "4",
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+        children: ["Claude sa pri prvom spustení opýta na povolenie spúšťať príkazy. Povoľ ich. Potom nájdeš v podpriečinku ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "prepis"
+        }), " hotové súbory (", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".txt"
+        }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+          children: ".srt"
+        }), " a ďalšie)."]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Takto vznikli prepisy, na ktorých tento KNIFE stojí. Stačilo povedať Claudovi, kde sú súbory, a prišli hotové výstupy. Rovnako sa potom prepísali ďalšie dve hlasovky, ktoré pribudli neskôr."
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Čo to potrebuje."
+      }), " Pri prvom spustení treba internet na stiahnutie nástrojov a modelu (asi 1,5 GB). Samotný prepis potom robí Whisper na tvojom počítači a zvukový súbor sa nikam nenahráva. Overené je to na Macu s Apple Silicon. Na inom počítači Claude zvolí iný nástroj, ale to som neskúšal."]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["⚠️ ", (0,jsx_runtime.jsx)(_components.strong, {
+          children: "Čo vidí Claude."
+        }), " Claude je cloudový model. Vidí tvoje pokyny, výpisy z príkazov a súbory, ktoré prečíta. Zvuk nečíta, ale ak mu dovolíš čítať prepis, text sa k nemu dostane. Ak je obsah dôverný, napíš: „Nečítaj prepis, len mi povedz, kde je uložený.“"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "Ak chceš aj zhrnutie, kapitoly a úlohy (riešenie B), povedz to Claudovi tiež. Ten krok je zatiaľ návrh."
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "-ako-to-rieši-princíp",
       children: "🧩 Ako to rieši (princíp)"
@@ -571,7 +626,9 @@ function _createMdxContent(props) {
       children: "✅ Hodnota / Zhrnutie"
     }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
       children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
-        children: "Z nahrávky vznikne text aj s presným miestom v origináli, bez cloudu."
+        children: "Kolega bez znalosti IT zvládne prepis sám: stačí VS Code, rozšírenie Claude Code a jedna veta."
+      }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+        children: "Z nahrávky vznikne text aj s presným miestom v origináli, zvuk sa nenahráva do cloudu."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
         children: "Jeden tok pokrýva hlasovky, prednášky, cvičenia aj porady."
       }), "\n", (0,jsx_runtime.jsx)(_components.li, {
@@ -735,7 +792,7 @@ function MDXProvider(properties) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDQ0MCIgd2lkdGg9IjEwMDAiIGhlaWdodD0iNDQwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkR2YSBwcsOtcGFkeSBwb3XFvml0aWEgbmFkIGplZG7DvW0gcmXFpWF6Y29tIG5hIHZsYXN0bm9tIHBvxI3DrXRhxI1pLiBBOiBuYWhyw6F2a2Egc2EgbG9rw6FsbnltIG1seC13aGlzcGVyIHByZXDDrcWhZSBuYSB0ZXh0IHMgxI1hc21pLiBCOiB0ZW4gaXN0w70gdGV4dCBzcHJhY3VqZSBsb2vDoWxuYSBBSSB2IE9sbGFtZSBuYSB6aHJudXRpZSwga2FwaXRvbHkgYSDDumxvaHkgcyDEjWFzb20uIEIgc3RhdmlhIG5hIEEuIENsb3VkIHNhIG5lcG91xb7DrXZhLiI+CjxzdHlsZT4KdGV4dHtmb250LWZhbWlseToiSUJNIFBsZXggU2FucyIsQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7Zm9udC1zaXplOjEzcHg7ZmlsbDojMWMyNjI0fQoudGJ7Zm9udC13ZWlnaHQ6NjAwfS50c3tmb250LXNpemU6MTJweDtmaWxsOiM1ZDZiNjd9Ci50Y3tmb250LXNpemU6MTFweDtmaWxsOiMwYjZlNjM7bGV0dGVyLXNwYWNpbmc6LjA2ZW07dGV4dC10cmFuc2Zvcm06dXBwZXJjYXNlfQouc3RhZ2V7ZmlsbDojZDllZGU5O3N0cm9rZTojMGI2ZTYzO3N0cm9rZS13aWR0aDoxLjV9Ci5kcmFmdHtmaWxsOiNmMmY3ZjY7c3Ryb2tlOiMwYjZlNjM7c3Ryb2tlLXdpZHRoOjEuNTtzdHJva2UtZGFzaGFycmF5OjYgNH0KLmJveHtmaWxsOiNmZmY7c3Ryb2tlOiM4YTk4OTM7c3Ryb2tlLXdpZHRoOjEuM30KLmZlbmNle2ZpbGw6bm9uZTtzdHJva2U6IzBiNmU2MztzdHJva2Utd2lkdGg6MS40O3N0cm9rZS1kYXNoYXJyYXk6NyA1fQouZ3JheXtmaWxsOiNmZmY7c3Ryb2tlOiM4YTk4OTM7c3Ryb2tlLXdpZHRoOjEuMjtzdHJva2UtZGFzaGFycmF5OjMgM30KLmxuYXtmaWxsOm5vbmU7c3Ryb2tlOiMwYjZlNjM7c3Ryb2tlLXdpZHRoOjEuOH0KLmJye2ZpbGw6bm9uZTtzdHJva2U6IzBiNmU2MztzdHJva2Utd2lkdGg6Mn0KLmJyZHtmaWxsOm5vbmU7c3Ryb2tlOiMwYjZlNjM7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWRhc2hhcnJheTo2IDR9Ci5sbmd7ZmlsbDpub25lO3N0cm9rZTojNWQ2YjY3O3N0cm9rZS13aWR0aDoxLjN9Ci5hY2N7ZmlsbDojMGI2ZTYzfQo8L3N0eWxlPgo8ZGVmcz48bWFya2VyIGlkPSJhcnJBIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjkiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI4IiBtYXJrZXJIZWlnaHQ9IjgiIG9yaWVudD0iYXV0by1zdGFydC1yZXZlcnNlIj48cGF0aCBkPSJNMCAwIEwxMCA1IEwwIDEwIHoiIGNsYXNzPSJhY2MiLz48L21hcmtlcj48L2RlZnM+CjxyZWN0IHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjQ0MCIgZmlsbD0iI2Y4ZmFmOSIvPgo8cmVjdCBjbGFzcz0iZ3JheSIgeD0iNjQwIiB5PSIxMiIgd2lkdGg9IjM0MCIgaGVpZ2h0PSI1MiIgcng9IjI2Ii8+PHRleHQgY2xhc3M9InRzIiB4PSI2NjIiIHk9IjM0Ij5DbG91ZCBBSSwgb25saW5lIHByZXBpczwvdGV4dD48dGV4dCBjbGFzcz0idHMiIHg9IjY2MiIgeT0iNTIiIHN0eWxlPSJmb250LXNpemU6MTFweCI+bmFkIG5haHLDoXZrb3U6IG5lcG91xb5pdMOpPC90ZXh0PjxwYXRoIGNsYXNzPSJsbmciIGQ9Ik05NDQgMjIgTDk2OCA1NCBNOTY4IDIyIEw5NDQgNTQiLz4KPHJlY3QgY2xhc3M9ImZlbmNlIiB4PSIyMCIgeT0iNzYiIHdpZHRoPSI5NjAiIGhlaWdodD0iMzQ0IiByeD0iOCIvPjx0ZXh0IGNsYXNzPSJ0YyIgeD0iMzYiIHk9Ijk4Ij5Udm9qIHBvxI3DrXRhxI06IG5haHLDoXZreSBhIHRleHR5IG9zdMOhdmFqw7ogdHU8L3RleHQ+CjxyZWN0IGNsYXNzPSJib3giIHg9IjM2IiB5PSIxMjQiIHdpZHRoPSIxNDQiIGhlaWdodD0iOTIiIHJ4PSI0Ii8+PHRleHQgY2xhc3M9InRiIiB4PSI0OCIgeT0iMTUwIj5OYWhyw6F2a2E8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSI0OCIgeT0iMTc0Ij5obGFzb3ZrYSwgcHJlZG7DocWha2EsPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0cyIgeD0iNDgiIHk9IjE5MiI+Y3ZpxI1lbmllLCBwb3JhZGE8L3RleHQ+CjxyZWN0IGNsYXNzPSJzdGFnZSIgeD0iMjMyIiB5PSIxMjQiIHdpZHRoPSIxNDQiIGhlaWdodD0iOTIiIHJ4PSI0Ii8+PHRleHQgY2xhc3M9InRiIiB4PSIyNDQiIHk9IjE1MCI+bWx4LXdoaXNwZXI8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSIyNDQiIHk9IjE3NCI+cmXEjSBuYSB0ZXh0PC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0cyIgeD0iMjQ0IiB5PSIxOTIiPmJlxb7DrSBsb2vDoWxuZTwvdGV4dD4KPHJlY3QgY2xhc3M9InN0YWdlIiB4PSI0MjgiIHk9IjEyNCIgd2lkdGg9IjE0NCIgaGVpZ2h0PSI5MiIgcng9IjQiLz48dGV4dCBjbGFzcz0idGIiIHg9IjQ0MCIgeT0iMTUwIj5UZXh0IHMgxI1hc21pPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0cyIgeD0iNDQwIiB5PSIxNzQiPi50eHQsIC5zcnQsIC5qc29uPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0cyIgeD0iNDQwIiB5PSIxOTIiPsSNYXN5IG9kIG51bHk8L3RleHQ+CjxyZWN0IGNsYXNzPSJkcmFmdCIgeD0iNjI0IiB5PSIxMjQiIHdpZHRoPSIxNDQiIGhlaWdodD0iOTIiIHJ4PSI0Ii8+PHRleHQgY2xhc3M9InRiIiB4PSI2MzYiIHk9IjE1MCI+TG9rw6FsbmEgQUk8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSI2MzYiIHk9IjE3NCI+T2xsYW1hLCBtb2RlbDwvdGV4dD48dGV4dCBjbGFzcz0idHMiIHg9IjYzNiIgeT0iMTkyIj5uaWVrb8S+a28gR0I8L3RleHQ+CjxyZWN0IGNsYXNzPSJkcmFmdCIgeD0iODIwIiB5PSIxMjQiIHdpZHRoPSIxNDQiIGhlaWdodD0iOTIiIHJ4PSI0Ii8+PHRleHQgY2xhc3M9InRiIiB4PSI4MzIiIHk9IjE1MCI+UG9kc3RhdGE8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSI4MzIiIHk9IjE3NCI+emhybnV0aWUsIGthcGl0b2x5LDwvdGV4dD48dGV4dCBjbGFzcz0idHMiIHg9IjgzMiIgeT0iMTkyIj7DumxvaHkgcyDEjWFzb208L3RleHQ+CjxwYXRoIGNsYXNzPSJsbmEiIGQ9Ik0xODAgMTcwIEgyMzAiIG1hcmtlci1lbmQ9InVybCgjYXJyQSkiLz48dGV4dCBjbGFzcz0idHMiIHg9IjIwNiIgeT0iMTYyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBzdHlsZT0iZm9udC1zaXplOjExcHgiPnp2dWs8L3RleHQ+CjxwYXRoIGNsYXNzPSJsbmEiIGQ9Ik0zNzYgMTcwIEg0MjYiIG1hcmtlci1lbmQ9InVybCgjYXJyQSkiLz48dGV4dCBjbGFzcz0idHMiIHg9IjQwMiIgeT0iMTYyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBzdHlsZT0iZm9udC1zaXplOjExcHgiPnRleHQ8L3RleHQ+CjxwYXRoIGNsYXNzPSJsbmEiIGQ9Ik01NzIgMTcwIEg2MjIiIG1hcmtlci1lbmQ9InVybCgjYXJyQSkiLz48dGV4dCBjbGFzcz0idHMiIHg9IjU5OCIgeT0iMTYyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBzdHlsZT0iZm9udC1zaXplOjExcHgiPi5zcnQ8L3RleHQ+CjxwYXRoIGNsYXNzPSJsbmEiIGQ9Ik03NjggMTcwIEg4MTgiIG1hcmtlci1lbmQ9InVybCgjYXJyQSkiLz48dGV4dCBjbGFzcz0idHMiIHg9Ijc5NCIgeT0iMTYyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBzdHlsZT0iZm9udC1zaXplOjExcHgiPnRleHQ8L3RleHQ+CjxwYXRoIGNsYXNzPSJiciIgZD0iTTM2IDI0NCBWMjU2IEg1NzIgVjI0NCIvPgo8dGV4dCBjbGFzcz0idGIiIHg9IjM2IiB5PSIyNzgiPkEgIFByZXBpczwvdGV4dD48dGV4dCBjbGFzcz0idHMiIHg9IjEyOSIgeT0iMjc4Ij5jaGNlxaEgdGV4dCBhIG1pZXN0byB2IG9yaWdpbsOhbGk8L3RleHQ+Cjx0ZXh0IGNsYXNzPSJ0cyIgeD0iMzYiIHk9IjI5NiIgc3R5bGU9ImZpbGw6IzBiNmU2MyI+b3ZlcmVuw6ksIG1hbMOpLCByw71jaGxlPC90ZXh0Pgo8cGF0aCBjbGFzcz0iYnJkIiBkPSJNMzYgMzIyIFYzMzQgSDk2NCBWMzIyIi8+Cjx0ZXh0IGNsYXNzPSJ0YiIgeD0iMzYiIHk9IjM1NiI+QiAgUHJlcGlzIGEgbG9rw6FsbmEgQUk8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSIyMjAiIHk9IjM1NiI+Y2hjZcWhIHBvY2hvcGnFpSBvYnNhaCByw71jaGxvPC90ZXh0Pgo8dGV4dCBjbGFzcz0idHMiIHg9IjM2IiB5PSIzNzQiIHN0eWxlPSJmaWxsOiMwYjZlNjMiPkFJIGtyb2sgamUgbsOhdnJoLCBuZW92ZXJlbsO9LCBuw6Fyb8SNbmVqxaHDrTwvdGV4dD4KPHRleHQgY2xhc3M9InRzIiB4PSI5NjQiIHk9IjM3NCIgdGV4dC1hbmNob3I9ImVuZCIgc3R5bGU9ImZpbGw6IzBiNmU2MyI+QiBzdGF2aWEgbmEgQTwvdGV4dD4KPC9zdmc+");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDQ4NCIgd2lkdGg9IjEwMDAiIGhlaWdodD0iNDg0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkR2YSBwcsOtcGFkeSBwb3XFvml0aWEgbmFkIGplZG7DvW0gcmXFpWF6Y29tIG5hIHZsYXN0bm9tIHBvxI3DrXRhxI1pLiBBOiBuYWhyw6F2a2Egc2EgbG9rw6FsbnltIG1seC13aGlzcGVyIHByZXDDrcWhZSBuYSB0ZXh0IHMgxI1hc21pLiBCOiB0ZW4gaXN0w70gdGV4dCBzcHJhY3VqZSBsb2vDoWxuYSBBSSB2IE9sbGFtZSBuYSB6aHJudXRpZSwga2FwaXRvbHkgYSDDumxvaHkgcyDEjWFzb20uIEIgc3RhdmlhIG5hIEEuIENsb3VkIHNhIG5lcG91xb7DrXZhLiI+CjxzdHlsZT4KdGV4dHtmb250LWZhbWlseToiSUJNIFBsZXggU2FucyIsQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7Zm9udC1zaXplOjEzcHg7ZmlsbDojMWMyNjI0fQoudGJ7Zm9udC13ZWlnaHQ6NjAwfS50c3tmb250LXNpemU6MTJweDtmaWxsOiM1ZDZiNjd9Ci50Y3tmb250LXNpemU6MTFweDtmaWxsOiMwYjZlNjM7bGV0dGVyLXNwYWNpbmc6LjA2ZW07dGV4dC10cmFuc2Zvcm06dXBwZXJjYXNlfQouc3RhZ2V7ZmlsbDojZDllZGU5O3N0cm9rZTojMGI2ZTYzO3N0cm9rZS13aWR0aDoxLjV9Ci5kcmFmdHtmaWxsOiNmMmY3ZjY7c3Ryb2tlOiMwYjZlNjM7c3Ryb2tlLXdpZHRoOjEuNTtzdHJva2UtZGFzaGFycmF5OjYgNH0KLmJveHtmaWxsOiNmZmY7c3Ryb2tlOiM4YTk4OTM7c3Ryb2tlLXdpZHRoOjEuM30KLmZlbmNle2ZpbGw6bm9uZTtzdHJva2U6IzBiNmU2MztzdHJva2Utd2lkdGg6MS40O3N0cm9rZS1kYXNoYXJyYXk6NyA1fQouZ3JheXtmaWxsOiNmZmY7c3Ryb2tlOiM4YTk4OTM7c3Ryb2tlLXdpZHRoOjEuMjtzdHJva2UtZGFzaGFycmF5OjMgM30KLmxuYXtmaWxsOm5vbmU7c3Ryb2tlOiMwYjZlNjM7c3Ryb2tlLXdpZHRoOjEuOH0KLmJye2ZpbGw6bm9uZTtzdHJva2U6IzBiNmU2MztzdHJva2Utd2lkdGg6Mn0KLmJyZHtmaWxsOm5vbmU7c3Ryb2tlOiMwYjZlNjM7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWRhc2hhcnJheTo2IDR9Ci5sbmd7ZmlsbDpub25lO3N0cm9rZTojNWQ2YjY3O3N0cm9rZS13aWR0aDoxLjN9Ci5hY2N7ZmlsbDojMGI2ZTYzfQo8L3N0eWxlPgo8ZGVmcz48bWFya2VyIGlkPSJhcnJBIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjkiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI4IiBtYXJrZXJIZWlnaHQ9IjgiIG9yaWVudD0iYXV0by1zdGFydC1yZXZlcnNlIj48cGF0aCBkPSJNMCAwIEwxMCA1IEwwIDEwIHoiIGNsYXNzPSJhY2MiLz48L21hcmtlcj48L2RlZnM+CjxyZWN0IHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjQ4NCIgZmlsbD0iI2Y4ZmFmOSIvPgo8cmVjdCBjbGFzcz0iZ3JheSIgeD0iNjQwIiB5PSIxMiIgd2lkdGg9IjM0MCIgaGVpZ2h0PSI1MiIgcng9IjI2Ii8+PHRleHQgY2xhc3M9InRzIiB4PSI2NjIiIHk9IjM0Ij5DbG91ZCBBSSwgb25saW5lIHByZXBpczwvdGV4dD48dGV4dCBjbGFzcz0idHMiIHg9IjY2MiIgeT0iNTIiIHN0eWxlPSJmb250LXNpemU6MTFweCI+bmFkIG5haHLDoXZrb3U6IG5lcG91xb5pdMOpPC90ZXh0PjxwYXRoIGNsYXNzPSJsbmciIGQ9Ik05NDQgMjIgTDk2OCA1NCBNOTY4IDIyIEw5NDQgNTQiLz4KPHJlY3QgY2xhc3M9InN0YWdlIiB4PSIzNiIgeT0iMTIiIHdpZHRoPSI1NjAiIGhlaWdodD0iNjQiIHJ4PSI0Ii8+PHRleHQgY2xhc3M9InRiIiB4PSI1MCIgeT0iMzQiPkMgIE5hamplZG5vZHVjaMWhaWU6IHBvdmllxaEgdG8gQ2xhdWRvdmk8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSI1MCIgeT0iNTIiPlZTIENvZGUgYSByb3rFocOtcmVuaWUgQ2xhdWRlIENvZGUsIMW+aWFkbmEgSVQgem5hbG9zxaU8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSI1MCIgeT0iNjgiIHN0eWxlPSJmb250LXN0eWxlOml0YWxpYyI+4oCeUHJlcMOtxaEgaGxhc292a3kgdiB0b210byBwcmllxI1pbmt1LCBsb2vDoWxuZS7igJw8L3RleHQ+CjxwYXRoIGNsYXNzPSJsbmEiIGQ9Ik0zMDQgNzYgVjE2NiIgbWFya2VyLWVuZD0idXJsKCNhcnJBKSIvPjx0ZXh0IGNsYXNzPSJ0cyIgeD0iMzE0IiB5PSIxMTYiPnNwdXN0w60gQSBhaiBCIHphIHRlYmE8L3RleHQ+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsNDQpIj4KPHJlY3QgY2xhc3M9ImZlbmNlIiB4PSIyMCIgeT0iNzYiIHdpZHRoPSI5NjAiIGhlaWdodD0iMzQ0IiByeD0iOCIvPjx0ZXh0IGNsYXNzPSJ0YyIgeD0iOTY0IiB5PSI5OCIgdGV4dC1hbmNob3I9ImVuZCI+VHZvaiBwb8SNw610YcSNOiBuYWhyw6F2a3kgYSB0ZXh0eSBvc3TDoXZhasO6IHR1PC90ZXh0Pgo8cmVjdCBjbGFzcz0iYm94IiB4PSIzNiIgeT0iMTI0IiB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjkyIiByeD0iNCIvPjx0ZXh0IGNsYXNzPSJ0YiIgeD0iNDgiIHk9IjE1MCI+TmFocsOhdmthPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0cyIgeD0iNDgiIHk9IjE3NCI+aGxhc292a2EsIHByZWRuw6HFoWthLDwvdGV4dD48dGV4dCBjbGFzcz0idHMiIHg9IjQ4IiB5PSIxOTIiPmN2acSNZW5pZSwgcG9yYWRhPC90ZXh0Pgo8cmVjdCBjbGFzcz0ic3RhZ2UiIHg9IjIzMiIgeT0iMTI0IiB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjkyIiByeD0iNCIvPjx0ZXh0IGNsYXNzPSJ0YiIgeD0iMjQ0IiB5PSIxNTAiPm1seC13aGlzcGVyPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0cyIgeD0iMjQ0IiB5PSIxNzQiPnJlxI0gbmEgdGV4dDwvdGV4dD48dGV4dCBjbGFzcz0idHMiIHg9IjI0NCIgeT0iMTkyIj5iZcW+w60gbG9rw6FsbmU8L3RleHQ+CjxyZWN0IGNsYXNzPSJzdGFnZSIgeD0iNDI4IiB5PSIxMjQiIHdpZHRoPSIxNDQiIGhlaWdodD0iOTIiIHJ4PSI0Ii8+PHRleHQgY2xhc3M9InRiIiB4PSI0NDAiIHk9IjE1MCI+VGV4dCBzIMSNYXNtaTwvdGV4dD48dGV4dCBjbGFzcz0idHMiIHg9IjQ0MCIgeT0iMTc0Ij4udHh0LCAuc3J0LCAuanNvbjwvdGV4dD48dGV4dCBjbGFzcz0idHMiIHg9IjQ0MCIgeT0iMTkyIj7EjWFzeSBvZCBudWx5PC90ZXh0Pgo8cmVjdCBjbGFzcz0iZHJhZnQiIHg9IjYyNCIgeT0iMTI0IiB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjkyIiByeD0iNCIvPjx0ZXh0IGNsYXNzPSJ0YiIgeD0iNjM2IiB5PSIxNTAiPkxva8OhbG5hIEFJPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0cyIgeD0iNjM2IiB5PSIxNzQiPk9sbGFtYSwgbW9kZWw8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSI2MzYiIHk9IjE5MiI+bmlla2/EvmtvIEdCPC90ZXh0Pgo8cmVjdCBjbGFzcz0iZHJhZnQiIHg9IjgyMCIgeT0iMTI0IiB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjkyIiByeD0iNCIvPjx0ZXh0IGNsYXNzPSJ0YiIgeD0iODMyIiB5PSIxNTAiPlBvZHN0YXRhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0cyIgeD0iODMyIiB5PSIxNzQiPnpocm51dGllLCBrYXBpdG9seSw8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSI4MzIiIHk9IjE5MiI+w7psb2h5IHMgxI1hc29tPC90ZXh0Pgo8cGF0aCBjbGFzcz0ibG5hIiBkPSJNMTgwIDE3MCBIMjMwIiBtYXJrZXItZW5kPSJ1cmwoI2FyckEpIi8+PHRleHQgY2xhc3M9InRzIiB4PSIyMDYiIHk9IjE2MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9ImZvbnQtc2l6ZToxMXB4Ij56dnVrPC90ZXh0Pgo8cGF0aCBjbGFzcz0ibG5hIiBkPSJNMzc2IDE3MCBINDI2IiBtYXJrZXItZW5kPSJ1cmwoI2FyckEpIi8+PHRleHQgY2xhc3M9InRzIiB4PSI0MDIiIHk9IjE2MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9ImZvbnQtc2l6ZToxMXB4Ij50ZXh0PC90ZXh0Pgo8cGF0aCBjbGFzcz0ibG5hIiBkPSJNNTcyIDE3MCBINjIyIiBtYXJrZXItZW5kPSJ1cmwoI2FyckEpIi8+PHRleHQgY2xhc3M9InRzIiB4PSI1OTgiIHk9IjE2MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9ImZvbnQtc2l6ZToxMXB4Ij4uc3J0PC90ZXh0Pgo8cGF0aCBjbGFzcz0ibG5hIiBkPSJNNzY4IDE3MCBIODE4IiBtYXJrZXItZW5kPSJ1cmwoI2FyckEpIi8+PHRleHQgY2xhc3M9InRzIiB4PSI3OTQiIHk9IjE2MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9ImZvbnQtc2l6ZToxMXB4Ij50ZXh0PC90ZXh0Pgo8cGF0aCBjbGFzcz0iYnIiIGQ9Ik0zNiAyNDQgVjI1NiBINTcyIFYyNDQiLz4KPHRleHQgY2xhc3M9InRiIiB4PSIzNiIgeT0iMjc4Ij5BICBQcmVwaXM8L3RleHQ+PHRleHQgY2xhc3M9InRzIiB4PSIxMjkiIHk9IjI3OCI+Y2hjZcWhIHRleHQgYSBtaWVzdG8gdiBvcmlnaW7DoWxpPC90ZXh0Pgo8dGV4dCBjbGFzcz0idHMiIHg9IjM2IiB5PSIyOTYiIHN0eWxlPSJmaWxsOiMwYjZlNjMiPm92ZXJlbsOpLCBtYWzDqSwgcsO9Y2hsZTwvdGV4dD4KPHBhdGggY2xhc3M9ImJyZCIgZD0iTTM2IDMyMiBWMzM0IEg5NjQgVjMyMiIvPgo8dGV4dCBjbGFzcz0idGIiIHg9IjM2IiB5PSIzNTYiPkIgIFByZXBpcyBhIGxva8OhbG5hIEFJPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0cyIgeD0iMjIwIiB5PSIzNTYiPmNoY2XFoSBwb2Nob3BpxaUgb2JzYWggcsO9Y2hsbzwvdGV4dD4KPHRleHQgY2xhc3M9InRzIiB4PSIzNiIgeT0iMzc0IiBzdHlsZT0iZmlsbDojMGI2ZTYzIj5BSSBrcm9rIGplIG7DoXZyaCwgbmVvdmVyZW7DvSwgbsOhcm/EjW5lasWhw608L3RleHQ+Cjx0ZXh0IGNsYXNzPSJ0cyIgeD0iOTY0IiB5PSIzNzQiIHRleHQtYW5jaG9yPSJlbmQiIHN0eWxlPSJmaWxsOiMwYjZlNjMiPkIgc3RhdmlhIG5hIEE8L3RleHQ+CjwvZz4KPC9zdmc+");
 
 /***/ }),
 

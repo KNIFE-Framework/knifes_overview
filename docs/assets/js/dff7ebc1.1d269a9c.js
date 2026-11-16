@@ -220,6 +220,19 @@ function _createMdxContent(props) {
         id: "-knife--knowledge-in-friendly-examples",
         children: "📚 KNIFE – Knowledge In Friendly Examples"
       })
+    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+      children: [(0,jsx_runtime.jsx)(_components.strong, {
+        children: "Prehľady:"
+      }), " ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG",
+        children: "📰 Blog"
+      }), " • ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST",
+        children: "🗂 Zoznam"
+      }), " • ", (0,jsx_runtime.jsx)(_components.a, {
+        href: "/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS",
+        children: "📊 Detail"
+      })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.blockquote, {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
         children: [(0,jsx_runtime.jsx)(_components.em, {

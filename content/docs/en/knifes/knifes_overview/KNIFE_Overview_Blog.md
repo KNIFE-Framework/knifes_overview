@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG_EN"
 
 # Unikátne UUID – generuje skript
-guid: "a6cc16d2-313d-489d-bb76-afc723173a87"
+guid: "31b672ab-100d-4b32-9a1f-c0f7d9a8c7e1"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "en"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-09-21"
+created: "2026-11-16"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,13 +135,14 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `a6cc16d2-313d-489d-bb76-afc723173a87`
+> **GUID:** `31b672ab-100d-4b32-9a1f-c0f7d9a8c7e1`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
 **[📰 Blog](./KNIFE_Overview_Blog.md)** | [🗂 List](./KNIFE_Overview_List.md) | [📊 Details](./KNIFE_Overview_Details.md) | [↩️ KNIFES](../index.md)
 
 
+- **K000002_EN** — 2026-10-12 11:56 — [K000002 – Git workflow for EA models](../K000002-git-workflow-for-ea-models/)
 - **K000101** — 2026-04-23 23:03 — [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/)
 - **K000103** — 2026-04-29 08:56 — [K000103 – Context Aware Approach in SDLC](../K000103-CAA_IN_SDLC/)
 - **K000104** — 2026-04-29 11:59 — [K000104 – SPARX-AI KERNARO in context of SDLC support](../K000104-SPARX_AI_KERNARO_IN_SDLC/)
@@ -151,3 +152,6 @@ fm_reserved2: ""
 - **K000109_EN** — 2026-06-02 00:00 — [K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations](../K000109-ESCO-SFIA-CAA/)
 - **K000110_EN** — 2026-06-21 00:00 — [K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect](../K000110-Time-Travel-SDLC/)
 - **K000119_EN** — 2026-09-21 12:26 — [K000119 – How to create a clean clone of a class repository](../K000119-clean-clone-of-a-class-repository/)
+- **K000121_EN** — 2026-10-18 14:24 — [K000121 – Kernaro AI Hub: centralized AI access for teams](../K000121-Kernaro-AI-Hub/)
+- **K000122** — 2026-11-15 11:22 — [K000122 – Local audio transcription and AI on top, private and offline](../K000122-Local-Audio-Transcription/)
+- **K000123** — 2026-11-16 12:00 — [K000123 – Islamic finance for technologists: sukuk, tokenization and Shariah in practice (Finweek KL 2026)](../K000123-Islamic-Finance-Finweek-KL-2026/)

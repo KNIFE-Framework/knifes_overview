@@ -38,6 +38,8 @@ sidebar_label: "SK_KNIFES_HOME – KNIFES (SK)"
 
 # 📚 KNIFE – Knowledge In Friendly Examples
 
+**Prehľady:** [📰 Blog](./knifes_overview/KNIFE_Overview_Blog.md) • [🗂 Zoznam](./knifes_overview/KNIFE_Overview_List.md) • [📊 Detail](./knifes_overview/KNIFE_Overview_Details.md)
+
 > *Bez komunikácie nie je porozumenie.*
 > *Bez porozumenia nie je dôvera.*
 > *Bez dôvery nie je spolupráca.*

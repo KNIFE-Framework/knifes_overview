@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST_EN"
 
 # Unikátne UUID – generuje skript
-guid: "edb7fa79-1821-4b0e-bac3-fa3b7706b732"
+guid: "aa72b941-ae14-4986-8baa-861e7f05593d"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "en"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-09-21"
+created: "2026-11-16"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,13 +135,16 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `edb7fa79-1821-4b0e-bac3-fa3b7706b732`
+> **GUID:** `aa72b941-ae14-4986-8baa-861e7f05593d`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
 [📰 Blog](./KNIFE_Overview_Blog.md) | **[🗂 List](./KNIFE_Overview_List.md)** | [📊 Details](./KNIFE_Overview_Details.md) | [↩️ KNIFES](../index.md)
 
 
+- **K000123** · [K000123 – Islamic finance for technologists: sukuk, tokenization and Shariah in practice (Finweek KL 2026)](../K000123-Islamic-Finance-Finweek-KL-2026/) · _done_ · medium
+- **K000122** · [K000122 – Local audio transcription and AI on top, private and offline](../K000122-Local-Audio-Transcription/) · _done_ · -
+- **K000121_EN** · [K000121 – Kernaro AI Hub: centralized AI access for teams](../K000121-Kernaro-AI-Hub/) · _published_ · -
 - **K000119_EN** · [K000119 – How to create a clean clone of a class repository](../K000119-clean-clone-of-a-class-repository/) · _published_ · medium
 - **K000110_EN** · [K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect](../K000110-Time-Travel-SDLC/) · _published_ · -
 - **K000109_EN** · [K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations](../K000109-ESCO-SFIA-CAA/) · _published_ · -
@@ -151,3 +154,4 @@ fm_reserved2: ""
 - **K000104** · [K000104 – SPARX-AI KERNARO in context of SDLC support](../K000104-SPARX_AI_KERNARO_IN_SDLC/) · _published_ · -
 - **K000103** · [K000103 – Context Aware Approach in SDLC](../K000103-CAA_IN_SDLC/) · _published_ · -
 - **K000101** · [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) · _published_ · -
+- **K000002_EN** · [K000002 – Git workflow for EA models](../K000002-git-workflow-for-ea-models/) · _inprogress_ · -

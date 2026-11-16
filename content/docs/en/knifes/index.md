@@ -14,6 +14,8 @@ rights_holder_system: "CAA / KNIFE / LetItGrow"
 
 # 📚 KNIFE – Knowledge In Friendly Examples
 
+**Overviews:** [📰 Blog](./knifes_overview/KNIFE_Overview_Blog.md) • [🗂 List](./knifes_overview/KNIFE_Overview_List.md) • [📊 Details](./knifes_overview/KNIFE_Overview_Details.md)
+
 > *Without Communication there is no Understanding.*
 > *Without Understanding there is no Trust.*
 > *Without Trust there is no Collaboration.*

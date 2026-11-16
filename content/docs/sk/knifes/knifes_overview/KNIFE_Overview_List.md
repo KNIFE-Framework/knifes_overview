@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_LIST"
 
 # Unikátne UUID – generuje skript
-guid: "fc94b798-6120-4f29-91bb-8f1c7215ea90"
+guid: "eab4ab1b-b8e3-42bb-81d9-e030a384446a"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-09-21"
+created: "2026-11-16"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 🗂 KNIFE Overview – List
 
 <!-- fm-visible: start -->
-> **GUID:** `fc94b798-6120-4f29-91bb-8f1c7215ea90`
+> **GUID:** `eab4ab1b-b8e3-42bb-81d9-e030a384446a`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -145,6 +145,9 @@ fm_reserved2: ""
 - **REF-UAT-001** · [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/) · _inprogress_ · top
 - **K1000999** · [K1000999 – KNIFE – Test script-created instance](../K1000999/) · _backlog_ · -
 - **K000999** · [K000999 – KNIFE – Test script-created instance](../K000999/) · _backlog_ · -
+- **K000123** · [K000123 – Islamské financie pre technikov: sukuk, tokenizácia a šaría v praxi (Finweek KL 2026)](../K000123-Islamske-Financie-Finweek-KL-2026/) · _done_ · medium
+- **K000122** · [K000122 – Lokálny prepis zvuku a AI nad ním, súkromne a offline](../K000122-Local-Audio-Transcription/) · _done_ · -
+- **K000121** · [K000121 – Kernaro AI Hub: centralizovaný prístup k AI pre tím](../K000121-Kernaro-AI-Hub/) · _published_ · -
 - **K000119** · [K000119 – Ako si vytvoriť čistý klon triedneho repozitára](../K000119-klon-triedneho-repozitara/) · _published_ · medium
 - **K000118** · [K000118 – Centrálny publish repozitár: SSOT pre viacero zdrojových tém](../K000118-Centralny-Publish-Repozitar-SSOT/) · _published_ · medium
 - **K000117** · [K000117 – Ako funguje platba online (Payment Gateway základy)](../K000117-Platba-Online-Payment-Gateway-Zaklady/) · _backlog_ · low

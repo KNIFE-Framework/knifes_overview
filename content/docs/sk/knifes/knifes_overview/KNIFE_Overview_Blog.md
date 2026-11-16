@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_BLOG"
 
 # Unikátne UUID – generuje skript
-guid: "a401a962-9030-430b-8abc-06ca351583e8"
+guid: "74055cfa-5247-454f-92b7-2b76387b6d8a"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "sk"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-09-21"
+created: "2026-11-16"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📰 KNIFE Overview – Blog
 
 <!-- fm-visible: start -->
-> **GUID:** `a401a962-9030-430b-8abc-06ca351583e8`
+> **GUID:** `74055cfa-5247-454f-92b7-2b76387b6d8a`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -251,6 +251,9 @@ fm_reserved2: ""
 - **K000117** — 2026-09-10 22:15 — [K000117 – Ako funguje platba online (Payment Gateway základy)](../K000117-Platba-Online-Payment-Gateway-Zaklady/)
 - **K000118** — 2026-09-15 10:36 — [K000118 – Centrálny publish repozitár: SSOT pre viacero zdrojových tém](../K000118-Centralny-Publish-Repozitar-SSOT/)
 - **K000119** — 2026-09-16 09:04 — [K000119 – Ako si vytvoriť čistý klon triedneho repozitára](../K000119-klon-triedneho-repozitara/)
+- **K000121** — 2026-10-18 14:24 — [K000121 – Kernaro AI Hub: centralizovaný prístup k AI pre tím](../K000121-Kernaro-AI-Hub/)
+- **K000122** — 2026-11-15 11:22 — [K000122 – Lokálny prepis zvuku a AI nad ním, súkromne a offline](../K000122-Local-Audio-Transcription/)
+- **K000123** — 2026-11-16 12:00 — [K000123 – Islamské financie pre technikov: sukuk, tokenizácia a šaría v praxi (Finweek KL 2026)](../K000123-Islamske-Financie-Finweek-KL-2026/)
 - **K000999** — 2025-11-22 22:22 — [K000999 – KNIFE – Test script-created instance](../K000999/)
 - **K1000999** — 2025-11-23 16:35 — [K1000999 – KNIFE – Test script-created instance](../K1000999/)
 - **REF-UAT-001** — 2025-10-05 — [REF-UAT-001 – Postup pre presun zmien z vetvy FIX do UAT](../K000026-knife-framework-pre-vyvoj-a-ucenie-sa-libreoffice-python/)

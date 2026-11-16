@@ -15,7 +15,7 @@ fm_version_comment: ""
 id: "KNIFE_OVERVIEW_DETAILS_EN"
 
 # Unikátne UUID – generuje skript
-guid: "5cbd215d-44d5-409d-aa54-618ccb30f2e7"
+guid: "0668a725-6bd6-4999-99fb-dc621d9f7b2c"
 
 
 # 🧭 CONTEXT ---------------------------------------------------------
@@ -69,7 +69,7 @@ locale: "en"
 # 🕒 LIFECYCLE --------------------------------------------------------
 
 # Dátum vytvorenia – generuje skript
-created: "2026-09-21"
+created: "2026-11-16"
 
 # Dátum poslednej úpravy – dopĺňa človek
 modified: ""
@@ -135,7 +135,7 @@ fm_reserved2: ""
 # 📊 KNIFE Overview – Details
 
 <!-- fm-visible: start -->
-> **GUID:** `5cbd215d-44d5-409d-aa54-618ccb30f2e7`
+> **GUID:** `0668a725-6bd6-4999-99fb-dc621d9f7b2c`
 > **Status:** `backlog` · **Author:** Roman Kazička · **License:** CC-BY-NC-SA-4.0
 <!-- fm-visible: end -->
 
@@ -144,6 +144,9 @@ fm_reserved2: ""
 
 | ID | Title | Created | Status | Priority |
 |---|---|---|---|---|
+| K000123 | [K000123 – Islamic finance for technologists: sukuk, tokenization and Shariah in practice (Finweek KL 2026)](../K000123-Islamic-Finance-Finweek-KL-2026/) | 2026-11-16 12:00 | done | medium |
+| K000122 | [K000122 – Local audio transcription and AI on top, private and offline](../K000122-Local-Audio-Transcription/) | 2026-11-15 11:22 | done |  |
+| K000121_EN | [K000121 – Kernaro AI Hub: centralized AI access for teams](../K000121-Kernaro-AI-Hub/) | 2026-10-18 14:24 | published |  |
 | K000119_EN | [K000119 – How to create a clean clone of a class repository](../K000119-clean-clone-of-a-class-repository/) | 2026-09-21 12:26 | published | medium |
 | K000110_EN | [K000110 – Time Travel in SDLC: Parallel Modelling and Version Control for Enterprise Architect](../K000110-Time-Travel-SDLC/) | 2026-06-21 00:00 | published |  |
 | K000109_EN | [K000109 – ESCO, SFIA and CAA: Three Layers of Skills Governance in IT Organizations](../K000109-ESCO-SFIA-CAA/) | 2026-06-02 00:00 | published |  |
@@ -153,3 +156,4 @@ fm_reserved2: ""
 | K000104 | [K000104 – SPARX-AI KERNARO in context of SDLC support](../K000104-SPARX_AI_KERNARO_IN_SDLC/) | 2026-04-29 11:59 | published |  |
 | K000103 | [K000103 – Context Aware Approach in SDLC](../K000103-CAA_IN_SDLC/) | 2026-04-29 08:56 | published |  |
 | K000101 | [K000101 – CYNEFIN Framework](../K000101-CYNEFIN_Framework/) | 2026-04-23 23:03 | published |  |
+| K000002_EN | [K000002 – Git workflow for EA models](../K000002-git-workflow-for-ea-models/) | 2026-10-12 11:56 | inprogress |  |
